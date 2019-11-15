@@ -63,7 +63,7 @@
 					<!-- end logo -->
 
 					<!-- tagline -->
-					<span class="header__tagline">Best Screenshot Tool<br>Recording</span>
+					<span class="header__tagline">Best Screenshot<br>Tool</span>
 					<!-- end tagline -->
 
 					<!-- navigation -->
@@ -76,9 +76,6 @@
 						</li>
 						<li>
 							<a data-scroll href="#features">Specification</a>
-						</li>
-						<li>
-							<a data-scroll href="#blog">Blog</a>
 						</li>
 						<li>
 							<a data-scroll href="#get_it">Get It</a>
@@ -378,87 +375,6 @@
 	</div>
 	<!-- end counter -->
 
-	<!-- blog -->
-	<section id="blog" class="section section--grey">
-		<div class="container">
-			<div class="row">
-				<!-- section title -->
-				<div class="col-xs-12 animate" data-animate="fadeIn" data-duration="1.0s" data-delay="0.2s">
-					<h2 class="section__title">Info</h2>
-					<span class="section__tagline">More about product</span>
-				</div>
-				<!-- end section title -->
-
-				<!-- article -->
-				<div class="col-xs-12 col-sm-6 col-md-4 animate" data-animate="fadeIn" data-duration="1.0s" data-delay="0.4s">
-					<article class="article">
-						<figure class="article__img">
-							<a href="#">
-								<img src="img/1.png" alt="">
-							</a>
-						</figure>
-
-						<header class="article__header">
-							<h3 class="article__title">
-								<a href="#">Screenshot</a>
-							</h3>
-						</header>
-
-						<div class="article__content">
-							<p>First of all, the process of creating a screenshot. You can easily do this.</p>
-						</div>
-					</article>
-				</div>
-				<!-- end article -->
-
-				<!-- article -->
-				<div class="col-xs-12 col-sm-6 col-md-4 animate" data-animate="fadeIn" data-duration="1.0s" data-delay="0.8s">
-					<article class="article">
-						<figure class="article__img">
-							<a href="#">
-								<img src="img/4.png" alt="">
-							</a>
-						</figure>
-
-						<header class="article__header">
-							<h3 class="article__title">
-								<a href="#">Editing</a>
-							</h3>
-						</header>
-
-						<div class="article__content">
-							<p>It is possible to edit the image and save it in the desired format.</p>
-						</div>
-					</article>
-				</div>
-				<!-- end article -->
-
-				<!-- article -->
-				<div class="col-xs-12 col-sm-6 col-md-4 animate" data-animate="fadeIn" data-duration="1.0s" data-delay="0.6s">
-					<article class="article">
-						<figure class="article__img">
-							<a href="#">
-								<img src="img/3.png" alt="">
-							</a>
-						</figure>
-
-						<header class="article__header">
-							<h3 class="article__title">
-								<a href="#">Settings</a>
-							</h3>
-						</header>
-
-						<div class="article__content">
-							<p>Setting up screenshot creation. Very functional component.</p>
-						</div>
-					</article>
-				</div>
-				<!-- end article -->
-			</div>
-		</div>
-	</section>
-	<!-- end blog -->
-
 	<!-- get in touch -->
 	<section id="get_it" class="section">
 		<div class="container">
@@ -484,7 +400,7 @@
 							</li>
 							<li>
 								<span class="lnr lnr-inbox"></span>
-								<a href="mailto:support@privacytools.su">support@screenshottool.su</a>
+								<a href="mailto:info@bestscreenshottool.su">info@bestscreenshottool.su</a>
 							</li>
 						</ul>
 					</div>
