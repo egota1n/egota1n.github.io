@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Welcome Page - egota1n</title>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans|Pacifico&display=swap&subset=cyrillic" rel="stylesheet">
+	<link rel="stylesheet" href="bootstrap-grid.min.css">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header class="header" id="header">
+		<div class="container">
+			<div class="col-12">
+				<nav class="nav">
+					<a href="#!"><div class="logo"></div></a>
+					<ul>
+						<li><a href="#section__technology">Технологии</a></li>
+						<li><a href="#!">Портфолио</a></li>
+						<li><a href="#!">Отзывы</a></li>
+						<li><a href="#!">Контакты</a></li>
+					</ul>
+				</nav>
+			</div>
+			<div class="col-12">
+				<h1 class="title__offer">Сайт-портфолио</h1>
+				<p class="descriprion__offer">На этом сайте вы можете посмотреть все мои работы и узнать о технологиях которые я применяю. Еще вы можете посмотреть все цены если обратитесь к разделу «Контакты»</p>
+			</div>
+		</div>
+		<a href="#section__technology" class="arrow"></a>
+	</header>
+	<section class="section__technology" id="section__technology">
+		<div class="container">
+			<div class="col-6">
+				<h2 class="title__section">Технологии</h2>
+				<a href="screenhot" class="work">Best Screenshot Tool</a>
+				<a href="screenhot" class="work">drDoguzova</a>
+				<a href="screenhot" class="work">Head-start</a>
+				<a href="screenhot" class="work">Twins</a>
+				<a href="screenhot" class="work">Fast Screen</a>
+				<a href="screenhot" class="work">Keep Secrets</a>
+				<a href="screenhot" class="work">Usa</a>
+			</div>
+		</div>
+	</section>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$("a[href^='#']").click(function(){
+				var _href = $(this).attr("href");
+				$("html, body").animate({scrollTop: $(_href).offset().top+"px"});
+				return false;
+			});
+		});
+	</script>
+</body>
+</html>
