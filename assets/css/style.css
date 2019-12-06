@@ -13,7 +13,7 @@ h1, h2, h3, h4, h5, h6{
 }
 
 .header{
-	background: url(bg.jpg) center -500px no-repeat;
+	background: url(../img/bg/bg.jpg) center -500px no-repeat;
 	-webkit-background-size: contain;
 	background-size: cover;
 	height: 100vh;
@@ -23,7 +23,7 @@ h1, h2, h3, h4, h5, h6{
 	display: block;
 	width: 79px;
 	height: 29px;
-	background: #fff url(logo.svg) center center no-repeat;
+	background: #fff url(../img/logo/logo.svg) center center no-repeat;
 }
 
 .nav{
