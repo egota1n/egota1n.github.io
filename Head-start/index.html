@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Веб-студия "Head start"</title>
+	<!-- Favicons -->
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
+	<link rel="manifest" href="img/favicons/site.webmanifest">
+	<link rel="mask-icon" href="img/favicons/safari-pinned-tab.svg" color="#0400b0">
+	<meta name="msapplication-TileColor" content="#00aba9">
+	<meta name="theme-color" content="#ffffff">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Boostrap style -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<!-- Slick slider -->
+	<link rel="stylesheet" type="text/css" href="css/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
+	<!-- Main style -->
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/media.css">
+	<!-- Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+</head>
+<body>
+	<!-- HEADER -->
+	<header class="header" id="header">
+		<a href="#header" class="logo"></a>
+		<div class="container">
+			<div class="row">
+				<div class="col-12 nav">
+					<li>
+						<a href="#header">Главная</a>
+					</li>
+					<li>
+						<a href="#section-price_and_complete">Цены и комплектации</a>
+					</li>
+					<li>
+						<a href="#section-advantages">Наши преимущества</a>
+					</li>
+					<li>
+						<a href="#section-service">Услуги</a>
+					</li>
+					<li>
+						<a href="#section-form_and_price">Контакты</a>
+					</li>
+					<li>
+						<a href="#section-about_company">О компании</a>
+					</li>
+				</div>
+			</div>
+		</div>
+		<div class="social">
+			<button  type="button" data-toggle="modal" data-target="#modal-window-button" class="discuss_the_project-footer">Обсудить проект</button>
+			<a href="mailto:headstart@inbox.ru" class="mail-footer">
+				<svg class="mail-icon" width="20" height="15" viewBox="0 0 20 15" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0)"><path d="M20 12.4999C20 12.9384 19.8767 13.3448 19.6791 13.7025L13.3643 6.63708L19.6106 1.17207C19.8536 1.55767 20 2.01063 20 2.50011V12.4999ZM10 7.91994L18.6916 0.314997C18.335 0.119742 17.9333 0 17.5001 0H2.49998C2.06619 0 1.66443 0.119742 1.3092 0.314997L10 7.91994ZM12.4232 7.45985L10.4113 9.22131C10.2936 9.32383 10.1471 9.37502 10 9.37502C9.85287 9.37502 9.70633 9.32383 9.58865 9.22131L7.57633 7.45977L1.18163 14.6155C1.56493 14.8559 2.01413 15 2.49994 15H17.5001C17.9858 15 18.4352 14.8559 18.8184 14.6155L12.4232 7.45985ZM0.389439 1.17203C0.146493 1.55763 0 2.01059 0 2.50011V12.5C0 12.9384 0.122751 13.3449 0.321056 13.7025L6.63513 6.63588L0.389439 1.17203Z" fill="white"/></g><defs><clipPath id="clip0"><rect width="20" height="15" fill="white"/></clipPath></defs></svg>
+				headstart@inbox.ru
+			</a>	
+		</div>
+		<div class="row">
+			<div class="container">
+				<div class="col-12">
+					<div class="main-line"></div>
+					<h1 class="header-title">Разработка и продвижение сайтов под ключ</h1>
+					<button type="button" data-toggle="modal" data-target="#modal-window-button" class="btn main-btn">Заказать свой сайт</button>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row steps">
+				<div class="col-4 step">
+					<p class="step1">Создание сайтов под ключ</p>
+					<span class="number-step">01</span>
+				</div>
+				<div class="col-4 step">
+					<p class="step2">Оформление группы или страницы Вконтакте</p>
+					<span class="number-step number-step-second">02</span>
+					<span class="line-step line-step-first"></span>
+					<span class="line-step line-step-second"></span>
+				</div>
+				<div class="col-4 step">
+					<p class="step3">Настройка и ведение рекламы Google AdWords и Яндекс Директ</p>
+					<span class="number-step number-step-third">03</span>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- THE END HEADER -->
+
+	<!-- PRICE AND COMPLETE -->
+	<section class="section-price_and_complete" id="section-price_and_complete">
+		<div class="container card-price">
+			<div class="row price_and_complete">
+				<div class="col-12 col-md-6 col-lg-4 card-price">
+					<h3 class="title-complete">
+						Стандарт<br><span class="price">17 000 &#x20bd;</span>
+					</h3>
+					<div class="completes">
+						<div class="complete">
+							<div class="favor">Анализ бизнеса</div> <!-- видимый элемент -->
+							<span class="hidden">Анализируем  деятельность, прорабатываем цели и задачи сайта, выявляем сильные стороны вашего бизнеса и мастерски припадаем их клиенту</span> <!-- скрытый элемент -->
+						</div>
+						<div class="complete">
+							<div class="favor">Прототип сайта</div> <!-- видимый элемент -->
+							<span class="hidden">Прорабатываем структуру и содержание сайта</span> <!-- скрытый элемент -->
+						</div>
+						<div class="complete">
+							<div class="favor">Заполнение сайта 7 блоков</div> <!-- видимый элемент -->
+						</div>
+						<div class="complete">
+							<div class="favor">Эксклюзивный дизайн</div> <!-- видимый элемент -->
+							<span class="hidden">Создаем уникальный дизайн, никаких шаблонов и заготовок Профессионально подбираем цветовую палитру и шрифт - создаем индивидуальный стиль</span> <!-- скрытый элемент -->
+						</div>
+						<div class="complete">
+							<div class="favor">Верстка</div> <!-- видимый элемент -->
+							<span class="hidden">Сайт будет ровно выглядеть во всех браузерах на компьютере</span> <!-- скрытый элемент -->
+						</div>
+						<div class="complete">
+							<div class="favor">Подключение систем аналитики</div> <!-- видимый элемент -->
+							<span class="hidden">Яндекс метрики и Google Analytics. Эти сервисы позволят получать точную статистику с сайта</span> <!-- скрытый элемент -->
+						</div>
+						<div class="complete">
+							<div class="favor">Подключение форм</div> <!-- видимый элемент -->
+						</div>
+						<div class="complete">
+							<div class="favor">Виджет обратного звонка</div> <!-- видимый элемент -->
+							<span class="hidden">Дополнительные удобства для посетителя сайта, способные увеличить конверсию</span> <!-- скрытый элемент -->
+						</div>
+						<div class="complete">
+							<div class="favor">Регистрация в поисковиках</div> <!-- видимый элемент -->
+						</div>
+						<div class="complete">
+							<div class="favor">Форма обратной связи </div> <!-- видимый элемент -->
+						</div>
+						<div class="complete">
+							<div class="favor">SEO-оптимизация</div> <!-- видимый элемент -->
+						</div>
+					</div>
+					<p class="gift">Домен и хостинг на 6 месяцев</p>
+					<p class="present">В подарок</p>
+					<div class="present-icon"></div>
+					<button type="button" data-toggle="modal" data-target="#modal-window-button" class="btn btn-price" class="btn btn-price">Заказать консультацию</button>
+				</div>
+				<div class="col-12 col-md-6 col-lg-4 card-price">
+					<h3 class="title-complete">
+						Бизнес<br><span class="price">29 000 &#x20bd; </span>
+					</h3>
+					<div class="completes">
+						<div class="complete">
+							<div class="favor">Все из комплектации «Стандарт» +</div> <!-- видимый элемент -->
+						</div>
+						<div class="complete">
+							<div class="favor">Создание УТП</div> <!-- видимый элемент -->
+						</div>
+						<div class="complete">
+							<div class="favor">Адаптивная верстка</div> <!-- видимый элемент -->
+						</div>
+						<div class="complete">
+							<div class="favor">Онлайн чат</div> <!-- видимый элемент -->
+						</div>
+						<div class="complete">
+							<div class="favor">Коллтрекинг</div> <!-- видимый элемент -->
+							<span class="hidden">Эта функция поможет оценить прибыльность рекламных компаний, а так же узнать откуда пришел клиент</span> <!-- скрытый элемент -->
+						</div>
+						<div class="complete">
+							<div class="favor">Анимация эллементов сайта</div> <!-- видимый элемент -->
+						</div>
+						<div class="complete">
+							<div class="favor">CMS система</div> <!-- видимый элемент -->
+							<span class="hidden">Админ-панель, через которую вы самостоятельно сможете редактировать свой сайт</span> <!-- скрытый элемент -->
+						</div>
+						<div class="complete">
+							<div class="favor">Мультилендинг</div> <!-- видимый элемент -->
+							<span class="hidden">Информация на сайте перестраивается под запрос из поисковой системы, что очень удобно для клиентов</span> <!-- скрытый элемент -->
+						</div>
+						<div class="complete">
+							<div class="favor">Геотаргетинг</div> <!-- видимый элемент -->
+							<span class="hidden">Определяет откуда человек зашел на сайт и показывает информацию именно под его город</span> <!-- скрытый элемент -->
+						</div>
+						<div class="complete">
+							<div class="favor">IP телефония</div> <!-- видимый элемент -->
+						</div>
+						<div class="complete">
+							<div class="favor">Эквайринг</div> <!-- видимый элемент -->
+						</div>
+					</div>
+					<p class="gift">Домен и хостинг на 6 месяцев</p>
+					<p class="present">В подарок</p>
+					<div class="present-icon"></div>
+					<button type="button" data-toggle="modal" data-target="#modal-window-button" class="btn btn-price" class="btn btn-price">Заказать консультацию</button>
+					<span class="line-price-left"></span>
+					<span class="line-price-right"></span>
+				</div>
+				<div class="col-12 col-md-8 col-lg-4 card-price card-price-last">
+					<h3 class="title-complete">Индивидуальный<br><span class="price">От 5 000 &#x20bd;</span></h3>
+					<form>
+						<!-- Hidden Required Fields -->
+						<input type="hidden" name="project_name" value="Head start">
+						<input type="hidden" name="admin_email" value="rav266@inbox.ru">
+						<input type="hidden" name="form_subject" value="Заявка на индивидуальный проект">
+						<!-- END Hidden Required Fields -->
+						<input type="text" name="Имя" placeholder="Ваше имя" class="individual-input man-user" style="background: url(img/icons/man-user.svg) no-repeat 100% 0" required>
+						<input type="email" name="Email" placeholder="Ваш e-mail" class="individual-input mail-black" style="background: url(img/icons/mail-black.svg) no-repeat 100% 0" required>
+						<input type="tel" name="Номер телефона" placeholder="Ваш номер телефона" class="individual-input" style="background: url(img/icons/phone-receiver.svg) no-repeat 100% 0">
+						<textarea type="text" name="Message" placeholder="Ваше сообщение     (необязательно)" class="individual-input speech-bubble-with-text" style="background: url(img/icons/speech-bubble-with-text.svg) no-repeat 100% 0"></textarea>
+						<p class="gift">Домен и хостинг на 6 месяцев</p>
+						<p class="present">В подарок</p>
+						<div class="present-icon"></div>
+						<button class="btn btn-price">Заказать консультацию</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- THE END PRICE AND COMPLETE -->
+
+	<!-- ADVANTAGES -->
+	<section class="section-advantages">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<span class="dark-line" id="section-advantages"></span>
+					<h3 class="title-advatages">Что нам позволяет занимать лидирующие позиции в сфере создания веб-сайтов</h3>
+				</div>
+				<div class="col-12 col-lg-6">
+					<div class="card-advatages card-advatages-left">
+						<h3 class="title-card-advantage">Уникальный<br>дизайн</h3>
+						<span class="line-card-advantage"></span>
+						<div class="background-icon">
+							<img src="img/icons/painter-palette.svg" alt="painter-palette" class="icon-advatage">
+						</div>
+						<p class="description-advatage">Никаких шаблонов.<br>Индивидуальный, продуманный до<br>мелочей дизайн - шикарная упаковка<br>вашего предложения</p>
+						<div class="number-advatages">01</div>
+					</div>
+				</div>
+				<div class="col-12 col-lg-6">
+					<div class="card-advatages card-advatages-right">
+						<h3 class="title-card-advantage">Использование новейших<br>технологий</h3>
+						<span class="line-card-advantage"></span>
+						<div class="background-icon">
+							<img src="img/icons/spark.svg" alt="spark" class="icon-advatage">
+						</div>
+						<p class="description-advatage">Анимация элементов,<br>параллакс технологии, мультилендинг<br>и геотаргетинг добавляют<br>изюминку сайту</p>
+						<div class="number-advatages">02</div>
+					</div>
+				</div>
+				<div class="col-12 col-lg-6">
+					<div class="card-advatages card-advatages-left">
+						<h3 class="title-card-advantage">Тесное знакомство<br>с вашим делом</h3>
+						<span class="line-card-advantage"></span>
+						<div class="background-icon">
+							<img src="img/icons/list-clipboard.svg" alt="list-clipboard" class="icon-advatage">
+						</div>
+						<p class="description-advatage">Вникаем во все тонкости вашего<br>бизнеса,выделяем его сильные<br>стороны. Ставим цели и задачи<br>сайта</p>
+						<div class="number-advatages">03</div>
+					</div>
+				</div>
+				<div class="col-12 col-lg-6">
+					<div class="card-advatages card-advatages-right">
+						<h3 class="title-card-advantage">Самые честные<br>цены</h3>
+						<span class="line-card-advantage"></span>
+						<div class="background-icon">
+							<img src="img/icons/money-bagl.svg" alt="money-bagl" class="icon-advatage">
+						</div>
+						<p class="description-advatage">Обращаясь к нам, Вы не переплачиваете.<br>Мы максимально качественно<br>выполняем поставленную перед нами<br>задачу за соответственную цену</p>
+						<div class="number-advatages">04</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- THE END ADVANTAGES -->
+
+	<!-- SERVICE -->
+	<section class="section-service" id="section-service">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<span class="dark-line" id="section-advantages"></span>
+					<h3 class="title-advatages">Какие сайты мы предлагаем</h3>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-12 col-lg-6">
+					<div class="card-servivival">
+						<div class="rocket-ship"></div>
+						<h3 class="title-servive"><span class="arrow-service"></span>Landing page</h3>
+						<p class="description-title">Продающая посадочная страница</p>
+						<p class="description-service">Landing page — веб-страница, основной задачей которой является сбор контактных данных целевой аудитории. Используется для усиления эффективности рекламы, увеличения аудитории. Целевая страница обычно содержит информацию о товаре или услуге. Лендинг это двигатель интернет торговли, локомотив продаж!</p>
+					</div>
+				</div col-lg-6>
+				<div class="col-12 col-lg-6">
+					<div class="card-servivival">
+						<div class="shopping-cart"></div>
+						<h3 class="title-servive"><span class="arrow-service"></span>Интернет-магазин</h3>
+						<p class="description-title">Витрина офф-лайн магазина</p>
+						<p class="description-service">Интернет-магазин — это сервис, который позволяет совершать покупки в интернете. Интернет-магазин — не корпоративный сайт, который можно рекомендовать практически всем компаниям. Интернет-магазин в первую очередь полезен владельцам стандартизированных товаров и услуг.</p>
+					</div>
+				</div>
+				<div class="col-12 col-lg-6">
+					<div class="card-servivival">
+						<div class="briefcase"></div>
+						<h3 class="title-servive"><span class="arrow-service"></span>Корпоративный сайт</h3>
+						<p class="description-title">Представление вашей компании в интернете</p>
+						<p class="description-service">Корпоративный сайт – это сайт компании, в первую очередь имиджевый инструмент. Корпоративный сайт содержит полный объем информации о самой компании, о сфере ее деятельности, предлагаемой продукции и услугах. Он  должен соответствовать стилю вашей компании, вызывать доверие у потенциальных клиентов, партнеров и прессы.</p>
+					</div>
+				</div>
+				<div class="col-12 col-lg-6">
+					<div class="card-servivival">
+						<div class="id-card"></div>
+						<h3 class="title-servive"><span class="arrow-service"></span>Сайт-визитка</h3>
+						<p class="description-title">Вирутуальная визитная карточка</p>
+						<p class="description-service">Сайт-визитка — небольшой сайт, как правило, состоящий из одной или нескольких веб-страниц и содержащий основную информацию об организации, частном лице, компании, товарах или услугах, контактные данные. Часто сайт-визитку используют компании, которые не хотят нести большие затраты на создание отдельного сайта.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- THE END SERVICE -->
+
+	<!-- YOUR GETS -->
+	<section class="section-your-gets" id="section-your-gets">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<span class="white-line"></span>
+					<h2 class="title-section-your-gets">Что вы получаете</h2>
+				</div>
+				<div class="col-12 col-md-4">
+					<div class="avatar"></div>
+					<p class="description-gets" data-number="01">Персональный подход.<br>Каждый сайт - это погружение<br> в нишу и глубокое изучение</p>
+				</div>
+				<div class="col-12 col-md-4">
+					<div class="startup"></div>
+					<p class="description-gets" data-number="02">Больше продаж,<br>благодаря продающей и<br>продуманной структуре сайта </p>
+				</div>
+				<div class="col-12 col-md-4">
+					<div class="creativity"></div>
+					<p class="description-gets" data-number="03">Современный дизайн,<br>который будет актуален<br>минимум 5 лет</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- THE END YOUR GETS -->
+
+	<!-- FORM & PRICE -->
+
+	<section class="form-and-price" id="section-form_and_price">
+		<div class="container">
+			<div class="col-12">
+				<h3 class="title-modal-button title-form-and-price">Узнайте стоимость разработки<br>своего сайта</h3>
+				<p class="description-modal-button description-form-and-price">Мы свяжемся с Вами в течение пару минут</p>
+				<form class="form-button">
+					<!-- Hidden Required Fields -->
+					<input type="hidden" name="project_name" value="Head start">
+					<input type="hidden" name="admin_email" value="rav266@inbox.ru">
+					<input type="hidden" name="form_subject" value="Заявка по нажатию на кнопку">
+					<!-- END Hidden Required Fields -->
+					<input type="text" name="Имя" placeholder="Ваше имя" class="input-modal-button input-form-and-price man-user" style="background: rgb(100%, 100%, 100%, 0.16) url(img/icons/man-user.svg) no-repeat 96% 15px" required>
+					<input type="email" name="Email" placeholder="Ваш e-mail" class="input-modal-button input-form-and-price mail-black" style="background: rgb(100%, 100%, 100%, 0.16) url(img/icons/phone-receiver.svg) no-repeat 96% 15px" required>
+					<input type="tel" name="Телефон" placeholder="Ваш номер телефона" class="input-modal-button input-form-and-price" style="background: rgb(100%, 100%, 100%, 0.16) url(img/icons/mail-black.svg) no-repeat 96% 15px" required>
+					<button class="btn btn-modal-button btn-form-and-price">Отправить заявку</button>
+				</form>
+			</div>
+		</div>
+	</section>
+	<!-- THE END FORM & PRICE -->
+
+	<!-- OUR WORKS -->
+	<section class="section-our_works" id="section-our_works">
+		<div class="cards-service our_works-container">
+			<div class="our_works">
+				<div class="row">
+					<div class="col-12 col-lg-6">
+						<h3 class="title-our_works">Наши работы</h3>
+						<p class="description-our_works">Компании, которые заказывали<br>у нас сайт</p>
+					</div>
+					<div class="col-12 col-lg-6">
+						<div class="works" id="works">
+							<a href="https://eranew-med.ru/?gclid=EAIaIQobChMImNG5uvuh4QIVQqmaCh3wSw9UEAAYAyAAEgJR8fD_BwE" target="_blank">
+								<div class="work-content">
+									<div class="work1">
+										<h4 class="title-work">Новая Эра</h4>
+										<p class="description-work">Стоматология</p>
+									</div>
+								</div>
+							</a>
+							<a href="https://nottabelle.com/ru/bears/" target="_blank">
+								<div class="work-content">
+									<div class="work2">
+										<h4 class="title-work">Notta Belle</h4>
+										<p class="description-work">Мишки из роз</p>
+									</div>
+								</div>
+							</a>
+							<a href="https://drovamigom.ru/" target="_blank">
+								<div class="work-content">
+									<div class="work3">
+										<h4 class="title-work">Букет Опт</h4>
+										<p class="description-work">Доставка цветов</p>
+									</div>
+								</div>
+							</a>
+							<a href="https://oxford-med.com.ua/?gclid=EAIaIQobChMI4M_x2P2h4QIVVKmaCh1ZhwGpEAMYASAAEgL6jfD_BwE" target="_blank">
+								<div class="work-content">
+									<div class="work4">
+										<h4 class="title-work">Oxford Medical</h4>
+										<p class="description-work">Клиника в Киеве</p>
+									</div>
+								</div>
+							</a>
+							<a href="http://sollo.spb.ru/" target="_blank">
+								<div class="work-content">
+									<div class="work5">
+										<h4 class="title-work">Sollo</h4>
+										<p class="description-work">Образовательный<br>центр</p>
+									</div>
+								</div>
+							</a>
+							<a href="http://tiresshift.ru/" target="_blank">
+								<div class="work-content">
+									<div class="work6">
+										<h4 class="title-work">Tiresshift</h4>
+										<p class="description-work">Шиномонтаж</p>
+									</div>
+								</div>
+							</a>
+							<a href="https://benzo-nn.ru/g3727171-gazonokosilki" target="_blank">
+								<div class="work-content">
+									<div class="work7">
+										<h4 class="title-work">Бензо-НН</h4>
+										<p class="description-work">Техника для леса,<br>дома и сада</p>
+									</div>
+								</div>
+							</a>
+							<a href="https://dommebeli93.ru/" target="_blank">
+								<div class="work-content">
+									<div class="work8">
+										<h4 class="title-work">Дом мебели</h4>
+										<p class="description-work">Магазин мебели</p>
+									</div>
+								</div>
+							</a>
+							<a href="https://drovamigom.ru/" target="_blank">
+								<div class="work-content">
+									<div class="work9">
+										<h4 class="title-work">Букет Опт</h4>
+										<p class="description-work">Доставка цветов</p>
+									</div>
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="arrow-down_works"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container-niche">
+		<span class="dark-line"></span>
+		<h3 class="title-advatages">Для каких ниш подходит собственный сайт</h3>
+		<div class="niches">
+			<div class="niche">
+				<?xml version="1.0" encoding="iso-8859-1"?><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><g><g><path d="M482.726,485.783l-22.65-132.603c-2.441-14.287-12.576-25.764-26.453-29.95l-61.092-18.433c-1.265-14.934-7.388-29.023-17.578-40.175c-8.151-8.92-18.403-15.415-29.704-18.999c1.934-2.146,3.727-4.285,5.372-6.377c14.528-18.477,22.306-38.833,24.286-52.724h4.713c12.258,0,22.231-9.972,22.231-22.231v-11.396c0-8.181-4.602-15.594-11.523-19.441V106.05c0-4.141-3.357-7.498-7.498-7.498s-7.497,3.356-7.497,7.498v30.764c-2.92,0.507-6.404,1.383-9.968,2.884c-0.365,0.133-0.72,0.287-1.056,0.472c-0.805,0.367-1.611,0.754-2.414,1.19V80.938c0-16.693-13.58-30.273-30.273-30.273h-20.695c-7.138,0-14.111,2.487-19.637,7.005l-2.031,1.66c-3.73,3.05-8.438,4.73-13.257,4.73c-4.819,0-9.528-1.68-13.258-4.73l-2.03-1.66c-5.526-4.517-12.499-7.005-19.637-7.005H200.38c-16.693,0-30.273,13.58-30.273,30.273v60.422c-0.803-0.436-1.609-0.823-2.414-1.19c-0.336-0.185-0.69-0.339-1.055-0.472c-3.564-1.501-7.049-2.377-9.968-2.884V59.025c0-24.278,19.752-44.03,44.03-44.03h110.601c24.279,0,44.03,19.752,44.03,44.03v11.786c0,4.141,3.357,7.498,7.497,7.498s7.498-3.356,7.498-7.498V59.025C370.326,26.479,343.847,0,311.301,0H200.7c-32.547,0-59.025,26.479-59.025,59.025v74.43c-6.921,3.847-11.523,11.259-11.523,19.441v11.396c0,12.259,9.973,22.231,22.231,22.231h4.713c1.979,13.891,9.758,34.247,24.286,52.724c1.643,2.09,3.435,4.227,5.367,6.371c-25.98,8.252-44.926,31.61-47.277,59.179L78.378,323.23c-13.877,4.186-24.013,15.663-26.453,29.95l-9.198,53.849c-0.697,4.082,2.047,7.955,6.128,8.652c4.08,0.699,7.955-2.046,8.653-6.128l9.198-53.849c1.476-8.644,7.608-15.586,16.003-18.118l56.505-17.049v14.831c-12.952,2.384-23.973,11.281-28.512,23.608c-1.205,3.272-1.954,6.698-2.226,10.182l-5.461,70.095c-0.412,5.28,1.415,10.538,5.01,14.423c3.595,3.886,8.694,6.116,13.989,6.116h9.348c4.141,0,7.498-3.356,7.498-7.498c0-4.142-3.357-7.497-7.498-7.497h-9.348c-1.129,0-2.215-0.474-2.982-1.304c-0.766-0.828-1.155-1.948-1.067-3.073l5.461-70.096c0.165-2.111,0.618-4.186,1.348-6.167c3.158-8.575,11.686-14.382,21.223-14.449l1.235-0.009c0.058-0.001,0.115-0.001,0.172-0.001c9.269,0,17.474,5.256,20.935,13.427c0.971,2.291,1.561,4.713,1.755,7.199l5.463,70.097c0.087,1.124-0.302,2.244-1.068,3.073c-0.766,0.828-1.853,1.303-2.982,1.303h-9.348c-4.141,0-7.498,3.356-7.498,7.497c0,4.141,3.357,7.498,7.498,7.498h9.348c5.295,0,10.395-2.229,13.989-6.116c3.596-3.887,5.423-9.144,5.011-14.422l-5.463-70.096c-0.32-4.102-1.295-8.101-2.898-11.884c-4.939-11.657-15.5-19.762-27.938-21.955v-19.306l25.774-7.777c2.345,4.939,6.992,15.612,16.197,38.619c9.277,23.214,20.808,52.969,31.867,81.895c0.079,0.243,0.17,0.48,0.272,0.712c7.38,19.311,14.539,38.225,20.662,54.541c1.098,2.926,3.895,4.864,7.02,4.864c3.125,0,5.922-1.938,7.02-4.864c6.122-16.316,13.281-35.23,20.662-54.541c0.103-0.232,0.193-0.47,0.272-0.712c11.051-28.909,22.576-58.645,31.849-81.852c9.217-23.037,13.868-33.719,16.214-38.662l25.774,7.777v44.285c-17.858,3.469-31.385,19.219-31.385,38.077c0,21.391,17.403,38.795,38.795,38.795c21.392,0,38.795-17.403,38.795-38.795c0-18.796-13.438-34.508-31.21-38.045v-39.792l56.506,17.049c8.395,2.532,14.526,9.474,16.003,18.118l22.65,132.603c0.376,2.199-0.209,4.349-1.648,6.054c-1.438,1.704-3.459,2.644-5.69,2.644H51.393c-2.231,0-4.251-0.939-5.69-2.644c-1.438-1.705-2.024-3.854-1.648-6.054l7.475-43.762c0.697-4.082-2.047-7.955-6.128-8.652c-4.08-0.7-7.955,2.047-8.653,6.128l-7.475,43.762c-1.115,6.532,0.696,13.183,4.968,18.248C38.516,509.096,44.767,512,51.393,512h409.214c6.626,0,12.878-2.904,17.151-7.969C482.03,498.966,483.841,492.315,482.726,485.783z M355.421,152.089c3.995-0.996,7.202-0.978,7.238-0.977c1.292,0.017,2.548-0.285,3.664-0.87c0.334,0.831,0.531,1.724,0.531,2.654v11.396c0,3.99-3.246,7.236-7.236,7.236h-4.197V152.089z M156.579,171.528L156.579,171.528h-4.197c-3.99,0-7.236-3.246-7.236-7.236v-11.396c0-0.93,0.198-1.823,0.531-2.653c1.115,0.585,2.371,0.887,3.664,0.869c0.057,0.01,3.255-0.008,7.238,0.981V171.528zM171.574,179.935v-19.698c2.272,0.681,4.757,0.588,7.051-0.369c3.935-1.642,6.477-5.455,6.477-9.716V80.938c0-8.424,6.854-15.278,15.278-15.278h20.695c3.688,0,7.291,1.285,10.146,3.619l2.03,1.66c6.401,5.234,14.48,8.115,22.749,8.115c8.269,0,16.348-2.882,22.749-8.115l2.03-1.66c2.854-2.334,6.458-3.619,10.146-3.619h20.695c8.424,0,15.278,6.854,15.278,15.278v69.215c0,4.26,2.542,8.074,6.477,9.716c1.314,0.548,2.69,0.814,4.054,0.814c1.017,0,2.026-0.149,2.997-0.439v19.691c0,10.947-7.568,32.205-21.594,50.043c-4.646,5.909-10.618,12.257-17.971,17.805c-0.233,0.156-0.456,0.325-0.669,0.505c-11.391,8.422-26.038,14.874-44.192,14.874s-32.801-6.452-44.193-14.875c-0.213-0.179-0.435-0.348-0.667-0.503c-7.353-5.549-13.325-11.897-17.972-17.806C179.143,212.141,171.574,190.882,171.574,179.935z M305.12,301.07L256,337.784l-49.12-36.714c4.871-6.191,7.6-14.138,7.6-21.23v-12.086c11.551,6.212,25.334,10.404,41.52,10.404s29.97-4.192,41.52-10.404v12.086C297.52,286.932,300.249,294.879,305.12,301.07z M194.367,292.701c-4.004-1.525-8.443-1.775-12.642-0.636c-0.184,0.043-0.364,0.092-0.539,0.144l-25.903,7.816c4.381-21.542,21.873-38.688,44.202-42.009v21.824C199.485,284.544,197.385,289.407,194.367,292.701z M214.716,352.889c-0.014-0.035-0.028-0.07-0.041-0.104c-0.38-0.961-0.755-1.909-1.127-2.846c-0.067-0.17-0.134-0.339-0.201-0.507c-0.364-0.917-0.725-1.827-1.081-2.722c-0.025-0.063-0.05-0.125-0.075-0.189c-1.111-2.793-2.182-5.472-3.212-8.039c-0.075-0.186-0.15-0.375-0.225-0.56c-0.296-0.736-0.587-1.461-0.876-2.177c-0.106-0.263-0.211-0.523-0.316-0.783c-0.28-0.694-0.558-1.384-0.832-2.059c-0.082-0.202-0.162-0.398-0.243-0.599c-0.497-1.226-0.983-2.421-1.457-3.586c-0.128-0.315-0.259-0.636-0.386-0.947c-0.186-0.454-0.367-0.896-0.549-1.341c-0.196-0.48-0.392-0.956-0.584-1.424c-0.072-0.175-0.147-0.36-0.219-0.534c-0.058-0.14-0.111-0.269-0.168-0.408c-0.866-2.104-1.689-4.087-2.47-5.952c-0.006-0.015-0.013-0.03-0.019-0.045c-0.416-0.993-0.823-1.963-1.214-2.887c-0.203-0.479-0.403-0.95-0.599-1.412l42.245,31.574l-17.652,7.499c-0.031,0.013-0.063,0.026-0.094,0.04l-7.37,3.131C215.533,354.955,215.124,353.919,214.716,352.889z M232.606,398.797c-1.481-3.843-2.973-7.708-4.468-11.569c-2.338-6.039-4.571-11.781-6.708-17.251l2.798-1.189l11.432,13.289L232.606,398.797zM256.145,459.735c-0.215-0.446-0.471-0.867-0.767-1.259c-3.388-8.955-7.688-20.286-12.447-32.753l7-38.325h12.138l7,38.325C264.082,438.784,259.603,450.594,256.145,459.735z M264.881,372.404h-17.762l-8.405-9.77L256,355.291l17.286,7.343L264.881,372.404z M283.862,387.228c-1.495,3.861-2.987,7.726-4.468,11.569l-3.054-16.721l11.432-13.289l2.798,1.189C288.433,375.446,286.2,381.189,283.862,387.228z M312.58,315.18c-0.371,0.876-0.757,1.795-1.15,2.733c-0.051,0.122-0.103,0.245-0.154,0.368c-0.389,0.93-0.785,1.88-1.195,2.869c-0.027,0.065-0.055,0.134-0.082,0.2c-0.354,0.853-0.717,1.733-1.086,2.63c-0.069,0.168-0.134,0.323-0.203,0.492c-0.082,0.201-0.17,0.414-0.253,0.617c-0.164,0.4-0.331,0.808-0.499,1.216c-0.206,0.503-0.411,1.004-0.622,1.519c-0.067,0.164-0.136,0.335-0.204,0.5c-0.522,1.279-1.058,2.597-1.606,3.951c-0.086,0.212-0.171,0.42-0.257,0.635c-0.271,0.669-0.547,1.352-0.824,2.039c-0.108,0.269-0.217,0.537-0.326,0.809c-0.286,0.709-0.575,1.427-0.867,2.155c-0.082,0.203-0.165,0.411-0.247,0.615c-1.017,2.532-2.072,5.173-3.167,7.925c-0.036,0.091-0.072,0.18-0.108,0.272c-0.354,0.889-0.712,1.793-1.074,2.704c-0.067,0.17-0.135,0.34-0.203,0.511c-0.374,0.942-0.751,1.894-1.133,2.861c-0.007,0.018-0.014,0.036-0.021,0.053c-0.412,1.042-0.826,2.09-1.248,3.16l-7.377-3.134c-0.026-0.011-0.052-0.022-0.077-0.033l-17.662-7.503l42.245-31.574C312.982,314.23,312.782,314.7,312.58,315.18z M330.814,292.21c-0.001,0-0.003-0.001-0.004-0.001c-0.006-0.002-0.013-0.003-0.019-0.006c-4.35-1.305-8.99-1.089-13.157,0.498c-3.019-3.294-5.118-8.157-5.118-12.861v-21.835c22.469,3.312,39.908,20.297,44.232,42.029L330.814,292.21z M389.001,398.375c0,13.124-10.677,23.8-23.8,23.8s-23.8-10.676-23.8-23.8c0-13.124,10.677-23.8,23.8-23.8S389.001,385.251,389.001,398.375z"/></g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
+				<h5 class="title-niche">Медицина</h5>
+			</div>
+			<div class="niche">
+				<svg height="483pt" viewBox="0 -29 483.1994 483" width="483pt" xmlns="http://www.w3.org/2000/svg"><path d="m482.121094 302.898438c-3.351563-12.214844-13.59375-21.304688-26.121094-23.183594v-183.613282h16c4.417969 0 8-3.582031 8-8v-80c0-4.421874-3.582031-8-8-8h-352c-4.417969 0-8 3.578126-8 8v80c0 4.417969 3.582031 8 8 8h16v160h-8c-19.855469-.046874-39.304688 5.644532-56 16.390626v-40.390626c0-4.421874-3.582031-8-8-8h-56c-4.417969 0-8 3.578126-8 8v184c0 4.417969 3.582031 8 8 8h56c4.417969 0 8-3.582031 8-8v-40.386718c16.699219 10.738281 36.144531 16.429687 56 16.386718h131.359375c9.101563-.015624 18.160156-1.210937 26.953125-3.554687l173.207031-46.398437c17.042969-4.644532 27.140625-22.175782 22.601563-39.25zm-354.121094-286.796876h336v64h-336zm24 80h288v184.988282l-92.847656 24.898437c-3.824219-9.117187-11.625-15.964843-21.160156-18.578125l-107.792969-28.910156c-6.070313-1.597656-12.320313-2.40625-18.597657-2.398438h-47.601562zm-96 312h-40v-168h40zm399.367188-81.410156-173.175782 46.398438c-7.449218 1.988281-15.121094 3-22.832031 3.011718h-131.359375c-19.046875.042969-37.589844-6.136718-52.800781-17.601562l-3.199219-2.398438v-64l3.199219-2.402343c15.210937-11.464844 33.753906-17.648438 52.800781-17.597657h71.601562c4.886719-.003906 9.757813.628907 14.488282 1.878907l107.757812 28.886719c6.367188 1.753906 11.027344 7.210937 11.753906 13.777343.085938.328125.191407.652344.320313.96875-.09375.34375-.164063.691407-.210937 1.046875.007812 1.300782-.167969 2.597656-.527344 3.847656-1.882813 6.972657-8.199219 11.820313-15.421875 11.832032-1.410157.011718-2.808594-.167969-4.167969-.527344l-68-18.234375c-2.789062-.828125-5.808594-.078125-7.886719 1.960937-2.074219 2.039063-2.882812 5.042969-2.105469 7.847657.777344 2.800781 3.015626 4.964843 5.847657 5.640625l68 18.242187c2.714843.714844 5.515625 1.074219 8.328125 1.070313 14.382812-.007813 26.988281-9.628906 30.789062-23.503906.445313-1.605469.746094-3.246094.90625-4.902344l97.527344-26.152344c.695312-.175781 1.449219-.355469 2.160156-.472656 7.964844-1.027344 15.453125 4.007812 17.511719 11.765625.359375 1.351562.539063 2.746093.527344 4.144531.011719 7.242188-4.839844 13.585938-11.832031 15.472656zm0 0"/><path d="m256 128.101562h80c4.417969 0 8-3.582031 8-8 0-4.421874-3.582031-8-8-8h-80c-4.417969 0-8 3.578126-8 8 0 4.417969 3.582031 8 8 8zm0 0"/></svg>
+				<h5 class="title-niche">Продажа товаров</h5>
+			</div>
+			<div class="niche">
+				<?xml version="1.0" encoding="iso-8859-1"?><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"viewBox="0 0 512.001 512.001" style="enable-background:new 0 0 512.001 512.001;" xml:space="preserve"><g><g><path d="M375.069,141.931c-1.859-1.86-4.439-2.93-7.069-2.93s-5.21,1.07-7.07,2.93c-1.86,1.86-2.93,4.43-2.93,7.07c0,2.63,1.069,5.21,2.93,7.07c1.861,1.86,4.44,2.93,7.07,2.93s5.21-1.07,7.069-2.93c1.86-1.86,2.931-4.44,2.931-7.07S376.93,143.791,375.069,141.931z"/></g></g><g><g><path d="M150,282.001H70c-5.522,0-10,4.477-10,10v80c0,5.523,4.478,10,10,10h80c5.522,0,10-4.477,10-10v-80C160,286.478,155.523,282.001,150,282.001z M140,362.001H80v-60h60V362.001z"/></g></g><g><g><path d="M505.827,209.762c-3.737-1.549-8.039-0.691-10.898,2.167L393.031,313.827c-0.001,0.002-0.003,0.003-0.005,0.005s-0.003,0.003-0.004,0.005L274.238,432.621c-0.002,0.002-0.003,0.003-0.005,0.005s-0.003,0.003-0.005,0.005l-62.299,62.299c-2.859,2.86-3.715,7.162-2.168,10.898c1.548,3.737,5.194,6.173,9.239,6.173h283c5.522,0,10-4.477,10-10v-283C512,214.957,509.564,211.31,505.827,209.762z M492,492.001H243.143l38.161-38.161l9.546,9.546c1.953,1.953,4.512,2.929,7.071,2.929s5.118-0.976,7.071-2.929c3.905-3.905,3.905-10.237,0-14.143l-9.546-9.546l25.456-25.456l9.545,9.545c1.953,1.953,4.512,2.929,7.071,2.929s5.118-0.977,7.071-2.929c3.905-3.905,3.905-10.237,0-14.142l-9.546-9.546l25.456-25.456l9.546,9.546c1.953,1.953,4.512,2.929,7.071,2.929s5.118-0.976,7.071-2.929c3.905-3.905,3.905-10.237,0-14.143l-9.546-9.546l25.455-25.455l9.546,9.546c1.953,1.953,4.512,2.929,7.071,2.929s5.118-0.976,7.071-2.929c3.905-3.905,3.905-10.237,0-14.143l-9.546-9.546l25.456-25.456l9.545,9.545c1.953,1.953,4.512,2.929,7.071,2.929c2.559,0,5.118-0.977,7.071-2.929c3.905-3.905,3.905-10.237,0-14.142l-9.546-9.546L492,243.143V492.001z"/></g></g><g><g><path d="M455.827,330.473c-3.737-1.549-8.039-0.692-10.898,2.167L332.64,444.93c-2.859,2.86-3.716,7.161-2.168,10.898c1.548,3.737,5.194,6.173,9.239,6.173H452c5.522,0,10-4.477,10-10V339.712C462,335.668,459.564,332.021,455.827,330.473zM442,442.001h-78.146L442,363.854V442.001z"/></g></g><g><g><path d="M463.06,149.261c-2.753-2.752-6.851-3.658-10.51-2.319l-68.281,25.005c-1.365,0.5-2.604,1.291-3.633,2.319l-19.199,19.199L236.071,68.098c-1.876-1.875-4.419-2.929-7.071-2.929s-5.196,1.054-7.071,2.929L71.026,219.001H34.143L229,24.143l106.929,106.929c3.906,3.905,10.236,3.905,14.143,0c3.905-3.905,3.905-10.237,0-14.143l-114-114c-3.906-3.905-10.236-3.905-14.143,0l-219,219c-2.859,2.86-3.715,7.161-2.168,10.898c1.548,3.738,5.194,6.174,9.239,6.174h10v263c0,5.523,4.478,10,10,10h158.986c5.522,0,10-4.477,10-10s-4.478-10-10-10H40v-253h35.168c2.652,0,5.195-1.054,7.071-2.929L229,89.311l118.294,118.295L199,355.901v-89.9h70c5.522,0,10-4.477,10-10c0-5.523-4.478-10-10-10h-80c-5.522,0-10,4.477-10,10v116c0,1.167,0.21,2.281,0.577,3.322l-8.959,8.959c-15.83,15.83-15.83,41.588,0,57.418c7.916,7.916,18.311,11.874,28.709,11.873c10.396,0,20.795-3.958,28.709-11.872l84.332-84.332c3.905-3.905,3.905-10.237,0-14.142c-3.905-3.905-10.235-3.905-14.143,0l-63.892,63.892L205.2,377.986l182.707-182.707l29.133,29.133l-69.815,69.816c-3.905,3.905-3.905,10.237,0,14.142c3.906,3.905,10.236,3.905,14.143,0l76.686-76.686c1.027-1.028,1.819-2.268,2.318-3.632l25.006-68.281C466.717,156.115,465.813,152.014,463.06,149.261z M220.192,421.26l-6.298,6.298c-3.891,3.891-9.063,6.034-14.566,6.034s-10.676-2.143-14.566-6.034c-3.892-3.891-6.034-9.064-6.034-14.566s2.141-10.676,6.033-14.567l6.298-6.298L220.192,421.26zM427.086,206.171l-20.938-20.938l33.038-12.099L427.086,206.171z"/></g></g><g><g><path d="M336.689,318.901c-1.859-1.86-4.439-2.93-7.069-2.93s-5.21,1.07-7.07,2.93c-1.86,1.87-2.93,4.44-2.93,7.07c0,2.64,1.069,5.21,2.93,7.08c1.86,1.86,4.43,2.92,7.07,2.92c2.63,0,5.21-1.06,7.069-2.92c1.86-1.87,2.931-4.45,2.931-7.08C339.62,323.341,338.55,320.771,336.689,318.901z"/></g></g><g><g><path d="M229,151.001c-20.953,0-38,17.047-38,38s17.047,38,38,38s38-17.047,38-38S249.953,151.001,229,151.001z M229,207.001c-9.925,0-18-8.074-18-18c0-9.925,8.075-18,18-18s18,8.075,18,18S238.925,207.001,229,207.001z"/></g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
+				<h5 class="title-niche">Ремонт и<br>строительство</h5>
+			</div>
+			<div class="niche">
+				<?xml version="1.0" encoding="iso-8859-1"?><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"viewBox="0 0 474.199 474.199" style="enable-background:new 0 0 474.199 474.199;" xml:space="preserve"><g><g><path d="M471.952,187.434c-5.925-14.918-22.822-22.208-37.74-16.283c-0.767,0.305-1.522,0.642-2.26,1.011L410.4,182.954l-44-58.656c-0.544-0.725-1.206-1.353-1.96-1.856l-48-32c-0.964-0.643-2.056-1.069-3.2-1.248l-104-16c-2.514-0.387-5.062,0.445-6.864,2.24l-59.64,59.416c-10.016,9.979-10.047,26.188-0.068,36.204c0.023,0.023,0.045,0.046,0.068,0.068c9.553,9.489,24.811,9.992,34.968,1.152l48.328-42.288l42.88,12.256l-35.888,78.856l-55.056,78.648l-65.44,58.888c-11.918,10.237-13.281,28.198-3.044,40.116c10.237,11.918,28.198,13.281,40.116,3.044l72.096-59.04l43.096-43.096l54.656,41l-12.16,84.864c-1.139,7.936,1.226,15.976,6.48,22.032c5.397,6.173,13.233,9.663,21.432,9.544c13.583,0.019,25.257-9.632,27.792-22.976l20.912-111.552c0.52-2.779-0.466-5.625-2.592-7.488l-59.92-52.384l25.504-70.128l47.088,53.816c2.304,2.63,6.049,3.46,9.248,2.048l54.016-23.888C471.449,218.255,477.991,201.745,471.952,187.434zM450.776,209.898l-48.632,21.504l-52.128-59.576c-2.911-3.324-7.965-3.658-11.289-0.747c-1.014,0.888-1.786,2.017-2.247,3.283l-32,88c-1.128,3.102-0.235,6.578,2.248,8.752l60.568,53L347.2,431.178c-1.199,5.922-6.497,10.114-12.536,9.92c-6.442-0.002-11.663-5.225-11.661-11.667c0-0.55,0.039-1.1,0.117-1.645l12.8-89.552c0.415-2.893-0.781-5.783-3.12-7.536l-64-48c-3.185-2.388-7.641-2.071-10.456,0.744l-47.408,47.464l-71.504,58.504c-5.287,4.381-13.124,3.646-17.505-1.641c-4.273-5.157-3.693-12.773,1.313-17.223l66.112-59.504c0.452-0.405,0.854-0.861,1.2-1.36l56-80c0.283-0.4,0.526-0.826,0.728-1.272l40-88c1.828-4.023,0.049-8.765-3.974-10.593c-0.358-0.163-0.728-0.299-1.106-0.407l-56-16c-2.613-0.757-5.431-0.127-7.472,1.672l-51.6,45.152c-3.879,3.625-9.963,3.419-13.588-0.46c-3.625-3.879-3.419-9.963,0.46-13.588l56.8-56.568l98.248,15.12l45.352,30.256l47.2,62.904c2.318,3.094,6.517,4.087,9.976,2.36l27.528-13.8c3.238-1.63,7.012-1.824,10.4-0.536c3.626,1.416,6.459,4.334,7.768,8C459.762,200.128,456.89,207.191,450.776,209.898z"/></g></g><g><g><rect x="48" y="65.098" width="104" height="16"/></g></g><g><g><rect x="16" y="65.098" width="16" height="16"/></g></g><g><g><rect x="80" y="129.098" width="16" height="16"/></g></g><g><g><rect y="129.098" width="64" height="16"/></g></g><g><g><rect x="40" y="193.098" width="80" height="16"/></g></g><g><g><rect x="16" y="257.098" width="136" height="16"/></g></g><g><g><rect x="32" y="321.098" width="64" height="16"/></g></g><g><g><rect y="321.098" width="16" height="16"/></g></g><g><g><rect x="16" y="385.098" width="56" height="16"/></g></g><g><g><path d="M400,17.098h-36c-24.301,0-44,19.699-44,44s19.699,44,44,44s44-19.699,44-44v-36C408,20.68,404.418,17.098,400,17.098zM392,61.098c0.06,15.402-12.376,27.937-27.778,27.997c-8.637,0.034-16.802-3.936-22.11-10.749C355.429,65.182,373.279,57.613,392,57.194V61.098z M392,41.194c-20.491,0.373-40.228,7.795-55.888,21.016c0-0.376-0.112-0.728-0.112-1.112c0-15.464,12.536-28,28-28h28V41.194z"/></g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
+				<h5 class="title-niche">Спорт</h5>
+			</div>
+			<div class="niche">
+				<svg height="480pt" viewBox="0 0 480 480" width="480pt" xmlns="http://www.w3.org/2000/svg"><path d="m88 448c2.425781 0 4.722656-1.105469 6.238281-3 3.363281-4.160156 81.761719-102.535156 81.761719-149 0-48.601562-39.398438-88-88-88s-88 39.398438-88 88c0 46.464844 78.398438 144.800781 81.761719 149 1.515625 1.894531 3.8125 3 6.238281 3zm0-224c39.746094.042969 71.957031 32.253906 72 72 0 31.039062-47.289062 98.910156-72 131.03125-24.710938-32.109375-72-99.976562-72-131.03125.042969-39.746094 32.253906-71.957031 72-72zm0 0"/><path d="m120 288c0-17.671875-14.328125-32-32-32s-32 14.328125-32 32 14.328125 32 32 32 32-14.328125 32-32zm-48 0c0-8.835938 7.164062-16 16-16s16 7.164062 16 16-7.164062 16-16 16-16-7.164062-16-16zm0 0"/><path d="m416 168c2.332031 0 4.542969-1.015625 6.0625-2.785156 5.9375-6.886719 57.9375-68.269532 57.9375-101.214844 0-35.347656-28.652344-64-64-64s-64 28.652344-64 64c0 32.945312 52 94.328125 57.9375 101.214844 1.519531 1.769531 3.730469 2.785156 6.0625 2.785156zm0-152c26.5.027344 47.972656 21.5 48 48 0 20.273438-30.542969 62.046875-48 83.511719-17.464844-21.464844-48-63.199219-48-83.511719.027344-26.5 21.5-47.972656 48-48zm0 0"/><path d="m440 56c0-13.253906-10.746094-24-24-24s-24 10.746094-24 24 10.746094 24 24 24 24-10.746094 24-24zm-32 0c0-4.417969 3.582031-8 8-8s8 3.582031 8 8-3.582031 8-8 8-8-3.582031-8-8zm0 0"/><path d="m408 200h8c4.417969 0 8-3.582031 8-8s-3.582031-8-8-8h-8c-4.417969 0-8 3.582031-8 8s3.582031 8 8 8zm0 0"/><path d="m304 248h16.175781c4.417969 0 8-3.582031 8-8s-3.582031-8-8-8h-16.304687c-2.113282.003906-4.140625.851562-5.628906 2.351562-1.488282 1.5-2.320313 3.535157-2.304688 5.648438.027344 4.429688 3.632812 8.003906 8.0625 8zm0 0"/><path d="m393.6875 240c0 4.417969 3.582031 8 8 8h16.296875c4.417969 0 8-3.582031 8-8s-3.582031-8-8-8h-16.296875c-4.417969 0-8 3.582031-8 8zm0 0"/><path d="m359.097656 200h16.300782c4.417968 0 8-3.582031 8-8s-3.582032-8-8-8h-16.300782c-4.421875 0-8 3.582031-8 8s3.578125 8 8 8zm0 0"/><path d="m145.71875 464h-16.304688c-4.417968 0-8 3.582031-8 8s3.582032 8 8 8h16.304688c4.417969 0 8-3.582031 8-8s-3.582031-8-8-8zm0 0"/><path d="m280.503906 228.960938c.558594 0 1.113282-.058594 1.65625-.175782 4.320313-.910156 7.085938-5.144531 6.183594-9.464844-.226562-1.09375-.339844-2.203124-.34375-3.320312-.003906-2.53125.59375-5.023438 1.742188-7.28125 2.003906-3.9375.4375-8.753906-3.503907-10.757812-3.9375-2.003907-8.753906-.4375-10.757812 3.503906-3.316407 6.511718-4.300781 13.96875-2.792969 21.121094.769531 3.703124 4.03125 6.367187 7.816406 6.375zm0 0"/><path d="m352.800781 248h16.304688c4.417969 0 8-3.582031 8-8s-3.582031-8-8-8h-16.304688c-4.417969 0-8 3.582031-8 8s3.582031 8 8 8zm0 0"/><path d="m310.191406 200h16.304688c4.417968 0 8-3.582031 8-8s-3.582032-8-8-8h-16.304688c-4.417968 0-8 3.582031-8 8s3.582032 8 8 8zm0 0"/><path d="m231.136719 339.015625c.632812.164063 1.289062.242187 1.941406.242187 3.671875-.007812 6.867187-2.507812 7.753906-6.066406 1.035157-4.113281 2.984375-7.941406 5.703125-11.199218 1.921875-2.179688 2.507813-5.226563 1.539063-7.960938-.96875-2.738281-3.347657-4.734375-6.210938-5.21875-2.859375-.480469-5.761719.625-7.574219 2.890625-4.285156 5.113281-7.355468 11.128906-8.976562 17.601563-.519531 2.058593-.195312 4.242187.898438 6.0625 1.089843 1.824218 2.863281 3.136718 4.925781 3.648437zm0 0"/><path d="m389.183594 463.664062c-1.71875.226563-3.449219.339844-5.183594.335938h-10.070312c-4.421876 0-8 3.582031-8 8s3.578124 8 8 8h10.070312c2.40625 0 4.8125-.15625 7.199219-.464844 4.382812-.566406 7.476562-4.578125 6.914062-8.960937-.566406-4.382813-4.578125-7.476563-8.960937-6.910157zm0 0"/><path d="m400.328125 370.398438c-5.292969-1.601563-10.796875-2.410157-16.328125-2.398438h-2.097656c-4.417969 0-8 3.582031-8 8s3.582031 8 8 8h2.097656c3.953125 0 7.886719.582031 11.671875 1.726562.753906.234376 1.539063.351563 2.328125.351563 3.964844.003906 7.335938-2.898437 7.921875-6.820313.582031-3.925781-1.796875-7.683593-5.59375-8.832031zm0 0"/><path d="m383.265625 312c4.417969 0 8-3.582031 8-8s-3.582031-8-8-8h-16.296875c-4.417969 0-8 3.582031-8 8s3.582031 8 8 8zm0 0"/><path d="m431.070312 436.390625c-4.023437-1.8125-8.757812-.023437-10.574218 4-1.863282 4.136719-4.421875 7.925781-7.558594 11.203125-2.054688 2.050781-2.835938 5.050781-2.042969 7.839844.792969 2.792968 3.035157 4.9375 5.855469 5.601562 2.824219.667969 5.789062-.246094 7.746094-2.386718 4.398437-4.585938 7.984375-9.894532 10.59375-15.6875 1.804687-4.027344.007812-8.757813-4.019532-10.570313zm0 0"/><path d="m472.96875 273.40625c-2.035156-.601562-4.226562-.371094-6.09375.644531-1.863281 1.015625-3.25 2.730469-3.851562 4.765625-1.175782 3.921875-3.324219 7.484375-6.246094 10.351563-3.160156 3.09375-3.214844 8.160156-.121094 11.320312 3.09375 3.160157 8.160156 3.210938 11.320312.121094 4.875-4.777344 8.453126-10.714844 10.398438-17.257813.605469-2.035156.371094-4.226562-.640625-6.09375-1.015625-1.863281-2.730469-3.25-4.765625-3.851562zm0 0"/><path d="m463.839844 258.640625c3.160156.003906 6.023437-1.855469 7.3125-4.738281 1.285156-2.882813.757812-6.253906-1.351563-8.605469-4.566406-5.078125-10.347656-8.910156-16.800781-11.136719-4.179688-1.4375-8.730469.789063-10.167969 4.96875-1.4375 4.179688.789063 8.730469 4.96875 10.167969 3.875 1.332031 7.34375 3.632813 10.078125 6.6875 1.519532 1.691406 3.6875 2.65625 5.960938 2.65625zm0 0"/><path d="m349.304688 368h-16.296876c-4.417968 0-8 3.582031-8 8s3.582032 8 8 8h16.296876c4.417968 0 8-3.582031 8-8s-3.582032-8-8-8zm0 0"/><path d="m432.167969 296h-16.304688c-4.417969 0-8 3.582031-8 8s3.582031 8 8 8h16.304688c4.417969 0 8-3.582031 8-8s-3.582031-8-8-8zm0 0"/><path d="m194.617188 464h-16.296876c-4.417968 0-8 3.582031-8 8s3.582032 8 8 8h16.296876c4.417968 0 8-3.582031 8-8s-3.582032-8-8-8zm0 0"/><path d="m430.34375 392.558594c-2.496094-3.652344-7.480469-4.589844-11.136719-2.09375-3.652343 2.496094-4.589843 7.480468-2.09375 11.136718 2.554688 3.742188 4.449219 7.894532 5.597657 12.277344.625 2.863282 2.765624 5.15625 5.582031 5.976563 2.8125.820312 5.847656.035156 7.914062-2.046875 2.0625-2.078125 2.824219-5.121094 1.984375-7.929688-1.601562-6.179687-4.253906-12.039062-7.847656-17.320312zm0 0"/><path d="m255.617188 365.128906c-3.800782-1.894531-7.125-4.613281-9.738282-7.960937-2.710937-3.492188-7.738281-4.121094-11.226562-1.410157-3.492188 2.707032-4.121094 7.734376-1.414063 11.226563 4.097657 5.257813 9.324219 9.527344 15.296875 12.488281 3.941406 1.839844 8.632813.191406 10.558594-3.710937 1.925781-3.898438.378906-8.625-3.476562-10.632813zm0 0"/><path d="m243.519531 464h-16.320312c-4.417969 0-8 3.582031-8 8s3.582031 8 8 8h16.320312c4.417969 0 8-3.582031 8-8s-3.582031-8-8-8zm0 0"/><path d="m341.328125 464h-16.296875c-4.417969 0-8 3.582031-8 8s3.582031 8 8 8h16.296875c4.417969 0 8-3.582031 8-8s-3.582031-8-8-8zm0 0"/><path d="m285.464844 312c4.417968 0 8-3.582031 8-8s-3.582032-8-8-8h-16.296875c-4.417969 0-8 3.582031-8 8s3.582031 8 8 8zm0 0"/><path d="m334.398438 312c4.417968 0 8-3.582031 8-8s-3.582032-8-8-8h-16.335938c-4.417969 0-8 3.582031-8 8s3.582031 8 8 8zm0 0"/><path d="m300.40625 368h-16.300781c-4.417969 0-8 3.582031-8 8s3.582031 8 8 8h16.300781c4.421875 0 8-3.582031 8-8s-3.578125-8-8-8zm0 0"/><path d="m292.433594 464h-16.304688c-4.417968 0-8 3.582031-8 8s3.582032 8 8 8h16.304688c4.417968 0 8-3.582031 8-8s-3.582032-8-8-8zm0 0"/><path d="m96 464h-8c-4.417969 0-8 3.582031-8 8s3.582031 8 8 8h8c4.417969 0 8-3.582031 8-8s-3.582031-8-8-8zm0 0"/></svg>
+				<h5 class="title-niche">Туризм<br>и путешествия</h5>
+			</div>
+			<div class="niche">
+				<?xml version="1.0" encoding="iso-8859-1"?><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"viewBox="0 0 496 496" style="enable-background:new 0 0 496 496;" xml:space="preserve"><g><g><path d="M402.524,432l-18.52-55.568c-6.472-19.4-22.984-33.72-43.112-37.384l-53.464-9.728v-4.144c9.304-5.4,17.4-12.624,23.848-21.176h16.152c13.232,0,24-10.768,24-24v-96c0-57.344-46.656-104-104-104s-104,46.656-104,104v56c0,15.424,10.968,28.328,25.512,31.336c4.488,22.992,18.856,42.448,38.488,53.84v4.144l-53.472,9.728c-20.12,3.664-36.64,17.984-43.104,37.384l-3.2,9.608l-27.248-27.248c-3.12-3.12-3.12-8.2,0-11.32l31.6-31.592l-59.312-59.312L16.98,292.28c-10.576,10.576-16.4,24.64-16.4,39.6s5.824,29.016,16.4,39.592l108.12,108.12C135.676,490.168,149.74,496,164.7,496c14.96,0,29.016-5.832,39.344-16.168l38.968-35.704L230.86,432H402.524z M335.428,280c0,4.416-3.592,8-8,8H320.7c2.32-5.288,4.08-10.864,5.216-16.664c3.424-0.712,6.576-2.072,9.512-3.784V280z M327.428,253.776v-27.552c4.76,2.776,8,7.88,8,13.776S332.188,251,327.428,253.776z M167.428,253.776c-4.76-2.776-8-7.88-8-13.776s3.24-11,8-13.776V253.776z M167.428,200v9.136c-2.848,0.744-5.52,1.864-8,3.312V184c0-48.52,39.48-88,88-88s88,39.48,88,88v28.448c-2.48-1.448-5.152-2.576-8-3.312V200h-8c-23.656,0-45.896-9.216-62.632-25.944l-9.368-9.368l-9.368,9.368C221.324,190.784,199.084,200,175.428,200H167.428z M183.428,256v-40.304c24.024-1.808,46.424-11.72,64-28.432c17.576,16.712,39.976,26.632,64,28.432V256c0,11.664-3.184,22.576-8.656,32h-55.344v16h42.192c-11.28,9.928-26.024,16-42.192,16C212.14,320,183.428,291.288,183.428,256z M271.428,332.312v0.376l-24,24l-24-24v-0.376c7.584,2.384,15.64,3.688,24,3.688S263.844,334.696,271.428,332.312z M126.02,381.488c4.616-13.856,16.416-24.088,30.792-26.712l55.92-10.16l34.696,34.696l34.688-34.688l55.912,10.16c14.376,2.624,26.176,12.848,30.792,26.712L380.332,416H214.86l-31.16-31.16l-34.624,31.32c-3.016,3.032-8.288,3.032-11.312,0l-17.472-17.472L126.02,381.488z M52.684,279.192l36.688,36.688l-8.688,8.688L43.996,287.88L52.684,279.192z M192.964,468.296c-7.552,7.536-17.6,11.704-28.28,11.704c-10.68,0-20.728-4.168-28.288-11.72L28.276,360.168c-7.552-7.552-11.712-17.6-11.712-28.28c0-10.688,4.16-20.736,11.712-28.288l4.4-4.4l36.688,36.688l-0.288,0.288c-9.352,9.36-9.352,24.584,0,33.944l57.368,57.368c4.536,4.528,10.56,7.032,16.976,7.032s12.44-2.496,16.68-6.752l0.6-0.536l36.856,36.856L192.964,468.296z M209.364,453.256l-36.776-36.776l10.568-9.552l36.712,36.712L209.364,453.256z"/></g></g><g><g><path d="M471.428,0h-112c-13.232,0-24,10.768-24,24v64c0,13.232,10.768,24,24,24h21.368l-8.272,48.248l77.2-48.248h21.704c13.232,0,24-10.768,24-24V24C495.428,10.768,484.66,0,471.428,0z M479.428,88c0,4.408-3.592,8-8,8h-26.296l-50.808,31.752L399.772,96h-40.344c-4.408,0-8-3.592-8-8V24c0-4.408,3.592-8,8-8h112c4.408,0,8,3.592,8,8V88z"/></g></g><g><g><rect x="367.428" y="32" width="96" height="16"/></g></g><g><g><rect x="367.428" y="64" width="64" height="16"/></g></g><g><g><rect x="447.428" y="64" width="16" height="16"/></g></g><g><g><path d="M247.428,24C142.9,24,52.86,96.304,29.452,197.16l-15.16-25.272l-13.72,8.232l28.12,46.856l46.856-28.12l-8.232-13.72l-21.68,13.008C68.308,105.88,151.276,40,247.428,40c21.016,0,41.752,3.12,61.632,9.28L313.796,34C292.38,27.36,270.052,24,247.428,24z"/></g></g><g><g><path d="M491.54,177.136l-46.856-28.12l-28.112,46.864l13.72,8.232l14-23.336c7.368,21.56,11.136,44.112,11.136,67.224c0,47.576-16.48,94.088-46.392,130.96l12.424,10.08c32.224-39.712,49.968-89.808,49.968-141.04c0-24.472-3.944-48.368-11.632-71.248l23.512,14.104L491.54,177.136z"/></g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
+				<h5 class="title-niche">Частные услуги</h5>
+			</div>
+			<div class="niche">
+				<?xml version="1.0" encoding="iso-8859-1"?><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"viewBox="0 0 54.953 54.953" style="enable-background:new 0 0 54.953 54.953;" xml:space="preserve"><g><circle cx="45.021" cy="25.976" r="1"/><circle cx="9.021" cy="25.976" r="1"/><circle cx="12.021" cy="28.976" r="1"/><circle cx="18.021" cy="28.976" r="1"/><circle cx="15.021" cy="31.976" r="1"/><circle cx="21.021" cy="31.976" r="1"/><circle cx="24.021" cy="34.976" r="1"/><circle cx="30.021" cy="34.976" r="1"/><circle cx="33.021" cy="31.976" r="1"/><circle cx="27.021" cy="37.976" r="1"/><circle cx="36.021" cy="28.976" r="1"/><circle cx="42.021" cy="28.976" r="1"/><circle cx="39.021" cy="31.976" r="1"/><path d="M45.559,32.796l9.394-5.367l-9.656-5.483l9.656-5.517L27.477,0.826L0,16.429l9.656,5.517L0,27.429l9.656,5.517L0,38.429l27.477,15.698l27.477-15.698l-9.656-5.483l0.071-0.041C45.439,32.879,45.497,32.837,45.559,32.796z M27.477,3.125l23.436,13.309l-7.637,4.364l0,0l-15.798,9.026L4.041,16.434L27.477,3.125z M11.129,23.409c0.162,0.333,0.497,0.567,0.892,0.567c0.27,0,0.512-0.109,0.692-0.283l2.262,1.292c-0.53,0.025-0.954,0.455-0.954,0.991c0,0.552,0.448,1,1,1s1-0.448,1-1c0-0.173-0.055-0.327-0.132-0.469l10.33,5.902c-0.116,0.163-0.198,0.352-0.198,0.567c0,0.552,0.448,1,1,1s1-0.448,1-1c0-0.051-0.021-0.094-0.029-0.143l10.052-5.743c0.059,0.496,0.465,0.885,0.977,0.885c0.552,0,1-0.448,1-1c0-0.325-0.165-0.601-0.406-0.783l2.202-1.258c0.068,0.015,0.132,0.041,0.204,0.041c0.444,0,0.807-0.294,0.938-0.694l0.32-0.183l7.634,4.335l-1.983,1.133c-0.157-0.347-0.503-0.591-0.908-0.591c-0.552,0-1,0.448-1,1c0,0.216,0.083,0.405,0.199,0.568l-3.945,2.254l0,0l-6.388,3.65c0.078-0.142,0.134-0.298,0.134-0.472c0-0.552-0.448-1-1-1s-1,0.448-1,1c0,0.537,0.426,0.967,0.957,0.991l-2.263,1.293c-0.18-0.174-0.423-0.284-0.694-0.284c-0.552,0-1,0.448-1,1c0,0.08,0.028,0.151,0.046,0.226l-4.59,2.622l-5.517-3.152c-0.13-0.401-0.494-0.696-0.939-0.696c-0.073,0-0.138,0.027-0.206,0.042l-2.201-1.257c0.241-0.183,0.407-0.458,0.407-0.784c0-0.552-0.448-1-1-1c-0.512,0-0.919,0.391-0.977,0.887L6.991,29.12c0.007-0.049,0.029-0.093,0.029-0.144c0-0.552-0.448-1-1-1c-0.239,0-0.449,0.095-0.621,0.235l-1.359-0.776L11.129,23.409zM50.912,38.434l-23.436,13.39L4.041,38.434l7.633-4.335l15.803,9.028l15.802-9.028L50.912,38.434z"/></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
+				<h5 class="title-niche">Дизайн</h5>
+			</div>
+			<div class="niche">
+				<?xml version="1.0" encoding="iso-8859-1"?><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"viewBox="0 0 463 463" style="enable-background:new 0 0 463 463;" xml:space="preserve"><path d="M462.988,319.813c0.001-0.105,0.012-0.208,0.012-0.313c0-0.023-0.003-0.046-0.004-0.07c-0.001-0.17-0.013-0.34-0.026-0.511c-0.006-0.083-0.01-0.166-0.019-0.248c-0.016-0.147-0.042-0.293-0.067-0.44c-0.018-0.105-0.033-0.211-0.056-0.315c-0.025-0.113-0.057-0.225-0.087-0.338c-0.036-0.135-0.07-0.27-0.113-0.401c-0.028-0.086-0.063-0.172-0.094-0.258c-0.056-0.153-0.113-0.304-0.179-0.452c-0.01-0.023-0.017-0.047-0.028-0.071L383,141.875V119h0.5c8.547,0,15.5-6.953,15.5-15.5v-1.188c0-7.648-5.48-14.083-13.03-15.302L255,65.875V52.446c4.971-5.571,8-12.91,8-20.946C263,14.131,248.869,0,231.5,0S200,14.131,200,31.5c0,8.036,3.029,15.375,8,20.946v12.7L76.951,86.988C69.447,88.239,64,94.669,64,102.277v1.223c0,8.547,6.953,15.5,15.5,15.5H80v22.875L0.672,316.396c-0.011,0.023-0.018,0.048-0.028,0.071c-0.065,0.147-0.122,0.299-0.178,0.451c-0.032,0.086-0.066,0.172-0.095,0.259c-0.043,0.131-0.078,0.266-0.113,0.401c-0.03,0.113-0.062,0.225-0.087,0.338c-0.022,0.104-0.038,0.21-0.056,0.315c-0.025,0.147-0.051,0.293-0.067,0.44c-0.009,0.082-0.012,0.166-0.019,0.249c-0.013,0.17-0.024,0.34-0.026,0.509c0,0.024-0.004,0.047-0.004,0.07c0,0.106,0.011,0.209,0.012,0.315c0.004,0.084,0.003,0.169,0.01,0.253C0.489,350.916,38.735,375,87.5,375s87.011-24.084,87.478-54.932c0.007-0.084,0.006-0.169,0.01-0.254c0.001-0.105,0.012-0.208,0.012-0.313c0-0.023-0.003-0.046-0.004-0.07c-0.001-0.17-0.013-0.34-0.026-0.511c-0.006-0.083-0.01-0.166-0.019-0.248c-0.016-0.147-0.042-0.293-0.067-0.44c-0.018-0.105-0.033-0.211-0.056-0.315c-0.025-0.113-0.057-0.225-0.087-0.338c-0.036-0.135-0.07-0.27-0.113-0.401c-0.028-0.086-0.063-0.172-0.094-0.258c-0.056-0.153-0.113-0.304-0.179-0.452c-0.01-0.023-0.017-0.047-0.028-0.071L95,141.875V119h113v162.945c-4.765,2.647-8,7.728-8,13.555v110.486l-47.51,14.847c-9.863,3.083-16.49,12.097-16.49,22.431V455.5c0,4.142,3.357,7.5,7.5,7.5h176c4.143,0,7.5-3.358,7.5-7.5v-12.237c0-10.334-6.627-19.348-16.49-22.431L263,405.986V295.5c0-5.827-3.235-10.908-8-13.555V119h113v22.875l-79.328,174.522c-0.011,0.023-0.018,0.048-0.028,0.071c-0.065,0.147-0.122,0.299-0.178,0.451c-0.032,0.086-0.066,0.172-0.095,0.259c-0.043,0.131-0.078,0.266-0.113,0.401c-0.03,0.113-0.062,0.225-0.087,0.338c-0.022,0.104-0.038,0.21-0.056,0.315c-0.025,0.147-0.051,0.293-0.067,0.44c-0.009,0.082-0.012,0.166-0.019,0.249c-0.013,0.17-0.024,0.34-0.026,0.509c0,0.024-0.004,0.047-0.004,0.07c0,0.106,0.011,0.209,0.012,0.315c0.004,0.084,0.003,0.169,0.01,0.253C288.489,350.916,326.735,375,375.5,375s87.011-24.084,87.478-54.932C462.985,319.983,462.984,319.898,462.988,319.813z M87.5,161.625L155.852,312H19.148L87.5,161.625zM87.5,360c-34.728,0-64.692-14.482-71.194-33h142.389C152.192,345.518,122.228,360,87.5,360z M248,295.5V404h-33V295.5c0-0.276,0.225-0.5,0.5-0.5h32C247.775,295,248,295.224,248,295.5z M223,280V61.825c2.706,0.76,5.555,1.175,8.5,1.175s5.794-0.415,8.5-1.175V280H223z M231.5,15c9.098,0,16.5,7.402,16.5,16.5S240.598,48,231.5,48S215,40.598,215,31.5S222.402,15,231.5,15z M79.5,104c-0.275,0-0.5-0.224-0.5-0.5v-1.223c0-0.246,0.176-0.453,0.418-0.493L208,80.354V104H79.5zM312,443.263V448H151v-4.737c0-3.738,2.397-6.999,5.965-8.113l51.68-16.15h45.711l51.68,16.15C309.603,436.265,312,439.525,312,443.263z M255,81.07l128.579,20.749c0.244,0.039,0.421,0.247,0.421,0.494v1.188c0,0.276-0.225,0.5-0.5,0.5H255V81.07z M375.5,161.625L443.852,312H307.148L375.5,161.625z M375.5,360c-34.728,0-64.692-14.482-71.194-33h142.389C440.192,345.518,410.228,360,375.5,360z"/><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
+				<h5 class="title-niche">Юридические<br>услуги</h5>
+			</div>
+			<div class="niche">
+				<?xml version="1.0" encoding="iso-8859-1"?><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"viewBox="0 0 60 60" style="enable-background:new 0 0 60 60;" xml:space="preserve"><g><path d="M14,36.182h14v-10H14V36.182z M16,34.182v-3h10v3H16z M26,28.182v1H16v-1H26z"/><path d="M14,40.182v12h14v-12H14z M20,42.182v3h-4v-3H20z M16,47.182h4v3h-4V47.182z M22,50.182v-3h4v3H22z M26,45.182h-4v-3h4V45.182z"/><path d="M32,36.182h14v-10H32V36.182z M34,34.182v-1h10v1H34z M44,28.182v3H34v-3H44z"/><path d="M59,48.182c-0.553,0-1,0.448-1,1v1h-1v-1c0-0.552-0.447-1-1-1s-1,0.448-1,1v1h-1V29.978c0.521,0.234,1.073,0.363,1.626,0.363c1.073,0,2.139-0.436,2.927-1.284c0.76-0.818,1.145-1.925,1.057-3.038c-0.089-1.112-0.644-2.145-1.522-2.833L32.722,3.345L30,0.818L27.343,3.29L1.913,23.186c-0.879,0.688-1.434,1.721-1.522,2.833c-0.088,1.113,0.297,2.22,1.057,3.038c1.194,1.286,3.021,1.61,4.553,0.922v20.204H5v-1c0-0.552-0.447-1-1-1s-1,0.448-1,1v1H2v-1c0-0.552-0.447-1-1-1s-1,0.448-1,1v9c0,0.552,0.447,1,1,1s1-0.448,1-1v-1h1v1c0,0.552,0.447,1,1,1s1-0.448,1-1v-1h1v2h26h14h8v-2h1v1c0,0.552,0.447,1,1,1s1-0.448,1-1v-1h1v1c0,0.552,0.447,1,1,1s1-0.448,1-1v-9C60,48.63,59.553,48.182,59,48.182z M2.912,27.695c-0.385-0.415-0.572-0.954-0.527-1.518c0.045-0.564,0.314-1.067,0.761-1.416L28.64,4.811l1.361-1.265l1.424,1.319l25.43,19.896c0.446,0.349,0.716,0.852,0.761,1.416c0.045,0.564-0.143,1.104-0.527,1.518c-0.708,0.762-1.861,0.858-2.686,0.223L54,27.608v0l-24-18.5l-23.61,18.2l-0.001,0.001l-0.791,0.609C4.772,28.553,3.62,28.457,2.912,27.695z M2,55.182v-3h1v3H2z M5,55.182v-3h1v3H5zM34,57.182v-15h10v15H34z M52,57.182h-6v-17H32v17H8V28.591l22-16.959l22,16.959V57.182z M54,55.182v-3h1v3H54z M57,55.182v-3h1v3H57z"/></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
+				<h5 class="title-niche">Недвижимость</h5>
+			</div>
+			<div class="niche">
+				<?xml version="1.0" encoding="iso-8859-1"?><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"viewBox="0 0 339.452 339.452" style="enable-background:new 0 0 339.452 339.452;" xml:space="preserve"><g><g><path d="M325.452,280.557h-4.72c0.048-0.666,0.048-1.334,0-2v-252c0-7.732-6.268-14-14-14h-136.8c-7.732,0-14,6.268-14,14v104c-13.025,3.16-24.423,11.024-32,22.08c-9.292,13.387-12.164,30.208-7.84,45.92c5.76,22.08,6.48,51.36-5.44,63.52c-6.863,6.083-16.517,7.897-25.12,4.72c-9.254-1.465-17.155-7.474-21.04-16c-12.72-29.36,19.04-84.88,19.12-85.12c1.92-2.88,46.16-71.6,0.96-112c-1.84-1.92-45.44-48-79.12-43.52c-3.424,0.442-5.842,3.576-5.4,7c0.442,3.424,3.576,5.842,7,5.4c8.094-0.486,16.162,1.316,23.28,5.2l-8.96,10.8c-4.856,6.017-3.914,14.831,2.103,19.687c0.098,0.079,0.197,0.157,0.297,0.233l30.08,24c2.473,1.982,5.551,3.055,8.72,3.04h1.2c3.688-0.416,7.058-2.288,9.36-5.2l8.72-10.96c27.04,34.56-8,89.6-8.88,90.48c-1.44,2.48-35.04,61.28-20,96c5.56,12.056,16.739,20.568,29.84,22.72c4.035,0.978,8.169,1.488,12.32,1.52c8.97,0.27,17.654-3.175,24-9.52c16-16.72,14.72-50.8,8.48-74.96c-6.637-22.24,5.95-45.662,28.16-52.4v135.36c-0.048,0.666-0.048,1.334,0,2h-4c-7.73-0.177-14.14,5.946-14.316,13.676c-0.003,0.108-0.004,0.216-0.004,0.324v21.04c-0.002,7.732,6.264,14.002,13.996,14.004c0.108,0,0.216-0.001,0.324-0.004h173.68c7.732,0,14-6.268,14-14v-21.04C339.452,286.826,333.184,280.557,325.452,280.557z M72.652,61.917l-8.88,10.96c-0.339,0.412-0.829,0.671-1.36,0.72c-0.514,0.067-1.034-0.078-1.44-0.4l-30.08-24c-0.762-0.778-0.762-2.022,0-2.8l8.88-11.04c0.339-0.412,0.829-0.671,1.36-0.72c0.514-0.067,1.034,0.078,1.44,0.4l30.08,24c0.419,0.333,0.68,0.826,0.72,1.36C73.367,60.985,73.104,61.541,72.652,61.917zM167.772,26.557c0-1.105,0.895-2,2-2h137.12c1.105,0,2,0.895,2,2v252c0,1.105-0.895,2-2,2h-136.96c-1.101,0.088-2.065-0.733-2.154-1.834c-0.004-0.055-0.007-0.111-0.006-0.166V26.557z M327.772,315.597c0,1.105-0.895,2-2,2h-174c-1.105,0-2-0.895-2-2v-21.04c0-1.105,0.895-2,2-2h173.68c1.09-0.177,2.118,0.564,2.294,1.654c0.019,0.114,0.027,0.23,0.026,0.346V315.597z"/></g></g><g><g><path d="M279.772,43.597h-82.88c-7.732,0-14,6.268-14,14v82.96c0,7.732,6.268,14,14,14h82.88c7.732,0,14-6.268,14-14v-82.96C293.772,49.866,287.504,43.597,279.772,43.597z M281.772,140.637c-0.043,1.073-0.926,1.921-2,1.92h-82.88c-1.105,0-2-0.895-2-2v-82.96c0-1.105,0.895-2,2-2h82.88c1.105,0,2,0.895,2,2V140.637z"/></g></g><g><g><path d="M270.412,177.198h-64c-3.314,0-6,2.686-6,6s2.686,6,6,6h64c3.314,0,6-2.686,6-6S273.726,177.198,270.412,177.198z"/></g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
+				<h5 class="title-niche">Автомобили<br>и перевозки</h5>
+			</div>
+		</div>
+		<div class="niches-mobile">
+			<div class="niche">
+				<?xml version="1.0" encoding="iso-8859-1"?><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><g><g><path d="M482.726,485.783l-22.65-132.603c-2.441-14.287-12.576-25.764-26.453-29.95l-61.092-18.433c-1.265-14.934-7.388-29.023-17.578-40.175c-8.151-8.92-18.403-15.415-29.704-18.999c1.934-2.146,3.727-4.285,5.372-6.377c14.528-18.477,22.306-38.833,24.286-52.724h4.713c12.258,0,22.231-9.972,22.231-22.231v-11.396c0-8.181-4.602-15.594-11.523-19.441V106.05c0-4.141-3.357-7.498-7.498-7.498s-7.497,3.356-7.497,7.498v30.764c-2.92,0.507-6.404,1.383-9.968,2.884c-0.365,0.133-0.72,0.287-1.056,0.472c-0.805,0.367-1.611,0.754-2.414,1.19V80.938c0-16.693-13.58-30.273-30.273-30.273h-20.695c-7.138,0-14.111,2.487-19.637,7.005l-2.031,1.66c-3.73,3.05-8.438,4.73-13.257,4.73c-4.819,0-9.528-1.68-13.258-4.73l-2.03-1.66c-5.526-4.517-12.499-7.005-19.637-7.005H200.38c-16.693,0-30.273,13.58-30.273,30.273v60.422c-0.803-0.436-1.609-0.823-2.414-1.19c-0.336-0.185-0.69-0.339-1.055-0.472c-3.564-1.501-7.049-2.377-9.968-2.884V59.025c0-24.278,19.752-44.03,44.03-44.03h110.601c24.279,0,44.03,19.752,44.03,44.03v11.786c0,4.141,3.357,7.498,7.497,7.498s7.498-3.356,7.498-7.498V59.025C370.326,26.479,343.847,0,311.301,0H200.7c-32.547,0-59.025,26.479-59.025,59.025v74.43c-6.921,3.847-11.523,11.259-11.523,19.441v11.396c0,12.259,9.973,22.231,22.231,22.231h4.713c1.979,13.891,9.758,34.247,24.286,52.724c1.643,2.09,3.435,4.227,5.367,6.371c-25.98,8.252-44.926,31.61-47.277,59.179L78.378,323.23c-13.877,4.186-24.013,15.663-26.453,29.95l-9.198,53.849c-0.697,4.082,2.047,7.955,6.128,8.652c4.08,0.699,7.955-2.046,8.653-6.128l9.198-53.849c1.476-8.644,7.608-15.586,16.003-18.118l56.505-17.049v14.831c-12.952,2.384-23.973,11.281-28.512,23.608c-1.205,3.272-1.954,6.698-2.226,10.182l-5.461,70.095c-0.412,5.28,1.415,10.538,5.01,14.423c3.595,3.886,8.694,6.116,13.989,6.116h9.348c4.141,0,7.498-3.356,7.498-7.498c0-4.142-3.357-7.497-7.498-7.497h-9.348c-1.129,0-2.215-0.474-2.982-1.304c-0.766-0.828-1.155-1.948-1.067-3.073l5.461-70.096c0.165-2.111,0.618-4.186,1.348-6.167c3.158-8.575,11.686-14.382,21.223-14.449l1.235-0.009c0.058-0.001,0.115-0.001,0.172-0.001c9.269,0,17.474,5.256,20.935,13.427c0.971,2.291,1.561,4.713,1.755,7.199l5.463,70.097c0.087,1.124-0.302,2.244-1.068,3.073c-0.766,0.828-1.853,1.303-2.982,1.303h-9.348c-4.141,0-7.498,3.356-7.498,7.497c0,4.141,3.357,7.498,7.498,7.498h9.348c5.295,0,10.395-2.229,13.989-6.116c3.596-3.887,5.423-9.144,5.011-14.422l-5.463-70.096c-0.32-4.102-1.295-8.101-2.898-11.884c-4.939-11.657-15.5-19.762-27.938-21.955v-19.306l25.774-7.777c2.345,4.939,6.992,15.612,16.197,38.619c9.277,23.214,20.808,52.969,31.867,81.895c0.079,0.243,0.17,0.48,0.272,0.712c7.38,19.311,14.539,38.225,20.662,54.541c1.098,2.926,3.895,4.864,7.02,4.864c3.125,0,5.922-1.938,7.02-4.864c6.122-16.316,13.281-35.23,20.662-54.541c0.103-0.232,0.193-0.47,0.272-0.712c11.051-28.909,22.576-58.645,31.849-81.852c9.217-23.037,13.868-33.719,16.214-38.662l25.774,7.777v44.285c-17.858,3.469-31.385,19.219-31.385,38.077c0,21.391,17.403,38.795,38.795,38.795c21.392,0,38.795-17.403,38.795-38.795c0-18.796-13.438-34.508-31.21-38.045v-39.792l56.506,17.049c8.395,2.532,14.526,9.474,16.003,18.118l22.65,132.603c0.376,2.199-0.209,4.349-1.648,6.054c-1.438,1.704-3.459,2.644-5.69,2.644H51.393c-2.231,0-4.251-0.939-5.69-2.644c-1.438-1.705-2.024-3.854-1.648-6.054l7.475-43.762c0.697-4.082-2.047-7.955-6.128-8.652c-4.08-0.7-7.955,2.047-8.653,6.128l-7.475,43.762c-1.115,6.532,0.696,13.183,4.968,18.248C38.516,509.096,44.767,512,51.393,512h409.214c6.626,0,12.878-2.904,17.151-7.969C482.03,498.966,483.841,492.315,482.726,485.783z M355.421,152.089c3.995-0.996,7.202-0.978,7.238-0.977c1.292,0.017,2.548-0.285,3.664-0.87c0.334,0.831,0.531,1.724,0.531,2.654v11.396c0,3.99-3.246,7.236-7.236,7.236h-4.197V152.089z M156.579,171.528L156.579,171.528h-4.197c-3.99,0-7.236-3.246-7.236-7.236v-11.396c0-0.93,0.198-1.823,0.531-2.653c1.115,0.585,2.371,0.887,3.664,0.869c0.057,0.01,3.255-0.008,7.238,0.981V171.528zM171.574,179.935v-19.698c2.272,0.681,4.757,0.588,7.051-0.369c3.935-1.642,6.477-5.455,6.477-9.716V80.938c0-8.424,6.854-15.278,15.278-15.278h20.695c3.688,0,7.291,1.285,10.146,3.619l2.03,1.66c6.401,5.234,14.48,8.115,22.749,8.115c8.269,0,16.348-2.882,22.749-8.115l2.03-1.66c2.854-2.334,6.458-3.619,10.146-3.619h20.695c8.424,0,15.278,6.854,15.278,15.278v69.215c0,4.26,2.542,8.074,6.477,9.716c1.314,0.548,2.69,0.814,4.054,0.814c1.017,0,2.026-0.149,2.997-0.439v19.691c0,10.947-7.568,32.205-21.594,50.043c-4.646,5.909-10.618,12.257-17.971,17.805c-0.233,0.156-0.456,0.325-0.669,0.505c-11.391,8.422-26.038,14.874-44.192,14.874s-32.801-6.452-44.193-14.875c-0.213-0.179-0.435-0.348-0.667-0.503c-7.353-5.549-13.325-11.897-17.972-17.806C179.143,212.141,171.574,190.882,171.574,179.935z M305.12,301.07L256,337.784l-49.12-36.714c4.871-6.191,7.6-14.138,7.6-21.23v-12.086c11.551,6.212,25.334,10.404,41.52,10.404s29.97-4.192,41.52-10.404v12.086C297.52,286.932,300.249,294.879,305.12,301.07z M194.367,292.701c-4.004-1.525-8.443-1.775-12.642-0.636c-0.184,0.043-0.364,0.092-0.539,0.144l-25.903,7.816c4.381-21.542,21.873-38.688,44.202-42.009v21.824C199.485,284.544,197.385,289.407,194.367,292.701z M214.716,352.889c-0.014-0.035-0.028-0.07-0.041-0.104c-0.38-0.961-0.755-1.909-1.127-2.846c-0.067-0.17-0.134-0.339-0.201-0.507c-0.364-0.917-0.725-1.827-1.081-2.722c-0.025-0.063-0.05-0.125-0.075-0.189c-1.111-2.793-2.182-5.472-3.212-8.039c-0.075-0.186-0.15-0.375-0.225-0.56c-0.296-0.736-0.587-1.461-0.876-2.177c-0.106-0.263-0.211-0.523-0.316-0.783c-0.28-0.694-0.558-1.384-0.832-2.059c-0.082-0.202-0.162-0.398-0.243-0.599c-0.497-1.226-0.983-2.421-1.457-3.586c-0.128-0.315-0.259-0.636-0.386-0.947c-0.186-0.454-0.367-0.896-0.549-1.341c-0.196-0.48-0.392-0.956-0.584-1.424c-0.072-0.175-0.147-0.36-0.219-0.534c-0.058-0.14-0.111-0.269-0.168-0.408c-0.866-2.104-1.689-4.087-2.47-5.952c-0.006-0.015-0.013-0.03-0.019-0.045c-0.416-0.993-0.823-1.963-1.214-2.887c-0.203-0.479-0.403-0.95-0.599-1.412l42.245,31.574l-17.652,7.499c-0.031,0.013-0.063,0.026-0.094,0.04l-7.37,3.131C215.533,354.955,215.124,353.919,214.716,352.889z M232.606,398.797c-1.481-3.843-2.973-7.708-4.468-11.569c-2.338-6.039-4.571-11.781-6.708-17.251l2.798-1.189l11.432,13.289L232.606,398.797zM256.145,459.735c-0.215-0.446-0.471-0.867-0.767-1.259c-3.388-8.955-7.688-20.286-12.447-32.753l7-38.325h12.138l7,38.325C264.082,438.784,259.603,450.594,256.145,459.735z M264.881,372.404h-17.762l-8.405-9.77L256,355.291l17.286,7.343L264.881,372.404z M283.862,387.228c-1.495,3.861-2.987,7.726-4.468,11.569l-3.054-16.721l11.432-13.289l2.798,1.189C288.433,375.446,286.2,381.189,283.862,387.228z M312.58,315.18c-0.371,0.876-0.757,1.795-1.15,2.733c-0.051,0.122-0.103,0.245-0.154,0.368c-0.389,0.93-0.785,1.88-1.195,2.869c-0.027,0.065-0.055,0.134-0.082,0.2c-0.354,0.853-0.717,1.733-1.086,2.63c-0.069,0.168-0.134,0.323-0.203,0.492c-0.082,0.201-0.17,0.414-0.253,0.617c-0.164,0.4-0.331,0.808-0.499,1.216c-0.206,0.503-0.411,1.004-0.622,1.519c-0.067,0.164-0.136,0.335-0.204,0.5c-0.522,1.279-1.058,2.597-1.606,3.951c-0.086,0.212-0.171,0.42-0.257,0.635c-0.271,0.669-0.547,1.352-0.824,2.039c-0.108,0.269-0.217,0.537-0.326,0.809c-0.286,0.709-0.575,1.427-0.867,2.155c-0.082,0.203-0.165,0.411-0.247,0.615c-1.017,2.532-2.072,5.173-3.167,7.925c-0.036,0.091-0.072,0.18-0.108,0.272c-0.354,0.889-0.712,1.793-1.074,2.704c-0.067,0.17-0.135,0.34-0.203,0.511c-0.374,0.942-0.751,1.894-1.133,2.861c-0.007,0.018-0.014,0.036-0.021,0.053c-0.412,1.042-0.826,2.09-1.248,3.16l-7.377-3.134c-0.026-0.011-0.052-0.022-0.077-0.033l-17.662-7.503l42.245-31.574C312.982,314.23,312.782,314.7,312.58,315.18z M330.814,292.21c-0.001,0-0.003-0.001-0.004-0.001c-0.006-0.002-0.013-0.003-0.019-0.006c-4.35-1.305-8.99-1.089-13.157,0.498c-3.019-3.294-5.118-8.157-5.118-12.861v-21.835c22.469,3.312,39.908,20.297,44.232,42.029L330.814,292.21z M389.001,398.375c0,13.124-10.677,23.8-23.8,23.8s-23.8-10.676-23.8-23.8c0-13.124,10.677-23.8,23.8-23.8S389.001,385.251,389.001,398.375z"/></g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
+				<h5 class="title-niche">Медицина</h5>
+			</div>
+			<div class="niche niche-mobile">
+				<svg height="483pt" viewBox="0 -29 483.1994 483" width="483pt" xmlns="http://www.w3.org/2000/svg"><path d="m482.121094 302.898438c-3.351563-12.214844-13.59375-21.304688-26.121094-23.183594v-183.613282h16c4.417969 0 8-3.582031 8-8v-80c0-4.421874-3.582031-8-8-8h-352c-4.417969 0-8 3.578126-8 8v80c0 4.417969 3.582031 8 8 8h16v160h-8c-19.855469-.046874-39.304688 5.644532-56 16.390626v-40.390626c0-4.421874-3.582031-8-8-8h-56c-4.417969 0-8 3.578126-8 8v184c0 4.417969 3.582031 8 8 8h56c4.417969 0 8-3.582031 8-8v-40.386718c16.699219 10.738281 36.144531 16.429687 56 16.386718h131.359375c9.101563-.015624 18.160156-1.210937 26.953125-3.554687l173.207031-46.398437c17.042969-4.644532 27.140625-22.175782 22.601563-39.25zm-354.121094-286.796876h336v64h-336zm24 80h288v184.988282l-92.847656 24.898437c-3.824219-9.117187-11.625-15.964843-21.160156-18.578125l-107.792969-28.910156c-6.070313-1.597656-12.320313-2.40625-18.597657-2.398438h-47.601562zm-96 312h-40v-168h40zm399.367188-81.410156-173.175782 46.398438c-7.449218 1.988281-15.121094 3-22.832031 3.011718h-131.359375c-19.046875.042969-37.589844-6.136718-52.800781-17.601562l-3.199219-2.398438v-64l3.199219-2.402343c15.210937-11.464844 33.753906-17.648438 52.800781-17.597657h71.601562c4.886719-.003906 9.757813.628907 14.488282 1.878907l107.757812 28.886719c6.367188 1.753906 11.027344 7.210937 11.753906 13.777343.085938.328125.191407.652344.320313.96875-.09375.34375-.164063.691407-.210937 1.046875.007812 1.300782-.167969 2.597656-.527344 3.847656-1.882813 6.972657-8.199219 11.820313-15.421875 11.832032-1.410157.011718-2.808594-.167969-4.167969-.527344l-68-18.234375c-2.789062-.828125-5.808594-.078125-7.886719 1.960937-2.074219 2.039063-2.882812 5.042969-2.105469 7.847657.777344 2.800781 3.015626 4.964843 5.847657 5.640625l68 18.242187c2.714843.714844 5.515625 1.074219 8.328125 1.070313 14.382812-.007813 26.988281-9.628906 30.789062-23.503906.445313-1.605469.746094-3.246094.90625-4.902344l97.527344-26.152344c.695312-.175781 1.449219-.355469 2.160156-.472656 7.964844-1.027344 15.453125 4.007812 17.511719 11.765625.359375 1.351562.539063 2.746093.527344 4.144531.011719 7.242188-4.839844 13.585938-11.832031 15.472656zm0 0"/><path d="m256 128.101562h80c4.417969 0 8-3.582031 8-8 0-4.421874-3.582031-8-8-8h-80c-4.417969 0-8 3.578126-8 8 0 4.417969 3.582031 8 8 8zm0 0"/></svg>
+				<h5 class="title-niche">Продажа товаров</h5>
+			</div>
+			<div class="niche niche-mobile">
+				<?xml version="1.0" encoding="iso-8859-1"?><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"viewBox="0 0 512.001 512.001" style="enable-background:new 0 0 512.001 512.001;" xml:space="preserve"><g><g><path d="M375.069,141.931c-1.859-1.86-4.439-2.93-7.069-2.93s-5.21,1.07-7.07,2.93c-1.86,1.86-2.93,4.43-2.93,7.07c0,2.63,1.069,5.21,2.93,7.07c1.861,1.86,4.44,2.93,7.07,2.93s5.21-1.07,7.069-2.93c1.86-1.86,2.931-4.44,2.931-7.07S376.93,143.791,375.069,141.931z"/></g></g><g><g><path d="M150,282.001H70c-5.522,0-10,4.477-10,10v80c0,5.523,4.478,10,10,10h80c5.522,0,10-4.477,10-10v-80C160,286.478,155.523,282.001,150,282.001z M140,362.001H80v-60h60V362.001z"/></g></g><g><g><path d="M505.827,209.762c-3.737-1.549-8.039-0.691-10.898,2.167L393.031,313.827c-0.001,0.002-0.003,0.003-0.005,0.005s-0.003,0.003-0.004,0.005L274.238,432.621c-0.002,0.002-0.003,0.003-0.005,0.005s-0.003,0.003-0.005,0.005l-62.299,62.299c-2.859,2.86-3.715,7.162-2.168,10.898c1.548,3.737,5.194,6.173,9.239,6.173h283c5.522,0,10-4.477,10-10v-283C512,214.957,509.564,211.31,505.827,209.762z M492,492.001H243.143l38.161-38.161l9.546,9.546c1.953,1.953,4.512,2.929,7.071,2.929s5.118-0.976,7.071-2.929c3.905-3.905,3.905-10.237,0-14.143l-9.546-9.546l25.456-25.456l9.545,9.545c1.953,1.953,4.512,2.929,7.071,2.929s5.118-0.977,7.071-2.929c3.905-3.905,3.905-10.237,0-14.142l-9.546-9.546l25.456-25.456l9.546,9.546c1.953,1.953,4.512,2.929,7.071,2.929s5.118-0.976,7.071-2.929c3.905-3.905,3.905-10.237,0-14.143l-9.546-9.546l25.455-25.455l9.546,9.546c1.953,1.953,4.512,2.929,7.071,2.929s5.118-0.976,7.071-2.929c3.905-3.905,3.905-10.237,0-14.143l-9.546-9.546l25.456-25.456l9.545,9.545c1.953,1.953,4.512,2.929,7.071,2.929c2.559,0,5.118-0.977,7.071-2.929c3.905-3.905,3.905-10.237,0-14.142l-9.546-9.546L492,243.143V492.001z"/></g></g><g><g><path d="M455.827,330.473c-3.737-1.549-8.039-0.692-10.898,2.167L332.64,444.93c-2.859,2.86-3.716,7.161-2.168,10.898c1.548,3.737,5.194,6.173,9.239,6.173H452c5.522,0,10-4.477,10-10V339.712C462,335.668,459.564,332.021,455.827,330.473zM442,442.001h-78.146L442,363.854V442.001z"/></g></g><g><g><path d="M463.06,149.261c-2.753-2.752-6.851-3.658-10.51-2.319l-68.281,25.005c-1.365,0.5-2.604,1.291-3.633,2.319l-19.199,19.199L236.071,68.098c-1.876-1.875-4.419-2.929-7.071-2.929s-5.196,1.054-7.071,2.929L71.026,219.001H34.143L229,24.143l106.929,106.929c3.906,3.905,10.236,3.905,14.143,0c3.905-3.905,3.905-10.237,0-14.143l-114-114c-3.906-3.905-10.236-3.905-14.143,0l-219,219c-2.859,2.86-3.715,7.161-2.168,10.898c1.548,3.738,5.194,6.174,9.239,6.174h10v263c0,5.523,4.478,10,10,10h158.986c5.522,0,10-4.477,10-10s-4.478-10-10-10H40v-253h35.168c2.652,0,5.195-1.054,7.071-2.929L229,89.311l118.294,118.295L199,355.901v-89.9h70c5.522,0,10-4.477,10-10c0-5.523-4.478-10-10-10h-80c-5.522,0-10,4.477-10,10v116c0,1.167,0.21,2.281,0.577,3.322l-8.959,8.959c-15.83,15.83-15.83,41.588,0,57.418c7.916,7.916,18.311,11.874,28.709,11.873c10.396,0,20.795-3.958,28.709-11.872l84.332-84.332c3.905-3.905,3.905-10.237,0-14.142c-3.905-3.905-10.235-3.905-14.143,0l-63.892,63.892L205.2,377.986l182.707-182.707l29.133,29.133l-69.815,69.816c-3.905,3.905-3.905,10.237,0,14.142c3.906,3.905,10.236,3.905,14.143,0l76.686-76.686c1.027-1.028,1.819-2.268,2.318-3.632l25.006-68.281C466.717,156.115,465.813,152.014,463.06,149.261z M220.192,421.26l-6.298,6.298c-3.891,3.891-9.063,6.034-14.566,6.034s-10.676-2.143-14.566-6.034c-3.892-3.891-6.034-9.064-6.034-14.566s2.141-10.676,6.033-14.567l6.298-6.298L220.192,421.26zM427.086,206.171l-20.938-20.938l33.038-12.099L427.086,206.171z"/></g></g><g><g><path d="M336.689,318.901c-1.859-1.86-4.439-2.93-7.069-2.93s-5.21,1.07-7.07,2.93c-1.86,1.87-2.93,4.44-2.93,7.07c0,2.64,1.069,5.21,2.93,7.08c1.86,1.86,4.43,2.92,7.07,2.92c2.63,0,5.21-1.06,7.069-2.92c1.86-1.87,2.931-4.45,2.931-7.08C339.62,323.341,338.55,320.771,336.689,318.901z"/></g></g><g><g><path d="M229,151.001c-20.953,0-38,17.047-38,38s17.047,38,38,38s38-17.047,38-38S249.953,151.001,229,151.001z M229,207.001c-9.925,0-18-8.074-18-18c0-9.925,8.075-18,18-18s18,8.075,18,18S238.925,207.001,229,207.001z"/></g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
+				<h5 class="title-niche">Ремонт и<br>строительство</h5>
+			</div>
+			<div class="niche niche-mobile">
+				<?xml version="1.0" encoding="iso-8859-1"?><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"viewBox="0 0 474.199 474.199" style="enable-background:new 0 0 474.199 474.199;" xml:space="preserve"><g><g><path d="M471.952,187.434c-5.925-14.918-22.822-22.208-37.74-16.283c-0.767,0.305-1.522,0.642-2.26,1.011L410.4,182.954l-44-58.656c-0.544-0.725-1.206-1.353-1.96-1.856l-48-32c-0.964-0.643-2.056-1.069-3.2-1.248l-104-16c-2.514-0.387-5.062,0.445-6.864,2.24l-59.64,59.416c-10.016,9.979-10.047,26.188-0.068,36.204c0.023,0.023,0.045,0.046,0.068,0.068c9.553,9.489,24.811,9.992,34.968,1.152l48.328-42.288l42.88,12.256l-35.888,78.856l-55.056,78.648l-65.44,58.888c-11.918,10.237-13.281,28.198-3.044,40.116c10.237,11.918,28.198,13.281,40.116,3.044l72.096-59.04l43.096-43.096l54.656,41l-12.16,84.864c-1.139,7.936,1.226,15.976,6.48,22.032c5.397,6.173,13.233,9.663,21.432,9.544c13.583,0.019,25.257-9.632,27.792-22.976l20.912-111.552c0.52-2.779-0.466-5.625-2.592-7.488l-59.92-52.384l25.504-70.128l47.088,53.816c2.304,2.63,6.049,3.46,9.248,2.048l54.016-23.888C471.449,218.255,477.991,201.745,471.952,187.434zM450.776,209.898l-48.632,21.504l-52.128-59.576c-2.911-3.324-7.965-3.658-11.289-0.747c-1.014,0.888-1.786,2.017-2.247,3.283l-32,88c-1.128,3.102-0.235,6.578,2.248,8.752l60.568,53L347.2,431.178c-1.199,5.922-6.497,10.114-12.536,9.92c-6.442-0.002-11.663-5.225-11.661-11.667c0-0.55,0.039-1.1,0.117-1.645l12.8-89.552c0.415-2.893-0.781-5.783-3.12-7.536l-64-48c-3.185-2.388-7.641-2.071-10.456,0.744l-47.408,47.464l-71.504,58.504c-5.287,4.381-13.124,3.646-17.505-1.641c-4.273-5.157-3.693-12.773,1.313-17.223l66.112-59.504c0.452-0.405,0.854-0.861,1.2-1.36l56-80c0.283-0.4,0.526-0.826,0.728-1.272l40-88c1.828-4.023,0.049-8.765-3.974-10.593c-0.358-0.163-0.728-0.299-1.106-0.407l-56-16c-2.613-0.757-5.431-0.127-7.472,1.672l-51.6,45.152c-3.879,3.625-9.963,3.419-13.588-0.46c-3.625-3.879-3.419-9.963,0.46-13.588l56.8-56.568l98.248,15.12l45.352,30.256l47.2,62.904c2.318,3.094,6.517,4.087,9.976,2.36l27.528-13.8c3.238-1.63,7.012-1.824,10.4-0.536c3.626,1.416,6.459,4.334,7.768,8C459.762,200.128,456.89,207.191,450.776,209.898z"/></g></g><g><g><rect x="48" y="65.098" width="104" height="16"/></g></g><g><g><rect x="16" y="65.098" width="16" height="16"/></g></g><g><g><rect x="80" y="129.098" width="16" height="16"/></g></g><g><g><rect y="129.098" width="64" height="16"/></g></g><g><g><rect x="40" y="193.098" width="80" height="16"/></g></g><g><g><rect x="16" y="257.098" width="136" height="16"/></g></g><g><g><rect x="32" y="321.098" width="64" height="16"/></g></g><g><g><rect y="321.098" width="16" height="16"/></g></g><g><g><rect x="16" y="385.098" width="56" height="16"/></g></g><g><g><path d="M400,17.098h-36c-24.301,0-44,19.699-44,44s19.699,44,44,44s44-19.699,44-44v-36C408,20.68,404.418,17.098,400,17.098zM392,61.098c0.06,15.402-12.376,27.937-27.778,27.997c-8.637,0.034-16.802-3.936-22.11-10.749C355.429,65.182,373.279,57.613,392,57.194V61.098z M392,41.194c-20.491,0.373-40.228,7.795-55.888,21.016c0-0.376-0.112-0.728-0.112-1.112c0-15.464,12.536-28,28-28h28V41.194z"/></g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
+				<h5 class="title-niche">Спорт</h5>
+			</div>
+			<div class="niche niche-mobile">
+				<svg height="480pt" viewBox="0 0 480 480" width="480pt" xmlns="http://www.w3.org/2000/svg"><path d="m88 448c2.425781 0 4.722656-1.105469 6.238281-3 3.363281-4.160156 81.761719-102.535156 81.761719-149 0-48.601562-39.398438-88-88-88s-88 39.398438-88 88c0 46.464844 78.398438 144.800781 81.761719 149 1.515625 1.894531 3.8125 3 6.238281 3zm0-224c39.746094.042969 71.957031 32.253906 72 72 0 31.039062-47.289062 98.910156-72 131.03125-24.710938-32.109375-72-99.976562-72-131.03125.042969-39.746094 32.253906-71.957031 72-72zm0 0"/><path d="m120 288c0-17.671875-14.328125-32-32-32s-32 14.328125-32 32 14.328125 32 32 32 32-14.328125 32-32zm-48 0c0-8.835938 7.164062-16 16-16s16 7.164062 16 16-7.164062 16-16 16-16-7.164062-16-16zm0 0"/><path d="m416 168c2.332031 0 4.542969-1.015625 6.0625-2.785156 5.9375-6.886719 57.9375-68.269532 57.9375-101.214844 0-35.347656-28.652344-64-64-64s-64 28.652344-64 64c0 32.945312 52 94.328125 57.9375 101.214844 1.519531 1.769531 3.730469 2.785156 6.0625 2.785156zm0-152c26.5.027344 47.972656 21.5 48 48 0 20.273438-30.542969 62.046875-48 83.511719-17.464844-21.464844-48-63.199219-48-83.511719.027344-26.5 21.5-47.972656 48-48zm0 0"/><path d="m440 56c0-13.253906-10.746094-24-24-24s-24 10.746094-24 24 10.746094 24 24 24 24-10.746094 24-24zm-32 0c0-4.417969 3.582031-8 8-8s8 3.582031 8 8-3.582031 8-8 8-8-3.582031-8-8zm0 0"/><path d="m408 200h8c4.417969 0 8-3.582031 8-8s-3.582031-8-8-8h-8c-4.417969 0-8 3.582031-8 8s3.582031 8 8 8zm0 0"/><path d="m304 248h16.175781c4.417969 0 8-3.582031 8-8s-3.582031-8-8-8h-16.304687c-2.113282.003906-4.140625.851562-5.628906 2.351562-1.488282 1.5-2.320313 3.535157-2.304688 5.648438.027344 4.429688 3.632812 8.003906 8.0625 8zm0 0"/><path d="m393.6875 240c0 4.417969 3.582031 8 8 8h16.296875c4.417969 0 8-3.582031 8-8s-3.582031-8-8-8h-16.296875c-4.417969 0-8 3.582031-8 8zm0 0"/><path d="m359.097656 200h16.300782c4.417968 0 8-3.582031 8-8s-3.582032-8-8-8h-16.300782c-4.421875 0-8 3.582031-8 8s3.578125 8 8 8zm0 0"/><path d="m145.71875 464h-16.304688c-4.417968 0-8 3.582031-8 8s3.582032 8 8 8h16.304688c4.417969 0 8-3.582031 8-8s-3.582031-8-8-8zm0 0"/><path d="m280.503906 228.960938c.558594 0 1.113282-.058594 1.65625-.175782 4.320313-.910156 7.085938-5.144531 6.183594-9.464844-.226562-1.09375-.339844-2.203124-.34375-3.320312-.003906-2.53125.59375-5.023438 1.742188-7.28125 2.003906-3.9375.4375-8.753906-3.503907-10.757812-3.9375-2.003907-8.753906-.4375-10.757812 3.503906-3.316407 6.511718-4.300781 13.96875-2.792969 21.121094.769531 3.703124 4.03125 6.367187 7.816406 6.375zm0 0"/><path d="m352.800781 248h16.304688c4.417969 0 8-3.582031 8-8s-3.582031-8-8-8h-16.304688c-4.417969 0-8 3.582031-8 8s3.582031 8 8 8zm0 0"/><path d="m310.191406 200h16.304688c4.417968 0 8-3.582031 8-8s-3.582032-8-8-8h-16.304688c-4.417968 0-8 3.582031-8 8s3.582032 8 8 8zm0 0"/><path d="m231.136719 339.015625c.632812.164063 1.289062.242187 1.941406.242187 3.671875-.007812 6.867187-2.507812 7.753906-6.066406 1.035157-4.113281 2.984375-7.941406 5.703125-11.199218 1.921875-2.179688 2.507813-5.226563 1.539063-7.960938-.96875-2.738281-3.347657-4.734375-6.210938-5.21875-2.859375-.480469-5.761719.625-7.574219 2.890625-4.285156 5.113281-7.355468 11.128906-8.976562 17.601563-.519531 2.058593-.195312 4.242187.898438 6.0625 1.089843 1.824218 2.863281 3.136718 4.925781 3.648437zm0 0"/><path d="m389.183594 463.664062c-1.71875.226563-3.449219.339844-5.183594.335938h-10.070312c-4.421876 0-8 3.582031-8 8s3.578124 8 8 8h10.070312c2.40625 0 4.8125-.15625 7.199219-.464844 4.382812-.566406 7.476562-4.578125 6.914062-8.960937-.566406-4.382813-4.578125-7.476563-8.960937-6.910157zm0 0"/><path d="m400.328125 370.398438c-5.292969-1.601563-10.796875-2.410157-16.328125-2.398438h-2.097656c-4.417969 0-8 3.582031-8 8s3.582031 8 8 8h2.097656c3.953125 0 7.886719.582031 11.671875 1.726562.753906.234376 1.539063.351563 2.328125.351563 3.964844.003906 7.335938-2.898437 7.921875-6.820313.582031-3.925781-1.796875-7.683593-5.59375-8.832031zm0 0"/><path d="m383.265625 312c4.417969 0 8-3.582031 8-8s-3.582031-8-8-8h-16.296875c-4.417969 0-8 3.582031-8 8s3.582031 8 8 8zm0 0"/><path d="m431.070312 436.390625c-4.023437-1.8125-8.757812-.023437-10.574218 4-1.863282 4.136719-4.421875 7.925781-7.558594 11.203125-2.054688 2.050781-2.835938 5.050781-2.042969 7.839844.792969 2.792968 3.035157 4.9375 5.855469 5.601562 2.824219.667969 5.789062-.246094 7.746094-2.386718 4.398437-4.585938 7.984375-9.894532 10.59375-15.6875 1.804687-4.027344.007812-8.757813-4.019532-10.570313zm0 0"/><path d="m472.96875 273.40625c-2.035156-.601562-4.226562-.371094-6.09375.644531-1.863281 1.015625-3.25 2.730469-3.851562 4.765625-1.175782 3.921875-3.324219 7.484375-6.246094 10.351563-3.160156 3.09375-3.214844 8.160156-.121094 11.320312 3.09375 3.160157 8.160156 3.210938 11.320312.121094 4.875-4.777344 8.453126-10.714844 10.398438-17.257813.605469-2.035156.371094-4.226562-.640625-6.09375-1.015625-1.863281-2.730469-3.25-4.765625-3.851562zm0 0"/><path d="m463.839844 258.640625c3.160156.003906 6.023437-1.855469 7.3125-4.738281 1.285156-2.882813.757812-6.253906-1.351563-8.605469-4.566406-5.078125-10.347656-8.910156-16.800781-11.136719-4.179688-1.4375-8.730469.789063-10.167969 4.96875-1.4375 4.179688.789063 8.730469 4.96875 10.167969 3.875 1.332031 7.34375 3.632813 10.078125 6.6875 1.519532 1.691406 3.6875 2.65625 5.960938 2.65625zm0 0"/><path d="m349.304688 368h-16.296876c-4.417968 0-8 3.582031-8 8s3.582032 8 8 8h16.296876c4.417968 0 8-3.582031 8-8s-3.582032-8-8-8zm0 0"/><path d="m432.167969 296h-16.304688c-4.417969 0-8 3.582031-8 8s3.582031 8 8 8h16.304688c4.417969 0 8-3.582031 8-8s-3.582031-8-8-8zm0 0"/><path d="m194.617188 464h-16.296876c-4.417968 0-8 3.582031-8 8s3.582032 8 8 8h16.296876c4.417968 0 8-3.582031 8-8s-3.582032-8-8-8zm0 0"/><path d="m430.34375 392.558594c-2.496094-3.652344-7.480469-4.589844-11.136719-2.09375-3.652343 2.496094-4.589843 7.480468-2.09375 11.136718 2.554688 3.742188 4.449219 7.894532 5.597657 12.277344.625 2.863282 2.765624 5.15625 5.582031 5.976563 2.8125.820312 5.847656.035156 7.914062-2.046875 2.0625-2.078125 2.824219-5.121094 1.984375-7.929688-1.601562-6.179687-4.253906-12.039062-7.847656-17.320312zm0 0"/><path d="m255.617188 365.128906c-3.800782-1.894531-7.125-4.613281-9.738282-7.960937-2.710937-3.492188-7.738281-4.121094-11.226562-1.410157-3.492188 2.707032-4.121094 7.734376-1.414063 11.226563 4.097657 5.257813 9.324219 9.527344 15.296875 12.488281 3.941406 1.839844 8.632813.191406 10.558594-3.710937 1.925781-3.898438.378906-8.625-3.476562-10.632813zm0 0"/><path d="m243.519531 464h-16.320312c-4.417969 0-8 3.582031-8 8s3.582031 8 8 8h16.320312c4.417969 0 8-3.582031 8-8s-3.582031-8-8-8zm0 0"/><path d="m341.328125 464h-16.296875c-4.417969 0-8 3.582031-8 8s3.582031 8 8 8h16.296875c4.417969 0 8-3.582031 8-8s-3.582031-8-8-8zm0 0"/><path d="m285.464844 312c4.417968 0 8-3.582031 8-8s-3.582032-8-8-8h-16.296875c-4.417969 0-8 3.582031-8 8s3.582031 8 8 8zm0 0"/><path d="m334.398438 312c4.417968 0 8-3.582031 8-8s-3.582032-8-8-8h-16.335938c-4.417969 0-8 3.582031-8 8s3.582031 8 8 8zm0 0"/><path d="m300.40625 368h-16.300781c-4.417969 0-8 3.582031-8 8s3.582031 8 8 8h16.300781c4.421875 0 8-3.582031 8-8s-3.578125-8-8-8zm0 0"/><path d="m292.433594 464h-16.304688c-4.417968 0-8 3.582031-8 8s3.582032 8 8 8h16.304688c4.417968 0 8-3.582031 8-8s-3.582032-8-8-8zm0 0"/><path d="m96 464h-8c-4.417969 0-8 3.582031-8 8s3.582031 8 8 8h8c4.417969 0 8-3.582031 8-8s-3.582031-8-8-8zm0 0"/></svg>
+				<h5 class="title-niche">Туризм<br>и путешествия</h5>
+			</div>
+			<div class="niche niche-mobile">
+				<?xml version="1.0" encoding="iso-8859-1"?><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"viewBox="0 0 496 496" style="enable-background:new 0 0 496 496;" xml:space="preserve"><g><g><path d="M402.524,432l-18.52-55.568c-6.472-19.4-22.984-33.72-43.112-37.384l-53.464-9.728v-4.144c9.304-5.4,17.4-12.624,23.848-21.176h16.152c13.232,0,24-10.768,24-24v-96c0-57.344-46.656-104-104-104s-104,46.656-104,104v56c0,15.424,10.968,28.328,25.512,31.336c4.488,22.992,18.856,42.448,38.488,53.84v4.144l-53.472,9.728c-20.12,3.664-36.64,17.984-43.104,37.384l-3.2,9.608l-27.248-27.248c-3.12-3.12-3.12-8.2,0-11.32l31.6-31.592l-59.312-59.312L16.98,292.28c-10.576,10.576-16.4,24.64-16.4,39.6s5.824,29.016,16.4,39.592l108.12,108.12C135.676,490.168,149.74,496,164.7,496c14.96,0,29.016-5.832,39.344-16.168l38.968-35.704L230.86,432H402.524z M335.428,280c0,4.416-3.592,8-8,8H320.7c2.32-5.288,4.08-10.864,5.216-16.664c3.424-0.712,6.576-2.072,9.512-3.784V280z M327.428,253.776v-27.552c4.76,2.776,8,7.88,8,13.776S332.188,251,327.428,253.776z M167.428,253.776c-4.76-2.776-8-7.88-8-13.776s3.24-11,8-13.776V253.776z M167.428,200v9.136c-2.848,0.744-5.52,1.864-8,3.312V184c0-48.52,39.48-88,88-88s88,39.48,88,88v28.448c-2.48-1.448-5.152-2.576-8-3.312V200h-8c-23.656,0-45.896-9.216-62.632-25.944l-9.368-9.368l-9.368,9.368C221.324,190.784,199.084,200,175.428,200H167.428z M183.428,256v-40.304c24.024-1.808,46.424-11.72,64-28.432c17.576,16.712,39.976,26.632,64,28.432V256c0,11.664-3.184,22.576-8.656,32h-55.344v16h42.192c-11.28,9.928-26.024,16-42.192,16C212.14,320,183.428,291.288,183.428,256z M271.428,332.312v0.376l-24,24l-24-24v-0.376c7.584,2.384,15.64,3.688,24,3.688S263.844,334.696,271.428,332.312z M126.02,381.488c4.616-13.856,16.416-24.088,30.792-26.712l55.92-10.16l34.696,34.696l34.688-34.688l55.912,10.16c14.376,2.624,26.176,12.848,30.792,26.712L380.332,416H214.86l-31.16-31.16l-34.624,31.32c-3.016,3.032-8.288,3.032-11.312,0l-17.472-17.472L126.02,381.488z M52.684,279.192l36.688,36.688l-8.688,8.688L43.996,287.88L52.684,279.192z M192.964,468.296c-7.552,7.536-17.6,11.704-28.28,11.704c-10.68,0-20.728-4.168-28.288-11.72L28.276,360.168c-7.552-7.552-11.712-17.6-11.712-28.28c0-10.688,4.16-20.736,11.712-28.288l4.4-4.4l36.688,36.688l-0.288,0.288c-9.352,9.36-9.352,24.584,0,33.944l57.368,57.368c4.536,4.528,10.56,7.032,16.976,7.032s12.44-2.496,16.68-6.752l0.6-0.536l36.856,36.856L192.964,468.296z M209.364,453.256l-36.776-36.776l10.568-9.552l36.712,36.712L209.364,453.256z"/></g></g><g><g><path d="M471.428,0h-112c-13.232,0-24,10.768-24,24v64c0,13.232,10.768,24,24,24h21.368l-8.272,48.248l77.2-48.248h21.704c13.232,0,24-10.768,24-24V24C495.428,10.768,484.66,0,471.428,0z M479.428,88c0,4.408-3.592,8-8,8h-26.296l-50.808,31.752L399.772,96h-40.344c-4.408,0-8-3.592-8-8V24c0-4.408,3.592-8,8-8h112c4.408,0,8,3.592,8,8V88z"/></g></g><g><g><rect x="367.428" y="32" width="96" height="16"/></g></g><g><g><rect x="367.428" y="64" width="64" height="16"/></g></g><g><g><rect x="447.428" y="64" width="16" height="16"/></g></g><g><g><path d="M247.428,24C142.9,24,52.86,96.304,29.452,197.16l-15.16-25.272l-13.72,8.232l28.12,46.856l46.856-28.12l-8.232-13.72l-21.68,13.008C68.308,105.88,151.276,40,247.428,40c21.016,0,41.752,3.12,61.632,9.28L313.796,34C292.38,27.36,270.052,24,247.428,24z"/></g></g><g><g><path d="M491.54,177.136l-46.856-28.12l-28.112,46.864l13.72,8.232l14-23.336c7.368,21.56,11.136,44.112,11.136,67.224c0,47.576-16.48,94.088-46.392,130.96l12.424,10.08c32.224-39.712,49.968-89.808,49.968-141.04c0-24.472-3.944-48.368-11.632-71.248l23.512,14.104L491.54,177.136z"/></g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
+				<h5 class="title-niche">Частные услуги</h5>
+			</div>
+			<div class="niche niche-mobile">
+				<?xml version="1.0" encoding="iso-8859-1"?><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"viewBox="0 0 54.953 54.953" style="enable-background:new 0 0 54.953 54.953;" xml:space="preserve"><g><circle cx="45.021" cy="25.976" r="1"/><circle cx="9.021" cy="25.976" r="1"/><circle cx="12.021" cy="28.976" r="1"/><circle cx="18.021" cy="28.976" r="1"/><circle cx="15.021" cy="31.976" r="1"/><circle cx="21.021" cy="31.976" r="1"/><circle cx="24.021" cy="34.976" r="1"/><circle cx="30.021" cy="34.976" r="1"/><circle cx="33.021" cy="31.976" r="1"/><circle cx="27.021" cy="37.976" r="1"/><circle cx="36.021" cy="28.976" r="1"/><circle cx="42.021" cy="28.976" r="1"/><circle cx="39.021" cy="31.976" r="1"/><path d="M45.559,32.796l9.394-5.367l-9.656-5.483l9.656-5.517L27.477,0.826L0,16.429l9.656,5.517L0,27.429l9.656,5.517L0,38.429l27.477,15.698l27.477-15.698l-9.656-5.483l0.071-0.041C45.439,32.879,45.497,32.837,45.559,32.796z M27.477,3.125l23.436,13.309l-7.637,4.364l0,0l-15.798,9.026L4.041,16.434L27.477,3.125z M11.129,23.409c0.162,0.333,0.497,0.567,0.892,0.567c0.27,0,0.512-0.109,0.692-0.283l2.262,1.292c-0.53,0.025-0.954,0.455-0.954,0.991c0,0.552,0.448,1,1,1s1-0.448,1-1c0-0.173-0.055-0.327-0.132-0.469l10.33,5.902c-0.116,0.163-0.198,0.352-0.198,0.567c0,0.552,0.448,1,1,1s1-0.448,1-1c0-0.051-0.021-0.094-0.029-0.143l10.052-5.743c0.059,0.496,0.465,0.885,0.977,0.885c0.552,0,1-0.448,1-1c0-0.325-0.165-0.601-0.406-0.783l2.202-1.258c0.068,0.015,0.132,0.041,0.204,0.041c0.444,0,0.807-0.294,0.938-0.694l0.32-0.183l7.634,4.335l-1.983,1.133c-0.157-0.347-0.503-0.591-0.908-0.591c-0.552,0-1,0.448-1,1c0,0.216,0.083,0.405,0.199,0.568l-3.945,2.254l0,0l-6.388,3.65c0.078-0.142,0.134-0.298,0.134-0.472c0-0.552-0.448-1-1-1s-1,0.448-1,1c0,0.537,0.426,0.967,0.957,0.991l-2.263,1.293c-0.18-0.174-0.423-0.284-0.694-0.284c-0.552,0-1,0.448-1,1c0,0.08,0.028,0.151,0.046,0.226l-4.59,2.622l-5.517-3.152c-0.13-0.401-0.494-0.696-0.939-0.696c-0.073,0-0.138,0.027-0.206,0.042l-2.201-1.257c0.241-0.183,0.407-0.458,0.407-0.784c0-0.552-0.448-1-1-1c-0.512,0-0.919,0.391-0.977,0.887L6.991,29.12c0.007-0.049,0.029-0.093,0.029-0.144c0-0.552-0.448-1-1-1c-0.239,0-0.449,0.095-0.621,0.235l-1.359-0.776L11.129,23.409zM50.912,38.434l-23.436,13.39L4.041,38.434l7.633-4.335l15.803,9.028l15.802-9.028L50.912,38.434z"/></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
+				<h5 class="title-niche">Дизайн</h5>
+			</div>
+			<div class="niche niche-mobile">
+				<?xml version="1.0" encoding="iso-8859-1"?><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"viewBox="0 0 463 463" style="enable-background:new 0 0 463 463;" xml:space="preserve"><path d="M462.988,319.813c0.001-0.105,0.012-0.208,0.012-0.313c0-0.023-0.003-0.046-0.004-0.07c-0.001-0.17-0.013-0.34-0.026-0.511c-0.006-0.083-0.01-0.166-0.019-0.248c-0.016-0.147-0.042-0.293-0.067-0.44c-0.018-0.105-0.033-0.211-0.056-0.315c-0.025-0.113-0.057-0.225-0.087-0.338c-0.036-0.135-0.07-0.27-0.113-0.401c-0.028-0.086-0.063-0.172-0.094-0.258c-0.056-0.153-0.113-0.304-0.179-0.452c-0.01-0.023-0.017-0.047-0.028-0.071L383,141.875V119h0.5c8.547,0,15.5-6.953,15.5-15.5v-1.188c0-7.648-5.48-14.083-13.03-15.302L255,65.875V52.446c4.971-5.571,8-12.91,8-20.946C263,14.131,248.869,0,231.5,0S200,14.131,200,31.5c0,8.036,3.029,15.375,8,20.946v12.7L76.951,86.988C69.447,88.239,64,94.669,64,102.277v1.223c0,8.547,6.953,15.5,15.5,15.5H80v22.875L0.672,316.396c-0.011,0.023-0.018,0.048-0.028,0.071c-0.065,0.147-0.122,0.299-0.178,0.451c-0.032,0.086-0.066,0.172-0.095,0.259c-0.043,0.131-0.078,0.266-0.113,0.401c-0.03,0.113-0.062,0.225-0.087,0.338c-0.022,0.104-0.038,0.21-0.056,0.315c-0.025,0.147-0.051,0.293-0.067,0.44c-0.009,0.082-0.012,0.166-0.019,0.249c-0.013,0.17-0.024,0.34-0.026,0.509c0,0.024-0.004,0.047-0.004,0.07c0,0.106,0.011,0.209,0.012,0.315c0.004,0.084,0.003,0.169,0.01,0.253C0.489,350.916,38.735,375,87.5,375s87.011-24.084,87.478-54.932c0.007-0.084,0.006-0.169,0.01-0.254c0.001-0.105,0.012-0.208,0.012-0.313c0-0.023-0.003-0.046-0.004-0.07c-0.001-0.17-0.013-0.34-0.026-0.511c-0.006-0.083-0.01-0.166-0.019-0.248c-0.016-0.147-0.042-0.293-0.067-0.44c-0.018-0.105-0.033-0.211-0.056-0.315c-0.025-0.113-0.057-0.225-0.087-0.338c-0.036-0.135-0.07-0.27-0.113-0.401c-0.028-0.086-0.063-0.172-0.094-0.258c-0.056-0.153-0.113-0.304-0.179-0.452c-0.01-0.023-0.017-0.047-0.028-0.071L95,141.875V119h113v162.945c-4.765,2.647-8,7.728-8,13.555v110.486l-47.51,14.847c-9.863,3.083-16.49,12.097-16.49,22.431V455.5c0,4.142,3.357,7.5,7.5,7.5h176c4.143,0,7.5-3.358,7.5-7.5v-12.237c0-10.334-6.627-19.348-16.49-22.431L263,405.986V295.5c0-5.827-3.235-10.908-8-13.555V119h113v22.875l-79.328,174.522c-0.011,0.023-0.018,0.048-0.028,0.071c-0.065,0.147-0.122,0.299-0.178,0.451c-0.032,0.086-0.066,0.172-0.095,0.259c-0.043,0.131-0.078,0.266-0.113,0.401c-0.03,0.113-0.062,0.225-0.087,0.338c-0.022,0.104-0.038,0.21-0.056,0.315c-0.025,0.147-0.051,0.293-0.067,0.44c-0.009,0.082-0.012,0.166-0.019,0.249c-0.013,0.17-0.024,0.34-0.026,0.509c0,0.024-0.004,0.047-0.004,0.07c0,0.106,0.011,0.209,0.012,0.315c0.004,0.084,0.003,0.169,0.01,0.253C288.489,350.916,326.735,375,375.5,375s87.011-24.084,87.478-54.932C462.985,319.983,462.984,319.898,462.988,319.813z M87.5,161.625L155.852,312H19.148L87.5,161.625zM87.5,360c-34.728,0-64.692-14.482-71.194-33h142.389C152.192,345.518,122.228,360,87.5,360z M248,295.5V404h-33V295.5c0-0.276,0.225-0.5,0.5-0.5h32C247.775,295,248,295.224,248,295.5z M223,280V61.825c2.706,0.76,5.555,1.175,8.5,1.175s5.794-0.415,8.5-1.175V280H223z M231.5,15c9.098,0,16.5,7.402,16.5,16.5S240.598,48,231.5,48S215,40.598,215,31.5S222.402,15,231.5,15z M79.5,104c-0.275,0-0.5-0.224-0.5-0.5v-1.223c0-0.246,0.176-0.453,0.418-0.493L208,80.354V104H79.5zM312,443.263V448H151v-4.737c0-3.738,2.397-6.999,5.965-8.113l51.68-16.15h45.711l51.68,16.15C309.603,436.265,312,439.525,312,443.263z M255,81.07l128.579,20.749c0.244,0.039,0.421,0.247,0.421,0.494v1.188c0,0.276-0.225,0.5-0.5,0.5H255V81.07z M375.5,161.625L443.852,312H307.148L375.5,161.625z M375.5,360c-34.728,0-64.692-14.482-71.194-33h142.389C440.192,345.518,410.228,360,375.5,360z"/><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
+				<h5 class="title-niche">Юридические<br>услуги</h5>
+			</div>
+			<div class="niche niche-mobile">
+				<?xml version="1.0" encoding="iso-8859-1"?><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"viewBox="0 0 60 60" style="enable-background:new 0 0 60 60;" xml:space="preserve"><g><path d="M14,36.182h14v-10H14V36.182z M16,34.182v-3h10v3H16z M26,28.182v1H16v-1H26z"/><path d="M14,40.182v12h14v-12H14z M20,42.182v3h-4v-3H20z M16,47.182h4v3h-4V47.182z M22,50.182v-3h4v3H22z M26,45.182h-4v-3h4V45.182z"/><path d="M32,36.182h14v-10H32V36.182z M34,34.182v-1h10v1H34z M44,28.182v3H34v-3H44z"/><path d="M59,48.182c-0.553,0-1,0.448-1,1v1h-1v-1c0-0.552-0.447-1-1-1s-1,0.448-1,1v1h-1V29.978c0.521,0.234,1.073,0.363,1.626,0.363c1.073,0,2.139-0.436,2.927-1.284c0.76-0.818,1.145-1.925,1.057-3.038c-0.089-1.112-0.644-2.145-1.522-2.833L32.722,3.345L30,0.818L27.343,3.29L1.913,23.186c-0.879,0.688-1.434,1.721-1.522,2.833c-0.088,1.113,0.297,2.22,1.057,3.038c1.194,1.286,3.021,1.61,4.553,0.922v20.204H5v-1c0-0.552-0.447-1-1-1s-1,0.448-1,1v1H2v-1c0-0.552-0.447-1-1-1s-1,0.448-1,1v9c0,0.552,0.447,1,1,1s1-0.448,1-1v-1h1v1c0,0.552,0.447,1,1,1s1-0.448,1-1v-1h1v2h26h14h8v-2h1v1c0,0.552,0.447,1,1,1s1-0.448,1-1v-1h1v1c0,0.552,0.447,1,1,1s1-0.448,1-1v-9C60,48.63,59.553,48.182,59,48.182z M2.912,27.695c-0.385-0.415-0.572-0.954-0.527-1.518c0.045-0.564,0.314-1.067,0.761-1.416L28.64,4.811l1.361-1.265l1.424,1.319l25.43,19.896c0.446,0.349,0.716,0.852,0.761,1.416c0.045,0.564-0.143,1.104-0.527,1.518c-0.708,0.762-1.861,0.858-2.686,0.223L54,27.608v0l-24-18.5l-23.61,18.2l-0.001,0.001l-0.791,0.609C4.772,28.553,3.62,28.457,2.912,27.695z M2,55.182v-3h1v3H2z M5,55.182v-3h1v3H5zM34,57.182v-15h10v15H34z M52,57.182h-6v-17H32v17H8V28.591l22-16.959l22,16.959V57.182z M54,55.182v-3h1v3H54z M57,55.182v-3h1v3H57z"/></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
+				<h5 class="title-niche">Недвижимость</h5>
+			</div>
+			<div class="niche niche-mobile">
+				<?xml version="1.0" encoding="iso-8859-1"?><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"viewBox="0 0 339.452 339.452" style="enable-background:new 0 0 339.452 339.452;" xml:space="preserve"><g><g><path d="M325.452,280.557h-4.72c0.048-0.666,0.048-1.334,0-2v-252c0-7.732-6.268-14-14-14h-136.8c-7.732,0-14,6.268-14,14v104c-13.025,3.16-24.423,11.024-32,22.08c-9.292,13.387-12.164,30.208-7.84,45.92c5.76,22.08,6.48,51.36-5.44,63.52c-6.863,6.083-16.517,7.897-25.12,4.72c-9.254-1.465-17.155-7.474-21.04-16c-12.72-29.36,19.04-84.88,19.12-85.12c1.92-2.88,46.16-71.6,0.96-112c-1.84-1.92-45.44-48-79.12-43.52c-3.424,0.442-5.842,3.576-5.4,7c0.442,3.424,3.576,5.842,7,5.4c8.094-0.486,16.162,1.316,23.28,5.2l-8.96,10.8c-4.856,6.017-3.914,14.831,2.103,19.687c0.098,0.079,0.197,0.157,0.297,0.233l30.08,24c2.473,1.982,5.551,3.055,8.72,3.04h1.2c3.688-0.416,7.058-2.288,9.36-5.2l8.72-10.96c27.04,34.56-8,89.6-8.88,90.48c-1.44,2.48-35.04,61.28-20,96c5.56,12.056,16.739,20.568,29.84,22.72c4.035,0.978,8.169,1.488,12.32,1.52c8.97,0.27,17.654-3.175,24-9.52c16-16.72,14.72-50.8,8.48-74.96c-6.637-22.24,5.95-45.662,28.16-52.4v135.36c-0.048,0.666-0.048,1.334,0,2h-4c-7.73-0.177-14.14,5.946-14.316,13.676c-0.003,0.108-0.004,0.216-0.004,0.324v21.04c-0.002,7.732,6.264,14.002,13.996,14.004c0.108,0,0.216-0.001,0.324-0.004h173.68c7.732,0,14-6.268,14-14v-21.04C339.452,286.826,333.184,280.557,325.452,280.557z M72.652,61.917l-8.88,10.96c-0.339,0.412-0.829,0.671-1.36,0.72c-0.514,0.067-1.034-0.078-1.44-0.4l-30.08-24c-0.762-0.778-0.762-2.022,0-2.8l8.88-11.04c0.339-0.412,0.829-0.671,1.36-0.72c0.514-0.067,1.034,0.078,1.44,0.4l30.08,24c0.419,0.333,0.68,0.826,0.72,1.36C73.367,60.985,73.104,61.541,72.652,61.917zM167.772,26.557c0-1.105,0.895-2,2-2h137.12c1.105,0,2,0.895,2,2v252c0,1.105-0.895,2-2,2h-136.96c-1.101,0.088-2.065-0.733-2.154-1.834c-0.004-0.055-0.007-0.111-0.006-0.166V26.557z M327.772,315.597c0,1.105-0.895,2-2,2h-174c-1.105,0-2-0.895-2-2v-21.04c0-1.105,0.895-2,2-2h173.68c1.09-0.177,2.118,0.564,2.294,1.654c0.019,0.114,0.027,0.23,0.026,0.346V315.597z"/></g></g><g><g><path d="M279.772,43.597h-82.88c-7.732,0-14,6.268-14,14v82.96c0,7.732,6.268,14,14,14h82.88c7.732,0,14-6.268,14-14v-82.96C293.772,49.866,287.504,43.597,279.772,43.597z M281.772,140.637c-0.043,1.073-0.926,1.921-2,1.92h-82.88c-1.105,0-2-0.895-2-2v-82.96c0-1.105,0.895-2,2-2h82.88c1.105,0,2,0.895,2,2V140.637z"/></g></g><g><g><path d="M270.412,177.198h-64c-3.314,0-6,2.686-6,6s2.686,6,6,6h64c3.314,0,6-2.686,6-6S273.726,177.198,270.412,177.198z"/></g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
+				<h5 class="title-niche">Автомобили<br>и перевозки</h5>
+			</div>
+		</div>
+	</div>
+</div>
+</section>
+<!-- THE END OUR WORKS -->
+
+<!-- STEPS -->
+
+<section class="section-steps" id="section-steps">
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<span class="white-line"></span>
+				<h3 class="title-section-steps">6 шагов к вашему новому сайту</h3>
+			</div>
+			<div class="col-6 col-md-4 first-section-steps">
+				<h5 class="title-step">0<span class="digit">1</span></h5>
+				<p class="description-step">Оплата</p>
+				<span class="line-step-section"></span>
+				<button type="button" data-toggle="modal" data-target="#modal-window-pay" class="btn-step"></button>
+			</div>
+			<div class="col-6 col-md-4 second-section-steps">
+				<h5 class="title-step">0<span class="digit">2</span></h5>
+				<p class="description-step">Анализ</p>
+				<span class="line-step-section"></span>
+				<button type="button" data-toggle="modal" data-target="#modal-window-analysis" class="btn-step"></button>
+			</div>
+			<div class="col-6 col-md-4 third-section-steps">
+				<h5 class="title-step">0<span class="digit">3</span></h5>
+				<p class="description-step">Стратегия и<br>тактика</p>
+				<span class="line-step-section"></span>
+				<button type="button" data-toggle="modal" data-target="#modal-window-strategy" class="btn-step"></button>
+			</div>
+			<div class="col-6 col-md-4 fourth-section-steps">
+				<h5 class="title-step">0<span class="digit">4</span></h5>
+				<p class="description-step">Разработка<br>сайта</p>
+				<span class="line-step-section"></span>
+				<button type="button" data-toggle="modal" data-target="#modal-window-prototype" class="btn-step"></button>
+			</div>
+			<div class="col-6 col-md-4 fifth-section-steps">
+				<h5 class="title-step">0<span class="digit">5</span></h5>
+				<p class="description-step">Тестирование</p>
+				<span class="line-step-section"></span>
+				<button type="button" data-toggle="modal" data-target="#modal-window-testing" class="btn-step"></button>
+			</div>
+			<div class="col-6 col-md-4 sixth-section-steps">
+				<h5 class="title-step">0<span class="digit">6</span></h5>
+				<p class="description-step">Реклама</p>
+				<span class="line-step-section"></span>
+				<button type="button" data-toggle="modal" data-target="#modal-window-advertising" class="btn-step"></button>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- THE END STEPS -->
+
+<!-- ABOUT COMPANY -->
+<section class="section-about_company" id="section-about_company">
+	<div class="container-about_company">
+		<div class="img-about_company"></div>
+		<div class="card-about_company">
+			<h4 class="title-about_company">О копании Headstart</h4>
+			<span class="line-about_company"></span>
+			<p class="description-about_company">HeadStart - это команда дружных ребят: дизайнеров, веб-разработчиков и маркетологов. Наша компания занимается комплексной упаковкой бизнеса. А именно созданием сайтов под ключ, настройкой, ведением контекстной рекламы и оформлением групп Вконтакте. </p>
+			<p class="description-about_company">Мы красиво и понятно приподнесем ваш товар или услугу клиенту, отличим от конкурентов. Наша команда не боится трудностей, качественный результат дает только комплексный подход к решению задачи.</p>
+		</div>
+	</div>
+	<div class="container-niche">
+		<span class="dark-line"></span>
+		<h3 class="title-advatages">Для каких ниш подходит собственный сайт</h3>
+		<div class="social_cards">
+			<div class="google-card">
+				<div class="bg_google-card"></div>
+				<p class="description-social_cards">Настройка и ведение рекламы<br>Google AdWords и Яндекс Директ</p>
+				<a href="#!" target="_blank" class="btn-social_cards">Перейти &#62;</a>
+			</div>
+			<div class="vk-card">
+				<div class="bg_vk-card"></div>
+				<p class="description-social_cards">Оформление группы или страницы<br>Вконтакте </p>
+				<a href="https://vk.com/headstartstudio" target="_blank" class="btn-social_cards">Перейти &#62;</a>
+			</div>
+		</div>
+	</section>
+	<!-- THE END ABOUT COMPANY -->
+
+	<!-- FOOTER -->
+	<footer class="footer">
+		<div class="container footer-items">
+			<a href="#header"><div class="logo-footer"></div></a>
+			<div class="social social-footer">
+				<button  type="button" data-toggle="modal" data-target="#modal-window-button" class="discuss_the_project-footer">Обсудить проект</button>
+				<a href="mailto:headstart@inbox.ru" class="mail-footer">
+					<svg class="mail-icon" width="20" height="15" viewBox="0 0 20 15" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0)"><path d="M20 12.4999C20 12.9384 19.8767 13.3448 19.6791 13.7025L13.3643 6.63708L19.6106 1.17207C19.8536 1.55767 20 2.01063 20 2.50011V12.4999ZM10 7.91994L18.6916 0.314997C18.335 0.119742 17.9333 0 17.5001 0H2.49998C2.06619 0 1.66443 0.119742 1.3092 0.314997L10 7.91994ZM12.4232 7.45985L10.4113 9.22131C10.2936 9.32383 10.1471 9.37502 10 9.37502C9.85287 9.37502 9.70633 9.32383 9.58865 9.22131L7.57633 7.45977L1.18163 14.6155C1.56493 14.8559 2.01413 15 2.49994 15H17.5001C17.9858 15 18.4352 14.8559 18.8184 14.6155L12.4232 7.45985ZM0.389439 1.17203C0.146493 1.55763 0 2.01059 0 2.50011V12.5C0 12.9384 0.122751 13.3449 0.321056 13.7025L6.63513 6.63588L0.389439 1.17203Z" fill="white"/></g><defs><clipPath id="clip0"><rect width="20" height="15" fill="white"/></clipPath></defs></svg>
+					headstart@inbox.ru
+				</a>	
+			</div>
+		</div>
+	</footer>
+	<!-- THE END FOOTER -->
+
+	<!-- MODAL WINDOW (BUTTON) -->
+	<div class="modal fade" id="modal-window-button" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+				<h3 class="title-modal-button">Оставьте заявку и мы<br>проконсультируем вас<br>по разработке сайта</h3>
+				<p class="description-modal-button">Мы свяжемся с Вами в течение пару минут</p>
+				<form class="form-button">
+					<!-- Hidden Required Fields -->
+					<input type="hidden" name="project_name" value="Head start">
+					<input type="hidden" name="admin_email" value="rav266@inbox.ru">
+					<input type="hidden" name="form_subject" value="Заявка по нажатию на кнопку">
+					<!-- END Hidden Required Fields -->
+					<input type="text" name="Имя" placeholder="Ваше имя" class="input-modal-button" required>
+					<div class="radio-container">
+						<div class="form-item radio-btn nth-4" style="border-radius: 2px 0px 0px 2px">
+							<input type="radio" name="communication" value="E-mail" id="radio6" checked>
+							<label for="radio6"><img src="img/icons/mail-black.svg" alt="email">  email</label>
+						</div>
+						<div class="form-item radio-btn nth-4">
+							<input type="radio" name="communication" value="Telegram" id="radio7">
+							<label for="radio7"><img src="img/icons/telegram.svg" alt="telegram">  Telegram</label>
+						</div>
+						<div class="form-item radio-btn nth-4">
+							<input type="radio" name="communication" value="WhatsApp" id="radio8">
+							<label for="radio8" class="radio8"><img src="img/icons/whatsapp.svg" alt="whatsapp"> WhatsApp</label>
+						</div>
+						<div class="form-item radio-btn nth-4" style="border-radius: 0px 2px 2px 0px">
+							<input type="radio" name="communication" value="Viber" id="radio9">
+							<label for="radio9" style="border: 0"><img src="img/icons/viber.svg" alt="viber">  Viber</label>
+						</div>
+					</div>
+					<input type="text" name="Контакт" placeholder="Введите ваши контакты" class="input-modal-button" required>
+					<button class="btn btn-modal-button ">Отправить заявку</button>
+					<span class="conditions-modal-button">Нажимая кнопку, я принимаю<br><a href="http://www.er76.ru/content/files/Условия%20конфиденциальности.pdf" class="conditions-modal" target="_blank">условия конфиденциальности</a></span>
+				</form>
+			</div>
+		</div>
+	</div>
+	<!-- THE END MODAL WINDOW (BUTTON) -->
+
+	<!-- MODAL WINDOW--STEPS (PAY) -->
+	<div class="modal fade" id="modal-window-pay" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-pay" role="document">
+			<div class="modal-content-steps">
+				<button type="button" class="close-steps" data-dismiss="modal" aria-label="Close"></button>
+				<h5 class="title-modal-steps">Оплата</h5>
+				<span class="line-modal-steps"></span>
+				<p class="description-modal-steps">У вас есть 2 варианта оплаты:<br>А. Полная предоплата со скидкой 10%.<br>Б. Предоплата 50% до начала работ и 50%<br>после окончания работ.</p>
+			</div>
+		</div>
+	</div>
+	<!-- THE END MODAL WINDOW--STEPS (PAY) -->
+	<!-- MODAL WINDOW--STEPS (ANALYSIS) -->
+	<div class="modal fade" id="modal-window-analysis" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-analysis" role="document">
+			<div class="modal-content-steps">
+				<button type="button" class="close-steps" data-dismiss="modal" aria-label="Close"></button>
+				<h5 class="title-modal-steps">Анализ бизнеса</h5>
+				<span class="line-modal-steps"></span>
+				<p class="description-modal-steps">Мы создали опросный лист на 30 вопросов, в котором узнаем все тонкости ведения вашего бизнеса, учитывая мельчайшие детали. Бриф должен заполнятся максимально подробно, чтобы мы могли увидеть максимально точную картину Вашей деятельности и создать сайт, идеальный для ваших клиентов.</p>
+			</div>
+		</div>
+	</div>
+	<!-- THE END MODAL WINDOW--STEPS (ANALYSIS) -->
+	<!-- MODAL WINDOW--STEPS (STRATEGY) -->
+	<div class="modal fade" id="modal-window-strategy" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-strategy" role="document">
+			<div class="modal-content-steps">
+				<button type="button" class="close-steps" data-dismiss="modal" aria-label="Close"></button>
+				<h5 class="title-modal-steps">Стратегия</h5>
+				<span class="line-modal-steps"></span>
+				<p class="description-modal-steps">Самый важный этап работ, от которого зави- сит дальнейший путь развития сайта. На осно- вании проведенного опроса мы создаем портрет вашего потенциального клиента и выявляем его главные потребности. Выявляем на что нам следует «давить». Составляем уникальное торговое предложения, которое не даст потенциальному клиенту пройти мимо.</p>
+			</div>
+		</div>
+	</div>
+	<!-- THE END MODAL WINDOW--STEPS (STRATEGY) -->
+	<!-- MODAL WINDOW--STEPS (PROTOTYPE) -->
+	<div class="modal fade" id="modal-window-prototype" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-prototype" role="document">
+			<div class="modal-content-steps">
+				<button type="button" class="close-steps" data-dismiss="modal" aria-label="Close"></button>
+				<h5 class="title-modal-steps">Прототип/дизайна/верстка</h5>
+				<span class="line-modal-steps"></span>
+				<p class="description-modal-steps">Когда все нюансы и тонкости уже проговорены: начинается разработка самого сайта. Профессиональный дизайнер создает сначала макет сайта. А уже потом стильный, продуман- ный до мелочей дизайн, который отличит вас от конкурентов. Визуальная упаковка - это уже  половина успеха вашего дела. После того, как макет сайта готов, его надо заверстать. Верстка с использованием новейших технологий (анимация объектов, паралакс, jQuery, html5), адаптивная верстка под все устройства ( пк, телефон, планшет, тв ) и быстрая скорость загрузки сайта - все это дает приятные ощущения использования сайта: все плавно, быстро и очень удобно, посетитель надолго задержится на странице.</p>
+			</div>
+		</div>
+	</div>
+	<!-- THE END MODAL WINDOW--STEPS (PROTOTYPE) -->
+	<!-- MODAL WINDOW--STEPS (TESTING) -->
+	<div class="modal fade" id="modal-window-testing" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-testing" role="document">
+			<div class="modal-content-steps">
+				<button type="button" class="close-steps" data-dismiss="modal" aria-label="Close"></button>
+				<h5 class="title-modal-steps">Тестирование сайта</h5>
+				<span class="line-modal-steps"></span>
+				<p class="description-modal-steps">	Мы проверяем сайт на наличие неполадок, проверяем все тексты на наличие опечаток и орфографических ошибок. Тестируем формы: предполагается, что формы будут заполнять простые пользователи, поэтому в процессе заполнения все должно быть предельно понятно. Для этого мы выделяем отдельных людей, которые впервые видят сайт. Далее мы смотрим на оптимизацию и скорость загрузки сайта, ровно ли сайт адаптирован под мобильные устройства, проверяем сайт в разных браузерах, ищем битые ссылки и многое другое...</p>
+			</div>
+		</div>
+	</div>
+	<!-- THE END MODAL WINDOW--STEPS (TESTING) -->
+	<!-- MODAL WINDOW--STEPS (ADVERTISING) -->
+	<div class="modal fade" id="modal-window-advertising" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-advertising" role="document">
+			<div class="modal-content-steps">
+				<button type="button" class="close-steps" data-dismiss="modal" aria-label="Close"></button>
+				<h5 class="title-modal-steps">Настройка рекламы</h5>
+				<span class="line-modal-steps"></span>
+				<p class="description-modal-steps">После того как сайт полностью утверждён и протестирован, к работе приступает специа- лист по контекстной рекламе. От этого зависит очень многое, так как, если Ваш сайт будет в конце списка сайтов конкурентов, скорее всего на него почти никто не зайдет. Наши клиенты понимают - чтобы много зарабатывать, надо соответствующим образом инвестировать в рекламу. И у вас полностью есть такая возможность, так как мы абсолютно бесплатно настроим Вам Яндекс Директ и Google Adwords, все Ваши финансы направятся прямиком уже на само продвижение.</p>
+			</div>
+		</div>
+	</div>
+	<!-- THE END MODAL WINDOW--STEPS (ADVERTISING) -->
+	
+	<!-- Bootstrap scripts -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<!-- Form -->
+	<script src="js/script.js"></script>
+	<!-- Scroll -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+	<script>
+		$("body").on('click', '[href*="#"]', function(e){
+			var fixed_offset = 60;
+			$('html,body').stop().animate({ scrollTop: $(this.hash).offset().top - fixed_offset }, 900);
+			e.preventDefault();
+		});
+	</script>
+	<!-- Library Slick slider -->
+	<script src="js/slick.min.js"></script>
+	<!-- Slick slider settings -->
+	<script>
+		$('.works').slick({
+			pauseOnHover: true,
+			autoplay: false,
+			autoplaySpeed: 2000,
+			infinite: true,
+			slidesToShow: 3,
+			slidesToScroll: 1,
+			vertical: true,
+			verticalSwiping: true,
+		});
+		$('.niches-mobile').slick({
+			arrows: false,
+			dots: true,
+			pauseOnHover: true,
+			autoplay: false,
+			autoplaySpeed: 2000,
+			infinite: true,
+			slidesToShow: 1,
+			slidesToScroll: 1,
+		});
+	</script>
+</body>
+</html>

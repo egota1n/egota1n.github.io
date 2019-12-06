@@ -1,0 +1,2059 @@
+/* МЕДИА-ЗАПРОСЫ (АДАПТАЦИЯ) */
+
+@media (min-width: 320px) and (max-width: 366px) {
+	.nav-bar{
+		display: none;
+	}
+	.submenu{
+		display: none;
+	}
+	.offer{
+		padding: 40px 0px 30px 0px;
+	}
+	.block-advantages {
+	    margin-top: 30px;
+	    margin-bottom: 18px;
+	    height: 164px;
+	}
+	.logotype-offer {
+	    width: 166px;
+	    margin-top: 0;
+	}
+	.advatages-carusel{
+		display: block;
+	}
+	.equipment-carusel{
+		display: block;
+	}
+	.main-advantages{
+		display: none;
+	}
+	.main-advantages-carusel{
+		display: block;
+	}
+	.title-offer {
+	    font-size: 20px;
+	    margin-top: 52px;
+	    line-height: 44.4px;
+	}
+	.numeral {
+	    font-size: 72px;
+	}
+	.my-dots {
+	    top: 203px;
+	}
+
+	.section-about_project {
+	    padding: 55px 0 100px 0;
+	}
+	img.park-mobile {
+	    width: 90%;
+	    display: block;
+	    margin: 0 auto;
+	}
+	.about-project{
+		display: none;
+	}
+	.advatages{
+		display: none;
+	}
+	.about-project-mobile{
+		display: block;
+	}
+	.main-advantages{
+		display: none;
+	}
+	.main-advantages-carusel{
+		display: block;
+	}
+	.block-advantages {
+	    width: 202px;
+	    height: 174px;
+	}
+	.main-advatages-dots {
+	    top: 159px;
+	}
+	.main-advantages-carusel {
+	    display: block;
+	    margin-top: 20px;
+	    margin-bottom: 19px;
+	}
+	.title-advatages {
+    	font-size: 21px;
+	}
+	.title-advatages {
+	    font-size: 21px;
+	    color: #CBB190;
+	    text-align: center;
+	}
+	.description-advatages-carusel {
+	    left: 32%;
+	    bottom: 37px;
+	    width: 204px;
+	    font-size: 14px;
+	}
+	.slick-slide img {
+	    display: block;
+	    max-width: 80%;
+	}
+	.architecture-section-mobile{
+		display: block;
+	}
+	.architecture-section{
+		display: none;
+	}
+	.section-architecture {
+	    padding: 81px 0 80px 0;
+	}
+	p.description-apartments {
+	    display: block;
+	    margin: 0 auto;
+	    width: 82%;
+	    margin-top: 20px;
+	}
+	.infrastructure-section-mobile{
+		display: block;
+	}
+	.infrastructure-section{
+		display: none;
+	}
+	.section-infrastructure {
+	    padding-bottom: 106px;
+	}
+	.equipment-carusel{
+		display: block;
+	}
+	.technical_equipment{
+		display: none;
+	}
+	.parking-section-mobile{
+		display: block;
+	}
+	.parking-section{
+		display: none;
+	}
+	.section-parking {
+	    padding-top: 20px;
+	    padding-bottom: 95px;
+	}
+	h2.title-location {
+	    display: block;
+	    margin: 0 auto;
+	    margin-top: 20px;
+	}
+	.section-infrastructure {
+	    padding-bottom: 44px;
+	}
+	.active-referencence-menu-footer {
+	    margin-right: 91px;
+	}
+	.referencence-menu-footer {
+	    margin-right: 21px;
+	}
+	.menu-footer {
+	    position: relative;
+	    bottom: 16px;
+	}
+	.nav-footer{
+		display: none;
+	}
+	.nav-submenu-footer{
+		display: none;
+	}
+	.btn-call-nav{
+		display: none;
+	}
+	.line-footer{
+		display: none;
+	}
+	.title-details {
+	    margin-bottom: 50px;
+	}
+	.section-details {
+	    padding: 71px 0 108px 0;
+	}
+	.my-dots-3 {
+	    bottom: -26px;
+	}
+	.my-dots {
+	    top: 123px;
+	}
+	.documents-section-mobile{
+		display: block;
+	}
+	.documents-section{
+		display: none;
+	}
+	img.pdf {
+		width: 33px;
+	}
+	.section-documents {
+	    padding: 37px 0 43px 0;
+	}
+	.documents-section{
+		display: none;
+	}
+	.documents-section-mobile{
+		display: block;
+	}
+	.nav-bar{
+		display: none;
+	}
+	.submenu{
+		display: none;
+	}
+	.offer{
+		padding: 40px 0px 30px 0px;
+	}
+	.block-advantages {
+	    margin-top: 30px;
+	    margin-bottom: 18px;
+	    height: 164px;
+	}
+	.logotype-offer {
+	    width: 166px;
+	    margin-top: 0;
+	}
+	.advatages-carusel{
+		display: block;
+	}
+	.equipment-carusel{
+		display: block;
+	}
+	.main-advantages{
+		display: none;
+	}
+	.main-advantages-carusel{
+		display: block;
+	}
+	.description-main_advantages {
+	    font-size: 18px;
+	}
+	.section-about_project {
+	    padding: 55px 0 100px 0;
+	}
+	img.img-architecture {
+	    width: 85%;
+	    display: block;
+	    margin: 0 auto;
+	}
+	p.description-project-mobile.wow.fadeIn {
+	    font-size: 14px;
+	    text-align: center;
+	    font-weight: 700;
+	    width: 67%;
+	    margin: 0 auto;
+	    margin-bottom: 17px;
+	}
+	p.description-complex-mobile.wow.rollIn {
+	    width: 90%;
+	    margin: 0 auto;
+	    margin-top: 13px;
+	}
+	.about-project{
+		display: none;
+	}
+	.advatages{
+		display: none;
+	}
+	.about-project-mobile{
+		display: block;
+	}
+	.main-advantages{
+		display: none;
+	}
+	.main-advantages-carusel{
+		display: block;
+	}
+	.block-advantages {
+	    width: 202px;
+	    height: 174px;
+	}
+	.main-advatages-dots {
+	    top: 159px;
+	}
+	.main-advantages-carusel {
+	    display: block;
+	    margin-top: 20px;
+	    margin-bottom: 19px;
+	}
+	.section-advatages {
+	    padding: 38px 0 17px 0;
+	}
+	.title-advatages {
+	    font-size: 21px;
+	    color: #CBB190;
+	    text-align: center;
+	    margin-bottom: 21px;
+	}
+	.architecture-section-mobile{
+		display: block;
+	}
+	.architecture-section{
+		display: none;
+	}
+	.section-architecture {
+	    padding: 81px 0 80px 0;
+	}
+	h2.architecture {
+	    margin: 0 auto;
+	    margin-top: 30px;
+	    width: 150px;
+	}
+	p.description-architecture {
+	    display: block;
+	    margin: 0 auto;
+	    width: 81%;
+	    margin-top: 20px;
+	}
+	img.img-apartments {
+	    display: block;
+	    margin: 0 auto;
+	    width: 85%;
+	    margin-top: 30px;
+	}
+	h2.apartments {
+		width: 125px;
+	    margin: 0 auto;
+    	margin-top: 30px;
+
+	}
+	p.description-apartments {
+	    display: block;
+	    margin: 0 auto;
+	    width: 82%;
+	    margin-top: 20px;
+	}
+	button.btn.btn-apartments {
+	    width: 73%;
+	    margin-top: 20px;
+	    display: block;
+	    margin: 0 auto;
+	}
+	p.description-model {
+	    display: block;
+	    margin: 0 auto;
+	    width: 82%;
+	    margin-top: 15px;
+	    margin-bottom: 20px;
+	}
+	.infrastructure-section-mobile{
+		display: block;
+	}
+	.infrastructure-section{
+		display: none;
+	}
+	img.road {
+		position: static;
+	    margin: 0;
+	    display: block;
+	    width: 80%;
+	    margin: 0 auto;
+	}
+	h2.title-infrastructure.wow.tada {
+	    position: static;
+	    display: block;
+	    margin: 0;
+	    width: 225px;
+	    text-align: center;
+	    margin: 0 auto;
+	    margin-top: 30px;
+	    font-size: 19px;
+	}
+	p.description-infrastructure.wow.fadeInUp {
+	    position: static;
+	    margin: 0;
+	    margin: 0 auto;
+	    margin-top: 20px;
+	    width: 76%;
+	}
+	.section-infrastructure {
+	    padding-bottom: 106px;
+	}
+	.equipment-carusel{
+		display: block;
+	}
+	.technical_equipment{
+		display: none;
+	}
+	.parking-section-mobile{
+		display: block;
+	}
+	.parking-section{
+		display: none;
+	}
+	.section-parking {
+	    padding-top: 20px;
+	    padding-bottom: 95px;
+	}
+	img.parking {
+	    width: 80%;
+	    display: block;
+	    margin: 0 auto;
+	}
+	h2.title-parking {
+		width: 106px;
+	    display: block;
+	    margin: 0 auto;
+	    margin-top: 30px;
+
+	}
+	p.description-parking {
+	    width: 80%;
+	    display: block;
+	    margin: 0 auto;
+	    margin-top: 15px;
+	}
+	img.map {
+	    width: 80%;
+	    display: block;
+	    margin: 0 auto;
+	    margin-top: 30px;
+	}
+	p.description-location {
+	    width: 81%;
+	    display: block;
+	    margin: 0 auto;
+	    margin-top: 15px;
+	}
+	.section-technical_equipment {
+	    padding: 32px 0 17px 0px;
+	}
+	.section-infrastructure {
+	    padding-bottom: 44px;
+	}
+	img.map {
+	    width: 80%;
+	    display: block;
+	    margin: 0 auto;
+	    margin-top: 62px;
+	}
+	.active-referencence-menu-footer {
+	    margin-right: 91px;
+	}
+	.referencence-menu-footer {
+	    margin-right: 21px;
+	}
+	.menu-footer {
+	    position: relative;
+	    bottom: 16px;
+	}
+	.nav-footer{
+		display: none;
+	}
+	.nav-submenu-footer{
+		display: none;
+	}
+	.btn-call-nav{
+		display: none;
+	}
+	.line-footer{
+		display: none;
+	}
+	.btn-details {
+	    display: block;
+	    margin: 0 auto;
+	    margin-bottom: 20px;
+	    width: 60%;
+	    line-height: 16px;
+	}
+	.title-details {
+	    margin-bottom: 54px;
+	    width: 198px;
+	    margin-bottom: 41px;
+	    margin-left: 41px;
+	}
+	.section-details {
+	    padding: 71px 0 108px 0;
+	}
+	.my-dots-3 {
+	    bottom: -26px;
+	}
+	.my-dots {
+	    top: 132px;
+	}
+	.documents-section-mobile{
+		display: block;
+	}
+	.documents-section{
+		display: none;
+	}
+	.title-file {
+		font-size: 11px;
+		margin-left: 0px;
+	}
+	.section-documents {
+	    padding: 37px 0 43px 0;
+	}
+	.title-documents {
+	    margin-bottom: 28px;
+	}
+	h2.title-project-mobile.wow.fadeIn {
+	    font-size: 21px;
+	    margin-bottom: 10px;
+	}
+	.img-advatages-carusel {
+	    margin: 0 auto;
+	    width: 319px;
+	}
+	h2.title-technical_equipment.wow.tada {
+	    font-size: 20px;
+	    margin-bottom: 35px;
+	}
+	.btn-details.btn-detail-third {
+	    height: 72px;
+	}
+	h2{
+		font-size: 20px;
+	}
+	.btn-watch_file {
+	    font-size: 11px;
+		width: 100%;
+		height: 40px;
+	}
+	.footer {
+	    display: block;
+	    padding: 18px 0 11px 0;
+	}
+	.logo {
+		display: block;
+	    position: absolute;
+	    top: 29px;
+	    left: 410%;
+	    width: 100px;
+	}
+	.footer-section{
+		display: none;
+	}
+	.footer-mobile {
+	    display: block;
+	    display: flex;
+	    align-self: flex-start;
+	}
+	p.law-mobile {
+	    font-size: 10px;
+	    color: #e1d0bc8f;
+	    margin-bottom: 12px;
+	    width: 56%;
+	}
+	img.logo-mobile-nav {
+	    display: block;
+	    margin: 0 auto;
+	    width: 40%;
+	    height: 100%;
+	    max-width: 156px;
+	}
+	.modal-content {
+	    width: 300px;
+	    background-position-x: center;
+	}
+	.closee {
+	    width: 40px;
+	    height: 40px;
+	}
+	.form-close {
+	    top: -10px;
+	    left: 274px;
+	}
+	input {
+	    width: 268px;
+	}
+	.input-modal-right {
+	    position: static;
+	    width: 268px;
+	}
+	button.btn.form-send {
+	    margin-top: 120px;
+	    width: 254px;
+    	height: 42px;
+    	font-size: 16px;
+	}
+	.form-line {
+	    width: 269px;
+	    height: 2px;
+	    margin-top: 12px;
+	    margin-bottom: 4px;
+	}
+	span.required_field {
+	    font-size: 13px;
+	}
+	.modal-dialog {
+	    max-width: 300px;
+	    margin: 1.75rem auto;
+	}
+	.modal-second {
+	    height: 613px;
+	}
+	button.btn.form-send {
+	    margin-top: 25px;
+	    width: 254px;
+	    height: 42px;
+	    font-size: 16px;
+	}
+	
+	input[type="text form-phone"] {
+	    position: static;
+	    margin-top: 10px;
+	}
+	.modal-content {
+	    height: 419px;
+	}
+	.input-modal-right {
+	    height: 89px;
+	}
+	.modal-content.modal-second {
+	    height: 555px;
+	}
+	h2{
+		margin: 0;
+		position: static;
+		text-align: center;
+	}	
+}
+
+/* Экстрамалые девайсы («портретные телефоны», < 576px)*/
+@media (min-width: 367px) and (max-width: 575px) {
+	.nav-bar{
+		display: none;
+	}
+	.submenu{
+		display: none;
+	}
+	.offer{
+		padding: 40px 0px 30px 0px;
+	}
+	.block-advantages {
+	    margin-top: 30px;
+	    margin-bottom: 18px;
+	    height: 164px;
+	}
+	.logotype-offer {
+	    width: 166px;
+	    margin-top: 0;
+	}
+	.advatages-carusel{
+		display: block;
+	}
+	.equipment-carusel{
+		display: block;
+	}
+	.main-advantages{
+		display: none;
+	}
+	.main-advantages-carusel{
+		display: block;
+	}
+	.title-offer {
+	    font-size: 20px;
+	    margin-top: 52px;
+	    line-height: 44.4px;
+	}
+	.description-main_advantages {
+	    font-size: 18px;
+	}
+	.section-about_project {
+	    padding: 55px 0 100px 0;
+	}
+	img.park-mobile {
+	    width: 90%;
+	    display: block;
+	    margin: 0 auto;
+	}
+	p.description-project-mobile.wow.fadeIn {
+	    font-size: 14px;
+	    text-align: center;
+	    font-weight: 700;
+	    width: 67%;
+	    margin: 0 auto;
+	    margin-bottom: 17px;
+	}
+	.about-project{
+		display: none;
+	}
+	.advatages{
+		display: none;
+	}
+	.about-project-mobile{
+		display: block;
+	}
+	.main-advantages{
+		display: none;
+	}
+	.main-advantages-carusel{
+		display: block;
+	}
+	.block-advantages {
+	    width: 202px;
+	    height: 174px;
+	}
+	.main-advatages-dots {
+	    top: 159px;
+	}
+	.main-advantages-carusel {
+	    display: block;
+	    margin-top: 20px;
+	    margin-bottom: 19px;
+	}
+	.section-advatages {
+	    padding: 38px 0 17px 0;
+	}
+	.title-advatages {
+	    font-size: 21px;
+	    color: #CBB190;
+	    text-align: center;
+	    margin-bottom: 21px;
+	}
+	.architecture-section-mobile{
+		display: block;
+	}
+	.architecture-section{
+		display: none;
+	}
+	.section-architecture {
+	    padding: 81px 0 80px 0;
+	}
+	img.img-architecture {
+	    display: block;
+	    margin: 0 auto;
+	    width: 85%;
+	}
+	h2.architecture {
+	    margin: 0 auto;
+	    margin-top: 30px;
+	    width: 150px;
+	}
+	p.description-architecture {
+	    display: block;
+	    margin: 0 auto;
+	    width: 81%;
+	    margin-top: 20px;
+	}
+	img.img-apartments {
+	    display: block;
+	    margin: 0 auto;
+	    width: 85%;
+	    margin-top: 30px;
+	}
+	h2.apartments {
+		width: 125px;
+	    margin: 0 auto;
+    	margin-top: 30px;
+
+	}
+	p.description-apartments {
+	    display: block;
+	    margin: 0 auto;
+	    width: 82%;
+	    margin-top: 20px;
+	}
+	p.description-model {
+	    display: block;
+	    margin: 0 auto;
+	}
+	button.btn.btn-apartments {
+	    width: 73%;
+	    margin-top: 20px;
+	    display: block;
+	    margin: 0 auto;
+	}
+	button.btn.btn-apartments {
+	    width: 73%;
+	    margin-top: 20px;
+	    display: block;
+	    margin: 0 auto;
+	}
+	p.description-model {
+	    display: block;
+	    margin: 0 auto;
+	    width: 82%;
+	    margin-top: 15px;
+	    margin-bottom: 20px;
+	}
+	.infrastructure-section-mobile{
+		display: block;
+	}
+	.infrastructure-section{
+		display: none;
+	}
+	img.road {
+		position: static;
+	    margin: 0;
+	    display: block;
+	    width: 80%;
+	    margin: 0 auto;
+	}
+	h2.title-infrastructure.wow.tada {
+	    position: static;
+	    display: block;
+	    margin: 0;
+	    width: 225px;
+	    text-align: center;
+	    margin: 0 auto;
+	    margin-top: 30px;
+	    font-size: 19px;
+	}
+	p.description-infrastructure.wow.fadeInUp {
+	    position: static;
+	    margin: 0;
+	    margin: 0 auto;
+	    margin-top: 20px;
+	    width: 76%;
+	}
+	.section-infrastructure {
+	    padding-bottom: 106px;
+	}
+	.equipment-carusel{
+		display: block;
+	}
+	.technical_equipment{
+		display: none;
+	}
+	.parking-section-mobile{
+		display: block;
+	}
+	.parking-section{
+		display: none;
+	}
+	.section-parking {
+	    padding-top: 20px;
+	    padding-bottom: 95px;
+	}
+	img.parking {
+	    width: 80%;
+	    display: block;
+	    margin: 0 auto;
+	}
+	h2.title-parking {
+		width: 106px;
+	    display: block;
+	    margin: 0 auto;
+	    margin-top: 30px;
+
+	}
+	p.description-parking {
+	    width: 80%;
+	    display: block;
+	    margin: 0 auto;
+	    margin-top: 15px;
+	}
+	img.map {
+	    width: 80%;
+	    display: block;
+	    margin: 0 auto;
+	    margin-top: 30px;
+	}
+	h2.title-location {
+	    display: block;
+	    margin: 0 auto;
+	    margin-top: 20px;
+	    width: 215px;
+	}
+	p.description-location {
+	    width: 81%;
+	    display: block;
+	    margin: 0 auto;
+	    margin-top: 15px;
+	}
+	.section-technical_equipment {
+	    padding: 32px 0 17px 0px;
+	}
+	.section-infrastructure {
+	    padding-bottom: 44px;
+	}
+	img.map {
+	    width: 80%;
+	    display: block;
+	    margin: 0 auto;
+	    margin-top: 62px;
+	}
+	.law {
+	    left: 31px;
+	    bottom: 28px;
+	}
+	.logo {
+	    position: absolute;
+	    top: -17px;
+	    left: 463%;
+	}
+	.active-referencence-menu-footer {
+	    margin-right: 91px;
+	}
+	.referencence-menu-footer {
+	    margin-right: 21px;
+	}
+	.menu-footer {
+	    position: relative;
+	    bottom: 16px;
+	}
+	.nav-footer{
+		display: none;
+	}
+	.nav-submenu-footer{
+		display: none;
+	}
+	.btn-call-nav{
+		display: none;
+	}
+	.line-footer{
+		display: none;
+	}
+	.btn-details {
+	    display: block;
+	    margin: 0 auto;
+	    margin-bottom: 20px;
+	    width: 60%;
+	    line-height: 16px;
+	}
+	.title-details {
+	    margin-bottom: 54px;
+	    width: 198px;
+	    margin-bottom: 41px;
+	    margin-left: 41px;
+	}
+	.section-details {
+	    padding: 71px 0 108px 0;
+	}
+	.my-dots-3 {
+	    bottom: -26px;
+	}
+	.my-dots {
+	    top: 156px;
+	}
+	.logo{
+		display: none;
+	}
+	.documents-section-mobile{
+		display: block;
+	}
+	.documents-section{
+		display: none;
+	}
+	.section-documents {
+	    padding: 37px 0 43px 0;
+	}
+	.title-documents {
+	    margin-bottom: 28px;
+	}
+	.title-documents {
+	    margin-bottom: 28px;
+	}
+	.description-advatages-carusel {
+	    left: 32%;
+	    bottom: 39px;
+	    width: 219px;
+	    font-size: 14px;
+	}
+	h2.title-project-mobile.wow.fadeIn {
+	    font-size: 21px;
+	    display: block;
+	    width: 123px;
+	    margin: 0 auto;
+	    margin-bottom: 10px;
+	}
+	.img-advatages-carusel {
+	    margin: 0 auto;
+	    width: 319px;
+	}
+	.my-dots {
+	    position: absolute;
+	    bottom: 0;
+	    display: block;
+	    width: 100%;
+	    padding: 0;
+	    list-style: none;
+	    text-align: center;
+	}
+	h2.title-technical_equipment.wow.tada {
+	    font-size: 20px;
+	    margin-bottom: 35px;
+	}
+	.my-dots-2 {
+	    position: absolute;
+	    bottom: 8px;
+	    display: block;
+	    width: 100%;
+	    padding: 0;
+	    list-style: none;
+	    text-align: center;
+	}
+	botton.btn-details.btn-detail-third {
+	    height: 72px;
+	}
+	h2{
+		font-size: 21px;
+	}
+	.law {
+	    left: 11px;
+	    top: 2986px;
+	    width: 182px;
+	}
+	.footer {
+		display: block;
+	    padding: 48px 0 74px 0;
+	}
+	.logo {
+		display: block;
+	    position: absolute;
+	    top: 29px;
+	    left: 410%;
+	    width: 100px;
+	}
+	.footer-section{
+		display: none;
+	}
+	.footer-mobile{
+		display: block;
+	}
+
+	.footer {
+	    display: block;
+	    padding: 18px 0 11px 0;
+	}
+	.logo {
+		display: block;
+	    position: absolute;
+	    top: 29px;
+	    left: 410%;
+	    width: 100px;
+	}
+	.footer-section{
+		display: none;
+	}
+	.footer-mobile {
+	    display: block;
+	    display: flex;
+	    align-self: flex-start;
+	}
+	p.law-mobile {
+	    font-size: 10px;
+	    color: #e1d0bc8f;
+	    margin-bottom: 12px;
+	    width: 56%;
+	}
+	img.logo-mobile-nav {
+	    display: block;
+	    margin: 0 auto;
+	    width: 40%;
+	    height: 100%;
+	    max-width: 156px;
+	}
+	.modal-content {
+	    width: 360px;
+	    background-position-x: center;
+	}
+	.closee {
+	    width: 40px;
+	    height: 40px;
+	}
+	.form-close {
+	    top: -10px;
+	    left: 336px;
+	}
+	input {
+	    width: 327px;
+	}
+	.input-modal-right {
+	    height: 86px;
+	    width: 328px;
+	    position: static;
+	}
+	button.btn.form-send {
+	    margin-top: 120px;
+	    width: 254px;
+    	height: 42px;
+    	font-size: 16px;
+	}
+	.form-line {
+	    width: 269px;
+	    height: 2px;
+	    margin-top: 12px;
+	    margin-bottom: 4px;
+	}
+	span.required_field {
+	    font-size: 13px;
+	}
+	..modal-dialog {
+	    max-width: 360px;
+	    margin: 1.75rem auto;
+	}
+	.modal-second {
+	    height: 613px;
+	}
+	button.btn.form-send {
+	    margin-top: 25px;
+	    width: 254px;
+	    height: 42px;
+	    font-size: 16px;
+	}
+	
+	input[type="text form-phone"] {
+	    position: static;
+	    margin-top: 10px;
+	}
+	.modal-content {
+	    height: 419px;
+	}
+	.input-modal-right {
+	    height: 89px;
+	}
+	.modal-content.modal-second {
+	    height: 555px;
+	}
+	.modal-dialog {
+	    max-width: 360px;
+	    margin: 1.75rem auto;
+	}
+	.numeral {
+	    font-size: 72px;
+	}
+}
+
+/* Малые девайсы («ландшафтные», >= 575px)*/
+@media (min-width: 576px) and (max-width: 767.98px) {
+	.nav-bar{
+		display: none;
+
+	}
+	.submenu{
+		display: none;
+	}
+	.offer{
+		padding: 40px 0px 30px 0px;
+	}
+	.main-advantages{
+		margin-top: 40px;
+	}
+	.block-advantages{
+		width: 160px;
+   		height: 150px;
+	}
+	.numeral{
+		font-size: 60px;
+	}
+
+	.description-main_advantages{
+		font-size: 16px;
+	}
+	img.plashka_1.wow.rollIn {
+	    width: 468px;
+	    height: 160px;
+	    bottom: 24px;
+	    left: 42px;
+	}
+	.description-complex {
+	    position: absolute;
+	    bottom: 60px;
+	    left: 79px;
+	    color: #fff;
+	    width: 422px;
+	}
+	.description-project {
+	    top: -96px;
+	    width: 320px;
+	}
+	.title-project {
+	    top: -137px;
+	}
+	.img-apartments {
+	    width: 366px;
+	}
+	.img-architecture{
+	    width: 300px;
+	}
+	.btn-apartments {
+	    margin-left: 22px;
+	    margin-top: -51px;
+	    background: #a87851;
+	    width: 321px;
+	    height: 51px;
+	}
+	.description-architecture{
+		margin-top: 25px;
+	    margin-left: 21px;
+	    width: 340px;
+	}
+	.architecture {
+	    margin-left: 19px;
+	}
+	.description-apartments {
+	    margin-top: 22px;
+	    margin-left: 64px;
+	    width: 259px;
+	}
+	.advatages{
+		display: none;
+	}
+	.advatages-carusel{
+		display: block;
+	}
+	.equipment-carusel{
+		display: block;
+	}
+	.technical_equipment{
+		display: none;
+	}
+	.nav-bar{
+		display: none;
+	}
+	.submenu{
+		display: none;
+	}
+	.block-advantages {
+	    width: 202px;
+	    height: 150px;
+	}
+	.numeral{
+		font-size: 60px;
+	}
+
+	.description-main_advantages{
+		font-size: 16px;
+	}
+	.park {
+	 	width: 381px;
+	}
+	.plashka_1 {
+	    width: 468px;
+	    height: 160px;
+	    bottom: 24px;
+	    left: 23px;
+	}
+	.description-complex {
+	    position: absolute;
+	    bottom: 60px;
+	    left: 61px;
+	    color: #fff;
+	    width: 422px;
+	}
+	.description-project {
+	    top: -96px;
+	    width: 320px;
+	    left: 19px;
+	}
+	.title-project {
+	 	top: -137px;
+	  	left: 65px;
+	}
+	.img-apartments {
+	    width: 366px;
+	}
+	.img-architecture{
+	    width: 300px;
+	}
+	.btn-apartments {
+	    margin-left: 22px;
+	    margin-top: -51px;
+	    background: #a87851;
+	    width: 321px;
+	    height: 51px;
+	}
+	.description-architecture{
+		margin-top: 25px;
+	    margin-left: 21px;
+	    width: 340px;
+	}
+	.architecture {
+	    margin-left: 19px;
+	}
+	.description-apartments {
+	    margin-top: 22px;
+	    margin-left: 64px;
+	    width: 259px;
+	}
+	img.parking {
+	    width: 320px;
+	}
+	img.map {
+	    width: 350px;
+	}
+	.description-parking {
+	    width: 255px;
+	}
+	.description-location {
+	    width: 234px;
+	}
+	.btn-watch_file {
+	    width: 150px;
+	    height: 52px;
+	}
+	.btn-detail-third {
+	    width: 223px;
+	}
+	.btn-details {
+	    width: 223px;
+		line-height: 20px;
+	}
+	img.plashka_4.wow.rollIn {
+	    width: 552px;
+	    position: absolute;
+	    top: -27px;
+	    left: 0;
+	}
+	img.road {
+	    width: 400px;
+	    position: absolute;
+	    top: -215px;
+	    left: 408px;
+	}
+	.section-infrastructure {
+	    padding-bottom: 112px;
+	}
+	img.plashka_4.wow.rollIn {
+	    width: 521px;
+	    position: absolute;
+	    top: -27px;
+	    left: -1px;
+	}
+	img.road {
+	    width: 359px;
+	    position: absolute;
+	    top: -189px;
+	    left: 384px;
+	}
+	.description-infrastructure {
+	    margin-top: 8px;
+	    margin-left: 17px;
+	    font-size: 14px;
+	    line-height: 25.2px;
+	    color: #3C3C3B;
+	    position: relative;
+	    bottom: 46px;
+	    width: 334px;
+	}
+	.title-infrastructure {
+	    margin-top: 0px;
+	    margin-left: 11px;
+	    line-height: 24px;
+	    position: relative;
+	    bottom: 70px;
+	    width: 472px;
+	}
+	.advatages{
+		display: none;
+	}
+	.advatages-carusel{
+		display: none;
+	}
+	.advatages-carusel{
+		display: block;
+	}
+	.title-advatages {
+	    margin-bottom: 24px;
+	}
+	.equipment-carusel{
+		display: block;
+	}
+	.technical_equipment{
+		display: none;
+	}
+	.img-advatages-carusel {
+	    width: 400px;
+	}
+	.description-advatages-carusel {
+	    left: 166px;
+	    bottom: 59px;
+	    font-size: 18px;
+	}
+	.logo {
+	    position: absolute;
+	    top: -17px;
+	    left: 436%;
+	}
+	.active-referencence-menu-footer {
+	    margin-right: 91px;
+	}
+	.referencence-menu-footer {
+	    margin-right: 21px;
+	}
+	.menu-footer {
+	    position: relative;
+	    bottom: 16px;
+	}
+	.nav-footer{
+		display: none;
+	}
+	.nav-submenu-footer{
+		display: none;
+	}
+	.btn-call-nav{
+		display: none;
+	}
+	.line-footer{
+		display: none;
+	}
+	input {
+	    width: 216px;
+	}
+	.input-modal-right {
+	    left: 257px;
+	    width: 222px;
+	}
+	.form-close {
+	    left: 477px;
+	}
+	.modal-content {
+	    width: 501px;
+	    background-position-x: center;
+	}
+	input[type="text form-phone"] {
+	    left: 241px;
+	}
+	.form-line {
+	    width: 465px;
+	}
+	.main-advantages{
+		display: none;
+	}
+	.main-advantages-carusel{
+		display: block;
+	}
+	.block-advantages {
+	    width: 202px;
+	    height: 150px;
+	}
+	.main-advatages-dots {
+	    top: 159px;
+	}
+	.main-advantages-carusel {
+	    display: block;
+	    margin-top: 20px;
+	    margin-bottom: 19px;
+	}
+	.my-dots {
+	    top: 164px;
+	}
+	.section-about_project {
+	    padding: 55px 0 100px 0;
+	}
+	img.park-mobile {
+	    width: 90%;
+	    display: block;
+	    margin: 0 auto;
+	}
+	p.description-project-mobile.wow.fadeIn {
+	    font-size: 18px;
+	    text-align: center;
+	    font-weight: 700;
+	    width: 67%;
+	    margin: 0 auto;
+	    margin-bottom: 17px;
+	}
+	h2 {
+	    font-size: 26px;
+	    font-weight: 700;
+	    color: #A87851;
+	    text-transform: uppercase;
+	    text-align: center;
+	    margin-bottom: 11px;
+	}
+	.about-project{
+		display: none;
+	}
+	.about-project-mobile{
+		display: block;
+	}
+	.architecture-section-mobile{
+		display: block;
+	}
+	.architecture-section{
+		display: none;
+	}
+	.section-architecture {
+	    padding: 81px 0 80px 0;
+	}
+	img.img-architecture {
+	    display: block;
+	    margin: 0 auto;
+	    width: 85%;
+	}
+	h2.architecture {
+	    margin: 0 auto;
+	    margin-top: 30px;
+	}
+	p.description-architecture {
+	    display: block;
+	    margin: 0 auto;
+	    width: 81%;
+	    margin-top: 20px;
+	}
+	img.img-apartments {
+	    display: block;
+	    margin: 0 auto;
+	    width: 85%;
+	    margin-top: 30px;
+	}
+	h2.apartments {
+	    margin: 0 auto;
+	    margin-top: 30px;
+	}
+	p.description-apartments {
+	    display: block;
+	    margin: 0 auto;
+	    width: 82%;
+	    margin-top: 20px;
+	}
+	p.description-model {
+	    display: block;
+	    margin: 0 auto;
+	}
+	button.btn.btn-apartments {
+	    width: 73%;
+	    margin-top: 20px;
+	    display: block;
+	    margin: 0 auto;
+	}
+	p.description-model {
+	    display: block;
+	    margin: 0 auto;
+	    width: 82%;
+	    margin-top: 15px;
+	    margin-bottom: 20px;
+	}
+	.infrastructure-section-mobile{
+		display: block;
+	}
+	.infrastructure-section{
+		display: none;
+	}
+	img.road {
+		position: static;
+	    margin: 0;
+	    display: block;
+	    width: 80%;
+	    margin: 0 auto;
+	}
+	h2.title-infrastructure.wow.tada {
+	    position: static;
+	    display: block;
+	    margin: 0;
+	    width: 80%;
+	    margin: 0 auto;
+	    margin-top: 30px;
+	    font-size: 19px;
+	}
+	p.description-infrastructure.wow.fadeInUp {
+	    position: static;
+	    margin: 0;
+	    margin: 0 auto;
+	    margin-top: 20px;
+	    width: 76%;
+	}
+	.section-infrastructure {
+	    padding-bottom: 50px;
+	}
+	.parking-section-mobile{
+		display: block;
+	}
+	.parking-section{
+		display: none;
+	}
+
+	.section-parking {
+	    padding-top: 20px;
+	    padding-bottom: 95px;
+	}
+	img.parking {
+	    width: 80%;
+	    display: block;
+	    margin: 0 auto;
+	}
+	h2.title-parking {
+	    display: block;
+	    margin: 0 auto;
+	    margin-top: 30px;
+	}
+	p.description-parking {
+	    width: 80%;
+	    display: block;
+	    margin: 0 auto;
+	    margin-top: 15px;
+	}
+	img.map {
+	    width: 80%;
+	    display: block;
+	    margin: 0 auto;
+	    margin-top: 30px;
+	}
+	h2.title-location {
+	    display: block;
+	    margin: 0 auto;
+	    margin-top: 20px;
+	}
+	p.description-location {
+	    width: 81%;
+	    display: block;
+	    margin: 0 auto;
+	    margin-top: 15px;
+	}
+	.section-technical_equipment {
+	    padding: 33px 0 24px 0;
+	}
+	img.map {
+	    width: 80%;
+	    display: block;
+	    margin: 0 auto;
+	    margin-top: 62px;
+	}
+	.btn-details {
+	    display: block;
+	    margin: 0 auto;
+	    margin-bottom: 20px;
+	    width: 60%;
+	}
+	.title-details {
+	    margin-bottom: 50px;
+	}
+	.section-details {
+	    padding: 71px 0 108px 0;
+	}
+	.my-dots-3 {
+	    top: 156px;
+	}
+	.documents-section-mobile{
+		display: block;
+	}
+	.documents-section{
+		display: none;
+	}
+	.law {
+	    position: absolute;
+	    left: 4%;
+	    top: 3349px;
+	    width: 77%;
+	}
+	.section-advatages {
+	    padding: 36px 0 15px 0;
+	}
+	.my-dots-2 {
+	    position: absolute;
+	    bottom: 6px;
+	    display: block;
+	    width: 100%;
+	    padding: 0;
+	    list-style: none;
+	    text-align: center;
+	}
+	.title-technical_equipment {
+	    margin-bottom: 26px;
+	}
+	.footer {
+	    display: block;
+	}
+
+}
+
+/* Средние девайсы («таблетки», >= 768px) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+	.nav-bar{
+		display: none;
+	}
+	.submenu{
+		display: none;
+	}
+	.block-advantages {
+	    width: 202px;
+	    height: 150px;
+	}
+	.numeral{
+		font-size: 60px;
+	}
+
+	.description-main_advantages{
+		font-size: 16px;
+	}
+	.park {
+	 	width: 381px;
+	}
+	.plashka_1 {
+	    width: 468px;
+	    height: 160px;
+	    bottom: 24px;
+	    left: 23px;
+	}
+	.description-complex {
+	    position: absolute;
+	    bottom: 60px;
+	    left: 61px;
+	    color: #fff;
+	    width: 422px;
+	}
+	.description-project {
+	    top: -96px;
+	    width: 320px;
+	    left: 19px;
+	}
+	.title-project {
+	 	top: -137px;
+	  	left: 65px;
+	}
+	.img-apartments {
+	    width: 366px;
+	}
+	.img-architecture{
+	    width: 300px;
+	}
+	.btn-apartments {
+	    margin-left: 22px;
+	    margin-top: -51px;
+	    background: #a87851;
+	    width: 321px;
+	    height: 51px;
+	}
+	.description-architecture{
+		margin-top: 25px;
+	    margin-left: 21px;
+	    width: 340px;
+	}
+	.architecture {
+	    margin-left: 19px;
+	}
+	.description-apartments {
+	    margin-top: 22px;
+	    margin-left: 64px;
+	    width: 259px;
+	}
+	img.parking {
+	    width: 320px;
+	}
+	img.map {
+	    width: 350px;
+	}
+	.description-parking {
+	    width: 255px;
+	}
+	.description-location {
+	    width: 234px;
+	}
+	.btn-watch_file {
+	    width: 150px;
+	    height: 52px;
+	}
+	.btn-detail-third {
+	    width: 223px;
+	}
+	.btn-details {
+	    width: 223px;
+		line-height: 20px;
+	}
+	img.plashka_4.wow.rollIn {
+	    width: 552px;
+	    position: absolute;
+	    top: -27px;
+	    left: 0;
+	}
+	img.road {
+	    width: 400px;
+	    position: absolute;
+	    top: -215px;
+	    left: 408px;
+	}
+	img.plashka_4.wow.rollIn {
+	    width: 521px;
+	    position: absolute;
+	    top: -27px;
+	    left: -1px;
+	}
+	img.road {
+	    width: 359px;
+	    position: absolute;
+	    top: 0px;
+	    left: 373px;
+	}
+	.description-infrastructure {
+	    margin-top: 8px;
+	    margin-left: 17px;
+	    font-size: 14px;
+	    line-height: 25.2px;
+	    color: #3C3C3B;
+	    position: relative;
+	    bottom: 46px;
+	    width: 334px;
+	}
+	.title-infrastructure {
+	    margin-top: 0px;
+	    margin-left: 11px;
+	    line-height: 24px;
+	    position: relative;
+	    bottom: 70px;
+	    width: 472px;
+	}
+	.advatages{
+		display: none;
+	}
+	.advatages-carusel{
+		display: none;
+	}
+	.advatages-carusel{
+		display: block;
+	}
+	.title-advatages{
+	    margin-bottom: 36px;
+	}
+	.equipment-carusel{
+		display: block;
+	}
+	.technical_equipment{
+		display: none;
+	}
+	.img-advatages-carusel {
+	    width: 311px;
+	}
+	.description-advatages-carusel {
+	    left: 92px;
+	    bottom: 54px;
+	    font-size: 13px;
+	}
+	.law {
+	    left: 31px;
+	    bottom: 28px;
+	}
+	.logo {
+	    position: absolute;
+	    top: -17px;
+	    left: 463%;
+	}
+	.active-referencence-menu-footer {
+	    margin-right: 91px;
+	}
+	.referencence-menu-footer {
+	    margin-right: 21px;
+	}
+	.menu-footer {
+	    position: relative;
+	    bottom: 16px;
+	}
+	.nav-footer{
+		display: none;
+	}
+	.nav-submenu-footer{
+		display: none;
+	}
+	.btn-call-nav{
+		display: none;
+	}
+	.line-footer{
+		display: none;
+	}
+	input {
+	    width: 238px;
+	}
+	.input-modal-right {
+	    left: 277px;
+	    width: 258px;
+	}
+	.form-close {
+	    left: 531px;
+	}
+	.modal-content {
+	    width: 556px;
+	    background-position-x: center;
+	}
+	input[type="text form-phone"] {
+	    left: 277px;
+	}
+	.form-line {
+	    width: 523px;
+	}
+	.infrastructure-section-mobile{
+		display: block;
+	}
+	.infrastructure-section{
+		display: none;
+	}
+	.law {
+	    position: absolute;
+	    left: 4%;
+	    top: 2501px;
+	}
+	.section-parking {
+	    padding-bottom: 93px;
+	}
+	.section-infrastructure {
+	    padding-bottom: 71px;
+	}
+	.section-details {
+	    padding: 72px 0 101px 0;
+	}
+	.section-technical_equipment {
+	    padding: 41px 0;
+	}
+	.title-technical_equipment {
+	    margin-bottom: 37px;
+	}
+	.my-dots-2 {
+	    bottom: -11px;
+	}
+}
+
+/* Большие девайсы (большие десктопы, >= 992px)*/
+@media (min-width: 992px) and (max-width: 1199.98px) {
+	.reference-topmenu,
+	.active{
+		margin-right: 0;
+		margin-right: 20px;
+	}
+	.referencence-submenu {
+   		font-size: 11px;
+	}
+	.nav-bar-mobile{
+		display: none;
+	}
+	.call {
+	    font-size: 14px;
+	    width: 165px;
+    	height: 44px;
+	}
+	.reference-topmenu, .active {
+	    margin-right: 18px;
+	}
+	a.reference-topmenu.wow.rollIn {
+	    font-size: 14px;
+	}
+	img.logo {
+	    width: 115px;
+	}
+	img.plashka_1.wow.rollIn {
+    	width: 657px;
+    	height: 186px;
+	}
+	.description-complex {
+	    width: 545px;
+	    left: 76px;
+	}
+	.btn-apartments {
+	    width: 319px;
+	    height: 53px;
+	}
+	.title-project {
+	    position: absolute;
+	    top: -168px;
+	    left: 115px;
+	}
+	.description-project {
+	    font-size: 15.5px;
+	    width: 387px;
+	    left: 64px;
+	    top: -123px;
+	}
+	img.advatages {
+	    width: 274px;
+	}
+	.description-advantages {
+	    font-size: 13.5px;
+	    line-height: 21px;
+	    left: 72px;
+	    bottom: 45px;
+	}
+	.img-apartments{
+	    position: absolute;
+	    right: 0px;
+	}
+	.apartments {
+	    margin-top: 424px;
+	    margin-left: 68px;
+	}
+	img.equipment {
+	    width: 293px;
+	}
+	.description-equipment {
+	    left: 68px;
+	}
+	.otis{
+		display: none;
+	}
+	.section-technical_equipment {
+		padding: 57px 0;
+	}
+	.title-technical_equipment {
+	    margin-bottom: 47px;
+	}
+	.title-infrastructure {
+	    width: 412px;
+	}
+	img.road {
+	    width: 481px;
+	}
+	img.plashka_4.wow.rollIn {
+	    width: 642px;
+	    top: -155px;
+	    left: 20px;
+	}
+	.map {
+	    position: absolute;
+	    right: 0px;
+	}
+	.description-location {
+	    margin-left: 65px;
+	    width: 400px;
+	}
+	.title-location {
+	    margin-top: 424px;
+	}
+	.active-referencence-menu-footer {
+	    margin-right: 238px;
+	}
+	.referencence-menu-footer {
+	    margin-right: 24px;
+	}
+	.btn-call-nav {
+	    font-size: 13px;
+	    width: 155px;
+	    height: 44px;
+	}
+	.description-architecture {
+	    width: 319px;
+	}
+	.title-infrastructure {
+	    margin-top: 30px;
+	    margin-left: 29px;
+	}
+	.description-infrastructure {
+	    margin-top: 20px;
+	    margin-left: 28px;
+	    width: 440px;
+	}
+	.footer {
+	    padding: 46px 0 8px 0;
+	    background: url(../img/futer.jpg) no-repeat;
+	}
+	.law {
+	    position: static;
+	    display: flex;
+	    justify-content: center;
+	    color: #e1d0bc8f;
+	    margin-top: 6px;
+	    font-size: 10px;
+	}
+}
+
+/* Большие девайсы (большие десктопы, >= 1200px)*/
+@media (min-width: 1200px) {
+	.nav-bar-mobile{
+		display: none;
+	}
+	.law {
+	    position: static;
+	    display: flex;
+	    justify-content: center;
+	    color: #e1d0bc8f;
+	    margin-top: 6px;
+	    font-size: 10px;
+	}
+	.footer {
+	    padding: 32px 0 9px 0;
+	}
+}
+
+/* "Экстра большие девайсы (большие десктопы, >= 1916px)*/
+
+@media (min-width: 1916px) {
+	.footer,
+	.section-documents,
+	.section-technical_equipment,
+	.section-advatages{
+		-moz-background-size: 100%; /* Firefox 3.6+ */
+	    -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
+	    -o-background-size: 100%; /* Opera 9.6+ */
+	    background-size: 100%; /* Современные браузеры */
+	}
+}

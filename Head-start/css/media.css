@@ -1,0 +1,2218 @@
+/* МЕДИА ЗАПРОСЫ ДЛЯ АДАПТАЦИИ */
+
+/*Экстрамалые девайсы («портретные телефоны», < 576px)*/
+@media (max-width: 575.98px) {
+	.container{
+		padding: 0;
+	}
+	.col, .col-1, .col-10, .col-11, .col-12, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-auto, .col-lg, .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-auto, .col-md, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-auto, .col-sm, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-auto, .col-xl, .col-xl-1, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-auto {
+		padding-right: 12px;
+		padding-left: 12px;
+	}
+	.nav{
+		display: none;
+	}
+	.social {
+		width: 125px;
+		right: 10px;
+		top: 20px;
+	}
+	.logo {
+		left: 10px;
+		top: 23px;
+		width: 100px;
+	}
+	.social .discuss_the_project {
+		font-size: 14px;
+		bottom: 1px;
+	}
+	.social-icon {
+		font-size: 20px;
+		padding: 5px 6px;
+	}
+	i.fab.fa-vk.social-icon {
+		padding: 6px 5px;
+		font-size: 19px;
+	}
+	.header-title {
+		width: 318px;
+		font-size: 19px;
+		margin-top: 15px;
+		line-height: 25px;
+	}
+	.main-line {
+		margin-top: 98px;
+		width: 2px;
+		height: 43px;
+	}
+	.step {
+		height: 69px;
+	}
+	.steps .step p {
+		font-size: 9px;
+		font-weight: 400;
+		line-height: 12.32px;
+		letter-spacing: 0.76px;
+		margin-left: 0;
+		margin-top: 12px;
+	}
+	span.line-step {
+		width: 2px;
+		height: 39px;
+		top: 11px;
+	}
+	button.main-btn {
+		width: 220px;
+		height: 36px;
+		font-size: 13px;
+		margin-bottom: 79px;
+		margin-top: 60px;
+	}
+	.step1 {
+		width: 58px;
+	}
+	.step2 {
+		width: 86px;
+		position: relative;
+		right: 16px;
+	}
+	.step3 {
+		width: 89px;
+		position: relative;
+		right: 13px;
+	}
+	.line-step-second {
+		left: 89px;
+	}
+	.steps .step {
+		height: 83px;
+	}
+	.number-step {
+		font-size: 8px;
+		bottom: 7px;
+		left: 14px;
+	}
+	.header {
+		padding-bottom: 63px;
+	}
+	.steps {
+		max-width: 360px;
+		margin: 0 auto;
+	}
+	span.line-step.line-step-first {
+		left: -17px;
+	}
+	span.line-step.line-step-second {
+		position: absolute;
+		right: 9px;
+	}
+	span.number-step.number-step-second {
+		left: -3px;
+	}
+	span.number-step.number-step-third {
+		left: 0px;
+	}
+	.main-btn:hover {
+		width: 200px;
+	}
+	.title-complete {
+		font-size: 27px;
+	}
+	.price {
+		margin-top: 5px;
+	}
+	.favor {
+		font-size: 16px;
+	}
+	.section-price_and_complete {
+		background-color: #101226;
+		height: 1980px;
+	}
+	span.line-price-left {
+		display: none;
+	}
+	span.line-price-right {
+		display: none;
+	}
+	.hidden {
+		font-size: 13px;
+	}
+	.card-advatages {
+		position: static;
+		display: block;
+		width: 100%;
+		padding: 35px 0 0 10%;
+		height: 279px;
+		margin: 10px auto;
+	}
+	.card-advatages-left { 
+		position: static;
+	}
+	.card-advatages-right {
+		position: static;
+	}
+	.dark-line {
+		width: 3px;
+		height: 67px;
+	}
+	.white-line {
+		width: 3px;
+		height: 67px;
+	}
+	.title-card-advantage {
+		font-size: 20px;
+	}
+	.number-advatages {
+		font-size: 22px;
+		bottom: 48px;
+	}
+	.description-advatage {
+		font-size: 15px;
+	}
+	.line-card-advantage {
+		width: 62px;
+	}
+	.icon-advatage {
+		width: 50px;
+	}
+	.section-advantages {
+		padding: 567px 0 0 0;
+	}
+	.title-advatages {
+		font-size: 20px;
+		width: 100%;
+		margin-top: 33px;
+		margin-bottom: 30px;
+		line-height: 31px;
+	}
+	.gift {
+		font-size: 20px;
+	}
+	.title-card-advantage {
+		font-size: 19px;
+	}
+	.line-card-advantage {
+		width: 48px;
+	}
+	.description-advatage {
+		font-size: 16px;
+	}
+	.number-advatages {
+		font-size: 15px;
+		bottom: 29px;
+	}
+	.background-icon {
+		right: 5.5%;
+		top: 12%;
+		width: 90px;
+		height: 90px;
+	}
+	.number-advatages {
+		font-size: 16px;
+		bottom: 26px;
+	}
+	.line-card-advantage {
+		margin: 14px 0 14px 0;
+	}
+	.favor {
+		font-size: 17px;
+		padding: 5px 0;
+	}
+	.gift {
+		margin-top: 10px;
+	}
+	img.present {
+		width: 60px;
+	}
+	.individual-input {
+		margin-bottom: 44px;
+	}
+	h3.title-modal-button {
+		font-size: 26px;
+		line-height: 40px;
+	}
+	p.description-modal-button {
+		font-size: 16px;
+	}
+	.cards-service {
+		width: 85%;
+		height: 1181px;
+		background: url(../img/bg/service.png) center center;
+		background-repeat: space;
+		background-size: 100%;
+	}
+	.card-service {
+		height: 265px;
+		-webkit-flex-wrap: wrap;
+		-moz-flex-wrap: wrap;
+		-ms-flex-wrap: wrap;
+		-o-flex-wrap: wrap;
+		flex-wrap: wrap;
+		justify-content: center;
+		margin-bottom: 20px;
+	}
+	.card-servivival img {
+		width: 380px;
+		margin-bottom: 360px;
+		padding-left: 12px;
+	}
+	.title-servive {
+		font-size: 18px;
+		position: relative;
+		left: 0;
+	}
+	.description-title {
+		font-size: 16px;
+	}
+	.description-service {
+		font-size: 14px;
+		line-height: 21px;
+	}
+	.section-service {
+		padding-bottom: 50px;
+		background-size: 85%;
+		background: none;
+	}
+	textarea {
+		height: 150px;
+	}
+	.title-card-advantage {
+		font-size: 24px;
+	}
+	.description-gets::before {
+		font-size: 248px;
+		letter-spacing: 11.6px;
+		bottom: -39px;
+		transform: translateX(-20%);
+	}
+	.input-modal-button {
+		width: 90%;
+		margin: 11px auto 11px auto;
+	}
+	.rocket-ship {
+		width: 70px;
+		height: 70px;
+		background-size: contain;
+	}
+	.briefcase {
+		height: 70px;
+		width: 70px;
+		background-size: contain;
+	}
+	.shopping-cart {
+		height: 70px;
+		width: 70px;
+		background-size: contain;
+	}
+	.id-card {
+		height: 70px;
+		width: 70px;
+		background-size: contain;
+	}
+	.arrow-service {
+		width: 7px;
+		height: 7px;
+	}
+	.section-your-gets {
+		padding: 56px 0 7px 0;
+		background-size: 100%;
+		background-position: center 85px;
+	}
+	.title-section-your-gets {
+		font-size: 26px;
+		margin-top: 37px;
+		margin-bottom: 0px;
+	}
+	.description-gets::before {
+		color: #ffffff;
+		font-size: 248px;
+		font-weight: 700;
+		line-height: 1;
+		text-transform: uppercase;
+		letter-spacing: 11.6px;
+		position: absolute;
+		bottom: -39px;
+		transform: translateX(-20%);
+		left: unset;
+	}
+	.form-and-price {
+		padding: 141px 0 80px 0;
+		background: #000 url(../img/bg/price.png) no-repeat;
+		background-size: 100%;
+		background-position: center -55px;
+	}
+	.title-modal-button.title-form-and-price {
+		font-size: 26px;
+		text-align: left;
+		margin-left: 20px;
+	}
+	.description-modal-button.description-form-and-price {
+		margin: 10px 0 43px 20px;
+		font-size: 15px;
+	}
+	input.input-form-and-price {
+		width: 90%;
+		margin: 20px auto;
+		margin: 20px auto;
+		border-radius: 2px;
+	}
+	button.btn.btn-modal-button.btn-form-and-price {
+		margin: 20px 0 0 20px;
+	}
+	.our_works-container{
+		width:  95%;
+		height: 884px;
+	}
+	.our_works {
+		width: 100%;
+		height: 836px;
+		background: url(../img/bg/works.png) no-repeat 0 0, linear-gradient(-55deg, rgba(0, 108, 255, 1) 0%, rgba(0, 108, 255, 1) 12%, rgba(0, 92, 217, 1) 27%, rgba(7, 80, 214, 1) 49%, rgba(14, 42, 211, 1) 89%, rgba(14, 42, 211, 1) 1000%);
+		margin: 15px 0 0 0;
+	}
+	.title-our_works {
+		margin: 100px 0 0 0;
+		font-size: 28px;
+		letter-spacing: 2px;
+		font-weight: 500;
+		text-align: center;
+	}
+	h3.title-our_works {
+		margin: 100px 0 0 0;
+		font-size: 28px;
+		letter-spacing: 2px;
+		font-weight: 500;
+		text-align: center;
+	}
+	p.description-our_works {
+		margin: 20px 0 0px 20px;
+		font-size: 16px;
+		font-weight: 400;
+	}
+	.works {
+		width: 100%;
+		margin: 100px 0 0 0;
+		height: 558px;
+	}
+	button.slick-prev.slick-arrow {
+		position: absolute;
+		top: 22px;
+		left: 50%;
+		transform: translate(-50%);
+	}
+	.work1, .work2, .work3, .work4, .work5, .work6, .work7, .work8, .work9 {
+		width: 222px;
+		height: 134px;
+	}
+	button.slick-next.slick-arrow {
+		position: absolute;
+		top: 518px;
+		left: 50%;
+		transform: translate(-50%);
+	}
+	.container-niche {
+		width: 80%;
+	}
+	.niches-mobile{
+		display: block;
+	}
+	.niches{
+		display: none;
+	}
+	.container-about_company {
+		margin: 0 auto;
+		width: 90%;
+		padding: 0 0 10px 0;
+	}
+	.img-about_company {
+		display: none;
+	}
+	.card-about_company {
+		display: block;
+		position: static;
+		width: 100%;
+		box-shadow: none;
+		background-color: none;
+		padding: 10px 0px;
+		height: 100%;
+	}
+	.social_cards{
+		-webkit-flex-wrap: wrap;
+		-moz-flex-wrap: wrap;
+		-ms-flex-wrap: wrap;
+		-o-flex-wrap: wrap;
+		flex-wrap: wrap;
+	}
+	.google-card {
+		width: 100%;
+		height: 420px;
+	}
+	.vk-card {
+		width: 100%;
+		margin-top: 12px;
+		height: 346px;
+	}
+	.bg_vk-card {
+		background: url(../img/bg/vk-card.png) no-repeat center center;
+		width: 280px;
+		height: 175px;
+		position: static;
+		margin: 10px auto 20px auto;
+		background-size: 100%;
+	}
+	.bg_google-card {
+		display: block;
+		background: url(../img/bg/google-card.png) no-repeat center center;
+		width: 258px;
+		position: absolute;
+		margin: 13px auto 85px auto;
+		background-size: 100%;
+	}
+	.col-6.col-md-4.first-section-steps {
+		margin-top: 0;
+	}
+	.col-6.col-md-4.second-section-steps {
+		margin-top: 30px;
+	}
+	.col-6.col-md-4.third-section-steps {
+		margin-top: 20px;
+	}
+	.col-6.col-md-4.fourth-section-steps {
+		margin-top: 50px;
+	}
+	.col-6.col-md-4.fifth-section-steps {
+		margin-top: 20px;
+	}
+	.col-6.col-md-4.sixth-section-steps {
+		margin-top: 50px;
+	}
+	.slick-dots {
+		bottom: -53px;
+	}
+	.slick-dots li {
+		margin: 0 1px;
+	}
+	.slick-dots li button:before {
+		content: "";
+		width: 10px;
+		height: 10px;
+		display: block;
+		background: #000;
+		border-radius: 90px;
+		opacity: 0.3;
+	}
+	.niches-mobile svg {
+		margin: 19px auto 10px auto;
+	}
+	.niches-mobile .niche {
+		height: 135px;
+	}
+	.niche{
+		margin: 0;
+	}
+	.section-our_works {
+		background: none;
+		padding: 0 0 90px 0;
+	}
+	.cards-service {
+		height: 867px;
+	}
+	.niches-mobile.slick-initialized.slick-slider.slick-dotted {
+		max-width: 280px;
+		margin: 0 auto;
+	}
+	.container-niche {
+		padding: 0;
+		width: 95%;
+	}
+	.section-about_company {
+		padding: 60px 0 60px 0;
+	}
+	h4.title-about_company {
+		font-size: 22px;
+	}
+	span.line-about_company {
+		width: 65px;
+	}
+	p.description-about_company {
+		font-size: 15px;
+		width: 100%;
+	}
+	p.description-social_cards {
+		font-size: 14px;
+		line-height: 31px;
+		margin: 0 0 0 50px;
+		margin: 0 auto;
+		width: 80%;
+	}
+	.bg_google-card {
+		position: static;
+		width: 202px;
+		margin: 13px auto 0 auto;
+		height: 260px;
+	}
+	.logo-footer {
+		display: block;
+		width: 140px;
+		height: 46px;
+	}
+	.contacts-footer img {
+		width: 13px;
+	}
+	button.discuss_the_project-footer {
+		font-size: 13px;
+		bottom: 0;
+		left: 0;
+	}
+	.container.footer-items {
+		padding: 0 5px;
+	}
+	.section-steps {
+		height: 1350px;
+	}
+	a.mail-footer {
+		font-size: 11px;
+		color: #afafaf;
+	}
+	.mail-footer img {
+		width: 11px;
+	}
+	svg.mail-icon {
+		width: 10px;
+		height: 10px;
+		display: inline-block;
+		padding: 0;
+		margin: 0;
+	}
+	svg.mail-icon path {
+		fill: #c3c3c3;
+	}
+	.modal-dialog {
+		top: 0;
+		right: 0;
+		left: 0;
+	}
+	.title-modal-steps {
+		font-size: 19px;
+	}
+	p.description-modal-steps {
+		font-size: 15px;
+	}
+	span.line-modal-steps {
+		margin: 15px 0;
+	}
+	.modal-content-steps {
+		padding: 25px;
+		height: 750px;
+	}
+	span.mobile-steps{
+		display: none;
+	}
+	.modal-content {
+		width: 300px;
+	}
+	.modal-dialog {
+		max-width: 300px;
+		margin: 1.75rem auto;
+	}
+	h3.title-modal-button {
+		font-size: 18px;
+		line-height: 39px;
+	}
+	.input-modal-button {
+		width: 260px;
+		margin: 11px auto 11px auto;
+	}
+	.radio-container {
+		width: 260px;
+	}
+	.radio-container .radio-btn label {
+		font-size: 10px;
+	}
+	.radio-container .radio-btn label.radio8 {
+		padding: 3px 12px;
+	}
+	.conditions-modal-button {
+    margin: 18px auto 0 auto;
+  }
+	/*Конец 320px - 575px*/
+}
+/*Малые девайсы («ландшафтные», >= 575px)*/
+@media (min-width: 576px) and (max-width: 767.98px) {
+	.nav{
+		display: none;
+	}
+	.social {
+		width: 145px;
+		right: 8px;
+		top: 13px;
+	}
+	i.fab.fa-vk.social-icon {
+		font-size: 19px;
+		padding: 4px 3px;
+	}
+	.logo {
+		left: 25px;
+		top: 20px;
+		width: 130px;
+	}
+	.social .discuss_the_project {
+		font-size: 14px;
+		bottom: 0px;
+	}
+	.social-icon {
+		padding: 3px 5px;
+		font-size: 20px;
+	}
+	.header-title {
+		width: 400px;
+		font-size: 25px;
+		margin-top: 15px;
+		line-height: 38px;
+		letter-spacing: 0.8px;
+	}
+	.main-line {
+		margin-top: 98px;
+		width: 3px;
+		height: 56px;
+	}
+	.step {
+		height: 63px;
+	}
+	.steps .step p {
+		font-size: 11px;
+		font-weight: 400;
+		line-height: 15.32px;
+		margin-left: 0;
+		margin-top: 9px;
+		letter-spacing: 0.76px;
+	}
+	span.line-step {
+		width: 2px;
+		height: 44px;
+		top: 11px;
+	}
+	button.main-btn {
+		width: 256px;
+		height: 37px;
+		font-size: 13px;
+	}
+	.step1 {
+		width: 104px;
+	}
+	.step2 {
+		width: 153px;
+	}
+	.step3 {
+		width: 157px;
+	}
+	.steps .step {
+		height: 84px;
+	}
+	.number-step {
+		font-size: 12px;
+		bottom: 7px;
+		left: 14px;
+	}
+	.header {
+		padding-bottom: 63px;
+	}
+	.main-btn:hover {
+		width: 235px;
+	}
+	.title-complete {
+		font-size: 30px;
+	}
+	.price {
+		margin-top: 4px;
+	}
+	.section-price_and_complete {
+		background-color: #101226;
+		height: 1033px;
+	}
+	.section-price_and_complete {
+		background-color: #101226;
+		height: 1950px;
+	}
+	span.line-price-left {
+		display: none;
+	}
+	span.line-price-right {
+		display: none;
+	}
+	.card-advatages {
+		width: 100%;
+		height: 304px;
+		padding: 35px 0 0 35px;
+		position: static;
+		margin: 10px auto;
+	}
+	.card-advatages-left { 
+		position: static;
+	}
+	.card-advatages-right {
+		position: static;
+	}
+	.section-advantages {
+		padding: 604px 0 0 0;
+	}
+	.title-advatages {
+		font-size: 24px;
+		width: 493px;
+		margin-top: 37px;
+		margin-bottom: 13px;
+		line-height: 31px;
+	}
+	.number-advatages {
+		font-size: 17px;
+		bottom: 35px;
+	}
+	.background-icon {
+		right: 32px;
+		top: 119px;
+		width: 110px;
+		height: 110px;
+	}
+	.description-advatage {
+		font-size: 16px;
+	}
+	.line-card-advantage {
+		width: 62px;
+	}
+	.icon-advatage {
+		width: 60px;
+	}
+	.favor {
+		font-size: 17px;
+		padding: 5px 0;
+	}
+	.gift {
+		margin-top: 10px;
+	}
+	img.present {
+		width: 60px;
+	}
+	.individual-input {
+		margin-bottom: 44px;
+	}
+	h3.title-modal-button {
+		font-size: 26px;
+		line-height: 40px;
+	}
+	p.description-modal-button {
+		font-size: 16px;
+	}
+	.card-service {
+		height: 277px;
+		-webkit-flex-wrap: wrap;
+		-moz-flex-wrap: wrap;
+		-ms-flex-wrap: wrap;
+		-o-flex-wrap: wrap;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	.card-servivival img {
+		width: 77px;
+		margin-top: 19px;
+	}
+	.title-servive {
+		font-size: 20px;
+	}
+	.description-title {
+		font-size: 17px;
+	}
+	.description-service {
+		font-size: 16px;
+	}
+	.section-service {
+		background-size: 85%;
+	}
+	textarea {
+		height: 150px;
+	}
+	.title-card-advantage {
+		font-size: 22px;
+	}
+	.favor {
+		font-size: 16px;
+		padding: 5px 0;
+	}
+	.title-section-your-gets {
+		font-size: 24px;
+		margin-bottom: 46px;
+	}
+	.section-your-gets {
+		padding: 56px 0 28px 0;
+		background-size: 500px;
+		background-position: 0 109px;
+	}
+	.description-gets {
+		font-size: 16px;
+		letter-spacing: -0.5px;
+	}
+	.description-gets::before {
+		font-size: 170px;
+		letter-spacing: 1.6px;
+		bottom: -24px;
+		left: 140px;
+	}
+	.title-modal-button.title-form-and-price {
+		font-size: 24px;
+	}
+	p.description-modal-button {
+		font-size: 15px;
+	}
+	.form-and-price {
+		padding: 40px 0 120px 0;
+		background-size: 194px, 350px;
+		background-position: 81% 63%, 109% 78%;
+	}
+	.input-modal-button {
+		width: 470px;
+	}
+	.cards-service {
+		width: 500px;
+		margin: 0 auto;
+	}
+	.cards-service.our_works-container {
+		width: 100%;
+	}
+	.our_works {
+		height: 850px;
+		width: 100%;
+		background: url(../img/bg/works.png) no-repeat 0 0, linear-gradient(-55deg, rgba(0, 108, 255, 1) 0%, rgba(0, 108, 255, 1) 12%, rgba(0, 92, 217, 1) 27%, rgba(7, 80, 214, 1) 49%, rgba(14, 42, 211, 1) 89%, rgba(14, 42, 211, 1) 1000%);
+	}
+	.works {
+		position: relative;
+		margin: 0 auto;
+		top: 15px;
+	}
+	.title-our_works {
+		font-size: 28px;
+		text-align: center;
+		margin: 80px 0 0 0;
+	}
+	p.description-our_works {
+		text-align: center;
+		margin: 15px 0 15px 0;
+	}
+	button.slick-prev.slick-arrow {
+		left: 210px;
+	}
+	button.slick-next.slick-arrow {
+		left: 210px;
+	}
+	.third-section-steps {
+		margin-top: 40px;
+	}
+	.fourth-section-steps{
+		margin-top: 80px;
+	}
+	.sixth-section-steps{
+		margin-top: 80px;
+	}
+	.section-steps {
+		height: 1300px;
+		background-size: cover;
+	}
+	.section-our_works {
+		position: relative;
+		bottom: 141px;
+	}
+	.modal-dialog{
+		left: 0;
+		top: 0;
+	}
+	.section-about_company {
+		padding: 50px 0 80px 0;
+		background: url(../img/bg/service.png) repeat-Y center center;
+		background-size: 84%;
+	}
+	.container-about_company {
+		width: 100%;
+		margin: 0 auto;
+		position: relative;
+	}
+	.img-about_company{
+		display: none;
+	}
+	.card-about_company {
+		position: static;
+		width: 575px;
+		background: none;
+		box-shadow: none;
+	}
+	h4.title-about_company {
+		font-size: 24px;
+	}
+	span.line-about_company {
+		width: 66px;
+	}
+	p.description-about_company {
+		font-size: 16px;
+	}
+	.container-niche {
+		width: 500px;
+		margin: 0 auto;
+		padding: 10px 0 0 0;
+	}
+	.social_cards{
+		-webkit-flex-wrap: wrap;
+		-moz-flex-wrap: wrap;
+		-ms-flex-wrap: wrap;
+		-o-flex-wrap: wrap;
+		flex-wrap: wrap;
+	}
+	.google-card {
+		width: 100%;
+	}
+	.bg_google-card {
+		width: 270px;
+		height: 343px;
+		position: static;
+		background-size: 100%;
+	}
+	p.description-social_cards {
+		font-size: 16px;
+		line-height: 31px;
+		margin: 15px 0 0 50px;
+	}
+	.vk-card {
+		width: 100%;
+		position: static;
+		margin-top: 15px;
+	}
+	.bg_vk-card {
+		position: static;
+		width: 400px;
+		background-size: 100%;
+		margin: 30px auto 0 auto;
+	}
+	.modal-dialog {
+		max-width: 510px;
+		margin: 1.75rem auto;
+	}
+	.modal-content {
+		width: 510px;
+		height: 568px;
+		background: #000;
+		border-right: 4px;
+		padding: 20px;
+	}
+	button.btn.btn-modal-button{
+		margin-left: 5px;
+	}
+	input.input-modal-button.input-form-and-price {
+		width: 250px;
+	}
+	.title-step {
+		font-size: 115px;
+	}
+	.description-step {
+		font-size: 16px;
+	}
+	.section-steps {
+		height: 1270px;
+		padding: 80px 0 0 0;
+	}
+	.white-line {
+		height: 80px;
+	}
+	.title-section-steps {
+		font-size: 24px;
+		margin-bottom: 45px;
+	}
+	.container.footer-items {
+		padding: 0;
+	}
+	.logo-footer {
+		width: 145px;
+		height: 50px;
+	}
+	a.mail-footer {
+		font-size: 15px;
+		color: #c3c3c3;
+	}
+	button.discuss_the_project-footer {
+		font-size: 15px;
+		bottom: 0;
+	}
+	.container-about_company {
+		height: 460px;
+	}
+	.startup {
+		margin: 45px auto 0 auto;
+	}
+	.dark-line {
+		height: 80px;
+	}
+	.price_and_complete {
+		width: 470px;
+		margin: 0 auto;
+	}
+	button.close {
+		top: -14px;
+		right: -27px;
+		width: 30px;
+		height: 30px;
+	}
+	button.close::after {
+		width: 27px;
+	}
+	button.close::before {
+		width: 27px;
+	}
+	.input-modal-button {
+		width: 466px;
+	}
+	.radio-container {
+		width: 466px;
+	}
+	label img {
+		width: 17px;
+	}
+	label {
+		font-size: 15px;
+	}
+	label.radio8 {
+		height: 44px;
+	}
+	.slick-dots {
+		bottom: -53px;
+	}
+	.slick-dots li {
+		margin: 0 1px;
+	}
+	.slick-dots li button:before {
+		content: "";
+		width: 10px;
+		height: 10px;
+		display: block;
+		background: #000;
+		border-radius: 90px;
+		opacity: 0.3;
+	}
+	.niches-mobile svg {
+		margin: 19px auto 10px auto;
+	}
+	.niches-mobile .niche {
+		height: 135px;
+	}
+	.niche{
+		margin: 0;
+	}
+	.section-our_works {
+		background: none;
+		padding: 0 0 0 0;
+	}
+	.cards-service {
+		height: 867px;
+	}
+	.niches-mobile.slick-initialized.slick-slider.slick-dotted {
+		max-width: 280px;
+		margin: 0 auto;
+	}
+	.container-niche {
+		padding: 0;
+		width: 95%;
+	}
+	.niches-mobile{
+		display: block;
+	}
+	.niches{
+		display: none;
+	}
+	a.mail-footer {
+		font-size: 14px;
+	}
+	svg.mail-icon path {
+		fill: #c3c3c3;
+	}
+	svg.mail-icon {
+		width: 10px;
+		height: 10px;
+		display: inline-block;
+		padding: 0;
+		margin: 0;
+	}
+	a.mail-footer {
+		font-size: 14px;
+	}
+	/*Конец 576px - 767px*/
+}
+
+/*Средние девайсы («таблетки», >= 768px) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+	.nav{
+		display: none;
+	}
+	.logo {
+		position: absolute;
+		left: 35px;
+		top: 25px;
+		width: 150px;
+	}
+	.social {
+		width: 141px;
+		right: 35px;
+		top: 18px;
+	}
+	.social .discuss_the_project {
+		font-size: 16px;
+		bottom: 0px;
+	}
+	.social .discuss_the_project {
+		font-size: 16px;
+		bottom: 0px;
+	}
+	.header-title {
+		width: 446px;
+		font-size: 28px;
+		margin-top: 43px;
+		line-height: 50px;
+		letter-spacing: 0.8px;
+	}
+	.main-line {
+		margin-top: 160px;
+		width: 4px;
+		height: 84px;
+	}
+	.steps .step {
+		height: 154px;
+	}
+	.steps .step p {
+		font-size: 13px;
+		line-height: 29px;
+		letter-spacing: 1.6px;
+		margin-left: 13px;
+		margin-top: 21px;
+	}
+	.steps .step .number-step {
+		font-size: 17px;
+		bottom: 11px;
+		left: 25px;
+	}
+	.line-step {
+		top: 27px;
+		height: 69px;
+	}
+	.step1 {
+		width: 129px;
+	}
+	.step2 {
+		width: 185px;
+	}
+	.step3 {
+		width: 192px;
+	}
+	.main-btn {
+		width: 403px;
+		height: 58px;
+		font-size: 18px;
+	}
+	.main-btn:hover {
+		width: 417px;
+	}
+	.section-price_and_complete {
+		height: 1792px;
+	}
+	span.line-price-left {
+		display: none;
+	}
+	span.line-price-right {
+		display: none;
+	}
+	.social-icon {
+		font-size: 25px;
+		padding: 5px 4px;
+	}
+	.card-advatages {
+		width: 100%;
+		height: 368px;
+		padding: 53px 0 0 60px;
+		position: static;
+		margin: 10px auto;
+	}
+	.card-advatages-left { 
+		position: static;
+	}
+	.card-advatages-right {
+		position: static;
+	}
+	.section-advantages {
+		padding: 70px 0 0 0;
+	}
+	.dark-line {
+		width: 3px;
+		height: 78px;
+	}
+	.white-line {
+		width: 3px;
+		height: 78px;
+	}
+	.title-advatages {
+		font-size: 24px;
+		width: 493px;
+		margin-top: 37px;
+		margin-bottom: 43px;
+		line-height: 31px;
+	}
+	.title-card-advantage {
+		font-size: 23px;
+	}
+	.number-advatages {
+		font-size: 22px;
+		bottom: 48px;
+	}
+	.background-icon {
+		right: 39px;
+		top: 110px;
+		width: 150px;
+		height: 150px;
+	}
+	.description-advatage {
+		font-size: 18px;
+	}
+	.cards-service {
+		width: 100%;
+		background: url(../img/bg/service.png) center center;
+		background-repeat: space;
+		background-size: 87%;
+		height: 900px;
+	}
+	.card-service {
+		height: 277px;
+		-webkit-flex-wrap: wrap;
+		-moz-flex-wrap: wrap;
+		-ms-flex-wrap: wrap;
+		-o-flex-wrap: wrap;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	.card-servivival img {
+		width: 77px;
+		margin-top: 19px;
+	}
+	.title-servive {
+		font-size: 20px;
+	}
+	.description-title {
+		font-size: 17px;
+	}
+	.description-service {
+		font-size: 16px;
+	}
+	.section-service {
+		padding-top: 63px;
+		padding-bottom: 60px;
+		background-size: 85%;
+		background: none;
+	}
+	textarea {
+		height: 150px;
+	}
+	.title-card-advantage {
+		font-size: 24px;
+	}
+	.description-gets::before {
+		font-size: 170px;
+		letter-spacing: 1.6px;
+		bottom: -22px;
+		left: 21px;
+	}
+	.favor {
+		font-size: 16px;
+		padding: 5px 0;
+	}
+	.title-section-your-gets {
+		font-size: 24px;
+		margin-bottom: 46px;
+	}
+	.section-your-gets {
+		padding: 56px 0 28px 0;
+		background-size: 500px;
+		background-position: 0 109px;
+	}
+	.description-gets {
+		font-size: 14px;
+		letter-spacing: -0.5px;
+	}
+	.description-gets::before {
+		font-size: 170px;
+		letter-spacing: 1.6px;
+		bottom: -22px;
+		left: 21px;
+	}
+	.title-modal-button.title-form-and-price {
+		font-size: 24px;
+	}
+	p.description-modal-button {
+		font-size: 15px;
+	}
+	.form-and-price {
+		padding: 70px 0 120px 0;
+		background-size: 194px, 350px;
+		background-position: 81% 63%, 109% 78%;
+	}
+	.input-modal-button {
+		width: 380px;
+	}
+	.section-our_works {
+		padding: 0 0 120px 0;
+		background: url(../img/bg/service.png) no-repeat center 1300px;
+		background-size: 80%;
+		height: 2000px;
+		position: relative;
+		bottom: 140px;
+	}
+	.our_works {
+		width: 100%;
+		height: 900px;
+		background: url(../img/bg/works.png) no-repeat 0 0, linear-gradient(-55deg, rgba(0, 108, 255, 1) 0%, rgba(0, 108, 255, 1) 12%, rgba(0, 92, 217, 1) 27%, rgba(7, 80, 214, 1) 49%, rgba(14, 42, 211, 1) 89%, rgba(14, 42, 211, 1) 1000%);
+		margin: 140px 0 0 0;
+		background-size: 100%;
+	}
+	.title-our_works {
+		font-size: 32px;
+		text-align: center;
+		margin: 80px 0 0 0;
+	}
+	p.description-our_works {
+		margin: 15px 0 0 0;
+		text-align: center;
+	}
+	.works {
+		width: 450px;
+		height: 598px;
+		margin: 100px auto 0 auto;
+	}
+	.container-niche {
+		width: 700px;
+		margin: 0 auto;
+		padding: 70px 0 0 0;
+	}
+	.niches {
+		justify-content: center;
+	}
+	.niche {
+		width: 255px;
+		height: 140px;
+		margin: 15px;
+	}
+	h5.title-niche {
+		font-size: 15px;
+		line-height: 21px;
+	}
+	.container-about_company {
+		width: 700px;
+		margin: 0 auto;
+		position: relative;
+	}
+	.img-about_company {
+		display: none;
+	}
+	.card-about_company {
+		height: 470px;
+		margin: 0 auto;
+		margin-bottom: 10px;
+		position: static;
+	}
+	p.description-about_company {
+		font-size: 16px;
+	}
+	h4.title-about_company {
+		font-size: 23px;
+	}
+	.bg_google-card {
+		width: 280px;
+		height: 310px;
+		margin: 0 auto;
+		position: static;
+		background-size: 100%;
+		margin-top: 20px;
+	}
+	.bg_vk-card {
+		width: 482px;
+		height: 285px;
+		margin: 35px auto 0 auto;
+		position: static;
+	}
+	.social_cards {
+		flex-wrap: wrap;
+	}
+	.google-card {
+		width: 100%;
+		height: 520px
+	}
+	.vk-card {
+		width: 100%;
+		height: 520px;
+		margin-top: 20px;
+	}
+	p.description-social_cards {
+		margin: 35px 0 0 50px;
+		font-size: 18px;
+		line-height: 32px;
+	}
+
+	.section-about_company {
+		background-size: 100%;
+	}
+	.modal-dialog{
+		left: 0;
+		top: 0;
+	}
+	.section-about_company {
+		padding: 100px 0 100px 0;
+	}
+	.hidden {
+		font-size: 12px;
+	}
+	.col-12.col-md-8.col-lg-4.card-price.card-price-last {
+		margin: 0 auto;
+	}
+	input.input-modal-button {
+		width: 470px;
+	}
+	input.input-modal-button.input-form-and-price {
+		width: 370px;
+	}
+	.title-step {
+		font-size: 120px;
+	} 
+	.description-step {
+		font-size: 16px;
+	}
+	.title-section-steps {
+		font-size: 28px;
+	}
+	.section-steps {
+		height: 1100px;
+	}
+	.modal-dialog {
+		max-width: 560px;
+	}
+	p.description-about_company {
+		width: 414px;
+	}
+	a.mail-footer {
+		font-size: 14px;
+	}
+	svg.mail-icon path {
+		fill: #c3c3c3;
+	}
+	svg.mail-icon {
+		width: 12px;
+		height: 12px;
+		display: inline-block;
+		padding: 0;
+		margin: 0;
+	}
+	a.mail-footer {
+		font-size: 14px;
+	}
+	button.discuss_the_project-footer {
+		font-size: 17px;
+	}
+	/*Конец 768px - 991px*/
+}
+
+/*Большие девайсы (большие десктопы, >= 992px)*/
+@media (min-width: 992px) and (max-width: 1199.98px) {
+	.nav {
+		padding: 0px 153px;
+	}
+	.logo {
+		width: 125px;
+		left: 25px;
+		top: 25px;
+	}
+	.social {
+		width: 134px;
+		right: 21px;
+		top: 20px;
+	}
+	button.discuss_the_project-footer {
+		font-size: 15px;
+	}
+	.social-icon {
+		font-size: 22px;
+		padding: 2px 2px;
+	}
+	i.fab.fa-vk.social-icon {
+		padding: 6px 5px;
+		font-size: 20px;
+	}
+	.social .discuss_the_project {
+		font-size: 14px;
+		bottom: 2px;
+	}
+	.nav li a {
+		font-size: 16px;
+	}
+	.header-title {
+		width: 486px;
+		font-size: 30px;
+		margin-top: 50px;
+		letter-spacing: 1.2px;
+		line-height: 50px;
+	}
+	.steps .step p {
+		font-size: 17px;
+		line-height: 34px;
+	}
+	.steps .step {
+		height: 187px;
+	}
+	.steps .step .number-step {
+		font-size: 16px;
+		bottom: 16px;
+		left: 49px;
+	}
+	.step1 {
+		width: 166px;
+	}
+	.step2 {
+		width: 246px;
+	}
+	.step3 {
+		width: 254px;
+	}
+	.main-line {
+		width: 3px;
+		margin-top: 59px;
+	}
+	.main-btn {
+		width: 408px;
+		height: 54px;
+		font-size: 18px;
+	}
+	span.line-step {
+		top: 42px;
+		height: 95px;
+	}
+	.main-btn:hover {
+		width: 420px;
+	}
+	.title-complete {
+		font-size: 30px;
+	}
+	.price {
+		margin-top: 4px;
+	}
+	.message {
+		margin-bottom: 57px;
+	}
+	textarea {
+		height: 158px;
+	}
+	.card-advatages {
+		width: 465px;
+		height: 308px;
+		padding: 37px 0 0 31px;
+	}
+	.title-card-advantage {
+		font-size: 22px;
+	}
+	.background-icon {
+		right: 3px;
+		top: 96px;
+		width: 120px;
+		height: 120px;
+	}
+	.number-advatages {
+		font-size: 18px;
+		bottom: 23px;
+	}
+	.description-advatage {
+		font-size: 16px;
+	}
+	.card-advatages-left {
+		right: 19px;
+	}
+	.card-advatages-right {
+		left: -8px;
+	}
+	.section-advantages {
+		padding: 350px 0 0 0;
+	}
+	.dark-line {
+		height: 91px;
+	}
+	.white-line {
+		height: 91px;
+	}
+	.title-advatages {
+		font-size: 25px;
+		width: 613px;
+		margin-top: 37px;
+		margin-bottom: 40px;
+		line-height: 36px;
+	}
+	.line-card-advantage {
+		width: 63px;
+	}
+	.icon-advatage {
+		width: 70px;
+	}
+	.background-icon {
+		right: 7px;
+		top: 133px;
+		width: 120px;
+		height: 120px;
+	}
+	li:last-child {
+		display: none;
+	}
+	.favor {
+		font-size: 16px;
+		padding: 6px 0;
+	}
+	.gift {
+		margin-top: 10px;
+	}
+	img.present {
+		width: 60px;
+	}
+	.individual-input {
+		margin-bottom: 44px;
+	}
+	h3.title-modal-button {
+		font-size: 26px;
+		line-height: 40px;
+	}
+	p.description-modal-button {
+		font-size: 16px;
+	}
+	.cards-service {
+		width: 900px;
+	}
+	.card-service {
+		height: 277px;
+	}
+	.card-servivival img {
+		width: 77px;
+	}
+	.title-servive {
+		font-size: 19px;
+	}
+	.description-title {
+		font-size: 16px;
+	}
+	.description-service {
+		font-size: 14px;
+	}
+	.section-service {
+		padding-top: 70px;
+		padding-bottom: 20px;
+		background-size: 85%;
+	}
+	.title-section-your-gets {
+		font-size: 25px;
+	}
+	.section-your-gets {
+		background-size: 620px;
+		background-position: 0px 92px;
+	}
+	.description-gets::before {
+		font-size: 216px;
+		letter-spacing: 6.6px;
+		bottom: -39px;
+		left: 49px;
+	}
+	.title-modal-button.title-form-and-price {
+		font-size: 25px;
+	}
+	.form-and-price {
+		padding: 80px 0 150px 0;
+		background-position: 71% 190px, 100% 63%;
+		background-size: 230px, 479px;
+	}
+	.work1, .work2, .work3, .work4, .work5, .work6, .work7, .work8, .work9 {
+		height: 135px;
+		width: 250px;
+	}
+	.our_works {
+		width: 900px;
+		height: 445px;
+	}
+	.works {
+		width: 400px;
+		height: 560px;
+	}
+	button.slick-next.slick-arrow {
+		top: 525px;
+		left: 186px;
+	}
+	button.slick-prev.slick-arrow {
+		top: 35px;
+		left: 186px;
+	}
+	.niches {
+		justify-content: center;
+	}
+	.niche {
+		margin: 15px;
+	}
+	.container-niche {
+		width: 900px;
+		padding: 150px 0 0 0;
+	}
+	.section-our_works {
+		background-size: 90%;
+	}
+	.section-about_company {
+		padding: 100px 0 100px 0;
+		-webkit-background-size: 95%;
+		background-size: 95%;
+	}
+	.google-card {
+		height: 445px;
+	}
+	.vk-card {
+		height: 445px;
+	}
+	.bg_google-card {
+		width: 229px;
+		height: 237px;
+		margin: 21px 0 10px 52px;
+		background-size: 95%;
+	}
+	.bg_vk-card {
+		width: 371px;
+		height: 197px;
+		margin: 30px 0 0 22px;
+		background-size: 95%;
+	}
+	p.description-social_cards {
+		font-size: 16px;
+		line-height: 31px;
+		margin: 290px 0 0 50px;
+	}
+	.container-about_company {
+		width: 900px;
+	}
+	.card-about_company {
+		width: 600px;
+		height: 500px;
+	}
+	h4.title-about_company {
+		font-size: 22px;
+	}
+	span.line-about_company {
+		width: 60px;
+	}
+	p.description-about_company {
+		font-size: 16px;
+	}
+	.niche {
+		width: 235px;
+		height: 140px;
+	}
+	h5.title-niche {
+		line-height: 23px;
+		font-size: 16px;
+	}
+	.hidden {
+		font-size: 12px;
+	}
+	.title-step {
+		font-size: 130px;
+	}
+	.description-step {
+		font-size: 17px;
+	}
+	.modal-content-steps {
+		height: 544px;
+		width: 435px;
+	}
+	button.close-steps {
+		right: 67px;
+	}
+	.title-modal-steps {
+		font-size: 18px;
+	}
+	p.description-modal-steps {
+		font-size: 14px;
+	}
+	.section-our_works {
+		padding: 0 0 60px 0;
+	}
+	.title-section-steps {
+		font-size: 28px;
+	}
+	p.description-about_company {
+		width: 414px;
+	}
+	a.mail-footer {
+		font-size: 13px;
+	}
+	svg.mail-icon path {
+		fill: #c3c3c3;
+	}
+	svg.mail-icon {
+		width: 11px;
+		height: 10px;
+		display: inline-block;
+		padding: 0;
+		margin: 0;
+	}
+	/*Конец 992px - 1119px*/
+}
+
+/*Большие девайсы (большие десктопы, >= 1200px)*/
+@media (min-width: 1200px) and (max-width: 1919.98px) {
+	.nav {
+		padding: 0px 160px;
+	}
+	.logo {
+		width: 130px;
+	}
+	.social {
+		width: 140px;
+	}
+	.social-icon {
+		font-size: 22px;
+		color: #fff;
+		border: 2px solid #fff;
+		border-radius: 90px;
+		padding: 3px 2px;
+		display: block;
+		transition: all 0.2s ease;
+	}
+	i.fab.fa-vk.social-icon {
+		padding: 4px 3px;
+	}
+	.social .discuss_the_project {
+		font-size: 15px;
+		color: #fff;
+		text-decoration: underline;
+		position: relative;
+		bottom: 2px;
+	}
+	.nav li a {
+		font-size: 16px;
+	}
+	.header-title {
+		width: 531px;
+		font-size: 33px;
+		line-height: 53px;
+		letter-spacing: 1.2px;
+	}
+	.main-btn:hover {
+		width: 440px;
+	}
+	.card-advatages {
+		width: 544px;
+		height: 328px;
+		padding: 33px 0 0 54px;
+	}
+	.title-card-advantage {
+		font-size: 20px;
+	}
+	.background-icon {
+		right: 13px;
+		top: 92px;
+	}
+	.number-advatages {
+		font-size: 18px;
+		bottom: 35px;
+	}
+	.description-advatage {
+		font-size: 16px;
+	}
+	.card-advatages-left {
+		right: 0;
+	}
+	.card-advatages-right {
+		left: 0;
+	}
+	.title-advatages {
+		font-size: 26px;
+		width: 636px;
+		line-height: 38px;
+		margin: 0 auto;
+		margin-top: 37px;
+		margin-bottom: 49px;
+	}
+	.favor {
+		font-size: 16px;
+		padding: 4px 0;
+	}
+	.hidden {
+		font-size: 13px;
+	}
+	.nav {
+		padding: 0px 183px;
+	}
+	.message {
+		min-height: 178px;
+		margin-bottom: 28px;
+	}
+	.title-complete {
+		font-size: 30px;
+	}
+	.price {
+		margin-top: 10px;
+	}
+	.individual-input {
+		margin-top: 42px;
+	}
+	.line-price-right {
+		height: 784px;
+	}
+	.line-price-left {
+		height: 784px;
+	}
+	.section-advantages {
+		padding: 272px 0 0 0;
+	}
+	.dark-line {
+		height: 96px;
+	}
+	.white-line {
+		height: 96px;
+	}
+	.cards-service {
+		width: 1100px;
+	}
+	.title-section-your-gets {
+		font-size: 26px;
+		margin-bottom: 47px;
+	}
+	.section-your-gets {
+		background-position: 0 -7px;
+		background-size: 800px;
+	}
+	.form-and-price {
+		padding-bottom: 243px;
+		background-position: 68% 190px, 100% 80%;
+		background-color: #000;
+		background-size: 328px, 606px;
+	}
+	.title-modal-button.title-form-and-price {
+		font-size: 26px;
+	}
+	p.description-modal-button {
+		font-size: 17px;
+	}
+	.section-service {
+		background-size: 85%;
+		background-position: center 240px;
+	}
+	.our_works {
+		width: 99%;
+		margin: 0 auto;
+		margin: 140px auto 0 auto;
+	}
+	textarea.individual-input.speech-bubble-with-text {
+		height: 168px;
+	}
+	.section-our_works {
+		background-size: 80%;
+	}
+	.container-niche {
+		width: 1150px;
+	}
+	.niches {
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		justify-content: center;
+	}
+	.niche {
+		width: 210px;
+		height: 142px;
+		margin: 10px 10px;
+	}
+	h5.title-niche {
+		font-size: 16px;
+		line-height: 22px;
+		position: relative;
+		top: 6px;
+	}
+	.section-about_company {
+		padding: 100px 0 100px 0;
+	}
+	.google-card {
+		width: 39.5%;
+		height: 480px;
+	}
+	.vk-card {
+		width: 59.5%;
+		height: 480px;
+	}
+	.bg_google-card {
+		width: 240px;
+		height: 275px;
+		margin: 0px 0 0px 80px;
+		background-size: 95%;
+	}
+	p.description-social_cards {
+		font-size: 18px;
+		line-height: 33px;
+		margin: 305px 0 0 50px;
+	}
+	.bg_vk-card {
+		width: 388px;
+		height: 228px;
+		margin: 30px 0 0 22px;
+		background-size: 95%;
+	}
+	.container-about_company {
+		width: 1150px;
+	}
+	.steps .step p {
+		font-size: 18px;
+	}
+	.description-step {
+		font-size: 18px;
+	}
+	h4.title-about_company {
+		font-size: 24px;
+	}
+	p.description-about_company {
+		font-size: 16px;
+	}
+	p.description-our_works {
+		margin: 10px 0 0 100px;
+	}
+	.title-our_works {
+		font-size: 31px;
+	}
+	p.description-about_company {
+		width: 414px;
+	}
+	a.mail-footer {
+		font-size: 14px;
+	}
+	svg.mail-icon path {
+		fill: #c3c3c3;
+	}
+	svg.mail-icon {
+		width: 12px;
+		height: 12px;
+		display: inline-block;
+		padding: 0;
+		margin: 0;
+	}
+	button.discuss_the_project-footer {
+		font-size: 17px;
+	}
+	/*Конец 1200px - 1919px*/
+}
+
+/*Экстрамалые девайсы («портретные телефоны», < 576px)*/
+@media (min-width: 320px) and (max-width: 400px) {
+	.header-title {
+		font-size: 18px;
+		width: 100%;
+		max-width: 318px;
+		letter-spacing: 0.92px;
+	}
+	.section-advantages {
+		padding: 441px 0 0 0;
+	}
+	.dark-line {
+		height: 58px;
+	}
+	.title-advatages {
+		font-size: 16px;
+		width: 100%;
+		margin-top: 33px;
+		margin-bottom: 24px;
+		line-height: 31px;
+	}
+	.gift {
+		font-size: 20px;
+	}
+	.title-card-advantage {
+		font-size: 15px;
+	}
+	.line-card-advantage {
+		width: 48px;
+	}
+	.description-advatage {
+		font-size: 13px;
+	}
+	.number-advatages {
+		font-size: 15px;
+		bottom: 29px;
+	}
+	.icon-advatage {
+		width: 40px;
+	}
+	.background-icon {
+		right: 4.5%;
+		top: 7%;
+		width: 80px;
+		height: 80px;
+	}
+	.number-advatages {
+		font-size: 15px;
+		bottom: 29px;
+	}
+	.card-advatages {
+		display: block;
+		width: 100%;
+		height: 247px;
+		padding: 9% 0 0 10%;
+	}
+	.line-card-advantage {
+		margin: 14px 0 14px 0;
+	}
+	.description-gets::before {
+		font-size: 207px;
+	}
+	.form-and-price {
+		background-position: center 0;
+	}
+	.section-your-gets {
+		padding: 56px 0 15px 0;
+	}
+	.section-service {
+		padding-top: 30px;
+		padding-bottom: 60px;
+	}
+	.steps {
+		max-width: 300px;
+	}
+	.favor {
+		font-size: 15px;
+		padding: 2px 0;
+	}
+	.gift {
+		font-size: 18px;
+	}
+	.present {
+		font-size: 18px;
+	}
+	.cards-service {
+		height: 870px;
+	}
+	.card-service {
+		height: 234px;
+	}
+	.title-section-steps {
+		font-size: 24px;
+	}
+	.title-step {
+		font-size: 105px;
+	}
+	.description-step {
+		font-size: 15px;
+	}
+	.bg_google-card {
+		width: 202px;
+	}  
+	.bg_vk-card {
+		width: 265px;
+		position: static;
+		margin: 0 auto;
+	}
+	a.btn-social_cards {
+		margin: 15px 0 0 33px;
+	}
+	/*Конец 320px - 400px*/
+}

@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Жилой комплекс "Twins"</title>
+	<link rel="icon" type="image/png" href="img/favicon-16x16.png" sizes="16x16">
+	<link rel="icon" type="image/png" href="img/favicon-32x32.png" sizes="32x32">
+	<link rel="icon" type="image/png" href="img/favicon-96x96.png" sizes="96x96">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- FONTS -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+	<!-- BOOTSTRAP -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet"/>
+	<!-- ANIMATION -->
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- slick slider -->
+	<link rel="stylesheet" href="css/slick.css">
+	<link rel="stylesheet" href="css/slick-themse.css">
+	<!-- STYLES -->
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/media.css">
+	<!-- ANIMATE -->
+	<script src="js/wow.min.js"></script>
+     <script>
+        new WOW().init();
+    </script>
+</head>
+<body>
+	<!-- HEADER -->
+
+	<header class="header" id="header">
+		<div class="nav-bar">
+			<div class="container">
+				<div class="navigation">
+					<img src="img/logo.png" alt="Twins" class="logo">
+					<nav class="topmenu">
+						<ul>
+						    <li><a href="#" class="active wow rollIn" data-wow-delay="0.3s" data-wow-duration="0.8s">ГЛАВНАЯ</a></li>
+						    <li><a href="#" class="reference-topmenu wow rollIn" data-wow-delay="0.5s" data-wow-duration="0.8s">ПРЕДЛОЖЕНИЯ</a></li>
+						    <li><a href="#" class="reference-topmenu wow rollIn" data-wow-delay="0.7s" data-wow-duration="0.8s">ОТЗЫВЫ</a></li>
+						    <li><a href="#" class="reference-topmenu wow rollIn" data-wow-delay="0.9s" data-wow-duration="0.8s">КОНТАКТНЫЕ ДАННЫЕ</a>
+						    <li><a href="#" class="reference-topmenu reference-topmenu-last wow rollIn" data-wow-delay="1.1s" data-wow-duration="0.8s">3d модель</a></li>
+						</ul>
+					</nav>
+					<button type="button" class="btn call" data-toggle="modal" data-target="#exampleModal1">Заказать звонок</button>
+				</div>
+			</div>
+		</div>
+		<nav class="submenu">
+			<div class="container">
+				<ul>
+					<li><a href="#section-advatages" class="referencence-submenu wow fadeInLeft" data-wow-delay="1.5s">Преимущества</a></li><span class="line-submenu wow fadeIn" data-wow-delay="2.2s"></span>
+					<li><a href="#section-architecture" class="referencence-submenu wow fadeInLeft" data-wow-delay="1.5s">Архитектура</a></li><span class="line-submenu wow fadeIn" data-wow-delay="2.2s"></span>
+					<li><a href="#section-architecture" class="referencence-submenu wow fadeInLeft" data-wow-delay="1.5s">Квартиры</a></li><span class="line-submenu wow fadeIn" data-wow-delay="2.2s"></span>
+					<li><a href="#section-technical_equipment" class="referencence-submenu wow fadeInLeft" data-wow-delay="1.5s">Техническое оснащение<br>комплекса</a></li><span class="line-submenu wow fadeIn" data-wow-delay="2.2s"></span>
+					<li><a href="#section-infrastructure" class="referencence-submenu wow fadeInLeft" data-wow-delay="1.5s">Инфраструктура и<br>транспортная доступность</a></li><span class="line-submenu wow fadeIn" data-wow-delay="2.2s"></span>
+					<li><a href="#section-parking" class="referencence-submenu wow fadeInLeft" data-wow-delay="1.5s">Паркинг</a></li><span class="line-submenu wow fadeIn" data-wow-delay="2.2s"></span>
+					<li><a href="#section-parking" class="referencence-submenu wow fadeInLeft" data-wow-delay="1.5s">Расположение</a></li><span class="line-submenu wow fadeIn" data-wow-delay="2.2s"></span>
+					<li><a href="#section-documents" class="referencence-submenu wow fadeInLeft" data-wow-delay="1.5s">Документы</a></li>
+				</ul>
+			</div>
+		</nav>
+
+
+		<div class="nav-bar-mobile">
+			<div class="container">
+				<img src="img/logo.png" alt="Twins" class="logo-mobile">
+			</div>
+			<input type="checkbox" id="btn-menu" />
+  				<label for="btn-menu"></label>
+				 <ul class="list-menu";">
+				 	<div class="container">
+   						<li><a class="submenu-a" href="#section-about_project">О проекте</a></li>
+   							<div class="sub-submenu">
+   								<a href="#section-advatages" class="sub-submenu-a">Преимущества</a><br>
+								<a href="#section-architecture" class="sub-submenu-a">Архитектура</a><br>
+								<a href="#section-architecture" class="sub-submenu-a">Квартиры</a><br>
+								<a href="#section-technical_equipment" class="sub-submenu-a">Техническое оснащение<br>комплекса</a><br>
+								<a href="#section-infrastructure" class="sub-submenu-a">Инфраструктура и<br>транспортная доступности<br>
+								<a href="#section-parking" class="sub-submenu-a">Паркинг</a><br>
+								<a href="#section-parking" class="sub-submenu-a">Расположение</a><br>
+								<a href="#section-documents" class="sub-submenu-a">Документы</a>
+							</div>
+				    	<li><a class="submenu-a" href="#">Планировки</a></li>
+				    	<li><a class="submenu-a" href="#">Галлерея</a></li>
+				    	<li><a class="submenu-a" href="#">Новости</a></li>
+				    	<li><a class="submenu-a" href="#">3d модель</a></li>
+				   	</div>
+				</ul>
+		</div>
+
+
+		<div class="offer">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<div class="logotype-offer title-offer" ><img src="img/Logotype.png" alt="Twins" class="logotype-offer wow fadeIn" data-wow-delay="2.6s"></div>
+						<h1 class="title-offer wow fadeIn" data-wow-delay="2.9s">Квартиры комфорт класса<br>на Гражданском пр., 32</h1>
+					</div>
+				</div>
+				<div class="row main-advantages">
+					<div class="col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+						<div class="block-advantages first-advantages wow bounce" data-wow-duration="1.4s" data-wow-delay="3.2s">
+							<h3 class="numeral">350</h3>
+							<div class="description-main_advantages">м. до метро<br>Академическая</div>
+						</div>
+					</div>
+					<div class="col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+						<div class="block-advantages second-advantages wow bounce" data-wow-duration="1.4s" data-wow-delay="3.4s">
+							<h3 class="numeral">86</h3>
+							<div class="description-main_advantages">квартир<br>комфорт класса</div>
+						</div>
+					</div>
+					<div class="col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+						<div class="block-advantages third-advantages wow bounce" data-wow-duration="1.4s" data-wow-delay="3.6s">
+							<h3 class="numeral">49</h3>
+							<div class="description-main_advantages">машино-мест<br>на закрытой парковке</div>
+						</div>
+					</div>
+				</div>
+				<div class="main-advantages-carusel">
+					<div class="col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+						<div class="block-advantages first-advantages wow bounce" data-wow-duration="1.4s" data-wow-delay="3.2s">
+							<h3 class="numeral">350</h3>
+							<div class="description-main_advantages">м. до метро<br>Академическая</div>
+						</div>
+					</div>
+					<div class="col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+						<div class="block-advantages second-advantages">
+							<h3 class="numeral">86</h3>
+							<div class="description-main_advantages">квартир<br>комфорт класса</div>
+						</div>
+					</div>
+					<div class="col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+						<div class="block-advantages third-advantages">
+							<h3 class="numeral">49</h3>
+							<div class="description-main_advantages">машино-мест<br>на закрытой парковке</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<!-- THE END HEADER -->
+
+
+	<!-- ABOUT PROJECT -->
+
+	<section class="section-about_project" id="section-about_project">
+		<div class="container about-project">
+			<div class="row">
+				<div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+					<img src="img/o_proekte.jpg" alt="park" class="park">
+				</div>
+				<div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+					<div class="block-project">
+						<h2 class="title-project wow fadeIn" data-wow-duration="1s">О проекте</h2>
+						<p class="description-project wow fadeIn" data-wow-duration="1s" data-wow-delay="0.4s">Отличный вариант на рынке недвижимости, который сочетает в себе преимущества квартир комфорт класса.</p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4"></div>
+				<div class="col-8 col-sm-8 col-md-8 col-lg-8 col-xl-8">
+					<img src="img/plashka_1.jpg" alt="plashka_1" class="plashka_1 wow rollIn" data-wow-delay="0.8s">
+					<p class="description-complex wow rollIn" data-wow-delay="0.8s">Жилой комплекс включает два 10-ти этажных корпуса и всего 86 квартир. Прекрасная возможность инвестировать ввысоколиквидное комфортное жилье со всеми достоинствами жизни в хорошо обжитом районе и без минусов массовой высотной застройки.</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="container about-project-mobile">
+				<div class="col-12">
+					<h2 class="title-project-mobile wow fadeIn" data-wow-duration="1s">О проекте</h2>
+					<p class="description-project-mobile wow fadeIn" data-wow-duration="1s" data-wow-delay="0.4s">Отличный вариант на рынке недвижимости, который сочетает в себе преимущества квартир комфорт класса.</p>
+					<img src="img/o_proekte.jpg" alt="park" class="park-mobile">
+					<p class="description-complex-mobile wow rollIn" data-wow-delay="0.8s">Жилой комплекс включает два 10-ти этажных корпуса и всего 86 квартир. Прекрасная возможность инвестировать ввысоколиквидное комфортное жилье со всеми достоинствами жизни в хорошо обжитом районе и без минусов массовой высотной застройки.</p>
+			</div>
+		</div>
+	</section>
+
+	<!-- THE END ABOUT PROJECT -->
+
+
+
+
+	<!-- ADVANTAGES -->
+
+	<section class="section-advatages" id="section-advatages">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<h2 class="title-advatages wow fadeIn" data-wow-offset="300">Преимущества</h2>
+				</div>
+			</div>
+			<div class="row advatages">
+				<div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s" data-wow-offset="300">
+					<img src="img/advantages-1.png" alt="advatages_1" class="advatages">
+					<p class="description-advantages advatages-first">В комплексе собственный<br>подземный паркинг</p>
+				</div>
+				<div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.4s" data-wow-offset="300">
+					<img src="img/advantages-2.png" alt="advatages_2" class="advatages">
+					<p class="description-advantages advatages-second">Закрытая обустроенная<br>внутренняя территория</p>
+				</div>
+				<div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.6s" data-wow-offset="300">
+					<img src="img/advantages-3.png" alt="advatages_2" class="advatages">
+					<span class="description-advantages advatages-third">Квартиры с хорошо<br>продуманными планировками</span>
+				</div>
+			</div>
+			<div class="advatages-carusel">
+				<div class="first-advatages-carusel">
+					<img src="img/advantages-1.png" alt="Паркинг" class="img-advatages-carusel">
+					<p class="description-advatages-carusel">В комплексе собственный<br>подземный паркинг</p>
+				</div>
+				<div class="second-advatages-carusel">
+					<img src="img/advantages-2.png" alt="Закрытая терриория" class="img-advatages-carusel">
+					<p class="description-advatages-carusel">Закрытая обустроенная<br>внутренняя территория</p>
+				</div>
+				<div class="third-advatages-carusel">
+					<img src="img/advantages-3.png" alt="Продуманные планировки" class="img-advatages-carusel">
+					<p class="description-advatages-carusel">Квартиры с хорошо<br>продуманными планировками</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- THE END ADVANTAGES -->
+
+
+
+
+	<!--  ARCHITECTURE & APARTAMENTS -->
+
+	<section class="section-architecture" id="section-architecture">
+		<div class="container architecture-section">
+			<div class="row">
+				<div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 wow fadeInLeftBig" data-wow-duration="1.2s" data-wow-delay="0s">
+					<h2 class="architecture">Архитектура</h2>
+					<p class="description-architecture">Индивидуальный проект, лаконичная архитектура, современные решения фасадов, интерьеров холлов и общественных пространств жилого дома.</p>
+					<img src="img/architecture.jpg" alt="architecture" class="img-architecture">
+				</div>
+				<div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 wow fadeInRightBig" data-wow-duration="1.2s" data-wow-delay="0.4s">
+					<img src="img/apartment-12.jpg" alt="apartments" class="img-apartments">
+					<h2 class="apartments">Квартиры</h2>
+					<p class="description-apartments">В составе комплекса трехкомнатные, двухкомнатные и однокомнатные квартиры, студии. Площадь студий не превышает 10%.</p>
+					<p class="description-model">На каждом жилом этаже только 5 квартир:<br>
+						1 трехкомнатная – 95 кв.м.<br>
+						1 двухкомнатная – 67 кв.м.<br>
+						2 однокомнатные – 38 - 48 кв.м.<br>
+						1 студия – 24 кв.м.</p>
+					<button type="button" class="btn btn-apartments">Посмотреть планировки</button>
+				</div>
+			</div>
+		</div>
+
+		<div class="container architecture-section-mobile">
+			<div class="row">
+				<div class="col-12 wow fadeInLeftBig" data-wow-duration="1.2s" data-wow-delay="0s">
+					<img src="img/architecture.jpg" alt="architecture" class="img-architecture">
+					<h2 class="architecture">Архитектура</h2>
+					<p class="description-architecture">Индивидуальный проект, лаконичная архитектура, современные решения фасадов, интерьеров холлов и общественных пространств жилого дома.</p>
+				</div>
+				<div class="col-12 wow fadeInRightBig" data-wow-duration="1.2s" data-wow-delay="0.4s">
+					<img src="img/apartment-12.jpg" alt="apartments" class="img-apartments">
+					<h2 class="apartments">Квартиры</h2>
+					<p class="description-apartments">В составе комплекса трехкомнатные, двухкомнатные и однокомнатные квартиры, студии. Площадь студий не превышает 10%.</p>
+					<p class="description-model">На каждом жилом этаже только 5 квартир:<br>
+						1 трехкомнатная – 95 кв.м.<br>
+						1 двухкомнатная – 67 кв.м.<br>
+						2 однокомнатные – 38 - 48 кв.м.<br>
+						1 студия – 24 кв.м.</p>
+					<button type="button" class="btn btn-apartments">Посмотреть планировки</button>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- THE END ARCHITECTURE -->
+
+
+
+
+
+	<!-- TECHNICAL EQUIPMENT -->
+
+	<section class="section-technical_equipment" id="section-technical_equipment">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s"><h2 class="title-technical_equipment wow tada">Cовременное техническое оснащение комплекса:</h2></div>
+			</div>
+			<div class="row technical_equipment">
+				<div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">
+					<img src="img/equipment-1.png" alt="equipment-1" class="equipment">
+					<p class="description-equipment">Cистема<br>очистки воды</p>
+				</div>
+				<div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 wow fadeIn" data-wow-duration="1s" data-wow-delay="1s">
+					<img src="img/equipment-2.png" alt="equipment-2" class="equipment">
+					<p class="description-equipment">Бесшумные<br>пассажирские игрузовые лифты <span class="otis">otis</span></p>
+				</div>
+				<div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.6s">
+					<img src="img/equipment-3.png" alt="equipment-3" class="equipment">
+					<span class="description-equipment">Спуск на лифтах<br>в подземный паркинг</span>
+				</div>
+				<div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.8s">
+					<img src="img/equipment-4.png" alt="equipment-4" class="equipment">
+					<p class="description-equipment">Охраняемая<br>территория двора</p>
+				</div>
+				<div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.4s">
+					<img src="img/equipment-5.png" alt="equipment-5" class="equipment">
+					<p class="description-equipment">Детская площадка<br>с тактильным покрытием</p>
+				</div>
+				<div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 wow fadeIn" data-wow-duration="1s" data-wow-delay="1.2s">
+					<img src="img/equipment-6.png" alt="equipment-6" class="equipment">
+					<span class="description-equipment">Двор – свободный<br>от машин</span>
+				</div>
+			</div>
+			<div class="equipment-carusel">
+				<div class="first-advatages-carusel">
+					<img src="img/equipment-1.png" alt="Паркинг" class="img-advatages-carusel">
+					<p class="description-advatages-carusel">Cистема<br>очистки воды</p>
+				</div>
+				<div class="second-advatages-carusel">
+					<img src="img/equipment-2.png" alt="Закрытая терриория" class="img-advatages-carusel">
+					<p class="description-advatages-carusel">Бесшумные<br>пассажирские игрузовые лифты</p>
+				</div>
+				<div class="third-advatages-carusel">
+					<img src="img/equipment-3.png" alt="Продуманные планировки" class="img-advatages-carusel">
+					<p class="description-advatages-carusel">Спуск на лифтах<br>в подземный паркинг</p>
+				</div>
+				<div class="first-advatages-carusel">
+					<img src="img/equipment-4.png" alt="Паркинг" class="img-advatages-carusel">
+					<p class="description-advatages-carusel">Охраняемая<br>территория двора</p>
+				</div>
+				<div class="second-advatages-carusel">
+					<img src="img/equipment-5.png" alt="Закрытая терриория" class="img-advatages-carusel">
+					<p class="description-advatages-carusel">Детская площадка<br>с тактильным покрытием</p>
+				</div>
+				<div class="third-advatages-carusel">
+					<img src="img/equipment-6.png" alt="Продуманные планировки" class="img-advatages-carusel">
+					<p class="description-advatages-carusel">Двор – свободный<br>от машин</p>
+				</div>
+			</div>
+		
+	</section>
+
+	<!-- THE END TECHNICAL EQUIPMENT -->
+
+
+
+	<!-- INFRASTRUCTURE -->
+
+	<section class="section-infrastructure" id="section-infrastructure">
+		<div class="container infrastructure-section">
+			<div class="row">
+				<div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+					<h2 class="title-infrastructure wow tada" data-wow-delay="0s">Инфраструктура и транспортная доступность</h2>
+					<p class="description-infrastructure wow fadeInUp" data-wow-delay="0.4s">В районе развитая социальная инфраструктура. Школы, детские сады, спортивные комплексы, торговые центры, скверы и детские площадки – в большом количестве в шаговой доступности. А так же отличная пешеходная и транспортная доступность.</p>
+				</div>
+				<div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+					<img src="img/apartment-12-20.jpg" alt="road" class="road">
+				</div>
+				<div class="col-8 wow ">
+					<img src="img/plashka_4.png" alt="plashka_4" class="plashka_4 wow rollIn" data-wow-delay="0.7s">
+				</div>
+				<div class="col-4"></div>
+
+			</div>
+		</div>
+
+
+
+		<div class="container infrastructure-section-mobile">
+			<div class="row">
+				<div class="col-12">
+					<img src="img/apartment-12-20.jpg" alt="road" class="road">
+					<h2 class="title-infrastructure wow tada" data-wow-delay="0s">Инфраструктура и транспортная доступность</h2>
+					<p class="description-infrastructure wow fadeInUp" data-wow-delay="0.4s">В районе развитая социальная инфраструктура. Школы, детские сады, спортивные комплексы, торговые центры, скверы и детские площадки – в большом количестве в шаговой доступности. А так же отличная пешеходная и транспортная доступность.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- THE END INFRASTRUCTURE -->
+
+
+
+
+
+
+	<!-- PARKING & LOCATION -->
+
+	<section class="section-parking" id="section-parking">
+		<div class="container parking-section">
+			<div class="row">
+				<div class="col-6 wow fadeInLeftBig" data-wow-duration="0.4s" data-wow-delay="0s" data-wow-offset="250">
+					<h2 class="title-parking">
+						Паркинг
+					</h2>
+					<p class="description-parking">
+						Индивидуальный проект, лаконичная архитектура, современные решения фасадов, интерьеров холлов и общественных пространств жилого дома.
+					</p>
+					<img src="img/parking.jpg" alt="parking" class="parking">
+				</div>
+				<div class="col-6 wow fadeInRightBig" data-wow-duration="0.4s" data-wow-delay="0.4s" data-wow-offset="250">
+					<img src="img/map.jpg" alt="map" class="map">
+					<h2 class="title-location">
+						Местоположение
+					</h2>
+					<p class="description-location">
+						Новый жилой комплекс будет построен по адресу: Калининский район, Гражданский пр., дом 32, литера А.
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="container parking-section-mobile">
+			<div class="row">
+				<div class="col-12 wow fadeInLeftBig" data-wow-duration="0.4s" data-wow-delay="0s" data-wow-offset="250">
+					<img src="img/parking.jpg" alt="parking" class="parking">
+					<h2 class="title-parking">
+						Паркинг
+					</h2>
+					<p class="description-parking">
+						Индивидуальный проект, лаконичная архитектура, современные решения фасадов, интерьеров холлов и общественных пространств жилого дома.
+					</p>
+				</div>
+				<div class="col-12 wow fadeInRightBig" data-wow-duration="0.4s" data-wow-delay="0.4s" data-wow-offset="250">
+					<img src="img/map.jpg" alt="map" class="map">
+					<h2 class="title-location">
+						Местоположение
+					</h2>
+					<p class="description-location">
+						Новый жилой комплекс будет построен по адресу: Калининский район, Гражданский пр., дом 32, литера А.
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- THE END PARKING -->
+
+
+
+
+	<!-- DOCUMENTS -->
+
+	<section class="section-documents" id="section-documents">
+		<div class="container">
+			<div class="row">
+				<div class="col-xl-12">
+					<h2 class="title-documents wow tada">
+						Документы
+					</h2>
+				</div>
+			</div>
+			
+			<div class="documents-section">
+				<div class="file file-first wow bounceInLeft" data-wow-delay="0" data-wow-duration="1.2s">
+					<div class="row">
+						<div class="col-1"><img src="img/pdf-02.png" alt="pdf" class="pdf"></div>
+						<div class="col-6 col-sm-6 col-md-5 col-lg-6 col-xl-6"><p class="title-file">Разрешение на строительство дома по адресу Гражданский пр. 32</p></div>
+						<div class="col-1"><p class="weight-file">385 Кб</p></div>
+						<div class="col-1 col-sm-1 col-md-2 col-lg-1 col-xl-1"><p class="date-file">21.03.2018</p></div>
+						<div class="col-3 col-sms-3 col-md-3 col-lg-3 col-xl-3"><botton class="btn-watch_file">Смотреть</botton></div>
+					</div>
+				</div>
+
+				<div class="file file-second wow bounceInLeft" data-wow-delay="0.2s" data-wow-duration="1.2s">
+					<div class="row">
+						<div class="col-1"><img src="img/pdf-02.png" alt="pdf" class="pdf"></div>
+						<div class="col-6 col-sm-6 col-md-5 col-lg-6 col-xl-6"><p class="title-file">Разрешение на строительство дома по адресу Гражданский пр. 32</p></div>
+						<div class="col-1"><p class="weight-file">385 Кб</p></div>
+						<div class="col-1 col-sm-1 col-md-2 col-lg-1 col-xl-1"><p class="date-file">21.03.2018</p></div>
+						<div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3"><botton class="btn-watch_file">Смотреть</botton></div>
+					</div>
+				</div>
+
+				<div class="file file-trird wow bounceInLeft" data-wow-delay="0.4s" data-wow-duration="1.2s">
+					<div class="row">
+						<div class="col-1"><img src="img/pdf-02.png" alt="pdf" class="pdf"></div>
+						<div class="col-6 col-sm-6 col-md-5 col-lg-6 col-xl-6"><p class="title-file">Разрешение на строительство дома по адресу Гражданский пр. 32</p></div>
+						<div class="col-1"><p class="weight-file">385 Кб</p></div>
+						<div class="col-1 col-sm-1 col-md-2 col-lg-1 col-xl-1"><p class="date-file">21.03.2018</p></div>
+						<div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3"><botton class="btn-watch_file">Смотреть</botton></div>
+					</div>
+				</div>
+			</div>
+
+
+		<div class="documents-section-mobile">
+			<div class="file file-first wow bounceInLeft" data-wow-delay="0" data-wow-duration="1.2s">
+					<div class="row">
+						<div class="col-2 col-sm-1 col-md-1 col-lg-1 col-xl-1"><img src="img/pdf-02.png" alt="pdf" class="pdf"></div>
+						<div class="col-5 col-sm-6 col-md-5 col-lg-6 col-xl-6"><p class="title-file">Разрешение на строительство  Гражданский пр. 32</p></div>
+						<div class="col-5 col-sm-5 col-md-3 col-lg-3 col-xl-3"><botton class="btn-watch_file">Смотреть</botton></div>
+					</div>
+				</div>
+
+				<div class="file file-second wow bounceInLeft" data-wow-delay="0.2s" data-wow-duration="1.2s">
+					<div class="row">
+						<div class="col-2 col-sm-1 col-md-1 col-lg-1 col-xl-1"><img src="img/pdf-02.png" alt="pdf" class="pdf"></div>
+						<div class="col-5 col-sm-6 col-md-5 col-lg-6 col-xl-6"><p class="title-file">Разрешение на строительство Гражданский пр. 32</p></div>
+						<div class="col-5 col-sm-5 col-md-3 col-lg-3 col-xl-3"><botton class="btn-watch_file">Смотреть</botton></div>
+					</div>
+				</div>
+
+				<div class="file file-trird wow bounceInLeft" data-wow-delay="0.4s" data-wow-duration="1.2s">
+					<div class="row">
+						<div class="col-2 col-sm-1 col-md-1 col-lg-1 col-xl-1"><img src="img/pdf-02.png" alt="pdf" class="pdf"></div>
+						<div class="col-5 col-sm-6 col-md-5 col-lg-6 col-xl-6"><p class="title-file">Разрешение на строительство  Гражданский пр. 32</p></div>
+						<div class="col-5 col-sm-5 col-md-3 col-lg-3 col-xl-3"><botton class="btn-watch_file">Смотреть</botton></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- THE END DOCUMENTS -->
+
+
+<!-- DETAILS -->
+
+	<section class="section-details" id="section-details">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<h2 class="title-details wow rollIn">Что бы узнать<br>все детали вы можете:</h2>
+				</div>
+			</div>
+			<div class="btn-detail-section">
+				<div class="row">
+					<div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 wow fadeInUp" data-wow-duration="0.4s" data-wow-delay="1s">
+						<button type="button" class="btn btn-details btn-detail-first" data-toggle="modal" data-target="#exampleModal2">Заполнить заявку онлайн</button>
+					</div>
+					<div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 wow fadeInUp" data-wow-delay="1.2s" data-wow-duration="0.4s">
+						<button type="button" class="btn btn-details btn-detail-second" data-toggle="modal" data-target="#exampleModal1">Заказать звонок</button>
+					</div>
+					<div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 wow fadeInUp" data-wow-duration="0.4s" data-wow-delay="1.4s">
+						<botton class="btn-details btn-detail-third">Скачать коммерческое предложение</botton>
+					</div>
+			</div>
+		</div>
+				
+	</section>
+
+	<!-- THE END DETAILS -->
+
+
+	<!-- FOOTER -->
+
+	<footer class="footer" id="footer">
+		<div class="container">
+			<div class="row footer-section">
+				<div class="col-10 nav-footer">
+					<div class="menu-footer">
+						<a href="#" class="active-referencence-menu-footer">О проекте</a>
+						<a href="#" class="referencence-menu-footer">Планировки</a>
+						<a href="#" class="referencence-menu-footer">Галлерея</a>
+						<a href="#" class="referencence-menu-footer">Новости</a>
+						<a href="#" class="last-referencence-menu-footer">3d модель</a>
+					</div>
+				</div>
+				<div class="col-2 block-footer">
+					<img src="img/logo.png" alt="Twins" class="logo" style="165px">
+					<button type="button" class="btn call btn-call-nav" data-toggle="modal" data-target="#exampleModal1">Заказать звонок</button>
+					<span class="line-footer"></span>
+				</div>
+				<div class="col-5 nav-submenu-footer">
+					<div class="submenu-footer">
+						<div class="column_1">
+							<a href="#section-advatages" class="referencence-submenu-footer">Преимущества</a><br>
+							<a href="#section-architecture" class="referencence-submenu-footer">Архитектура</a><br>
+							<a href="#section-architecture" class="referencence-submenu-footer">Квартиры</a><br>
+							<a href="#section-technical_equipment" class="referencence-submenu-footer">Техническое<br>оснащение комплекса</a>
+						</div>
+						<div class="column_2">
+							<a href="#section-infrastructure"" class="referencence-submenu-footer">Инфраструктура и<br>транспортная доступность</a><br>
+							<a href="#section-parking" class="referencence-submenu-footer">Паркинг</a><br>
+							<a href="#parking" class="referencence-submenu-footer">Расположение</a><br>
+							<a href="#section-documents" class="referencence-submenu-footer">Документы</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-7"></div>
+				<div class="col-12 law"><p class="law">Любая информация, представленная на данном сайте, носит исключительно информационный характер и не является публичной офертой, определяемой положениями статьи 437 ГК РФ</p></div>
+			</div>
+			<div class="footer-mobile">
+				<p class="law-mobile">Любая информация, представленная на данном сайте, носит исключительно информационный характер и не является публичной офертой, определяемой положениями статьи 437 ГК РФ</p>
+				<img src="img/logo.png" alt="Twins" class="logo-mobile-nav">
+			</div>
+			
+
+		</div>
+	</footer>
+
+	<!-- THE END FOOTER -->
+
+
+	<!-- MODAL FIRST WINDOW CALL -->
+
+	<div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	  	<div class="modal-dialog" role="document">
+	    	<div class="modal-content">
+	      		<div class="modal-body">
+					<h4 class="form-call">Оставьте свой мобильный номер и мы вам перезвоним</h4>
+					<button type="button" class="close form-close" onclick='$(".modal").modal("hide");'> 
+	          			<span class="closee" style="opacity: 1;" aria-hidden="true">X</span>
+	        		</button>
+	        		<form>
+
+						<!-- Hidden Required Fields -->
+						<input type="hidden" name="project_name" value="Twins">
+						<input type="hidden" name="admin_email" value="dmitry@jeefo.ru">
+						<input type="hidden" name="form_subject" value="Заказ звонка">
+						<!-- END Hidden Required Fields -->
+
+						<input type="text" name="Имя" placeholder="Имя*" required id="form"><br>
+						<input type="text form-phone" name="Номер телефона" placeholder="+7 (___) ___ -___-__*" required><br>
+						<button class="btn form-send">Заказать звонок</button>
+					</form>
+					<div class="form-line"></div>
+					<span class="required_field">* Поля обязательные для заполнения.</span>
+	      		</div>
+	    	</div>
+	  	</div>
+	</div>
+
+
+	<!-- THE END FIRST MODAL WINDOW CALL -->
+
+
+	<!-- MODAL SECOND WINDOW CALL -->
+
+	<div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	  	<div class="modal-dialog" role="document">
+	    	<div class="modal-content modal-second">
+	      		<div class="modal-body">
+					<h4 class="form-call">Задайте свой вопрос и мы на него ответим</h4>
+					<button type="button" class="close form-close" onclick='$(".modal").modal("hide");'> 
+	          			<span class="closee" style="opacity: 1;" aria-hidden="true">X</span>
+	        		</button>
+	        		<form>
+
+						<!-- Hidden Required Fields -->
+						<input type="hidden" name="project_name" value="Twins">
+						<input type="hidden" name="admin_email" value="dmitry@jeefo.ru">
+						<input type="hidden" name="form_subject" value="Вопрос">
+						<!-- END Hidden Required Fields -->
+
+						<input class="input-modal" type="text" name="Имя" placeholder="Имя*"><br>
+						<input class="input-modal" type="tel" name="Номер телефона" placeholder="+7 (___) ___ -___-__*" required><br>
+						<input class="input-modal" type="email" name="E-mail" placeholder="E-mail*" required><br>
+						<textarea class="input-modal-right" name="Вопрос" placeholder="Введите текст"></textarea>
+
+						<button class="btn form-send">Оставить заявку</button>
+					</form>
+					<div class="form-line"></div>
+					<span class="required_field">* Поля обязательные для заполнения.</span>
+	      		</div>
+	    	</div>
+	  	</div>
+	</div>
+
+
+	<!-- THE END SECOND MODAL WINDOW CALL -->
+
+
+	<!-- jQuery -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="http://code.jquery.com/jquery-latest.js" type="text/javascript"></script>
+	<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<!-- LIBRARY BOOTSTRAP -->
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<!-- FORMS  -->
+	<script src="js/script.js"></script>
+	<!-- slick slider -->
+	<script src="js/slick.min.js"></script>
+
+	<script>
+		$(document).ready(function(){
+		  $('.advatages-carusel').slick({
+		  		infinite: true,
+			  	slidesToShow: 2,
+			  	slidesToScroll: 1,
+			  	dots: true,
+			  	dotsClass: "my-dots",
+			  	arrows: false,
+			  	responsive: [
+				    {
+				      breakpoint: 768,
+				      settings: {
+				        slidesToShow: 1,
+				        slidesToScroll: 1
+				      }
+				    }
+				  ]
+		  });
+		});
+	</script>
+	<script>
+		$(document).ready(function(){
+		  $('.equipment-carusel').slick({
+		  		infinite: true,
+			  	slidesToShow: 2,
+			  	slidesToScroll: 2,
+			  	dots: true,
+			  	dotsClass: "my-dots-2",
+			  	arrows: false,
+			  	responsive: [
+				    {
+				      breakpoint:768,
+				      settings: {
+				        slidesToShow: 1,
+				        slidesToScroll: 1
+				      }
+				    }
+				  ]
+			});
+		});
+	</script>
+	<script>
+		$(document).ready(function(){
+		  $('.main-advantages-carusel').slick({
+		  		infinite: true,
+			  	slidesToShow: 1,
+			  	slidesToScroll: 1,
+			  	dots: true,
+			  	dotsClass: "my-dots-3",
+			  	arrows: false,
+		  });
+		});
+	</script>
+</body>
+</html>
