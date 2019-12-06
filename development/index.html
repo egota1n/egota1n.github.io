@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Development Environment</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Merriweather:700|Open+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+	<!-- Bootstrap styles -->
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<!-- Main styles -->
+	<link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+	<!-- HEADER -->
+
+	<header class="header">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<nav class="nav">
+						<a href="#!" class="logo"></a>
+						<div class="navigation">
+							<ul>
+								<li><a href="#section__about">Определение</a></li>
+								<li><a href="#section__advantages">Преимущества</a></li>
+								<li><a href="#!">Интерфейс</a></li>
+								<li><a href="#!">Ресурсы</a></li>
+							</ul>
+						</div>
+					</nav>
+				</div>
+				<div class="col-12">
+					<div class="offer">
+						<h1 class="title__header">Лучшие среды программирования</h1>
+						<p class="description__header">Здесь вы можете узнать какую среду программирования лучшие выбрать для тех или иных задач. С помощью нашего сайта вы поймете что лучше использовать в своей работе и чем отличаются среды разработки</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="arrow__header">
+			<a href="#section__about" class="arrow__header"></a>
+		</div>
+	</header>
+
+	<!-- THE END HEADER -->
+
+
+	<!-- ABOUT -->
+
+	<section class="section__about" id="section__about">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<h2 class="title__section title__about">Что такое IDE?</h2>
+				</div>
+				<div class="col-6">
+					<p class="description__about"><span class="term">IDE</span> — это не просто текстовый редактор. В то время как текстовые редакторы для кода, такие как <span class="underline">Sublime</span> или <span class="underline">Atom</span>, предлагают множество удобных функций, таких как подсветка синтаксиса, настраиваемый интерфейс и расширенные средства навигации, они позволяют только писать код. Для создания функционирующих приложений как минимум нужен <span class="accent">компилятор</span> и <span class="accent">отладчик</span>.</p>
+					<p class="description__about"><span class="term">IDE</span> включает в себя эти компоненты, как и ряд других. Некоторые из них поставляются с дополнительными инструментами для автоматизации, тестирования и визуализации процесса разработки. Термин <span class="definition">«интегрированная среда разработки»</span> означает, что предоставляется все необходимое для превращения кода в функционирующие приложения.</p>
+					<p class="description__about">Обычно среда разработки включает в себя текстовый редактор, компилятор и/или интерпретатор, средства автоматизации <span class="accent">сборки</span> и <span class="accent">отладчик</span>. Иногда также содержит средства для интеграции с системами управления версиями.</p>
+				</div>
+				<div class="col-6">
+					<div class="icons">
+						<div class="Eclipse"></div>
+						<div class="IntelliJ_IDEA"></div>
+						<div class="Komodo"></div>
+						<div class="RubyMine"></div>
+						<div class="Xcode"></div>
+						<div class="Microsoft_Visual_Studio"></div>
+						<div class="NetBeans"></div>
+						<div class="PyCharm"></div>
+						<div class="Qt_Creator"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- THE END ABOUT -->
+
+
+	<!-- ADVANTAGES -->
+
+	<section class="section__advantages" id="section__advantages">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<h2 class="title__section title__advantages">Преимущества</h2>
+				</div>
+				
+			</div>
+		</div>
+	</section>
+
+	<!-- THE END ADVANTAGES -->
+
+
+	<!-- Bootstrap scripts -->
+	<script src="assets/js/bootstrap.min.js"></script>
+	<!-- Scroll -->
+	<script>
+		var linkNav = document.querySelectorAll('[href^="#"]'), //выбираем все ссылки к якорю на странице
+	    V = 0.7;  // скорость, может иметь дробное значение через точку (чем меньше значение - тем больше скорость)
+	    for (var i = 0; i < linkNav.length; i++) {
+	    linkNav[i].addEventListener('click', function(e) { //по клику на ссылку
+	        e.preventDefault(); //отменяем стандартное поведение
+	        var w = window.pageYOffset,  // производим прокрутка прокрутка
+	            hash = this.href.replace(/[^#]*(.*)/, '$1');  // к id элемента, к которому нужно перейти
+	        t = document.querySelector(hash).getBoundingClientRect().top,  // отступ от окна браузера до id
+	        start = null;
+	        requestAnimationFrame(step);  // подробнее про функцию анимации [developer.mozilla.org]
+	        function step(time) {
+	        	if (start === null) start = time;
+	        	var progress = time - start,
+	        	r = (t < 0 ? Math.max(w - progress/V, w + t) : Math.min(w + progress/V, w + t));
+	        	window.scrollTo(0,r);
+	        	if (r != w + t) {
+	        		requestAnimationFrame(step)
+	        	} else {
+	                location.hash = hash  // URL с хэшем
+	              }
+	            }
+	          }, false);
+	  }
+	</script>
+</body>
+</html>

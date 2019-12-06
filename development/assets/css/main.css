@@ -1,0 +1,328 @@
+*, *::before, *::after{
+	font-family: 'Open Sans', sans-serif;
+	color: #333;
+	font-size: 16px;
+	margin: 0;
+	padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6{
+	font-family: 'Merriweather', serif;
+	font-size: 30px;
+	text-align: center;
+}
+
+li{
+	list-style: none;
+}
+
+a{
+	color: #333;
+}
+
+a:focus, a:hover{
+	text-decoration: none;
+	color: #333;
+}
+
+p, ul{
+	margin: 0;
+}
+
+/*HEADER*/
+
+.header{
+	height: 100vh;
+	background: #EFF2F0 url(../img/bg/bg.jpg) center center no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+	position: relative;
+}
+
+.nav{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+	justify-content: space-between;
+	margin-top: 25px;
+}
+
+.navigation ul{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+	justify-content: space-between;
+	width: 400px;
+}
+
+.navigation ul li a{
+	font-size: 12px;
+	position: relative;
+}
+
+.navigation ul li a::before{
+	content: '';
+	position: absolute;
+	display: block;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 1px;
+	background: #F7D101;
+	transform: scale(0);
+}
+
+.navigation ul li:hover a:before{
+	transition: all 0.3s ease;
+	transform: scale(1);
+}
+
+.logo{
+	display: block;
+	width: 116px;
+	height: 24px;
+	background: url(../img/logo/logo.svg) center center no-repeat;
+}
+
+.offer{
+	margin-top: 294px;
+}
+
+.title__header{
+	font-size: 40px;
+	color: #075E39;
+}
+
+.description__header{
+	display: block;
+	text-align: center;
+	line-height: 22px;
+	width: 672px;
+	margin: 20px auto 0 auto;
+}
+
+.arrow__header{
+	position: absolute;
+	bottom: 88px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+a.arrow__header{
+	display: block;
+	width: 28px;
+	height: 15px;
+	position: relative;
+	bottom: 0;
+}
+
+a.arrow__header::before, a.arrow__header::after {
+	content: '';
+	width: 19px;
+	height: 2px;
+	background: #333;
+	position: absolute;
+	top: 6px;
+	transition: all 0.3s ease;
+}
+
+a.arrow__header:hover:before, a.arrow__header:hover:after {
+	background: #F7D101;
+}
+
+a.arrow__header::before {
+	transform: rotate(45deg);
+	left: -2px;
+}
+
+a.arrow__header::after {
+	transform: rotate(-45deg);
+	left: 10px;
+}
+
+/*THE END HEADER*/
+
+
+/*ABOUT*/
+
+.section__about{
+	padding: 70px 0 0 0;
+	height: 750px;
+}
+
+.title__about{
+	margin-bottom: 93px;
+}
+
+.title__section::before, .title__section::after{
+	content: '';
+	background: #333;
+	display: inline-block;
+	position: relative;
+	width: 80px;
+	height: 2px;
+	top: -8px;
+}
+
+.title__section::before{
+	right: 45px;
+}
+
+.title__section::after{
+	left: 45px;	
+}
+
+.description__about{
+	line-height: 26px;
+	margin-bottom: 35px;
+}
+
+.description__about:last-child{
+	margin-bottom: 0;
+}
+
+.term{
+	font-weight: bold;
+	color: #075E39;
+}
+
+.underline{
+	text-decoration: underline;
+}
+
+.accent{
+	color: #F7D101
+}
+
+.definition{
+	font-weight: bold;
+	color: #F7D101
+}
+
+.icons{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+	justify-content: center;
+	-webkit-flex-wrap: wrap;
+	-moz-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	-o-flex-wrap: wrap;
+	flex-wrap: wrap;
+	width: 480px;
+	height: 480px;
+	margin-left: auto;
+}
+
+.Eclipse{
+	display: block;
+	width: 100px;
+	height: 100px;
+	-webkit-background-size: contain;
+	background-size: contain;
+	background: url(../img/icon/Eclipse.svg) center center no-repeat;
+	margin: 0 90px 90px 0;
+}
+
+.IntelliJ_IDEA{
+	display: block;
+	width: 100px;
+	height: 100px;
+	-webkit-background-size: contain;
+	background-size: contain;
+	background: url(../img/icon/IntelliJ_IDEA.svg) center center no-repeat;
+	margin: 0 90px 90px 0;
+}
+
+.Komodo{
+	display: block;
+	width: 100px;
+	height: 100px;
+	-webkit-background-size: contain;
+	background-size: contain;
+	background: url(../img/icon/Komodo.svg) center center no-repeat;
+	margin: 0 0 90px 0;
+}
+
+.RubyMine{
+	display: block;
+	width: 100px;
+	height: 100px;
+	-webkit-background-size: contain;
+	background-size: contain;
+	background: url(../img/icon/RubyMine.svg) center center no-repeat;
+	margin: 0 90px 90px 0;
+}
+
+.Xcode{
+	display: block;
+	width: 100px;
+	height: 100px;
+	-webkit-background-size: contain;
+	background-size: contain;
+	background: url(../img/icon/Xcode.svg) center center no-repeat;
+	margin: 0 90px 90px 0;
+}
+
+.Microsoft_Visual_Studio{
+	display: block;
+	width: 100px;
+	height: 100px;
+	-webkit-background-size: contain;
+	background-size: contain;
+	background: url(../img/icon/Microsoft_Visual_Studio.svg) center center no-repeat;
+	margin: 0 0 90px 0;
+}
+
+.NetBeans{
+	display: block;
+	width: 100px;
+	height: 100px;
+	-webkit-background-size: contain;
+	background-size: contain;
+	background: url(../img/icon/NetBeans.svg) center center no-repeat;
+	margin: 0 90px 0 0;
+}
+
+.PyCharm{
+	display: block;
+	width: 100px;
+	height: 100px;
+	-webkit-background-size: contain;
+	background-size: contain;
+	background: url(../img/icon/PyCharm.svg) center center no-repeat;
+	margin: 0 90px 0 0;
+}
+
+.Qt_Creator{
+	display: block;
+	width: 100px;
+	height: 100px;
+	-webkit-background-size: contain;
+	background-size: contain;
+	background: url(../img/icon/Qt_Creator.svg) center center no-repeat;
+}
+
+/*THE END ABOUT*/
+
+
+/*ADVANTAGES*/
+
+.section__advantages{
+	margin: 122px 0 0 0;
+	height: 700px;
+}
+
+/*THE END ADVANTAGES*/
