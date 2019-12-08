@@ -8,7 +8,7 @@
 }
 
 h1, h2, h3, h4, h5, h6{
-	font-family: 'Merriweather', serif;
+	font-family: 'Merriweather', sans-serif;
 	font-size: 30px;
 	text-align: center;
 }
@@ -35,7 +35,8 @@ p, ul{
 
 .header{
 	height: 100vh;
-	background: #EFF2F0 url(../img/bg/bg.jpg) center center no-repeat;
+	min-height: 675px;
+	background: #eff2f0 url(../img/bg/bg.jpg) center center no-repeat;
 	-webkit-background-size: cover;
 	background-size: cover;
 	position: relative;
@@ -78,7 +79,7 @@ p, ul{
 	left: 0;
 	width: 100%;
 	height: 1px;
-	background: #F7D101;
+	background: #f7d101;
 	transform: scale(0);
 }
 
@@ -95,12 +96,12 @@ p, ul{
 }
 
 .offer{
-	margin-top: 294px;
+	margin-top: 250px;
 }
 
 .title__header{
 	font-size: 40px;
-	color: #075E39;
+	color: #075e39;
 }
 
 .description__header{
@@ -137,7 +138,7 @@ a.arrow__header::before, a.arrow__header::after {
 }
 
 a.arrow__header:hover:before, a.arrow__header:hover:after {
-	background: #F7D101;
+	background: #f7d101;
 }
 
 a.arrow__header::before {
@@ -193,7 +194,7 @@ a.arrow__header::after {
 
 .term{
 	font-weight: bold;
-	color: #075E39;
+	color: #075e39;
 }
 
 .underline{
@@ -201,12 +202,12 @@ a.arrow__header::after {
 }
 
 .accent{
-	color: #F7D101
+	color: #f7d101
 }
 
 .definition{
 	font-weight: bold;
-	color: #F7D101
+	color: #f7d101
 }
 
 .icons{
@@ -228,92 +229,56 @@ a.arrow__header::after {
 	margin-left: auto;
 }
 
-.Eclipse{
+.icons div:nth-child(3n+2){
+	margin: 0 90px;
+}
+
+.icons div:nth-child(4), .icons div:nth-child(5), .icons div:nth-child(6){
+	margin-top: 90px;
+	margin-bottom: 90px;
+}
+
+.Eclipse, .IntelliJ_IDEA, .Komodo, .RubyMine, .Xcode, .Microsoft_Visual_Studio, .NetBeans, .PyCharm, .Qt_Creator{
 	display: block;
 	width: 100px;
 	height: 100px;
-	-webkit-background-size: contain;
-	background-size: contain;
+	-webkit-background-size: contain!important;
+	background-size: contain!important;
+}
+
+.Eclipse{
 	background: url(../img/icon/Eclipse.svg) center center no-repeat;
-	margin: 0 90px 90px 0;
 }
 
 .IntelliJ_IDEA{
-	display: block;
-	width: 100px;
-	height: 100px;
-	-webkit-background-size: contain;
-	background-size: contain;
 	background: url(../img/icon/IntelliJ_IDEA.svg) center center no-repeat;
-	margin: 0 90px 90px 0;
 }
 
 .Komodo{
-	display: block;
-	width: 100px;
-	height: 100px;
-	-webkit-background-size: contain;
-	background-size: contain;
 	background: url(../img/icon/Komodo.svg) center center no-repeat;
-	margin: 0 0 90px 0;
 }
 
 .RubyMine{
-	display: block;
-	width: 100px;
-	height: 100px;
-	-webkit-background-size: contain;
-	background-size: contain;
 	background: url(../img/icon/RubyMine.svg) center center no-repeat;
-	margin: 0 90px 90px 0;
 }
 
 .Xcode{
-	display: block;
-	width: 100px;
-	height: 100px;
-	-webkit-background-size: contain;
-	background-size: contain;
 	background: url(../img/icon/Xcode.svg) center center no-repeat;
-	margin: 0 90px 90px 0;
 }
 
 .Microsoft_Visual_Studio{
-	display: block;
-	width: 100px;
-	height: 100px;
-	-webkit-background-size: contain;
-	background-size: contain;
 	background: url(../img/icon/Microsoft_Visual_Studio.svg) center center no-repeat;
-	margin: 0 0 90px 0;
 }
 
 .NetBeans{
-	display: block;
-	width: 100px;
-	height: 100px;
-	-webkit-background-size: contain;
-	background-size: contain;
 	background: url(../img/icon/NetBeans.svg) center center no-repeat;
-	margin: 0 90px 0 0;
 }
 
 .PyCharm{
-	display: block;
-	width: 100px;
-	height: 100px;
-	-webkit-background-size: contain;
-	background-size: contain;
 	background: url(../img/icon/PyCharm.svg) center center no-repeat;
-	margin: 0 90px 0 0;
 }
 
 .Qt_Creator{
-	display: block;
-	width: 100px;
-	height: 100px;
-	-webkit-background-size: contain;
-	background-size: contain;
 	background: url(../img/icon/Qt_Creator.svg) center center no-repeat;
 }
 
@@ -372,7 +337,7 @@ a.arrow__header::after {
 	width: 127px;
 	height: 127px;
 	border-radius: 90px;
-	border: 4px solid #F7D101;
+	border: 4px solid #f7d101;
 	-webkit-background-size: 70px;
 	background-size: 70px;
 }
@@ -399,7 +364,7 @@ a.arrow__header::after {
 }
 
 .advantge:hover svg path{
-	fill: #F7D101;
+	fill: #f7d101;
 }
 
 .modal__link{
@@ -408,12 +373,12 @@ a.arrow__header::after {
 	font-family: 'Merriweather', serif;
 	text-align: center;
 	font-size: 16px;
-	color: #075E39;
+	color: #075e39;
 	position: relative;
 }
 
 .modal__link:hover{
-	color: #F7D101;
+	color: #f7d101;
 }
 
 .slick-dots {
@@ -428,14 +393,14 @@ a.arrow__header::after {
 	left: 0px;
 	width: 8px;
 	height: 8px;
-	background: #DDD;
+	background: #ddd;
 	border-radius: 90px;
 	opacity: 1;
 }
 
 .slick-dots li.slick-active button:before {
 	opacity: 1;
-	background: #AAA;
+	background: #aaa;
 }
 
 .slick-dots li {
@@ -490,14 +455,127 @@ a.arrow__header::after {
 	background: url(../img/other/arrow-right.svg) center center no-repeat;
 }
 
-/*.modal__link span::before{
-	content: '';
-	width: 100%;
-	height: 2px;
-	background: #075E39;
-	position: absolute;
-	left: 0;
-	bottom: 0;
-	}*/
-
 /*THE END ADVANTAGES*/
+
+
+/*MODAL*/
+
+.modal-dialog {
+	max-width: 1170px;
+}
+
+.modal-content{
+	padding: 57px 100px 52px 100px;
+	position: relative;
+}
+
+.close{
+	position: absolute;
+	right: 30px;
+	top: 30px;
+	display: block;
+	width: 23px;
+	height: 23px;
+	font-size: 0;
+	line-height: 1;
+	opacity: 1;
+}
+
+button.close::before, button.close::after{
+	content: '';
+	display: block;
+	width: 30px;
+	height: 2px;
+	background: #333;
+	position: absolute;
+	top: 10px;
+	left: -4px;
+	transition: all 0.3s ease;
+}
+
+button.close::before {
+	transform: rotate(45deg);
+}
+
+button.close::after {
+	transform: rotate(-45deg);
+}
+
+.close:not(:disabled):not(.disabled):focus, .close:not(:disabled):not(.disabled):hover {
+	opacity: 1;
+}
+
+.close:hover:before, .close:hover:after{
+	background: #f7d101;
+}
+
+.initial__block{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+	justify-content: flex-start;
+}
+
+.name__block{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: flex-start;
+	-webkit-flex-direction: column;
+	-moz-flex-direction: column;
+	-ms-flex-direction: column;
+	-o-flex-direction: column;
+	flex-direction: column;
+	margin-left: 30px;
+}
+
+.title__modal{
+	font-size: 24px;
+	text-align: left;
+	margin-bottom: 4px;
+}
+
+.desctiption__modal{
+	font-size: 14px;
+	font-weight: bold;
+	color: #f7d101;
+}
+
+.descripton__program{
+	margin: 15px 0;
+}
+
+.btn-developers{
+	font-family: 'Merriweather', sans-serif;
+	font-size: 18px;
+	margin: 30px auto 0 auto;
+	padding: 20px 58px;
+	border: 0;
+	border-radius: 90px;
+	background: #f7d101;
+	-webkit-box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.16);
+	-moz-box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.16);
+	box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.16);
+	transition: all 0.3s ease;
+}
+
+.btn-developers:hover{
+	background: #ffd800;
+}
+
+.carusel__modal{
+	width: 968px;
+}
+
+.modal-content {
+	border: 0;
+	border-radius: 16px;
+}
+
+/*THE END MODAL*/
