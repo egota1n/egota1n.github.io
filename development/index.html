@@ -26,12 +26,12 @@
 <body>
 	<!-- HEADER -->
 
-	<header class="header">
+	<header class="header" id="header">
 		<div class="container">
 			<div class="row">
 				<div class="col-12">
 					<nav class="nav">
-						<a href="#!" class="logo"></a>
+						<a href="#header" class="logo"></a>
 						<div class="navigation">
 							<ul>
 								<li><a href="#section__about">Определение</a></li>
@@ -200,6 +200,37 @@
 	</section>
 
 	<!-- THE END ADVANTAGES -->
+
+
+	<!-- FOOTER -->
+
+	<footer class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<nav class="nav">
+						<a href="#header" class="logo"></a>
+						<div class="navigation">
+							<ul>
+								<li><a href="#section__about">Определение</a></li>
+								<li><a href="#section__advantages">Преимущества</a></li>
+								<li><a href="#!">Интерфейс</a></li>
+								<li><a href="#!">Ресурсы</a></li>
+							</ul>
+						</div>
+					</nav>
+				</div>
+				<div class="col-12">
+					<div class="block__footer">
+						<p class="descroption__footer">Design by Egor Tanachev</p>
+						<p class="descroption__footer">© Copyright 2019</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<!-- THE END FOOTER -->
 
 
 	<!-- MODALS -->
@@ -380,10 +411,12 @@
 			slidesToShow: 3,
 			slidesToScroll: 1,
 			dots: true,
-			arrow: true
+			arrow: true,
+			autoplay: true,
 		});
 	</script>
 	<script>$('.carusel__modal').slick({
+		infinite: true,
 		slidesToShow: 1,
 		slidesToScroll: 1,
 		dots: true,
