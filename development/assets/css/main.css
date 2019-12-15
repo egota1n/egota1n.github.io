@@ -31,6 +31,12 @@ p, ul{
 	margin: 0;
 }
 
+img{
+	display: block;
+	margin: 0 auto;
+	width: 100%;
+}
+
 /*HEADER*/
 
 .header{
@@ -287,9 +293,8 @@ a.arrow__header::after {
 
 /*ADVANTAGES*/
 
-.section__advantages{
-	margin: 122px 0 0 0;
-	height: 700px;
+.section__advantages {
+	margin: 122px 0 28px 0;
 }
 
 .cards{
@@ -478,6 +483,15 @@ a.modal__link:hover:before {
 /*THE END ADVANTAGES*/
 
 
+/*INTERFACE*/
+
+
+
+/*THE END INTERFACE*/
+
+.section__interface{
+	margin: 123px 0 0 0;
+}
 
 /*FOOTER*/
 
@@ -527,7 +541,7 @@ a.modal__link:hover:before {
 
 .modal-content{
 	padding: 57px 100px 52px 100px;
-	position: relative;
+	display: block;
 }
 
 .close{
@@ -613,10 +627,13 @@ button.close::after {
 }
 
 .btn-developers{
+	display: block;
 	font-family: 'Merriweather', sans-serif;
 	font-size: 18px;
 	margin: 30px auto 0 auto;
-	padding: 20px 58px;
+	text-align: center;
+	padding: 20px 0;
+	width: 415px;
 	border: 0;
 	border-radius: 90px;
 	background: #f7d101;
@@ -630,17 +647,13 @@ button.close::after {
 	background: #ffd800;
 }
 
-.carusel__modal{
-	width: 968px;
-}
-
 .modal-content {
 	border: 0;
 	border-radius: 16px;
 }
 
-.carusel__modal{
-	width: auto;
+.modal-content img{
+	margin: 30px 0;
 }
 
 /*THE END MODAL*/
