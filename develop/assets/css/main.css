@@ -326,7 +326,7 @@ a.arrow__header::after {
 }
 
 .card_fourth::before{
-	background: #fff url(../img/icon/NetBeans.svg) center center no-repeat;
+	background: #fff url(../img/icon/Qt_Creator.svg) center center no-repeat;
 }
 
 .card_fifth::before{
