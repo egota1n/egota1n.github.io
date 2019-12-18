@@ -33,6 +33,32 @@
 		width: 80px;
 		height: 80px;
 	}
+	.slick-next {
+		right: 360px;
+		top: 519px;
+	}
+	.slick-prev {
+		left: 360px;
+		top: 519px;
+	}
+	.slick-next::before {
+		width: 35px;
+		height: 35px;
+		-webkit-background-size: contain;
+		background-size: contain;
+	}
+	.slick-prev::before {
+		width: 35px;
+		height: 35px;
+		-webkit-background-size: contain;
+		background-size: contain;
+	}
+	.modal-dialog {
+		max-width: 960px;
+	}
+	.card__interface-second::before {
+		left: 280px;
+	}
 }
 
 /*Экстрабольшие девайсы (большие десктопы)*/

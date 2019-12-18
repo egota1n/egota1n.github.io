@@ -495,6 +495,29 @@ a.modal__link:hover:before {
 
 .card__interface{
 	margin-bottom: 100px;
+	position: relative;
+}
+
+.card__interface::before{
+	content: '';
+	display: block;
+	width: 50px;
+	height: 50px;
+	background: url(../img/icon/Microsoft_Visual_Studio.svg) center center no-repeat;
+	-webkit-background-size: cover!important;
+	background-size: cover!important;
+	position: absolute;
+	right: 0;
+	top: -17px;
+}
+
+.card__interface-second::before{
+	background: url(../img/icon/PyCharm.svg) center center no-repeat;
+	left: 330px;
+}
+
+.card__interface-third::before{
+	background: url(../img/icon/Xcode.svg) center center no-repeat;
 }
 
 .card__interface:last-child{
@@ -526,6 +549,54 @@ a.modal__link:hover:before {
 }
 
 /*THE END INTERFACE*/
+
+
+/*RESOURCE*/
+
+.section__resources{
+	background: #1f1f1f;
+	padding-top: 45px;
+}
+
+.title__resources{
+	color: #fff;
+	margin-bottom: 45px;
+}
+
+.title__resources::before, .title__resources::after{
+	background: #ccc;
+}
+
+.section__resources .col-4 {
+	padding: 0;
+}
+
+.resource {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 246px;
+	border: 0.5px solid #333;
+	filter: grayscale(1);
+	transition: all 0.3s ease;
+	cursor: pointer;
+}
+
+.resource:hover {
+	filter: grayscale(0);
+	border: 5px solid #F7D101;
+}
+
+.resource div {
+	width: 120px;
+	height: 120px;
+}
+
+.resource .Eclipse{
+	background: url(../img/icon/Eclipse2.svg) center center no-repeat;
+}
+
+/*THE END RESOURCE*/
 
 
 /*FOOTER*/
