@@ -1,0 +1,64 @@
+/*Экстрамалые девайсы («телефоны», < 576px)*/
+@media (max-width: 575.98px) {
+
+}
+
+/*Малые девайсы («ландшафтные», < 768px)*/
+@media (max-width: 767.98px) {
+
+}
+
+/*Средние девайсы («таблетки», < 992px) */
+@media (max-width: 991.98px) {
+
+}
+
+/*Большие девайсы (большие десктопы, < 1200px)*/
+@media (max-width: 1199.98px) {
+	*, *::before, *::after {
+		font-size: 15px;
+	}
+	.icons {
+		width: 380px;
+		height: 380px;
+	}
+	.icons div:nth-child(4), .icons div:nth-child(5), .icons div:nth-child(6) {
+		margin-top: 70px;
+		margin-bottom: 70px;
+	}
+	.icons div:nth-child(3n+2) {
+		margin: 0 70px;
+	}
+	.Eclipse, .IntelliJ_IDEA, .Komodo, .RubyMine, .Xcode, .Microsoft_Visual_Studio, .NetBeans, .PyCharm, .Qt_Creator {
+		width: 80px;
+		height: 80px;
+	}
+	.slick-next {
+		right: 360px;
+		top: 519px;
+	}
+	.slick-prev {
+		left: 360px;
+		top: 519px;
+	}
+	.slick-next::before {
+		width: 35px;
+		height: 35px;
+		-webkit-background-size: contain;
+		background-size: contain;
+	}
+	.slick-prev::before {
+		width: 35px;
+		height: 35px;
+		-webkit-background-size: contain;
+		background-size: contain;
+	}
+	.modal-dialog {
+		max-width: 960px;
+	}
+	.card__interface-second::before {
+		left: 280px;
+	}
+}
+
+/*Экстрабольшие девайсы (большие десктопы)*/
