@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="ru-ru" dir="ltr">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="canonical" href="index.html">
+	<base href="" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="generator" content="Joomla! - Open Source Content Management" />
+	<title>USACC - доставка автомобилей из США</title>
+	<link href="https://usca.com.ua/?format=feed&amp;type=rss" rel="alternate" type="application/rss+xml" title="RSS 2.0" />
+	<link href="https://usca.com.ua/?format=feed&amp;type=atom" rel="alternate" type="application/atom+xml" title="Atom 1.0" />
+	<link href="images/logo-142.png" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+	<link href="https://usca.com.ua/plugins/system/bdthemes_shortcodes/css/shortcode-ultimate.css" rel="stylesheet" type="text/css" />
+	<link href="https://usca.com.ua/plugins/system/bdthemes_shortcodes/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+	<link href="media/com_rsform/css/front.css@632aa2fe50b7af28739ead72e9327473.css" rel="stylesheet" type="text/css" />
+	<link href="media/com_rsform/css/frameworks/uikit3/uikit.min.css@632aa2fe50b7af28739ead72e9327473.css" rel="stylesheet" type="text/css" />
+	<link href="media/com_rstbox/css/engagebox.css@v=3.4.8.css" rel="stylesheet" type="text/css" />
+	<link href="templates/shaper_helixultimate/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+	<link href="templates/shaper_helixultimate/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+	<link href="templates/shaper_helixultimate/css/template.css" rel="stylesheet" type="text/css" />
+	<link href="templates/shaper_helixultimate/css/presets/default.css" rel="stylesheet" type="text/css" />
+	<link href="templates/shaper_helixultimate/css/custom.css" rel="stylesheet" type="text/css" />
+	<link href="https://usca.com.ua/plugins/system/bdthemes_shortcodes/shortcodes/counter/css/counter.css" rel="stylesheet" type="text/css" />
+	<link href="https://usca.com.ua/plugins/system/bdthemes_shortcodes/shortcodes/image_compare/css/image_compare.css" rel="stylesheet" type="text/css" />
+	<link rel="icon" type="image/png" href="images/favicon-16x16.png" sizes="16x16">
+	<link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32">
+	<link rel="icon" type="image/png" href="images/favicon-96x96.png" sizes="96x96">
+	<style type="text/css">
+
+		#rstbox_1 .rstbox-close:hover {
+			color: rgba(128, 128, 128, 1) !important;
+		}	
+
+		#rstbox_2 .rstbox-close:hover {
+			color: rgba(128, 128, 128, 1) !important;
+		}	
+
+		#rstbox_3 .rstbox-close:hover {
+			color: rgba(128, 128, 128, 1) !important;
+		}	
+
+		.map_canvas img, #map img
+		{
+			max-width: none !important;
+		}
+
+		.map_canvas .mymap-icon
+		{
+			max-width:100px;
+			max-height: 100px;
+			display: inline-block;
+			height: auto;
+			transition: all 0.2s ease-in-out 0s;
+			float:left;
+			margin: 0px 10px 0px 0px;
+		}
+		.mml_logo
+		{
+			max-width:100px;
+			max-height: 100px;
+			display: inline-block;
+			height: auto;
+			transition: all 0.2s ease-in-out 0s;
+			float:left;
+			margin: 0px 2px;
+		}
+
+		.myaddress{width:100%;float:left;margin-bottom:5px;}
+		.mytool{float:left;width:100%;position:relative; }
+		.resultmymap.mymap.mymap-inverse,.resultmymap.mymap.mymap-info.direction_mml,.resultmymap.mymap.mymap-info.direction_mml{
+			box-shadow: none;
+			text-shadow: none;
+			color: #1f1d22;
+			font-size: 11px;
+			text-transform: uppercase;
+			font-weight: 600;
+			letter-spacing: .5px;
+			min-width: 100px;
+			padding-left: 30px;
+			box-sizing: border-box;
+			background: transparent url(https://usca.com.ua/components/com_mymaplocations/assets/images/routeIcn.png) 20px center no-repeat;
+		}
+		.gm-style-iw .resultmymap.mymap.mymap-inverse.contact-btn
+		{
+			background: transparent url(https://usca.com.ua/components/com_mymaplocations/assets/images/contactIcn.png) 10px center no-repeat;
+			box-shadow: none;
+			text-shadow: none;
+			color: #1f1d22;
+			font-size: 11px;
+			text-transform: uppercase;
+			font-weight: 600;
+			letter-spacing: .5px;
+			width: 33.333%;
+			margin: 0 -4px;
+			min-width: 100px;
+			padding-left: 10px;
+			box-sizing: border-box;
+		}
+		.gm-style-iw .input-small
+		{
+			height: 22px !important;
+			line-height:22px !important;
+			max-width:100px;
+			margin:0px;
+
+		}
+		.resultmymap.mymap.mymap-info.direction_mml
+		{
+			background: #2980b9 url(https://usca.com.ua/components/com_mymaplocations/assets/images/routeIcnwhilte.png) 20px center no-repeat;
+			color:#FFFFFF;
+			padding: 5px 15px 5px 45px;
+		}
+		.gm-style-iw .resultmymap.mymap.mymap-inverse.route_mml
+		{
+			background: transparent url(https://usca.com.ua/components/com_mymaplocations/assets/images/routeIcn.png) 0px center no-repeat;
+			padding-left: 20px;
+		}
+		.gm-style-iw .input-small
+		{
+			border-right:0;
+			padding: 0px 15px 5px 15px;
+			background:#f4f3f4;
+		}
+		.gm-style-iw .resultmymap.mymap mymap-info.direction_mml .map_canvas .mymap-icon {
+			max-width:none !important;
+			max-height: 100px;
+			display: inline-block;
+			height: auto;
+			transition: all 0.2s ease-in-out 0s;
+			float: left;
+			padding-right: 7px;
+		}
+		.location-title,.location-title a {
+			margin: 0 0 10px;
+			margin-left: 0px;
+			margin-left: 0px;
+			font-weight: 600;
+			font-size: 17px;
+			color:#1f1d22;
+		}
+		.leaflet-popup-content-wrapper, .leaflet-popup-tip
+		{
+			min-height:170px;
+			float:left;
+		}
+		.gm-style-iw .location-title,.gm-style-iw .location-title a
+		{
+			display:block;
+		}
+		span.locationaddress {
+			font-size: 15px;
+			color: #1f1d22;
+		}
+
+		#suc5d0d31ddb6462 .su-counter-number { font-size: 32px;  }
+		#suc5d0d31ddb6462 .su-counter-text { font-size: 14px;}
+		#suc5d0d31ddb6462 .su-counter-icon i {font-size: 24px;}
+		#suc5d0d31ddb6534 .su-counter-number { font-size: 32px;  }
+		#suc5d0d31ddb6534 .su-counter-text { font-size: 14px;}
+		#suc5d0d31ddb6534 .su-counter-icon i {font-size: 24px;}
+		#suc5d0d31ddb65c0 .su-counter-number { font-size: 32px;  }
+		#suc5d0d31ddb65c0 .su-counter-text { font-size: 14px;}
+		#suc5d0d31ddb65c0 .su-counter-icon i {font-size: 24px;}
+		#suc5d0d31ddb6649 .su-counter-number { font-size: 32px;  }
+		#suc5d0d31ddb6649 .su-counter-text { font-size: 14px;}
+		#suc5d0d31ddb6649 .su-counter-icon i {font-size: 24px;}
+		#suic5d0d31ddb6ede .twentytwenty-before-label:before {content: "Из США"}
+		#suic5d0d31ddb6ede .twentytwenty-after-label:before {content: "В Украине"}
+	</style>
+	<script src="media/jui/js/jquery.min.js@632aa2fe50b7af28739ead72e9327473" type="text/javascript"></script>
+	<script src="media/jui/js/jquery-noconflict.js@632aa2fe50b7af28739ead72e9327473" type="text/javascript"></script>
+	<script src="media/jui/js/jquery-migrate.min.js@632aa2fe50b7af28739ead72e9327473" type="text/javascript"></script>
+	<script src="https://usca.com.ua/plugins/system/bdthemes_shortcodes/js/shortcode-ultimate.js" type="text/javascript"></script>
+	<script src="media/system/js/caption.js@632aa2fe50b7af28739ead72e9327473" type="text/javascript"></script>
+	<script src="media/com_rsform/js/script.js@632aa2fe50b7af28739ead72e9327473" type="text/javascript"></script>
+	<script src="media/com_rsform/js/frameworks/uikit3/uikit.min.js@632aa2fe50b7af28739ead72e9327473" type="text/javascript"></script>
+	<script src="media/com_rsform/js/frameworks/uikit3/uikit-icons.min.js@632aa2fe50b7af28739ead72e9327473" type="text/javascript"></script>
+	<script src="media/com_rstbox/js/velocity.js@v=3.4.8" type="text/javascript"></script>
+	<script src="media/com_rstbox/js/velocity.ui.js@v=3.4.8" type="text/javascript"></script>
+	<script src="media/com_rstbox/js/engagebox.js@v=3.4.8" type="text/javascript"></script>
+	<script src="templates/shaper_helixultimate/js/popper.min.js" type="text/javascript"></script>
+	<script src="templates/shaper_helixultimate/js/bootstrap.min.js" type="text/javascript"></script>
+	<script src="templates/shaper_helixultimate/js/main.js" type="text/javascript"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?libraries=places&amp;key=AIzaSyBKGH8oG0DC0q5lEbG6-lIZDyZTUZlIsF0&amp;language=ru" type="text/javascript"></script>
+	<script src="https://usca.com.ua/plugins/system/bdthemes_shortcodes/js/jquery.appear.js" type="text/javascript"></script>
+	<script src="https://usca.com.ua/plugins/system/bdthemes_shortcodes/shortcodes/counter/js/countUp.js" type="text/javascript"></script>
+	<script src="https://usca.com.ua/plugins/system/bdthemes_shortcodes/shortcodes/image_compare/js/beforeafter.js" type="text/javascript"></script>
+	<!-- animation start -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script src="js/script.js"></script>
+	<style>
+		.a-stopped{
+			animation: none !important;
+			transition: none !important;
+			-webkit-transition: none !important;
+			-moz-transition: none !important;
+			-ms-transition: none !important;
+			-o-transition: none !important;
+			transform: none !important;
+			opacity: 0;
+		}
+	</style>
+
+
+
+
+	<script>
+		var oldScroll=0;
+		var scrollDirection='';
+		jQuery(document).ready(function(){
+			jQuery('.first-screen h1:after, .customsecond-benefits p:before, .first-screen img, .first-screen p, .first-screen p.bluep, h3.sp-module-title:before, h3.sp-module-title:after, .main-benefit h2, .main-benefit table p, .main-benefit table p:first-of-type, .customsecond-benefits p,  .customsecond-benefits h3, .primer img:nth-child(1), .primer img:nth-child(2), .primer img:nth-child(3), .customprimer2 table:nth-child(1), .customprimer2 table:nth-child(2), .customprimer2 table:nth-child(3), .customcrm-1 p, .customadvant table p, .customadvant table p:before, .customadvant table h3, .customauctions h3:after, .customprice table:nth-child(1), .customprice table:nth-child(2), .customprice table:nth-child(3), .telegram, .customtelegram a:before, .customcontacts, .customcontacts p, .customotzivy table img, .customotzivy table h4').addClass('a-stopped');
+			var sttt=setTimeout(function(){
+				jQuery('.a-stopped').each(function(){
+					var t = jQuery(this);
+					if(isScrolledIntoView(t)){
+						t.removeClass('a-stopped');
+					}
+				});
+				jQuery('.customshema>p').not('.boooo').each(function(){
+					var b = jQuery(this);
+					if(isScrolledIntoView(b)){
+						b.addClass('boooo');
+					}
+				});
+				clearTimeout(sttt);
+			}, 57);
+		});
+		function isScrolledIntoView(elem){
+			var Whh = jQuery(window).height();
+			var Ehh = jQuery(elem).height();
+			var docViewTop = jQuery(window).scrollTop();
+			var docViewBottom = docViewTop + Whh;
+			var elemTop = jQuery(elem).offset().top;
+			var elemBottom = elemTop + Ehh;
+			if(scrollDirection=='down'){
+				return ((elemTop < docViewBottom) && (elemTop > docViewTop));
+			}
+			else if(scrollDirection=='up'){
+				return ((elemBottom > docViewTop) && (elemBottom < docViewBottom));
+			}
+			else{
+				return (((elemTop < docViewBottom) && (elemTop > docViewTop)) || ((elemBottom > docViewTop) && (elemBottom < docViewBottom)));
+			}
+		}
+		jQuery(document).on('scroll', function(){
+			var st = jQuery(this).scrollTop();
+			scrollDirection = (st > oldScroll) ? 'down' : 'up';
+			oldscroll = st;
+			var sttt=setTimeout(function(){
+				jQuery('.a-stopped').each(function(){
+					var t = jQuery(this);
+					if(isScrolledIntoView(t)){
+						t.removeClass('a-stopped');
+					}
+				});
+				jQuery('.customshema>p').not('.boooo').each(function(){
+					var b = jQuery(this);
+					if(isScrolledIntoView(b)){
+						b.addClass('boooo');
+					}
+				});
+				clearTimeout(sttt);
+			}, 100);
+		});
+	</script>
+
+	<!-- animation end -->
+
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-133298530-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-133298530-1');
+	</script>
+
+</head>
+<body class="site helix-ultimate com-content view-featured layout-default task-none itemid-101 ru-ru ltr sticky-header layout-fluid offcanvas-init offcanvs-position-right home">
+	<div class="sp-preloader"><div></div></div>
+
+	<script>
+		var video = document.getElementById('video'); video.addEventListener('click',function(){ video.play(); },false);
+	</script>
+	
+
+
+	<div class="body-wrapper">
+		<div class="body-innerwrapper">
+			<section id="sp-first"><div class="row"><div id="sp-title" class="col-lg-12 "><div class="sp-column "><div class="sp-module first-screen"><div class="sp-module-content">
+
+				<div class="customfirst-screen"  >
+					<p class="desktop"><img src="images/logo-usca.png" alt="logo usca" /></p>
+					<p class="mobile"><img src="images/logo-usca-w.png" alt="logo usca" /></p>
+					<h1>АВТОМОБИЛИ<br />С АУКЦИОНОВ<br>США</h1>
+					<p class="bluep">с выгодой до 50%<br />от рыночной стоимости</p>
+					<p>Мы предоставляем полный пакет услуг - от выбора автомобиля на аукционе в США до доставки и оформления в Украине. И на каждом этапе наши клиенты получают высокий уровень сервиса и гарантию целостности автомобиля.</p>
+					<div class="video">
+						<video playsinline autoplay muted autoplay="autoplay" loop="loop" poster="images/video-cover.jpg">
+							<source src="images/jaguar-tablet.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+							</video>
+						</div></div>
+					</div></div></div></div></div></section><section id="sp-second"><div class="row"><div id="sp-position2" class="col-lg-12 "><div class="sp-column "><div class="sp-module main-benefit"><div class="sp-module-content">
+
+						<div class="custommain-benefit"  >
+							<table style="width: 100%;">
+								<tbody>
+									<tr>
+										<td style="width: 50%; height: 325px;">
+											<div id="suic5d0d31ddb6ede" class="su-image-compare "
+											data-slide-on="click"
+											data-width="414"
+											data-height="325"
+											>
+											<div class="image-after" style="background-image: url(images/passat-1.jpg) !important" data-alt="В Украине"></div>
+											<div class="image-before" style="background-image: url(images/passat-2.jpg) !important" data-alt="Из США"></div>
+										</div></td>
+										<td>
+											<h2>Главная выгода покупки авто из&nbsp;США</h2>
+											<p>Конечно же, самая первая и главная выгода - <strong>это цена!</strong></p>
+											<p>Вы можете сэкономить до 50% на стоимости такого автомобиля в сравнении с ценами на украинском рынке. Или же можете приобрести автомобиль выше классом, более свежего года выпуска и в более богатой комплектации.</p>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+
+						</div>
+					</div></div><div class="sp-module second-benefits"><h3 class="sp-module-title">Но есть еще преимущества автомобилей из США</h3><div class="sp-module-content">
+
+						<div class="customsecond-benefits"  >
+							<table>
+								<tbody>
+									<tr>
+										<td>
+											<h3>Прозрачная история</h3>
+											<p>Все события, которые происходят с авто в США записываются к каждому VIN-коду. Перед покупкой мы проверяем всю историю автомобиля, чтобы не попасть на некачественный ремонт или скрытые повреждения.</p>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+							<table>
+								<tbody>
+									<tr>
+										<td>
+											<h3>Качественное обслуживание</h3>
+											<p>Автомобили в США заправляются более качественным топливом и обслуживаются на официальных станциях технического обслуживания, что является залогом лучшего состояния двигателя и подвески авто.</p>
+										</td>
+									</tr>
+								</tbody>
+							</table></div>
+						</div></div><div class="sp-module primer"><h3 class="sp-module-title">Сколько можно сэкономить на покупке авто</h3><div class="sp-module-content">
+
+							<div class="customprimer"  >
+								<p><img src="images/bmw-x3.png" alt="bmw x3" /><img src="images/vw-jetta.png" alt="vw jetta" /><img src="images/mazda-cx5.png" alt="mazda cx5" /></p></div>
+							</div></div><div class="sp-module primer2"><div class="sp-module-content">
+
+								<div class="customprimer2"  >
+									<table>
+										<tbody>
+											<tr>
+												<td>
+													<h3>BMW X3 2014</h3>
+													<ul>
+														<li><strong>Цена в США:</strong> $8000</li>
+														<li><strong>Доставка:</strong> $1400</li>
+														<li><strong>Растаможка:</strong> $4300</li>
+														<li><strong>Ремонт:</strong> $3000</li>
+														<li><strong>Услуги:</strong> $1000</li>
+													</ul>
+													<p><sub>Под ключ в Украине:</sub><br /><strong>$17 700</strong></p>
+													<p><sub>Средняя цена (auto.ria):</sub><br /><strong>$27 000</strong></p>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+									<table>
+										<tbody>
+											<tr>
+												<td>
+													<h3>VW JETTA 2016</h3>
+													<ul>
+														<li><strong>Цена в США:</strong> $3000</li>
+														<li><strong>Доставка:</strong> $1400</li>
+														<li><strong>Растаможка:</strong> $2000</li>
+														<li><strong>Ремонт:</strong> $2000</li>
+														<li><strong>Услуги:</strong> $1000</li>
+													</ul>
+													<p><sub>Под ключ в Украине:</sub><br /><strong>$9 400</strong></p>
+													<p><sub>Средняя цена (auto.ria):</sub><br /><strong>$14 000</strong></p>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+									<table>
+										<tbody>
+											<tr>
+												<td>
+													<h3>MAZDA CX-5 2015</h3>
+													<ul>
+														<li><strong>Цена в США:</strong> $4500</li>
+														<li><strong>Доставка:</strong> $1400</li>
+														<li><strong>Растаможка:</strong> $3400</li>
+														<li><strong>Ремонт:</strong> $2500</li>
+														<li><strong>Услуги:</strong> $1000</li>
+													</ul>
+													<p><sub>Под ключ в Украине:</sub><br /><strong>$12 800</strong></p>
+													<p><sub>Средняя цена (auto.ria):</sub><br /><strong>$23 000</strong></p>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div></div><div class="sp-module shema"><h3 class="sp-module-title">Заказать авто из США просто!</h3><div class="sp-module-content">
+
+								<div class="customshema"  >
+									<p><strong>Выбираете</strong> авто на аукционах COPART и IAAI. Или обращаетесь к нам за консультацией</p>
+									<p><strong>Покупаем</strong> выбранный автомобиль на аукционе (при условии подходящей ставки)</p>
+									<p>Формируем инвойс и Вы <strong>оплачиваете покупку</strong> в любом банке</p>
+									<p>Оформляем и <strong>доставляем</strong> автомобиль <strong>в ближайший порт</strong>. Высылаем фотографии.</p>
+									<p>Бережкно <strong>загружаем автомобиль в контейнер</strong> и отправляем в путь.</p>
+									<p>Вы <strong>оплачиваете счета за доставку</strong> и предоставляете необходимые документы для таможенного оформления.</p>
+									<p><strong>Выгружаем</strong> авто в порту назначения по прибытию. Присылаем фотоотчет.</p>
+									<p>Таможенное оформление и доставка автомобиля в Ваш город.</p>
+									<p>Сертификация авто по стандартам Евро-5 и постановка на учет.</p></div>
+								</div></div></div></div></div></section><section id="sp-crm"><div class="row"><div id="sp-user1" class="col-lg-5 "><div class="sp-column "><div class="sp-module crm-1"><h3 class="sp-module-title">Простой и удобный калькулятор</h3><div class="sp-module-content">
+
+									<div class="customcrm-1">
+										<p>Специально для Вас мы разработали калькулятор для расчёта растаможки и доставки, в котором вы можете выставить характеристики необходимого автомобиля и легко узнать стоимость. Также вы можете указать адрес своей электронной почты, куда вам придут все расчёт в формате PDF.</p>
+										<p>У вас есть возможность просто вставить ссылку из Copart или IAAI и получить расчеты на e-mail.</p></div>
+									</div></div></div></div><div id="sp-user2" class="col-lg-7 "><div class="sp-column "><div class="sp-module crm-2"><div class="sp-module-content">
+
+										<div class="customcrm-2"  >
+											<video muted autoplay="autoplay" loop="loop" poster="images/crm-bg.jpg" width="100%" height="auto">
+												<source src="images/crm-usca-video.mp4" type="video/mp4">
+												</video>
+												<a href="https://gonsa.ru/tanachev/calculator/calc/index.html" target="_blank">ПЕРЕЙТИ В КАЛЬКУЛЯТОР</a></div>
+											</div></div></div></div></div></section><section id="sp-after-crm"><div class="row"><div id="sp-position5" class="col-lg-12 "><div class="sp-column "><div class="sp-module experience"><h3 class="sp-module-title">Наш опыт заслуживает доверие:</h3><div class="sp-module-content">
+
+												<div class="customexperience"  >
+													<table>
+														<tbody>
+															<tr>
+																<td>
+																	<h3><div id="suc5d0d31ddb6462" class="su-counter-wrapper clearfix su-counter-top " data-id="suc5d0d31ddb6462" data-from="1" data-to="2" data-speed="5" data-separator="no" data-prefix="" data-suffix="">
+
+																		<div class="su-counter-desc">
+																			<div id="suc5d0d31ddb6462_count"  class="su-counter-number">
+																			</div>
+																			<div class="su-counter-text"></div>                
+																		</div>
+																	</div></h3>
+																	<p>года работы по<br />доставке из США</p>
+																</td>
+															</tr>
+														</tbody>
+													</table>
+													<table>
+														<tbody>
+															<tr>
+																<td>
+																	<h3><div id="suc5d0d31ddb6534" class="su-counter-wrapper clearfix su-counter-top " data-id="suc5d0d31ddb6534" data-from="1" data-to="1084" data-speed="5" data-separator="no" data-prefix="" data-suffix="">
+
+																		<div class="su-counter-desc">
+																			<div id="suc5d0d31ddb6534_count"  class="su-counter-number">
+																			</div>
+																			<div class="su-counter-text"></div>                
+																		</div>
+																	</div></h3>
+																	<p>автомобиля успешно<br />доставленно</p>
+																</td>
+															</tr>
+														</tbody>
+													</table>
+													<table>
+														<tbody>
+															<tr>
+																<td>
+																	<h3><div id="suc5d0d31ddb65c0" class="su-counter-wrapper clearfix su-counter-top " data-id="suc5d0d31ddb65c0" data-from="1" data-to="764" data-speed="5" data-separator="no" data-prefix="" data-suffix="">
+
+																		<div class="su-counter-desc">
+																			<div id="suc5d0d31ddb65c0_count"  class="su-counter-number">
+																			</div>
+																			<div class="su-counter-text"></div>                
+																		</div>
+																	</div></h3>
+																	<p>довольных<br />клиента</p>
+																</td>
+															</tr>
+														</tbody>
+													</table>
+													<table>
+														<tbody>
+															<tr>
+																<td>
+																	<h3><div id="suc5d0d31ddb6649" class="su-counter-wrapper clearfix su-counter-top " data-id="suc5d0d31ddb6649" data-from="1" data-to="80" data-speed="5" data-separator="no" data-prefix="" data-suffix="">
+
+																		<div class="su-counter-desc">
+																			<div id="suc5d0d31ddb6649_count"  class="su-counter-number">
+																			</div>
+																			<div class="su-counter-text"></div>                
+																		</div>
+																	</div>%</h3>
+																	<p>клиентов приходят<br />по рекомендациям</p>
+																</td>
+															</tr>
+														</tbody>
+													</table>
+												</div>
+											</div></div><div class="sp-module after-experience"><div class="sp-module-content">
+
+												<div class="customafter-experience"  >
+													<p style="text-align: left;">Более 1000 успешно купленных и доставленных автомобилей в руках довольных клиентов. Многие из наших клиентов обращаются к нам повторно для приобретения еще одного или даже нескольких автомобилей. Более половины всех наших клиентов обратились к нам по рекомендации.</p></div>
+												</div></div><div class="sp-module advant"><h3 class="sp-module-title">Работая с нами Вы получаете:</h3><div class="sp-module-content">
+
+													<div class="customadvant"  >
+														<table>
+															<tbody>
+																<tr>
+																	<td>
+																		<h3>Полное сопровождение</h3>
+																		<p>С момента выбора и до выгрузки автомобиля Вам мы предоставляем <strong>полное сопровождение на каждом этапе</strong>. Вам остается только оплачивать услуги и подготовить документы для разгрузки.</p>
+																	</td>
+																</tr>
+															</tbody>
+														</table>
+														<table>
+															<tbody>
+																<tr>
+																	<td>
+																		<h3>Открытость</h3>
+																		<p>Вы будете знать в любой момент где Ваш автомобиль, благодаря разработаному нами <strong>кабинету пользователя</strong>. Все счета формируются автоматически. <strong>Никаких скрытых платежей</strong>.</p>
+																	</td>
+																</tr>
+															</tbody>
+														</table>
+														<table>
+															<tbody>
+																<tr>
+																	<td>
+																		<h3>Рекомендации к выбору</h3>
+																		<p>Мы знаем все подводные камни в выборе автомобиля из США и сможем <strong>уберечь Вас от неправильного выбора</strong>&nbsp;который в будущем может вылиться в дорогостоящий ремонт.</p>
+																	</td>
+																</tr>
+															</tbody>
+														</table>
+														<table>
+															<tbody>
+																<tr>
+																	<td>
+																		<h3>Экономия времени и денег</h3>
+																		<p>Мы являемся официальными диллерами аукционов COPART и IAAI, по этому имеем <strong>диллерскую скидку и доступ к закрытым аукционам</strong>. К тому же, Вам не придется во всем разбиратся самим.</p>
+																	</td>
+																</tr>
+															</tbody>
+														</table></div>
+													</div></div><div class="sp-module price"><div class="sp-module-content">
+
+														<div class="customprice"  >
+															<table>
+																<tbody>
+																	<tr>
+																		<td>PRO</td>
+																	</tr>
+																	<tr>
+																		<td>
+																			<p>Самостоятельный выбор</p>
+																			<p>Самостоятельное участие в торгах</p>
+																			<blockquote>
+																				<p>Для тех кто хочет самостоятельно выбирать авто и участвовать в торгах. Личный аккаунт для участия в аукционе. Рекомендуется для опытных оптовых покупателей. Компания не несет ответственность за неудачный выбор авто.</p>
+																			</blockquote>
+																			<ul>
+																				<li>Дилерские условия</li>
+																				<li>Доступ к закрытым аукционам</li>
+																				<li>Доступ к личному кабинету</li>
+																				<li>Отслеживание на всех этапах</li>
+																				<li>Минимальные сборы аукционов</li>
+																				<li>Консолидация в 7 портах США</li>
+																				<li>Личный кабинет на каждом аукционе</li>
+																			</ul>
+																		</td>
+																	</tr>
+																	<tr>
+																		<td>
+																			<p>стоимость услуги:</p>
+																			<h4>договорная</h4>
+																		</td>
+																	</tr>
+																	<tr>
+																		<td><button type="button" data-toggle="modal" data-target="#modal-window-button" class="simple">Заказать</button></td>
+																	</tr>
+																</tbody>
+															</table>
+															<table>
+																<tbody>
+																	<tr>
+																		<td>All Inclusive</td>
+																	</tr>
+																	<tr>
+																		<td>
+																			<p>Индивидуальный подбор автомобиля</p>
+																			<p>Торги и выкуп ведет специалист</p>
+																			<blockquote>
+																				<p>Если у Вас есть определенные требования к автомобилю и нет времени часами искать нужное авто на аукционах - мы сделаем все под ключ. Вам только нужно будет утвердить авто среди тех, что мы Вам пришлем. Это будут самые "вксуные" автомобили с аукциона. Подбор длится до дех пор пока не найдется нужный автомобиль.</p>
+																			</blockquote>
+																			<ul>
+																				<li>Персональный менеджер</li>
+																				<li>Доступ к закрытым аукционам</li>
+																				<li>Доступ к личному кабинету</li>
+																				<li>Отслеживание на всех этапах</li>
+																				<li>Минимальные сборы аукционов</li>
+																				<li>Консолидация в 7 портах США</li>
+																				<li>Онлайн участие в торгах</li>
+																				<li>Помощь в сертификации</li>
+																			</ul>
+																		</td>
+																	</tr>
+																	<tr>
+																		<td>
+																			<p>стоимость услуги:</p>
+																			<h4>$1000</h4>
+																		</td>
+																	</tr>
+																	<tr>
+																		<td><button type="button" data-toggle="modal" data-target="#modal-window-button" class="all">Заказать</button></td>
+																	</tr>
+																</tbody>
+															</table>
+															<table>
+																<tbody>
+																	<tr>
+																		<td>Expert</td>
+																	</tr>
+																	<tr>
+																		<td>
+																			<p>Рекомендация к покупке</p>
+																			<p>Торги и выкуп ведет специалист</p>
+																			<blockquote>
+																				<p>Наши специалисты каждый день отбирают лучшие предложения на аукционах COPART и IAAI. Это выгодные лоты, покупая которые Вы будете уверены, что не переплатили и не возникнет неожиданныз проблем с автомобилем в дальнейшем.</p>
+																			</blockquote>
+																			<ul>
+																				<li>Диллерская скидка</li>
+																				<li>Доступ к закрытым аукционам</li>
+																				<li>Доступ к личному кабинету</li>
+																				<li>Отслеживание на всех этапах</li>
+																				<li>Минимальные сборы аукционов</li>
+																				<li>Консолидация в 7 портах США</li>
+																			</ul>
+																		</td>
+																	</tr>
+																	<tr>
+																		<td>
+																			<p>стоимость услуги:</p>
+																			<h4>$500</h4>
+																		</td>
+																	</tr>
+																	<tr>
+																		<td><button type="button" data-toggle="modal" data-target="#modal-window-button" class="expert">Заказать</button></td>
+																	</tr>
+																</tbody>
+															</table></div>
+														</div></div><div class="sp-module otzivy"><h3 class="sp-module-title">Отзывы наших клиентов</h3><div class="sp-module-content">
+
+															<div class="customotzivy"  >
+																<table>
+																	<tbody>
+																		<tr>
+																			<td>
+																				<div><img src="images/otzivy/andrey.jpg" alt="andrey" /></div>
+																				<h4>Андрей Прытолюк</h4>
+																				<p>Сотрудничаю с компанией USCA уже более года. На счету более десятка доставленных автомобилей. Ни один подобранный ими автомобиль не разочаровал. Очень радует личный кабинет - всегда могу видеть актуальную информацию по своим автомобилям. Планирую и дальнейшее плодотворное сотрудничество.</p>
+																			</td>
+																		</tr>
+																	</tbody>
+																</table></div>
+															</div></div><div class="sp-module auctions"><div class="sp-module-content">
+
+																<div class="customauctions"  >
+																	<h3>Мы работаем <br />с самыми <br />крупными <br />аукционами:</h3>
+																	<p><img src="images/copart-logo.png" alt="copart logo" /></p>
+																	<p><img src="images/iaai-logo.png" alt="iaai logo" /></p>
+																	<p><img src="images/manheim-logo.png" alt="manheim logo" /></p></div>
+																</div></div></div></div></div></section><section id="sp-main-body"><div class="row"><main id="sp-component" class="col-lg-12 " role="main"><div class="sp-column "><div id="system-message-container">
+																</div>
+																<div class="container-fluid blog-featuredhome" itemscope itemtype="https://schema.org/Blog">
+
+
+
+
+																</div></div></main></div></div></div></section><section id="sp-contacts"><div class="row"><div id="sp-user3" class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 "><div class="sp-column "><div class="sp-module contacts"><div class="sp-module-content">
+
+																	<div class="customcontacts"  >
+																		<p><strong>Адрес:</strong><br />Киев,&nbsp;<br />ул. Сечевых стрельцов 77</p>
+																		<p><strong>Телефон:</strong><a href="tel:+38 (097) 197-74-27" target="_blank" style="letter-spacing: 0.5px;"><br/>+38 (097) 197-74-27</a><a href="tel:+38 (093) 337-93-38" target="_blank"><br/>+38 (093) 337-93-38</a><a href="tel:+38 (098) 337-93-38" target="_blank"><br/>+38 (098) 337-93-38</a></p>
+																		<p><strong>Email:</strong><br />info@usacc.biz</p></div>
+																	</div></div></div></div><div><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2540.162694548356!2d30.488477!3d50.456695!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce634667090b%3A0x674623385ad1756a!2z0YPQuy4g0KHQtdGH0LXQstGL0YUg0KHRgtGA0LXQu9GM0YbQvtCyLCA3Nywg0JrQuNC10LIsINCj0LrRgNCw0LjQvdCwLCAwMjAwMA!5e0!3m2!1sru!2sru!4v1561149855345!5m2!1sru!2sru" width="550" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></div></section>
+
+
+																</div>
+															</div>
+
+															<!-- Off Canvas Menu T-->
+															<div class="offcanvas-overlay"></div>
+															<div class="offcanvas-menu">
+																<a href="index.html#" class="close-offcanvas"><span class="fa fa-remove"></span></a>
+																<div class="offcanvas-inner">
+																	<p class="alert alert-warning">
+																	Publish modules to the &quot;offcanvas&quot; position.                </p>
+																</div>
+															</div>
+
+
+															<!-- MODAL WINDOW (BUTTON) -->
+															<div class="modal fade" id="modal-window-button" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+																<div class="modal-dialog" role="document" style="    width: 320px;">
+																	<div class="modal-content" style="max-width: 320px; height: 400px; background-color: rgb(13, 93, 184); position: relative;">
+																		<button type="button" class="close" data-dismiss="modal" aria-label="Close" style="position: absolute; right: 10px; top: 10px; background: url(images/close.png) no-repeat; width: 19px; height: 19px; display: block;"></button>
+																		<h3 class="title-modal-button" style="letter-spacing: 0.6px; line-height: 21px; color: #fff; font-size: 14px; margin: 40px auto 10px auto; width: 200px; text-align: center;">Оставьте данные и мы свяжемся с Вами в ближайшее время, чтобы проконсультировать и ответить на все Ваши вопросы.</h3>
+																		<form class="form-button">
+																			<!-- Hidden Required Fields -->
+																			<input type="hidden" name="project_name" value="USACC">
+																			<input type="hidden" name="admin_email" value="info@usacc.biz">
+																			<input type="hidden" name="form_subject" value="Заявка по нажатию на кнопку">
+																			<!-- END Hidden Required Fields -->
+																			<input type="text" name="Имя" placeholder="Имя" class="input-modal-button" style="width: 80%; margin: 15px auto 0 auto;" required>
+																			<input type="text" name="Телефон" placeholder="Телефон" class="input-modal-button" style="width: 80%; margin: 15px auto 0 auto;" required>
+																			<button style="display: block; background: #e20003; color: #fff; font-weight: bold; text-transform: uppercase; border: 0; box-shadow: 0px 3px 0px #910000;     margin: 30px auto 0 auto; height: 50px; width: 200px;">Отправить заявку</button>
+																		</form>
+																	</div>
+																</div>
+															</div>
+															<!-- THE END MODAL WINDOW (BUTTON) -->
+
+															<!-- Go to top -->
+															<a href="index.html#" class="sp-scroll-up" aria-label="Scroll Up"><span class="fa fa-chevron-up" aria-hidden="true"></span></a>
+
+															
+															
+														</body>
+														</html>
