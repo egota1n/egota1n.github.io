@@ -99,6 +99,8 @@ img{
 	width: 116px;
 	height: 24px;
 	background: url(../img/logo/logo.svg) center center no-repeat;
+	-webkit-background-size: contain!important;
+	background-size: contain!important;
 }
 
 .offer{
