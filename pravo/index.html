@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>Центр правового содействия</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700,900&display=swap&subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="css/other.css">
+</head>
+<body>
+  <header class="header" id="header">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-xl-3 col-md-3 col-9">
+          <div class="header__logo-container">
+            <img class="header__logo header__logo--def" src="img/logo.png" width="236" height="63" alt="Логотип Центра">
+            <img class="header__logo header__logo--white" src="img/logo_white.png" width="236" height="63" alt="Логотип Центра">
+          </div>
+        </div>
+        <div class="col-xl-7 col-md-12 order-xl-0 order-12 header__static">
+          <nav class="header__menu main-menu">
+            <ul class="main-menu__list">
+              <li class="main-menu__item">
+                <a class="main-menu__link" href="#header">Главная</a>
+              </li>
+              <li class="main-menu__item">
+                <a class="main-menu__link" href="about-company.html">О компании</a>
+              </li>
+              <li class="main-menu__item main-menu__item--with-submenu">
+                <a class="main-menu__link main-menu__link--open-submenu" href="service.html">Услуги</a>
+                <ul class="main-menu__submenu">
+                  <li class="main-menu__submenu-item">
+                    <a class="main-menu__link main-menu__link--submenu" href="specifically/physical_entity.html">Банкротство физических лиц</a>
+                  </li>
+                  <li class="main-menu__submenu-item">
+                    <a class="main-menu__link main-menu__link--submenu" href="specifically/legal_entity.html">Банкротство юридических лиц</a>
+                  </li>
+                  <li class="main-menu__submenu-item">
+                    <a class="main-menu__link main-menu__link--submenu" href="specifically/arrears.html">Взыскание долгов</a>
+                  </li>
+                  <li class="main-menu__submenu-item">
+                    <a class="main-menu__link main-menu__link--submenu" href="specifically/elimination.html">Регистрация, реорганизация, ликвидация</a>
+                  </li>
+                  <li class="main-menu__submenu-item">
+                    <a class="main-menu__link main-menu__link--submenu" href="specifically/company_sale.html">Продажа компаний / бизнеса</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="main-menu__item">
+                <a class="main-menu__link" href="price.html">Прайс-лист</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="col-xl-2 col-md-8 col-0 order-md-0 order-12 d-none d-md-block">
+          <div class="header__call">
+            <a class="header__phone" href="tel:+74952151913">+7 (495) <span class="header__bold-phone">215-19-13</span></a>
+            <button class="header__button button button--icon button--phone">Заказать звонок</button>
+          </div>
+        </div>
+        <div class="col-xl-0 col-md-1 col-3">
+          <button class="header__burger-menu burger-menu"><span class="visually-hidden">Открыть меню</span></button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="first-screen">
+
+    <div class="first-screen__slider slider">
+
+      <div class="slider__item">
+        <div class="slider__content slider__content--substrate">
+          <div class="usp container">
+            <div class="usp__title">
+              Вам нужна <span class="usp__emphasis">помощь и защита</span>
+              квалифицированного <span class="usp__emphasis">юриста?</span>
+              <h1 class="visually-hidden">Услуги квалифицированного юриста</h1>
+            </div>
+            <p class="usp__text">
+              Наши специалисты имеют большой опыт работы в делах
+              о банкротстве физических и юридических лиц, взыскании долгов,
+              регистрации и ликвидации предприятий, работы с налоговой инспекцией.
+            </p>
+            <form class="usp__form form">
+              <div class="form__item form__item--icon form__item--name">
+                <input class="form__input" id="form__name" name="form_name" placeholder="Ваше имя" type="text">
+                <label class="visually-hidden" for="form__name">Ваше имя</label>
+              </div>
+              <div class="form__item form__item--icon form__item--phone">
+                <input class="form__input" id="form__phone" name="form__phone" placeholder="Телефон" type="tel">
+                <label class="visually-hidden" for="form__phone">Телефон</label>
+              </div>
+              <button class="form__submit button button--form" type="submit">Получить консультацию</button>
+              <div class="form__item">
+                <input class="form__checkbox visually-hidden" type="checkbox" id="consent" name="consent">
+                <label class="form__label form__label--consent" for="consent">Я согласен на обработку
+                персональных данных</label>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="first-screen__services services" style="padding-top: 20px; padding-bottom: 15px;">
+      <ul class="services__list container">
+        <li class="services__item">
+          <a class="services__link" href="service.html">
+            <img class="services__icon" src="img/services_icon_1.png" alt="Банкротство физических лиц" width="44" height="47">
+            <p class="services__name">Банкротство<br>физических лиц</p>
+          </a>
+        </li>
+        <li class="services__item">
+          <a class="services__link" href="service.html">
+            <img class="services__icon" src="img/services_icon_2.png" alt="Банкротство  юридических лиц" width="45" height="46">
+            <p class="services__name">Банкротство<br>юридических лиц</p>
+          </a>
+        </li>
+        <li class="services__item">
+          <a class="services__link" href="service.html">
+            <img class="services__icon" src="img/services_icon_3.png" alt="Взыскание долгов" width="46" height="46">
+            <p class="services__name">Взыскание<br>долгов</p>
+          </a>
+        </li>
+        <li class="services__item">
+          <a class="services__link" href="service.html">
+            <img class="services__icon" src="img/services_icon_4.png" alt="Регистрация, реорганизация, ликвидация" width="46" height="46">
+            <p class="services__name">Регистрация,<br>реорганизация, ликвидация</p>
+          </a>
+        </li>
+        <li class="services__item">
+          <a class="services__link" href="service.html">
+            <img class="services__icon" src="img/services_icon_5.png" alt="Продажа компаний / бизнеса" width="31" height="46">
+            <p class="services__name">Продажа<br>компаний / бизнеса</p>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="advantages">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="advantages__title block-title">
+            <h2>Преимущества</h2>
+            <span class="block-title__subtitle advantages__subtitle">работы с нами</span>
+          </div>
+        </div>
+      </div>
+      <ul class="advantages__list row">
+        <li class="advantages__item col-xl-4 col-md-5 col-12">
+          <div class="advantages__icon-container">
+            <img class="advantages__icon" src="img/advantages_1.png" alt="Полная конфиденциальность" width="76" height="80">
+          </div>
+          <h3 class="advantages__name">Полная конфиденциальность</h3>
+          <p class="advantages__desc">Мы храним все секреты наших клиентов, как деловые, так и личные</p>
+        </li>
+        <li class="advantages__item col-xl-4 col-md-5 col-12">
+          <div class="advantages__icon-container">
+            <img class="advantages__icon" src="img/advantages_2.png" alt="Сжатые сроки" width="78" height="78">
+          </div>
+          <h3 class="advantages__name">Сжатые сроки</h3>
+          <p class="advantages__desc">Затягивание процедуры банкротства — не в интересах должника и не в наших интересах, мы работаем на результат</p>
+        </li>
+        <li class="advantages__item col-xl-4 col-md-5 col-12">
+          <div class="advantages__icon-container">
+            <img class="advantages__icon" src="img/advantages_3.png" alt="Абсолютная законность" width="80" height="80">
+          </div>
+          <h3 class="advantages__name">Абсолютная законность</h3>
+          <p class="advantages__desc">Наши специалисты найдут нестандартные решения даже для самых сложных и запутанных ситуаций, оставаясь в правовом поле</p>
+        </li>
+        <li class="advantages__item col-xl-4 col-md-5 col-12">
+          <div class="advantages__icon-container">
+            <img class="advantages__icon" src="img/advantages_4.png" alt="Гибкие цены" width="80" height="80">
+          </div>
+          <h3 class="advantages__name">Гибкие цены</h3>
+          <p class="advantages__desc">Мы понимаем, что наши клиенты находятся в трудной финансовойситуации, и находим решение по оплате, которое им по силам</p>
+        </li>
+        <li class="advantages__item col-xl-4 col-md-5 col-12">
+          <div class="advantages__icon-container">
+            <img class="advantages__icon" src="img/advantages_5.png" alt="Профессионализм сотрудников" width="80" height="80">
+          </div>
+          <h3 class="advantages__name">Профессионализм сотрудников</h3>
+          <p class="advantages__desc">Наши юристы имеют высокую профессиональную квалификацию и большой опыт,они постоянно совершенствуют свои знания и умения</p>
+        </li>
+        <li class="advantages__item advantages__item--banner col-xl-4 col-md-6 col-12">
+          <div class="advantages__banner">
+            <p class="advantages__banner-text">
+              Мы готовы выполнить
+              поставленную вами
+              задачу <span class="advantages__banner-emphasis">уже сейчас!</span>
+            </p>
+            <a class="advantages__button button">Оставить заявку</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="partners">
+    <div class="container">
+      <div class="partners__title block-title">
+        <span class="block-title__subtitle">Наши</span>клиенты и партнеры
+      </div>
+      <div class="partners__slider" data-slick="{&quot;slidesToShow&quot;: 4, &quot;slidesToScroll&quot;: 4}">
+        <div class="partners__item">
+          <img class="partners__logo" src="img/partner_1.png" width="256" height="84" alt="Тинькофф">
+        </div>
+        <div class="partners__item">
+          <img class="partners__logo" src="img/partner_2.png" width="256" height="84" alt="Правозашитник">
+        </div>
+        <div class="partners__item">
+          <img class="partners__logo" src="img/partner_3.png" width="256" height="84" alt="Гарант закона">
+        </div>
+        <div class="partners__item">
+          <img class="partners__logo" src="img/partner_4.png" width="256" height="84" alt="Паритет">
+        </div>
+        <div class="partners__item">
+          <img class="partners__logo" src="img/partner_1.png" width="256" height="84" alt="Тинькофф">
+        </div>
+        <div class="partners__item">
+          <img class="partners__logo" src="img/partner_2.png" width="256" height="84" alt="Правозашитник">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="about">
+    <div class="about__title-container">
+      <div class="container">
+        <div class="about__title block-title">
+          <span class="block-title__subtitle">Центр</span>правового содействия
+        </div>
+        <h2 class="visually-hidden">О компании</h2>
+      </div>
+    </div>
+    <img class="about__img" src="img/about_img.jpg" width="975" height="598" alt="Центр правого содействия">
+    <div class="container">
+      <div class="about__content">
+        <p class="about__text">
+          Юридическое Агентство "ПРОФЕССИОНАЛ" предлагает комплексную поддержку Вашего бизнеса. От его создания до его полной ликвидации. Наша команда нацелена на Вашу защиту от неправомерных действий со стороны органов ИФНС. Мы сглаживаем острые углы, разравниваем поверхность Вашей работы так, чтобы вы могли получать прибыль и удовольствие.
+        </p>
+        <p class="about__text">
+          Мы специализируемся на ликвидации фирм с 2000 года. Поможем Вам решить сложные вопросы по корпоративному праву. Возьмем вас на бухгалтерское обслуживание. Поможем Вам жить полноценной жизнью, взяв на себя процессы изменений в учредительные документы, подбор адресов под переезд Вашей компании и многое другое, о чем вы можете узнать на нашем сайте, либо посетив офис компании.
+        </p>
+        <a class="about__button button">
+          Узнать больше
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="steps">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="step__title block-title">
+            <span class="block-title__subtitle">Как</span> мы работаем
+          </div>
+          <h2 class="visually-hidden">Этапы работы></h2>
+        </div>
+      </div>
+      <ul class="steps__list row">
+        <li class="steps__item col-xl-4 col-md-5 col-12 col-12">
+          <div class="steps__pic steps__pic--1">
+            <img class="steps__icon" src="img/steps_1.png" alt="Обращение онлайн или по телефону" width="72" height="80">
+          </div>
+          <p class="steps__text">
+            Вы обращаетесь к нам онлайн или по телефону и рассказываете о своей проблеме.
+          </p>
+        </li>
+        <li class="steps__item col-xl-4 col-md-5 col-12 col-12">
+          <div class="steps__pic steps__pic--2">
+            <img class="steps__icon" src="img/steps_2.png" alt="Документы" width="69" height="79">
+          </div>
+          <p class="steps__text">
+            Вы отправляете нам документы, касающиеся вашего дела, по электронной почте или приносите их на встречу.
+          </p>
+        </li>
+        <li class="steps__item col-xl-4 col-md-5 col-12 col-12">
+          <div class="steps__pic steps__pic--3">
+            <img class="steps__icon" src="img/steps_3.png" alt="Встреча" width="79" height="79">
+          </div>
+          <p class="steps__text">
+            Встреча с клиентом проходит в офисе или любом другом месте на ваше усмотрение.
+          </p>
+        </li>
+        <li class="steps__item col-xl-4 col-md-5 col-12 col-12">
+          <div class="steps__pic steps__pic--4">
+            <img class="steps__icon" src="img/steps_4.png" alt="Договор" width="77" height="77">
+          </div>
+          <p class="steps__text">
+            Мы заключаем договор и вы получаете подробную консультацию о возможностях решения вашей проблемы.
+          </p>
+        </li>
+        <li class="steps__item col-xl-4 col-md-5 col-12 col-12">
+          <div class="steps__pic steps__pic--5">
+            <img class="steps__icon" src="img/steps_5.png" alt="Специалисты" width="86" height="77">
+          </div>
+          <p class="steps__text">
+            Наши специалисты начинают работу над вашей задачей, регулярно информируя вас о ходе ее выполнения.
+          </p>
+        </li>
+        <li class="steps__item steps__item-banner col-xl-4 col-md-6 col-12 col-12">
+          <div class="steps__banner">
+            <p class="steps__banner-title">Вы можете</p>
+            <p class="steps__banner-text">
+              Сделать первый шаг уже сейчас
+              и обратиться в нашу компанию
+              со своим вопросом
+            </p>
+            <a class="steps__button button">Задать вопрос</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="text">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="text__title block-title">
+            <span class="block-title__subtitle">Текстовый</span>блок
+          </div>
+          <h2 class="visually-hidden">Текстовый блок</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xl-10 col-12">
+          <p class="text__paragraph">
+            Юридическое Агентство "ПРОФЕССИОНАЛ" предлагает комплексную поддержку
+            Вашего бизнеса. От его создания до его полной ликвидации.
+            Наша команда нацелена на Вашу защиту от неправомерных действий
+            со стороны органов ИФНС. Мы сглаживаем острые углы, разравниваем поверхность
+            Вашей работы так, чтобы вы могли получать прибыль и удовольствие.
+          </p>
+          <p class="text__paragraph">
+            Мы специализируемся на ликвидации фирм с 2000 года.
+            Поможем Вам решить сложные вопросы по корпоративному праву.
+            Возьмем вас на бухгалтерское обслуживание. Поможем Вам жить
+            полноценной жизнью, взяв на себя процессы изменений в учредительные
+            документы, подбор адресов под переезд Вашей компании и многое другое,
+            о чем вы можете узнать на нашем сайте, либо посетив офис компании.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="reviews">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 news-tile">
+          <h2 class="reviews__title block-title">Отзывы</h2>
+          <span><a href="comments.html" class="all-news">Все отзывы</a> ></span>
+        </div>
+      </div>
+      <ul class="reviews__list" data-slick="{&quot;slidesToShow&quot;: 3, &quot;slidesToScroll&quot;: 1}">
+        <li class="reviews__item">
+          <p class="reviews__text">
+            Рекомендую! Заказывал услугу по сбору и подготовке
+            документов на выезд на ПМЖ. Сделали все в сроки, на
+            консультации отвечали грамотно и во время.
+            В целом огромное спасибо за помощь и профессионализм.
+          </p>
+          <p class="reviews__name">Татьяна Слепченко</p>
+        </li>
+        <li class="reviews__item reviews__item--active">
+          <p class="reviews__text">
+            Все понравилось. Весь мой пакет документов был выполнен в срок,
+            а главное качественно. Пришла сюда по рекомендации
+            и буду дальше рекомендовать! Спасибо.
+          </p>
+          <p class="reviews__name">Светлана Василишина</p>
+        </li>
+        <li class="reviews__item">
+          <p class="reviews__text">
+            Выражаю искреннюю благодарность  за сотрудничество
+            и качественно предоставленные услуги
+            по регистрации общественной организации.
+            Добросовестное выполнение задач позволяют
+            получить отличный результат
+          </p>
+          <p class="reviews__name">Роман Мищенко</p>
+        </li>
+        <li class="reviews__item">
+          <p class="reviews__text">
+            Рекомендую! Заказывал услугу по сбору и подготовке
+            документов на выезд на ПМЖ. Сделали все в сроки, на
+            консультации отвечали грамотно и во время.
+            В целом огромное спасибо за помощь и профессионализм.
+          </p>
+          <p class="reviews__name">Татьяна Слепченко</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="news">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="news__title block-title">
+            <span class="block-title__subtitle">Наши</span>
+            <h2>новости</h2>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xl-3 col-md-4 col-12 news__item">
+          <div class="news__pic">
+            <img class="news__img" src="img/news_1.png" width="270" height="180" alt="Фотография новости">
+            <p class="news__date">16.03.2019</p>
+          </div>
+          <h3 class="news__name">ЮРЛИЦА СМОГУТ ПЕРЕВОДИТЬ ДРУГ ДРУГУ ЭЛЕКТРОННЫЕ ДЕНЬГИ</h3>
+          <p class="news__excerpt">
+            Бизнес, в том числе ИП, сможет рассчитываться с любыми
+            контрагентами через корпоративные электронные кошельки.
+            Проект об этом принят в первом чтении.
+          </p>
+          <a class="button news__more">Подробнее</a>
+        </div>
+        <div class="col-xl-3 col-md-4 col-12 news__item">
+          <div class="news__pic">
+            <img class="news__img" src="img/news_2.png" width="270" height="180" alt="Фотография новости">
+            <p class="news__date">14.03.2019</p>
+          </div>
+          <h3 class="news__name">НОВЫЕ ОБЯЗАННОСТИ БУХГАЛТЕРА, НОТАРИУСА И АДВОКАТА С 2019 ГОДА
+          </h3>
+          <p class="news__excerpt">
+            Юрист и адвокат, как и врач – человек доверяет ему самое сокровенные,
+            все тайны. В свою очередь,
+            юрист должен держать это втайне и использовать полученную информацию...
+          </p>
+          <a class="button news__more">Подробнее</a>
+        </div>
+        <div class="col-xl-3 col-md-4 col-12 news__item">
+          <div class="news__pic">
+            <img class="news__img" src="img/news_3.png" width="270" height="180" alt="Фотография новости">
+            <p class="news__date">11.03.2019</p>
+          </div>
+          <h3 class="news__name">ОСОБЕННОСТИ СУДЕБНОЙ ПРАКТИКИ</h3>
+          <p class="news__excerpt">
+            Бизнес, в том числе ИП, сможет рассчитываться с любыми
+            контрагентами через корпоративные электронные кошельки.
+            Проект об этом принят в первом чтении.
+          </p>
+          <a class="button news__more">Подробнее</a>
+        </div>
+        <div class="col-xl-3 col-md-4 col-12 news__item">
+          <div class="news__pic">
+            <img class="news__img" src="img/news_4.jpg" width="270" height="180" alt="Фотография новости">
+            <p class="news__date">10.03.2019</p>
+          </div>
+          <h3 class="news__name">МОГУТ ЛИ СПИСАТЬ ДОЛГ С ЗАРПЛАТНОЙ КАРТЫ?</h3>
+          <p class="news__excerpt">
+            В новом году тысячи граждан могут столкнуться с ситуацией:
+            с их зарплатных карточек или других банковских счетов
+            спишут деньги за неоплаченные когда-то коммуналку, связь, налоги.
+          </p>
+          <a class="button news__more">Подробнее</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="request">
+    <div class="request__title">
+      МЫ ГОТОВЫ ВЫПОЛНИТЬ ПОСТАВЛЕННУЮ
+      ВАМИ ЗАДАЧУ <span class="request__emphasis">УЖЕ СЕЙЧАС</span>
+    </div>
+    <h2 class="visually-hidden">Заявка</h2>
+    <form class="request__form container form">
+      <div class="form__item form__item--icon form__item--name">
+        <input class="form__input" id="form__name--footer" name="form_name--footer" placeholder="Ваше имя" type="text">
+        <label class="visually-hidden" for="form__name--footer">Ваше имя</label>
+      </div>
+      <div class="form__item form__item--icon form__item--phone">
+        <input class="form__input" id="form__phone--footer" name="form__phone--footer" placeholder="Телефон" type="tel">
+        <label class="visually-hidden" for="form__phone--footer">Телефон</label>
+      </div>
+      <button class="request__submit form__submit button button--form" type="submit">Оставить заявку</button>
+      <div class="form__item form__item-checkbox">
+        <input class="form__checkbox visually-hidden" type="checkbox" id="consent--footer" name="consent--footer">
+        <label class="form__label form__label--consent" for="consent--footer">Я согласен на обработку
+        персональных данных</label>
+      </div>
+    </form>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-3 col-md-4 col-12 footer__logo-container">
+          <img class="footer__logo" src="img/Logo_white.png" alt="Логотип компании" width="240" height="64">
+        </div>
+        <div class="col-xl-6 col-md-1">
+          <ul class="footer__menu">
+            <li class="footer__menu-item">
+              <a class="footer__link" href="#header">Главная</a>
+            </li>
+            <li class="footer__menu-item">
+              <a class="footer__link" href="about-company.html">О компании</a>
+            </li>
+            <li class="footer__menu-item">
+              <a class="footer__link" href="service.html">Услуги</a>
+            </li>
+            <li class="footer__menu-item">
+              <a class="footer__link" href="price.html">Прайс-лист</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-xl-3 col-md-7 col-12">
+          <div class="footer__contact">
+            <p class="footer__phone">+7 (495) <span class="footer__emphasis">215-19-13</span></p>
+            <p class="footer__work-time">Время работы: с 8:00 до 18:00</p>
+            <p class="footer__email">arbitr2009gmail.com</p>
+            <p class="footer__email">upk-arbitr@yandex.ru</p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xl-3 col-md-3 col-12">
+          <p class="footer__copy">© 2019 Центр правового содействия</p>
+        </div>
+        <div class="col-xl-6 col-md-8 col-12">
+          <a href="contacts.html" class="footer__address">
+            Московская область, г. Балашиха, мкр. Никольско–Архангельский
+            д. 5, офис 325, БЦ "Вешняки" 143930
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/slick.js"></script>
+  <script src="js/custom.js"></script>
+  <script>
+    $("body").on('click', '[href*="#"]', function(e){
+      var fixed_offset = 100;
+      $('html,body').stop().animate({ scrollTop: $(this.hash).offset().top - fixed_offset }, 1000);
+      e.preventDefault();
+    });
+  </script>
+</body>
+</html>
