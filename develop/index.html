@@ -26,6 +26,7 @@
 	<link rel="stylesheet" href="assets/css/media.css">
 </head>
 <body>
+	
 	<!-- HEADER -->
 
 	<header class="header" id="header">
@@ -33,6 +34,18 @@
 			<div class="row">
 				<div class="col-12">
 					<nav class="nav">
+						<nav class="mobile-menu">
+							<input type="checkbox" id="checkbox" class="mobile-menu__checkbox">
+							<label for="checkbox" class="mobile-menu__btn" id="mobile-menu__btn"><div class="mobile-menu__icon"></div></label>
+							<div class="mobile-menu__container">
+								<ul class="mobile-menu__list">
+									<li class="mobile-menu__item"><a class="link" href="#section__about">Определение</a></li>
+									<li class="mobile-menu__item"><a class="link" href="#section__advantages">Преимущества</a></li>
+									<li class="mobile-menu__item"><a class="link" href="#section__interface">Интерфейс</a></li>
+									<li class="mobile-menu__item"><a class="link" href="#section__resources">Ресурсы</a></li>
+								</ul>
+							</div>
+						</nav>
 						<a href="#header" class="logo"></a>
 						<div class="navigation">
 							<ul>
@@ -479,7 +492,7 @@
 			slidesToScroll: 1,
 			dots: true,
 			arrow: true,
-			autoplay: true,
+			autoplay: false,
 			responsive: [
 			{
 				breakpoint: 992,
@@ -495,8 +508,17 @@
 					slidesToScroll: 1
 				}
 			}
-    ]
-  });
-</script>
+			]
+		});
+	</script>
+	<script>
+		$('.link').click(function(){
+			$(".mobile-menu__checkbox").prop("checked", false);
+			document.querySelector("body").classList.toggle("check", this.checked);
+		})
+		document.querySelector("input[type=checkbox]").onchange = function(){
+			document.querySelector("body").classList.toggle("check", this.checked);
+		}
+	</script>
 </body>
 </html>

@@ -44,6 +44,9 @@
 	.card__interface-second::before {
 		left: 280px;
 	}
+	.section__advantages {
+		margin: 90px 0 28px 0;
+	}
 }
 
 /*Средние девайсы («таблетки», < 992px) */
@@ -115,14 +118,70 @@
 	.card__interface::before{
 		display: none;
 	}
+	.title-card__interface {
+		margin-top: 10px;
+	}
 }
 
 /*Малые девайсы («ландшафтные», < 768px)*/
 @media (max-width: 767.98px) {
-
+	.title__header {
+		font-size: 26px;
+	}
+	.description__header {
+		width: 100%;
+	}
+	*, *::before, *::after {
+		font-size: 14px;
+	}
+	.icons div {
+		margin: 15px 15px!important;
+	}
+	.Eclipse, .IntelliJ_IDEA, .Komodo, .RubyMine, .Xcode, .Microsoft_Visual_Studio, .NetBeans, .PyCharm, .Qt_Creator {
+		width: 70px;
+		height: 70px;
+	}
+	.slick-prev {
+		left: 150px;
+	}
+	.slick-next {
+		right: 150px;
+	}
+	.resource {
+		height: 140px;
+	}
+	.resource div {
+		width: 80px;
+		height: 80px;
+	}
+	.navigation{
+		display: none;
+	}
+	nav.mobile-menu{
+		display: flex;
+	}
 }
 
 /*Экстрамалые девайсы («телефоны», < 576px)*/
 @media (max-width: 575.98px) {
 
+}
+
+
+
+/*Настройки для слайдера (1200px - 1250px)*/
+@media (min-width: 1200px) and (max-width: 1250px) {
+	.slick-prev, .slick-next {
+		width: 45px;
+		height: 39px;
+		top: 528px!important;
+	}
+
+	.slick-prev {
+		left: 400px;
+	}
+
+	.slick-next {
+		right: 400px;
+	}
 }
