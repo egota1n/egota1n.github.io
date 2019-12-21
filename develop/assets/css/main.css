@@ -824,6 +824,7 @@ nav.mobile-menu{
 
 label{
 	margin-bottom: 0;
+	z-index: 99999999;
 }
 
 .mobile-menu__icon::after {
@@ -840,7 +841,7 @@ label{
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	top: 50px;
+	top: 0;
 	left: 0;
 	right: 0;
 	z-index: 999;
@@ -849,8 +850,9 @@ label{
 	transition: .5s;
 	transition-delay: .2s;
 	overflow: hidden;
-	background-color: #f6f7f6;
+	background-color: rgba(255, 255, 255, 0.8);
 }
+
 
 .mobile-menu__list {
 	transition: .5s;

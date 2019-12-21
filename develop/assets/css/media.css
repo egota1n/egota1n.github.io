@@ -160,11 +160,85 @@
 	nav.mobile-menu{
 		display: flex;
 	}
+	.modal-content {
+		padding: 57px 30px 52px 30px;
+	}
+	.modal-dialog {
+		max-width: 540px;
+	}
 }
 
 /*Экстрамалые девайсы («телефоны», < 576px)*/
 @media (max-width: 575.98px) {
-
+	h1, h2, h3, h4, h5, h6 {
+		font-size: 22px;
+	}
+	.title__section::before, .title__section::after {
+		width: 35px;
+	}
+	.title__section::before {
+		right: 20px;
+	}
+	.title__section::after {
+		left: 20px;
+	}
+	.icons div {
+		margin: 13px 13px!important;
+	}
+	.Eclipse, .IntelliJ_IDEA, .Komodo, .RubyMine, .Xcode, .Microsoft_Visual_Studio, .NetBeans, .PyCharm, .Qt_Creator {
+		width: 70px;
+		height: 70px;
+	}
+	.slick-prev, .slick-next {
+		display: none!important;
+	}
+	.slick-dots {
+		bottom: -45px;
+	}
+	.resource div {
+		width: 65px;
+		height: 65px;
+	}
+	.resource {
+		height: 105px;
+	}
+	.title-card__interface {
+		font-size: 17px;
+	}
+	.resource:hover {
+		border: 3px solid #F7D101;
+	}
+	.description__header span{
+		display: none;
+	}
+	.title__modal {
+		font-size: 18px;
+	}
+	.desctiption__modal {
+		font-size: 11px;
+	}
+	.btn-developers {
+		font-size: 12px;
+		width: 100%;
+	}
+	.close {
+		width: 15px;
+		height: 15px;
+	}
+	button.close::before, button.close::after {
+		content: '';
+		display: block;
+		width: 20px;
+		height: 2px;
+		background: #333;
+		position: absolute;
+		top: 7px;
+		left: -2px;
+		transition: all 0.3s ease;
+	} 
+	.initial__block .Eclipse, .IntelliJ_IDEA, .Komodo, .RubyMine, .Xcode, .Microsoft_Visual_Studio, .NetBeans, .PyCharm, .Qt_Creator {
+		width: 100px!important;
+	}
 }
 
 
