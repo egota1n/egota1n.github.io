@@ -236,7 +236,7 @@
 		left: -2px;
 		transition: all 0.3s ease;
 	} 
-	.initial__block .Eclipse, .IntelliJ_IDEA, .Komodo, .RubyMine, .Xcode, .Microsoft_Visual_Studio, .NetBeans, .PyCharm, .Qt_Creator {
+	.initial__block .Eclipse, .initial__block .IntelliJ_IDEA, .initial__block .Komodo, .initial__block .RubyMine, .initial__block .Xcode, .initial__block .Microsoft_Visual_Studio, .initial__block .NetBeans, .initial__block .PyCharm, .initial__block .Qt_Creator {
 		width: 100px!important;
 	}
 }
