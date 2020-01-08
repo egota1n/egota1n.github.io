@@ -28,7 +28,7 @@ h1, h2, h3, h4, h5, h6{
 	display: block;
 	width: 79px;
 	height: 29px;
-	background: #fff url(../img/logo/logo.svg) center center no-repeat;
+	background: url(../img/logo/logo.svg) center center no-repeat;
 }
 
 .nav{
@@ -329,6 +329,48 @@ label::before{
 	content: '—';
 }
 
-
-
 /*THE END TECHNOLOGY*/
+
+
+/*FOOTER*/
+
+.footer{
+	background: #333;
+	padding: 22px 0 28px 0;
+}
+
+.footer .logo{
+	background: url(../img/logo/logo__white.svg) center center no-repeat;
+}
+
+.footer .nav{
+	margin: 0;
+}
+
+.footer ul li a {
+	color: #fff;
+}
+
+.block__footer{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+	justify-content: space-between;
+	margin-top: 21px;
+}
+
+.descroption__footer{
+	font-size: 12px;
+	color: #777;
+	cursor: default;
+}
+
+.footer .nav ul {
+	margin: 0;
+}
+
+/*THE END FOOTER*/
