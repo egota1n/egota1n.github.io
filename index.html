@@ -19,6 +19,9 @@
 	<link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
+
+	<!-- HEADER -->
+
 	<header class="header" id="header">
 		<div class="container">
 			<div class="col-12">
@@ -33,39 +36,78 @@
 				</nav>
 			</div>
 			<div class="col-12">
-				<h1 class="title__offer">Сайт-портфолио</h1>
+				<h1 class="title__offer">Сайт-портфолио<span>на котором собраны все мои работы</span></h1>
 				<p class="descriprion__offer">На этом сайте вы можете посмотреть все мои работы и узнать о технологиях которые я применяю. Еще вы можете посмотреть все цены если обратитесь к разделу «Контакты»</p>
 			</div>
 		</div>
 		<a href="#section__technology" class="arrow"></a>
 	</header>
+
+	<!-- THE END HEADER -->
+
+	<!-- TECHNOLOGY -->
+
 	<section class="section__technology" id="section__technology">
 		<div class="container">
-			<div class="col-6">
-				<h2 class="title__section">Технологии</h2>
-				<a href="develop/" target="_blank" class="work">Development Environment</a>
-				<a href="screenshot/" target="_blank" class="work">Best Screenshot Tool</a>
-				<a href="drDoguzova/" target="_blank" class="work">drDoguzova</a>
-				<a href="Head-start/" target="_blank" class="work">Head-start</a>
-				<a href="Twins-animated/" target="_blank" class="work">Twins</a>
-				<a href="fast screen/" target="_blank" class="work">Fast Screen</a>
-				<a href="keep_secrets/" target="_blank" class="work">Keep Secrets</a>
-				<a href="usa/" target="_blank" class="work">Usa</a>
-				<a href="pravo/" target="_blank" class="work">Pravo</a>
+			<div class="row bg__tech">
+				<div class="col-12">
+					<h2 class="title__section">Технологии <span>которые я использую в своих проектах</span></h2>
+				</div>
+				<div class="col-6">
+					<input type="radio" name="tech" id="first__technology" checked>
+					<label for="first__technology"><span>Верстка</span><p>Не стоит говорить, что это базовое, что осваивает любой веб-разработчик. Я знаю HTML, CSS и JavaScript на высоком уровне и могу сверстать абсолютно любую страницу. Ответственно отношусь к адаптивности и кроссбраузерности.</p></label>
+					<input type="radio" name="tech" id="second__technology">
+					<label for="second__technology"><span>Cms</span><p>Не стоит говорить, что это базовое, что осваивает любой веб-разработчик. Я знаю HTML, CSS и JavaScript на высоком уровне и могу сверстать абсолютно любую страницу. Ответственно отношусь к адаптивности и кроссбраузерности.</p></label>
+					<input type="radio" name="tech" id="third__technology">
+					<label for="third__technology"><span>Скрипты</span><p>Не стоит говорить, что это базовое, что осваивает любой веб-разработчик. Я знаю HTML, CSS и JavaScript на высоком уровне и могу сверстать абсолютно любую страницу. Ответственно отношусь к адаптивности и кроссбраузерности.</p></label>
+					<input type="radio" name="tech" id="fourth__technology">
+					<label for="fourth__technology"><span>Фреймворки</span><p>Не стоит говорить, что это базовое, что осваивает любой веб-разработчик. Я знаю HTML, CSS и JavaScript на высоком уровне и могу сверстать абсолютно любую страницу. Ответственно отношусь к адаптивности и кроссбраузерности.</p></label>
+					<input type="radio" name="tech" id="fifth__technology">
+					<label for="fifth__technology"><span>Прочее</span><p>Не стоит говорить, что это базовое, что осваивает любой веб-разработчик. Я знаю HTML, CSS и JavaScript на высоком уровне и могу сверстать абсолютно любую страницу. Ответственно отношусь к адаптивности и кроссбраузерности.</p></label>
+				</div>
 			</div>
 		</div>
 	</section>
+
+	<!-- THE END TECHNOLOGY -->
+
+	<!-- <a href="develop/" target="_blank" class="work">Development Environment</a>
+	<a href="screenshot/" target="_blank" class="work">Best Screenshot Tool</a>
+	<a href="drDoguzova/" target="_blank" class="work">drDoguzova</a>
+	<a href="Head-start/" target="_blank" class="work">Head-start</a>
+	<a href="Twins-animated/" target="_blank" class="work">Twins</a>
+	<a href="fast screen/" target="_blank" class="work">Fast Screen</a>
+	<a href="keep_secrets/" target="_blank" class="work">Keep Secrets</a>
+	<a href="usa/" target="_blank" class="work">Usa</a> -->
+
+
 	<!-- jQuery -->
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 	<!-- Scroll -->
-	<script type="text/javascript">
-		$(function(){
-			$("a[href^='#']").click(function(){
-				var _href = $(this).attr("href");
-				$("html, body").animate({scrollTop: $(_href).offset().top+"px"});
-				return false;
-			});
-		});
+	<script>
+		var linkNav = document.querySelectorAll('[href^="#"]'), //выбираем все ссылки к якорю на странице
+	    V = 0.7;  // скорость, может иметь дробное значение через точку (чем меньше значение - тем больше скорость)
+	    for (var i = 0; i < linkNav.length; i++) {
+	    linkNav[i].addEventListener('click', function(e) { //по клику на ссылку
+	        e.preventDefault(); //отменяем стандартное поведение
+	        var w = window.pageYOffset,  // производим прокрутка прокрутка
+	            hash = this.href.replace(/[^#]*(.*)/, '$1');  // к id элемента, к которому нужно перейти
+	        t = document.querySelector(hash).getBoundingClientRect().top,  // отступ от окна браузера до id
+	        start = null;
+	        requestAnimationFrame(step);  // подробнее про функцию анимации [developer.mozilla.org]
+	        function step(time) {
+	        	if (start === null) start = time;
+	        	var progress = time - start,
+	        	r = (t < 0 ? Math.max(w - progress/V, w + t) : Math.min(w + progress/V, w + t));
+	        	window.scrollTo(0,r);
+	        	if (r != w + t) {
+	        		requestAnimationFrame(step)
+	        	} else {
+	                location.hash = hash  // URL с хэшем
+	              }
+	            }
+	          }, false);
+	  }
 	</script>
 </body>
 </html>

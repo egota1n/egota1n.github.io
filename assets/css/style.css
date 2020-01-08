@@ -12,11 +12,16 @@ h1, h2, h3, h4, h5, h6{
 	font-family: 'Pacifico', cursive;
 }
 
+
+/*HEADER*/
+
 .header{
-	background: url(../img/bg/bg.jpg) center -500px no-repeat;
-	-webkit-background-size: contain;
+	background: url(../img/bg/bg.png) center center no-repeat;
+	-webkit-background-size: cover;
 	background-size: cover;
 	height: 100vh;
+	min-height: 670px;
+	position: relative;
 }
 
 .logo{
@@ -60,14 +65,14 @@ li a{
 	position: relative;
 }
 
-li a::before{
+li a::before {
 	content: '';
 	display: block;
 	position: absolute;
 	width: 100%;
 	height: 1px;
-	background: #333;
-	bottom: -5px;
+	background: #ffd700;
+	bottom: 0;
 	left: 0;
 	transform: scale(0);
 	transition: all 0.5s ease;
@@ -83,45 +88,68 @@ li:hover a::before{
 	margin-top: 224px;
 }
 
+.title__offer span{
+	display: block;
+	font-size: 30px;
+	color: #ffd700;
+	text-align: center;
+	font-family: 'Pacifico', cursive;
+	position: relative;
+	bottom: 17px;
+}
+
 .descriprion__offer{
 	display: block;
 	width: 476px;
 	text-align: center;
-	margin: 40px auto 0 auto;
+	margin: 0 auto 0 auto;
 	line-height: 28px;
 	font-size: 15px;
 }
 
-.arrow{
+.arrow {
 	display: block;
-	width: 32px;
-	height: 16px;
+	width: 31px;
+	height: 17px;
 	position: absolute;
 	left: 50%;
 	bottom: 53px;
 	transform: translateX(-50%);
 }
 
-.arrow::before{
+.arrow::before {
 	content: '';
 	width: 22px;
 	height: 2px;
 	background: #333;
 	transform: rotate(45deg);
 	position: absolute;
-	bottom: 0;
-	left: 0;
+	bottom: 7px;
+	left: -2.5px;
 }
 
-.arrow::after{
+.arrow::after {
 	content: '';
 	width: 22px;
 	height: 2px;
 	background: #333;
 	transform: rotate(135deg);
 	position: absolute;
-	bottom: 0;
-	left: 14.4px;
+	bottom: 7px;
+	left: 12.4px;
+}
+
+/*THE END HEADER*/
+
+
+/*TECHNOLOGY*/
+
+.section__technology{
+	min-height: 700px;
+}
+
+.bg__tech{
+	background: url(../img/bg/bg__tech.png) right top 60px no-repeat;
 }
 
 .title__section{
@@ -129,8 +157,178 @@ li:hover a::before{
 	margin: 40px 0 30px 0;
 }
 
+.title__section span{
+	font-size: 20px;
+	margin-left: 40px;
+	display: block;
+	font-family: 'Pacifico', cursive;
+	color: #ffd700;
+}
+
 .work{
 	display: block;
 	font-size: 16px;
 	margin: 8px 0;
+	transition: all 0.5s ease;
 }
+
+.work:hover{
+	color: #ffd700;
+}
+
+input{
+	display: none;
+}
+
+label {
+	border: 2px solid #707070;
+	width: 100%;
+	padding: 8px 0 8px 35px;
+	border-radius: 15px;
+	display: block;
+	cursor: pointer;
+	margin-bottom: 27px;
+	position: relative;
+	transition: all 0.2s ease;
+}
+
+label span{
+	font-family: 'Pacifico', cursive;
+	font-size: 19px;
+	display: inline-block;
+	position: relative;
+	z-index: 2;
+}
+
+label[for="first__technology"] span::before{
+	content: "";
+	display: block;
+	position: absolute;
+	bottom: 4px;
+	left: 0;
+	width: 100%;
+	height: 2px;
+	background: #292d90;
+	z-index: 1;
+}
+
+label[for="second__technology"] span::before{
+	content: "";
+	display: block;
+	position: absolute;
+	bottom: 4px;
+	left: 0;
+	width: 100%;
+	height: 2px;
+	background: #902929;
+	z-index: 1;
+}
+
+label[for="third__technology"] span::before{
+	content: "";
+	display: block;
+	position: absolute;
+	bottom: 4px;
+	left: 0;
+	width: 100%;
+	height: 2px;
+	background: #299055;
+	z-index: 1;
+}
+
+label[for="fourth__technology"] span::before{
+	content: "";
+	display: block;
+	position: absolute;
+	bottom: 4px;
+	left: 0;
+	width: 100%;
+	height: 2px;
+	background: #902980;
+	z-index: 1;
+}
+
+label[for="fifth__technology"] span::before{
+	content: "";
+	display: block;
+	position: absolute;
+	bottom: 4px;
+	left: 0;
+	width: 100%;
+	height: 2px;
+	background: #ffd700;
+	z-index: 1;
+}
+
+label p{
+	font-size: 14px;
+	margin-top: 13px;
+	display: none;
+}
+
+label::before{
+	content: '+';
+	font-family: 'Pacifico', cursive;
+	font-size: 19px;
+	position: absolute;
+	top: 8px;
+	right: 31px;
+}
+
+#first__technology:checked ~ label[for="first__technology"]{
+	border: 2px solid #292d90;
+	padding-bottom: 35px;
+	cursor: default;
+}
+
+#second__technology:checked ~ label[for="second__technology"]{
+	border: 2px solid #902929;
+	padding-bottom: 35px;
+	cursor: default;
+}
+
+#third__technology:checked ~ label[for="third__technology"]{
+	border: 2px solid #299055;
+	padding-bottom: 35px;
+	cursor: default;
+}
+
+#fourth__technology:checked ~ label[for="fourth__technology"]{
+	border: 2px solid #902980;
+	padding-bottom: 35px;
+	cursor: default;
+}
+
+#fifth__technology:checked ~ label[for="fifth__technology"]{
+	border: 2px solid #ffd700;
+	padding-bottom: 35px;
+	cursor: default;
+}
+
+#first__technology:checked ~ label[for="first__technology"] p, #second__technology:checked ~ label[for="second__technology"] p, #third__technology:checked ~ label[for="third__technology"] p, #fourth__technology:checked ~ label[for="fourth__technology"] p,  #fifth__technology:checked ~ label[for="fifth__technology"] p{
+	display: block;
+}
+
+#first__technology:checked ~ label[for="first__technology"]::before{
+	content: '—';
+}
+
+#second__technology:checked ~ label[for="second__technology"]::before{
+	content: '—';
+}
+
+#third__technology:checked ~ label[for="third__technology"]::before{
+	content: '—';
+}
+
+#fourth__technology:checked ~ label[for="fourth__technology"]::before{
+	content: '—';
+}
+
+#fifth__technology:checked ~ label[for="fifth__technology"]::before{
+	content: '—';
+}
+
+
+
+/*THE END TECHNOLOGY*/
