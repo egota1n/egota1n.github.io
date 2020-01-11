@@ -547,7 +547,10 @@ label::before{
 
 .section__form{
 	padding: 27px 0 33px 0;
-	background: #ffd700 url(../img/bg/rocket.svg) 134px -13px no-repeat;
+	background: url(../img/bg/rocket.svg), url(../img/bg/fireworks.svg);
+	background-repeat: no-repeat;
+	background-position: 134px -13px, right 240px top -13px;
+	background-color: #ffd700;
 }
 
 /*url(../img/bg/fireworks.svg) right -240px -13px no-repeat*/
@@ -574,6 +577,11 @@ label::before{
 	border: 0;
 	font-size: 12px;
 	color: #707070;
+}
+
+.inputs .input__form:valid {
+	color: #333;
+	font-size: 13px;
 }
 
 .title__form{
