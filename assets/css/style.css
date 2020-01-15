@@ -48,6 +48,7 @@ h1, h2, h3, h4, h5, h6{
 	-ms-align-items: center;
 	align-items: center;
 	justify-content: space-between;
+	margin-top: 20px;
 }
 
 .nav ul{
@@ -60,7 +61,6 @@ h1, h2, h3, h4, h5, h6{
 	align-items: center;
 	justify-content: space-between;
 	width: 370px;
-	margin-top: 36px;
 }
 
 li{

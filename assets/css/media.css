@@ -1,0 +1,91 @@
+/*Slider settings (1200px - 1350px)*/
+@media (max-width: 1349.98px) {
+	.slick-prev, .slick-next {
+		bottom: -97px;
+		top: auto;
+	}
+
+	.section__portfolio .slick-prev {
+		left: 400px;
+	}
+
+	.section__portfolio .slick-next {
+		right: 400px;
+	}
+
+	.section__comment .slick-prev, .section__comment .slick-next {
+		bottom: -78px;
+		top: auto;
+	}
+	.section__comment .slick-prev {
+		left: 400px;
+	}
+
+	.section__comment .slick-next {
+		right: 400px;
+	}
+}
+
+/*Large devices (desktops, less than 1200px)*/
+@media (max-width: 1199.98px) {
+	.section__portfolio .slick-prev {
+		left: 300px;
+	}
+	.section__portfolio .slick-next {
+		right: 300px;
+	}
+	.section__comment .slick-prev {
+		left: 300px;
+	}
+	.section__comment .slick-next {
+		right: 300px;
+	}
+	.section__form {
+		background-position: 40px -13px, right 149px top -13px;
+	}
+	.header{
+		min-height: 670px;
+	}
+}
+
+/*Medium devices (tablets, less than 992px)*/
+@media (max-width: 991.98px) {
+	.bg__tech {
+		background: url(../img/bg/bg__tech.png) right -147px top 60px no-repeat;
+	}
+	.bg-card__portfolio1, .bg-card__portfolio2, .bg-card__portfolio3, .bg-card__portfolio4, .bg-card__portfolio5, .bg-card__portfolio6, .bg-card__portfolio7, .bg-card__portfolio8 {
+		width: 500px;
+		height: 313px;
+	}
+	.title-card__portfolio {
+		margin-top: 33px;
+	}
+	.description-card__portfolio {
+		margin: 17px auto 90px auto;
+		max-width: 600px;
+		display: block;
+		text-align: justify;
+	}
+	.section__portfolio .slick-prev {
+		left: 200px;
+	}
+	.section__portfolio .slick-next {
+		right: 200px;
+	}
+	.section__comment .slick-prev {
+		left: 200px;
+	}
+	.section__comment .slick-next {
+		right: 200px;
+	}
+}
+
+/*Small devices (landscape phones, less than 768px)*/
+@media (max-width: 767.98px) {
+
+}
+
+/*Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) {
+
+}
