@@ -46,6 +46,13 @@
 	.header{
 		min-height: 670px;
 	}
+	.bg-card__portfolio1, .bg-card__portfolio2, .bg-card__portfolio3, .bg-card__portfolio4, .bg-card__portfolio5, .bg-card__portfolio6, .bg-card__portfolio7, .bg-card__portfolio8 {
+		height: 276px;
+	}
+	.description__comment {
+		font-size: 13px;
+		padding: 0 10px;
+	}
 }
 
 /*Medium devices (tablets, less than 992px)*/
@@ -77,6 +84,19 @@
 	}
 	.section__comment .slick-next {
 		right: 200px;
+	}
+	.title__offer {
+		font-size: 40px;
+	}
+	.descriprion__offer {
+		font-size: 14px;
+	}
+	.nav ul {
+		width: 355px;
+	}
+	.section__form {
+		background-position: 35px 12px, right 80px top -12px;
+		background-size: 29%;
 	}
 }
 
