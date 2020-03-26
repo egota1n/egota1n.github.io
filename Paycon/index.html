@@ -14,13 +14,16 @@
 	<meta name="theme-color" content="#ffffff">
 	<!-- Bootstrap --> 
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<!-- Slick Slider -->
+	<link rel="stylesheet" href="assets/css/slick.css">
+	<link rel="stylesheet" href="assets/css/slick-theme.css">
 	<!-- Styles -->
 	<link rel="stylesheet" href="assets/css/style.css">
 	<link rel="stylesheet" href="assets/css/media.css">
 	<!-- Fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Rubik:700&display=swap&subset=cyrillic" rel="stylesheet">
 </head>
-<body>
+<body class="main">
 
 	<!-- HEADER -->
 
@@ -62,8 +65,13 @@
 
 	<!-- ABOUT PRODUCT -->
 
-	<section class="section__about-product scan" id="section__about-product">
-		<div class="container">
+	<section class="section__about-product scan" id="section__about-product1">
+		<div class="slider-bg">
+			<img src="assets/img/slider/slider-scan1.png" class="img-fluid" alt="">
+			<img src="assets/img/slider/slider-scan2.png" class="img-fluid" alt="">
+			<img src="assets/img/slider/slider-scan3.png" class="img-fluid" alt="">
+		</div>
+		<div class="container" style="position: absolute;left: 50%;top: 0;transform: translateX(-50%);">
 			<div class="row">
 				<div class="col-12">
 					<h1 class="title-main__section">Paycon Scan</h1>
@@ -75,47 +83,57 @@
 				</div>
 			</div>
 		</div>
-		<a href="#" class="arrow-botton"></a>
+		<a href="#section__about-product2" class="arrow-botton"></a>
 	</section>
 
 	<!-- THE END ABOUT PRODUCT -->
 
 	<!-- SECTION ABOUT PRODUCT -->
 
-	<section class="section__about-product scale" id="section__about-product">
-		<div class="container">
+	<section class="section__about-product scan" id="section__about-product1">
+		<div class="slider-bg">
+			<img src="assets/img/slider/slider-scale1.png" class="img-fluid" alt="">
+			<img src="assets/img/slider/slider-scale2.png" class="img-fluid" alt="">
+			<img src="assets/img/slider/slider-scale3.png" class="img-fluid" alt="">
+		</div>
+		<div class="container" style="position: absolute;left: 50%;top: 0;transform: translateX(-50%);">
 			<div class="row">
 				<div class="col-12">
-					<h1 class="title-main__section">Smart Scale</h1>
-					<p class="description-main__section">Умные весы, с помощью которых покупателю не нужно искать товар вручную.</p>
+					<h1 class="title-main__section">Paycon Scan</h1>
+					<p class="description-main__section">Поможет увеличивать выручку ваших магазинов.</p>
 					<div class="group-btn">
 						<button class="btn-order">Узнать больше</button>
-						<button  type="button" data-toggle="modal" data-target="#myModal2" class="btn-watch">Смотреть видео</button>
+						<button  type="button" data-toggle="modal" data-target="#myModal1" class="btn-watch">Смотреть видео</button>
 					</div>
 				</div>
 			</div>
 		</div>
-		<a href="#" class="arrow-botton"></a>
+		<a href="#section__about-product2" class="arrow-botton"></a>
 	</section>
 
 	<!-- THE END SECTION ABOUT PRODUCT -->
 
 	<!-- SECTION ABOUT PRODUCT -->
 
-	<section class="section__about-product" id="section__about-product">
-		<div class="container">
+	<section class="section__about-product scan" id="section__about-product1">
+		<div class="slider-bg">
+			<img src="assets/img/slider/slider-cart1.png" class="img-fluid" alt="">
+			<img src="assets/img/slider/slider-cart2.png" class="img-fluid" alt="">
+			<img src="assets/img/slider/slider-cart3.png" class="img-fluid" alt="">
+		</div>
+		<div class="container" style="position: absolute;left: 50%;top: 0;transform: translateX(-50%);">
 			<div class="row">
 				<div class="col-12">
-					<h1 class="title-main__section">Smart Cart</h1>
-					<p class="description-main__section">Помогаем ритейлу снижать очереди и увеличивать выручку продуктовых магазинов.</p>
+					<h1 class="title-main__section">Paycon Scan</h1>
+					<p class="description-main__section">Поможет увеличивать выручку ваших магазинов.</p>
 					<div class="group-btn">
 						<button class="btn-order">Узнать больше</button>
-						<button  type="button" data-toggle="modal" data-target="#myModal3" class="btn-watch">Смотреть видео</button>
+						<button  type="button" data-toggle="modal" data-target="#myModal1" class="btn-watch">Смотреть видео</button>
 					</div>
 				</div>
 			</div>
 		</div>
-		<a href="#" class="arrow-botton"></a>
+		<a href="#section__about-product2" class="arrow-botton"></a>
 	</section>
 
 	<!-- THE END SECTION ABOUT PRODUCT -->
@@ -158,7 +176,7 @@
 				<div class="col-12 col-md-3">
 					<div class="row">
 						<div class="col-md-12 col-6">
-							<a href="index.html" class="logo"><img src="assets/img/logo/main-logo.png" alt="logo"></a>
+							<a href="#header" class="logo"><img src="assets/img/logo/main-logo.png" alt="logo"></a>
 						</div>
 						<div class="col-md-12 col-6">
 							<a href="#" class="language">EN RU</a>
@@ -260,9 +278,32 @@
 		<!-- Form -->
 		<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
 		<script src="assets/js/script.js"></script>
+		<!-- Slick slider -->
+		<script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+		<script src="assets/js/slick.min.js" type="text/javascript" charset="utf-8"></script>
+		<script>
+			$('.slider-bg').slick({
+				slidesToShow: 1,
+				slidesToScroll: 1,
+				autoplay: false,
+				arrows: false,
+				dots: true
+			});
+		</script>
 		<!-- Bootstrap -->
 		<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+		<!-- Scroll -->
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+		<script type="text/javascript">
+			$(function(){
+				$("a[href^='#']").click(function(){
+					var _href = $(this).attr("href");
+					$("html, body").animate({scrollTop: $(_href).offset().top+"px"});
+					return false;
+				});
+			});
+		</script>
 	</body>
 	</html>
