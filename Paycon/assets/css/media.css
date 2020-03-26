@@ -15,6 +15,22 @@
 	.section__information .description__section {
 		width: auto;
 	}
+	.section__advantages .btn-order {
+		margin-left: auto;
+		width: 100%;
+	}
+	.section__vacancy label::before {
+		left: -60px;
+	}
+	.section__vacancy label {
+		margin-left: 60px;
+	}
+	.profession {
+		margin: 0 25px 13px 60px;
+	}
+	.map {
+		height: 400px;
+	}
 }
 
 /*Средние девайсы («таблетки», < 992px) */
@@ -106,6 +122,82 @@
 		width: auto;
 		height: 96px;
 		flex-direction: column;
+	}
+	.section__advantages .btn-order {
+		width: 250px;
+		margin-top: 30px;
+		margin-bottom: 35px;
+	}
+	.block-advantages .description__section {
+		margin-bottom: 0;
+		width: auto;
+		margin-top: 13px;
+	}
+	.block-advantages {
+		-webkit-flex-direction: column;
+		-moz-flex-direction: column;
+		-ms-flex-direction: column;
+		-o-flex-direction: column;
+		flex-direction: column;
+	}
+	.section__advantages{
+		padding-top: 35px;
+		padding-bottom: 0;
+	}
+	.img-advantages{
+		display: none;
+	}
+	.img-advantages-m{
+		display: block;
+	}
+	.section__advantages-scan .description__section{
+		margin-bottom: 22px;
+	}
+	.section__advantages-scan .btn-order {
+		margin-top: 11px;
+		margin-bottom: 43px;
+	}
+	.section__advantages-scan .img-advantages-m {
+		margin-bottom: 0;
+	}
+	.section__information2 .description__section:last-child {
+		margin-bottom: 20px;
+	}
+	.section__vacancy label::before {
+		left: -45px;
+	}
+	.section__vacancy label {
+		margin-left: 45px;
+		font-size: 28px;
+	}
+	.profession {
+		margin: 0 25px 13px 45px;
+	}
+	.section__vacancy .title__section {
+		font-size: 30px;
+		margin-bottom: 70px;
+	}
+	.adress {
+		font-size: 26px;
+		width: 292px;
+	}
+	.lang{
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		width: 200px;
+		-ms-align-items: center;
+		align-items: center;
+		justify-content: space-between;
+		margin-bottom: 20px;
+	}
+	.russia{
+		margin-bottom: 0;
+	}
+	.map {
+		height: 350px;
 	}
 }
 
@@ -227,6 +319,26 @@
 	.section__media .title__section{
 		margin-bottom: 23px;
 	}
+	.section__vacancy label {
+		font-size: 27px;
+	}
+	.job {
+		padding: 22px 0 30px 0;
+	}
+	.section__vacancy .title__section {
+		font-size: 28px;
+		margin-bottom: 50px;
+	}
+	.description-job, .title-job{
+		font-size: 14px;
+	}
+	.adress {
+		font-size: 21px;
+		width: auto;
+	}
+	.section__contacts-info {
+		padding: 35px 0 25px 0;
+	}
 }
 
 /*Экстрамалые девайсы («телефоны», < 576px)*/
@@ -313,6 +425,37 @@
 	}
 	.section__information .description__section {
 		margin-bottom: 36px;
+	}
+	.section__vacancy label::before {
+		display: none;
+	}
+	.section__vacancy label {
+		margin-left: 30px;
+		font-size: 20px;
+	}
+	.profession {
+		margin: 0 25px 13px 30px;
+	}
+	.section__vacancy .title__section {
+		font-size: 24px;
+		margin-bottom: 50px;
+	}
+	.adress {
+		font-size: 24px;
+		margin-bottom: 25px;
+	}
+	.section__contacts-info .phone a {
+		font-size: 14px;
+	}
+	.section__contacts-info li a {
+		font-size: 14px;
+		margin-left: 20px;
+	}
+	.section__contacts-info li {
+		margin-bottom: 10px;
+	}
+	.map {
+		height: 202px;
 	}
 }
 

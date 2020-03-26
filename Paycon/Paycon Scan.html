@@ -29,7 +29,7 @@
 			<nav class="nav">
 				<a href="index.html" class="logo"><img src="assets/img/logo/main-logo.png" alt="logo"></a>
 				<ul>
-					<li><a href="#header">Scan</a></li>
+					<li><a href="#header" class="active">Scan</a></li>
 					<li><a href="Smart Scale.html">Smart Scale</a></li>
 					<li><a href="Smart Cart.html">Smart Cart</a></li>
 					<li><a href="Career.html">Карьера</a></li>
@@ -46,7 +46,7 @@
 						<a href="#" class="language">EN RU</a>
 					</div>
 					<ul>
-						<li><a href="#header">Scan</a></li>
+						<li><a href="#header" class="active">Scan</a></li>
 						<li><a href="Smart Scale.html">Smart Scale</a></li>
 						<li><a href="Smart Cart.html">Smart Cart</a></li>
 						<li><a href="Career.html">Карьера</a></li>
@@ -99,12 +99,7 @@
 	<!-- VIDEO -->
 
 	<div class="thumb-wrap">
-		<div onclick="this.nextElementSibling.style.display='block'; this.style.display='none'">
-			<img src="assets/img/other/video1.png" style="cursor:pointer;height: auto;width: 100%;"/>
-		</div>
-		<div style="display:none">
-			<iframe src="https://www.youtube.com/embed/BXPGd23KHbg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-		</div>
+		<a type="button" data-toggle="modal" data-target="#myModal1" ><img src="assets/img/other/video2.png" style="cursor:pointer;height: auto;width: 100%;"/></a>
 	</div>
 
 	<!-- THE END VIDEO -->
@@ -147,6 +142,29 @@
 	</section>
 
 	<!-- THE END INFORMATION -->
+
+	<!-- ADVANTAGES -->
+
+	<section class="section__advantages section__advantages-scan" id="section__advantages">
+		<img src="assets/img/bg/PayconScan1.png" class="img-fluid img-advantages" alt="Paycon Scan">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 col-lg-4 col-xl-4">
+					<p class="description__section">Внутри телеги покупатель может авторизоваться по карте и сразу получать индивидуальные предложения.</p>
+				</div>
+				<div class="col-12 col-lg-4 col-xl-4">
+					<p class="description__section">Внутри телеги Pacon Scan стоит датчик, который помогает формировать тепловую карту перемещения покупателя.</p>
+				</div>
+				<div class="col-12 col-lg-4 col-xl-4">
+					<button class="btn-order">Заказать</button>
+				</div>
+			</div>
+		</div>
+		<img src="assets/img/bg/PayconScan1.png" class="img-fluid img-advantages img-advantages-m" alt="Paycon Scan">
+	</section>
+
+	<!-- THE END ADVANTAGES -->
+
 
 	<!-- INFORMATION -->
 
@@ -206,7 +224,7 @@
 				</div>
 				<div class="col-6 col-md-3">
 					<p class="products">Наши продукты:</p>
-					<li><a href="#header">Scan</a></li>
+					<li><a href="#header" class="active">Scan</a></li>
 					<li><a href="Smart Scale.html">Smart Scale</a></li>
 					<li><a href="Smart Cart.html">Smart Cart</a></li>
 				</div>
@@ -233,6 +251,27 @@
 	</footer>
 
 	<!-- THE END FOOTER -->
+
+
+	<!-- MODAL -->
+
+	<div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="13.5" cy="13.5" r="13.5" fill="white"/><rect x="8.00098" y="8.70703" width="1" height="14" rx="0.5" transform="rotate(-45 8.00098 8.70703)" fill="#6440AF"/><rect x="17.8994" y="8" width="1" height="14" rx="0.5" transform="rotate(45 17.8994 8)" fill="#6440AF"/></svg></button>
+				<div class="thumb-wrap">
+					<div onclick="this.nextElementSibling.style.display='block'; this.style.display='none'">
+						<img src="assets/img/other/video1.png" style="cursor:pointer;height: auto;width: 100%;"/>
+					</div>
+					<div style="display:none">
+						<iframe src="https://www.youtube.com/embed/BXPGd23KHbg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- THE END MODAL -->
 
 	<!-- Bootstrap -->
 	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>

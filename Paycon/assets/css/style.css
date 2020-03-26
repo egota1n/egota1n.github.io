@@ -227,31 +227,43 @@ button::-moz-focus-inner {
 	text-decoration: none;
 	font-size: 14px;
 	position: relative;
+	transition: all 0.3s ease;
 }
 
 .header-dark .nav ul li a{
+	color: #f6f6f6;
+}
+
+.header-dark .nav ul li a:hover {
 	color: #fff;
 }
 
-.nav ul li a::before{
+.nav ul li a:hover{
+	color: #000;
+}
+
+.nav ul li a.active::before{
 	content: '';
 	display: block;
 	background: #323232;
 	width: 100%;
 	height: 1px;
 	position: absolute;
-	bottom: 0;
+	bottom: -4px;
 	left: 0;
-	transform: scaleX(0);
-	transition: all 0.4s ease;
+	transition: all 0.3s ease;
+}
+
+.nav ul li a.active:hover:before{
+	background: #000;
 }
 
 .header-dark .nav ul li a::before{
 	background: #fff;
 }
 
-.nav ul li a:hover:before{
-	transform: scaleX(1);
+.header-dark .nav ul li a:hover:before{
+	background: #fff;
 }
 
 .language{
@@ -470,7 +482,8 @@ button::-moz-focus-inner {
 	position: relative;
 }
 
-img.bg-inf{
+img
+.bg-inf{
 	background: none;
 }
 
@@ -600,7 +613,7 @@ img.bg-inf{
 	width: 27px;
 	height: 27px;
 	border-radius: 100%;
-	background-color: #fff!important;
+	background-color: none!important;
 	position: absolute;
 	right: 0;
 	top: -45px;
@@ -608,7 +621,6 @@ img.bg-inf{
 }
 
 .close::before, .close::after{
-	content: '';
 	display: block;
 	width: 14px;
 	height: 1px;
@@ -633,7 +645,7 @@ img.bg-inf{
 
 /*THE END MODAL*/
 
-/*SECTION ADVANTAGES PRODUCT*/
+/*PRODUCT*/
 
 .section__advantages-product{
 	position: relative;
@@ -655,7 +667,47 @@ img.bg-inf{
 	line-height: 22px;
 }
 
-/*THE END SECTION ADVANTAGES PRODUCT*/
+.section__advantages{
+	padding-bottom: 49px;
+}
+
+.img-advantages-m{
+	display: none;
+	margin-bottom: 40px;
+}
+
+.block-advantages{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-ms-align-items: flex-start;
+	align-items: flex-start;
+	justify-content: space-between;
+	width: 100%;
+}
+
+.block-advantages .description__section{
+	margin-bottom: 0;
+	width: 210px;
+}
+
+.section__advantages .btn-order{
+	margin-left: auto;
+}
+
+.img-advantages{
+	margin-bottom: 50px;
+}
+
+.section__advantages .title__section {
+	margin-bottom: 0;
+	width: 190px;
+}
+
+
+/*THE END ADVANTAGES */
 
 /*WORK*/
 
@@ -683,6 +735,209 @@ img.bg-inf{
 }
 
 /*THE END WORK*/
+
+/*VACANCY*/
+
+.section__vacancy{
+	padding: 58px 0 102px 0;
+}
+
+.section__vacancy .title__section{
+	width: auto;
+	font-size: 36px;
+	margin-bottom: 110px;
+}
+
+.title-job{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+	margin: 20px 0;
+}
+
+.description-job{
+	font-size: 16px;
+	margin-bottom: 2px;
+}
+
+.inf-job{
+	display: none;
+	transition: all 0.4s ease;
+}
+
+.section__vacancy input{
+	display: none;
+}
+
+.section__vacancy label {
+	display: block;
+	font-family: Rubik;
+	font-weight: bold;
+	font-size: 30px;
+	color: #323232;
+	position: relative;
+	left: 0;
+	cursor: pointer;
+	-moz-user-select: none;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+	user-select: none;
+	padding: 10px 0;
+	margin-left: 83px;
+}
+
+.section__vacancy label::before{
+	content: '';
+	width: 18px;
+	height: 18px;
+	display: block;
+	background: url(../img/icons/button_more.svg) center center no-repeat;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	left: -83px;
+	transition: all 0.4s ease;
+}
+
+.job input:checked ~ label::before{
+	transform: translateY(-50%) rotate(135deg);
+}
+
+.job input:checked ~ .inf-job{
+	display: block;
+}
+
+.profession{
+	font-size: 12px;
+	position: relative;
+	width: 72px;
+	height: 28px;
+	border-radius: 15px;
+	border: 1px solid #323232;
+	display: -webkit-inline-flex;
+	display: -moz-inline-flex;
+	display: -ms-inline-flex;
+	display: -o-inline-flex;
+	display: inline-flex;
+	-ms-align-items: center;
+	align-items: center;
+	justify-content: center;
+	margin: 0 25px 13px 83px;
+}
+
+.city{
+	font-size: 12px;
+}
+
+.job{
+	padding: 34px 0 31px 0;
+}
+
+.job:nth-child(odd){
+	background: #f3f3f3;
+}
+
+/*THE END VACANCY*/
+
+/*CONTACTS INFO*/
+
+.section__contacts-info{
+	padding: 52px 0;
+}
+
+.russia{
+	margin-bottom: 15px;
+}
+
+.map{
+	height: 458px;
+}
+
+.section__contacts-info input.flag-icon{
+	display: none;
+}
+
+.section__contacts-info input.flag-icon:checked ~ label.flag-icon{
+	font-weight: bold;
+}
+
+.section__contacts-info label.flag-icon {
+	position: relative;
+	-moz-user-select: -moz-none;
+	-o-user-select: none;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+	user-select: none;
+	cursor: pointer;
+	margin-left: 44px;
+	margin-bottom: 0;
+}
+
+.section__contacts-info label.flag-icon::before {
+	content: '';
+	width: 30px;
+	height: 20px;
+	display: block;
+	position: absolute;
+	left: -44px;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.section__contacts-info label.russia::before {
+	background: url(../img/icons/russia.svg) center center no-repeat;
+}
+
+.section__contacts-info label.usa::before {
+	background: url(../img/icons/usa.svg) center center no-repeat;
+}
+
+.adress{
+	font-family: Rubik;
+	font-weight: bold;
+	font-size: 30px;
+	line-height: 39px;
+	width: 345px;
+}
+
+.section__contacts-info li{
+	list-style: none;
+	margin-bottom: 14px;
+}
+
+.section__contacts-info li a{
+	font-size: 16px;
+	color: #323232;
+	text-decoration: none;
+	margin-left: 21px;
+	transition: all 0.3s ease;
+}
+
+.section__contacts-info li a:hover{
+	color: #000;
+}
+
+.section__contacts-info li svg path{
+	transition: all 0.3s ease;
+}
+
+.section__contacts-info li:hover svg path{
+	fill: #000;
+}
+
+.section__contacts-info li:last-child{
+	margin-bottom: 0;
+}
+
+.section__contacts-info .phone a{
+	font-weight: bold;
+	font-size: 16px;
+	color: #323232;
+	text-decoration: none;
+	margin-left: 0;
+}
+
+/*THE END CONTACTS INFO*/
 
 /*MEDIA*/
 
@@ -771,6 +1026,10 @@ img.bg-inf{
 
 .section__results .description__section:last-child{
 	margin-bottom: 0;
+}
+
+.lang{
+	display: block;
 }
 
 /*THE END RESULTS*/
@@ -906,27 +1165,39 @@ input:-webkit-autofill:active {
 	display: inline-block;
 	position: relative;
 	text-decoration: none;
+	transition: all 0.3s ease;
+}
+
+.footer li a:hover{
+	color: #000;
+}
+
+.footer li svg path{
+	transition: all 0.3s ease;
+}
+
+.footer li:hover svg path{
+	fill: #000;
 }
 
 .footer .social li a{
 	margin-left: 16px;
 }
 
-.footer li a::before{
+.footer li a.active::before{
 	content: '';
 	display: block;
-	background: #323232;
+	background: #595959;
 	width: 100%;
 	height: 1px;
 	position: absolute;
 	bottom: 0;
 	left: 0;
-	transform: scaleX(0);
-	transition: all 0.4s ease;
+	transition: all 0.3s ease;
 }
 
-.footer li a:hover:before{
-	transform: scaleX(1);
+.footer li a.active:hover:before{
+	background: #000;
 }
 
 /*THE END FOOTER*/
