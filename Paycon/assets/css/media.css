@@ -31,6 +31,12 @@
 	.map {
 		height: 400px;
 	}
+	.main .section__about-product {
+		height: 900px;
+	}
+	.main .section__about-product.cart {
+		background-size: 90%;
+	}
 }
 
 /*Средние девайсы («таблетки», < 992px) */
@@ -199,6 +205,13 @@
 	.map {
 		height: 350px;
 	}
+	.main .section__about-product {
+		height: 740px;
+	}
+	.main .section__about-product.scale{
+		-webkit-background-size: contain;
+		background-size: contain;
+	}
 }
 
 /*Малые девайсы («ландшафтные», < 768px)*/
@@ -339,6 +352,9 @@
 	.section__contacts-info {
 		padding: 35px 0 25px 0;
 	}
+	.main .section__about-product {
+		height: 625px;
+	}
 }
 
 /*Экстрамалые девайсы («телефоны», < 576px)*/
@@ -456,6 +472,12 @@
 	}
 	.map {
 		height: 202px;
+	}
+	.section__about-product.scale {
+		height: 524px;
+	}
+	.main .section__about-product.cart {
+		background-size: 500px;
 	}
 }
 
