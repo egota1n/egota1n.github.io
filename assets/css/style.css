@@ -430,7 +430,11 @@ label::before{
 	background: url(../img/bg/bg-card__portfolio8.jpg) center center no-repeat;
 }
 
-.bg-card__portfolio1, .bg-card__portfolio2, .bg-card__portfolio3, .bg-card__portfolio4, .bg-card__portfolio5, .bg-card__portfolio6, .bg-card__portfolio7, .bg-card__portfolio8 {
+.bg-card__portfolio9{
+	background: url(../img/bg/bg-card__portfolio9.jpg) center center no-repeat;
+}
+
+.bg-card__portfolio1, .bg-card__portfolio2, .bg-card__portfolio3, .bg-card__portfolio4, .bg-card__portfolio5, .bg-card__portfolio6, .bg-card__portfolio7, .bg-card__portfolio8, .bg-card__portfolio9 {
 	-webkit-background-size: contain;
 	background-size: contain;
 	width: 98%;
