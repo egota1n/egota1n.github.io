@@ -1,0 +1,104 @@
+*, *::before, *::after{
+	font-family: 'Open Sans', sans-serif;
+	color: #455a64;
+	font-size: 13px;
+	margin: 0;
+	padding: 0;
+	outline: none;
+	font-weight: 400;
+}
+
+a{
+	text-decoration: none;
+}
+
+.nav{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.logo{
+	background: url(../img/logo/logo.png) center center no-repeat;
+	display: block;
+	width: 270px;
+	height: 65px;
+}
+
+.phone{
+	font-size: 23px;
+	color: #333;
+}
+
+.phone svg{
+	margin-right: 12px;
+}
+
+.lang{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+	justify-content: space-between;
+	width: 64px;
+}
+
+.lang a{
+	color: #546e7a;
+}
+
+.registration{
+	padding: 8px 20px 8px 40px;
+	border-radius: 3px;
+	background: #edf2f4;
+	color: #546e7a;
+	position: relative;
+	font-size: 12px;
+}
+
+.account{
+	padding: 8px 20px 8px 40px;
+	background: #0066cb;
+	color: #fff;
+	border-radius: 3px;
+	position: relative;
+}
+
+.registration::before, .account::before{
+	content: '';
+	display: block;
+	width: 24px;
+	height: 24px;
+	position: absolute;
+	top: 50%;
+	left: 7px;
+	transform: translateY(-50%);
+}
+
+.registration::before{
+	background: url(../img/icons/lock.svg) center center no-repeat;
+}
+
+.account::before{
+	background: url(../img/icons/user.svg) center center no-repeat;
+}
+
+.gbhjnkm{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+	justify-content: space-between;
+	width: 345px;
+}
