@@ -24,7 +24,7 @@ a{
 }
 
 .logo{
-	background: url(../img/logo/logo.png) center center no-repeat;
+	background: url(../img/logo/logo.svg) center center no-repeat;
 	display: block;
 	width: 270px;
 	height: 65px;
