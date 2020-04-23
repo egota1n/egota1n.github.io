@@ -652,6 +652,26 @@ marquee div.increase-percent{
 	right: 0;
 }
 
+p.development{
+	font-weight: bold;
+	text-align: center;
+	color: #546E7A;
+	margin: 36px 0 31px 0;
+}
+
+.line-development{
+	border: 0.5px solid #5F748A;
+	margin-top: 8px;
+}
+
+.section__tables-development .card-history{
+	height: 118px;
+}
+
+.section__tables-development p.development{
+	margin: 26px 0;
+}
+
 /*THE END MAIN*/
 
 /*DOCUMENT*/
