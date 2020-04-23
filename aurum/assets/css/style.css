@@ -1169,3 +1169,9 @@ div.decrease{
 		padding: 8px 0;
 	}
 }
+/*Большие девайсы (большие десктопы, >= 992px)*/
+@media (min-width: 992px) and (max-width: 1199.98px) {
+	p.development {
+		margin: 59px 0 60px 0;
+	}
+}
