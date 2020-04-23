@@ -158,6 +158,7 @@ marquee {
 	border: 1px solid #d0e9f5;
 	background: #edf9ff;
 	padding: 6px 0;
+	margin-bottom: 20px;
 }
 
 marquee span.decrease-percent{
@@ -180,6 +181,136 @@ marquee div.decrease-percent{
 marquee div.increase-percent{
 	background: url(../img/icons/increase-percent.svg) center center no-repeat;
 }
+
+.title__main-section{
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 23px;
+	text-transform: uppercase;
+	color: #e95753;
+	margin-bottom: 9px;
+}
+
+.title-slogan{
+	font-weight: bold;
+	font-size: 14px;
+	color: #333;
+}
+
+.description-slogan{
+	line-height: 19px;
+	color: #333;
+	margin-bottom: 6px;
+}
+
+.hbnjmk{
+	display: block;
+	width: 100%;
+	height: 228px;
+	background: url(../img/hbjn.png) center center no-repeat;
+	-webkit-background-size: contain;
+	background-size: contain;
+}
+
+.card-offers{
+	border: 1px solid #5f748a;
+	padding-bottom: 11px;
+	margin-top: 13px;
+	border-radius: 3px;
+}
+
+.header-card-offers{
+	background: #5f748a;
+	padding: 6px 11px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.title-card-offers{
+	font-size: 16px;
+	color: #fff;
+}
+
+.price, .quantity{
+	font-size: 11px;
+	color: #f5e49b;
+}
+
+.block-price{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+	justify-content: space-between;
+	width: 131px;
+}
+
+.btn-card-offers{
+	width: 193px;
+	height: 41px;
+	background: #009900;
+	box-shadow: inset 0px 4px 8px #1EB71E;
+	border: 0;
+	border-radius: 3px;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 18px;
+	text-align: center;
+	color: #fff;
+	display: block;
+	margin: 15px auto 10px auto;
+}
+
+.block-average-price{
+	width: 200px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+	justify-content: space-between;
+	margin: 0 auto;
+}
+
+.average-price, .average-quantity{
+	color: #546e7a;
+}
+
+.average-quantity span{
+	color: #546e7a;
+	font-weight: bold;
+}
+
+.section__main table{
+	width: 100%;
+	margin-top: 5px;
+}
+
+.section__main td{
+	text-align: center;
+	padding: 2px 0;
+}
+
+.section__main th{
+	font-weight: bold;
+	font-size: 12px;
+	color: #CEA96D;
+	padding: 5px;
+	background: #FAF7E7;
+}
+
+
 
 /*THE END MAIN*/
 
@@ -343,31 +474,31 @@ marquee div.increase-percent{
 	padding: 3px 7px;
 }
 
-table {
+.section__tables table, .section__document table{
 	border-collapse: collapse;
 	width: 100%;
 	margin-top: 8px;
 }
 
-table th{
+.section__tables table th, .section__document table th{
 	background: #5f748a;
 	color: #fff;
 }
 
-tr:nth-child(2n+3) td{
+.section__tables tr:nth-child(2n+3) td, .section__document tr:nth-child(2n+3) td{
 	background: #edf9ff;
 }
 
-tr td{
+.section__tables tr td, .section__document tr td{
 	padding: 2px 0;
 	text-align: center;
 }
 
-td.increase{
+.section__tables td.increase, .section__document td.increase{
 	color: #009900;
 }
 
-td.decrease{
+.section__tables td.decrease, .section__document td.decrease{
 	color: #cc0000;
 }
 
