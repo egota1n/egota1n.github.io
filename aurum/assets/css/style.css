@@ -44,6 +44,11 @@ button{
 	color: #333;
 	position: relative;
 	padding-left: 30px;
+	transition: all 0.2s ease;
+}
+
+.phone:hover {
+	color: #000;
 }
 
 .phone::before, .info::before{
@@ -89,6 +94,11 @@ button{
 
 .lang a{
 	color: #546e7a;
+	transition: all 0.2s ease;
+}
+
+.lang a:hover {
+	color: #44596f;
 }
 
 .registration{
@@ -98,6 +108,11 @@ button{
 	color: #546e7a;
 	position: relative;
 	font-size: 12px;
+	transition: all 0.2s ease;
+}
+
+.registration:hover{
+	background: #dde7ea;
 }
 
 .account{
@@ -106,6 +121,11 @@ button{
 	color: #fff;
 	border-radius: 3px;
 	position: relative;
+	transition: all 0.2s ease;
+}
+
+.account:hover{
+	background: #005cb7;
 }
 
 .registration::before, .account::before{
@@ -179,6 +199,7 @@ button{
 	background-color: inherit;
 	font-family: inherit;
 	margin: 0;
+	transition: all 0.2s ease;
 }
 
 .dropdown-content {
@@ -197,10 +218,11 @@ button{
 	text-decoration: none;
 	display: block;
 	text-align: left;
+	transition: all 0.2s ease;
 }
 
 .topnav a:hover, .dropdown:hover .dropbtn {
-	background-color: transparent;
+	background-color: #1b2734;
 	color: white;
 }
 
@@ -224,7 +246,11 @@ input[type="search"] {
 	position: relative;
 }
 
-input[type="search"]::before {
+.search{
+	position: relative;
+}
+
+.search::before {
 	content: '';
 	width: 18px;
 	height: 18px;
@@ -236,6 +262,7 @@ input[type="search"]::before {
 	background: url(../img/icons/search.svg) center center no-repeat;
 	-webkit-background-size: contain;
 	background-size: contain;
+	z-index: 999;
 }
 
 input[type="search"]::placeholder{
@@ -482,6 +509,11 @@ marquee div.increase-percent{
 	color: #fff;
 	display: block;
 	margin: 15px auto 10px auto;
+	transition: all 0.2s ease;
+}
+
+.btn-card-offers:hover{
+	background: #028c02;
 }
 
 .block-average-price{
@@ -730,6 +762,11 @@ marquee div.increase-percent{
 	text-align: center;
 	text-decoration: underline;
 	color: #c3954f;
+	transition: all 0.2s ease;
+}
+
+.more-doc:hover{
+	color: #a0783a;
 }
 
 .card-history{
@@ -764,6 +801,11 @@ marquee div.increase-percent{
 	background: #bfe7fb;
 	border-radius: 3px;
 	padding: 3px 7px;
+	transition: all 0.2s ease;
+}
+
+.all-transaction:hover{
+	background: #acdef7;
 }
 
 .section__tables table, .section__document table{
@@ -841,6 +883,11 @@ div.decrease{
 	font-size: 14px;
 	line-height: 24px;
 	color: #383e4b;
+	transition: all 0.2s ease;
+}
+
+.title-news:hover{
+	color: #000;
 }
 
 .date-news{
@@ -864,6 +911,11 @@ div.decrease{
 	background: #0066cb;
 	border-radius: 3px;
 	margin: 23px auto 0 auto;
+	transition: all 0.2s ease;
+}
+
+.all-news:hover{
+	background: #005cb7;
 }
 
 /*THE END NEWS*/
@@ -892,6 +944,11 @@ div.decrease{
 	align-items: center;
 	padding-left: 30px;
 	position: relative;
+	transition: all 0.2s ease;
+}
+
+.section__contact .info:hover{
+	color: #000;
 }
 
 .section__contact .info svg{
