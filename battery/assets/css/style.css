@@ -1,34 +1,34 @@
 @font-face {
-    font-family: 'Gilroy';
-    src: url('../font/Gilroy-Regular.eot');
-    src: local('Gilroy Regular'), local('Gilroy-Regular'),
-        url('../font/Gilroy-Regular.eot?#iefix') format('embedded-opentype'),
-        url('../font/Gilroy-Regular.woff') format('woff'),
-        url('../font/Gilroy-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+	font-family: 'Gilroy';
+	src: url('../font/Gilroy-Regular.eot');
+	src: local('Gilroy Regular'), local('Gilroy-Regular'),
+	url('../font/Gilroy-Regular.eot?#iefix') format('embedded-opentype'),
+	url('../font/Gilroy-Regular.woff') format('woff'),
+	url('../font/Gilroy-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
 }
 
 @font-face {
-    font-family: 'Gilroy';
-    src: url('../font/Gilroy-Medium.eot');
-    src: local('Gilroy Medium'), local('Gilroy-Medium'),
-        url('../font/Gilroy-Medium.eot?#iefix') format('embedded-opentype'),
-        url('../font/Gilroy-Medium.woff') format('woff'),
-        url('../font/Gilroy-Medium.ttf') format('truetype');
-    font-weight: 500;
-    font-style: normal;
+	font-family: 'Gilroy';
+	src: url('../font/Gilroy-Medium.eot');
+	src: local('Gilroy Medium'), local('Gilroy-Medium'),
+	url('../font/Gilroy-Medium.eot?#iefix') format('embedded-opentype'),
+	url('../font/Gilroy-Medium.woff') format('woff'),
+	url('../font/Gilroy-Medium.ttf') format('truetype');
+	font-weight: 500;
+	font-style: normal;
 }
 
 @font-face {
-    font-family: 'Gilroy';
-    src: url('../font/Gilroy-Bold.eot');
-    src: local('Gilroy Bold'), local('Gilroy-Bold'),
-        url('../font/Gilroy-Bold.eot?#iefix') format('embedded-opentype'),
-        url('../font/Gilroy-Bold.woff') format('woff'),
-        url('../font/Gilroy-Bold.ttf') format('truetype');
-    font-weight: bold;
-    font-style: normal;
+	font-family: 'Gilroy';
+	src: url('../font/Gilroy-Bold.eot');
+	src: local('Gilroy Bold'), local('Gilroy-Bold'),
+	url('../font/Gilroy-Bold.eot?#iefix') format('embedded-opentype'),
+	url('../font/Gilroy-Bold.woff') format('woff'),
+	url('../font/Gilroy-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
 }
 
 *, *::before, *::after{
@@ -280,6 +280,11 @@ ul{
 	font-family: 'Gilroy', sans-serif;
 	font-weight: 500;
 	font-style: normal;
+	transition: all 0.3s ease;
+}
+
+.nav li a:hover{
+	color: #1370aa;
 }
 
 .nav li a.link-page__active{
@@ -386,6 +391,14 @@ ul{
 	background-size: contain;
 }
 
+.social .WhatsApp, .social .Telegram, .social .Viber{
+	transition: all 0.5s ease;
+}
+
+.social .WhatsApp:hover, .social .Telegram:hover, .social .Viber:hover{
+	margin-bottom: 3px;
+}
+
 /*THE END HEADER*/
 
 /*ERROR*/
@@ -433,6 +446,9 @@ ul{
 	padding: 23px 100px;
 	background: rgb(25,108,159);
 	background: linear-gradient(180deg, rgba(25,108,159,1) 0%, rgba(58,151,209,1) 100%);
+}
+
+.btn-error{
 	position: relative;
 	left: 50%;
 	transform: translateX(-50%);
@@ -444,6 +460,73 @@ ul{
 }
 
 /*THE END ERROR*/
+
+/*PRIVACY POLICY*/
+
+.section__privacy-policy{
+	padding-bottom: 51px;
+	background: url(../img/bg/key.png) center center no-repeat;
+	-webkit-background-size: auto;
+	background-size: auto;
+	background-position: bottom 0 right 50px;
+}
+
+.location{
+	margin: 20px 0 30px 0;
+}
+
+.link-location{
+	font-size: 14px;
+	color: #697a85;
+	position: relative;
+	margin-right: 20px;
+	transition: all 0.3s ease;
+}
+
+.link-location:hover{
+	color: #454d52;
+}
+
+.link-location::before{
+	content: '/';
+	color: #697a85;
+	position: absolute;
+	right: -15px;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.link-location:last-child:before{
+	content: '';
+}
+
+.title-page_privacy-policy{
+	font-size: 36px;
+	margin-bottom: 24px;
+}
+
+.description-privacy_policy, .title-privacy_policy, .date-privacy_policy{
+	color: #1c597f;
+	display: block;
+	font-weight: normal;
+	font-size: 16px;
+}
+
+.date-privacy_policy{
+	margin-top: 44px;
+	margin-bottom: 30px;
+}
+
+.description-privacy_policy:last-child{
+	margin-bottom: 0;
+}
+
+.title-privacy_policy{
+	margin-top: 44px;
+	margin-bottom: 22px;
+}
+
+/*THE END PRIVACY POLICY*/
 
 /*FOOTER*/
 
@@ -461,6 +544,7 @@ ul{
 	display: block;
 	font-size: 14px;
 	color: #a6a8a9;
+	transition: all 0.3s ease;
 }
 
 .design-studio, .design{
@@ -468,6 +552,11 @@ ul{
 	text-align: right;
 	font-size: 14px;
 	color: #a6a8a9;
+	transition: all 0.3s ease;
+}
+
+.design-studio:hover, .privacy-policy:hover{
+	color: #454d52;
 }
 
 .footer .nav {
@@ -644,6 +733,18 @@ ul{
 	.section__error {
 		padding: 85px 0 120px 0;
 	}
+	.title-page_privacy-policy {
+		font-size: 30px;
+		margin-bottom: 24px;
+	}
+	.title-page_privacy-policy {
+		font-size: 30px;
+	}
+	.btn-main{
+		position: relative;
+		left: 50%;
+		transform: translateX(-50%);
+	}
 }
 
 /*Экстрамалые девайсы («телефоны», < 576px)*/
@@ -672,5 +773,11 @@ ul{
 	}
 	.section__error {
 		padding: 85px 0 100px 0;
+	}
+	.title-page_privacy-policy {
+		font-size: 24px;
+	}
+	.section__privacy-policy {
+		background-position: bottom 0 right 0;
 	}
 }
