@@ -1,18 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="262.5" height="47.84" viewBox="0 0 262.5 47.84">
-  <g id="Логотип_в_сборе" data-name="Логотип в сборе" transform="translate(-407 -35)">
-    <text id="АКБ_МАСТЕР" data-name="АКБ МАСТЕР" transform="translate(572.5 59.84)" fill="#cc3434" font-size="30" font-family="Helvetica"><tspan x="-96.951" y="0">АКБ </tspan><tspan y="0" fill="#1370aa">МАСТЕР</tspan></text>
-    <text id="Центр_аккумуляторов" data-name="Центр аккумуляторов" transform="translate(564.5 78.84)" fill="#333" font-size="16" font-family="Helvetica"><tspan x="-82.758" y="0">Центр аккумуляторов</tspan></text>
-    <g id="logo">
-      <g id="Group_1" data-name="Group 1">
-        <rect id="Rectangle_1" data-name="Rectangle 1" width="63" height="43" transform="translate(407 39)" fill="#cc3434"/>
-        <path id="Rectangle_3" data-name="Rectangle 3" d="M2,0h8a2,2,0,0,1,2,2V8a0,0,0,0,1,0,0H0A0,0,0,0,1,0,8V2A2,2,0,0,1,2,0Z" transform="translate(450 35)" fill="#cc3434"/>
-        <path id="Rectangle_8" data-name="Rectangle 8" d="M2,0h8a2,2,0,0,1,2,2V8a0,0,0,0,1,0,0H0A0,0,0,0,1,0,8V2A2,2,0,0,1,2,0Z" transform="translate(415 35)" fill="#cc3434"/>
-      </g>
-      <g id="Group_3" data-name="Group 3">
-        <rect id="Rectangle_5" data-name="Rectangle 5" width="4" height="12" transform="translate(419 47)" fill="#fff"/>
-        <rect id="Rectangle_6" data-name="Rectangle 6" width="12" height="4" transform="translate(415 51)" fill="#fff"/>
-        <rect id="Rectangle_7" data-name="Rectangle 7" width="12" height="4" transform="translate(450 51)" fill="#fff"/>
-      </g>
-    </g>
+<svg xmlns="http://www.w3.org/2000/svg" width="255.5" height="51" viewBox="0 0 255.5 51">
+  <g id="Логотип_в_сборе" data-name="Логотип в сборе" transform="translate(-407 -31.84)">
+    <text id="АКБ_МАСТЕР" data-name="АКБ МАСТЕР" transform="translate(572.5 59.84)" fill="#cc3434" font-size="30" font-family="Gilroy-Bold, Gilroy" font-weight="700"><tspan x="-89.265" y="0">АКБ </tspan><tspan y="0" fill="#1370aa">МАСТЕР</tspan></text>
+    <text id="Центр_аккумуляторов" data-name="Центр аккумуляторов" transform="translate(564.5 78.84)" fill="#333" font-size="16" font-family="Gilroy-Medium, Gilroy" font-weight="500"><tspan x="-81.848" y="0">Центр аккумуляторов</tspan></text>
+    <path id="battery_1_" data-name="battery (1)" d="M55.125,3.938V1.969A1.968,1.968,0,0,0,53.156,0H45.281a1.968,1.968,0,0,0-1.969,1.969V3.938H19.688V1.969A1.968,1.968,0,0,0,17.719,0H9.844A1.968,1.968,0,0,0,7.875,1.969V3.938H0V47.25H63V3.938ZM19.688,19.688H15.75v3.938H11.813V19.688H7.875V15.75h3.938V11.813H15.75V15.75h3.938Zm35.438,0H43.313V15.75H55.125Z" transform="translate(407 35)" fill="#cc3434"/>
   </g>
 </svg>

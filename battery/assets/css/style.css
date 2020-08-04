@@ -1,5 +1,5 @@
 *, *::before, *::after{
-	font-family: 'Gilroy';
+	font-family: 'Gilroy', sans-serif;
 	font-weight: normal;
 	font-style: normal;
 	font-size: 16px;
@@ -14,7 +14,7 @@ p{
 }
 
 h1, h2, h3, h4, h5, h6{
-	font-family: 'Gilroy';
+	font-family: 'Gilroy', sans-serif;
 	font-weight: bold;
 	font-style: normal;
 	font-size: 48px;
@@ -243,7 +243,7 @@ ul{
 .nav li a{
 	color: #333;
 	font-size: 18px;
-	font-family: 'Gilroy';
+	font-family: 'Gilroy', sans-serif;
 	font-weight: 500;
 	font-style: normal;
 }
@@ -270,7 +270,7 @@ ul{
 
 .number{
 	font-size: 24px;
-	font-family: 'Gilroy';
+	font-family: 'Gilroy', sans-serif;
 	font-weight: bold;
 	font-style: normal;
 	color: #333;
