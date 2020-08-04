@@ -1,3 +1,36 @@
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../font/Gilroy-Regular.eot');
+    src: local('Gilroy Regular'), local('Gilroy-Regular'),
+        url('../font/Gilroy-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../font/Gilroy-Regular.woff') format('woff'),
+        url('../font/Gilroy-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../font/Gilroy-Medium.eot');
+    src: local('Gilroy Medium'), local('Gilroy-Medium'),
+        url('../font/Gilroy-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../font/Gilroy-Medium.woff') format('woff'),
+        url('../font/Gilroy-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../font/Gilroy-Bold.eot');
+    src: local('Gilroy Bold'), local('Gilroy-Bold'),
+        url('../font/Gilroy-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../font/Gilroy-Bold.woff') format('woff'),
+        url('../font/Gilroy-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
 *, *::before, *::after{
 	font-family: 'Gilroy', sans-serif;
 	font-weight: normal;
@@ -448,3 +481,196 @@ ul{
 /*THE END FOOTER*/
 
 
+/*Большие девайсы (большие десктопы, < 1200px)*/
+@media (max-width: 1199.98px) {
+	.nav {
+		width: 100%;
+	}
+	.title-error {
+		font-size: 60px;
+		margin: 45px 0 38px 0;
+	}
+	.description-error {
+		font-size: 32px;
+	}
+	.description-actions {
+		font-size: 20px;
+		margin: 46px 0 40px 0;
+	}
+	.btn-main {
+		padding: 20px 95px;
+	}
+	.section__error {
+		padding: 85px 0 180px 0;
+	}
+}
+
+/*Средние девайсы («таблетки», < 992px) */
+@media (max-width: 991.98px) {
+	.logo {
+		width: 200px;
+		height: 36px;
+	}
+	ul {
+		width: 210px;
+	}
+	.nav li a {
+		font-size: 16px;
+	}
+	.social a {
+		width: 18px;
+		height: 18px;
+	}
+	.number {
+		font-size: 21px;
+	}
+	.address {
+		font-size: 14px;
+	}
+	a.battery-search {
+		font-size: 14px;
+	}
+	.battery-search::before {
+		width: 12px;
+		height: 12px;
+		left: -20px;
+	}
+	.social {
+		margin-right: 10px;
+	}
+	.icon-error {
+		width: 150px;
+		height: 113px;
+	}
+	.title-error {
+		font-size: 56px;
+		margin: 38px 0 31px 0;
+	}
+	.description-error {
+		font-size: 28px;
+	}
+	.description-actions {
+		font-size: 18px;
+		margin: 40px 0 38px 0;
+	}
+	.btn-main {
+		padding: 16px 90px;
+	}
+	.section__error {
+		padding: 85px 0 220px 0;
+	}
+	.section__error {
+		padding: 85px 0 140px 0;
+	}
+}
+
+/*Малые девайсы («ландшафтные», < 768px)*/
+@media (max-width: 767.98px) {
+	.nav-mobile {
+		display: block;
+	}
+	.nav{
+		display: none;
+	}
+	.logo {
+		margin-top: 15px;
+	}
+	.info {
+		width: 100%;
+		text-align: center;
+		margin: 0 auto;
+		position: absolute;
+		bottom: 12%;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+	.social {
+		margin: 0 0 5px 0;
+	}
+	.media {
+		flex-direction: column;
+	}
+	.social a {
+		width: 20px;
+		height: 20px;
+	}
+	.footer .nav {
+		padding: 23px 0 25px 0;
+		display: block;
+		flex-direction: column;
+		justify-content: center;
+	}
+	.info-footer {
+		text-align: center;
+	}
+	.footer .logo {
+		margin: 0 auto;
+	}
+	.footer ul {
+		margin: 16px auto;
+	}
+	.footer .social {
+		margin: 7px 0;
+	}
+	.footer .social a {
+		width: 25px;
+		height: 25px;
+	}
+	.footer .social .Telegram {
+		margin: 0 8px;
+	}
+	.footer .number {
+		margin: 7px 0;
+	}
+	.icon-error {
+		width: 130px;
+		height: 98px;
+	}
+	.title-error {
+		font-size: 48px;
+		margin: 34px 0 26px 0;
+	}
+	.description-error {
+		font-size: 24px;
+	}
+	.description-actions {
+		font-size: 18px;
+		margin: 36px 0 34px 0;
+	}
+	.btn-main {
+		font-size: 19px;
+		padding: 14px 87px;
+	}
+	.section__error {
+		padding: 85px 0 120px 0;
+	}
+}
+
+/*Экстрамалые девайсы («телефоны», < 576px)*/
+@media (max-width: 575.98px) {
+	.design-studio, .design, .privacy-policy, .copyright{
+		text-align: center;
+	}
+	.icon-error {
+		width: 120px;
+		height: 90px;
+	}
+	.description-error {
+		font-size: 17px;
+	}
+	.title-error {
+		font-size: 36px;
+		margin: 30px 0 26px 0;
+	}
+	.description-actions {
+		font-size: 14px;
+		margin: 32px 0 30px 0;
+	}
+	.btn-main {
+		font-size: 16px;
+		padding: 15px 78px;
+	}
+	.section__error {
+		padding: 85px 0 100px 0;
+	}
+}
