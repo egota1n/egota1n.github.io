@@ -1,0 +1,395 @@
+*, *::before, *::after{
+	font-family: 'Gilroy';
+	font-weight: normal;
+	font-style: normal;
+	font-size: 16px;
+	color: #333;
+	margin: 0;
+	padding: 0;
+	outline: none;
+}
+
+p{
+	margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6{
+	font-family: 'Gilroy';
+	font-weight: bold;
+	font-style: normal;
+	font-size: 48px;
+}
+
+button:active, button:focus {
+	outline: none;
+}
+button::-moz-focus-inner {
+	border: 0;
+}
+
+a:hover{
+	text-decoration: none;
+}
+
+/*Mobile menu*/
+
+body.check {
+	overflow: hidden;
+}
+
+.nav-mobile {
+	display: none;
+}
+
+.mobile-menu__btn {
+	position: absolute;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 30px;
+	height: 30px;	
+	cursor: pointer;
+	transition: .4s;
+	top: 17px;
+	right: 15px;
+	margin: 0;
+}
+
+.mobile-menu__icon {
+	display: block;
+	position: relative;
+	transition: .4s;
+	width: 17px;
+	height: 6px;
+}
+
+.mobile-menu__icon::after, .mobile-menu__icon::before {
+	content: "";
+	display: block;
+	position: absolute;
+	background: #333;
+	width: 17px;
+	height: 2px;
+	transition: .4s;
+}
+
+.header-dark .mobile-menu__icon::after, .header-dark .mobile-menu__icon::before {
+	background: #fff;
+}
+
+.mobile-menu__icon::after {
+	bottom: 0;
+}
+
+.mobile-menu__icon::before {
+	top: 0;
+}
+
+.mobile-menu__container {
+	position: fixed;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	top: 50px;
+	left: 0;
+	right: 0;
+	height: 0;
+	opacity: 1;
+	transition: .5s;
+	overflow: hidden;
+	background-color: #fff;
+	z-index: 99999999999;
+}
+
+.header-dark .mobile-menu__container{
+	background-color: #242424;
+}
+
+.mobile-menu__list {
+	transition: .5s;
+	list-style: none;
+	padding-left: 0;
+	margin-top: -50px;
+}
+
+.mobile-menu__item {
+	font-size: 26px;
+	padding-bottom: 15px;
+}
+
+.mobile-menu__link {
+	text-decoration: none;
+	color: #323232;
+}
+
+.header-dark .mobile-menu__link{
+	color: #f3f3f3;
+}
+
+.mobile-menu__checkbox {
+	display: none;
+}
+
+.mobile-menu__checkbox:checked ~ .mobile-menu__nav {
+	opacity: 1;
+}
+
+.mobile-menu__checkbox:checked ~ .mobile-menu__container {
+	height: 100%;
+}
+
+.mobile-menu__checkbox:checked ~ .mobile-menu__btn .mobile-menu__icon {
+	background: transparent;
+}
+
+.mobile-menu__checkbox:checked ~ .mobile-menu__btn .mobile-menu__icon::before, .mobile-menu__checkbox:checked ~ .mobile-menu__btn .mobile-menu__icon::after {
+	top: 0;
+}
+
+.mobile-menu__checkbox:checked ~ .mobile-menu__btn .mobile-menu__icon::after {
+	transform: rotate(-45deg);
+	-webkit-transform: rotate(-45deg);
+}
+
+.mobile-menu__checkbox:checked ~ .mobile-menu__btn .mobile-menu__icon::before {
+	transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+}
+
+.mobile-menu__container ul {
+	display: block;
+	position: absolute;
+	width: 100%;
+	top: 25%;
+	transform: translateY(-25%);
+}
+
+.nav-mobile ul li a{
+	color: #333;
+	font-size: 20px;
+	text-decoration: none;
+	position: relative;
+}
+
+.nav-mobile ul li a.active::before{
+	content: '';
+	display: block;
+	background: #323232;
+	width: 100%;
+	height: 1px;
+	position: absolute;
+	bottom: -4px;
+	left: 0;
+	transition: all 0.3s ease;
+}
+
+.header-dark .nav-mobile ul li a{
+	color: #fff;
+}
+
+.header-dark .nav-mobile ul li a.active::before{
+	background: #fff;
+}
+
+.nav-mobile ul li{
+	padding-bottom: 16px;
+}
+
+.nav-mobile ul li:last-child{
+	padding-bottom: 0;
+}
+
+/*HEADER*/
+
+.nav{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 1110px;
+	margin: 0 auto;
+	padding: 23px 0 26px 0;
+}
+
+.logo{
+	background: url(../img/logo/logo.svg) center center no-repeat;
+	-webkit-background-size: contain;
+	background-size: contain;
+	display: block;
+	width: 254px;
+	height: 51px;
+}
+
+ul{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+	justify-content: space-between;
+	width: 230px;
+}
+
+.nav li{
+	list-style: none;
+}
+
+.nav li a{
+	color: #333;
+	font-size: 18px;
+	font-family: 'Gilroy';
+	font-weight: 500;
+	font-style: normal;
+}
+
+.nav li a.link-page__active{
+	color: #1370aa;
+	position: relative;
+}
+
+.nav li a.link-page__active::before{
+	content: '';
+	display: block;
+	width: 100%;
+	height: 1px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	background: #1370aa;
+}
+
+.info {
+	text-align: right;
+}
+
+.number{
+	font-size: 24px;
+	font-family: 'Gilroy';
+	font-weight: bold;
+	font-style: normal;
+	color: #333;
+	transition: all 0.3s ease;
+}
+
+.number:hover{
+	color: #222
+}
+
+.battery-search{
+	color: #1370aa;
+	text-decoration: underline;
+	position: relative;
+}
+
+.battery-search::before{
+	content: '';
+	width: 15px;
+	height: 15px;
+	display: block;
+	background: url(../img/icon/search.svg) center center no-repeat;
+	-webkit-background-size: contain;
+	background-size: contain;
+	position: absolute;
+	left: -23px;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.battery-search:hover{
+	color: #15679a;
+	text-decoration: underline;
+}
+
+.media{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+}
+
+.social{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+	margin-right: 12px;
+}
+
+.social a{
+	display: block;
+	width: 22px;
+	height: 22px;
+}
+
+.social .WhatsApp{
+	background: url(../img/icon/WhatsApp.svg) center center no-repeat;
+	-webkit-background-size: contain;
+	background-size: contain;
+}
+
+.social .Telegram{
+	background: url(../img/icon/Telegram.svg) center center no-repeat;
+	-webkit-background-size: contain;
+	background-size: contain;
+	margin: 0 4px;
+}
+
+.social .Viber{
+	background: url(../img/icon/Viber.svg) center center no-repeat;
+	-webkit-background-size: contain;
+	background-size: contain;
+}
+
+/*THE END HEADER*/
+
+
+
+
+/*FOOTER*/
+
+.bodyy{
+	height: 500px;
+	display: block;
+}
+
+.footer {
+	background: #f9f9f9;
+	padding-bottom: 28px;
+}
+
+.privacy-policy, .copyright{
+	display: block;
+	font-size: 14px;
+	color: #a6a8a9;
+}
+
+.design-studio, .design{
+	display: block;
+	text-align: right;
+	font-size: 14px;
+	color: #a6a8a9;
+}
+
+.footer .nav {
+	padding: 23px 0 49px 0;
+}
+
+.info-footer {
+	text-align: right;
+}
+
+/*THE END FOOTER*/
+
+
