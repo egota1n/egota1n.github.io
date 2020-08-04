@@ -18,6 +18,7 @@ h1, h2, h3, h4, h5, h6{
 	font-weight: bold;
 	font-style: normal;
 	font-size: 48px;
+	color: #1c597f;
 }
 
 button:active, button:focus {
@@ -354,8 +355,62 @@ ul{
 
 /*THE END HEADER*/
 
+/*ERROR*/
 
+.section__error{
+	padding: 90px 0 249px 0;
+}
 
+.icon-error{
+	display: block;
+	width: 162px;
+	height: 122px;
+	background: url(../img/icon/battery.svg) center center no-repeat;
+	-webkit-background-size: contain;
+	background-size: contain;
+	margin: 0 auto;
+}
+
+.title-error{
+	font-size: 64px;
+	text-align: center;
+	margin: 51px 0 42px 0;
+}
+
+.description-error{
+	font-size: 36px;
+	color: #1c597f;
+	font-family: 'Gilroy', sans-serif;
+	font-weight: bold;
+	font-style: normal;
+	text-align: center;
+}
+
+.description-actions{
+	text-align: center;
+	font-size: 24px;
+	margin: 52px 0 44px 0;
+}
+
+.btn-main{
+	display: inline-block;
+	border-radius: 60px;
+	color: #fff;
+	font-size: 22px;
+	padding: 23px 100px;
+	background: rgb(25,108,159);
+	background: linear-gradient(180deg, rgba(25,108,159,1) 0%, rgba(58,151,209,1) 100%);
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.btn-main:hover{
+	background: linear-gradient(180deg, rgba(25,108,159,1) 0%, rgba(58,151,209,1) 100%);
+	color: #fff;
+}
+
+/*THE END ERROR*/
 
 /*FOOTER*/
 

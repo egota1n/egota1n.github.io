@@ -26,9 +26,117 @@
 
 	<!-- HEADER -->
 
-
+	<header class="header" id="header">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<nav class="nav">
+						<a href="#" class="logo"></a>
+						<ul>
+							<li><a href="#" class="link-page link-page__active">Каталог</a></li>
+							<li><a href="#" class="link-page">Услуги</a></li>
+							<li><a href="#" class="link-page">Контакты</a></li>
+						</ul>
+						<div class="info">
+							<div class="media">
+								<div class="social">
+									<a href="#" class="WhatsApp"></a>
+									<a href="#" class="Telegram"></a>
+									<a href="#" class="Viber"></a>
+								</div>
+								<a href="#" class="number">8 (906) 100 84 42</a>
+							</div>
+							<p class="address">Уфа, ул. 50-лет Октября 13 корп.1</p>
+							<a href="#" class="battery-search">Подобрать аккумулятор</a>
+						</div>
+					</nav>
+					<nav class="nav-mobile">
+						<a href="#" class="logo"></a>
+						<input type="checkbox" id="checkbox" class="mobile-menu__checkbox">
+						<label for="checkbox" class="mobile-menu__btn"><div class="mobile-menu__icon"></div></label>
+						<div class="mobile-menu__container">
+							<ul>
+								<li><a href="#" class="link-page link-page__active">Каталог</a></li>
+								<li><a href="#" class="link-page">Услуги</a></li>
+								<li><a href="#" class="link-page">Контакты</a></li>
+							</ul>
+							<div class="info">
+								<div class="media">
+									<div class="social">
+										<a href="#" class="WhatsApp"></a>
+										<a href="#" class="Telegram"></a>
+										<a href="#" class="Viber"></a>
+									</div>
+									<a href="#" class="number">8 (906) 100 84 42</a>
+								</div>
+								<p class="address">Уфа, ул. 50-лет Октября 13 корп.1</p>
+								<a href="#" class="battery-search">Подобрать аккумулятор</a>
+							</div>
+						</div>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</header>
 
 	<!-- THE END HEADER -->
+
+	<!-- ERROR -->
+
+	<section class="section__error" id="section__error">
+		<div class="container">
+			<div class="col-12">
+				<div class="icon-error"></div>
+				<h1 class="title-error">Ошибка 404</h1>
+				<p class="description-error">Такой страницы не существует</p>
+				<p class="description-actions">Перейдите на главную страницу сайта</p>
+				<a href="#" class="btn-main">На главную</a>
+			</div>
+		</div>
+	</section>
+
+	<!-- THE END ERROR -->
+
+	<!-- FOOTER -->
+
+	<footer class="footer" id="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<nav class="nav">
+						<a href="#" class="logo"></a>
+						<ul>
+							<li><a href="#" class="link-page link-page__active">Каталог</a></li>
+							<li><a href="#" class="link-page">Услуги</a></li>
+							<li><a href="#" class="link-page">Контакты</a></li>
+						</ul>
+						<div class="info-footer">
+							<div class="media">
+								<div class="social">
+									<a href="#" class="WhatsApp"></a>
+									<a href="#" class="Telegram"></a>
+									<a href="#" class="Viber"></a>
+								</div>
+								<a href="#" class="number">8 (906) 100 84 42</a>
+							</div>
+							<p class="address">Уфа, ул. 50-лет Октября 13 корп.1</p>
+							<a href="#" class="battery-search">Подобрать аккумулятор</a>
+						</div>
+					</nav>
+				</div>
+				<div class="col-12 order-2 order-sm-1 col-sm-6">
+					<a href="#" class="privacy-policy">Политика конфиденциальности</a>
+					<p class="copyright">© АКБМастер102.рф | Все права защищены</p>
+				</div>
+				<div class="col-12 order-1 order-sm-2 col-sm-6">
+					<p class="design">Дизайн сайта</p>
+					<a href="#" class="design-studio">MARTY-DESIGN.RU</a>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<!-- THE END FOOTER -->
 
 
 	<!-- Slick slider -->
@@ -37,5 +145,25 @@
 	<!-- Bootstrap -->
 	<link rel="stylesheet" href="assets/js/jquery-3.5.1.slim.min.js">
 	<script src="assets/js/bootstrap.min.js"></script>
+	<!-- Scroll -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$("a[href^='#']").click(function(){
+				var _href = $(this).attr("href");
+				$("html, body").animate({scrollTop: $(_href).offset().top+"px"});
+				return false;
+			});
+		});
+	</script>
+	<script>
+		$('.link').click(function(){
+			$(".mobile-menu__checkbox").prop("checked", false);
+			document.querySelector("body").classList.toggle("check", this.checked);
+		})
+		document.querySelector("input[type=checkbox]").onchange = function(){
+			document.querySelector("body").classList.toggle("check", this.checked);
+		}
+	</script>
 </body>
 </html>
