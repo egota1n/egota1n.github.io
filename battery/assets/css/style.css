@@ -528,6 +528,134 @@ ul{
 
 /*THE END PRIVACY POLICY*/
 
+/*REQUEST*/
+
+.section__request{
+	padding: 81px 0 102px 0;
+}
+
+.correct{
+	display: block;
+	width: 70px;
+	height: 70px;
+	background: url(../img/icon/correct.svg) center center no-repeat;
+	-webkit-background-size: contain;
+	background-size: contain;
+	margin: 0 auto;
+}
+
+.title-request{
+	text-align: center;
+	text-transform: uppercase;
+	margin: 42px 0 35px 0;
+}
+
+.description-request{
+	text-align: center;
+	width: 392px;
+	margin: 35px auto 0 auto;
+	font-size: 24px;
+}
+
+.title-recommendations{
+	font-size: 36px;
+	text-align: center;
+	margin-bottom: 18px;
+}
+
+.title-card__recommendation{
+	font-size: 18px;
+	color: #333;
+	text-transform: uppercase;
+	text-align: center;
+	width: 214px;
+	margin: 14px auto;
+}
+
+.price{
+	font-size: 12px;
+	text-align: center;
+}
+
+.value{
+	font-size: 18px;
+	font-weight: bold;
+	text-align: center;
+	margin-bottom: 16px;
+}
+
+.btn-more{
+	display: inline-block;
+	border-radius: 60px;
+	color: #fff;
+	font-size: 14x;
+	padding: 15px 64px;
+	background: rgb(25,108,159);
+	background: linear-gradient(180deg, rgba(25,108,159,1) 0%, rgba(58,151,209,1) 100%);
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.btn-more:hover{
+	color: #fff;
+}
+
+.block-recommendations{
+	margin-top: 135px;
+}
+
+.recommendations{
+	padding: 28px 0 31px 0;
+}
+
+.card-recommendation{
+	background: #fff;
+	border-radius: 10px;
+	padding: 22px 0 33px 0;
+	-webkit-box-shadow: 0px 2px 23px 0px rgba(0,0,0,0.09);
+	-moz-box-shadow: 0px 2px 23px 0px rgba(0,0,0,0.09);
+	box-shadow: 0px 2px 23px 0px rgba(0,0,0,0.09);
+	position: relative;
+	z-index: 999999;
+}
+
+.effect{
+	display: block;
+	background: #fff;
+	border-radius: 10px;
+	width: 242px;
+	height: 30px;
+	position: absolute;
+	bottom: -9px;
+	left: 50%;
+	transform: translateX(-50%);
+	-webkit-box-shadow: 0px 2px 23px 0px rgba(0,0,0,0.09);
+	-moz-box-shadow: 0px 2px 23px 0px rgba(0,0,0,0.09);
+	box-shadow: 0px 2px 23px 0px rgba(0,0,0,0.09);
+	z-index: 1;
+}
+
+.header-card__recommendation{
+	display: block;
+	width: 228px;
+	height: 171px;
+	background: url(../img/bg/battery_charger.png) center center no-repeat;
+	-webkit-background-size: contain;
+	background-size: contain;
+	margin: 0 auto;
+}
+
+.btn-request{
+	margin-top: 37px;
+}
+
+.block-request {
+	background: url(../img/bg/load_fork.png) top 130px left 0 no-repeat, url(../img/bg/сrocodile.png) 90% 100% no-repeat;
+}
+
+/*THE END REQUEST*/
+
 /*FOOTER*/
 
 .bodyy{
@@ -570,6 +698,14 @@ ul{
 /*THE END FOOTER*/
 
 
+/*MEDIA*/ 
+
+@media (max-width: 1745px) {
+	.block-request {
+		background: url(../img/bg/load_fork.png) top 130px left 0 no-repeat, url(../img/bg/сrocodile.png) 100% 100% no-repeat;
+	}
+}
+
 /*Большие девайсы (большие десктопы, < 1200px)*/
 @media (max-width: 1199.98px) {
 	.nav {
@@ -591,6 +727,34 @@ ul{
 	}
 	.section__error {
 		padding: 85px 0 180px 0;
+	}
+	.block-request {
+		background-size: 290px, 250px;
+	}
+	h1, h2, h3, h4, h5, h6 {
+		font-size: 36px;
+	}
+	.description-request {
+		width: 326px;
+		font-size: 20px;
+	}
+	.header-card__recommendation {
+		width: 210px;
+		height: 158px;
+	}
+	.title-card__recommendation {
+		font-size: 16px;
+		width: 191px;
+	}
+	a.btn-more {
+		padding: 14px 55px;
+		font-size: 14px;
+	}
+	.value {
+		font-size: 17px;
+	}
+	.effect {
+		width: 174px;
 	}
 }
 
@@ -650,6 +814,35 @@ ul{
 	}
 	.section__error {
 		padding: 85px 0 140px 0;
+	}
+	h1, h2, h3, h4, h5, h6 {
+		font-size: 32px;
+	}
+	.block-request {
+		background: url(../img/bg/load_fork.png) top 150px left 0 no-repeat, url(../img/bg/сrocodile.png) 100% 100% no-repeat;
+		background-size: 235px, 210px;
+	}
+	.description-request {
+		width: 294px;
+		font-size: 18px;
+	}
+	.title-recommendations {
+		font-size: 28px;
+		margin-bottom: 18px;
+	}
+	.effect {
+		width: 255px;
+		bottom: -11px;
+	}
+	.title-card__recommendation {
+		font-size: 16px;
+		width: 191px;
+	}
+	.value {
+		font-size: 17px;
+	}
+	.first-card, .second-card {
+		margin-bottom: 30px;
 	}
 }
 
@@ -745,6 +938,30 @@ ul{
 		left: 50%;
 		transform: translateX(-50%);
 	}
+	.effect {
+		width: 190px;
+	}
+	.correct {
+		width: 55px;
+		height: 55px;
+	}
+	h1, h2, h3, h4, h5, h6 {
+		font-size: 28px;
+	}
+	.title-request {
+		margin: 34px 0 30px 0;
+	}
+	.block-request {
+		background: url(../img/bg/load_fork.png) top 189px left 0 no-repeat, url(../img/bg/сrocodile.png) 100% 100% no-repeat;
+		background-size: 210px, 185px
+	}
+	.block-recommendations {
+		margin-top: 180px;
+	}
+	.title-recommendations {
+		font-size: 26px;
+		margin-bottom: 10px;
+	}
 }
 
 /*Экстрамалые девайсы («телефоны», < 576px)*/
@@ -780,4 +997,27 @@ ul{
 	.section__privacy-policy {
 		background-position: bottom 0 right 0;
 	}
+	h1, h2, h3, h4, h5, h6 {
+		font-size: 26px;
+	}
+	.block-request {
+		background: url(../img/bg/load_fork.png) top 230px left 0 no-repeat, url(../img/bg/сrocodile.png) 100% 100% no-repeat;
+		background-size: 165px, 160px;
+	}
+	.effect {
+		width: 70%;
+		max-width: 280px;
+	}
+	.card-recommendation {
+		max-width: 350px;
+		margin: 0 auto;
+	}
+	.description-request {
+		width: 261px;
+		font-size: 16px;
+	}
+	.first-card, .second-card, .third-card, .fourth-card {
+		margin-bottom: 30px;
+	}
 }
+
