@@ -14,13 +14,8 @@
 	<meta name="theme-color" content="#ffffff">
 	<!-- Bootstrap --> 
 	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
-	<!-- Slick Slider -->
-	<link rel="stylesheet" href="assets/css/slick.css">
-	<link rel="stylesheet" href="assets/css/slick-theme.css">
 	<!-- Styles -->
 	<link rel="stylesheet" href="assets/css/style.css">
-	<link rel="stylesheet" href="assets/css/media.css">
-	<link rel="stylesheet" href="assets/css/font.css">
 </head>
 <body>
 
@@ -184,12 +179,16 @@
 
 	<!-- THE END FOOTER -->
 
-
-	<!-- Slick slider -->
-	<script src="assets/js/jquery-2.2.0.min.js"></script>
-	<script src="assets/js/slick.min.js" type="text/javascript" charset="utf-8"></script>
-	<!-- Bootstrap -->
-	<link rel="stylesheet" href="assets/js/jquery-3.5.1.slim.min.js">
-	<script src="assets/js/bootstrap.min.js"></script>
+	<!-- Scroll -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	<script>
+		$('.link').click(function(){
+			$(".mobile-menu__checkbox").prop("checked", false);
+			document.querySelector("body").classList.toggle("check", this.checked);
+		})
+		document.querySelector("input[type=checkbox]").onchange = function(){
+			document.querySelector("body").classList.toggle("check", this.checked);
+		}
+	</script>
 </body>
 </html>
