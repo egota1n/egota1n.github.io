@@ -528,6 +528,287 @@ ul{
 
 /*THE END PRIVACY POLICY*/
 
+/*ACCESSORY*/
+
+.title-page_accessory{
+	font-size: 36px;
+	width: 428px;
+	margin-bottom: 26px;
+	text-transform: uppercase;
+}
+
+.section__accessory{
+	padding-bottom: 67px;
+	background: url(../img/bg/wrench.png) center center no-repeat;
+	-webkit-background-size: auto;
+	background-size: auto;
+	background-position: bottom 0 right 50px;
+}
+
+.characteristic{
+	width: 257px;
+}
+
+.characteristic, .characteristic-value{
+	font-size: 24px;
+	color: #1c597f;
+}
+
+.title-form{
+	font-size: 24px;
+	width: 262px;
+	text-align: center;
+	margin: 0 auto;
+	margin-bottom: 20px;
+}
+
+.specifications{
+	margin-bottom: 88px;
+}
+
+.booking-form{
+	padding: 36px 0 31px 0;
+	border-radius: 10px;
+	background: #fafafa;
+	-webkit-box-shadow: 0px 2px 23px 0px rgba(0,0,0,0.09);
+	-moz-box-shadow: 0px 2px 23px 0px rgba(0,0,0,0.09);
+	box-shadow: 0px 2px 23px 0px rgba(0,0,0,0.09);
+	position: relative;
+	z-index: 999;
+}
+
+.effect.booking-effect {
+	width: 80%;
+	bottom: -7px;
+}
+
+.booking-form::before{
+	content: '';
+	display: block;
+	width: 148px;
+	height: 144px;
+	position: absolute;
+	top: 86px;
+	left: -92px;
+	background: url(../img/bg/nut.png) center center no-repeat;
+	-webkit-background-size: contain;
+	background-size: contain;
+}
+
+.number__booking-form {
+	display: block;
+	margin: 0 auto;
+	padding: 23px 17px 23px 80px;
+	border-radius: 37px;
+	border: 0;
+	background: #ececec;
+	width: auto;
+	font-size: 22px;
+	color: #333;
+}
+
+.number__booking-form::-webkit-input-placeholder {color:#bcbcbc}
+.number__booking-form::-moz-placeholder          {color:#bcbcbc}
+.number__booking-form:-moz-placeholder           {color:#bcbcbc}
+.number__booking-form:-ms-input-placeholder      {color:#bcbcbc}
+
+.btn-send{
+	margin: 15px 0 16px 0;
+	font-size: 22px;
+	padding: 25px 75px;
+	display: inline-block;
+	border-radius: 60px;
+	color: #fff;
+	background: rgb(25,108,159);
+	background: linear-gradient(180deg, rgba(25,108,159,1) 0%, rgba(58,151,209,1) 100%);
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+	border: 0;
+}
+
+.check_booking-form{
+	display: none;
+}
+
+.check_booking-form:checked ~ .label_booking-form{
+	color: #333;
+}
+
+.label_booking-form:hover{
+	color: #999;
+}
+
+.label_booking-form:hover svg{
+	fill: #cd7c7c;
+}
+
+.check_booking-form:checked ~ .label_booking-form svg{
+	fill: #cc3434;
+}
+
+.label_booking-form{
+	display: block;
+	-moz-user-select: none;
+	-khtml-user-select: none;
+	user-select: none;
+	cursor: pointer;
+	font-size: 10px;
+	width: 190px;
+	margin: 0 auto;
+	color: #d4d4d4;
+	text-align: center;
+	transition: all 0.3s ease;
+}
+
+.label_booking-form svg {
+	width: 8px;
+	height: 8px;
+	fill: #d4d4d4;
+	transition: all 0.3s ease;
+	position: relative;
+	right: 5px;
+	bottom: 1px;
+}
+
+.block-other{
+	display: block;
+	margin: 0 auto;
+}
+
+.other-form{
+	text-align: center;
+	font-size: 24px;
+	color: #1c597f;
+}
+
+.contact-form{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+	justify-content: center;
+}
+
+.number-form{
+	font-size: 36px;
+	color: #1c597f;
+	font-weight: bold;
+}
+
+.contact-form .social a {
+	display: block;
+	width: 40px;
+	height: 40px;
+}
+
+.block__price-product{
+	background: #1c597f;
+	padding: 13px 0 16px 39px;
+	border-radius: 2px;
+	margin-top: 63px;
+}
+.fotorama__thumb-border {
+	background-image: none!important;
+	border-bottom: 3px solid #69b9ea!important;
+}
+
+.price-product{
+	font-size: 23px;
+	color: #fff;
+}
+
+.value-product{
+	font-size: 34px;
+	font-weight: bold;
+	color: #fff;
+}
+
+.fotorama__nav__shaft::before {
+	content: '';
+	width: 100%;
+	height: 1px;
+	background: #E8E8E8;
+	display: block;
+	position: absolute;
+	bottom: 15px;
+}
+
+.fotorama__nav.fotorama__nav--thumbs {
+	position: relative;
+}
+
+.fotorama__arr.fotorama__arr--prev, .fotorama__arr.fotorama__arr--next {
+	background: none;
+}
+
+.fotorama__arr.fotorama__arr--prev::before {
+	content: "";
+	display: block;
+	width: 21px;
+	height: 2px;
+	background: #c3c3c3;
+	transform: rotate(135deg);
+	border-radius: 90px;
+	position: absolute;
+	left: 11px;
+	top: 7px;
+}
+
+.fotorama__arr.fotorama__arr--prev::after {
+	content: "";
+	display: block;
+	width: 21px;
+	height: 2px;
+	background: #c3c3c3;
+	transform: rotate(45deg);
+	border-radius: 90px;
+	position: absolute;
+	left: 11px;
+	top: 21px;
+}
+
+.fotorama__nav__frame.fotorama__nav__frame--thumb {
+	opacity: 0.3;
+	transition: all 0.7s ease;
+}
+
+.fotorama__nav__frame.fotorama__nav__frame--thumb.fotorama__active {
+	opacity: 1;
+	transition: all 0.7s ease;
+}
+
+.fotorama__arr.fotorama__arr--next::before {
+	content: "";
+	display: block;
+	width: 21px;
+	height: 2px;
+	background: #c3c3c3;
+	transform: rotate(45deg);
+	border-radius: 90px;
+	position: absolute;
+	left: 11px;
+	top: 7px;
+}
+
+.fotorama__arr.fotorama__arr--next::after {
+	content: "";
+	display: block;
+	width: 21px;
+	height: 2px;
+	background: #c3c3c3;
+	transform: rotate(135deg);
+	border-radius: 90px;
+	position: absolute;
+	left: 11px;
+	top: 21px;
+}
+
+/*THE END ACCESSORY*/
+
 /*REQUEST*/
 
 .section__request{
@@ -761,6 +1042,34 @@ ul{
 	.effect {
 		width: 174px;
 	}
+	.title-page_accessory {
+		font-size: 34px;
+	}
+	.characteristic, .characteristic-value {
+		font-size: 18px;
+	}
+	.value-product {
+		font-size: 30px;
+	}
+	.price-product {
+		font-size: 20px;
+	}
+	.number-form {
+		font-size: 28px;
+	}
+	.contact-form .social a {
+		width: 30px;
+		height: 30px;
+	}
+	.other-form {
+		font-size: 22px;
+	}
+	.section__accessory {
+		background-position: bottom -75px right 50px;
+	}
+	.characteristic {
+		width: 240px;
+	}
 }
 
 /*Средние девайсы («таблетки», < 992px) */
@@ -849,10 +1158,6 @@ ul{
 	.first-card, .second-card {
 		margin-bottom: 30px;
 	}
-}
-
-/*Малые девайсы («ландшафтные», < 768px)*/
-@media (max-width: 767.98px) {
 	.nav-mobile {
 		display: block;
 	}
@@ -881,6 +1186,58 @@ ul{
 		width: 20px;
 		height: 20px;
 	}
+	.section__accessory {
+		background-position: bottom 0 right 50px;
+	}
+	.characteristic {
+		width: 202px;
+	}
+	.characteristic, .characteristic-value {
+		font-size: 16px;
+	}
+	.title-page_accessory {
+		font-size: 28px;
+		width: 289px;
+	}
+	.number__booking-form {
+		font-size: 18px;
+	}
+	.btn-send {
+		font-size: 18px;
+		padding: 21px 70px;
+	}
+	.title-form {
+		font-size: 22px;
+	}
+	.booking-form::before {
+		width: 120px;
+		height: 117px;
+		top: 86px;
+		left: -78px;
+	}
+	.price-product {
+		font-size: 18px;
+	}
+	.value-product {
+		font-size: 28px;
+	}
+	.number-form {
+		font-size: 21px;
+	}
+	.contact-form .social a {
+		width: 20px;
+		height: 20px;
+	}
+	.contact-form .social {
+		margin-right: 10px;
+	}
+	.other-form {
+		font-size: 19px;
+	}
+}
+
+/*Малые девайсы («ландшафтные», < 768px)*/
+@media (max-width: 767.98px) {
 	.footer .nav {
 		padding: 23px 0 25px 0;
 		display: block;
@@ -967,6 +1324,26 @@ ul{
 		font-size: 26px;
 		margin-bottom: 10px;
 	}
+	.title-page_accessory {
+		font-size: 27px;
+		width: 100%;
+		margin-bottom: 22px;
+	}
+	.booking-form::before {
+		width: 123px;
+		height: 120px;
+		top: 86px;
+		left: -59px;
+	}
+	.booking-form {
+		margin-bottom: 40px;
+	}
+	.characteristic {
+		width: 180px;
+	}
+	.specifications table {
+		margin: 0 auto;
+	}
 }
 
 /*Экстрамалые девайсы («телефоны», < 576px)*/
@@ -1023,6 +1400,25 @@ ul{
 	}
 	.first-card, .second-card, .third-card, .fourth-card {
 		margin-bottom: 30px;
+	}
+	.section__accessory .link-location {
+		font-size: 11px;
+	}
+	.title-page_accessory {
+		font-size: 24px;
+		text-align: center;
+	}
+	.booking-form::before {
+		width: 100px;
+		height: 97px;
+		top: 86px;
+		left: -52px;
+	}
+	.other-form {
+		font-size: 17px;
+	}
+	.number-form {
+		font-size: 19px;
 	}
 }
 
