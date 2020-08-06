@@ -446,31 +446,15 @@ ul{
 	position: relative;
 }
 
-/*.effect-card-services{
-	display: block;
-	background: #fff;
-	border-radius: 10px;
-	width: 75%;
-	height: 30px;
-	position: absolute;
-	bottom: -9px;
-	left: 50%;
-	transform: translateX(-50%);
-	-webkit-box-shadow: 0px 2px 23px 0px rgba(0,0,0,0.09);
-	-moz-box-shadow: 0px 2px 23px 0px rgba(0,0,0,0.09);
-	box-shadow: 0px 2px 23px 0px rgba(0,0,0,0.09);
-	z-index: 1;
-}*/
-
 .card-services1 .head__card-services, .card-services2 .head__card-services, .card-services3 .head__card-services, .card-services4 .head__card-services{
 	border-radius: 10px 10px 0 0;
 	display: block;
 	width: 100%;
 	height: 158px;
-	-webkit-background-size: contain;
-	background-size: contain;
-	background-position: center center;
-	background-repeat: no-repeat;
+	-webkit-background-size: contain!important;
+	background-size: contain!important;
+	background-position: center center!important;
+	background-repeat: no-repeat!important;
 }
 
 .card-services1 .head__card-services{
@@ -502,10 +486,10 @@ ul{
 	display: block;
 	width: 100%;
 	height: 198px;
-	-webkit-background-size: contain;
-	background-size: contain;
-	background-repeat: no-repeat;
-	background-position: center center;
+	-webkit-background-size: contain!important;
+	background-size: contain!important;
+	background-repeat: no-repeat!important;
+	background-position: center center!important;
 	border-radius: 10px;
 	margin-bottom: 12px;
 }
@@ -562,13 +546,24 @@ ul{
 	left: 0;
 }
 
+.find-video{
+	font-size: 18px;
+	color: #1e73a9;
+	text-decoration: underline;
+}
+
+.find-video:hover{
+	color: #11547e;
+	text-decoration: underline;
+}
+
 .block__find-chart{
-	margin-top: 84px;
+	margin-top: 72px;
 	margin-bottom: 17px;
 }
 
 .block__find-numb{
-	margin-top: 84px;
+	margin-top: 72px;
 	margin-bottom: 50px;
 }
 
@@ -1383,6 +1378,24 @@ ul{
 	.hint-content {
 		font-size: 14px;
 	}
+	.description__card-services {
+		width: auto;
+	}
+	.section__services {
+		padding: 72px 0 95px 0;
+	}
+	.block__find-numb {
+		margin-top: 72px;
+	}
+	.bg-find1, .bg-find2, .bg-find3, .bg-find4, .bg-find5, .bg-find6, .bg-find7, .bg-find8 {
+		height: 154px;
+	}
+	.card-services1 .head__card-services, .card-services2 .head__card-services, .card-services3 .head__card-services, .card-services4 .head__card-services {
+		height: 123px;
+	}
+	.block__find-numb, .block__find-chart {
+		margin-top: 62px;
+	}
 }
 
 /*Средние девайсы («таблетки», < 992px) */
@@ -1557,6 +1570,33 @@ ul{
 	.hint-content {
 		top: -66px;
 	}
+	.card-services1 .head__card-services, .card-services2 .head__card-services, .card-services3 .head__card-services, .card-services4 .head__card-services {
+		background-size: cover!important;
+		height: 173px;
+	}
+	.description__card-services {
+		width: 224px;
+		margin: 13px auto 20px auto;
+	}
+	.bg-find1, .bg-find2, .bg-find3, .bg-find4, .bg-find5, .bg-find6, .bg-find7, .bg-find8 {
+		-webkit-background-size: cover!important;
+		background-size: cover!important;
+	}
+	.find-value {
+		font-size: 20px;
+	}
+	.find-video {
+		font-size: 16px;
+	}
+	.section__find {
+		padding: 43px 0 78px 0;
+	}
+	.section__services {
+		padding: 62px 0 85px 0;
+	}
+	.card-services {
+		margin-top: 40px;
+	}
 }
 
 /*Малые девайсы («ландшафтные», < 768px)*/
@@ -1696,6 +1736,17 @@ ul{
 	.specifications {
 		margin-bottom: 40px;
 	}
+	.description__card-services {
+		width: auto;
+		margin: 13px auto 20px auto;
+		text-align: center;
+	}
+	.block__find-numb, .block__find-addr, .block__find-chart{
+		margin-bottom: 35px;
+	}
+	.block__find-chart{
+		margin-top: 0;
+	}
 }
 
 /*Экстрамалые девайсы («телефоны», < 576px)*/
@@ -1791,6 +1842,15 @@ ul{
 		border: 10px solid transparent;
 		border-right: 10px solid #fff;
 		border-color: #fff transparent transparent transparent;
+	}
+	.section__services {
+		padding: 52px 0 65px 0;
+	}
+	.card-services {
+		margin-top: 30px;
+	}
+	.block__find-numb, .block__find-chart {
+		margin-top: 44px;
 	}
 }
 
