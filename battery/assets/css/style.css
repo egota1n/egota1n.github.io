@@ -405,9 +405,12 @@ ul{
 
 .section__main{
 	padding: 0 0 224px 0;
-	background: #f0f3f8 url(../img/bg/main.png) center center no-repeat;
-	-webkit-background-size: cover;
-	background-size: cover;
+	background-color: #f0f3f8;
+	background: url(../img/bg/main.png), url(../img/bg/index-battery3.png);
+	background-repeat: no-repeat;
+	background-position: center center, 0% 20%;
+	-webkit-background-size: cover, 275px;
+	background-size: cover, 275px;
 }
 
 .title-main-section{
@@ -491,6 +494,35 @@ ul{
 	height: 23px;
 }
 
+/*.dfcghvbjkn{
+	position: relative;
+}
+
+.dfcghvbjkn::before {
+	content: '';
+	display: block;
+	width: 400px;
+	height: 350px;
+	position: absolute;
+	top: 20%;
+	right: -10px;
+	background: url(../img/bg/index-battery1.png) 100% 25% no-repeat;
+	-webkit-background-size: contain;
+	background-size: contain;
+}
+
+.dfcghvbjkn::after {
+	content: '';
+	display: block;
+	width: 275px;
+	height: 223px;
+	position: absolute;
+	top: 8%;
+	right: -80px;
+	background: url(../img/bg/index-battery2.png) 100% 25% no-repeat;
+	-webkit-background-size: contain;
+	background-size: contain;
+}*/
 
 .description-main span{
 	color: #fff;
