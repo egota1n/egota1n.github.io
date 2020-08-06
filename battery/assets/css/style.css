@@ -978,11 +978,11 @@ ul{
 	transform: translateX(-50%);
 }
 
-.btn-more .btn-main, .btn-error{
+.btn-more .btn-main, .btn-error, .btn-send:hover{
 	transition: all 1s ease;
 }
 
-.btn-more:hover, .btn-main:hover{
+.btn-more:hover, .btn-main:hover, .btn-send:hover{
 	color: #fff;
 	background: linear-gradient(180deg, rgba(25,108,159,1) 0%, rgb(36 171 255) 100%);
 }
