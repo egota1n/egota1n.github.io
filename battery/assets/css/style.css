@@ -532,7 +532,7 @@ ul{
 
 .title-page_accessory{
 	font-size: 36px;
-	width: 428px;
+	width: 100%;
 	margin-bottom: 26px;
 	text-transform: uppercase;
 }
@@ -577,9 +577,18 @@ ul{
 	z-index: 999;
 }
 
+.booking-form-mobile{
+	display: none;
+	margin-top: 40px;
+}
+
 .effect.booking-effect {
 	width: 80%;
 	bottom: -7px;
+}
+
+.booking-effect.booking-effec-mobile{
+	display: none;
 }
 
 .booking-form::before{
@@ -705,12 +714,14 @@ ul{
 	height: 40px;
 }
 
-.block__price-product{
+.block__price-product {
 	background: #1c597f;
 	padding: 13px 0 16px 39px;
 	border-radius: 2px;
 	margin-top: 63px;
+	width: 462px;
 }
+
 .fotorama__thumb-border {
 	background-image: none!important;
 	border-bottom: 3px solid #69b9ea!important;
@@ -719,6 +730,95 @@ ul{
 .price-product{
 	font-size: 23px;
 	color: #fff;
+}
+
+.block-with{
+	background: #1c597f;
+	display: block;
+	width: 50%;
+	padding: 13px 0 16px 0;
+	margin-top: 59px;
+	position: relative;
+}
+
+.hint{
+	position: absolute;
+	color: #073B5B;
+	font-weight: bold;
+	width: 19px;
+	height: 19px;
+	background: #fff;
+	border-radius: 90px;
+	vertical-align: middle;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	right: 6px;
+	top: 18px;
+	cursor: pointer;
+}
+
+.hint-content{
+	display: none;
+	position: absolute;
+	top: -50px;
+	left: 20px;
+	background: #fff;
+	padding: 10px 20px;
+	-webkit-box-shadow: 0px 2px 23px 0px rgba(0,0,0,0.09);
+	-moz-box-shadow: 0px 2px 23px 0px rgba(0,0,0,0.09);
+	box-shadow: 0px 2px 23px 0px rgba(0,0,0,0.09);
+	border-radius: 10px;
+	font-size: 15px;
+}
+
+.hint:hover ~ .hint-content {
+	display: block;
+}
+
+.hint-content:before {
+	content: " ";
+	position: absolute;
+	top: 98%;
+	left: 50%;
+	margin-left: -15px;
+	border-width: 5px;
+	border-style: solid;
+	height: 0;
+	width: 0px;
+	border: 15px solid transparent;
+	border-right: 15px solid #fff;
+	border-color: #fff transparent transparent transparent;
+	z-index: 2;
+}
+
+.block-without{
+	background: #f5f5f5;
+	display: block;
+	width: 50%;
+	padding: 13px 0 16px 0;
+	margin-top: 59px;
+}
+
+.block-with .price-product, .block-with .value-product{
+	text-align: center;
+}
+
+.block__price-product-exchange{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+	justify-content: space-between;
+	width: 480px;
+}
+
+.block-without .price-product, .block-without .value-product{
+	color: #1c597f;
+	text-align: center;
 }
 
 .value-product{
@@ -1070,6 +1170,12 @@ ul{
 	.characteristic {
 		width: 240px;
 	}
+	.block__price-product, .block__price-product-exchange{
+		width: 100%;
+	}
+	.hint-content {
+		font-size: 14px;
+	}
 }
 
 /*Средние девайсы («таблетки», < 992px) */
@@ -1216,7 +1322,14 @@ ul{
 		left: -78px;
 	}
 	.price-product {
-		font-size: 18px;
+		font-size: 17px;
+	}
+	.hint {
+		width: 16px;
+		height: 16px;
+		right: 5px;
+		top: 7px;
+		font-size: 15px;
 	}
 	.value-product {
 		font-size: 28px;
@@ -1233,6 +1346,9 @@ ul{
 	}
 	.other-form {
 		font-size: 19px;
+	}
+	.hint-content {
+		top: -66px;
 	}
 }
 
@@ -1328,6 +1444,7 @@ ul{
 		font-size: 27px;
 		width: 100%;
 		margin-bottom: 22px;
+		text-align: center;
 	}
 	.booking-form::before {
 		width: 123px;
@@ -1343,6 +1460,34 @@ ul{
 	}
 	.specifications table {
 		margin: 0 auto;
+	}
+	.effect.booking-effect {
+		width: 80%;
+		bottom: 29px;
+	}
+	.hint {
+		width: 19px;
+		height: 19px;
+		right: 13px;
+		top: 12px;
+	}
+	.hint-content {
+		top: -50px;
+	}
+	.booking-form.booking-form-mobile{
+		display: block;
+	}
+	.booking-form{
+		display: none;
+	}
+	.booking-effect{
+		display: none;
+	}
+	.booking-effect.booking-effec-mobile{
+		display: block;
+	}
+	.specifications {
+		margin-bottom: 40px;
 	}
 }
 
@@ -1419,6 +1564,26 @@ ul{
 	}
 	.number-form {
 		font-size: 19px;
+	}
+	.block-with .value-product, .block-without .value-product {
+		font-size: 21px;
+	}
+	.block-with .price-product, .block-without .price-product {
+		font-size: 14px;
+	}
+	.hint {
+		width: 16px;
+		height: 16px;
+		right: 4px;
+		top: 5px;
+		font-size: 15px;
+	}
+	.hint-content:before {
+		margin-left: -10px;
+		border-width: 5px;
+		border: 10px solid transparent;
+		border-right: 10px solid #fff;
+		border-color: #fff transparent transparent transparent;
 	}
 }
 
