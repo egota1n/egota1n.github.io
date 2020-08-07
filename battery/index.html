@@ -14,9 +14,8 @@
 	<meta name="theme-color" content="#ffffff">
 	<!-- Bootstrap --> 
 	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
-	<!-- Slick Slider -->
-	<link rel="stylesheet" href="assets/css/slick.css">
-	<link rel="stylesheet" href="assets/css/slick-theme.css">
+	<!--Plugin CSS file with desired skin-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css"/>
 	<!-- Styles -->
 	<link rel="stylesheet" href="assets/css/style.css">
 	<link rel="stylesheet" href="assets/css/media.css">
@@ -24,11 +23,7 @@
 </head>
 <body>
 
-	<!-- HEADER --><link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css" integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/js/bootstrap.min.js" integrity="sha384-XEerZL0cuoUbHE4nZReLT7nx9gQrQreJekYhJD9WNWhH8nEW+0c5qq7aIo2Wl30J" crossorigin="anonymous"></script>
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css" integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/js/bootstrap.min.js" integrity="sha384-XEerZL0cuoUbHE4nZReLT7nx9gQrQreJekYhJD9WNWhH8nEW+0c5qq7aIo2Wl30J" crossorigin="anonymous"></script>
-
+	<!-- HEADER -->
 
 	<header class="header" id="header">
 		
@@ -82,7 +77,7 @@
 									<a href="#" class="number">8 (906) 100 84 42</a>
 								</div>
 								<p class="address">Уфа, ул. 50-лет Октября 13 корп.1</p>
-								<a href="#" class="battery-search">Подобрать аккумулятор</a>
+								<a href="#"  class="battery-search">Подобрать аккумулятор</a>
 							</div>
 						</div>
 					</nav>
@@ -98,7 +93,7 @@
 						<p class="description-main description-main2">При сдаче старого АКБ <span data-title="скидка - от 800 руб.">скидка - от 800 руб.</span></p>
 						<p class="description-main description-main3">Доставим и установим <span data-title="в Уфе за ~60 минут">в Уфе за ~60 минут</span></p>
 					</div>
-					<a href="#" class="btn-main btn-index">Выбрать аккумулятор</a>
+					<a href="#modal_quiz" type="button" data-toggle="modal" data-target="#modal_quiz" class="btn-main btn-index">Выбрать аккумулятор</a>
 				</div>
 			</div>
 		</div>
@@ -137,11 +132,11 @@
 						<div class="block-option">
 							<h5 class="title-option">Производитель:</h5>
 							<select>
+								<option>Не выбран</option>
 								<option>Пункт 1</option>
-								<option>Пункт 2</option>
-								<option>Пункт 2</option>
-								<option>Пункт 2</option>
-								<option>Пункт 2</option>
+								<option>Пункт 3</option>
+								<option>Пункт 4</option>
+								<option>Пункт 5</option>
 							</select>
 						</div>
 						<div class="block-option">
@@ -159,237 +154,267 @@
 						</div>
 						<div class="block-option">
 							<h5 class="title-option">Ёмкость (Ah):</h5>
-							
+							<input type="text" class="js-range-slider1" name="my_range" value="" />
 						</div>
 						<div class="block-option">
 							<h5 class="title-option">Пусковой ток (A):</h5>
-
+							<input type="text" class="js-range-slider2" name="my_range" value="" />
 						</div>
-						<button class="btn-filter">Найти по параметрам</button>
-						<button class="btn-clear-filter">Сбросить фильтры</button>
+						<a href="#" class="btn-filter">Найти по параметрам</a>
+						<a href="#" class="btn-clear-filter">Сбросить фильтры</a>
 					</div>
 				</div>
 				<div class="col-12 col-md-8 col-lg-9">
 					<div class="cards-catalog">
 						<!-- card catalog -->
-						<div class="card-catalog">
-							<div class="head-card-catalog"></div>
-							<h4 class="title-card-catalog">Аккумулятор орион 6ст-55 ач обр. пол.</h4>
-							<table>
-								<tr>
-									<td class="characteristic">Ёмкость:</td>
-									<td class="characteristic-value">60 Ач</td>
-								</tr>
-								<tr>
-									<td class="characteristic">Пусковой ток:</td>
-									<td class="characteristic-value">520 А</td>
-								</tr>
-								<tr>
-									<td class="characteristic">Полярность:</td>
-									<td class="characteristic-value">Обратная</td>
-								</tr>
-								<tr>
-									<td class="characteristic">Габариты:</td>
-									<td class="characteristic-value">242х175х190</td>
-								</tr>
-							</table>
-							<div class="price-card-catalog">
-								<div class="block__price-product-exchange">
-									<div class="block-with">
-										<p class="price-product">Цена с обменом</p>
-										<div class="value-product">3 900 руб.</div>
-									</div>
-									<div class="block-without">
-										<p class="price-product">Цена без обмена</p>
-										<div class="value-product">4 700 руб.</div>
+						<div class="object-catalog">
+							<div class="card-catalog">
+								<div class="head-card-catalog"></div>
+								<h4 class="title-card-catalog">Аккумулятор орион 6ст-55 ач обр. пол.</h4>
+								<table>
+									<tr>
+										<td class="characteristic">Ёмкость:</td>
+										<td class="characteristic-value">60 Ач</td>
+									</tr>
+									<tr>
+										<td class="characteristic">Пусковой ток:</td>
+										<td class="characteristic-value">520 А</td>
+									</tr>
+									<tr>
+										<td class="characteristic">Полярность:</td>
+										<td class="characteristic-value">Обратная</td>
+									</tr>
+									<tr>
+										<td class="characteristic">Габариты:</td>
+										<td class="characteristic-value">242х175х190</td>
+									</tr>
+								</table>
+								<div class="price-card-catalog">
+									<div class="block__price-product-exchange">
+										<div class="block-with">
+											<p class="price-product">Цена с обменом</p>
+											<div class="value-product">3 900 руб.</div>
+										</div>
+										<div class="block-without">
+											<p class="price-product">Цена без обмена</p>
+											<div class="value-product">4 700 руб.</div>
+										</div>
 									</div>
 								</div>
+								<a href="#" class="btn-main btn-choose">Выбрать АКБ</a>
 							</div>
-							<a href="#" class="btn-main btn-choose">Выбрать АКБ</a>
+							<div class="effect booking-effect effect-card-catalog"></div>
 						</div>
 						<!-- card catalog -->
-						<div class="card-catalog">
-							<div class="head-card-catalog"></div>
-							<h4 class="title-card-catalog">Аккумулятор орион 6ст-55 ач обр. пол.</h4>
-							<table>
-								<tr>
-									<td class="characteristic">Ёмкость:</td>
-									<td class="characteristic-value">60 Ач</td>
-								</tr>
-								<tr>
-									<td class="characteristic">Пусковой ток:</td>
-									<td class="characteristic-value">520 А</td>
-								</tr>
-								<tr>
-									<td class="characteristic">Полярность:</td>
-									<td class="characteristic-value">Обратная</td>
-								</tr>
-								<tr>
-									<td class="characteristic">Габариты:</td>
-									<td class="characteristic-value">242х175х190</td>
-								</tr>
-							</table>
-							<div class="price-card-catalog">
-								<div class="block__price-product-exchange">
-									<div class="block-with">
-										<p class="price-product">Цена с обменом</p>
-										<div class="value-product">3 900 руб.</div>
-									</div>
-									<div class="block-without">
-										<p class="price-product">Цена без обмена</p>
-										<div class="value-product">4 700 руб.</div>
+						<div class="object-catalog">
+							<div class="card-catalog">
+								<div class="head-card-catalog"></div>
+								<h4 class="title-card-catalog">Аккумулятор орион 6ст-55 ач обр. пол.</h4>
+								<table>
+									<tr>
+										<td class="characteristic">Ёмкость:</td>
+										<td class="characteristic-value">60 Ач</td>
+									</tr>
+									<tr>
+										<td class="characteristic">Пусковой ток:</td>
+										<td class="characteristic-value">520 А</td>
+									</tr>
+									<tr>
+										<td class="characteristic">Полярность:</td>
+										<td class="characteristic-value">Обратная</td>
+									</tr>
+									<tr>
+										<td class="characteristic">Габариты:</td>
+										<td class="characteristic-value">242х175х190</td>
+									</tr>
+								</table>
+								<div class="price-card-catalog">
+									<div class="block__price-product-exchange">
+										<div class="block-with">
+											<p class="price-product">Цена с обменом</p>
+											<div class="value-product">3 900 руб.</div>
+										</div>
+										<div class="block-without">
+											<p class="price-product">Цена без обмена</p>
+											<div class="value-product">4 700 руб.</div>
+										</div>
 									</div>
 								</div>
+								<a href="#" class="btn-main btn-choose">Выбрать АКБ</a>
 							</div>
-							<a href="#" class="btn-main btn-choose">Выбрать АКБ</a>
+							<div class="effect booking-effect effect-card-catalog"></div>
 						</div>
 						<!-- card catalog -->
-						<div class="card-catalog">
-							<div class="head-card-catalog"></div>
-							<h4 class="title-card-catalog">Аккумулятор орион 6ст-55 ач обр. пол.</h4>
-							<table>
-								<tr>
-									<td class="characteristic">Ёмкость:</td>
-									<td class="characteristic-value">60 Ач</td>
-								</tr>
-								<tr>
-									<td class="characteristic">Пусковой ток:</td>
-									<td class="characteristic-value">520 А</td>
-								</tr>
-								<tr>
-									<td class="characteristic">Полярность:</td>
-									<td class="characteristic-value">Обратная</td>
-								</tr>
-								<tr>
-									<td class="characteristic">Габариты:</td>
-									<td class="characteristic-value">242х175х190</td>
-								</tr>
-							</table>
-							<div class="price-card-catalog">
-								<div class="block__price-product-exchange">
-									<div class="block-with">
-										<p class="price-product">Цена с обменом</p>
-										<div class="value-product">3 900 руб.</div>
-									</div>
-									<div class="block-without">
-										<p class="price-product">Цена без обмена</p>
-										<div class="value-product">4 700 руб.</div>
+						<div class="object-catalog">
+							<div class="card-catalog">
+								<div class="head-card-catalog"></div>
+								<h4 class="title-card-catalog">Аккумулятор орион 6ст-55 ач обр. пол.</h4>
+								<table>
+									<tr>
+										<td class="characteristic">Ёмкость:</td>
+										<td class="characteristic-value">60 Ач</td>
+									</tr>
+									<tr>
+										<td class="characteristic">Пусковой ток:</td>
+										<td class="characteristic-value">520 А</td>
+									</tr>
+									<tr>
+										<td class="characteristic">Полярность:</td>
+										<td class="characteristic-value">Обратная</td>
+									</tr>
+									<tr>
+										<td class="characteristic">Габариты:</td>
+										<td class="characteristic-value">242х175х190</td>
+									</tr>
+								</table>
+								<div class="price-card-catalog">
+									<div class="block__price-product-exchange">
+										<div class="block-with">
+											<p class="price-product">Цена с обменом</p>
+											<div class="value-product">3 900 руб.</div>
+										</div>
+										<div class="block-without">
+											<p class="price-product">Цена без обмена</p>
+											<div class="value-product">4 700 руб.</div>
+										</div>
 									</div>
 								</div>
+								<a href="#" class="btn-main btn-choose">Выбрать АКБ</a>
 							</div>
-							<a href="#" class="btn-main btn-choose">Выбрать АКБ</a>
+							<div class="effect booking-effect effect-card-catalog"></div>
 						</div>
 						<!-- card catalog -->
-						<div class="card-catalog">
-							<div class="head-card-catalog"></div>
-							<h4 class="title-card-catalog">Аккумулятор орион 6ст-55 ач обр. пол.</h4>
-							<table>
-								<tr>
-									<td class="characteristic">Ёмкость:</td>
-									<td class="characteristic-value">60 Ач</td>
-								</tr>
-								<tr>
-									<td class="characteristic">Пусковой ток:</td>
-									<td class="characteristic-value">520 А</td>
-								</tr>
-								<tr>
-									<td class="characteristic">Полярность:</td>
-									<td class="characteristic-value">Обратная</td>
-								</tr>
-								<tr>
-									<td class="characteristic">Габариты:</td>
-									<td class="characteristic-value">242х175х190</td>
-								</tr>
-							</table>
-							<div class="price-card-catalog">
-								<div class="block__price-product-exchange">
-									<div class="block-with">
-										<p class="price-product">Цена с обменом</p>
-										<div class="value-product">3 900 руб.</div>
-									</div>
-									<div class="block-without">
-										<p class="price-product">Цена без обмена</p>
-										<div class="value-product">4 700 руб.</div>
+						<div class="object-catalog">
+							<div class="card-catalog">
+								<div class="head-card-catalog"></div>
+								<h4 class="title-card-catalog">Аккумулятор орион 6ст-55 ач обр. пол.</h4>
+								<table>
+									<tr>
+										<td class="characteristic">Ёмкость:</td>
+										<td class="characteristic-value">60 Ач</td>
+									</tr>
+									<tr>
+										<td class="characteristic">Пусковой ток:</td>
+										<td class="characteristic-value">520 А</td>
+									</tr>
+									<tr>
+										<td class="characteristic">Полярность:</td>
+										<td class="characteristic-value">Обратная</td>
+									</tr>
+									<tr>
+										<td class="characteristic">Габариты:</td>
+										<td class="characteristic-value">242х175х190</td>
+									</tr>
+								</table>
+								<div class="price-card-catalog">
+									<div class="block__price-product-exchange">
+										<div class="block-with">
+											<p class="price-product">Цена с обменом</p>
+											<div class="value-product">3 900 руб.</div>
+										</div>
+										<div class="block-without">
+											<p class="price-product">Цена без обмена</p>
+											<div class="value-product">4 700 руб.</div>
+										</div>
 									</div>
 								</div>
+								<a href="#" class="btn-main btn-choose">Выбрать АКБ</a>
 							</div>
-							<a href="#" class="btn-main btn-choose">Выбрать АКБ</a>
+							<div class="effect booking-effect effect-card-catalog"></div>
 						</div>
 						<!-- card catalog -->
-						<div class="card-catalog">
-							<div class="head-card-catalog"></div>
-							<h4 class="title-card-catalog">Аккумулятор орион 6ст-55 ач обр. пол.</h4>
-							<table>
-								<tr>
-									<td class="characteristic">Ёмкость:</td>
-									<td class="characteristic-value">60 Ач</td>
-								</tr>
-								<tr>
-									<td class="characteristic">Пусковой ток:</td>
-									<td class="characteristic-value">520 А</td>
-								</tr>
-								<tr>
-									<td class="characteristic">Полярность:</td>
-									<td class="characteristic-value">Обратная</td>
-								</tr>
-								<tr>
-									<td class="characteristic">Габариты:</td>
-									<td class="characteristic-value">242х175х190</td>
-								</tr>
-							</table>
-							<div class="price-card-catalog">
-								<div class="block__price-product-exchange">
-									<div class="block-with">
-										<p class="price-product">Цена с обменом</p>
-										<div class="value-product">3 900 руб.</div>
-									</div>
-									<div class="block-without">
-										<p class="price-product">Цена без обмена</p>
-										<div class="value-product">4 700 руб.</div>
+						<div class="object-catalog">
+							<div class="card-catalog">
+								<div class="head-card-catalog"></div>
+								<h4 class="title-card-catalog">Аккумулятор орион 6ст-55 ач обр. пол.</h4>
+								<table>
+									<tr>
+										<td class="characteristic">Ёмкость:</td>
+										<td class="characteristic-value">60 Ач</td>
+									</tr>
+									<tr>
+										<td class="characteristic">Пусковой ток:</td>
+										<td class="characteristic-value">520 А</td>
+									</tr>
+									<tr>
+										<td class="characteristic">Полярность:</td>
+										<td class="characteristic-value">Обратная</td>
+									</tr>
+									<tr>
+										<td class="characteristic">Габариты:</td>
+										<td class="characteristic-value">242х175х190</td>
+									</tr>
+								</table>
+								<div class="price-card-catalog">
+									<div class="block__price-product-exchange">
+										<div class="block-with">
+											<p class="price-product">Цена с обменом</p>
+											<div class="value-product">3 900 руб.</div>
+										</div>
+										<div class="block-without">
+											<p class="price-product">Цена без обмена</p>
+											<div class="value-product">4 700 руб.</div>
+										</div>
 									</div>
 								</div>
+								<a href="#" class="btn-main btn-choose">Выбрать АКБ</a>
 							</div>
-							<a href="#" class="btn-main btn-choose">Выбрать АКБ</a>
+							<div class="effect booking-effect effect-card-catalog"></div>
 						</div>
 						<!-- card catalog -->
-						<div class="card-catalog">
-							<div class="head-card-catalog"></div>
-							<h4 class="title-card-catalog">Аккумулятор орион 6ст-55 ач обр. пол.</h4>
-							<table>
-								<tr>
-									<td class="characteristic">Ёмкость:</td>
-									<td class="characteristic-value">60 Ач</td>
-								</tr>
-								<tr>
-									<td class="characteristic">Пусковой ток:</td>
-									<td class="characteristic-value">520 А</td>
-								</tr>
-								<tr>
-									<td class="characteristic">Полярность:</td>
-									<td class="characteristic-value">Обратная</td>
-								</tr>
-								<tr>
-									<td class="characteristic">Габариты:</td>
-									<td class="characteristic-value">242х175х190</td>
-								</tr>
-							</table>
-							<div class="price-card-catalog">
-								<div class="block__price-product-exchange">
-									<div class="block-with">
-										<p class="price-product">Цена с обменом</p>
-										<div class="value-product">3 900 руб.</div>
-									</div>
-									<div class="block-without">
-										<p class="price-product">Цена без обмена</p>
-										<div class="value-product">4 700 руб.</div>
+						<div class="object-catalog">
+							<div class="card-catalog">
+								<div class="head-card-catalog"></div>
+								<h4 class="title-card-catalog">Аккумулятор орион 6ст-55 ач обр. пол.</h4>
+								<table>
+									<tr>
+										<td class="characteristic">Ёмкость:</td>
+										<td class="characteristic-value">60 Ач</td>
+									</tr>
+									<tr>
+										<td class="characteristic">Пусковой ток:</td>
+										<td class="characteristic-value">520 А</td>
+									</tr>
+									<tr>
+										<td class="characteristic">Полярность:</td>
+										<td class="characteristic-value">Обратная</td>
+									</tr>
+									<tr>
+										<td class="characteristic">Габариты:</td>
+										<td class="characteristic-value">242х175х190</td>
+									</tr>
+								</table>
+								<div class="price-card-catalog">
+									<div class="block__price-product-exchange">
+										<div class="block-with">
+											<p class="price-product">Цена с обменом</p>
+											<div class="value-product">3 900 руб.</div>
+										</div>
+										<div class="block-without">
+											<p class="price-product">Цена без обмена</p>
+											<div class="value-product">4 700 руб.</div>
+										</div>
 									</div>
 								</div>
+								<a href="#" class="btn-main btn-choose">Выбрать АКБ</a>
 							</div>
-							<a href="#" class="btn-main btn-choose">Выбрать АКБ</a>
+							<div class="effect booking-effect effect-card-catalog"></div>
 						</div>
 
 						<!-- end cards catalog -->
 					</div>
+					<nav class="col full pagination">
+						<ul>
+							<li><span class="page-numbers prev inactive">Назад</span></li>
+							<li><a href="#" class="page-numbers">1</a></li>
+							<li><a href="#" class="page-numbers">2</a></li>
+							<li><span class="page-numbers current">3</span></li>
+							<li><a href="#" class="page-numbers">4</a></li>
+							<li>...</li>
+							<li><a href="#" class="page-numbers">17</a></li>
+							<li><a href="#" class="page-numbers next">Далее</a></li>
+						</ul>
+					</nav>
 				</div>
 			</div>
 		</div>
@@ -412,7 +437,7 @@
 						<p class="description__card-services">Проверяем основные показатели аккумулятора.</p>
 						<a href="#" class="btn-main btn-services">Что входит в услугу</a>
 					</div>
-					<div class="effect-card-services"></div>
+					<div class="effect booking-effect effect-card-services"></div>
 				</div>
 				<div class="col-12 col-sm-6 col-lg-3">
 					<div class="card-services card-services2">
@@ -421,7 +446,7 @@
 						<p class="description__card-services">Проведем полное обслуживание аккумулятора.</p>
 						<a href="#" class="btn-main btn-services">Что входит в услугу</a>
 					</div>
-					<div class="effect-card-services"></div>
+					<div class="effect booking-effect effect-card-services"></div>
 				</div>
 				<div class="col-12 col-sm-6 col-lg-3">
 					<div class="card-services card-services3">
@@ -430,7 +455,7 @@
 						<p class="description__card-services">Доставим и установим по Уфе аккумулятор БЕСПЛАТНО</p>
 						<a href="#" class="btn-main btn-services">Что входит в услугу</a>
 					</div>
-					<div class="effect-card-services"></div>
+					<div class="effect booking-effect effect-card-services"></div>
 				</div>
 				<div class="col-12 col-sm-6 col-lg-3">
 					<div class="card-services card-services4">
@@ -439,7 +464,7 @@
 						<p class="description__card-services">Быстро разряжается свежий аккумулятор? Решим!</p>
 						<a href="#" class="btn-main btn-services">Что входит в услугу</a>
 					</div>
-					<div class="effect-card-services"></div>
+					<div class="effect booking-effect effect-card-services"></div>
 				</div>
 			</div>
 		</div>
@@ -507,6 +532,109 @@
 
 	<!-- THE END FIND -->
 
+
+	<!-- MODAL QUIZ -->
+
+	<div class="modal fade" id="modal_quiz" tabindex="-1" role="dialog" aria-labelledby="modal_quiz" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+
+				<div class="first-step quiz-steps">
+					<div class="bg-quiz bg-quiz1"></div>
+					<div class="logo"></div>
+					<h4 class="title-quiz">Затрудняетесь с выбором?<br>Мы подберем вам нужное!</h4>
+					<button type="button" class="close-modal" data-dismiss="modal" aria-label="Close"></button>
+					<p class="description-quiz">Ответьте на несколько вопросов, а мы предложим подходящие вам варианты:</p>
+					<a href="#" class="btn-main choose-quiz">Да, помогите подобрать</a>
+					<a href="#" class="no_choose-quiz">Спасибо, я справлюсь :)</a>
+					<div class="social-quiz">
+						<h5 class="title_social-quiz">Мы на связи круглосуточно:</h5>
+						<div class="contact-form">
+							<div class="social">
+								<a href="#" class="WhatsApp"></a>
+								<a href="#" class="Telegram"></a>
+								<a href="#" class="Viber"></a>
+							</div>
+							<p class="number-form">8 (906) 100 84 42</p>
+						</div>
+					</div>
+				</div>
+				<!-- End Step -->
+
+				<div class="second-step quiz-steps">
+					<div class="bg-quiz bg-quiz2"></div>
+					<div class="logo"></div>
+					<div class="progress-quiz" data-title="Шаг 1 из 3"></div>
+					<h4 class="title-quiz">Какой у вас автомобиль:</h4>
+					<p class="description-quiz">Напишите марку и модель</p>
+					<input class="input-car" type="text" maxlength="30" placeholder="Например - Шкода Октавиа, 2020">
+					<button type="button" class="close-modal" data-dismiss="modal" aria-label="Close"></button>
+					<a href="#" class="btn-main choose-quiz">Следующий вопрос</a>
+				</div>
+
+				<!-- End Step -->
+
+				<div class="third-step quiz-steps">
+					<div class="bg-quiz bg-quiz3"></div>
+					<button type="button" class="close-modal" data-dismiss="modal" aria-label="Close"></button>
+					<div class="logo"></div>
+					<div class="progress-quiz" data-title="Шаг 2 из 3"></div>
+					<h4 class="title-quiz">Хотите, чтобы мы привезли<br>аккумулятор к вам?</h4>
+					<div class="blocks-delivery_quiz">
+						<div class="block-delivery_quiz">
+							<input type="radio" name="delivery_quiz_in" id="delivery_quiz1">
+							<label for="delivery_quiz1">
+								<div class="type-delivery_quiz delivery_quiz1"></div>
+								<h5 class="title-delivery_quiz">Да, привезите его мне</h5>
+								<p class="description-delivery_quiz">Доставка по Уфе - <span>Бесплатная.</span><br>Время доставки <span>~60 минут</span></p>
+							</label>
+						</div>
+						<div class="block-delivery_quiz">
+							<input type="radio" name="delivery_quiz_in" id="delivery_quiz2" checked>
+							<label for="delivery_quiz2">
+								<div class="type-delivery_quiz delivery_quiz2"></div>
+								<h5 class="title-delivery_quiz">Я доеду до вас</h5>
+								<p class="description-delivery_quiz">Мы находимся по адресу:<br><span>Уфа, ул. 50-лет Октября 13 К1</span></p>
+							</label>
+						</div>
+					</div>
+				</div>
+				
+				<!-- End Step -->
+
+				<div class="fourth-step quiz-steps">
+					<div class="bg-quiz bg-quiz4"></div>
+					<div class="logo"></div>
+					<div class="progress-quiz" data-title="Шаг 3 из 3"></div>
+					<h4 class="title-quiz">Для точного подбора нужно<br>созвониться и уточнить детали:</h4>
+					<p class="description-quiz">Укажите телефон и после звонка мы забронируем аккумулятор на ваш номер:</p>
+					<input class="input-car input-order" type="text" maxlength="13" placeholder="8 (999) 999 99 99">
+					<button type="button" class="close-modal" data-dismiss="modal" aria-label="Close"></button>
+					<a href="#" class="btn-main choose-quiz order-quiz">Заказать аккумулятор</a>
+					<input type="checkbox" class="check_booking-form" id="check1" required><label class="label_booking-form" for="check1"><?xml version="1.0" encoding="iso-8859-1"?> <!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  --> <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"> <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="474.8px" height="474.801px" viewBox="0 0 474.8 474.801" style="enable-background:new 0 0 474.8 474.801;" xml:space="preserve"> <g> <g> <path d="M396.283,257.097c-1.14-0.575-2.282-0.862-3.433-0.862c-2.478,0-4.661,0.951-6.563,2.857l-18.274,18.271 c-1.708,1.715-2.566,3.806-2.566,6.283v72.513c0,12.565-4.463,23.314-13.415,32.264c-8.945,8.945-19.701,13.418-32.264,13.418 H82.226c-12.564,0-23.319-4.473-32.264-13.418c-8.947-8.949-13.418-19.698-13.418-32.264V118.622 c0-12.562,4.471-23.316,13.418-32.264c8.945-8.946,19.7-13.418,32.264-13.418H319.77c4.188,0,8.47,0.571,12.847,1.714 c1.143,0.378,1.999,0.571,2.563,0.571c2.478,0,4.668-0.949,6.57-2.852l13.99-13.99c2.282-2.281,3.142-5.043,2.566-8.276 c-0.571-3.046-2.286-5.236-5.141-6.567c-10.272-4.752-21.412-7.139-33.403-7.139H82.226c-22.65,0-42.018,8.042-58.102,24.126 C8.042,76.613,0,95.978,0,118.629v237.543c0,22.647,8.042,42.014,24.125,58.098c16.084,16.088,35.452,24.13,58.102,24.13h237.541 c22.647,0,42.017-8.042,58.101-24.13c16.085-16.084,24.134-35.45,24.134-58.098v-90.797 C402.001,261.381,400.088,258.623,396.283,257.097z"/> <path d="M467.95,93.216l-31.409-31.409c-4.568-4.567-9.996-6.851-16.279-6.851c-6.275,0-11.707,2.284-16.271,6.851 L219.265,246.532l-75.084-75.089c-4.569-4.57-9.995-6.851-16.274-6.851c-6.28,0-11.704,2.281-16.274,6.851l-31.405,31.405 c-4.568,4.568-6.854,9.994-6.854,16.277c0,6.28,2.286,11.704,6.854,16.274l122.767,122.767c4.569,4.571,9.995,6.851,16.274,6.851 c6.279,0,11.704-2.279,16.274-6.851l232.404-232.403c4.565-4.567,6.854-9.994,6.854-16.274S472.518,97.783,467.95,93.216z"/> </g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> </svg>Я ознакомлен (-а) и согласен (-а) с политикой конфиденциальности сайта</label>
+				</div>
+
+				<!-- End Step -->
+
+				<div class="fifth-step">
+					<button type="button" class="close-modal" data-dismiss="modal" aria-label="Close"></button>
+					<div class="logo"></div>
+					<div class="battery-ready"></div>
+					<h4 class="title-quiz">Мы получили ваш запрос<br>на подбор аккумулятора!</h4>
+					<p class="description-quiz">Сейчас проверим варианты для вашей машины и перезвоним с вариантами.</p>
+					<a href="#" type="button" data-dismiss="modal" aria-label="Close" class="close-step">Закрыть окно</a>
+				</div>
+
+				<!-- End Step -->
+
+			</div>
+			<div class="effect effect-modal"></div>
+		</div>
+	</div>
+
+	<!-- THE END MODAL QUIZ -->
+
+
 	<!-- FOOTER -->
 
 	<footer class="footer" id="footer">
@@ -548,13 +676,10 @@
 
 	<!-- THE END FOOTER -->
 
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css" integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/js/bootstrap.min.js" integrity="sha384-XEerZL0cuoUbHE4nZReLT7nx9gQrQreJekYhJD9WNWhH8nEW+0c5qq7aIo2Wl30J" crossorigin="anonymous"></script>
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css" integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<!-- Bootstrap -->
-	<link rel="stylesheet" href="assets/js/jquery-3.5.1.slim.min.js">
-	<script src="assets/js/bootstrap.min.js"></script>
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
 	<!-- Scroll -->
 	<script src="assets/js/jquery.min.js"></script>
 	<script>
@@ -566,5 +691,31 @@
 			document.querySelector("body").classList.toggle("check", this.checked);
 		}
 	</script>
+
+	<!--jQuery-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<!--Plugin JavaScript file-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"></script>
+	<script>
+		$(".js-range-slider1").ionRangeSlider({
+			type: "double",
+			skin: "round",
+			grid: false,
+			min: 10,
+			max: 240,
+			from: 55,
+			to: 100
+		});
+		$(".js-range-slider2").ionRangeSlider({
+			type: "double",
+			skin: "round",
+			grid: false,
+			min: 30,
+			max: 2000,
+			from: 700,
+			to: 1350
+		});
+	</script>
+
 </body>
 </html>

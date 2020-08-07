@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30" height="30" viewBox="0 0 30 30">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" y1="1" x2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#f1cb6d"/>
+      <stop offset="1" stop-color="#f3d995"/>
+    </linearGradient>
+  </defs>
+  <g id="Активная_галочка" data-name="Активная галочка" transform="translate(-1374.69 -2416)">
+    <circle id="Ellipse_1" data-name="Ellipse 1" cx="15" cy="15" r="15" transform="translate(1374.69 2416)" fill="url(#linear-gradient)"/>
+    <path id="Forma_1" data-name="Forma 1" d="M1389.115,2435.57a1.393,1.393,0,0,1-1.972,0l-3.055-3.06a1.4,1.4,0,0,1,1.972-1.975l1.82,1.823a.352.352,0,0,0,.5,0l4.928-4.937a1.4,1.4,0,0,1,1.972,1.975Z" fill="#fff"/>
+  </g>
+</svg>
