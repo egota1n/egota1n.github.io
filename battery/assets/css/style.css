@@ -406,7 +406,51 @@ ul{
 .section__main{
 	padding: 0 0 224px 0;
 	background-color: #f0f3f8;
-	background: url(../img/bg/main.png), url(../img/bg/index-battery3.png);
+	background: url(../img/bg/main.png), url(../img/bg/index-battery3.png) ;
+	background-repeat: no-repeat;
+	background-position: center center, 0% 20%;
+	-webkit-background-size: cover, 275px;
+	background-size: cover, 275px;
+}
+
+.container.bg-index{
+	position: relative;
+}
+
+.container.bg-index::after {
+	content: '';
+	display: block;
+	position: absolute;
+	width: 400px;
+	height: 364px;
+	top: 120px;
+	right: 0;
+	background: url(../img/bg/index-battery1.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	-webkit-background-size: contain;
+	background-size: contain;
+}
+
+.container.bg-index::before {
+	content: '';
+	display: block;
+	position: absolute;
+	width: 252px;
+	height: 204px;
+	top: 35px;
+	right: -30px;
+	background: url(../img/bg/index-battery2.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	-webkit-background-size: contain;
+	background-size: contain;
+}
+
+.section__main{
+	padding: 0 0 224px 0;
+	background-color: #f0f3f8;
+	background: url(../img/bg/main.png), url(../img/bg/index-battery3.png) ;
 	background-repeat: no-repeat;
 	background-position: center center, 0% 20%;
 	-webkit-background-size: cover, 275px;
@@ -2580,6 +2624,20 @@ nav.col.full.pagination{
 		padding-left: 10px;
 		padding-right: 10px;
 	}
+	.container.bg-index::after {
+		width: 330px;
+		height: 270px;
+		top: 155px;
+	}
+	.description-main, .description-main span, .description-main span::before  {
+		font-size: 24px;
+	}
+	.container.bg-index::before {
+		width: 220px;
+		height: 178px;
+		top: 65px;
+		right: -15px;
+	}
 }
 
 /*Средние девайсы («таблетки», < 992px) */
@@ -2867,14 +2925,8 @@ nav.col.full.pagination{
 		font-size: 44px;
 		text-align: center;
 	}
-	.description-main {
-		font-size: 24px;
-	}
-	.description-main span {
-		font-size: 24px;
-	}
-	.description-main span::before {
-		font-size: 24px;
+	.description-main, .description-main span, .description-main span::before  {
+		font-size: 22px;
 	}
 	.btn-main.btn-index {
 		font-size: 20px;
@@ -2945,6 +2997,32 @@ nav.col.full.pagination{
 	.modal_accessory.modal .specifications {
 		margin-left: 34px;
 		margin-bottom: 20px;
+	}
+	.description-main {
+		margin-bottom: 16px;
+		color: #454646;
+		font-size: 30px;
+		font-weight: 500;
+		padding-left: 46px;
+		position: relative;
+	}
+	.description-main::before {
+		height: 20px!important;
+	}
+	.description-main, .description-main span, .description-main span::before {
+		font-size: 22px;
+	}
+	.container.bg-index::after {
+		width: 216px;
+		height: 177px;
+		top: 238px;
+		right: -23px;
+	}
+	.container.bg-index::before {
+		width: 168px;
+		height: 178px;
+		top: 165px;
+		right: -24px;
 	}
 }
 
@@ -3170,6 +3248,17 @@ nav.col.full.pagination{
 		font-size: 34px;
 		margin: 34px 20px 34px 20px;
 		text-align: center;
+	}
+	.container.bg-index::after {
+		width: 136px;
+		height: 112px;
+		top: 162px;
+	}
+	.container.bg-index::before {
+		width: 109px;
+		height: 88px;
+		right: -17px;
+		top: 135px;
 	}
 }
 
@@ -3412,6 +3501,16 @@ nav.col.full.pagination{
 	}
 	.modal_accessory.modal .characteristic, .modal_accessory.modal .characteristic-value {
 		font-size: 16px;
+	}
+	.container.bg-index::after{
+		display: none;
+	}
+	.container.bg-index::before {
+		width: 109px;
+		height: 88px;
+		right: 0;
+		top: auto;
+		bottom: -78px;
 	}
 }
 
