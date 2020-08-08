@@ -1418,6 +1418,7 @@ nav.col.full.pagination{
 	border: 0;
 	top: 22px;
 	right: 24px;
+	z-index: 99999;
 }
 
 .quiz-steps {
@@ -1674,6 +1675,124 @@ nav.col.full.pagination{
 
 /*THE END MODAL QUIZ*/
 
+/*MODAL ACCESSORY*/
+
+.card-modal_services {
+	padding-right: 480px;
+	position: relative;
+	padding-top: 45px;
+}
+
+.modal_accessory.modal .logo {
+	margin: 0;
+	margin-left: 34px;
+}
+
+.title-modal_accessory {
+	font-size: 36px;
+	margin: 34px 0 34px 34px;
+}
+
+.modal_accessory.modal .specifications {
+	margin-left: 34px;
+}
+
+.slider-modal_accessory {
+	position: absolute;
+	top: 115px;
+	right: 0;
+	width: 480px;
+	padding-left: 10px;
+}
+
+.modal_accessory.modal .booking-form {
+	width: 100%;
+	box-shadow: none;
+	border-radius: 0 0 0 10px;
+	display: block;
+	margin-bottom: 0;
+}
+
+.modal_accessory.modal .block__price-product-exchange {
+	width: 100%;
+}
+
+/*THE END MODAL ACCESSORY*/
+
+/*MODAL SERVICES*/
+
+.card-modal_services {
+	padding-right: 480px;
+	position: relative;
+	padding-top: 45px;
+}
+
+.bg-modal_services {
+	display: block;
+	-webkit-background-size: cover!important;
+	background-size: cover!important;
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 480px;
+	height: 100%;
+}
+
+.bg-modal_services1 {
+	background: url(../img/bg/bg-modal_services1.jpg) center center no-repeat;
+}
+
+.bg-modal_services2 {
+	background: url(../img/bg/bg-modal_services2.jpg) center center no-repeat;
+}
+
+.bg-modal_services3 {
+	background: url(../img/bg/bg-modal_services3.jpg) center center no-repeat;
+}
+
+.bg-modal_services4 {
+	background: url(../img/bg/bg-modal_services4.jpg) center center no-repeat;
+}
+
+.modal.modal_services .logo {
+	margin: 0;
+	margin-left: 34px;
+}
+
+.modal.modal_services .block__price-product {
+	position: absolute;
+	bottom: 170px;
+	width: 100%;
+}
+
+.title-modal-services {
+	font-size: 36px;
+	margin: 34px 0 21px 0;
+	margin-left: 34px;
+}
+
+.description-modal-services {
+	font-size: 24px;
+	color: #1C597F;
+	margin-left: 34px;
+	margin-bottom: 20px;
+	padding-right: 20px;
+}
+
+.modal.modal_services .booking-form {
+	width: 100%;
+	box-shadow: none;
+	border-radius: 0;
+	box-shadow: none;
+}
+
+
+.modal.modal_services .booking-form::before {
+	content: none
+}
+
+/*THE END MODAL SERVICES*/
+
 /*ACCESSORY*/
 
 .title-page_accessory{
@@ -1835,6 +1954,7 @@ nav.col.full.pagination{
 	text-align: center;
 	font-size: 24px;
 	color: #1c597f;
+	font-weight: bold;
 }
 
 .contact-form{
@@ -2437,6 +2557,29 @@ nav.col.full.pagination{
 		font-size: 20px;
 		width: 372px;
 	}
+	.card-modal_services {
+		padding-right: 440px;
+	}
+	.bg-modal_services {
+		width: 440px;
+	}
+	.modal.modal_services .logo {
+		margin: 0;
+		margin-left: 30px;
+	}
+	.title-modal-services {
+		font-size: 32px;
+		margin-left: 30px;
+	}
+	.description-modal-services {
+		font-size: 22px;
+		margin-left: 30px;
+	}
+	.slider-modal_accessory {
+		width: 440px;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
 }
 
 /*Средние девайсы («таблетки», < 992px) */
@@ -2773,6 +2916,36 @@ nav.col.full.pagination{
 	.block-delivery_quiz:first-child {
 		margin-bottom: 15px;
 	}
+	.card-modal_services {
+		padding-right: 0;
+	}
+	.bg-modal_services {
+		width: 100%;
+		height: 400px;
+		position: relative;
+		margin-top: 40px;
+	}
+	.modal.modal_services .block__price-product {
+		bottom: 10px;
+	}
+	.modal.modal_services .booking-form {
+		border-radius: 0 0 10px 10px;
+	}
+	.slider-modal_accessory{
+		position: static;
+		width: 100%;
+		margin-top: 0px;
+	}
+	.modal_accessory.modal table {
+		margin: 0 auto;
+	}
+	.modal_accessory.modal .characteristic, .modal_accessory.modal .characteristic-value {
+		font-size: 20px;
+	}
+	.modal_accessory.modal .specifications {
+		margin-left: 34px;
+		margin-bottom: 20px;
+	}
 }
 
 /*Малые девайсы («ландшафтные», < 768px)*/
@@ -2977,6 +3150,26 @@ nav.col.full.pagination{
 	}
 	.bg-quiz {
 		display: none;
+	}
+	.card-modal_services {
+		padding-top: 35px;
+	}
+	.title-modal-services {
+		font-size: 24px;
+		margin-left: 30px;
+	}
+	.description-modal-services {
+		font-size: 16px;
+		margin-left: 30px;
+	}
+	.modal.modal_services .booking-form {
+		display: block;
+		margin-bottom: 0;
+	}
+	.title-modal_accessory {
+		font-size: 34px;
+		margin: 34px 20px 34px 20px;
+		text-align: center;
 	}
 }
 
@@ -3210,6 +3403,15 @@ nav.col.full.pagination{
 		width: 246px;
 		font-size: 12px;
 		height: 71px;
+	}
+	.title-modal-services {
+		font-size: 22px;
+	}
+	.title-modal_accessory {
+		font-size: 22px;
+	}
+	.modal_accessory.modal .characteristic, .modal_accessory.modal .characteristic-value {
+		font-size: 16px;
 	}
 }
 
