@@ -836,7 +836,7 @@ input::-webkit-inner-spin-button {
         width: 197px;
     }
     .payments {
-        width: 277px;
+        width: 100%;
     }
     .form-calc__item-title {
         font-size: 14px;
@@ -882,7 +882,16 @@ input::-webkit-inner-spin-button {
     }
 }
 
+@media (max-width: 575px){
+    .payments div, .payments input {
+        width: calc(100%/4 - 3px)!important;
+        height: 85px!important;
+    }
+}
 
-
-
-
+@media (max-width: 409px) {
+    .payments div, .payments input {
+        width: calc(100%/2 - 3px)!important;
+        height: 85px!important;
+    }
+}
