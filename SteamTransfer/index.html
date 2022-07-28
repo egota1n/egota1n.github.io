@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Steam Transfer – Пополнение кошелька Steam</title>
+	<!-- Bootstrap Grid -->
+	<link rel="stylesheet" href="assets/css/bootstrap-grid.min.css">
+	<!-- Styles -->
+	<link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+
+	<!-- HEADER -->
+
+	<header class="header" id="header">
+		<div class="container">
+			<nav class="navbar">
+				<a href="#" class="logo"></a>
+				<div class="info">
+					<div class="sum">
+						<p class="col_sum">59 320 ₽</p>
+						<p class="info_sum">Пополнений</p>
+					</div>
+					<div class="clients">
+						<p class="col_clients">3 200</p>
+						<p class="info_clients">Клиентов</p>
+					</div>
+				</div>
+			</nav>
+			<div class="line"></div>
+		</div>
+	</header>
+
+	<!-- SECTION EXCHANGE -->
+
+	<section class="section__exchange section__exchange">
+		<div class="container">
+			<h1 class="title__exchange">Пополнение кошелька <span>Steam</span></h1>
+			<div class="row">
+				<div class="col-6">
+					<input class="input__login" type="text" placeholder="Ваш логин" name="login">
+					<input class="input__sum" type="number" placeholder="Сумма перевода" min="100" max="14000" required="" name="sum" value="">
+					<div class="choose__sum">
+						<input name="ch_sum" type="radio">
+						<input name="ch_sum" type="radio">
+						<input name="ch_sum" type="radio">
+						<input name="ch_sum" type="radio">
+					</div>
+					<input class="input__agreement" type="checkbox" name="agreement" required="" checked="">
+					<a href="#" class="btn-replenish">Пополнить</a>
+				</div>
+				<div class="col-6">
+					 <div class="payments">
+					 	<input name="payment" type="radio">
+					 	<input name="payment" type="radio">
+					 	<input name="payment" type="radio">
+					 	<input name="payment" type="radio">
+					 	<div class="payment__future1"></div>
+					 	<div class="payment__future2"></div>
+					 	<div class="payment__future3"></div>
+					 	<div class="payment__future4"></div>
+					 </div>
+					 <div class="form-calc__item">
+					 	<div class="form-calc__item-title">Заплатите:</div>
+					 	<div class="form-calc__item-sum">249.72 ₽</div>
+					 </div>
+					 <div class="form-calc__item">
+					 	<div class="form-calc__item-title">Получите на баланс Steam:</div>
+					 	<div class="form-calc__item-sum">~ 199.85 ₽</div>
+					 </div>
+					 <div class="form-calc__item">
+					 	<div class="form-calc__item-title">Комиссия сервиса:</div>
+					 	<div class="form-calc__item-sum">12 ₽</div>
+					 </div>
+					 <div class="form-calc__item">
+					 	<div class="form-calc__item-title">Банковские издержки:</div>
+					 	<div class="form-calc__item-sum">37.87 ₽</div>
+					 </div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<!-- FOOTER -->
+
+	<footer class="footer" id="footer">
+		<div class="container">
+			<div class="line"></div>
+			<div class="footer-navbar">
+				<a href="#" class="footer__ref">Отзывы</a>
+				<a href="#" class="footer__ref">Контакты</a>
+				<a href="#" class="footer__ref">FAQ</a>
+				<a href="#" class="footer__ref">Политика конфиденциальности</a>
+				<a href="#" class="footer__ref">Пользовательское соглашение</a>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>

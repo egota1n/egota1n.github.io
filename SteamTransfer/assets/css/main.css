@@ -1,0 +1,512 @@
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../font/Gilroy-Bold.eot');
+    src: local('Gilroy Bold'), local('Gilroy-Bold'),
+    url('../font/Gilroy-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../font/Gilroy-Bold.woff2') format('woff2'),
+    url('../font/Gilroy-Bold.woff') format('woff'),
+    url('../font/Gilroy-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../font/Gilroy-Semibold.eot');
+    src: local('Gilroy Semibold'), local('Gilroy-Semibold'),
+    url('../font/Gilroy-Semibold.eot?#iefix') format('embedded-opentype'),
+    url('../font/Gilroy-Semibold.woff2') format('woff2'),
+    url('../font/Gilroy-Semibold.woff') format('woff'),
+    url('../font/Gilroy-Semibold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../font/Gilroy-Medium.eot');
+    src: local('Gilroy Medium'), local('Gilroy-Medium'),
+    url('../font/Gilroy-Medium.eot?#iefix') format('embedded-opentype'),
+    url('../font/Gilroy-Medium.woff2') format('woff2'),
+    url('../font/Gilroy-Medium.woff') format('woff'),
+    url('../font/Gilroy-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+body{
+	background: #171a21;
+	font-size: 20px;
+	font-family: 'Gilroy', sans-serif;
+    font-weight: 600;
+}
+
+*, *::before, *::after{
+	margin: 0;
+	padding: 0;
+    text-decoration: none;
+    color: #fff;
+    box-sizing: border-box;
+    outline: 0;
+    visibility: visible;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+/*HEADER*/
+
+.logo{
+	display: block;
+	width: 127px;
+	height: 50px;
+	background: url(../img/logo/logo.svg);
+}
+
+.navbar{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;  
+    -webkit-box-pack: justify;  
+    -ms-flex-pack: justify; 
+    justify-content: space-between;
+    padding: 30px 0 20px 0;
+}
+
+.info{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.col_sum, .col_clients{
+	color: #70b2e2;
+}
+
+.info_sum, .info_clients{
+	font-weight: 500;
+    font-size: 16px;
+}
+
+.sum, .clients{
+    text-align: center;
+}
+
+.clients{
+    position: relative;
+    margin-left: 40px;
+}
+
+.clients::before{
+    content: '';
+    display: block;
+    width: 1px;
+    height: 44px;
+    position: absolute;
+    top: 0;
+    left: -20px;
+    background: #21252f;
+}
+
+.line{
+    display: block;
+    height: 1px;
+    width: 100%;
+    background: #21252f;
+}
+
+
+
+/*SECTION EXCHANGE*/
+
+.section__exchange{
+    padding: 74px 0 268px 0;
+}
+
+.title__exchange{
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.title__exchange span{
+    color: #70b2e2;
+}
+
+.input__login, .input__sum{
+    display: block;
+    width: 100%;
+    height: 70px;
+    border-radius: 20px;
+    border: 0;
+    margin-bottom: 30px;
+    font-size: 20px;
+    font-family: 'Gilroy';
+    padding-left: 30px;
+}
+
+.input__login:hover, .input__sum:hover{
+    transition: all 0.2s ease;
+}
+
+.input__login:hover{
+    background: #2f3542 url(../img/icon/user2.svg) no-repeat center right 30px;
+}
+
+
+.input__login{
+    position: relative;
+    background: #21252f url(../img/icon/user.svg) no-repeat center right 30px;
+}
+
+.input__login:focus{
+    background: #2f3542 url(../img/icon/user2.svg) no-repeat center right 30px;
+    transition: all 0.2s;
+}
+
+.input__sum:hover{
+    background: #2f3542 url(../img/icon/cash2.svg) no-repeat center right 30px;
+}
+
+.input__sum{
+    background: #21252f url(../img/icon/cash.svg) no-repeat center right 30px;
+}
+
+.input__sum:focus{
+    background: #2f3542 url(../img/icon/cash2.svg) no-repeat center right 30px;
+    transition: all 0.2s;
+}
+
+.input__login::before{
+    content: '';
+    display: block;
+    width: 21px;
+    height: 21px;
+    position: absolute;
+    right: -30px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #fff;
+}
+
+.input__sum::before{
+    content: '';
+    display: block;
+    width: 21px;
+    height: 21px;
+    position: absolute;
+    right: -30px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #fff;
+}
+
+.input__agreement{
+    position: relative;
+    margin-top: 30px;
+    width: 27px;
+    height: 27px;
+    visibility: hidden!important;
+}
+
+.input__agreement::before{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    background: #1a1e26;
+    border: 1px solid #21252f;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.input__agreement::after{
+    content: 'Я подтверждаю, что указал логин Steam, а не никнейм';
+    font-size: 18px;
+    position: absolute;
+    display: block;
+    width: 500px;
+    top: 50%;
+    left: 47px;
+    transform: translateY(-50%);
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.input__agreement:checked::before{
+    background: #1a1e26 url(../img/icon/check.svg) no-repeat center center;
+}
+
+.choose__sum{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.choose__sum input{
+    display: block;
+    width: 158px;
+    height: 70px;
+    visibility: hidden!important;
+}
+
+.choose__sum input::before{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: #21252f;
+    color: #696f7d;
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 20px;
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 22px;
+}
+
+.choose__sum input:hover:before{
+    background: #282d39;
+    color: #B4B7BE;
+    transition: all 0.2 ease;
+}
+
+.choose__sum input:nth-child(1)::before{
+    content: '100 ₽';
+    border-radius: 20px 0px 0px 20px;
+}
+
+.choose__sum input:nth-child(2)::before{
+    content: '200 ₽';
+}
+
+.choose__sum input:nth-child(3)::before{
+    content: '500 ₽';
+}
+
+.choose__sum input:nth-child(4)::before{
+    content: 'Другая сумма';
+    border-radius: 0px 20px 20px 0px;
+}
+
+.choose__sum input:checked:before{
+    background: #2f3542;
+    color: #fff;
+}
+
+.btn-replenish{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: start;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    transition: 0.2s;
+    width: 100%;
+    height: 70px;
+    background: -o-linear-gradient(left, #70B2E2 84.6%, #135199 106.83%);
+    background: #70b2e2 linear-gradient(90deg, #70B2E2 84.6%, #135199 106.83%);
+    border-radius: 20px;
+    padding-left: 30px;
+    position: relative;
+    margin-top: 30px;
+
+}
+
+.btn-replenish::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 30px;
+    display: block;
+    width: 21px;
+    height: 21px;
+    background: url(../img/icon/arrow.svg);
+    transition: 0.2s;
+}
+
+.btn-replenish:hover{
+    background: #70b2e2;
+}
+
+.btn-replenish:hover::before{
+    right: 25px;
+}
+
+.payments {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+    border: 3px dashed #696F7D;
+    border-radius: 20px;
+    padding: 17px;
+    vertical-align: middle;
+    margin: auto auto;
+    margin-bottom: 30px;
+}
+
+.payments input{
+    display: block;
+    width: 146px;
+    height: 115px;
+    visibility: hidden!important;
+}
+
+.payments div{
+    display: block;
+    width: 146px;
+    height: 115px;
+    border-radius: 14px;
+    cursor: default;
+    background-color: #1a1e26;
+}
+
+.payments input:nth-child(1){
+    margin-bottom: 6px;
+}
+
+.payments input::before{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: #21252f;
+    border-radius: 14px;
+    cursor: pointer;
+    border: 1px solid #21252f
+}
+
+.payments input:hover:before{
+    background-color: #282d39!important;
+    border: 1px solid #282d39!important;
+    transition: all 0.2s ease;
+}
+
+.payments input:checked:before{
+    background-color: #2f3542!important;
+}
+
+.payments input:hover:nth-child(5):before,
+.payments input:hover:nth-child(6):before,
+.payments input:hover:nth-child(7):before,
+.payments input:hover:nth-child(8):before{
+    background-color: #1a1e26 !important;
+}
+
+.payments input:checked:before{
+    background-color: #2f3542!important;
+    border: 1px solid #696f7d!important;
+}
+
+
+
+.payments input:nth-child(1):before{
+    background: #21252f url(../img/payment/qiwi.svg) no-repeat center center;
+}
+
+.payments input:nth-child(2):before{
+    background: #21252f url(../img/payment/visa.svg) no-repeat center center;
+}
+
+.payments input:nth-child(3):before{
+    background: #21252f url(../img/payment/mir.svg) no-repeat center center;
+}
+
+.payments input:nth-child(4):before{
+    background: #21252f url(../img/payment/mastercard.svg) no-repeat center center;
+}
+
+.payments .payment__future1{
+    background: #1a1e26 url(../img/payment/ya_money.svg) no-repeat center center;
+    cursor: default;
+}
+
+.payments .payment__future2{
+    background: #1a1e26 url(../img/payment/tether.svg) no-repeat center center;
+    cursor: default;
+}
+
+.payments .payment__future3{
+    background: #1a1e26 url(../img/payment/ethereum.svg) no-repeat center center;
+    cursor: default;
+}
+
+.payments .payment__future4{
+    background: #1a1e26 url(../img/payment/tron.svg) no-repeat center center;
+    cursor: default;
+}
+
+.form-calc__item {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.form-calc__item::before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background: #696F7D;
+    background: repeating-linear-gradient(to right, #696f7d, #696f7d 8px, #181a21 8px, #181a21 12px);
+    bottom: 7px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.form-calc__item:last-child{
+    margin-bottom: 0;
+}
+
+.form-calc__item-title {
+    font-size: 18px;
+    color: #696f7d;
+    background: #181a21;
+    z-index: 9999;
+    padding-right: 8px;
+}
+
+.form-calc__item-sum {
+    font-size: 18px;
+    font-weight: bold;
+    background: #181a21;
+    z-index: 9999;
+    padding-left: 8px;
+}
+
+
+/*FOOTER*/
+
+.footer-navbar{
+    padding: 40px 0 50px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__ref{
+    font-size: 22px;
+}
+
+.footer__ref:hover{
+    color: #70b2e2;
+    transition: all 0.2s ease;
+}
