@@ -493,6 +493,10 @@ input::-webkit-inner-spin-button {
     padding-left: 8px;
 }
 
+.btn-replenish__mob{
+    display: none;
+}
+
 
 /*FOOTER*/
 
@@ -510,3 +514,292 @@ input::-webkit-inner-spin-button {
     color: #70b2e2;
     transition: all 0.2s ease;
 }
+
+
+
+
+
+
+
+
+
+/*ADAPTIVE*/
+
+
+@media (max-width: 1399px) {
+    .choose__sum input {
+        width: 135px;
+    }
+    .choose__sum input:nth-child(4)::before {
+        padding: 12px 10px 0 10px;
+    }
+    .choose__sum input::before {
+        padding-top: 24px;
+    }
+    .payments div, .payments input{
+        width: 124px;
+    }
+    .payments input:nth-child(1):before{background-size: 75%;}
+    .payments input:nth-child(2):before{background-size: 50%;}
+    .payments input:nth-child(3):before{background-size: 60%;}
+    .payments input:nth-child(4):before{background-size: 38%}
+    .footer__ref {
+        font-size: 20px;
+    }
+    .section__exchange {
+        padding: 74px 0 200px 0;
+    }
+}
+
+@media (max-width: 1199px) {
+    .input__agreement::after {
+        font-size: 16px;
+        left: 40px;
+    }
+    .choose__sum input {
+        width: 112px;
+    }
+    .choose__sum input::before{
+        font-size: 17px
+    }
+    .choose__sum input:nth-child(4)::before {
+        padding: 15px 10px 0 10px;
+    }
+    .choose__sum input::before {
+        padding-top: 26px;
+    }
+    .input__login, .input__sum{
+        font-size: 17px
+    }
+    .title__exchange{
+        font-size: 40px
+    }
+    .payments div, .payments input {
+        width: 101px;
+        height: 85px;
+    }
+    .payments .payment__future1{background-size: 70%;}
+    .payments .payment__future2{background-size: 70%;}
+    .payments .payment__future3{background-size: 70%;}
+    .payments .payment__future4{background-size: 70%;}
+    .form-calc__item-title {
+        font-size: 16px;
+        padding-right: 6px;
+    }
+    .form-calc__item-sum {
+        font-size: 16px;
+        padding-left: 6px;
+    }
+    .footer__ref {
+        font-size: 18px;
+    }
+    .input__login, .input__sum{
+        margin-bottom: 20px
+    }
+    .input__agreement{
+        margin-top: 20px
+    }
+    .btn-replenish{
+        margin-top: 20px
+    }
+    .payments{
+        margin-bottom: 50px
+    }
+    .section__exchange {
+        padding: 74px 0 120px 0;
+    }
+}
+
+@media (max-width: 991px) {
+    .title__exchange {
+        font-size: 35px;
+    }
+    .section__exchange {
+        padding: 50px 0 80px 0;
+    }
+    .payments div, .payments input {
+        width: 116px;
+        height: 85px;
+    }
+    .payments input:nth-child(1), .payments input:nth-child(3) {
+        margin-bottom: 6px;
+    }
+    .payments .payment__future1 {
+        margin-bottom: 6px;
+    }
+    .choose__sum input {
+        width: 97px;
+    }
+    .choose__sum input:nth-child(4)::before {
+        padding: 19px 10px 0 10px;
+    }
+    .choose__sum input::before {
+        padding-top: 28px;
+        font-size: 15px
+    }
+    .input__agreement::after {
+        font-size: 13px;
+        left: 36px;
+    }
+    .input__agreement:checked::before {
+        background-size: 70%;
+    }
+    .input__agreement {
+        width: 22px;
+        height: 22px;
+    }
+    .form-calc__item-title {
+        font-size: 14px;
+        padding-right: 6px;
+    }
+    .form-calc__item-sum {
+        font-size: 14px;
+        padding-left: 6px;
+    }
+    .footer__ref {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 767px) {
+    .choose__sum input::before {
+        font-size: 17px;
+    }
+    .choose__sum input {
+        width: 127px;
+    }
+    .input__agreement::after {
+        font-size: 15px;
+        left: 45px;
+    }
+    .input__agreement {
+        width: 27px;
+        height: 27px;
+    }
+    .choose__sum input:nth-child(4)::before {
+        padding: 15px 10px 0 10px;
+    }
+    .btn-replenish{
+        display: none
+    }
+    .btn-replenish__mob{
+        display: flex;
+    }
+    .payments {
+        margin-bottom: 25px;
+        margin-top: 20px;
+    }
+    .form-calc__item-sum{
+        font-size: 16px
+    }
+    .form-calc__item-title{
+        font-size: 16px
+    }
+    .footer__ref:last-child {
+        margin-top: 12px;
+    }
+    .footer-navbar {
+        width: 520px;
+        flex-wrap: wrap;
+        margin: 0 auto;
+    }
+    .footer__ref {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 575px) {
+    .footer-navbar {
+        width: auto;
+    }
+    .input__agreement::after{
+        width: auto;
+    }
+    .title__exchange {
+        font-size: 27px;
+    }
+    .logo {
+        width: 105px;
+        height: 43px;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    .col_sum, .col_clients {
+        font-size: 16px;
+    }
+    .info_sum, .info_clients {
+        font-size: 11px;
+    }
+    .clients::before {
+        height: 31px;
+        left: -15px;
+    }
+    .clients {
+        margin-left: 30px;
+    }
+    .navbar{
+        align-items: center
+    }
+    .input__login, .input__sum {
+        height: 50px;
+        border-radius: 9px;
+        font-size: 15px;
+        padding-left: 18px;
+        margin-bottom: 10px
+    }
+    .input__login {
+        background: #21252f url(../img/icon/user.svg) no-repeat center right 18px;
+    }
+    .input__sum {
+        background: #21252f url(../img/icon/cash.svg) no-repeat center right 18px;
+    }
+    .choose__sum input:nth-child(1)::before {
+        border-radius: 9px 0px 0px 9px;
+    }
+    .choose__sum input {
+        width: calc(100%/4 - 2px);
+        height: 50px;
+    }
+    .choose__sum input::before {
+        font-size: 14px;
+    }
+    .choose__sum input:nth-child(4)::before {
+        padding: 9px 10px 0 10px;
+        border-radius: 0px 9px 9px 0px;
+    }
+    .choose__sum input::before {
+        padding-top: 19px;
+    }
+    .input__agreement::after {
+        width: 197px;
+    }
+    .payments {
+        width: 277px;
+    }
+    .form-calc__item-title {
+        font-size: 14px;
+    }
+    .form-calc__item-sum {
+        font-size: 14px;
+    }
+    a.btn-replenish.btn-replenish__mob {
+        font-size: 18px;
+    }
+    .footer__ref {
+        font-size: 16px;
+    }
+    .footer-navbar {
+        width: 260px;
+    }
+    a.footer__ref:nth-child(4) {
+        margin-top: 12px;
+    }
+    .footer-navbar {
+        padding: 30px 0 40px 0;
+    }
+}
+
+
+
+
+
