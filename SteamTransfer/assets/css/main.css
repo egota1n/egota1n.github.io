@@ -35,17 +35,18 @@
 }
 
 body{
-	font-size: 20px;
-	font-family: 'Gilroy', sans-serif;
+    font-size: 20px;
+    font-family: 'Gilroy', sans-serif;
     font-weight: 600;
     background: #171a21;
 }
 
 *, *::before, *::after{
-	margin: 0;
-	padding: 0;
+    margin: 0;
+    padding: 0;
     text-decoration: none;
     color: #fff;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     outline: 0;
     visibility: visible;
@@ -61,10 +62,10 @@ input::-webkit-inner-spin-button {
 /*HEADER*/
 
 .logo{
-	display: block;
-	width: 127px;
-	height: 50px;
-	background: url(../img/logo/logo.svg);
+    display: block;
+    width: 127px;
+    height: 50px;
+    background: url(../img/logo/logo.svg);
 }
 
 .navbar{
@@ -84,11 +85,11 @@ input::-webkit-inner-spin-button {
 }
 
 .col_sum, .col_clients{
-	color: #70b2e2;
+    color: #70b2e2;
 }
 
 .info_sum, .info_clients{
-	font-weight: 500;
+    font-weight: 500;
     font-size: 16px;
 }
 
@@ -164,6 +165,8 @@ input::-webkit-inner-spin-button {
 }
 
 .input__login:hover, .input__sum:hover{
+    -webkit-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
     transition: all 0.2s ease;
 }
 
@@ -179,6 +182,8 @@ input::-webkit-inner-spin-button {
 
 .input__login:focus{
     background: #2f3542 url(../img/icon/user2.svg) no-repeat center right 30px;
+    -webkit-transition: all 0.2s;
+    -o-transition: all 0.2s;
     transition: all 0.2s;
 }
 
@@ -192,6 +197,8 @@ input::-webkit-inner-spin-button {
 
 .input__sum:focus{
     background: #2f3542 url(../img/icon/cash2.svg) no-repeat center right 30px;
+    -webkit-transition: all 0.2s;
+    -o-transition: all 0.2s;
     transition: all 0.2s;
 }
 
@@ -203,6 +210,8 @@ input::-webkit-inner-spin-button {
     position: absolute;
     right: -30px;
     top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
     transform: translateY(-50%);
     background: #fff;
 }
@@ -215,19 +224,25 @@ input::-webkit-inner-spin-button {
     position: absolute;
     right: -30px;
     top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
     transform: translateY(-50%);
     background: #fff;
 }
 
-.input__agreement{
+.   {
+    visibility: hidden!important;
+}
+
+.label__agreement{
+    display: block;
     position: relative;
     margin-top: 30px;
     width: 27px;
     height: 27px;
-    visibility: hidden!important;
 }
 
-.input__agreement::before{
+.label__agreement::before{
     content: '';
     display: block;
     width: 100%;
@@ -238,11 +253,13 @@ input::-webkit-inner-spin-button {
     position: absolute;
     left: 0;
     top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
     transform: translateY(-50%);
     cursor: pointer;
 }
 
-.input__agreement::after{
+.label__agreement::after{
     content: 'Я подтверждаю, что указал логин Steam, а не никнейм';
     font-size: 18px;
     position: absolute;
@@ -250,18 +267,24 @@ input::-webkit-inner-spin-button {
     width: 500px;
     top: 50%;
     left: 47px;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
     transform: translateY(-50%);
     font-family: 'Gilroy', sans-serif;
     font-weight: 600;
     cursor: pointer;
 }
 
-.input__agreement:checked::before{
+.label__agreement.active::before{
     background: #1a1e26 url(../img/icon/check.svg) no-repeat center center;
 }
 
 .choose__sum{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     width: 100%;
 }
@@ -273,7 +296,11 @@ input::-webkit-inner-spin-button {
     visibility: hidden!important;
 }
 
-.choose__sum input::before{
+.choose__sum label{
+    position: relative;
+}
+
+.choose__sum label::before{
     content: '';
     display: block;
     width: 100%;
@@ -287,33 +314,36 @@ input::-webkit-inner-spin-button {
     text-align: center;
     vertical-align: middle;
     padding-top: 22px;
+    position: absolute;
 }
 
-.choose__sum input:hover:before{
+.choose__sum label:hover:before{
     background: #282d39;
     color: #B4B7BE;
+    -webkit-transition: all 0.2 ease;
+    -o-transition: all 0.2 ease;
     transition: all 0.2 ease;
 }
 
-.choose__sum input:nth-child(1)::before{
+.choose__sum label:nth-child(1)::before{
     content: '100 ₽';
     border-radius: 20px 0px 0px 20px;
 }
 
-.choose__sum input:nth-child(2)::before{
+.choose__sum label:nth-child(2)::before{
     content: '200 ₽';
 }
 
-.choose__sum input:nth-child(3)::before{
+.choose__sum label:nth-child(3)::before{
     content: '500 ₽';
 }
 
-.choose__sum input:nth-child(4)::before{
+.choose__sum label:nth-child(4)::before{
     content: 'Другая сумма';
     border-radius: 0px 20px 20px 0px;
 }
 
-.choose__sum input:checked:before{
+.choose__sum label.active::before{
     background: #2f3542;
     color: #fff;
 }
@@ -328,10 +358,14 @@ input::-webkit-inner-spin-button {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
     transition: 0.2s;
     width: 100%;
     height: 70px;
     background: -o-linear-gradient(left, #70B2E2 84.6%, #135199 106.83%);
+    background: #70b2e2 -webkit-gradient(linear, left top, right top, color-stop(84.6%, #70B2E2), color-stop(106.83%, #135199));
+    background: #70b2e2 -o-linear-gradient(left, #70B2E2 84.6%, #135199 106.83%);
     background: #70b2e2 linear-gradient(90deg, #70B2E2 84.6%, #135199 106.83%);
     border-radius: 20px;
     padding-left: 30px;
@@ -344,12 +378,16 @@ input::-webkit-inner-spin-button {
     content: '';
     position: absolute;
     top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
     transform: translateY(-50%);
     right: 30px;
     display: block;
     width: 21px;
     height: 21px;
     background: url(../img/icon/arrow.svg);
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
     transition: 0.2s;
 }
 
@@ -362,8 +400,13 @@ input::-webkit-inner-spin-button {
 }
 
 .payments {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     width: 100%;
     height: auto;
@@ -391,11 +434,11 @@ input::-webkit-inner-spin-button {
     background-color: #1a1e26;
 }
 
-.payments input:nth-child(1){
+.payments label{
     margin-bottom: 6px;
 }
 
-.payments input::before{
+.payments label::before{
     content: '';
     display: block;
     width: 100%;
@@ -406,43 +449,40 @@ input::-webkit-inner-spin-button {
     border: 1px solid #21252f
 }
 
-.payments input:hover:before{
+input[type='number'] {
+    -moz-appearance: textfield;
+}
+
+.payments label:hover:before{
     background-color: #282d39!important;
     border: 1px solid #282d39!important;
+    -webkit-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
     transition: all 0.2s ease;
 }
 
-.payments input:checked:before{
+.payments label.active::before{
     background-color: #2f3542!important;
 }
 
-.payments input:hover:nth-child(5):before,
-.payments input:hover:nth-child(6):before,
-.payments input:hover:nth-child(7):before,
-.payments input:hover:nth-child(8):before{
-    background-color: #1a1e26 !important;
-}
-
-.payments input:checked:before{
+.payments input.active::before{
     background-color: #2f3542!important;
     border: 1px solid #696f7d!important;
 }
 
-
-
-.payments input:nth-child(1):before{
+.payments label:nth-child(1):before{
     background: #21252f url(../img/payment/qiwi.svg) no-repeat center center;
 }
 
-.payments input:nth-child(2):before{
+.payments label:nth-child(2):before{
     background: #21252f url(../img/payment/visa.svg) no-repeat center center;
 }
 
-.payments input:nth-child(3):before{
+.payments label:nth-child(3):before{
     background: #21252f url(../img/payment/mir.svg) no-repeat center center;
 }
 
-.payments input:nth-child(4):before{
+.payments label:nth-child(4):before{
     background: #21252f url(../img/payment/mastercard.svg) no-repeat center center;
 }
 
@@ -468,7 +508,11 @@ input::-webkit-inner-spin-button {
 
 .form-calc__item {
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     margin-bottom: 15px;
     position: relative;
@@ -481,9 +525,12 @@ input::-webkit-inner-spin-button {
     width: 100%;
     height: 1px;
     background: #696F7D;
+    background: -o-repeating-linear-gradient(left, #696f7d, #696f7d 8px, #181a21 8px, #181a21 12px);
     background: repeating-linear-gradient(to right, #696f7d, #696f7d 8px, #181a21 8px, #181a21 12px);
     bottom: 7px;
     left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
     transform: translateX(-50%);
 }
 
@@ -516,7 +563,11 @@ input::-webkit-inner-spin-button {
 
 .footer-navbar{
     padding: 40px 0 50px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
 }
 
@@ -526,6 +577,8 @@ input::-webkit-inner-spin-button {
 
 .footer__ref:hover{
     color: #70b2e2;
+    -webkit-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
     transition: all 0.2s ease;
 }
 
@@ -577,19 +630,19 @@ input::-webkit-inner-spin-button {
     .choose__sum input {
         width: 135px;
     }
-    .choose__sum input:nth-child(4)::before {
+    .choose__sum label:nth-child(4)::before {
         padding: 12px 10px 0 10px;
     }
-    .choose__sum input::before {
+    .choose__sum label::before {
         padding-top: 24px;
     }
-    .payments div, .payments input{
+    .payments div, .payments label{
         width: 124px;
     }
-    .payments input:nth-child(1):before{background-size: 75%;}
-    .payments input:nth-child(2):before{background-size: 50%;}
-    .payments input:nth-child(3):before{background-size: 60%;}
-    .payments input:nth-child(4):before{background-size: 38%}
+    .payments label:nth-child(1):before{background-size: 75%;}
+    .payments label:nth-child(2):before{background-size: 50%;}
+    .payments label:nth-child(3):before{background-size: 60%;}
+    .payments label:nth-child(4):before{background-size: 38%}
     .footer__ref {
         font-size: 20px;
     }
@@ -604,21 +657,21 @@ input::-webkit-inner-spin-button {
 }
 
 @media (max-width: 1199px) {
-    .input__agreement::after {
+    .label__agreement::after {
         font-size: 16px;
         left: 40px;
     }
     .choose__sum input {
         width: 112px;
     }
-    .choose__sum input::before{
+    .choose__sum label::before{
         font-size: 17px
     }
-    .choose__sum input:nth-child(4)::before {
-        padding: 15px 10px 0 10px;
-    }
-    .choose__sum input::before {
+    .choose__sum label::before {
         padding-top: 26px;
+    }
+    .choose__sum label:nth-child(4)::before {
+        padding: 15px 10px 0 10px;
     }
     .input__login, .input__sum{
         font-size: 17px
@@ -626,7 +679,7 @@ input::-webkit-inner-spin-button {
     .title__exchange{
         font-size: 40px
     }
-    .payments div, .payments input {
+    .payments div, .payments label {
         width: 101px;
         height: 85px;
     }
@@ -648,7 +701,7 @@ input::-webkit-inner-spin-button {
     .input__login, .input__sum{
         margin-bottom: 20px
     }
-    .input__agreement{
+    .label__agreement{
         margin-top: 20px
     }
     .btn-replenish{
@@ -675,11 +728,11 @@ input::-webkit-inner-spin-button {
     .section__exchange {
         padding: 50px 0 80px 0;
     }
-    .payments div, .payments input {
+    .payments div, .payments label {
         width: 116px;
         height: 85px;
     }
-    .payments input:nth-child(1), .payments input:nth-child(3) {
+    .payments label:nth-child(1), .payments label:nth-child(3) {
         margin-bottom: 6px;
     }
     .payments .payment__future1 {
@@ -688,21 +741,21 @@ input::-webkit-inner-spin-button {
     .choose__sum input {
         width: 97px;
     }
-    .choose__sum input:nth-child(4)::before {
-        padding: 19px 10px 0 10px;
-    }
-    .choose__sum input::before {
+    .choose__sum label::before {
         padding-top: 28px;
         font-size: 15px
     }
-    .input__agreement::after {
+    .choose__sum label:nth-child(4)::before {
+        padding: 19px 10px 0 10px;
+    }
+    .label__agreement::after {
         font-size: 13px;
         left: 36px;
     }
-    .input__agreement:checked::before {
+    .label__agreement.active::before {
         background-size: 70%;
     }
-    .input__agreement {
+    .label__agreement {
         width: 22px;
         height: 22px;
     }
@@ -726,27 +779,29 @@ input::-webkit-inner-spin-button {
 }
 
 @media (max-width: 767px) {
-    .choose__sum input::before {
+    .choose__sum label::before {
         font-size: 17px;
     }
     .choose__sum input {
         width: 127px;
     }
-    .input__agreement::after {
+    .label__agreement::after {
         font-size: 15px;
         left: 45px;
     }
-    .input__agreement {
+    .label__agreement {
         width: 27px;
         height: 27px;
     }
-    .choose__sum input:nth-child(4)::before {
+    .choose__sum label:nth-child(4)::before {
         padding: 15px 10px 0 10px;
     }
     .btn-replenish{
         display: none
     }
     .btn-replenish__mob{
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
     }
     .payments {
@@ -764,6 +819,7 @@ input::-webkit-inner-spin-button {
     }
     .footer-navbar {
         width: 520px;
+        -ms-flex-wrap: wrap;
         flex-wrap: wrap;
         margin: 0 auto;
     }
@@ -774,9 +830,6 @@ input::-webkit-inner-spin-button {
 
 @media (max-width: 575px) {
     .footer-navbar {
-        width: auto;
-    }
-    .input__agreement::after{
         width: auto;
     }
     .title__exchange {
@@ -802,6 +855,8 @@ input::-webkit-inner-spin-button {
         margin-left: 30px;
     }
     .navbar{
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center
     }
     .input__login, .input__sum {
@@ -817,23 +872,26 @@ input::-webkit-inner-spin-button {
     .input__sum {
         background: #21252f url(../img/icon/cash.svg) no-repeat center right 18px;
     }
-    .choose__sum input:nth-child(1)::before {
+    .choose__sum label:nth-child(1)::before {
         border-radius: 9px 0px 0px 9px;
     }
     .choose__sum input {
-        width: calc(100%/4 - 2px);
+        width: 100%;
         height: 50px;
     }
-    .choose__sum input::before {
+    .choose__sum label::before {
         font-size: 14px;
         padding-top: 18px;
     }
-    .choose__sum input:nth-child(4)::before {
+    .choose__sum label:nth-child(4)::before {
         padding: 9px 10px 0 10px;
         border-radius: 0px 9px 9px 0px;
     }
-    .input__agreement::after {
-        width: 197px;
+    .choose__sum label {
+        width: calc(100%/4 - 2px);
+    }
+    .label__agreement::after {
+        width: calc(100vw - 72px);
     }
     .payments {
         width: 100%;
@@ -883,15 +941,21 @@ input::-webkit-inner-spin-button {
 }
 
 @media (max-width: 575px){
-    .payments div, .payments input {
+    .payments div, .payments label {
         width: calc(100%/4 - 3px)!important;
         height: 85px!important;
     }
 }
 
 @media (max-width: 409px) {
-    .payments div, .payments input {
+    .payments div, .payments label {
         width: calc(100%/2 - 3px)!important;
         height: 85px!important;
+    }
+}
+
+@media (min-width: 479px) and (max-width: 575px) {
+    .choose__sum label:nth-child(4)::before {
+        padding: 17px 10px 0 10px;
     }
 }

@@ -18,7 +18,6 @@
 	<meta name="theme-color" content="#171a21">
 </head>
 <body>
-
 	<!-- HEADER -->
 
 	<header class="header" id="header">
@@ -48,22 +47,42 @@
 			<div class="row">
 				<div class="col-12 col-md-7 col-lg-6">
 					<input class="input__login" type="text" placeholder="Ваш логин" name="login">
-					<input class="input__sum" type="number" placeholder="Сумма перевода" min="100" max="14000" required="" name="sum" value="">
+					<input class="input__sum" type="number" placeholder="Сумма перевода" min="100" max="14000" required="" name="sum">
 					<div class="choose__sum">
-						<input name="ch_sum" type="radio">
-						<input name="ch_sum" type="radio">
-						<input name="ch_sum" type="radio">
-						<input name="ch_sum" type="radio">
+						<label for="choose1">
+							<input name="ch_sum" type="radio" id="choose1">
+						</label>
+						<label for="choose2">
+							<input name="ch_sum" type="radio" id="choose2">
+						</label>
+						<label for="choose3">
+							<input name="ch_sum" type="radio" id="choose3">
+						</label>
+						<label for="choose4">
+							<input name="ch_sum" type="radio" id="choose4">
+						</label>
 					</div>
-					<input class="input__agreement" type="checkbox" name="agreement" required="" checked="">
+					<div class="agreement">
+						<label for="input__agreement" class="label__agreement">
+							<input id="input__agreement" class="input__agreement" type="checkbox" name="agreement" required="" checked="">
+						</label>
+					</div>
 					<a href="thanks.html" class="btn-replenish">Пополнить</a>
 				</div>
 				<div class="col-12 col-md-5 col-lg-6">
 					<div class="payments">
-						<input name="payment" type="radio">
-						<input name="payment" type="radio">
-						<input name="payment" type="radio">
-						<input name="payment" type="radio">
+						<label for="payment1">
+							<input class="payment1" name="payment" type="radio" id="payment1">
+						</label>
+						<label for="payment2">
+							<input class="payment2" name="payment" type="radio" id="payment2">
+						</label>
+						<label for="payment3">
+							<input class="payment3" name="payment" type="radio" id="payment3">
+						</label>
+						<label for="payment4">
+							<input class="payment4" name="payment" type="radio" id="payment4">
+						</label>
 						<div class="payment__future1"></div>
 						<div class="payment__future2"></div>
 						<div class="payment__future3"></div>
@@ -90,8 +109,6 @@
 			</div>
 		</div>
 	</section>
-
-
 	<!-- FOOTER -->
 
 	<footer class="footer" id="footer">
@@ -106,5 +123,33 @@
 			</div>
 		</div>
 	</footer>
+
+	<!-- Script Checked -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script>
+		$(function() {
+			$('.choose__sum').on('change', function() {
+				$('label', this).each(function(i, label) {
+					$(label).toggleClass('active', $('input', this).prop('checked'))
+				});
+			});
+		});
+
+		$(function() {
+			$('.payments').on('change', function() {
+				$('label', this).each(function(i, label) {
+					$(label).toggleClass('active', $('input', this).prop('checked'))
+				});
+			});
+		});
+
+		$(function() {
+			$('.agreement').on('change', function() {
+				$('label', this).each(function(i, label) {
+					$(label).toggleClass('active', $('input', this).prop('checked'))
+				});
+			});
+		});
+	</script>
 </body>
 </html>
