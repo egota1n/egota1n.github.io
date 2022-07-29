@@ -938,6 +938,9 @@ input[type='number'] {
     .to__main {
         font-size: 17px;
     }
+    .payments input {
+        width: 100%;
+    }
 }
 
 @media (max-width: 575px){
