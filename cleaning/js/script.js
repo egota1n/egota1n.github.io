@@ -573,6 +573,9 @@ window.addEventListener('load', function () {
     preloader.classList.add('loaded');
   }, 300);
   setTimeout(function () {
+    new WOW().init();
+  }, 1000);
+  setTimeout(function () {
     preloader.classList.add('hidden');
     document.body.classList.add('loaded');
   }, 1200);
