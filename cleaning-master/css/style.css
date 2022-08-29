@@ -1050,10 +1050,8 @@ svg {
   width: 100px;
   height: 100px;
   position: absolute;
-  top: 100%;
+  top: 30px;
   left: 30px;
-  -webkit-transform: translate(0, -50%);
-  transform: translate(0, -50%);
 }
 
 .logo__image img {
@@ -2469,7 +2467,7 @@ body.loaded .logo {
 }
 
 .tasks__title1 {
-    margin-bottom: 5px;
+  margin-bottom: 5px;
 }
 
 .item-tasks__body {
@@ -2778,6 +2776,10 @@ body.loaded .logo {
 
 .now__title {
   margin-bottom: 15px;
+}
+
+.now__title1{
+  margin-bottom: 0;
 }
 
 .now__text {
