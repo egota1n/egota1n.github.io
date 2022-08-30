@@ -518,6 +518,10 @@ var brandsSlider = new Swiper('.brands__slider', {
   speed: 800,
   loop: true,
   spaceBetween: 40,
+  autoplay: true,
+  autoplay: {
+    delay: 300,
+  },
   breakpoints: {
     1100: {
       slidesPerView: 6,
