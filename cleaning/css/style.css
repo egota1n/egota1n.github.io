@@ -5756,7 +5756,24 @@ body.loaded .logo {
 
 
 
+.slider {
+  overflow: hidden;
+}
 
+.swiper-slide {
+  width: auto;
+  margin-right: 20px;
+}
+
+.slider__item {
+  font-size: 24px;
+  padding: 12px 32px;
+  background-color: #ccc;
+}
+
+.swiper-wrapper {
+  transition-timing-function: linear;
+}
 
 
 
