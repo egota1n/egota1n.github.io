@@ -382,10 +382,10 @@ if (sliders) {
     }
 
     if (slider.classList.contains('_gallery')) {//slider.data('lightGallery').destroy(true);
-    }
   }
+}
 
-  sliders_build_callback();
+sliders_build_callback();
 }
 
 function sliders_build_callback() {}
@@ -515,12 +515,13 @@ if (spoilersArray.length > 0) {
 }
 
 var brandsSlider = new Swiper('.brands__slider', {
-  speed: 800,
+  speed: 40000,
   loop: true,
   spaceBetween: 40,
+  slidesPerGroup: 20,
   autoplay: true,
   autoplay: {
-    delay: 300,
+    delay: 0,
   },
   breakpoints: {
     1100: {
@@ -698,14 +699,14 @@ if (document.querySelector('#calendar')) {
 
 document.addEventListener('DOMContentLoaded', function () {
   var modalButtons = document.querySelectorAll('.open-modal'),
-      overlay = document.querySelector('.overlay'),
-      closeButtons = document.querySelectorAll('.modal-close');
+  overlay = document.querySelector('.overlay'),
+  closeButtons = document.querySelectorAll('.modal-close');
   modalButtons.forEach(function (item) {
     item.addEventListener('click', function (e) {
       e.preventDefault();
       var scrollbarSize = window.innerWidth - document.body.offsetWidth;
       var modalId = this.getAttribute('data-modal'),
-          modalElem = document.querySelector('.modal[data-modal="' + modalId + '"]');
+      modalElem = document.querySelector('.modal[data-modal="' + modalId + '"]');
       modalElem.classList.add('active');
       overlay.classList.add('active');
       document.body.style.paddingRight = scrollbarSize + 'px';

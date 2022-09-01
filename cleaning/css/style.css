@@ -2709,8 +2709,8 @@ body.loaded .logo {
 }
 
 .preloader__logo_rotate {
-  -webkit-transform: rotate(-165deg);
-  transform: rotate(-165deg);
+/*  -webkit-transform: rotate(-165deg);
+  transform: rotate(-165deg);*/
   opacity: 1;
   visibility: visible;
 }
@@ -2722,8 +2722,6 @@ body.loaded .logo {
 
 .preloader__logo.loaded {
   opacity: 1 !important;
-  -webkit-transform: rotate(0);
-  transform: rotate(0);
 }
 
 .preloader.loaded .preloader__logo {
@@ -4832,9 +4830,11 @@ body.loaded .logo {
   }
 
   .header.scroll .logo__image {
-    top: 50%;
+    top: 7px;
   }
-
+  .header_home .logo__image_white{
+    top: 7px
+  }
   .header.scroll .logo__image {
     width: 80px;
     height: 80px;
@@ -5752,3 +5752,11 @@ body.loaded .logo {
     color: #0CBCBC !important;
   }
 }
+
+
+
+
+
+
+
+
