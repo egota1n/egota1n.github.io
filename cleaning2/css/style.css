@@ -5928,8 +5928,8 @@ body.loaded .logo {
   }
   .footer__contacts {
     -webkit-box-flex: 0;
-    -ms-flex: 0 0 292px;
-    flex: 0 0 292px;
+    -ms-flex: 0 0 290px;
+    flex: 0 0 290px;
   }
   .contacts-footer__icon {
     margin-right: 8px;
@@ -5955,7 +5955,184 @@ body.loaded .logo {
   .contacts-footer__item {
     margin-bottom: 9px;
   }
-
+  .about__logo {
+    width: 88px;
+    height: 88px;
+    bottom: 36px;
+    left: 36px
+  }
+  .list__icon svg {
+    width: 16px;
+    height: 16px;
+  }
+  .now__container {
+    padding-top: 62px !important;
+    padding-bottom: 70px !important;
+  }
+  .now__title {
+    margin-bottom: 12px;
+  }
+  .now__title1 {
+    margin-bottom: 0;
+  }
+  .now__text {
+    margin-bottom: 47px;
+    font-size: 16px;
+  }
+  .form-now__flag img {
+    width: 19px;
+    height: 19px;
+  }
+  .result__slider {
+    height: 480px;
+  }
+  .dots .swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+  }
+  .result-controls__button-prev, .result-controls__button-next {
+    width: 13px;
+    height: 13px;
+  }
+  .result-controls {
+    width: 36px;
+    height: 36px;
+  }
+  .result__after {
+    margin-left: 3px;
+  }
+  .result__before {
+    margin-right: 3px;
+  }
+  .form-calculator__actions {
+    padding: 43px 36px 61px 48px;
+  }
+  .total__body {
+    padding: 43px 32px 32px;
+  }
+  .form-calculator__label {
+    font-size: 13px;
+  }
+  .form-calculator__select {
+    margin-bottom: 24px;
+  }
+  .select__head {
+    min-height: 45px;
+    padding: 12px 20px;
+    font-size: 13px;
+  }
+  .select__head svg {
+    height: 8px;
+    width: 16px;
+  }
+  .checkbox__text{
+    font-size: 13px
+  }
+  .total__value_top {
+    font-size: 14px;
+  }
+  .total__label_top {
+    font-weight: 600;
+    font-size: 14px;
+  }
+  .total__line{
+    margin-bottom: 12px
+  }
+  .form-calculator__input input{
+    min-height: 45px;
+  }
+  .form-calculator__calendar input{
+    min-height: 45px;
+  }
+  .form-calculator__total {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 344px;
+    flex: 0 0 344px;
+  }
+  .result-total__label {
+    margin-bottom: 4px;
+    font-size: 14px;
+  }
+  .result-total__price {
+    font-size: 34px;
+  }
+  .checkbox__text:before{
+    width: 16px;
+    height: 16px;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 16px;
+    flex: 0 0 16px;
+  }
+  .checkbox__text:after {
+    width: 8px;
+    height: 8px;
+    left: 4px;
+    top: 4px;
+  }
+  .form-calculator__input span{
+    font-size: 13px;
+    right: 20px;
+  }
+  .form-calculator__calendar svg{
+    width: 19px;
+    height: 19px;
+    left: 20px;
+  }
+  .total__value, .total__label{
+    font-size: 11px;
+  }
+  .total__value_top, .total__label_top{
+    font-size: 14px;
+  }
+  .page__calculator{
+    padding-bottom: 176px;
+  }
+  .item-stages__info {
+    max-width: 272px;
+    padding: 26px 32px;
+  }
+  .item-stages__title {
+    font-size: 19px;
+    margin-bottom: 14px;
+  }
+  .item-stages__text {
+    font-size: 11px;
+  }
+  .item-stages__number {
+    top: 61px;
+    left: 397px;
+  }
+  .item-stages__number_second {
+    left: 499px;
+  }
+  .item-stages__tooltip {
+    padding: 0px 153px 0 165px;
+  }
+  .item-stages__number {
+    font-size: 34px;
+  }
+  .stages__line {
+    width: 3px;
+  }
+  .stages__line::before {
+    width: 3px;
+    height: 136px;
+  }
+  .stages__line::after {
+    top: 136px;
+    width: 16px;
+    height: 16px;
+  }
+  .stages__body {
+    padding-top: 72px;
+    min-height: 746px;
+  }
+  .link {
+    font-size: 11px;
+  }
+  .page__stages {
+    padding-bottom: 80px;
+  }
 }
 
 
