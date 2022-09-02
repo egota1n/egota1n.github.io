@@ -5806,7 +5806,9 @@ body.loaded .logo {
 }
 
 @media (min-width: 1245px) and (max-width: 1560px) {
-
+  body{
+    zoom: 0.8;
+  }
 }
 
 
