@@ -6138,11 +6138,50 @@ body.loaded .logo {
 
 
 
+@media (max-width: 991.98px){
+  .header__container{
+    background: grey;
+  }
+  .item-stages__number {
+    top: 70px;
+    left: 67px;
+    color: #c1c2c2;
+  }
+  .item-stages__number_second {
+    left: 67px;
+  }
+  .stages__item {
+    margin-bottom: 45px;
+  }
+  .stages__item:last-child {
+    margin-bottom: 0!important;
+  }
+  .item-stages__tooltip {
+    padding: 0 0px 0 192px;
+    margin-left: 0;
+  }
+  .stages__body {
+    padding-top: 75px;
+  }
+}
 
 
+@media (max-width: 575.98px){
+  .item-stages__tooltip {
+    padding: 0px 0px 0 40px;
+  }
+  .stages__body {
+    padding-top: 10px;
+  }
+  .stages__item {
+    margin-bottom: 45px;
+  }
+  .item-stages__tooltip{
+    margin-top: 0;
+  }
+}
 
-
-
-
-
+@media (max-width: 374.98px){
+  
+}
 
