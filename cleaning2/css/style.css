@@ -4313,8 +4313,8 @@ body.loaded .logo {
 
   .form-calculator__total {
     -webkit-box-flex: 0;
-    -ms-flex: 0 0 430px;
-    flex: 0 0 430px;
+    -ms-flex: 0 0 376px;
+    flex: 0 0 376px;
   }
 
   .brands__slider {
@@ -4784,7 +4784,7 @@ body.loaded .logo {
   }
 
   .page_home .calculator__form {
-    margin: 0 -40px;
+    margin: 0 0;
   }
 
   .page__intro-image {
@@ -6139,9 +6139,6 @@ body.loaded .logo {
 
 
 @media (max-width: 991.98px){
-  .header__container{
-    background: grey;
-  }
   .item-stages__number {
     top: 70px;
     left: 67px;
@@ -6179,9 +6176,39 @@ body.loaded .logo {
   .item-stages__tooltip{
     margin-top: 0;
   }
+  .item-stages__title{
+    font-size: 22px
+  }
 }
 
 @media (max-width: 374.98px){
-  
+  .page_home .calculator__form {
+    margin: 0 0;
+  }
+  .item-stages__title{
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1244px) {
+  .item-stages__tooltip {
+    position: relative;
+    padding: 0;
+    margin: 0 auto;
+    top: 0;
+    left: 220px;
+  }
+  .item-stages__tooltip_second{
+    left: -220px;
+  }
+  .item-stages__number {
+    top: 70px;
+    left: 50%;
+    transform: translate(-130%, 0);
+  }
+  .item-stages__number_second {
+    left: 50%;
+    transform: translate(35%, 0);
+  }
 }
 
