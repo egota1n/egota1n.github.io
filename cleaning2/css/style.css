@@ -6133,6 +6133,10 @@ body.loaded .logo {
   .page__stages {
     padding-bottom: 80px;
   }
+  .result-controls__button-prev svg, .result-controls__button-next svg {
+    width: 13px;
+    height: 13px;
+  }
 }
 
 
