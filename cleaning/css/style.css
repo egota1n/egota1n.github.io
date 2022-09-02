@@ -5753,9 +5753,6 @@ body.loaded .logo {
   }
 }
 
-
-
-
 .slider {
   overflow: hidden;
 }
@@ -5774,6 +5771,52 @@ body.loaded .logo {
 .swiper-wrapper {
   transition-timing-function: linear;
 }
+
+.stages__body {
+  padding-top: 91px;
+}
+
+.stages__item{
+  display: flex;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.item-stages__tooltip {
+  position: static;
+  padding: 0 200px 0 212px;
+  margin-left: auto;
+  transform: translate(0, 0);
+  display: inline-block;
+}
+
+.item-stages__tooltip_second{
+  margin-left: 0;
+}
+
+.item-stages__number {
+  top: 70px;
+  left: 500px;
+  transform: translate(0, 0);
+  color: #707070;
+}
+
+.item-stages__number_second {
+  left: 625px;
+}
+
+@media (min-width: 1245px) and (max-width: 1560px) {
+
+}
+
+
+
+
+
+
+
+
+
 
 
 
