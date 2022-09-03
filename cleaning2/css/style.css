@@ -6337,6 +6337,24 @@ body.loaded .logo {
   .form__input_tel input {
     padding-left: 28px;
   }
+  .item-payment__name {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  .item-payment__title {
+    font-size: 16px;
+    margin-bottom: 8px;
+  }
+  .item-payment__service span {
+    font-size: 11px;
+  }
+  .item-payment__icon {
+    margin-right: 8px;
+  }
+  .payment__item {
+    padding: 0 16px;
+    margin-bottom: 32px;
+  }
 }
 
 
