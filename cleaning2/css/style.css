@@ -6131,7 +6131,7 @@ body.loaded .logo {
     font-size: 11px;
   }
   .page__stages {
-    padding-bottom: 80px;
+    padding-bottom: 160px;
   }
   .result-controls__button-prev svg, .result-controls__button-next svg {
     width: 13px;
@@ -6220,6 +6220,122 @@ body.loaded .logo {
   }
   .slider-about-page__slide img {
     height: 522px;
+  }
+  .description{
+    font-size: 16px
+  }
+  .additional-services__top {
+    margin-bottom: 66px;
+  }
+  .item-additional-services__title {
+    font-size: 19px;
+    margin-bottom: 8px;
+  }
+  .item-additional-services__text {
+    margin-bottom: 32px;
+    font-size: 11px;
+  }
+  .button {
+    font-size: 12px;
+    min-height: 54px;
+    padding: 2px 20px;
+  }
+  .item-additional-services__button {
+    min-width: 208px;
+  }
+  .item-additional-services__image {
+    min-height: 316px;
+  }
+  .page__additional-services {
+    padding-bottom: 112px;
+  }
+  .page__intro-image {
+    height: 280px;
+    margin-top: 72px;
+    margin-bottom: 48px;
+  }
+  .item-services__title {
+    font-size: 19px;
+    margin-bottom: 8px;
+  }
+  .item-services__content {
+    padding: 32px 32px 22px;
+  }
+  .item-services__description {
+    font-size: 11px;
+  }
+  .item-services__image {
+    height: 128px;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 128px;
+    flex: 0 0 128px;
+  }
+  .advantages__icon img {
+    width: 37px;
+    height: 37px;
+  }
+  .advantages__icon {
+    margin-bottom: 16px;
+  }
+  .advantages__title {
+    font-size: 19px;
+  }
+  .advantages__column {
+    padding: 0 16px;
+  }
+  .advantages__item{
+    padding: 32px
+  }
+  .page__advantages {
+    padding-bottom: 160px;
+  }
+  .tabs__item{
+    font-size: 14px;
+    min-height: 48px;
+  }
+  div.tabs__items{
+    margin-bottom: 40px;
+  }
+  .service-cards__title {
+    font-size: 34px;
+    margin-bottom: 24px;
+  }
+  .service-cards__item span {
+    font-size: 11px;
+  }
+  .bottom-service-cards__icon img {
+    width: 34px;
+    height: 34px;
+  }
+  .bottom-service-cards__icon {
+    margin-right: 4px;
+  }
+  .bottom-service-cards__text {
+    font-size: 11px;
+  }
+  .bottom-service-cards__item {
+    padding: 0 20px;
+  }
+  .service-cards__subtitle {
+    font-size: 16px;
+    margin-bottom: 14px;
+  }
+  .service-cards__content {
+    padding: 56px 24px 21px 42px;
+  }
+  .form__title {
+    font-size: 26px;
+    margin-bottom: 32px;
+  }
+  .form__input input {
+    height: 59px;
+  }
+  .form__flag img {
+    width: 19px;
+    height: 19px;
+  }
+  .form__input_tel input {
+    padding-left: 28px;
   }
 }
 
