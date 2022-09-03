@@ -6259,7 +6259,7 @@ body.loaded .logo {
     margin-bottom: 8px;
   }
   .item-services__content {
-    padding: 32px 32px 22px;
+    padding: 32px 28px 22px;
   }
   .item-services__description {
     font-size: 11px;
@@ -6354,6 +6354,106 @@ body.loaded .logo {
   .payment__item {
     padding: 0 16px;
     margin-bottom: 32px;
+  }
+  .services-info__text {
+    font-size: 13px;
+    margin-bottom: 32px;
+  }
+  .services-info__image {
+    height: 152px;
+  }
+  .page__service-cards {
+    padding-bottom: 216px;
+  }
+  .services__items_col .services__item{
+    height: 296px;
+  }
+  .politics h2 {
+    font-size: 14px;
+    margin-bottom: 8px;
+  }
+  .offer-services__text {
+    font-size: 12px;
+    width: 100px;
+  }
+  .offer-services__icon {
+    margin-right: 4px;
+  }
+  .offer-services__icon img {
+    width: 34px;
+    height: 34px;
+  }
+  .offer-services__item {
+    margin-bottom: 19px;
+  }
+  .stub__logo {
+    margin-bottom: 56px;
+  }
+  .stub__logo img {
+    width: 352.8px;
+    height: 283.2px;
+  }
+  .stub__body{
+    padding: 16px;
+  }
+  .stub__text {
+    font-size: 38px;
+  }
+  .item-objects__text {
+    font-size: 14px;
+  }
+  .item-objects__top {
+    margin-bottom: 16px;
+  }
+  .item-objects__image img {
+    width: 96px;
+    height: 96px;
+  }
+  .item-objects__icon {
+    width: 36px;
+    height: 36px;
+  }
+  .item-objects__icon svg {
+    width: 13.6px;
+    height: 9.6px;
+  }
+  .objects__item {
+    padding: 0px 16px;
+  }
+  .objects__item {
+    margin-bottom: 56px;
+  }
+  .objects__body {
+    padding-top: 72px;
+    padding-bottom: 86px;
+  }
+  .professional-individuals__item {
+    min-height: 272px;
+    padding: 32px;
+  }
+  .professional-individuals__subtitle{
+    font-size: 19px;
+  }
+  .professional-individuals__column {
+    padding: 0 16px;
+    margin-bottom: 32px;
+  }
+  .professional-individuals {
+    padding-bottom: 154px;
+  }
+  .professional__block {
+    height: 272px;
+    padding: 32px;
+  }
+  .professional__subtitle {
+    font-size: 19px;
+  }
+  .professional__column {
+    padding: 0 16px;
+    margin-bottom: 32px;
+  }
+  .professional__block_big {
+    height: 584px;
   }
 }
 
