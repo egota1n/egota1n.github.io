@@ -6137,6 +6137,72 @@ body.loaded .logo {
     width: 13px;
     height: 13px;
   }
+  .error__title {
+    font-size: 42px;
+    margin-bottom: 32px;
+  }
+  .error__button {
+    min-width: 240px;
+  }
+  .main-title {
+    font-size: 50px;
+  }
+  .page__container {
+    padding-top: 160px;
+  }
+  .about-page__image {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 368px;
+    flex: 0 0 368px;
+    height: 480px;
+  }
+  .about-page__logo {
+    bottom: 32px;
+    left: 32px;
+  }
+  .about-page__logo img {
+    width: 88px;
+    height: 88px;
+  }
+  .union-about__logo img {
+    height: 102px;
+    width: 102px;
+  }
+  .union-about__text{
+    font-size: 11px;
+  }
+  .slider-about-page__container {
+    max-width: 1240px;
+  }
+  .menu__link {
+    min-height: 64px!important;
+    padding: 0px 16px;
+    font-size: 13px;
+  }
+  .header__phone {
+    margin-right: 16px;
+  }
+  .phone-header__icon.stroke {
+    height: 19px;
+  }
+  .phone-header__icon svg {
+    width: 19px;
+    height: 19px;
+  }
+  a.header__callback.button.button_transparent {
+    min-height: 38px;
+    font-size: 11px!important;
+    padding: 2px 20px;
+  }
+  .header__container {
+    min-height: 64px;
+  }
+  .logo__image {
+    width: 80px;
+    height: 80px;
+    top: 20px;
+    left: 40px;
+  }
 }
 
 
