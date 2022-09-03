@@ -6203,6 +6203,24 @@ body.loaded .logo {
     top: 20px;
     left: 40px;
   }
+  .slider-about-page .slider-about-page__button-next, .slider-about-page .slider-about-page__button-prev {
+    width: 40px;
+    height: 40px;
+  }
+  .slider-about-page .slider-about-page__button-next svg, .slider-about-page .slider-about-page__button-prev svg {
+    width: 16px;
+    height: 8px;
+    position: relative;
+  }
+  .slider-about-page__button-prev svg {
+    left: -2px;
+  }
+  .slider-about-page__button-next svg {
+    right: -2px;
+  }
+  .slider-about-page__slide img {
+    height: 522px;
+  }
 }
 
 
