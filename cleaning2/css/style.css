@@ -1104,6 +1104,7 @@ body.loaded .logo {
   align-items: center;
   -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
+  font-weight: 400;
 }
 
 .menu__arrow {
@@ -1183,6 +1184,7 @@ body.loaded .logo {
 
 .header_home .menu__link {
   color: #fff;
+  font-weight: 400;
 }
 
 .header_home .logo__text {
@@ -5808,7 +5810,8 @@ body.loaded .logo {
 @media (min-width: 1245px) and (max-width: 1560px) {
   .intro__title {
     width: 820px;
-    font-size: 50px;
+    font-size: 48px;
+    font-weight: 400;
   }
   .container {
     max-width: 1005px;
