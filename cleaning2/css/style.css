@@ -5814,10 +5814,10 @@ body.loaded .logo {
     font-weight: 400;
   }
   .container {
-    max-width: 1005px;
+    max-width: 940px;
   }
   .title {
-    font-size: 33.5px;
+    font-size: 30px;
   }
   .page__tasks, .page__help {
     padding-top: 100px;
@@ -5848,12 +5848,12 @@ body.loaded .logo {
     max-width: 100%;
   }
   .intro__button {
-    min-height: 155px;
-    max-width: 240px;
-    font-size: 30px;
+    min-height: 125px;
+    max-width: 232px;
+    font-size: 26px;
   }
   .brands__container:last-child{
-    max-width: 95%;
+    max-width: 90%;
   }
   .text p {
     font-size: 12.5px;
@@ -5875,25 +5875,26 @@ body.loaded .logo {
     padding: 120px 40px 90px 0;
   }
   .statistics-about__item {
-    padding: 14px 22px;
+    padding: 14px 18px;
   }
   .item-what__title {
-    font-size: 19px;
+    font-size: 17px;
+    margin-bottom: 16px;
   }
   .list__item span {
-    font-size: 11px;
+    font-size: 10.5px;
   }
   .what__column {
     padding: 0 15px;
   }
   .item-what__body {
-    padding: 24px 30px 30px 34px;
+    padding: 24px 30px 30px 28px;
   }
   .list__item {
     margin-bottom: 24px;
   }
   .what__image {
-    height: 80%;
+    height: 73%;
   }
   .list__icon {
     margin-right: 8px;
@@ -5965,8 +5966,8 @@ body.loaded .logo {
     left: 36px
   }
   .list__icon svg {
-    width: 16px;
-    height: 16px;
+    width: 14px;
+    height: 14px;
   }
   .now__container {
     padding-top: 62px !important;
@@ -5980,35 +5981,36 @@ body.loaded .logo {
   }
   .now__text {
     margin-bottom: 47px;
-    font-size: 16px;
+    font-size: 14px;
   }
   .form-now__flag img {
     width: 19px;
     height: 19px;
   }
   .result__slider {
-    height: 480px;
+    height: 450px;
+    margin: 0 auto;
   }
   .dots .swiper-pagination-bullet {
+    width: 9px;
+    height: 9px;
+  }
+  .result-controls__button-prev, .result-controls__button-next {
     width: 10px;
     height: 10px;
   }
-  .result-controls__button-prev, .result-controls__button-next {
-    width: 13px;
-    height: 13px;
-  }
   .result-controls {
-    width: 36px;
-    height: 36px;
+    width: 32px;
+    height: 32px;
   }
   .result__after {
-    margin-left: 3px;
+    margin-left: 2.5px;
   }
   .result__before {
-    margin-right: 3px;
+    margin-right: 2.5px;
   }
   .form-calculator__actions {
-    padding: 43px 36px 61px 48px;
+    padding: 43px 10px 61px 17px;
   }
   .total__body {
     padding: 43px 32px 32px;
@@ -6103,13 +6105,15 @@ body.loaded .logo {
   }
   .item-stages__number {
     top: 61px;
-    left: 397px;
+    left: 50%;
+    transform: translate(-130%, 0);
   }
   .item-stages__number_second {
-    left: 499px;
+    left: 50%;
+    transform: translate(40%, 0);
   }
   .item-stages__tooltip {
-    padding: 0px 153px 0 165px;
+    padding: 0px 130px 0 135px;
   }
   .item-stages__number {
     font-size: 34px;
@@ -6137,8 +6141,8 @@ body.loaded .logo {
     padding-bottom: 160px;
   }
   .result-controls__button-prev svg, .result-controls__button-next svg {
-    width: 13px;
-    height: 13px;
+    width: 10px;
+    height: 10px;
   }
   .error__title {
     font-size: 42px;
@@ -6457,6 +6461,61 @@ body.loaded .logo {
   }
   .professional__block_big {
     height: 584px;
+  }
+  .form-calculator__column {
+    padding: 0 18px;
+  }
+  .more-intro__mouse svg {
+    width: 30px;
+    height: 34px;
+  }
+  .more-intro__arrow svg {
+    width: 16px;
+    height: 10px;
+  }
+  .more-intro__arrow {
+    margin-bottom: 1px;
+  }
+  .more-intro__mouse {
+    margin-bottom: 8px;
+  }
+  .intro {
+    padding-bottom: 40px;
+  }
+  .result-controls__button-prev {
+    position: relative;
+    left: 1.5px;
+  }
+  .result-controls__button-next {
+    position: relative;
+    right: 1.5px;
+  }
+  .result__button-prev svg, .result__button-next svg {
+    width: 20px;
+    height: 12px;
+  }
+  .item-tasks__icon img {
+    width: 50px;
+    height: 50px;
+  }
+  .item-tasks__icon {
+    margin-bottom: 20px;
+  }
+  .item-tasks__title {
+    font-size: 16px;
+    margin-bottom: 15px;
+    width: 170px;
+  }
+  .item-tasks__body {
+    padding: 30px;
+  }
+  .button {
+    font-size: 12px;
+    min-height: 48px;
+    padding: 2px 20px;
+  }
+  .tasks__item {
+    margin-bottom: 25px;
   }
 }
 
