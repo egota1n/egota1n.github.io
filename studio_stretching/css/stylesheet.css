@@ -1,0 +1,24 @@
+@font-face {
+    font-family: 'Idealist Sans';
+    src: url('IdealistSans-Light.eot');
+    src: local('Idealist Sans Light'), local('IdealistSans-Light'),
+        url('IdealistSans-Light.eot?#iefix') format('embedded-opentype'),
+        url('IdealistSans-Light.woff2') format('woff2'),
+        url('IdealistSans-Light.woff') format('woff'),
+        url('IdealistSans-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Idealist Sans';
+    src: url('IdealistSans.eot');
+    src: local('Idealist Sans'), local('IdealistSans'),
+        url('IdealistSans.eot?#iefix') format('embedded-opentype'),
+        url('IdealistSans.woff2') format('woff2'),
+        url('IdealistSans.woff') format('woff'),
+        url('IdealistSans.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
