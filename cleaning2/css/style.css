@@ -5809,6 +5809,32 @@ body.loaded .logo {
   left: 625px;
 }
 
+/*New animation*/
+.active1::before{
+  height: 414px;
+  transition: all 1.2s ease;
+}
+.active1::after{
+  top: 402px;
+  transition: all 1.2s ease;
+}
+.active2:before{
+  height: 639px;
+  transition: all 1.2s ease;
+}
+.active2::after{
+  top: 627px;
+  transition: all 1.2s ease;
+}
+.active3:before{
+  height: 860px;
+  transition: all 1.2s ease;
+}
+.active3::after{
+  top: 848px;
+  transition: all 1.2s ease;
+}
+
 @media (min-width: 1245px) and (max-width: 1560px) {
   .intro__title {
     width: 820px;
@@ -6519,6 +6545,31 @@ body.loaded .logo {
   .tasks__item {
     margin-bottom: 25px;
   }
+  /*New animation*/
+  .active1::before{
+    height: 331px;
+    transition: all 1.2s ease;
+  }
+  .active1::after{
+    top: 325px;
+    transition: all 1.2s ease;
+  }
+  .active2:before{
+    height: 512px;
+    transition: all 1.2s ease;
+  }
+  .active2::after{
+    top: 505px;
+    transition: all 1.2s ease;
+  }
+  .active3:before{
+    height: 693px;
+    transition: all 1.2s ease;
+  }
+  .active3::after{
+    top: 686px;
+    transition: all 1.2s ease;
+  }
 }
 
 
@@ -6546,6 +6597,35 @@ body.loaded .logo {
   .stages__body {
     padding-top: 75px;
   }
+  /*New animation*/
+  .stages__line::before {
+    height: 175px;
+  }
+  .stages__line::after {
+    top: 162px;
+  }
+  .item-stages4 .item-stages__number {
+    top: 88px;
+    left: 66px;
+  }
+  .active1::before{
+    height: 431px;
+  }
+  .active1::after{
+    top: 422px;
+  }
+  .active2:before{
+    height: 692px;
+  }
+  .active2::after{
+    top: 683px;
+  }
+  .active3:before {
+    height: 951px;
+  }
+  .active3::after{
+    top: 937px;
+  }
 }
 
 
@@ -6564,6 +6644,25 @@ body.loaded .logo {
   }
   .item-stages__title{
     font-size: 22px
+  }
+  /*New animation*/
+  .active1::before {
+    height: 423px;
+  }
+  .active1::after {
+    top: 413px;
+  }
+  .active2::before {
+    height: 681px;
+  }
+  .active2::after {
+    top: 668px;
+  }
+  .active3::before {
+    height: 933px;
+  }
+  .active3::after {
+    top: 923px;
   }
 }
 
@@ -6597,43 +6696,3 @@ body.loaded .logo {
     transform: translate(35%, 0);
   }
 }
-
-
-.active1::before{
-  height: 307px;
-  transition: all 1.2s ease;
-}
-
-.active1::after{
-  top: 300px;
-  transition: all 1.2s ease;
-}
-
-.active2:before{
-  height: 483px;
-  transition: all 1.2s ease;
-}
-
-.active2::after{
-  top: 476px;
-  transition: all 1.2s ease;
-}
-
-
-.active3:before{
-  height: 658px;
-  transition: all 1.2s ease;
-}
-
-.active3::after{
-  top: 651px;
-  transition: all 1.2s ease;
-}
-
-
-
-
-
-
-
-
