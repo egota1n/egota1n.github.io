@@ -6666,6 +6666,37 @@ body.loaded .logo {
   }
 }
 
+@media (max-width: 414px){
+  /*New animation*/
+  .item-stages__info{
+    height: 260px;
+  }
+  .stages__line::before {
+    height: 200px;
+  }
+  .stages__line::after {
+    top: 189px;
+  }
+  .active1::before {
+    height: 505px;
+  }
+  .active1::after {
+    top: 496px;
+  }
+  .active2::before {
+    height: 810px;
+  }
+  .active2::after {
+    top: 798px;
+  }
+  .active3::before {
+    height: 1115px;
+  }
+  .active3::after {
+    top: 1104px;
+  }
+}
+
 @media (max-width: 374.98px){
   .page_home .calculator__form {
     margin: 0 0;
