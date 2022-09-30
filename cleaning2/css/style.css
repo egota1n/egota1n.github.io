@@ -2931,6 +2931,7 @@ body.loaded .logo {
   height: 170px;
   z-index: 5;
   background: #0CBCBC;
+  transition: all 1.2s ease;
 }
 
 .stages__line::after {
@@ -2945,6 +2946,7 @@ body.loaded .logo {
   border-radius: 50%;
   z-index: 5;
   background: #0CBCBC;
+  transition: all 1.2s ease;
 }
 
 .calculator__title {
@@ -6595,4 +6597,43 @@ body.loaded .logo {
     transform: translate(35%, 0);
   }
 }
+
+
+.active1::before{
+  height: 307px;
+  transition: all 1.2s ease;
+}
+
+.active1::after{
+  top: 300px;
+  transition: all 1.2s ease;
+}
+
+.active2:before{
+  height: 483px;
+  transition: all 1.2s ease;
+}
+
+.active2::after{
+  top: 476px;
+  transition: all 1.2s ease;
+}
+
+
+.active3:before{
+  height: 658px;
+  transition: all 1.2s ease;
+}
+
+.active3::after{
+  top: 651px;
+  transition: all 1.2s ease;
+}
+
+
+
+
+
+
+
 
