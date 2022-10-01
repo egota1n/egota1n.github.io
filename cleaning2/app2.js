@@ -11,6 +11,7 @@ new ScrollMagic.Scene({
 })
 .setClassToggle(".stages__line", "active2_1") // add class toggle
 .addIndicators() // add indicators (requires plugin)
+.removeIndicators()
 .addTo(controller);
 
 new ScrollMagic.Scene({
@@ -18,6 +19,7 @@ new ScrollMagic.Scene({
 })
 .setClassToggle(".stages__line", "active2_2") // add class toggle
 .addIndicators() // add indicators (requires plugin)
+.removeIndicators()
 .addTo(controller);
 
 new ScrollMagic.Scene({
@@ -25,6 +27,7 @@ new ScrollMagic.Scene({
 })
 .setClassToggle(".stages__line", "active2_3") // add class toggle
 .addIndicators() // add indicators (requires plugin)
+.removeIndicators()
 .addTo(controller);
 
 new ScrollMagic.Scene({
@@ -32,6 +35,7 @@ new ScrollMagic.Scene({
 })
 .setClassToggle(".stages__line", "active2_4") // add class toggle
 .addIndicators() // add indicators (requires plugin)
+.removeIndicators()
 .addTo(controller);
 
 new ScrollMagic.Scene({
@@ -39,6 +43,7 @@ new ScrollMagic.Scene({
 })
 .setClassToggle(".stages__line", "active2_5") // add class toggle
 .addIndicators() // add indicators (requires plugin)
+.removeIndicators()
 .addTo(controller);
 
 
