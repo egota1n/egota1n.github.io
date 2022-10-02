@@ -679,29 +679,63 @@ dl, ol, ul {
     background-position: left center!important;
 }
 
-.photo__atmosphere1{
-    background: url(../img/photo__atmosphere/photo__atmosphere1.jpg);
+.scroll__slider-msk .photo__atmosphere{
+    width: 450px;
+    height: 300px;
 }
 
-.photo__atmosphere2{
-    background: url(../img/photo__atmosphere/photo__atmosphere2.jpg);
+.scroll__slider-msk {
+    height: 378px;
 }
 
-.photo__atmosphere3{
-    background: url(../img/photo__atmosphere/photo__atmosphere3.jpg);
+.scroll__slider-msk .photo__atmosphere1{
+    background: url(../img/photo__atmosphere/msk-photo__atmosphere1.jpg);
 }
 
-.photo__atmosphere4{
-    background: url(../img/photo__atmosphere/photo__atmosphere4.jpg);
+.scroll__slider-msk .photo__atmosphere2{
+    background: url(../img/photo__atmosphere/msk-photo__atmosphere2.jpg);
 }
 
-.photo__atmosphere5{
-    background: url(../img/photo__atmosphere/photo__atmosphere5.jpg);
+.scroll__slider-msk .photo__atmosphere3{
+    background: url(../img/photo__atmosphere/msk-photo__atmosphere3.jpg);
 }
 
-.photo__atmosphere6{
+.scroll__slider-msk .photo__atmosphere4{
+    background: url(../img/photo__atmosphere/msk-photo__atmosphere4.jpg);
+}
+
+.scroll__slider-msk .photo__atmosphere5{
+    background: url(../img/photo__atmosphere/msk-photo__atmosphere5.jpg);
+}
+
+.scroll__slider-msk .photo__atmosphere6{
     margin-right: 0;
-    background: url(../img/photo__atmosphere/photo__atmosphere6.jpg);
+    background: url(../img/photo__atmosphere/msk-photo__atmosphere6.jpg);
+}
+
+.scroll__slider-spb .photo__atmosphere1{
+    background: url(../img/photo__atmosphere/spb-photo__atmosphere1.jpg);
+}
+
+.scroll__slider-spb .photo__atmosphere2{
+    background: url(../img/photo__atmosphere/spb-photo__atmosphere2.jpg);
+}
+
+.scroll__slider-spb .photo__atmosphere3{
+    background: url(../img/photo__atmosphere/spb-photo__atmosphere3.jpg);
+}
+
+.scroll__slider-spb .photo__atmosphere4{
+    background: url(../img/photo__atmosphere/spb-photo__atmosphere4.jpg);
+}
+
+.scroll__slider-spb .photo__atmosphere5{
+    background: url(../img/photo__atmosphere/spb-photo__atmosphere5.jpg);
+}
+
+.scroll__slider-spb .photo__atmosphere6{
+    margin-right: 0;
+    background: url(../img/photo__atmosphere/spb-photo__atmosphere6.jpg);
 }
 
 /*Конец Блока с перелистыванием от скролла*/
@@ -979,6 +1013,12 @@ dl, ol, ul {
     padding: 60px 0 72px 0;
 }
 
+.title__directions{
+    text-transform: uppercase;
+    font-size: 60px;
+    margin-bottom: 25px;
+}
+
 .block__direction{
     position: relative;
     height: 344px;
@@ -1089,17 +1129,44 @@ dl, ol, ul {
 }
 
 .block__direction-right .photo__direction{
-    background: url(../img/photo__direction1.jpg);
     top: 0;
     left: 0;
 }
-
 .block__direction-left .photo__direction{
-    background: url(../img/photo__direction2.jpg);
     top: 0;
     right: 0;
 }
-
+#direction1 {
+    background: url(../img/photo__direction1.jpg);
+}
+#direction2 {
+    background: url(../img/photo__direction2.jpg);
+}
+#direction3 {
+    background: url(../img/modal__section/3.jpg);
+}
+#direction4 {
+    background: url(../img/modal__section/4.jpg);
+}
+#direction5 {
+    background: url(../img/modal__section/5.jpg);
+}
+#direction6 {
+    background: url(../img/modal__section/6.jpg);
+}
+#direction7 {
+    background: url(../img/modal__section/7.jpg);
+}
+#direction8 {
+    background: url(../img/modal__section/8.jpg);
+}
+#direction9 {
+    background: url(../img/modal__section/9.jpg);
+}
+#photo__beginners2{
+    background: url(../img/weekbegin.jpg) no-repeat center;
+    background-size: contain;
+}
 /*Конец пятого блока*/
 
 .sliderwrapper_h{
@@ -1903,7 +1970,16 @@ html{
 
 /*Модальные окна (Секции)*/
 
-#modal__section1 .modal-content{
+#modal__section1 .modal-content,
+#modal__section2 .modal-content,
+#modal__section3 .modal-content,
+#modal__section4 .modal-content,
+#modal__section5 .modal-content,
+#modal__section6 .modal-content,
+#modal__section7 .modal-content,
+#modal__section8 .modal-content,
+#modal__section9 .modal-content
+{
     padding: 0 53px;
 }
 
@@ -2459,7 +2535,16 @@ html{
     .modal-dialog {
         min-width: 800px!important;
     }
-    #modal__section1 .modal-content {
+    #modal__section1 .modal-content,
+    #modal__section2 .modal-content,
+    #modal__section3 .modal-content,
+    #modal__section4 .modal-content,
+    #modal__section5 .modal-content,
+    #modal__section6 .modal-content,
+    #modal__section7 .modal-content,
+    #modal__section8 .modal-content,
+    #modal__section9 .modal-content
+    {
         padding: 0 23px;
     }
     .photo__modal-section {
@@ -2544,6 +2629,10 @@ html{
     .section__directions {
         padding: 20px 0 52px 0;
     }
+    .title__directions {
+        font-size: 40px;
+        margin-bottom: 20px;
+    }
     .block__direction {
         height: 279px;
     }
@@ -2591,6 +2680,13 @@ html{
         width: 326px;
         height: 454px;
         margin-right: 25px;
+    }
+    .scroll__slider-msk .photo__atmosphere {
+        width: 400px;
+        height: 270px;
+    }
+    .scroll__slider-msk {
+        height: 378px;
     }
     /*Конец Блока с перелистыванием от скролла*/
 }
@@ -3087,7 +3183,16 @@ html{
         min-width: 640px!important;
     }
 
-    #modal__section1 .modal-content {
+    #modal__section1 .modal-content,
+    #modal__section2 .modal-content,
+    #modal__section3 .modal-content,
+    #modal__section4 .modal-content,
+    #modal__section5 .modal-content,
+    #modal__section6 .modal-content,
+    #modal__section7 .modal-content,
+    #modal__section8 .modal-content,
+    #modal__section9 .modal-content
+    {
         padding: 0 0 0 59px;
     }
 
@@ -3235,6 +3340,9 @@ html{
         margin-top: 40px;
         font-size: 18px
     }
+    .title__directions {
+        font-size: 36px;
+    }
     /*Начало Блока с перелистыванием от скролла*/
     .scroll__slider {
         height: 413px;
@@ -3249,6 +3357,13 @@ html{
         width: 246px;
         height: 294px;
         margin-right: 20px;
+    }
+    .scroll__slider-msk {
+        height: 343px;
+    }
+    .scroll__slider-msk .photo__atmosphere {
+        width: 350px;
+        height: 240px;
     }
     /*Конец  Блока с перелистыванием от скролла*/
 }
@@ -3827,6 +3942,9 @@ html{
         margin-top: 40px;
         font-size: 16px;
     }
+    .title__directions {
+        font-size: 28px;
+    }
     /*Начало Блока с перелистыванием от скролла*/
     .scroll__slider {
         height: 354px;
@@ -3842,10 +3960,20 @@ html{
         height: 264px;
         margin-right: 15px;
     }
+    .scroll__slider-msk .photo__atmosphere {
+        width: 330px;
+        height: 220px;
+    }
+    .scroll__slider-msk {
+        height: 283px;
+    }
     /*Конец Блока с перелистыванием от скролла*/
 }
 
 @media (max-width: 575px) {
+    .title__directions {
+        text-align: center;
+    }
     /*Начало Меню*/
     .nav-container .checkbox {
         height: 22px;
@@ -4375,7 +4503,16 @@ html{
         height: 220px;
         background-position: center bottom!important;
     }
-    #modal__section1 .modal-content {
+    #modal__section1 .modal-content,
+    #modal__section2 .modal-content,
+    #modal__section3 .modal-content,
+    #modal__section4 .modal-content,
+    #modal__section5 .modal-content,
+    #modal__section6 .modal-content,
+    #modal__section7 .modal-content,
+    #modal__section8 .modal-content,
+    #modal__section9 .modal-content
+    {
         padding: 0 15px 0 15px;
     }
     .title__modal-section {
@@ -4489,12 +4626,14 @@ html{
         height: 214px;
         margin-right: 15px;
     }
+    .scroll__slider-msk{
+        height: 184px;
+    }
+    .scroll__slider-msk .photo__atmosphere {
+        width: 170px;
+        height: 130px;
+    }
     /*Конец Блока с перелистыванием от скролла*/
 }
-
-
-
-
-
 
 

@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <title>Test project</title> -->
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon/site.webmanifest">
+    <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#751c29">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Main Styles -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Slick Slider -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="css/slick-theme.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header__top">
+                <nav class="nav">
+                    <a class="nav__logo" href="main.html"></a>
+                    <ul class="nav__list">
+                        <li><a href="about_spb.html">О НАС</a></li>
+                        <li><a href="directions_spb.html">НАПРАВЛЕНИЯ</a></li>
+                        <li><a href="https://hotstretching.ru/spb/offline.html">РАСПИСАНИЕ</a></li>
+                        <li><a href="https://hotstretching.ru/spb/offline.html">ЛИЧНЫЙ КАБИНЕТ</a></li>
+                        <li><a href="https://hotstretching.ru/spb/contacts">КОНТАКТЫ</a></li>                           
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="navbar">
+            <div class="nav-container">
+                <a class="nav__logo" href="main.html"></a>
+                <input class="checkbox" type="checkbox" name="" id="" />
+                <div class="hamburger-lines">
+                    <span class="line line1"></span>
+                    <span class="line line2"></span>
+                    <span class="line line3"></span>
+                </div>  
+                <div class="menu-items">
+                    <div class="container">
+                        <li><a href="about_spb.html">О нас</a></li>
+                        <li><a href="amatuer_spb.html">Новичкам</a></li>
+                        <li><a href="directions_spb.html">Направления</a></li>
+                        <li><a href="https://hotstretching.ru/spb/offline.html">Расписание</a></li> 
+                        <li><a href="https://hotstretching.ru/spb/online">Online-курс</a></li> 
+                        <li><a href="https://hotstretching.ru/spb/rules">Правила посещения</a></li>
+                        <a class="account__btn" href="https://hotstretching.ru/spb/offline.html">Личный кабинет</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+	</header>
+
+    <section class="section__directions">
+        <div class="container">
+            <h2 class="title__directions">Направления</h2>
+            <div class="block__direction block__direction-right">
+                <div class="photo__direction" id="direction1"></div>
+                <div class="info__direction">
+                    <h3 class="title__direction">Hot Stretching</h3>
+                    <p class="description__direction">
+                        На тренировке выполняется комплекс упражнений, направленный на увеличение гибкости тела, улучшение эластичности мышц, укрепление суставов и связок.
+                    </p>
+                    <div class="block-btn__direction">
+                        <a href="https://hotstretching.ru/spb/offline.html" class="btn__direction1">Записаться</a>
+                        <a href="#" class="btn__direction2" data-bs-toggle="modal" data-bs-target="#modal__section1">Узнать подробнее</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="block__direction block__direction-left">
+                <div class="photo__direction" id="direction2"></div>
+                <div class="info__direction">
+                    <h3 class="title__direction">Hot Barre</h3>
+                    <p class="description__direction">
+                        Фитнес с эстетикой балета! Будем формировать красивое сильное тело, грациозно стоять у станка и использовать различный инвентарь.
+                    </p>
+                    <div class="block-btn__direction">
+                        <a href="https://hotstretching.ru/spb/offline.html" class="btn__direction1">Записаться</a>
+                        <a href="#" class="btn__direction2" data-bs-toggle="modal" data-bs-target="#modal__section2">Узнать подробнее</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="block__direction block__direction-right">
+                <div class="photo__direction" id="direction3"></div>
+                <div class="info__direction">
+                    <h3 class="title__direction">Hot Power Stretching</h3>
+                    <p class="description__direction">
+                        На силовой части сделаем акцент на работу с ягодичными мышцами и мышцами кора, а на растяжке потянем все тело и посидим в шпагатах.
+                    </p>
+                    <div class="block-btn__direction">
+                        <a href="https://hotstretching.ru/spb/offline.html" class="btn__direction1">Записаться</a>
+                        <a href="#" class="btn__direction2" data-bs-toggle="modal" data-bs-target="#modal__section3">Узнать подробнее</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="block__direction block__direction-left">
+                <div class="photo__direction" id="direction4"></div>
+                <div class="info__direction">
+                    <h3 class="title__direction">Hot Ballet Stretching</h3>
+                    <p class="description__direction">
+                        На этом классе вас ждет растяжка и подкачка мышц с добавлением балетных элементов. То, что нужно для идеальной осанки и гибкого тела. 
+                    </p>
+                    <div class="block-btn__direction">
+                        <a href="https://hotstretching.ru/spb/offline.html" class="btn__direction1">Записаться</a>
+                        <a href="#" class="btn__direction2" data-bs-toggle="modal" data-bs-target="#modal__section4">Узнать подробнее</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="block__direction block__direction-right">
+                <div class="photo__direction" id="direction5"></div>
+                <div class="info__direction">
+                    <h3 class="title__direction">Hot Interval Training</h3>
+                    <p class="description__direction">
+                        Это высокоинтенсивная интервальная тренировка. Упражнения выполняем “по кругу”, чередуя разные группы мышц. А помимо подтянутого тела получаем развитие выносливости.
+                    </p>
+                    <div class="block-btn__direction">
+                        <a href="https://hotstretching.ru/spb/offline.html" class="btn__direction1">Записаться</a>
+                        <a href="#" class="btn__direction2" data-bs-toggle="modal" data-bs-target="#modal__section5">Узнать подробнее</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="block__direction block__direction-left">
+                <div class="photo__direction" id="direction6"></div>
+                <div class="info__direction">
+                    <h3 class="title__direction">Hot Yoga Stretching</h3>
+                    <p class="description__direction">
+                        Этот класс для тех, кому хочется попробовать расслабиться, поймать дзен, но в отряд “йоганутых” он вступать пока боится. На занятии вас ждет выполнение асан, направленных именно на растяжку. 
+                    </p>
+                    <div class="block-btn__direction">
+                        <a href="https://hotstretching.ru/spb/offline.html" class="btn__direction1">Записаться</a>
+                        <a href="#" class="btn__direction2" data-bs-toggle="modal" data-bs-target="#modal__section6">Узнать подробнее</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="block__direction block__direction-right">
+                <div class="photo__direction" id="direction7"></div>
+                <div class="info__direction">
+                    <h3 class="title__direction">Hot Yoga</h3>
+                    <p class="description__direction">
+                        Йога развивает осознанность и внимательность, учит управлять эмоциями и мыслями. Направим внимание на расслабление и настоящий телесный отдых.
+                    </p>
+                    <div class="block-btn__direction">
+                        <a href="https://hotstretching.ru/spb/offline.html" class="btn__direction1">Записаться</a>
+                        <a href="#" class="btn__direction2" data-bs-toggle="modal" data-bs-target="#modal__section7">Узнать подробнее</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="block__direction block__direction-left">
+                <div class="photo__direction" id="direction8"></div>
+                <div class="info__direction">
+                    <h3 class="title__direction">Hot Dance</h3>
+                    <p class="description__direction">
+                        Танцевальные связки и небольшие хореографии, сочетают в себе элементы разных направлений, которые развивают координацию, плавность и изящность движений.
+                    </p>
+                    <div class="block-btn__direction">
+                        <a href="https://hotstretching.ru/spb/offline.html" class="btn__direction1">Записаться</a>
+                        <a href="#" class="btn__direction2" data-bs-toggle="modal" data-bs-target="#modal__section8">Узнать подробнее</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="block__direction block__direction-right">
+                <div class="photo__direction" id="direction9"></div>
+                <div class="info__direction">
+                    <h3 class="title__direction">Hot Box</h3>
+                    <p class="description__direction">
+                        На силовой части сделаем акцент на работу с ягодичными мышцами и мышцами кора, а на растяжке потянем все тело и посидим в шпагатах. 
+                    </p>
+                    <div class="block-btn__direction">
+                        <a href="https://hotstretching.ru/spb/offline.html" class="btn__direction1">Записаться</a>
+                        <a href="#" class="btn__direction2" data-bs-toggle="modal" data-bs-target="#modal__section9">Узнать подробнее</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- <a href="directions_spb.html" class="all__directions">Все направления</a> -->
+        </div>
+    </section>
+
+    <div class="modals">
+        <div class="modal_overlay">
+            <div class="modal modal-1" data-target="one">
+                <div class="modal_text">
+                    <div class="modal_text_h1">r</div>
+                    <div class="modal_text_span"></div>
+                    <div class="modal_text_span"></div>
+                    <div class="modal_text_span"></div>
+                    <div class="modal_text_span"></div>
+                    <div class="modal_text_btn"></div>
+                </div>
+                <div class="modal_img"></div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Modal #1 -->
+    <div class="modal fade" id="modal__section1" tabindex="-1" aria-labelledby="modal__section1Label" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="photo__modal-section"></div>
+                <h2 class="title__modal-section">Hot Stretching</h2>
+                <p class="description__modal-section">
+                    Классический урок растяжки в горячем зале<br>с бережной проработкой всех частей нашего тела
+                </p>
+                <p class="description__modal-section">
+                    Комплекс упражнений, направленный<br>на увеличение гибкости и пластичности
+                </p>
+                <p class="description__modal-section">
+                    Улучшение эластичности мышц,<br>укрепление суставов и связок
+                </p>
+                <p class="description__modal-section description__modal-section-last">
+                    Индивидуальный подход к каждому<br>гостю с любым уровнем подготовки
+                </p>
+                <a href="https://hotstretching.ru/spb/offline.html" class="button_primary button_modal-section">Записаться</a>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Modal #2 -->
+    <div class="modal fade" id="modal__section2" tabindex="-1" aria-labelledby="modal__section2Label" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="photo__modal-section"></div>
+                <h2 class="title__modal-section">Hot Barre</h2>
+                <p class="description__modal-section">
+                    Фитнес со стильной эстетикой балета
+                </p>
+                <p class="description__modal-section">
+                    Формирование красивого и сильного тела
+                </p>
+                <p class="description__modal-section">
+                    Упражнения у станка и использованием различного<br>инвентаря: гантелей, мячей, слайдеров
+                </p>
+                <p class="description__modal-section description__modal-section-last">
+                    Эффективная тренировка на подкачку тела<br>с бережным отношением к своим ощущениям
+                </p>
+                <a href="https://hotstretching.ru/spb/offline.html" class="button_primary button_modal-section">Записаться</a>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Modal #3 -->
+    <div class="modal fade" id="modal__section3" tabindex="-1" aria-labelledby="modal__section3Label" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="photo__modal-section"></div>
+                <h2 class="title__modal-section">Hot Power Stretching</h2>
+                <p class="description__modal-section">
+                    Комплекс из силовых упражнений и растяжки
+                </p>
+                <p class="description__modal-section">
+                    На силовой части работа идет с акцентом<br>на ягодичные мышцы и мышцы кора
+                </p>
+                <p class="description__modal-section">
+                    На растяжке прорабатываются<br>все мышцы и суставы
+                </p>
+                <p class="description__modal-section description__modal-section-last">
+                    Проработка баланса силы и гибкости<br>– в теле и уме
+                </p>
+                <a href="https://hotstretching.ru/spb/offline.html" class="button_primary button_modal-section">Записаться</a>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Modal #4 -->
+    <div class="modal fade" id="modal__section4" tabindex="-1" aria-labelledby="modal__section4Label" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="photo__modal-section"></div>
+                <h2 class="title__modal-section">Hot Ballet Stretching</h2>
+                <p class="description__modal-section">
+                    Растяжка и подкачка мышц с добавлением<br>балетных элементов
+                </p>
+                <p class="description__modal-section">
+                    Упражнения для идеальной осанки<br>и гибкого тела
+                </p>
+                <p class="description__modal-section">
+                    Позиции рук и ног из классического балета<br>под контролем профессиональных артистов
+                </p>
+                <p class="description__modal-section description__modal-section-last">
+                    Атмосфера грациозного танца в симбиозе<br>с эффективной тренировкой
+                </p>
+                <a href="https://hotstretching.ru/spb/offline.html" class="button_primary button_modal-section">Записаться</a>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Modal #5 -->
+    <div class="modal fade" id="modal__section5" tabindex="-1" aria-labelledby="modal__section5Label" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="photo__modal-section"></div>
+                <h2 class="title__modal-section">Hot Interval Training</h2>
+                <p class="description__modal-section">
+                    Высокоинтенсивная интервальная тренировка
+                </p>
+                <p class="description__modal-section">
+                    Выполнение упражнений “по кругу”, чередуя<br>разные группы мышц
+                </p>
+                <p class="description__modal-section">
+                    Развитие выносливости и улучшение<br>работы сердца
+                </p>
+                <p class="description__modal-section description__modal-section-last">
+                    Возможность потерять до 1000 калорий<br>за 90 минут
+                </p>
+                <a href="https://hotstretching.ru/spb/offline.html" class="button_primary button_modal-section">Записаться</a>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Modal #6 -->
+    <div class="modal fade" id="modal__section6" tabindex="-1" aria-labelledby="modal__section6Label" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="photo__modal-section"></div>
+                <h2 class="title__modal-section">Hot Yoga Stretching</h2>
+                <p class="description__modal-section">
+                    Возможность расслабиться, поймать<br>дзен и по-настоящему отдохнуть
+                </p>
+                <p class="description__modal-section">
+                    Выполнение асан из йоги, направленных<br>на растяжку
+                </p>
+                <p class="description__modal-section">
+                    Практика разных статических поз в комплексе<br>с правильным дыханием и концентрацией внимания
+                </p>
+                <p class="description__modal-section description__modal-section-last">
+                    Погружение внутрь себя, обновление<br>и перерождение
+                </p>
+                <a href="https://hotstretching.ru/spb/offline.html" class="button_primary button_modal-section">Записаться</a>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Modal #7 -->
+    <div class="modal fade" id="modal__section7" tabindex="-1" aria-labelledby="modal__section7Label" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="photo__modal-section"></div>
+                <h2 class="title__modal-section">Hot Yoga</h2>
+                <p class="description__modal-section">
+                    Развитие осознанности и внимательности
+                </p>
+                <p class="description__modal-section">
+                    Выполнение асан, концентрация и чуткий<br>диалог со своим телом
+                </p>
+                <p class="description__modal-section">
+                    Работа над управлением эмоциями и мыслями
+                </p>
+                <p class="description__modal-section description__modal-section-last">
+                    Отдых не только для тела, но и для сознания и ума
+                </p>
+                <a href="https://hotstretching.ru/spb/offline.html" class="button_primary button_modal-section">Записаться</a>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Modal #8 -->
+    <div class="modal fade" id="modal__section8" tabindex="-1" aria-labelledby="modal__section8Label" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="photo__modal-section"></div>
+                <h2 class="title__modal-section">Hot Dance</h2>
+                <p class="description__modal-section">
+                    Изучение танцевальных связок<br>и небольших хореографий
+                </p>
+                <p class="description__modal-section">
+                    Развивают координации, плавности<br>и изящности движений
+                </p>
+                <p class="description__modal-section">
+                    Раскрепощение через практику танца<br>и проявление искренних эмоций
+                </p>
+                <p class="description__modal-section description__modal-section-last">
+                    Возможность найти внутри себя что-то новое<br>или крепко уснувшее ранее
+                </p>
+                <a href="https://hotstretching.ru/spb/offline.html" class="button_primary button_modal-section">Записаться</a>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Modal #9 HOT BOX -->
+    <div class="modal fade" id="modal__section9" tabindex="-1" aria-labelledby="modal__section9Label" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="photo__modal-section"></div>
+                <h2 class="title__modal-section">Hot Box</h2>
+                <p class="description__modal-section">
+                    Прокачка всех группы мышц и обильная<br>потеря калорий
+                </p>
+                <p class="description__modal-section">
+                    Микс кардио и силовой программы
+                </p>
+                <p class="description__modal-section">
+                    Отличный выброс негатива и избавление<br>от стресса
+                </p>
+                <p class="description__modal-section description__modal-section-last">
+                    Работа с профессиональными<br>спортсменами в категории
+                </p>
+                <a href="https://hotstretching.ru/spb/offline.html" class="button_primary button_modal-section">Записаться</a>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.querySelector("input[type=checkbox]").onchange = function(){
+            document.querySelector("body").classList.toggle("check", this.checked);
+        }
+    </script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+</body>
