@@ -12,10 +12,13 @@
     <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#751c29">
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="theme-color" content="#ffffff">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <!-- Main Styles -->
     <link rel="stylesheet" href="css/style.css">
-    <!-- Bootstrap Grid -->
-    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <!-- Slick Slider -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="css/slick-theme.css">
 </head>
 <body>
 
@@ -25,21 +28,46 @@
                 <nav class="nav">
                     <a class="nav__logo" href="#"></a>
                     <ul class="nav__list">
-                        <li><a href="#">О НАС</a></li>
+                        <li><a href="about.html">О НАС</a></li>
                         <li><a href="#">НАПРАВЛЕНИЯ</a></li>
-                        <li><a href="#">РАСПИСАНИЕ</a></li>
+                        <li><a href="amatuer.html">РАСПИСАНИЕ</a></li>
                         <li><a href="#">ЛИЧНЫЙ КАБИНЕТ</a></li>
                         <li><a href="#">КОНТАКТЫ</a></li>                          
                     </ul>
                 </nav>
             </div>
+        </div>
+        <div class="navbar">
+            <div class="nav-container">
+                <a class="nav__logo" href="#"></a>
+                <input class="checkbox" type="checkbox" name="" id="" />
+                <div class="hamburger-lines">
+                    <span class="line line1"></span>
+                    <span class="line line2"></span>
+                    <span class="line line3"></span>
+                </div>  
+                <div class="menu-items">
+                    <div class="container">
+                        <li><a href="about.html">О нас</a></li>
+                        <li><a href="amatuer.html">Новичкам</a></li>
+                        <li><a href="#">Пробное занятие</a></li>
+                        <li><a href="#">Направления</a></li>
+                        <li><a href="#">Расписание</a></li> 
+                        <li><a href="#">Online-курс</a></li> 
+                        <li><a href="#">Правила посещения</a></li>
+                        <a class="account__btn" href="#">Личный кабинет</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
             <div class="header__content">
                 <h1 class="header__h1">HOT STRETCHING STUDIO</h1>
                 <h2 class="header__h2">Первая в России сеть студий горячей растяжки</h2>
                 <div class="header__text">Пространство, где каждый может работать с собой так, как ему нравится, в атмосфере комфорта, по любви.</div>
                 <!-- <div class="header__image"><img src="/img/FirstPageImage.png" alt=""></div> -->
-                <div class="header__button">
-                    <a class="button__primary" href="http://">Подробнее</a>
+                <div class="button button_header">
+                    <a class="button button_primary" href="" data-bs-toggle="modal" data-bs-target="#modal__rules">Подробнее</a>
                 </div>
             </div>
         </div>
@@ -57,7 +85,7 @@
                     </div>
                     <div class="lesson_info">
                         <span class="lesson_text">Записаться</span>
-                        <a href="#" class="lesson_button">1490 ₽</a>
+                        <a href="#" class="button button_lesson">1490 ₽</a>
                     </div>
                 </div>
                 <div class="start_week">
@@ -66,7 +94,7 @@
                     </div>
                     <div class="lesson2_info">
                         <span class="lesson_text">Записаться</span>
-                        <a href="#" class="lesson_button button2">10430 ₽</a>
+                        <a href="#" class="button button_lesson button_lesson2">10430 ₽</a>
                     </div>
                 </div>
                 <div class="start_info">
@@ -88,86 +116,596 @@
                     </div>
                 </div>
             </div>
-            <div class="imagewrapper_about">
-                <div class="imagetext_about">
-                    Синергия внешнего и внутреннего — основа приятных<br> и эффективных занятий. Мы продумываем занятия так,<br> чтобы они с первого момента взаимодействия с вами <br>давали ощущения комфорта и принятия — и это становилось поддержкой для заботы о себе и пользы движения.
+            <div class="container">
+                <div class="imagewrapper_about">
+                    <div class="imagetext_about">
+                        Синергия внешнего и внутреннего — основа приятных<br> и эффективных занятий. Мы продумываем занятия так,<br> чтобы они с первого момента взаимодействия с вами <br>давали ощущения комфорта и принятия — и это становилось поддержкой для заботы о себе и пользы движения.
+                    </div>
                 </div>
             </div>
-                <!-- <div class="sliderwrapper_h">
-                    <div class="slider_h">
-                        Атмосфера, которая заряжает
-                    </div>
-                    <div class="slider_slides">
-                        <div class="slider_item">
-                            <img src="/img/slider_main/img_037.png" class="slider_img">
-                        </div>
-                        <div class="slider_item">
-                            <img src="/img/slider_main/img_096.png" class="slider_img">
-                        </div>
-                        <div class="slider_item">
-                            <img src="/img/slider_main/img_102.png" class="slider_img">
-                        </div>
-                        <div class="slider_item">
-                            <img src="/img/slider_main/img_104.png" class="slider_img">
-                        </div>
-                    </div>
-                </div> -->
-                <div class="imagewrapper_about">
+            <div class="scroll__slider">
+                <div class="container">
+                    <h2 class="title__atmosphere">Атмосфера, которая заряжает</h2>
+                </div>
+                <div class="block--photos__atmosphere">
+                    <div class="photo__atmosphere photo__atmosphere1"></div>
+                    <div class="photo__atmosphere photo__atmosphere2"></div>
+                    <div class="photo__atmosphere photo__atmosphere3"></div>
+                    <div class="photo__atmosphere photo__atmosphere4"></div>
+                    <div class="photo__atmosphere photo__atmosphere5"></div>
+                    <div class="photo__atmosphere photo__atmosphere6"></div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="imagewrapper_about imagewrapper_about2">
                     <div class="imagetext_about">
                         Мы создаем микроклимат с температурой 36-40 градусов<br> и влажностью до 40%. Что помогает нам быть еще более <br> мягкими и заботливыми к вашим мышцам, тело становятся <br>пластичнее, а, значит, растяжка проходит результативней<br>и с большей пользой, чем в обычном зале. 
                     </div>
                 </div>
                 <div class="block__button">
-                    <a class="button__primary button__about" href="http://">Подробнее о студии</a>
+                    <a class="button button_about button_primary" href="" data-bs-toggle="modal" data-bs-target="#modal__section1">Подробнее о студии</a>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section class="section_founders">
-            <div class="container">
-                <h2 class="title__founders">Основательницы студий</h2>
-                <div class="block__founders">
-                    <div class="first__founder">
-                        <div class="content__founder">
-                            <h4 class="name__fonder">Елизавета</h4>
-                            <p class="description__founder">
-                                Текст текст текст Текст текст текст Текст текст текст Текст текст текст Текст текст текст Текст текст текст Текст текст текст Текст текст текст Текст текст текст Текст текст текст Текст текст текст Текст текст текст
-                            </p>
-                        </div>
-                    </div>
-                    <div class="second__founder">
-                        <div class="content__founder">
-                            <h4 class="name__fonder">Ксения</h4>
-                            <p class="description__founder">
-                                Текст текст текст Текст текст текст Текст текст текст Текст текст текст Текст текст текст Текст текст текст Текст текст текст Текст текст текст Текст текст текст Текст текст текст Текст текст текст Текст текст текст
-                            </p>
-                        </div>
+
+    <section class="section_studios">
+        <div class="container">
+            <div class="studio1">
+                <div class="slider_studio slider_studio1">
+                    <div class="slider_studio-content">
+                        <div class="first-ph"></div>
+                        <div class="second-ph"></div>
+                        <div class="third-ph"></div>
+                        <div class="fourth-ph"></div>
+                        <div class="fifth-ph"></div>
                     </div>
                 </div>
-                <div class="line__founders"></div>
-                <p class="description__founders">
-                    25 лет в балете, 7 лет дружбы и всего одна спонтанная идея, которую мы осмелились реализовать
+                <div class="block__adress">
+                    <a href="#" class="address__studios adress1__studios">
+                        Гражданская ул., 13-15, Двор «Бертгольд центра», Этаж 3
+                    </a>
+                    <a href="" class="phone__studios">8 (812) 220-20-53</a>
+                </div>
+                <a href="#" class="sign__studios">Записаться</a>
+            </div>
+            <h2 class="title__studios">Тренируйтесь там, где вам удобно</h2>
+            <div class="studio2">
+                <div class="slider_studio slider_studio2">
+                    <div class="slider_studio-content">
+                        <div class="first-ph"></div>
+                        <div class="second-ph"></div>
+                        <div class="third-ph"></div>
+                        <div class="fourth-ph"></div>
+                        <div class="fifth-ph"></div>
+                    </div>
+                </div>
+                <p class="soon__studio">Скоро открытие!</p>
+                <div class="block__adress">
+                    <a href="#" class="address__studios adress2__studios">
+                        Кожевенная линия дом 40, 2 этаж. Вход через главные ворота Севкабеля, крыльцо слева.
+                    </a>
+                </div>
+                <a href="#" class="sign__studios slider_studio2">Записаться</a>
+            </div>
+            <div class="studio3">
+                <div class="slider_studio slider_studio3">
+                    <div class="slider_studio-content">
+                        <div class="first-ph"></div>
+                        <div class="second-ph"></div>
+                        <div class="third-ph"></div>
+                        <div class="fourth-ph"></div>
+                    </div>
+                </div>
+                <p class="soon__studio">Скоро открытие!</p>
+                <div class="block__adress block3__adress">
+                    <a href="#" class="address__studios adress3__studios">
+                        Улица Савушкина 21, 4 этаж
+                    </a>
+                </div>
+                <a href="#" class="sign__studios">Записаться</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="section__directions">
+        <div class="container">
+            <div class="block__direction block__direction-right">
+                <div class="photo__direction"></div>
+                <div class="info__direction">
+                    <h3 class="title__direction">Hot Stretching</h3>
+                    <p class="description__direction">
+                        На тренировке выполняется комплекс упражнений, направленный на увеличение гибкости тела, улучшение эластичности мышц, укрепление суставов и связок.
+                    </p>
+                    <div class="block-btn__direction">
+                        <a href="#" class="btn__direction1">Записаться</a>
+                        <a href="#" class="btn__direction2">Узнать подробнее</a>
+                    </div>
+                </div>
+            </div>
+            <div class="block__direction block__direction-left">
+                <div class="photo__direction"></div>
+                <div class="info__direction">
+                    <h3 class="title__direction">Hot Barre</h3>
+                    <p class="description__direction">
+                        Фитнес с эстетикой балета! Будем формировать красивое сильное тело, грациозно стоять у станка и использовать различный инвентарь.
+                    </p>
+                    <div class="block-btn__direction">
+                        <a href="#" class="btn__direction1">Записаться</a>
+                        <a href="#" class="btn__direction2">Узнать подробнее</a>
+                    </div>
+                </div>
+            </div>
+            <div class="block__direction block__direction-right">
+                <div class="photo__direction"></div>
+                <div class="info__direction">
+                    <h3 class="title__direction">Hot Stretching</h3>
+                    <p class="description__direction">
+                        На тренировке выполняется комплекс упражнений, направленный на увеличение гибкости тела, улучшение эластичности мышц, укрепление суставов и связок.
+                    </p>
+                    <div class="block-btn__direction">
+                        <a href="#" class="btn__direction1">Записаться</a>
+                        <a href="#" class="btn__direction2">Узнать подробнее</a>
+                    </div>
+                </div>
+            </div>
+            <div class="block__direction block__direction-left">
+                <div class="photo__direction"></div>
+                <div class="info__direction">
+                    <h3 class="title__direction">Hot Barre</h3>
+                    <p class="description__direction">
+                        Фитнес с эстетикой балета! Будем формировать красивое сильное тело, грациозно стоять у станка и использовать различный инвентарь.
+                    </p>
+                    <div class="block-btn__direction">
+                        <a href="#" class="btn__direction1">Записаться</a>
+                        <a href="#" class="btn__direction2">Узнать подробнее</a>
+                    </div>
+                </div>
+            </div>
+            <div class="block__direction block__direction-right block__direction-last">
+                <div class="photo__direction"></div>
+                <div class="info__direction">
+                    <h3 class="title__direction">Hot Stretching</h3>
+                    <p class="description__direction">
+                        На тренировке выполняется комплекс упражнений, направленный на увеличение гибкости тела, улучшение эластичности мышц, укрепление суставов и связок.
+                    </p>
+                    <div class="block-btn__direction">
+                        <a href="#" class="btn__direction1">Записаться</a>
+                        <a href="#" class="btn__direction2">Узнать подробнее</a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="all__directions">Все направления</a>
+        </div>
+    </section>
+
+    <section class="section_partners">
+        <div class="container">
+            <div class="block__partners block__partners1">
+                <div class="block__partners-info">
+                    <div class="photo__partners1"></div>
+                    <h2 class="title__partners title__partners1">Стань нашим партнёром <br>и открой студию <br>под брендом </h2>
+                    <div class="logo__partners"></div>
+                    <a href="#" class="btn__partners">Узнать подробности</a>
+                </div>
+                <iframe width="560" class="video__partners video__partners1" height="315" src="https://www.youtube.com/embed/Fr75prO1aCg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>  
+
+            <div class="block__partners block__partners2">
+                <iframe width="560" class="video__partners video__partners1" height="315" src="https://www.youtube.com/embed/Fr75prO1aCg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div class="block__partners-info block__partners-info2">
+                    <div class="photo__partners2"></div>
+                    <h2 class="title__partners title__partners2">Подарочные сертификаты</h2>
+                    <div class="description__partners">Текст про сертификаты</div>
+                    <a href="#" class="btn__partners">Приобрести</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section_founders">
+        <div class="container">
+            <h2 class="title__founders">Основательницы студий</h2>
+            <div class="block__founders">
+                <div class="first__founder">
+                    <div class="content__founder">
+                        <h4 class="name__fonder">Елизавета</h4>
+                        <p class="description__founder">
+                            Текст текст текст Текст текст текст Текст текст текст Текст текст текст Текст текст текст Текст текст текст Текст текст текст Текст текст текст Текст текст текст Текст текст текст Текст текст текст Текст текст текст
+                        </p>
+                    </div>
+                </div>
+                <div class="second__founder">
+                    <div class="content__founder">
+                        <h4 class="name__fonder">Ксения</h4>
+                        <p class="description__founder">
+                            Текст текст текст Текст текст текст Текст текст текст Текст текст текст Текст текст текст Текст текст текст Текст текст текст Текст текст текст Текст текст текст Текст текст текст Текст текст текст Текст текст текст
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="line__founders"></div>
+            <p class="description__founders">
+                25 лет в балете, 7 лет дружбы и всего одна спонтанная идея, которую мы осмелились реализовать
+            </p>
+        </div>
+    </section>
+
+    <div class="modals">
+        <div class="modal_overlay">
+            <div class="modal modal-1" data-target="one">
+                <div class="modal_text">
+                    <div class="modal_text_h1">r</div>
+                    <div class="modal_text_span"></div>
+                    <div class="modal_text_span"></div>
+                    <div class="modal_text_span"></div>
+                    <div class="modal_text_span"></div>
+                    <div class="modal_text_btn"></div>
+                </div>
+                <div class="modal_img"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODALS -->
+
+    <!-- Modal Section (Hot Stretching) -->
+
+
+    <!-- Modal #1 -->
+    <div class="modal fade" id="modal__section1" tabindex="-1" aria-labelledby="modal__section1Label" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="photo__modal-section"></div>
+                <h2 class="title__modal-section">Hot Stretching</h2>
+                <p class="description__modal-section">
+                    Классический урок растяжки в горячем зале<br>с бережной проработкой всех частей нашего тела
                 </p>
+                <p class="description__modal-section">
+                    Комплекс упражнений, направленный<br>на увеличение гибкости и пластичности
+                </p>
+                <p class="description__modal-section">
+                    Улучшение эластичности мышц,<br>укрепление суставов и связок
+                </p>
+                <p class="description__modal-section description__modal-section-last">
+                    Индивидуальный подход к каждому<br>гостю с любым уровнем подготовки
+                </p>
+                <a href="#" class="button_primary button_modal-section">Записаться</a>
             </div>
-        </section>
+        </div>
+    </div>
+
+
+    <!-- Modal #2 -->
+    <div class="modal fade" id="modal__section2" tabindex="-1" aria-labelledby="modal__section2Label" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="photo__modal-section"></div>
+                <h2 class="title__modal-section">Hot Barre</h2>
+                <p class="description__modal-section">
+                    Фитнес со стильной эстетикой балета
+                </p>
+                <p class="description__modal-section">
+                    Формирование красивого и сильного тела
+                </p>
+                <p class="description__modal-section">
+                    Упражнения у станка и использованием различного<br>инвентаря: гантелей, мячей, слайдеров
+                </p>
+                <p class="description__modal-section description__modal-section-last">
+                    Эффективная тренировка на подкачку тела<br>с бережным отношением к своим ощущениям
+                </p>
+                <a href="#" class="button_primary button_modal-section">Записаться</a>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Modal #3 -->
+    <div class="modal fade" id="modal__section3" tabindex="-1" aria-labelledby="modal__section3Label" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="photo__modal-section"></div>
+                <h2 class="title__modal-section">Hot Power Stretching</h2>
+                <p class="description__modal-section">
+                    Комплекс из силовых упражнений и растяжки
+                </p>
+                <p class="description__modal-section">
+                    На силовой части работа идет с акцентом<br>на ягодичные мышцы и мышцы кора
+                </p>
+                <p class="description__modal-section">
+                    На растяжке прорабатываются<br>все мышцы и суставы
+                </p>
+                <p class="description__modal-section description__modal-section-last">
+                    Проработка баланса силы и гибкости<br>– в теле и уме
+                </p>
+                <a href="#" class="button_primary button_modal-section">Записаться</a>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Modal #4 -->
+    <div class="modal fade" id="modal__section4" tabindex="-1" aria-labelledby="modal__section4Label" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="photo__modal-section"></div>
+                <h2 class="title__modal-section">Hot Ballet Stretching</h2>
+                <p class="description__modal-section">
+                    Растяжка и подкачка мышц с добавлением<br>балетных элементов
+                </p>
+                <p class="description__modal-section">
+                    Упражнения для идеальной осанки<br>и гибкого тела
+                </p>
+                <p class="description__modal-section">
+                    Позиции рук и ног из классического балета<br>под контролем профессиональных артистов
+                </p>
+                <p class="description__modal-section description__modal-section-last">
+                    Атмосфера грациозного танца в симбиозе<br>с эффективной тренировкой
+                </p>
+                <a href="#" class="button_primary button_modal-section">Записаться</a>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Modal #5 -->
+    <div class="modal fade" id="modal__section5" tabindex="-1" aria-labelledby="modal__section5Label" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="photo__modal-section"></div>
+                <h2 class="title__modal-section">Hot Interval Training</h2>
+                <p class="description__modal-section">
+                    Высокоинтенсивная интервальная тренировка
+                </p>
+                <p class="description__modal-section">
+                    Выполнение упражнений “по кругу”, чередуя<br>разные группы мышц
+                </p>
+                <p class="description__modal-section">
+                    Развитие выносливости и улучшение<br>работы сердца
+                </p>
+                <p class="description__modal-section description__modal-section-last">
+                    Возможность потерять до 1000 калорий<br>за 90 минут
+                </p>
+                <a href="#" class="button_primary button_modal-section">Записаться</a>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Modal #6 -->
+    <div class="modal fade" id="modal__section6" tabindex="-1" aria-labelledby="modal__section6Label" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="photo__modal-section"></div>
+                <h2 class="title__modal-section">Hot Yoga Stretching</h2>
+                <p class="description__modal-section">
+                    Возможность расслабиться, поймать<br>дзен и по-настоящему отдохнуть
+                </p>
+                <p class="description__modal-section">
+                    Выполнение асан из йоги, направленных<br>на растяжку
+                </p>
+                <p class="description__modal-section">
+                    Практика разных статических поз в комплексе<br>с правильным дыханием и концентрацией внимания
+                </p>
+                <p class="description__modal-section description__modal-section-last">
+                    Погружение внутрь себя, обновление<br>и перерождение
+                </p>
+                <a href="#" class="button_primary button_modal-section">Записаться</a>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Modal #7 -->
+    <div class="modal fade" id="modal__section7" tabindex="-1" aria-labelledby="modal__section7Label" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="photo__modal-section"></div>
+                <h2 class="title__modal-section">Hot Yoga</h2>
+                <p class="description__modal-section">
+                    Развитие осознанности и внимательности
+                </p>
+                <p class="description__modal-section">
+                    Выполнение асан, концентрация и чуткий<br>диалог со своим телом
+                </p>
+                <p class="description__modal-section">
+                    Работа над управлением эмоциями и мыслями
+                </p>
+                <p class="description__modal-section description__modal-section-last">
+                    Отдых не только для тела, но и для сознания и ума
+                </p>
+                <a href="#" class="button_primary button_modal-section">Записаться</a>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Modal #8 -->
+    <div class="modal fade" id="modal__section8" tabindex="-1" aria-labelledby="modal__section8Label" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="photo__modal-section"></div>
+                <h2 class="title__modal-section">Hot Dance</h2>
+                <p class="description__modal-section">
+                    Изучение танцевальных связок<br>и небольших хореографий
+                </p>
+                <p class="description__modal-section">
+                    Развивают координации, плавности<br>и изящности движений
+                </p>
+                <p class="description__modal-section">
+                    Раскрепощение через практику танца<br>и проявление искренних эмоций
+                </p>
+                <p class="description__modal-section description__modal-section-last">
+                    Возможность найти внутри себя что-то новое<br>или крепко уснувшее ранее
+                </p>
+                <a href="#" class="button_primary button_modal-section">Записаться</a>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Modal #9 HOT BOX -->
+    <div class="modal fade" id="modal__section9" tabindex="-1" aria-labelledby="modal__section9Label" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="photo__modal-section"></div>
+                <h2 class="title__modal-section">Hot Box</h2>
+                <p class="description__modal-section">
+                    Прокачка всех группы мышц и обильная<br>потеря калорий
+                </p>
+                <p class="description__modal-section">
+                    Микс кардио и силовой программы
+                </p>
+                <p class="description__modal-section">
+                    Отличный выброс негатива и избавление<br>от стресса
+                </p>
+                <p class="description__modal-section description__modal-section-last">
+                    Работа с профессиональными<br>спортсменами в категории
+                </p>
+                <a href="#" class="button_primary button_modal-section">Записаться</a>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- The End Modal Section (Hot Stretching) -->
 
 
 
 
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-        <!-- slick скрипт -->
+    <!-- Modal Section Rules -->
 
-        <!-- скрипт настроек slick -->
+    <div class="modal fade" id="modal__rules" tabindex="-1" aria-labelledby="modal__rulesLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="photo__modal-rules photo__modal-rules1"></div>
+                <div class="photo__modal-rules photo__modal-rules2"></div>
+                <div class="photo__modal-rules photo__modal-rules3"></div>
+
+                <h2 class="title__modal-section title__modal-rules">Правила студии</h2>
+
+                <div class="block__modal-description-rules block__modal-description-rules1">
+                    <p class="description__modal-section description__modal-rules">
+                        иметь с собой паспорт для заключения<br>договора (при первом посещении)
+                    </p>
+                    <p class="description__modal-section description__modal-rules">
+                        допуск до занятий возможен<br>только по предварительной записи
+                    </p>
+                    <p class="description__modal-section description__modal-rules">
+                        отмена забронированного занятия возможна<br>не менее чем за 12 часов до начала урока
+                    </p>
+                    <p class="description__modal-section description__modal-rules">
+                        при отмене бронирования менее чем за 12 часов<br>или пропуске занятия, у клиента уменьшается<br>срок действия безлимитного абонемента<br>на один день, а в лимитном абонементе<br>сгорает занятие
+                    </p>
+                </div>
+                <div class="block__modal-description-rules block__modal-description-rules2">
+                    <p class="description__modal-section description__modal-rules description__modal-rules-special1">
+                        мы не пускаем опоздавших на занятия<br>(даже на 1 минуту), поэтому рекомендуем приходить за 15-20 минут до начала урока, иначе занятие будет<br>считаться использованным
+                    </p>
+                    <p class="description__modal-section description__modal-rules description__modal-rules-special2">
+                        не пользоваться мобильным телефоном во время занятия
+                    </p>
+                    <p class="description__modal-section description__modal-rules">
+                        не покидать зал во время занятия
+                    </p>
+                    <p class="description__modal-section description__modal-rules">
+                        не употреблять тяжёлую пищу <br>за 2 часа до начала занятия
+                    </p>
+                    <p class="description__modal-section description__modal-rules">
+                        пейте много воды в течении дня
+                    </p>
+                    <p class="description__modal-section description__modal-rules">
+                        не пользоваться парфюмом и косметикой<br>перед занятием
+                    </p>
+                    <p class="description__modal-section description__modal-rules description__modal-rules-special3">
+                        на занятии может осуществляться фото-видеосъемка
+                    </p>
+                </div>
+
+                <h3 class="title__modal-rules-des">Что нужно с собой?</h3>
+                <div class="block__modal-description-rules">
+                    <p class="description__modal-section description__modal-rules">
+                        удобная, легко тянущаяся одежда<br>(отлично подойдут леггинсы и топ)
+                    </p>
+                    <p class="description__modal-section description__modal-rules">
+                        полотенце для душа
+                    </p>
+                    <p class="description__modal-section description__modal-rules">
+                        тапочки для душа
+                    </p>
+                    <p class="description__modal-section description__modal-rules">
+                        0,5 - 1 литр воды
+                    </p>
+                </div>
+
+                <p class="description__modal-rules-note">
+                    Мы бесплатно предоставляем на<br>занятие коврик и одно полотенце
+                </p>
+                <p class="description__modal-rules-note description__modal-rules-note2">
+                    Так же в студии вы можете взять<br>в аренду большое полотенце - 100 ₽
+                </p>
+
+                <div class="line__modal-rules"></div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- The End Modal Section Rules -->
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- slick скрипт -->
+
+        <!-- скрипт настроек slick
         <script>
             $(document).ready(function () {
                 $('.slider_slides').slick({
                     arrows: true,
-                    slidesToShow: 3,
+                    slidesToShow: 1,
                     speed: 1000,
+                });
+            });
+        </script> -->
+
+        <!--зовут-->
+
+        <!-- Bootsrap Script -->
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+        <script>
+            document.querySelector("input[type=checkbox]").onchange = function(){
+                document.querySelector("body").classList.toggle("check", this.checked);
+            }
+        </script>
+
+        <!-- Slick Slider -->
+        <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <script type="text/javascript" src="./js/script.js"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $('.slider_studio-content').slick({
+                    slidesToShow: 1,
+                    dots: true,
+                    adaptiveHeight: true,
+                    variableWidth: true,
+                    arrows: false
                 });
             });
         </script>
 
-        <!--зовут-->
+        <!-- Scroll Slider -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/debug.addIndicators.min.js" ></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/animation.gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenLite.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TimelineLite.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/plugins/CSSPlugin.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/plugins/BezierPlugin.min.js"></script>
+        <script src="js/app.js"></script>
     </body>
     </html>

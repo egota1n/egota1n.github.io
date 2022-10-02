@@ -1,29 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Test project</title>
-        <link rel="stylesheet" href="css/style.css">
-    </head>
-    <body>
-        <section class="preload_screen">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Заставка</title>
+    <!-- Main Styles -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Bootstrap Grid -->
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header__top">
+                <nav class="nav">
+                    <a class="nav__logo" href="#"></a>
+                    <ul class="nav__list">
+                        <li><a href="about.html">О НАС</a></li>
+                        <li><a href="#">НАПРАВЛЕНИЯ</a></li>
+                        <li><a href="amatuer.html">РАСПИСАНИЕ</a></li>
+                        <li><a href="#">ЛИЧНЫЙ КАБИНЕТ</a></li>
+                        <li><a href="#">КОНТАКТЫ</a></li>                          
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="navbar">
+            <div class="nav-container">
+                <a class="nav__logo" href="#"></a>
+                <input class="checkbox" type="checkbox" name="" id="" />
+                <div class="hamburger-lines">
+                    <span class="line line1"></span>
+                    <span class="line line2"></span>
+                    <span class="line line3"></span>
+                </div>  
+                <div class="menu-items">
+                    <div class="container">
+                        <li><a href="about.html">О нас</a></li>
+                        <li><a href="amatuer.html">Новичкам</a></li>
+                        <li><a href="#">Пробное занятие</a></li>
+                        <li><a href="#">Направления</a></li>
+                        <li><a href="#">Расписание</a></li> 
+                        <li><a href="#">Online-курс</a></li> 
+                        <li><a href="#">Правила посещения</a></li>
+                        <a class="account__btn" href="#">Личный кабинет</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="preload_screen">
+        <div class="container">
             <div class="preload_container">
+                <div class="main__photo1"></div>
+                <div class="main__photo2"></div>
                 <div class="preload_text">
                     <h1 class="main_h1">HOT STRETCHING STUDIO</h1>
                     <h2 class="preload_h2">Первая в России сеть студий горячей растяжки Hot Stretching Studio</h2>
+                    <div class="main__glow"></div>
                 </div>
                 <div class="preload_btns">
-                    <a class="button__primary" href="#!">Санкт-Петербург</a>
-                    <a class="button__primary" href="#!">Москва</a>
+                    <a class="button main" href="#!">Санкт-Петербург</a>
+                    <a class="button main" href="#!">Москва</a>
                 </div>
                 <div class="preload_socials">
-                    <a class="logo1"></a>
-                    <a class="logo2"></a>
-                    <a class="logo3"></a>
+                    <a class="logo" href="https://www.facebook.com/HotStretchingStudio/"> </a>
+                    <a class="logo" href="https://vk.com/hotstretching"></a>
+                    <a class="logo" href="https://www.instagram.com/hotstretching/"></a>
                 </div>
             </div>
-        </section>
-        <!-- section.pre -->
-    </body>
+        </div>
+        <div class="container">
+            <div class="preload_container_mob">
+                <div class="preload_text mob">
+                    <h1 class="main_h1 mob">HOT STRETCHING STUDIO</h1>
+                    <h2 class="preload_h2 mob">Первая в России сеть студий горячей растяжки Hot Stretching Studio</h2>
+                </div>
+                <div class="preload_btns mob">
+                    <a class="button main mob" href="#!">Санкт-Петербург</a>
+                    <a class="button main mob" href="#!">Москва</a>
+                </div>
+                <div class="preload_socials mob">
+                    <a class="logo"></a>
+                    <a class="logo"></a>
+                    <a class="logo"></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- section.pre -->
+
+
+    <script>
+        document.querySelector("input[type=checkbox]").onchange = function(){
+            document.querySelector("body").classList.toggle("check", this.checked);
+        }
+    </script>
+</body>
 </html>
