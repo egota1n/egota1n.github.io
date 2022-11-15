@@ -1,0 +1,323 @@
+/*Normalization*/
+
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    outline: 0;
+    visibility: visible;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+body{
+    background: #f4f4f4;
+    color: #0c0c0c;
+    font-family: 'Montserrat', sans-serif;
+    padding: 100px 0;
+}
+
+label{
+    cursor: pointer;
+}
+
+/*STYLES*/
+
+.container{
+    display: block;
+    max-width: 1716px;
+    margin: 0 auto;
+    padding: 0 102px;
+}
+
+.section-card{
+    display: block;
+}
+
+/*Switcher*/
+
+
+#card__switch1, #card__switch2{
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+#label_switch1, #label_switch2{
+    display: inline-block;
+    font-size: 22px;
+    font-weight: 500;
+    padding: 20px 24px;
+    background: #d9d9d9;
+    border-radius: 20px 20px 0px 0px;
+    transition: all 0.2s ease;
+}
+
+#card__switch1:checked ~ #label_switch1, #card__switch2:checked ~ #label_switch2{
+    color: #3922c5;
+    background: #fff;
+    transition: all 0.2s ease;
+}
+
+/*Content*/
+
+.section-card__info{
+    display: block;
+    background: #fff;
+    width: 846px;
+    height: 845px;
+    border-radius: 0 20px 20px 20px;
+    padding: 40px 60px 40px 60px;
+    background-repeat: no-repeat!important;
+    background-size: 358px!important;
+    background-position: -68px 40px!important;
+}
+
+.section-card__info1{
+    background: #fff url(../img/card-bg1.png);
+}
+
+.section-card__info2{
+    background: #fff url(../img/card-bg2.png);
+}
+
+.section-card__info2{
+    display: none;
+}
+
+.active1 .section-card__info1, .active2 .section-card__info2{
+    display: block;
+}
+
+.active1 .section-card__info2, .active2 .section-card__info1{
+    display: none;
+}
+
+.section-card__info-title, .section-card__info-description{
+    margin-left: 301px;
+}
+
+.section-card__info-title{
+    font-size: 26px;
+    line-height: 150%;
+    margin-bottom: 20px;
+}
+
+.section-card__info-description{
+    color: #494949;
+    font-size: 16px;
+    line-height: 150%;
+    margin-bottom: 16px;
+}
+
+.section-card__info-line{
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: #d9d9d9;
+    margin: 40px 0;
+}
+
+/*Characteristic*/
+
+.section-card__charact{
+    margin-bottom: 40px;
+}
+
+.section-card__charact__title{
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 150%;
+    margin-bottom: 20px;
+}
+
+.section-card__charact__list{
+    display: block;
+    width: 594px;
+    padding: 0;
+    margin: 0;
+}
+
+.section-card__charact__list td{
+    width: 291px;
+    padding: 0;
+    margin: 0;
+    padding-bottom: 16px;
+    padding-left: 36px;
+}
+
+.section-card__charact__list tr:last-child td:last-child{
+    padding-bottom: 0;
+}
+
+.section-card__charact__list tr:last-child td:nth-child(n-1){
+    padding-bottom: 0;
+}
+
+.section-card__charact__list td{
+    position: relative;
+}
+
+.section-card__charact__list td::before{
+    content: attr(data-content);
+    display: block;
+    left: 0;
+    top: 0;
+    position: absolute;
+}
+
+.section-card__info2 .section-card__charact__list td::before{
+    content: '';
+    display: block;
+    width: 20px;
+    height: 16px;
+    background: url(../img/char.svg) center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+
+/*Add Characteristic*/
+
+.section-card__add-charact__title{
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 150%;
+    margin-bottom: 20px;
+}
+
+.section-card__add-charact__btn{
+    width: 128px;
+    height: 52px;
+    border-radius: 16px;
+    border: 0;
+    background: #3922c5;
+    cursor: pointer;
+    font-size: 16px;
+    color: #fff;
+    line-height: 150%;
+    font-weight: normal;
+    margin-left: 24px;
+    transition: all 0.2s ease;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.section-card__add-charact__btn:hover, .section-card__confirmation-btnOk:hover{
+    background: #2c1a9a;
+}
+
+.section-card__add-charact__btn:active{
+    transition: all 0.2s ease;
+}
+
+.section-card__add-charact__input{
+    width: 351px;
+    height: 52px;
+    border-radius: 16px;
+    border: 1px solid #d9d9d9;
+    line-height: 150%;
+    font-size: 16px;
+    padding: 16px 14px;
+    font-family: 'Montserrat', sans-serif;
+    transition: all 0.2s ease;
+}
+
+.section-card__add-charact__input::placeholder {
+  font-size: 16px;
+  line-height: 150%;
+  color: #d9d9d9;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.section-card__add-charact__input:focus {
+  border-color: #3922C5;
+}
+
+/*Confirmation*/
+
+.section-card__сonfirmation{
+    display: flex;
+    align-items: center;
+    padding: 0 36px;
+    width: 100%;
+    height: 112px;
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px 0px rgba(12, 12, 12, 0.1);
+    margin-top: 40px;
+}
+
+.section-card__confirmation-btnOk{
+    width: 92px;
+    height: 52px;
+    border-radius: 16px;
+    border: 0;
+    background: #3922c5;
+    cursor: pointer;
+    font-size: 16px;
+    color: #fff;
+    line-height: 150%;
+    font-weight: normal;
+    transition: all 0.2s ease;
+    font-family: 'Montserrat', sans-serif;
+    margin-right: 10px;
+}
+
+.section-card__confirmation-btnbtnCancel{
+    width: 92px;
+    height: 52px;
+    border-radius: 16px;
+    border: 0;
+    cursor: pointer;
+    background: transparent;
+    font-size: 16px;
+    line-height: 150%;
+    font-weight: normal;
+    transition: all 0.2s ease;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.section-card__confirmation-btnbtnCancel:hover{
+    color: #2c1a9a;
+}
+
+.section-card__confirmation-btnbtnCancel:active{
+    color: #1f1368;
+}
+
+/*Adaptive*/
+
+@media (max-width: 1193px) {
+    body {
+        padding: 60px 0;
+    }
+    .container {
+        display: flex;
+        justify-content: center;
+        padding: 0 40px;
+    }
+    .section-card__info {
+        width: 100%;
+        max-width: 846px;
+        height: auto;
+    }
+}
+
+@media (max-width: 770px) {
+    
+}
+
+
+
+
+
+
