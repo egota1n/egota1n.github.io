@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Новичкам</title>
+	<title>Новичкам Москва</title>
 	<!-- Favicon -->
 	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
@@ -12,10 +12,10 @@
 	<link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#751c29">
 	<meta name="msapplication-TileColor" content="#ffffff">
 	<meta name="theme-color" content="#ffffff">
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<!-- Main Styles -->
 	<link rel="stylesheet" href="css/style.css">
-	<!-- Bootstrap Grid -->
-	<link rel="stylesheet" href="css/bootstrap-grid.min.css">
 </head>
 <body>
 	<header>
@@ -126,9 +126,9 @@
 						Настоящий “недельный” марафон любви к себе и своему телу
 					</p>
 					<a href="https://hotstretching.ru/spb/offline.html" class="button button_primary button__beginners">Записаться</a>
-					<p class="note__beginners">
+					<!-- <p class="note__beginners">
 						*бесплатное пробное занятие предоставляется при покупке абонемента
-					</p>
+					</p> -->
 				</div>
 			</div>
 		</div>
@@ -144,10 +144,15 @@
 						1. Зарегистрируйтесь<span><br></span> в личном кабинете
 					</p>
 					<p class="description__step__road-map">
-						2. Приобретите пробное занятие или неделю новичка в разделе «Магазин»
+						2. 	Перейдите в раздел «Профиль»<span><br></span>
+					</p>
+					<p class="note__step__road-map">
+						Нажмите кнопку «Сменить клуб»<span class="mob_br"><br></span>
+						Нажмите кнопку «Выбрать»<span class="mob_br"><br></span> на нужном филиале<span class="mob_br"><br></span>
+						Нажмите кнопку «Сменить».
 					</p>
 					<p class="description__step__road-map">
-						3. Запишитесь на занятие
+						3. Запишитесь на занятие через раздел «Расписание»
 					</p>
 				</div>
 				<div class="info__steps__road2">
@@ -158,7 +163,7 @@
 						Приходите на занятие за 15-20 минут<span><br></span> до начала. Опоздавших на занятие,<span><br></span> к сожалению, пустить не сможем.
 					</p>
 					<p class="note__step__road-map">
-						Рекомендуем ознакомиться<span><br></span> с правилами нашей студии.
+						Рекомендуем ознакомиться<span><br></span><a href="#" data-bs-toggle="modal" data-bs-target="#modal__rules">с правилами нашей студиим.</a>
 					</p>
 				</div>
 			</div>
@@ -167,11 +172,136 @@
 
 	<!-- The end Section Road Map -->
 
+	<footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__description">
+                    <a href="#header" class="logo__footer"></a>
+                    <p>Hot Stretching Studio — сеть студий горячей растяжки в Санкт-Петербурге и Москве</p>
+                </div>
+                <div class="footer__navigation">
+                    <p class="footer__navigation-title">Навигация</p>
+                    <a href="#" class="footer__navigation-link">О студии</a>
+                    <a href="#" class="footer__navigation-link">Расписание</a>
+                    <a href="#" class="footer__navigation-link">Личный кабинет</a>
+                </div>
+                <div class="footer__important">
+                    <p class="footer__important-title">Важно знать</p>
+                    <a href="" class="footer__important-link">Правила зала</a>
+                    <a href="" class="footer__important-link">Нужно иметь с собой</a>
+                    <a href="" class="footer__important-link">Аренда аксессуаров</a>
+                </div>
+                <div class="footer__app">
+                    <p class="footer__app-title">Мобильное приложение Hot Stretching Studio</p>
+                    <a href="https://apps.apple.com/us/app/hot-stretching-studio/id1487800090?l=ru&ls=1" class="footer__app-ios"></a>
+                    <a href="https://play.google.com/store/apps/details?id=com.itrack.hotstretchingst723300" class="footer__app-android"></a>
+                </div>
+            </div>
+            <div class="footer__info">
+                <div class="footer__agreement">
+                    <a href="#">Пользовательское соглашение</a>
+                    <a href="#">Оплата</a>
+                    <a href="#">Возврат</a>
+                </div>
+                <div class="footer__copyright">
+                    <div>
+                        <a href="#">Договор оферты Бергольд</a>
+                        <a href="#">Договор оферты Севкабель</a>
+                    </div>
+                    <a href="#">Договор оферты Юность</a>
+                    <a href="#">Политика конфиденциальности</a>
+                </div>
+                <div class="footer__develop">
+                    <span>2018 - 2022 © Hot Stretching Studio</a></span>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- THE END FOOTER -->
 
+	<div class="modals">
+        <div class="modal_overlay">
+            <div class="modal modal-1" data-target="one">
+                <div class="modal_text">
+                    <div class="modal_text_h1">r</div>
+                    <div class="modal_text_span"></div>
+                    <div class="modal_text_span"></div>
+                    <div class="modal_text_span"></div>
+                    <div class="modal_text_span"></div>
+                    <div class="modal_text_btn"></div>
+                </div>
+                <div class="modal_img"></div>
+            </div>
+        </div>
+    </div>
+
+	<div class="modal fade" id="modal__rules" tabindex="-1" aria-labelledby="modal__rulesLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="photo__modal-rules photo__modal-rules1"></div>
+                <div class="photo__modal-rules photo__modal-rules2"></div>
+                <div class="photo__modal-rules photo__modal-rules3"></div>
+
+                <h2 class="title__modal-section title__modal-rules">Самое важное</h2>
+
+                <div class="block__modal-description-rules block__modal-description-rules1">
+                    <p class="description__modal-section description__modal-rules">
+                        Мы заботимся об атмосфере и гармонии в зале,<br>поэтому не пускаем 
+                        опоздавших даже на 1 минуту.<br>Будь внимателен!
+                    </p>
+                    <p class="description__modal-section description__modal-rules">
+                        На все занятия, пожалуйста, записывайся.
+                    </p>
+                    <p class="description__modal-section description__modal-rules">
+                        Если планы изменились, не забудь отменить занятие<br>не менее чем за 12 часов, иначе оно сгорит
+                    </p>
+                </div>
+                <div class="block__modal-description-rules block__modal-description-rules2">
+                    <p class="description__modal-section description__modal-rules description__modal-rules-special1">
+                        Будь готов остаться без связи на 1,5 часа,<br> это будет ценным для твоего ментального здоровья. <br>Рекомендуем активировать на телефоне авиарежим и на протяжении всего урока оставаться в зале.
+                    </p>
+                    <p class="description__modal-section description__modal-rules description__modal-rules-special2">
+                        Постарайся не соблазняться на тяжелую пищу менее чем за 2 часа до начала урока,<br> насладись этим процессом лучше после занятия
+                    </p>
+                    <p class="description__modal-section description__modal-rules">
+                        Пей много воды в течении дня
+                    </p>
+                    <p class="description__modal-section description__modal-rules">
+                        Перед уроком рекомендуем смыть макияж и яркие ароматы с кожи
+                    </p>
+                    <p class="description__modal-section description__modal-rules">
+                        На занятии может вестись фото-видео съёмка
+                    </p>
+                </div>
+
+                <h3 class="title__modal-rules-des">Что нужно с собой?</h3>
+                <div class="block__modal-description-rules">
+                    <p class="description__modal-section description__modal-rules">
+                        Удобная, легко тянущаяся одежда<br>(отлично подойдут леггинсы и топ)
+                    </p>
+                    <p class="description__modal-section description__modal-rules">
+                        Тапочки и полотенце для душа
+                    </p>
+                </div>
+
+                <p class="description__modal-rules-note">
+                    Коврик и одно полотенце<br> включены в стоимость занятия
+                </p>
+                <p class="description__modal-rules-note description__modal-rules-note2">
+                    Бутылка воды 100 рублей<br>
+                    Дополнительное полотенце 100 рублей
+                </p>
+                <div class="line__modal-rules"></div>
+            </div>
+        </div>
+    </div>
+	
+    <!-- The End Modal Section Rules -->
 	<script>
 		document.querySelector("input[type=checkbox]").onchange = function(){
 			document.querySelector("body").classList.toggle("check", this.checked);
 		}
 	</script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
 </body>
 </html>

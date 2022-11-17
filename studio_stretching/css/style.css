@@ -178,11 +178,8 @@ dl, ol, ul {
 }
 
 .logo {
-    position: absolute;
     top: 5px;
     right: 15px;
-    font-size: 1.2rem;
-    color: #0e2431;
 }
 
 .nav-container input[type="checkbox"]:checked ~ .menu-items {
@@ -232,33 +229,38 @@ dl, ol, ul {
     position: relative;
 }
 .preload_btns{
-    margin-top: 230px;
-    margin-left: 10%;
+    margin-top: 88px;
+    margin-left: auto;
+    margin-right: auto;
     display: flex;
     width: 584px;
     column-gap: 60px;
+    margin-bottom: 64px;
 }
 .preload_socials {
-    margin-top: 63px;
-    margin-left: 360px;
+    margin-top: 64px;
+    /* margin-left: 360px; */
+    position: relative;
     display: flex;
-    width: 180px;
-    column-gap: 30px;
+    width: 100px;
+    column-gap: 20px;
+    margin: auto;
 }
 .logo{
+    background: #951528;
     border-radius: 50%;
     width: 40px;
     height: 40px;
 }
 .logo:nth-child(1){
-    background: url(../img/inst.svg) no-repeat;
-}    
-.logo:nth-child(2){
     background: url(../img/vk.svg) no-repeat;
 }    
-.logo:nth-child(3){
+.logo:nth-child(2){
     background: url(../img/facebook.svg) no-repeat;
 }    
+/* .logo:nth-child(3){
+    background: url(../img/facebook.svg) no-repeat;
+}     */
 .main_h1 {
     position: relative;
     width: auto;
@@ -268,8 +270,7 @@ dl, ol, ul {
     background: radial-gradient(81.24% 39.66% at 50% 50%, rgba(149, 21, 40, 0.5) 0%, rgba(149, 21, 40, 0) 100%), #2A2B2D;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    padding-right: 16px;
-    text-align: right;
+    text-align: center;
     margin-bottom: 24px;
     z-index: 999;
 }
@@ -289,9 +290,9 @@ dl, ol, ul {
     font-weight: 300;
     padding-left: 0;
     display: block;
-    margin: 0 0 0 auto;
+    margin: auto;
+    text-align: center;
     position: relative;
-    left: 15px;
     z-index: 999;
 }
 .main__photo1{
@@ -509,18 +510,18 @@ dl, ol, ul {
     background: #F2F0EB;
     border-radius: 5px;
     color: #666;
-    text-decoration: none;
+    text-decoration: line-through;
     font-family: sans-serif;
     font-size: 25px;
     padding-right: 21px;
-    margin: 40px 0 0 44px   ;
+    margin: 40px 0 0 44px;
     position: relative;
 }
 .button_lesson:hover{
     color: #666;
 }
 .button_lesson::before{
-    content: '500 ₽';
+    content: '500 ₽';   
     background: #F2F0EB;
     width: 221px;
     height: 68px;
@@ -626,7 +627,15 @@ dl, ol, ul {
     background-size: contain;
     background-position: center;
 }
-.imagewrapper_about:hover .imagetext_about{  
+#container_hover2:hover .imagewrapper_about2{
+    background: url(../img/image4.png) no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+.imagewrapper_about, #container_hover1:hover .imagetext_about{  
+    opacity: 1;
+}
+#container_hover2:hover .imagetext_about{  
     opacity: 1;
 }
 .imagetext_about{
@@ -743,7 +752,7 @@ dl, ol, ul {
 /*Начало четвертого блока*/
 
 .section_studios{
-    padding: 52px 0 85px 0;
+    padding: 52px 0 0px 0;
 }
 
 .section_studios .container{
@@ -753,12 +762,10 @@ dl, ol, ul {
 .title__studios{
     font-size: 60px;
     font-weight: normal;
-    width: 439px;
+    width: 1144px;
+    margin: auto;
     text-transform: uppercase;
-    text-align: right;
-    position: absolute;
-    top: 170px;
-    right: 0;
+    text-align: center;
     background: radial-gradient(25.51% 52.65% at 67.76% 43.77%, rgba(149, 21, 40, 0.5) 0%, rgba(42, 43, 45, 0.5) 100%), #2A2B2D;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -771,10 +778,10 @@ dl, ol, ul {
  backdrop-filter: blur(2px);
  border-radius: 5px;
  width: 415px;
- height: 109px;
+ height: 120px;
  border: 1px solid #d09c9e;
  padding: 21px 0 21px 30px;
- position: absolute;
+ position: relative;
 }
 
 .block3__adress{
@@ -814,7 +821,7 @@ dl, ol, ul {
 .sign__studios{
     font-size: 25px;
     color: #2a2b2d;
-    position: absolute;
+    position: relative;
 }
 
 .sign__studios:hover{
@@ -839,7 +846,7 @@ dl, ol, ul {
 }
 
 .soon__studio{
-    position: absolute;
+    position: relative;
     width: 191px;
     font-size: 22px;
     font-weight: 300;
@@ -861,53 +868,43 @@ dl, ol, ul {
     position: relative;
 }
 
-.studio1, .studio2, .studio3{
+/* .studio1, .studio2, .studio3{
     position: relative;
     display: inline-block;
-}
+} */
 
 .studio1{
-    right: 97px;
-}
-
-.studio2{
-    margin-left: 338px;
-    margin-top: 30px;
-}
-
-.studio3{
-    margin-left: 248px;
-    margin-top: 90px;
+    margin-top: 50px;
 }
 
 .studio1 .block__adress{
-    top: 26px;
-    right: -200px;
+    top: -165px;
+    right: -575px;
 }
 
 .studio2 .block__adress{
-    top: 126px;
-    left: -253px;
+    top: -165px;
+    left: 575px;
 }
 
-.studio3 .block__adress{
-    top: 93px;
-    right: -300px;
+.studio3 .block__adress {
+    top: -168px;
+    right: -574px;
 }
 
-.studio1 .sign__studios{
-    top: 145px;
-    right: -200px;
+.studio1 .sign__studios {
+    top: -150px;
+    right: -565px;
 }
 
-.studio2 .sign__studios{
-    top: 245px;
-    left: -253px;
+.studio2 .sign__studios {
+    top: -150px;
+    left: 568px;
 }
 
-.studio3 .sign__studios{
-    top: 212px;
-    right: -300px;
+.studio3 .sign__studios {
+    top: -152px;
+    right: -569px;
 }
 
 .studio2 .soon__studio{
@@ -1214,8 +1211,8 @@ dl, ol, ul {
 
 .photo__partners1, .photo__partners2{
     display: block;
-    width: 356px;
-    height: 186px;
+    width: 500px;
+    height: 262px;
     background: #000;
     border-radius: 5px;
     background-size: contain!important;
@@ -1302,6 +1299,7 @@ dl, ol, ul {
 .block__partners{
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
 .video__partners{
@@ -1322,6 +1320,125 @@ dl, ol, ul {
 
 
 /*Конец шестого блока*/
+
+/*Начало седьмого блока*/
+
+.section__news{
+    padding: 50px 0 63px 0;
+}
+
+.title__news{
+    font-size: 60px;
+    text-transform: uppercase;
+    margin-bottom: 42px;
+}
+
+.block__news{
+    display: block;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.block__news{
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+}
+
+.later__news {
+    display: block;
+    width: 683px;
+}
+
+.now__news{
+    width: 530px;
+    display: block;
+    background: #fff;
+    border-radius: 0 0 3px 3px;
+}
+
+.photo__news{
+    display: block;
+}
+
+.later__news .photo__news{
+    position: absolute;
+    left: -380px;
+    top: 0;
+    width: 360px;
+    height: 202px;
+    background: #d9d9d9;
+    border-radius: 3px;
+}
+
+.now__news .photo__news{
+    margin-bottom: 40px;
+}
+
+.now__news .photo__news{
+    width: 100%;
+    height: 344px;
+    background: #d9d9d9;
+    border-radius: 3px 3px 0 0;
+}
+
+.date__news{
+    font-weight: 300;
+    font-size: 18px;
+    color: #951528;
+    margin-bottom: 13px;
+    line-height: 20px;
+    position: relative;
+    margin-top: 10px;
+}
+
+.date__news::before{
+    content: '';
+    display: block;
+    width: 250px;
+    height: 1px;
+    position: absolute;
+    top: -10px;
+    left: 0;
+    background: #2a2b2d;
+}
+
+.now__news .date__news::before{
+    width: 300px;
+}
+
+.text__news{
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 25px;
+    color: #2a2b2d;
+}
+
+.later__news .news__item{
+    padding-top: 1px;
+    position: relative;
+    margin-bottom: 40px;
+    margin-left: 380px;
+    height: 202px;
+}
+
+.later__news .news__item:last-child{
+    margin-bottom: 0;
+}
+
+.later__news .text__news{
+    width: 303px;
+}
+
+.now__news .text__news{
+    margin: 0 26px 22px 30px;
+}
+
+.now__news .date__news{
+    margin-left: 30px;
+}
+
+/*Конец седьмого блока*/
 
 /*Начало восьмого блока*/
 
@@ -1897,7 +2014,7 @@ html{
 
 .info__steps__road1{
     display: block;
-    width: 404px;
+    width: 424px;
 }
 
 .info__steps__road2{
@@ -2098,16 +2215,22 @@ html{
 }
 
 .block__modal-description-rules2{
-    margin-top: 90px;
+    margin-top: 175px;
     margin-left: 387px;
 }
 
 .title__modal-rules-des{
-    margin-top: 79px;
+    margin-top: 170px;
     font-size: 35px;
     color: #2a2b2d;
     margin-bottom: 18px;
     position: relative;
+}
+@media (max-width:1199px)
+{
+    .title__modal-rules-des {
+        margin-top: 84px;
+    }
 }
 
 .title__modal-rules-des::before{
@@ -2170,8 +2293,224 @@ html{
     background: url(../img/modal__rules/3.jpg);
 }
 
+/*Правки Блок Направления*/
+
+.block__direction-left {
+    margin: 60px 0px;
+}
+
+.block__direction-left::before {
+    background: #951528;
+    content: '';
+    display: block;
+    width: 106%;
+    height: 115%;
+    position: absolute;
+    top: 50%;
+    z-index: -1;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+}
+
+.block__direction-left .title__direction {
+    color: #fff;
+}
+
+.block__direction-left .title__direction::before {
+    background: #fff!important;
+}
+
+.block__direction-left .description__direction {
+    color: #fff;
+}
+
+.block__direction-left .btn__direction1 {
+    color: #fff;
+    border-color: #fff;
+}
+
+.block__direction-left .btn__direction2 {
+    color: #fff;
+    border-color: #fff;
+}
+
+/*Начало Футера*/
+
+.footer{
+    padding: 70px 0;
+    background: #1d1c21;
+}
+
+.footer__content{
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+}
+
+.footer__description p{
+    font-size: 16px;
+    color: #bbbbbc;
+    font-weight: 300;
+    width: 270px;
+    margin-top: 20px;
+    line-height: 1.55;
+}
+
+.logo__footer{
+    display: block;
+    width: 200px;
+    height: 56px;
+    background: url(../img/logo__footer.svg) center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.footer__navigation p, .footer__important p{
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 20px;
+    font-weight: 300!important;
+}
+
+.footer__navigation a, .footer__important a{
+    display: block;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 20px;
+    margin-left: 26px;
+    position: relative;
+}
+
+.footer__navigation a:last-child, .footer__important a:last-child{
+    margin-bottom: 0;
+}
+
+.footer__navigation a::before, .footer__important a::before{
+    content: '';
+    display: block;
+    border: 5px solid transparent;
+    border-left: 5px solid white;
+    position: absolute;
+    top: 5px;
+    left: -20px;
+}
+
+.footer__app{
+    display: block;
+    width: 270px;
+    height: 294px;
+    background: #000;
+    padding: 40px;
+    border-top: 1px solid #911c0e;
+}
+
+.footer__app p{
+    font-size: 20px;
+    color: #fff;
+    line-height: 1.4;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.footer__app a{
+    display: block;
+    width: 70%;
+    height: 44px;
+    margin-bottom: 24px;
+    background-size: contain!important;
+    background-repeat: no-repeat!important;
+}
+
+.footer__app-ios{
+    background: url(../img/app/ios.png) center center;
+}
+
+.footer__app-android{
+    background: url(../img/app/android.png) center center;
+}
+
+.footer__app a:last-child{
+    margin-bottom: 0;
+}
+
+.footer__info{
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    margin-top: 80px;
+    position: relative;
+}
+
+.footer__info::before{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: #2f2e32;
+}
+
+.footer__agreement a{
+    font-size: 11px;
+    color: #fff;
+}
+
+.footer__agreement a:first-child {
+    display: block;
+}
+
+.footer__agreement a:last-child {
+    margin-left: 10px;
+}
+
+.footer__agreement {
+    width: 222px;
+}
+
+.footer__develop span{
+    font-size: 11px;
+    color: #bbbbbc;
+}
+
+.footer__develop span a{
+    color: #fff;
+}
+
+.footer__copyright p{
+    font-size: 11px;
+    color: #bbbbbc;
+}
+
+.footer__copyright a{
+    font-size: 11px;
+    color: #fff;
+    margin-top: 3px;
+}
+
+.footer__copyright{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer__copyright span{
+    margin: 0;
+    padding: 0;
+}
 
 
+
+/*Конец Футера*/
+
+
+@media (min-width: 1199px) and (max-width: 1350px) {
+    .block__news {
+        max-width: 1184px;
+    }
+}
 
 
 
@@ -2287,20 +2626,20 @@ html{
     } */
     .title__studios {
         font-size: 46px;
-        width: 439px;
+        width: 1000px;
         top: 210px;
     }
     .studio1 .sign__studios {
-        top: 145px;
-        right: -150px;
+        top: -144px;
+        right: -566px;
     }
     .studio2 .sign__studios {
-        top: 245px;
-        left: -251px;
+        top: -143px;
+        left: 565px;
     }
     .studio3 .sign__studios {
-        top: 212px;
-        right: -250px;
+        top: -144px;
+        right: -564px;
     }
     .sign__studios {
         font-size: 20px;
@@ -2319,13 +2658,8 @@ html{
     .studio1 {
         right: 0;
     }
-    .studio2 {
-        margin-left: 338px;
-        margin-top: 90px;
-    }
     .studio3 {
         margin-left: 0;
-        margin-top: 90px;
     }
     .adress2__studios {
         width: 344px;
@@ -2359,7 +2693,10 @@ html{
     .block__information1 .description__information2 {
         margin-bottom: 153px!important;
     }
-
+    .photo__partners1, .photo__partners2{
+        width: 400px;
+        height: 220px;
+    }
 
     /*Конец третьего блока*/
     /*СТРАНИЦА О СТУДИИ*/
@@ -2490,8 +2827,7 @@ html{
         background: radial-gradient(81.24% 39.66% at 50% 50%, rgba(149, 21, 40, 0.5) 0%, rgba(149, 21, 40, 0) 100%), #2A2B2D;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-        padding-right: 16px;
-        text-align: right;
+        text-align: center;
         margin-bottom: 24px;
         z-index: 999;
         margin-bottom: 14px;
@@ -2513,7 +2849,7 @@ html{
         font-size: 32px;
     }
     .preload_btns {
-        width: 524px;
+        width: 490px;
         column-gap: 20px;
     }
     .preload_screen {
@@ -2524,9 +2860,6 @@ html{
         font-size: 18px;
         padding: 18px;
         width: 240px;
-    }
-    .preload_socials {
-        margin-left: 252px;
     }
     /*МОДАЛЬНЫЕ ОКНА*/
 
@@ -2573,7 +2906,7 @@ html{
         top: 824px;
     }
     .block__modal-description-rules2 {
-        margin-top: 60px;
+        margin-top: 144px;
     }
     .description__modal-rules-note {
         margin-bottom: 16px;
@@ -2689,6 +3022,62 @@ html{
         height: 378px;
     }
     /*Конец Блока с перелистыванием от скролла*/
+   /* Начало шестого блока*/
+   .section__news {
+        padding: 40px 0 53px 0;
+    }
+    .title__news {
+        font-size: 40px;
+        margin-bottom: 20px;
+    }
+    .block__news {
+        display: block;
+        max-width: 960px;
+    }
+    .date__news {
+        font-size: 16px;
+    }
+    .date__news::before {
+        width: 160px;
+    }
+    .later__news .text__news {
+        width: auto;
+    }
+    .text__news {
+        font-size: 18px;
+        max-width: 550px;
+    }
+    .now__news {
+        width: auto;
+        height: auto;
+        margin-top: 30px;
+        position: relative;
+        margin-left: 380px;
+        padding-top: 1px;
+        background: none;
+    }
+    .now__news .photo__news {
+        position: absolute;
+        left: -380px;
+        top: 0;
+        width: 360px;
+        height: 202px;
+        background: #d9d9d9;
+        border-radius: 3px;
+    }
+    .now__news .date__news {
+        margin-left: 0;
+    }
+    .now__news .text__news {
+        margin: 0;
+    }
+    .later__news .text__news {
+        width: 542px;
+    }
+    .now__news .date__news::before {
+        width: 160px;
+    }
+    /*Конец шестого блока*/
 }
 
 @media (max-width: 991px) {
@@ -2728,12 +3117,12 @@ html{
         display: none;
     }
     /*Конец первого блока*/
-    .preload_text {
+    /* .preload_text {
         padding-left: 14%;
-    }
-    .preload_h2 {
+    } */
+    /* .preload_h2 {
         padding-left: 8%;
-    }
+    } */
     .main_h1{
         width: 600px;
         font-size: 60px;
@@ -2871,7 +3260,7 @@ html{
     }
     .title__studios {
         font-size: 40px;
-        width: 299px;
+        width: 500px;
         top: 260px;
     }
     .studio2 .soon__studio {
@@ -2883,13 +3272,13 @@ html{
         font-size: 18px;
         padding: 13px 35px;
     }
-    .studio2 {
-        margin-left: 198px;
-        margin-top: 160px;
+    .studio1 .block__adress {
+        top: -150px;
+        right: -385px;
     }
     .studio1 .sign__studios {
-        top: 130px;
-        right: -150px;
+        top: -131px;
+        right: -480px;
     }
     .sign__studios {
         font-size: 18px;
@@ -2902,16 +3291,16 @@ html{
     }
     .block__adress {
         width: 345px;
-        height: 91px;
+        height: 98px;
         padding: 21px 0 21px 30px;
     }
     .studio2 .sign__studios {
-        top: 228px;
-        left: -193px;
+        top: -128px;
+        left: 475px;
     }
     .studio2 .block__adress {
-        top: 126px;
-        left: -193px;
+        top: -148px;
+        left: 388px;
     }
     .adress2__studios {
         width: 277px;
@@ -2923,12 +3312,12 @@ html{
         padding: 28px 0 28px 30px;
     }
     .studio3 .block__adress {
-        top: 93px;
-        right: -260px;
+        top: -149px;
+        right: -384px;
     }
     .studio3 .sign__studios {
-        top: 197px;
-        right: -207px;
+        top: -123px;
+        right: -475px;
     }
     .studio3 .soon__studio {
         top: 13px;
@@ -2980,6 +3369,9 @@ html{
     .start_lesson, .start_week{
         width: 410px;
     }
+    .section_amatuer{
+        height: 510px;
+    }
     /* Конец адаптива второго экрана */
 
     /*Начало третьего блока*/
@@ -3007,6 +3399,10 @@ html{
     }
     .block__information1 .description__information1::before {
         width: 237px;
+    }
+    .photo__partners1, .photo__partners2{
+        width: 320px;
+        height: 200px;
     }
     /* Конец третьего блока*/
 
@@ -3153,6 +3549,7 @@ html{
     .main_h1 {
         width: 579px;
         font-size: 48px;
+        margin: auto;
     }
     .preload_h2 {
         width: 500px;
@@ -3161,18 +3558,15 @@ html{
         line-height: 29px;
     }
     .preload_btns {
-        margin-top: 120px;
-        margin-left: 0;
-        width: 568px;
-        column-gap: 14px;
+        margin-top: 60px;
+        margin-left: auto;
+        width: 420px;
+        column-gap: 25px;
     }
     .button.main {
         padding: 14px 25px 14px 25px;
         font-size: 17px;
         width: 200px;
-    }
-    .preload_socials {
-        margin-left: 115px;
     }
 
     /*МОДАЛЬНЫЕ ОКНА*/
@@ -3257,7 +3651,7 @@ html{
         right: 20px
     }
     .block__modal-description-rules2 {
-        margin-top: 25px;
+        margin-top: 100px;
         margin-left: 269px;
     }
     .description__modal-rules-special2 {
@@ -3267,7 +3661,7 @@ html{
         max-width: 240px;
     }
     .title__modal-rules-des {
-        margin-top: 47px;
+        margin-top: 80px;
         font-size: 25px;
         margin-bottom: 12px;
     }
@@ -3366,6 +3760,33 @@ html{
         height: 240px;
     }
     /*Конец  Блока с перелистыванием от скролла*/
+    /*Начало шестого блока*/
+    .section__news {
+        padding: 20px 0 13px 0;
+    }
+    .block__news {
+        max-width: 720px;
+    }
+    .later__news .news__item{
+        height: 172px;
+    }
+    .later__news .news__item, .now__news {
+        margin-left: 324px;
+    }
+    .later__news .photo__news, .now__news .photo__news {
+        left: -310px;
+        width: 280px;
+        height: 172px;
+    }
+    .later__news .text__news {
+        width: 392px;
+    }
+    /*Конец шестого блока*/
+    /*Начало Футер*/
+    .footer__navigation, .footer__important{
+        display: none;
+    }
+    /*Конец Футер*/
 }
 
 @media (max-width: 767px) {
@@ -3430,33 +3851,28 @@ html{
         display: block;
         height: 100%;
         top: 70px;
-        position: relative;
-        background: url(../img/main.png) no-repeat;
-        background-size: cover;
-        background-position: center center;
     }
     .preload_text.mob{
         position: inherit;
-        top: -97px;
-        padding-left: 15%;
+        top: -50px;
         padding-top: 0px;
     }
     .preload_btns.mob{
+        margin: auto;
+        justify-content: center;
         position: relative;
-        top: 175px;
-        margin-top: 230px;
-        margin-left: 15%;
+        margin-top: 60px;
         display: flex;
         width: 100%;
         margin-bottom: 50px;
     }
     
     .preload_socials.mob {
+        margin-top: 100px;
         margin: auto;
         display: flex;
         width: 180px;
-        column-gap: 30px;
-        top: 240px;
+        justify-content: center;
         position: relative;
     }
     .button.main.mob,
@@ -3479,16 +3895,6 @@ html{
         -webkit-text-fill-color: transparent;
         z-index: 1;
     }
-    .preload_h2.mob{
-        width: 398px;
-        position: inherit;
-        font-size: 25px;
-        font-weight: 200;
-        padding-left: 0;
-        color: #F2F0EB;
-        top: 290px;
-    }
-
     .title__about {
         font-size: 14px;
         width: 310px;
@@ -3581,7 +3987,7 @@ html{
     }
     .title__studios {
         font-size: 35px;
-        width: 299px;
+        width: 420px;
         top: 240px;
     }
     .address__studios {
@@ -3592,7 +3998,7 @@ html{
     }
     .block__adress {
         width: 265px;
-        height: 91px;
+        height: 94px;
         padding: 21px 0 21px 23px;
     }
     .phone__studios {
@@ -3609,12 +4015,12 @@ html{
         width: 225px;
     }
     .studio2 .block__adress {
-        top: 96px;
-        left: -193px;
+        top: -124px;
+        left: 263px;
     }
     .block__adress {
         width: 265px;
-        height: 69px;
+        height: 76px;
         padding: 15px 0 15px 23px;
     }
     .soon__studio {
@@ -3624,21 +4030,21 @@ html{
         border: 2px solid #d09c9e;
     }
     .studio2 .sign__studios {
-        top: 188px;
-        left: -191px;
+        top: -100px;
+        left: 318px;
     }
     .studio1 .sign__studios {
-        top: 120px;
-        right: -142px;
+        top: -102px;
+        right: -318px;
     }
     .address3__studios {
         font-size: 13px;
         width: 135px;
     }
     .studio3 .block__adress {
-        top: 89px;
-        right: -130px;
-        width: 185px;
+        top: -125px;
+        right: -260px;
+        width: 204px;
     }
     .studio3 .soon__studio {
         top: 41px;
@@ -3649,12 +4055,8 @@ html{
         width: 135px;
     }
     .studio3 .sign__studios {
-        top: 173px;
-        right: -87px;
-    }
-    .studio3 {
-        margin-left: 70px;
-        margin-top: 40px;
+        top: -102px;
+        right: -318px;
     }
 
 
@@ -3765,6 +4167,13 @@ html{
         width: 160px!important;
     }
     /*Конец первого блока*/
+
+    .block__partners{
+        flex-direction: column;
+    }
+    .block__partners-info.block__partners-info2{
+        margin-top: 20px;
+    }
     /*Начало третьего блока*/
     .section__road-map {
         padding: 11px 0 28px 0;
@@ -3819,36 +4228,33 @@ html{
         transform: rotate(-90deg) translateY(-205px);
     }
     .main_h1.mob {
-        width: 418px;
-        font-size: 50px;
-        text-align: left;
+        width: 480px;
+        font-size: 38px;
+        text-align: center;
     }
     .preload_screen {
-        min-height: auto;
-        padding: 91px 0 109px 0;
+        min-height: 100vh;
     }
     .preload_h2.mob {
-        width: 398px;
-        top: 290px;
-        margin-left: 0;
+        width: 480px;
+        margin:auto;
+        color: #2A2B2D;
+        margin-top: 20px;
     }
     .preload_text.mob {
-        top: -97px;
-        padding-left: 60px;
+        top: -50px;
         padding-top: 0px;
     }
     .preload_btns.mob {
-        top: 175px;
-        margin-top: 230px;
-        margin-left: 22px;
+        margin: auto;
+        margin-top: 60px;
         width: 100%;
         margin-bottom: 0px;
     }
     .preload_socials.mob {
+        margin-top: 100px;
         width: 180px;
-        column-gap: 30px;
-        top: 210px;
-        padding-bottom: 40px;
+        justify-content: center;
     }
 
     /*МОДАЛЬНЫЕ ОКНА*/
@@ -3876,7 +4282,7 @@ html{
         margin-top: 68px;
     }
     .block__modal-description-rules2 {
-        margin-top: 25px;
+        margin-top: 40px;
         margin-left: 159px;
     }
     .photo__modal-rules2 {
@@ -3968,6 +4374,59 @@ html{
         height: 283px;
     }
     /*Конец Блока с перелистыванием от скролла*/
+    /*Начало шестого блока*/
+    .title__news {
+        font-size: 28px;
+    }
+    .block__news {
+        max-width: 540px;
+    }
+    .later__news {
+        display: block;
+        width: auto;
+    }
+    .later__news .photo__news, .now__news .photo__news{
+        position: static;
+        display: block
+    }
+    .later__news .news__item, .now__news{
+        margin-left: 0;
+    }
+    .news__item{
+        height: auto!important;
+    }
+    .date__news {
+        font-size: 16px;
+        margin-top: 35px;
+    }
+    .text__news {
+        font-size: 16px;
+        max-width: 382px;
+    }
+    .studio1 .block__adress {
+        top: -122px;
+        right: -264px;
+    }
+    /*Конец шестого блока*/
+    /*Правки Блок Направления*/
+    .block__direction-left::before {
+        width: 100vw;
+        border-radius: 0;
+    }
+    /*Начало Футер*/
+    .footer__info {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center
+    }
+    .footer__agreement {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .footer__copyright {
+        margin-bottom: 20px;
+    }
+    /*Конец Футер*/
 }
 
 @media (max-width: 575px) {
@@ -4033,33 +4492,27 @@ html{
         height: 100%;
         top: 70px;
         position: relative;
-        background: url(../img/main.png) no-repeat;
-        background-size: cover;
-        background-position: center center;
     }
     .preload_text.mob{
         position: inherit;
         top: -10px;
-        padding-left: 15%;
         padding-top: 0px;
     }
     .preload_btns.mob{
         position: relative;
-        top: 175px;
-        margin-top: 230px;
-        margin-left: 15%;
+        margin-top: 60px;
         display: flex;
         width: 100%;
         margin-bottom: 50px;
     }
 
     .preload_socials.mob {
+        margin-top: 100px;
         margin: auto;
         display: flex;
         width: 180px;
-        column-gap: 30px;
-        top: 240px;
         position: relative;
+        justify-content: center;
     }
     .button.main.mob,
     .button.main.mob1 {
@@ -4086,8 +4539,7 @@ html{
         font-size: 20px;
         font-weight: 200;
         padding-left: 0;
-        color: #F2F0EB;
-        top: 290px;
+        color: #2A2B2D;
     }
     .title__about {
         display: none;
@@ -4168,7 +4620,7 @@ html{
         background-size: cover!important;
     }
     .studio1 .block__adress {
-        top: 26px;
+        top: 15px;
         right: 0;
     }
     .studio1 .sign__studios {
@@ -4199,11 +4651,9 @@ html{
     }
     .studio2 {
         margin-left: 0;
-        margin-top: 160px;
     }
     .studio3 {
         margin-left: 0;
-        margin-top: 40px;
     }
     .studio3 .soon__studio {
         top: 41px;
@@ -4223,33 +4673,27 @@ html{
         right: 90px;
     }
     .title__studios {
+        top: 0;
         font-size: 30px;
         width: 309px;
-        top: 0;
-        left: 50%;
+        margin: auto;
         text-align: center;
-        transform: translate(-50%, 0);
-        position: absolute;
+        position: relative;
     }
     .studio2 {
         margin-left: 0;
-        margin-top: 180px;
+        margin-top: 80px;
     }
     .studio1 .block__adress {
-        top: 236px;
-        right: auto;
-        left: 50%;
-        transform: translate(-50%, 0);
+        margin: auto;
+        height: 86px;
     }
     .studio1 .sign__studios {
-        top: 330px;
-        right: auto;
-        left: 50%;
-        transform: translate(-50%, 0);
+        top: 30px;
+        right: -140px;
     }
     .studio1 {
         right: 0;
-        margin-top: 100px;
     }
     .studio2 .soon__studio {
         top: -25px;
@@ -4257,18 +4701,16 @@ html{
         transform: translate(-50%, 0);
     }
     .studio2 .block__adress {
-        top: 224px;
-        left: 50%;
-        transform: translate(-50%, 0);
+        top: 15px;
+        margin: auto;
     }
     .studio2 .sign__studios {
-        top: 318px;
-        left: 50%;
-        transform: translate(-50%, 0);
+        top: 30px;
+        left: 139px;
     }
     .studio3 {
         margin-left: 0;
-        margin-top: 160px;
+        margin-top: 80px;
     }
     .studio3 .soon__studio {
         top: -29px;
@@ -4277,21 +4719,17 @@ html{
         transform: translate(-50%, 0);
     }
     .studio3 .block__adress {
-        top: 230px;
-        right: auto;
-        left: 50%;
+        top: 15px;
         width: 185px;
-        transform: translate(-50%, 0);
+        margin: auto;
     }
     .adress3__studios {
         font-size: 13px;
         width: 135px;
     }
     .studio3 .sign__studios {
-        top: 320px;
-        right: auto;
-        left: 50%;
-        transform: translate(-50%, 0);
+        top: 30px;
+        left: 180px;
     }
     .section_studios {
         padding: 30px 0 140px 0;
@@ -4299,6 +4737,7 @@ html{
     .slider_studio {
         width: 296px;
         height: 210px;
+        margin: auto;
     }
     .slider_studio-content div {
         width: 276px;
@@ -4453,11 +4892,10 @@ html{
     }
     .preload_screen {
         min-height: auto;
-        padding: 0 0 109px 0;
+        padding: 0 0 150px 0;
     }
     .preload_text.mob {
         top: -10px;
-        padding-left: 20px;
         padding-top: 0px;
     }
     .preload_h2.mob {
@@ -4466,8 +4904,7 @@ html{
         font-size: 20px;
         font-weight: 200;
         padding-left: 0;
-        color: #F2F0EB;
-        top: 190px;
+        color: #2A2B2D;
     }
     .button.main.mob, .button.main.mob1 {
         padding: 15px 0;
@@ -4475,8 +4912,7 @@ html{
         width: 270px;
     }
     .preload_btns.mob {
-        top: 165px;
-        margin-top: 220px;
+        margin-top: 60px;
         margin-left: 0;
         width: 100%;
         margin-bottom: 50px;
@@ -4484,8 +4920,8 @@ html{
     .preload_socials.mob {
         margin: auto;
         width: 180px;
-        column-gap: 30px;
-        top: 170px;
+        justify-content: center;
+        margin-top: 60px;
     }
 
     /*МОДАЛЬНЫЕ ОКНА*/
@@ -4634,6 +5070,41 @@ html{
         height: 130px;
     }
     /*Конец Блока с перелистыванием от скролла*/
+    /*Начало шестого блока*/
+    .block__news {
+        padding: 0 12px;
+        display: block;
+    }
+    .text__news {
+        width: auto!important;
+    }
+    /*Конец шестого блока*/
+    /*Правки Блок Направления*/
+    .block__direction-left {
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+    /*Начало Футер*/
+    .footer {
+        padding: 30px 0;
+    }
+    .footer__content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+    .logo__footer {
+        margin: 0 auto;
+    }
+    .footer__app a {
+        margin: 0 auto 24px auto;
+    }
+    .footer__app {
+        margin-top: 20px;
+    }
+    /*Конец Футер*/
 }
-
-
+.mob_br{
+    display: inline !important;
+}
