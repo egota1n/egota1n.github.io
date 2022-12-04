@@ -1,9 +1,11 @@
+let elem = document.getElementsByClassName('block--photos__atmosphere')[0].clientWidth;
+
 const flightPath = {
 	curviness: 1.25,
 	autoRotate: false,
 	values: [
 		{x: 0, y: 0},
-		{x: -window.innerWidth, y: 0},
+		{x: -elem+window.innerWidth, y: 0},
 	]
 };
 

@@ -320,9 +320,9 @@ dl, ol, ul {
 .header {
     min-height: 1000px;
     background: url(../img/FirstPageImage.png) no-repeat;
-    background-size: 1220px;
-    background-position: bottom right;
-    max-width: 1440px;
+    background-size: 1137px;
+    background-position: top 176px right;
+    max-width: 1220px;
     margin: 0 auto;
 }
 .header__top {
@@ -773,15 +773,15 @@ dl, ol, ul {
     text-fill-color: transparent;
 }
 
-.block__adress{
- background: rgb(242 240 234 / 70%);
- backdrop-filter: blur(2px);
- border-radius: 5px;
- width: 415px;
- height: 120px;
- border: 1px solid #d09c9e;
- padding: 21px 0 21px 30px;
- position: relative;
+.block__adress {
+    background: rgb(242 240 234 / 70%);
+    backdrop-filter: blur(2px);
+    border-radius: 5px;
+    width: 422px;
+    height: 120px;
+    border: 1px solid #d09c9e;
+    padding: 17px 0 0px 30px;
+    position: relative;
 }
 
 .block3__adress{
@@ -789,7 +789,7 @@ dl, ol, ul {
 }
 
 .address__studios{
-    font-size: 22px;
+    font-size: 19px;
     color: #2a2b2d;
     display: block;
 }
@@ -805,17 +805,16 @@ dl, ol, ul {
     color: #666;
 }
 
-.adress1__studios{
-    margin-bottom: 4px;
-    width: 307px;
+.adress1__studios {
+    width: 298px;
 }
 
-.adress2__studios{
-    width: 374px;
+.adress2__studios {
+    width: 339px;
 }
 
-.adress3__studios{
-    width: 234px;
+.adress3__studios {
+    width: 294px;
 }
 
 .sign__studios{
@@ -2067,6 +2066,14 @@ html{
     margin-bottom: 0;
 }
 
+.note__step__road-map a:hover {
+    color: #951628;
+}
+.note__step__road-map a {
+    color: #c42b18;
+    transition: all 0.2s ease;
+}
+
 
 
 /*Конец третьего блока*/
@@ -3292,7 +3299,7 @@ html{
     .block__adress {
         width: 345px;
         height: 98px;
-        padding: 21px 0 21px 30px;
+        padding: 17px 0 0px 18px;
     }
     .studio2 .sign__studios {
         top: -128px;
@@ -3303,13 +3310,13 @@ html{
         left: 388px;
     }
     .adress2__studios {
-        width: 277px;
+        width: 285px;
     }
     .adress3__studios {
-        width: 165px;
+        width: 251px;
     }
     .block3__adress {
-        padding: 28px 0 28px 30px;
+        padding: 19px 0 0px 23px;
     }
     .studio3 .block__adress {
         top: -149px;
@@ -3996,11 +4003,6 @@ html{
     .adress1__studios {
         width: 181px;
     }
-    .block__adress {
-        width: 265px;
-        height: 94px;
-        padding: 21px 0 21px 23px;
-    }
     .phone__studios {
         font-size: 13px;
     }
@@ -4021,7 +4023,7 @@ html{
     .block__adress {
         width: 265px;
         height: 76px;
-        padding: 15px 0 15px 23px;
+        padding: 13px 0 0px 15px;
     }
     .soon__studio {
         width: 114px;
