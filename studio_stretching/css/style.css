@@ -1642,6 +1642,10 @@ dl, ol, ul {
     position: relative;
 }
 
+.section__contact-address2, .section__contact-address3{
+    margin-top: 20px;
+}
+
 .section__contact-address::before{
     content: '';
     display: block;
