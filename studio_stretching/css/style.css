@@ -234,7 +234,7 @@ dl, ol, ul {
     margin-right: auto;
     display: flex;
     width: 584px;
-    column-gap: 60px;
+    column-gap: 42px;
     margin-bottom: 64px;
 }
 .preload_socials {
@@ -294,6 +294,7 @@ dl, ol, ul {
     text-align: center;
     position: relative;
     z-index: 999;
+    line-height: 110%;
 }
 .main__photo1{
     display: block;
@@ -318,15 +319,15 @@ dl, ol, ul {
     background-size: contain;
 }
 .header {
-    min-height: 1000px;
+    min-height: 980px;
     background: url(../img/FirstPageImage.png) no-repeat;
     background-size: 1137px;
-    background-position: top 176px right;
+    background-position: top 161px right;
     max-width: 1220px;
     margin: 0 auto;
 }
 .header__top {
-    padding: 76px 0 34px 0;
+    padding: 76px 0 20px 0;
 }
 .header__content {
     height: 710px;
