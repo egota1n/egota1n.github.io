@@ -4134,7 +4134,7 @@ html{
     }
     .header__content {
         height: 450px;
-        padding: 80px 0 57px 0;
+        padding: 40px 0 57px 0;
     }
     .button_header {
         margin-top: 45px;
@@ -4146,7 +4146,7 @@ html{
     }
     .header {
         background-size: 680px;
-        background-position: bottom right;
+        background-position: bottom 20px right;
         min-height: 453px;
     }
     .button_about {
@@ -4640,6 +4640,9 @@ html{
         width: 100px;
     }
     /*THE END SECTION CONTACT*/
+    .block__partners {
+        align-items: center;
+    }
 }
 
 @media (max-width: 575px) {
@@ -4817,7 +4820,7 @@ html{
     }
     .header {
         background-size: 640px;
-        background-position: bottom right -130px;
+        background-position: bottom 40px right -130px;
         min-height: 453px;
     }
     .button_about {
@@ -5362,6 +5365,10 @@ html{
         height: 230px;
     }
     /*THE END SECTION CONTACT*/
+    .section__news {
+        max-width: 320px;
+        margin: 0 auto;
+    }
 }
 .mob_br{
     display: inline !important;
