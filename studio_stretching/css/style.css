@@ -5312,6 +5312,7 @@ html{
     }
     .footer__app a {
         margin: 0 auto 24px auto;
+        background-position: center center;
     }
     .footer__app {
         margin-top: 20px;
