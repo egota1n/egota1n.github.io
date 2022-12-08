@@ -214,8 +214,8 @@ dl, ol, ul {
 
 /* Начало первых экранов экрана */
 .preload_screen {
-    min-height: 1000px;
-    padding: 311px 0 69px 0;
+    min-height: 100vh;
+    padding: 211px 0 69px 0;
 }
 .preload_container{
     height: 100%;
@@ -2448,7 +2448,7 @@ html{
 
 .footer{
     padding: 70px 0;
-    background: #1d1c21;
+    background: #690d1b;
 }
 
 .footer__content{
@@ -2509,9 +2509,7 @@ html{
     display: block;
     width: 270px;
     height: 294px;
-    background: #000;
-    padding: 40px;
-    border-top: 1px solid #911c0e;
+    background: #690d1b;
 }
 
 .footer__app p{
@@ -2522,13 +2520,14 @@ html{
     margin-bottom: 20px;
 }
 
-.footer__app a{
+.footer__app a {
     display: block;
     width: 70%;
     height: 44px;
-    margin-bottom: 24px;
+    margin-bottom: 10px;
     background-size: contain!important;
     background-repeat: no-repeat!important;
+    background-position: left center;
 }
 
 .footer__app-ios{
@@ -2551,7 +2550,7 @@ html{
     position: relative;
 }
 
-.footer__info::before{
+.footer__info::before {
     content: '';
     display: block;
     width: 100%;
@@ -2559,7 +2558,7 @@ html{
     position: absolute;
     top: -40px;
     left: 0;
-    background: #2f2e32;
+    background: #bbbbbc;
 }
 
 .footer__agreement a{
