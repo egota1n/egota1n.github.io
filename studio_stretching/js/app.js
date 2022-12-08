@@ -21,13 +21,13 @@ tween.add(
 const controller = new ScrollMagic.Controller();
 
 const scene = new ScrollMagic.Scene({
-	triggerElement: ".scroll__slider",
-	duration: 2000,
+	triggerElement: "#container_hover1",
+	duration: 1200,
 	triggerHook: 0
 })
 
 .setTween(tween)
-.setPin('.scroll__slider')
+
 .addIndicators({
     opacityStart: "rgba(255,255,255,0.5)",
     colorEnd: "rgba(255,255,255,0.5)",
