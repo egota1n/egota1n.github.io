@@ -633,10 +633,10 @@ dl, ol, ul {
     background-size: contain;
     background-position: center;
 }
-.imagewrapper_about, #container_hover1:hover .imagetext_about{  
+.imagewrapper_about:hover .imagetext_about{  
     opacity: 1;
 }
-#container_hover2:hover .imagetext_about{  
+.imagewrapper_about:hover .imagetext_about{  
     opacity: 1;
 }
 .imagetext_about{
@@ -5365,4 +5365,12 @@ html{
 }
 .mob_br{
     display: inline !important;
+}
+
+
+
+@media (min-width: 1200px) {
+    #modal__rules .modal-content {
+        min-height: 1293px;
+    }
 }
