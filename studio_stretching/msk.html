@@ -54,7 +54,7 @@
                         <li><a href="amatuer_msk.html">Новичкам</a></li>
                         <li><a href="directions_msk.html">Направления</a></li>
                         <li><a href="https://hotstretching.ru/msk/offline.html">Расписание</a></li> 
-                        <li><a href="https://hotstretching.ru/msk/rules">Правила посещения</a></li>
+                        <li><a href="#section__rules">Правила посещения</a></li>
                         <a class="account__btn" href="https://hotstretching.ru/msk/offline.html">Личный кабинет</a>
                     </div>
                 </div>
@@ -302,7 +302,7 @@
 
     <!-- SECTION RULES -->
 
-    <section class="section__rules">
+    <section class="section__rules" id="section__rules">
         <div class="container">
             <a class="section__rules-title" href="#" data-bs-toggle="modal" data-bs-target="#modal__rules">Правила посещения</a>
         </div>
@@ -562,6 +562,10 @@
         <script>
             document.querySelector("input[type=checkbox]").onchange = function(){
                 document.querySelector("body").classList.toggle("check", this.checked);
+            }
+            document.querySelector("a[href='#section__rules']").onclick = function(){
+                document.querySelector("body").classList.remove("check");
+                document.querySelector(".checkbox").checked = false;
             }
         </script>
 

@@ -961,6 +961,14 @@ dl, ol, ul {
     background: url(../img/adress3/4.jpg) center center no-repeat;
 }
 
+.slider_studio3 .slider_studio-content .fifth-ph{
+    background: url(../img/adress3/5.jpg) center center no-repeat;
+}
+
+.slider_studio3 .slider_studio-content .sixth-ph{
+    background: url(../img/adress3/6.jpg) center center no-repeat;
+}
+
 .slick-dots li.slick-active button:before {
     content: ''!important;
     background: #828282!important;
