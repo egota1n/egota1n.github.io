@@ -1,12 +1,14 @@
 @font-face {
-	font-family: 'Nasalization';
-	src: url('../font/nasalization-rg.eot'); /* IE 9 Compatibility Mode */
-	src: url('../font/nasalization-rg.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
-		url('../font/nasalization-rg.woff2') format('woff2'), /* Super Modern Browsers */
-		url('../font/nasalization-rg.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
-		url('../font/nasalization-rg.ttf') format('truetype'), /* Safari, Android, iOS */
+    font-family: 'Nasalization Free';
+    src: url('NasalizationFree.eot');
+    src: local('Nasalization Free'), local('../font/NasalizationFree'),
+        url('../font/NasalizationFree.eot?#iefix') format('embedded-opentype'),
+        url('../font/NasalizationFree.woff2') format('woff2'),
+        url('../font/NasalizationFree.woff') format('woff'),
+        url('../font/NasalizationFree.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
-
 
 *, *::before, *::after{
     margin: 0;
@@ -19,7 +21,7 @@
 }
 
 body{
-    font-family: 'Nasalization';
+    font-family: 'Nasalization Free';
     overflow-x: hidden;
 }
 
