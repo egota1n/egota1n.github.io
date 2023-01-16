@@ -1,0 +1,195 @@
+@font-face {
+	font-family: 'Nasalization';
+	src: url('../font/nasalizationfree.eot'); /* IE 9 Compatibility Mode */
+	src: url('../font/nasalizationfree.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('../font/nasalizationfree.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../font/nasalizationfree.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('../font/nasalizationfree.ttf') format('truetype'), /* Safari, Android, iOS */
+}
+
+
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    outline: 0;
+    visibility: visible;
+}
+
+body{
+    font-family: 'Nasalization';
+}
+
+.header{
+    display: block;
+    height: 1033px;
+}
+
+.header-bg {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background: url(../img/bg.jpg) center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-width: 1920px;
+    width: 100%;
+    height: 1033px;
+}
+
+.header-content{
+    position: relative;
+    z-index: 2;
+    height: 1033px;
+    padding-top: 78px;
+}
+
+.header-description{
+    text-align: center;
+    font-size: 21px;
+    text-transform: uppercase;
+    background: linear-gradient(261.91deg, rgba(255, 255, 255, 0) 25.57%, rgba(255, 255, 255, 0.46) 49.06%, rgba(255, 255, 255, 0) 77.19%), #9DB1C2;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    letter-spacing: 0.555em;
+}
+
+.header-title{
+    font-size: 141px;
+    width: 1023px;
+    margin: 17px auto 0 auto;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 90%;
+    font-weight: normal;
+    background: linear-gradient(260.86deg, rgba(132, 178, 216, 0) 69.39%, rgba(170, 209, 240, 0.3) 91.12%), linear-gradient(85.24deg, rgba(132, 178, 216, 0) 77.8%, rgba(170, 209, 240, 0.3) 99.83%), linear-gradient(261.91deg, rgba(255, 255, 255, 0) 25.57%, rgba(255, 255, 255, 0.4) 49.06%, rgba(255, 255, 255, 0) 77.19%), #0E2338;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+.header-person{
+    display: block;
+    width: 100%;
+    min-width: 1920px;
+    height: 647px;
+    background: url(../img/bg-person.png) bottom center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.header-link{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 18px;
+    color: #aa9045;
+    width: 450px;
+    height: 125px;
+    background: url(../img/btn.png) center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: 290px;
+    letter-spacing: 0.1em;
+    font-weight: normal;
+}
+
+.header-link::before{
+    content: '';
+    display: block;
+    width: 166px;
+    height: 49px;
+    background: url(../img/inst.svg);
+    position: absolute;
+    top: -35px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.header-desc1{
+    text-align: right;
+    position: absolute;
+    left: 50%;
+    transform: translateX(calc(-50% - 312px));
+    top: 534px;
+}
+
+.header-desc2{
+    text-align: left;
+    position: absolute;
+    left: 50%;
+    transform: translateX(calc(-50% + 312px));
+    top: 534px;
+}
+
+.header-desc1, .header-desc2{
+    font-size: 25px;
+    width: 360px;
+    background: linear-gradient(261.91deg, rgba(255, 255, 255, 0) 25.57%, rgba(255, 255, 255, 0.3) 49.06%, rgba(255, 255, 255, 0) 77.19%), #0E2338;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+.header-desc1 span, .header-desc2 span {
+    background: linear-gradient(261.91deg, rgba(255, 255, 255, 0) 25.57%, rgba(255, 255, 255, 0.3) 49.06%, rgba(255, 255, 255, 0) 77.19%), #77848E;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+.header-card1, .header-card2{
+    display: block;
+    width: 194px;
+    height: 97px;
+    position: absolute;
+    top: 381px;
+    left: 50%;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.header-card1{
+    transform: translateX(calc(-50% - 432px));
+    background: url(../img/card1.svg) center center;
+}
+
+.header-card2{
+    transform: translateX(calc(-50% + 432px));
+    background: url(../img/card2.svg) center center;
+}
+
+.bottom{
+    display: block;
+    width: 1920px;
+    height: 93px;
+    position: absolute;
+    bottom: -43px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: url(../img/bottom.svg) center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+section{
+    display: block;
+    height: 5000px;
+}
