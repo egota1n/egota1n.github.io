@@ -703,4 +703,13 @@ body{
     text-fill-color: transparent;
 }
 
+.program{
+    display: block;
+    width: 1198px;
+    height: 903px;
+    background: #fff;
+    margin: 77px auto 0 auto;
+    border-radius: 5px;
+}
+
 /* THE END SECTION PROGRAM */
