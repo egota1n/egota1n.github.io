@@ -44,7 +44,7 @@ body{
     top: 0;
     left: 50%;
     transform: translateX(-50%);
-    background: url(../img/bg.jpg) center center;
+    background: url(../img/main/bg.jpg) center center;
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
@@ -90,7 +90,7 @@ body{
     display: block;
     width: 100%;
     height: 647px;
-    background: url(../img/bg-person.png) bottom center;
+    background: url(../img/main/bg-person.png) bottom center;
     background-size: 1784px;
     background-repeat: no-repeat;
     position: absolute;
@@ -111,7 +111,7 @@ body{
     color: #aa9045;
     width: 450px;
     height: 125px;
-    background: url(../img/btn.png) center center;
+    background: url(../img/main/btn.png) center center;
     background-size: contain;
     background-repeat: no-repeat;
     margin-top: 290px;
@@ -134,7 +134,7 @@ body{
     display: block;
     width: 166px;
     height: 49px;
-    background: url(../img/inst.svg);
+    background: url(../img/main/inst.svg);
     position: absolute;
     top: 754px;
     left: 50%;
@@ -191,12 +191,12 @@ body{
 
 .header-card1{
     transform: translateX(calc(-50% - 432px));
-    background: url(../img/card1.svg) center center;
+    background: url(../img/main/card1.svg) center center;
 }
 
 .header-card2{
     transform: translateX(calc(-50% + 432px));
-    background: url(../img/card2.svg) center center;
+    background: url(../img/main/card2.svg) center center;
 }
 
 .bottom{
@@ -207,7 +207,7 @@ body{
     bottom: -43px;
     left: 50%;
     transform: translateX(-50%);
-    background: url(../img/bottom.svg) center center;
+    background: url(../img/main/bottom.svg) center center;
     background-size: contain;
     background-repeat: no-repeat;
 }
@@ -280,19 +280,19 @@ body{
 }
 
 .section__what-info-block1 .section__what-info-block__best{
-    background: url(../img/what1.svg) center center;
+    background: url(../img/what/what1.svg) center center;
 }
 
 .section__what-info-block2 .section__what-info-block__best{
-    background: url(../img/what2.svg) center center;
+    background: url(../img/what/what2.svg) center center;
 }
 
 .section__what-info-block3 .section__what-info-block__best{
-    background: url(../img/what3.svg) center center;
+    background: url(../img/what/what3.svg) center center;
 }
 
 .section__what-info-block4 .section__what-info-block__best{
-    background: url(../img/what4.svg) center center;
+    background: url(../img/what/what4.svg) center center;
 }
 
 .section__what-info-block__best{
@@ -336,7 +336,7 @@ body{
     display: block;
     width: 231px;
     height: 28px;
-    background: url(../img/what-line.svg) center center;
+    background: url(../img/what/what-line.svg) center center;
     background-size: 231px;
     background-repeat: no-repeat;
     margin: 0 auto;
@@ -371,7 +371,7 @@ body{
     width: 100%;
     max-width: 1816px;
     height: 100%;
-    background: #A4C5EA url(../img/bg-people.jpg) center center;
+    background: #A4C5EA url(../img/people/bg-people.jpg) center center;
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 15px;
@@ -414,7 +414,7 @@ body{
 .section__people-form{
     display: block;
     width: 392px;
-    background: url(../img/form-bg.jpg) center center;
+    background: url(../img/people/form-bg.jpg) center center;
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 8px;
@@ -508,7 +508,7 @@ body{
     margin-bottom: 25px;
 }
 
-input{
+.section__people-form-input{
     display: block;
     width: 288px;
     height: 76px;
@@ -517,19 +517,19 @@ input{
     font-family: 'Nasalization Free';
     text-transform: uppercase;
     font-size: 14px;
-    background: url(../img/input.svg) center center;
+    background: url(../img/people/input.svg) center center;
     background-size: contain;
     background-repeat: no-repeat;
     border: 0;
     color: #4f6680;
 }
 
-input::-webkit-input-placeholder {color:#9cb1c7;}
-input::-moz-placeholder          {color:#9cb1c7;}/* Firefox 19+ */
-input:-moz-placeholder           {color:#9cb1c7;}/* Firefox 18- */
-input:-ms-input-placeholder      {color:#9cb1c7;}
+.section__people-form-input::-webkit-input-placeholder {color:#9cb1c7;}
+.section__people-form-input::-moz-placeholder          {color:#9cb1c7;}/* Firefox 19+ */
+.section__people-form-input:-moz-placeholder           {color:#9cb1c7;}/* Firefox 18- */
+.section__people-form-input:-ms-input-placeholder      {color:#9cb1c7;}
 
-input::-webkit-contacts-auto-fill-button {
+.section__people-form-input::-webkit-contacts-auto-fill-button {
     visibility: hidden;
     position: absolute;
     right: 0;
@@ -540,7 +540,7 @@ input::-webkit-contacts-auto-fill-button {
     width: 289px;
     height: 80px;
     margin: 0 auto;
-    background: url(../img/form-button.png) center center;
+    background: url(../img/people/form-button.png) center center;
     background-size: contain;
     background-repeat: no-repeat;
     color: #fff;
@@ -565,22 +565,22 @@ input::-webkit-contacts-auto-fill-button {
 }
 
 .section__people-info-card-ph1{
-    background: url(../img/card-people1.png);
+    background: url(../img/people/card-people1.png);
 }
 
 .section__people-info-card-ph2{
-    background: url(../img/card-people2.png);
+    background: url(../img/people/card-people2.png);
 }
 
 .section__people-info-card-ph3{
-    background: url(../img/card-people3.png);
+    background: url(../img/people/card-people3.png);
     background-size: 412px!important;
     width: 412px;
     bottom: -1px;
 }
 
 .section__people-info-card-ph4{
-    background: url(../img/card-people4.png);
+    background: url(../img/people/card-people4.png);
     background-size: 412px!important;
     width: 412px;
 }
@@ -611,7 +611,7 @@ input::-webkit-contacts-auto-fill-button {
     width: 100%;
     max-width: 1462px;
     height: 889px;
-    background: #f0d99b url(../img/bg-result.jpg) center center;
+    background: #f0d99b url(../img/result/bg-result.jpg) center center;
     background-repeat: no-repeat;
     background-size: 1462px;
     border-radius: 10px;
@@ -638,7 +638,7 @@ input::-webkit-contacts-auto-fill-button {
     display: block;
     width: 268px;
     height: 51px;
-    background: url(../img/result-duration.svg) center center;
+    background: url(../img/result/result-duration.svg) center center;
     background-repeat: no-repeat;
     background-size: contain;
     position: absolute;
@@ -653,7 +653,7 @@ input::-webkit-contacts-auto-fill-button {
     position: absolute;
     bottom: -1px;
     left: 0;
-    background: url(../img/result-person.png) center center;
+    background: url(../img/result/result-person.png) center center;
     background-size: 1462px;
     background-repeat: no-repeat;
     border-radius: 10px;
@@ -662,3 +662,45 @@ input::-webkit-contacts-auto-fill-button {
 
 
 /* THE END SECTION RESULT */
+
+
+/* SECTION PROGRAM */
+
+.section__program{
+    display: block;
+    width: 100%;
+    max-width: 1816px;
+    height: 1912px;
+    background: #c4b279;
+    border-radius: 15px;
+    margin: 52px auto 0 auto;
+    padding-top: 646px;
+}
+
+.section__program-description {
+    font-size: 21px;
+    line-height: 90%;
+    text-align: center;
+    letter-spacing: 0.555em;
+    text-transform: uppercase;
+    background: linear-gradient(261.91deg, rgba(255, 255, 255, 0) 25.57%, rgba(255, 255, 255, 0.25) 49.06%, rgba(255, 255, 255, 0) 77.19%), linear-gradient(0deg, #685F44, #685F44), #FFFFFF;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+.section__program-title {
+    font-size: 60px;
+    text-align: center;
+    margin-top: 12px;
+    line-height: 113.5%;
+    text-transform: uppercase;
+    background: linear-gradient(261.91deg, rgba(255, 255, 255, 0) 25.57%, rgba(255, 255, 255, 0.4) 49.06%, rgba(255, 255, 255, 0) 77.19%), linear-gradient(0deg, #201D16, #201D16), #FFFFFF;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+/* THE END SECTION PROGRAM */
