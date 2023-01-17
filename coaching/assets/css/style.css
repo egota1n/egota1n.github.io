@@ -604,6 +604,7 @@ body{
     top: 2779px;
     left: 50%;
     transform: translateX(-50%);
+    z-index: 2;
 }
 
 .section__result-content{
@@ -675,6 +676,8 @@ body{
     border-radius: 15px;
     margin: 52px auto 0 auto;
     padding-top: 646px;
+    position: relative;
+    z-index: 1;
 }
 
 .section__program-description {
@@ -713,3 +716,13 @@ body{
 }
 
 /* THE END SECTION PROGRAM */
+
+
+/* SECTION BONUS */
+
+.section__bonus{
+    display: block;
+    height: 2219px;
+}
+
+/* THE END SECTION BONUS */
