@@ -198,3 +198,44 @@ document.querySelector('.program3 .program-switch-prev').onclick = () => {
     document.querySelector('.program3').classList.remove("active");
     document.querySelector('.program2').classList.add("active");
 };
+
+
+document.querySelector('#section__question-input1').onclick = () => {
+    if (document.getElementById('section__question-input1').checked){
+		document.querySelector('.section__question-content1').classList.add("active");
+	} else{
+		document.querySelector('.section__question-content1').classList.remove("active");
+	}
+};
+
+document.querySelector('#section__question-input2').onclick = () => {
+    if (document.getElementById('section__question-input2').checked){
+		document.querySelector('.section__question-content2').classList.add("active");
+	} else{
+		document.querySelector('.section__question-content2').classList.remove("active");
+	}
+};
+
+document.querySelector('#section__question-input3').onclick = () => {
+    if (document.getElementById('section__question-input3').checked){
+		document.querySelector('.section__question-content3').classList.add("active");
+	} else{
+		document.querySelector('.section__question-content3').classList.remove("active");
+	}
+};
+
+document.querySelector('#section__question-input4').onclick = () => {
+    if (document.getElementById('section__question-input4').checked){
+		document.querySelector('.section__question-content4').classList.add("active");
+	} else{
+		document.querySelector('.section__question-content4').classList.remove("active");
+	}
+};
+
+document.querySelector('#section__question-input5').onclick = () => {
+    if (document.getElementById('section__question-input5').checked){
+		document.querySelector('.section__question-content5').classList.add("active");
+	} else{
+		document.querySelector('.section__question-content5').classList.remove("active");
+	}
+};
