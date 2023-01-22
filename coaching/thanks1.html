@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Заявка успішно відправлена</title>
+    <style>
+        @font-face {
+            font-family: 'Nasalization Free';
+            src: url('NasalizationFree.eot');
+            src: local('Nasalization Free'), local('assets/font/NasalizationFree'),
+                url('assets/font/NasalizationFree.eot?#iefix') format('embedded-opentype'),
+                url('assets/font/NasalizationFree.woff2') format('woff2'),
+                url('assets/font/NasalizationFree.woff') format('woff'),
+                url('assets/font/NasalizationFree.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        *, *::before, *::after{
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+            outline: 0;
+            visibility: visible;
+            font-weight: normal;
+        }
+
+        body{
+            font-family: 'Nasalization Free';
+            overflow-x: hidden;
+        }
+
+        .container{
+            display: block;
+            width: 1200px;
+            margin: 0 auto;
+        }
+        .title{
+            font-size: 60px;
+            line-height: 111.5%;
+            text-align: center;
+            text-transform: uppercase;
+            background: linear-gradient(260.86deg, rgba(132, 178, 216, 0) 69.39%, rgba(170, 209, 240, 0.3) 91.12%), linear-gradient(85.24deg, rgba(132, 178, 216, 0) 77.8%, rgba(170, 209, 240, 0.3) 99.83%), linear-gradient(261.91deg, rgba(255, 255, 255, 0) 25.57%, rgba(255, 255, 255, 0.4) 49.06%, rgba(255, 255, 255, 0) 77.19%), #06101B;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-fill-color: transparent;
+            max-width: 390px;
+            margin: 0 auto;
+            margin-top: 213px;
+        }
+        .description{
+            font-size: 30px;
+            line-height: 142%;
+            text-align: center;
+            background: linear-gradient(260.86deg, rgba(132, 178, 216, 0) 69.39%, rgba(170, 209, 240, 0.3) 91.12%), linear-gradient(85.24deg, rgba(132, 178, 216, 0) 77.8%, rgba(170, 209, 240, 0.3) 99.83%), linear-gradient(261.91deg, rgba(255, 255, 255, 0) 25.57%, rgba(255, 255, 255, 0.4) 49.06%, rgba(255, 255, 255, 0) 77.19%), #06101B;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-fill-color: transparent;
+            margin: 34px auto 31px auto;
+            text-align: center;
+            max-width: 390px;
+        }
+        .link{
+            display: block;
+            width: 449px;
+            height: 121px;
+            margin: 31px auto 0 auto;
+            position: relative;
+        }
+        .link-div {
+            display: block;
+            width: 100%;
+            height: 100%;
+            background: url(assets/img/btn.svg) center center;
+            background-size: contain;
+            background-repeat: no-repeat;
+            z-index: 2;
+            position: relative;
+            top: 0;
+            transition: 340ms;
+        }
+        .link::before {
+            content: '';
+            position: absolute;
+            display: block;
+            width: 450px;
+            height: 121px;
+            z-index: 1;
+            top: 4px;
+            background: url(assets/img/btn2.svg) center center;
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+        .link::after {
+            content: '';
+            display: block;
+            width: calc(100% - 7px);
+            height: 100%;
+            box-shadow: 0px 34px 90px 0px rgb(0 0 0 / 47%);
+            border-radius: 10px;
+            z-index: 1;
+            position: absolute;
+            top: 4px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .link:hover .link-div {
+            top: 4px;
+        }
+        @media (max-width: 575px) {
+            .container{
+                width: 100%;
+            }
+            .title {
+                font-size: 37px;
+                max-width: 250px;
+                margin: 0 auto;
+                margin-top: 103px;
+            }
+            .description {
+                font-size: 18px;
+                margin: 24px auto 21px auto;
+                max-width: 230px;
+            }
+            .link {
+                width: 279px;
+                height: 75px;
+            }
+            .link::before {
+                width: 100%;
+                height: 100%;
+            }
+            .link-div {
+                width: 100%;
+                height: 100%;
+            }
+            .link::after {
+                box-shadow: 0px 34px 100px 0px rgb(0 0 0 / 17%);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2 class="title">
+            Дякуємо за заявку
+        </h2>
+        <p class="description">
+            Скоро з вами зв'яжеться менеджер
+        </p>
+        <a href="index.html" class="link">
+            <div class="link-div"></div>
+        </a>
+    </div>
+</body>
+</html>

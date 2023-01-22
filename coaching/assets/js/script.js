@@ -10,9 +10,6 @@ let x9 = document.querySelector('.program-block9').classList
 let x10 = document.querySelector('.program-block10').classList
 let x11 = document.querySelector('.program-block11').classList
 let x12 = document.querySelector('.program-block12').classList
-let x13 = document.querySelector('.program-block13').classList
-let x14 = document.querySelector('.program-block14').classList
-let x15 = document.querySelector('.program-block15').classList
 
 document.getElementById('input-program1').onclick = () => {
     x1.remove("active");
@@ -107,47 +104,34 @@ document.getElementById('input-program10').onclick = () => {
 document.getElementById('input-program11').onclick = () => {
 	x11.remove("active");
     x12.remove("active");
-    x13.remove("active");
-    x14.remove("active");
-    x15.remove("active");
     x11.add("active");
 };
 
 document.getElementById('input-program12').onclick = () => {
 	x11.remove("active");
     x12.remove("active");
-    x13.remove("active");
-    x14.remove("active");
-    x15.remove("active");
     x12.add("active");
 };
 
-document.getElementById('input-program13').onclick = () => {
-	x11.remove("active");
-    x12.remove("active");
-    x13.remove("active");
-    x14.remove("active");
-    x15.remove("active");
-    x13.add("active");
-};
+setInterval(function(){
+    if (document.querySelector('.program1').classList.contains("active")){
+        document.querySelector('.program-switch-all .program-switch').classList.remove("program-switch2");
+        document.querySelector('.program-switch-all .program-switch').classList.remove("program-switch3");
+        document.querySelector('.program-switch-all .program-switch').classList.add("program-switch1");
+    }
 
-document.getElementById('input-program14').onclick = () => {
-	x11.remove("active");
-    x12.remove("active");
-    x13.remove("active");
-    x14.remove("active");
-    x15.remove("active");
-    x14.add("active");
-};
+    if (document.querySelector('.program2').classList.contains("active")){
+        document.querySelector('.program-switch-all .program-switch').classList.remove("program-switch1");
+        document.querySelector('.program-switch-all .program-switch').classList.remove("program-switch3");
+        document.querySelector('.program-switch-all .program-switch').classList.add("program-switch2");
+    }
 
-document.getElementById('input-program15').onclick = () => {
-	x11.remove("active");
-    x12.remove("active");
-    x13.remove("active");
-    x14.remove("active");
-    x15.remove("active");
-    x15.add("active");
-};
+    if (document.querySelector('.program3').classList.contains("active")){
+        document.querySelector('.program-switch-all .program-switch').classList.remove("program-switch1");
+        document.querySelector('.program-switch-all .program-switch').classList.remove("program-switch2");
+        document.querySelector('.program-switch-all .program-switch').classList.add("program-switch3");
+    }
+}, 40)
 
 
 document.querySelector('.program-block5 .content__about-block-arrow-next').onclick = () => {
@@ -174,29 +158,29 @@ document.querySelector('.program-block11 .content__about-block-arrow-prev').oncl
     document.querySelector('.program2').classList.add("active");
 };
 
-
-document.querySelector('.program1 .program-switch-next').onclick = () => {
-    document.querySelector('.program1').classList.remove("active");
-    document.querySelector('.program3').classList.remove("active");
-    document.querySelector('.program2').classList.add("active");
+document.querySelector('.program-switch-next').onclick = () => {
+    if(document.querySelector('.program1').classList.contains("active")){
+        document.querySelector('.program1').classList.remove("active");
+        document.querySelector('.program3').classList.remove("active");
+        document.querySelector('.program2').classList.add("active");
+    } else {
+        document.querySelector('.program1').classList.remove("active");
+        document.querySelector('.program2').classList.remove("active");
+        document.querySelector('.program3').classList.add("active");
+        console.log("message")
+    }
 };
 
-document.querySelector('.program2 .program-switch-prev').onclick = () => {
-    document.querySelector('.program2').classList.remove("active");
-    document.querySelector('.program3').classList.remove("active");
-    document.querySelector('.program1').classList.add("active");
-};
-
-document.querySelector('.program2 .program-switch-next').onclick = () => {
-    document.querySelector('.program1').classList.remove("active");
-    document.querySelector('.program2').classList.remove("active");
-    document.querySelector('.program3').classList.add("active");
-};
-
-document.querySelector('.program3 .program-switch-prev').onclick = () => {
-    document.querySelector('.program1').classList.remove("active");
-    document.querySelector('.program3').classList.remove("active");
-    document.querySelector('.program2').classList.add("active");
+document.querySelector('.program-switch-prev').onclick = () => {
+    if(document.querySelector('.program3').classList.contains("active")){
+        document.querySelector('.program1').classList.remove("active");
+        document.querySelector('.program3').classList.remove("active");
+        document.querySelector('.program2').classList.add("active");
+    } else {
+        document.querySelector('.program3').classList.remove("active");
+        document.querySelector('.program2').classList.remove("active");
+        document.querySelector('.program1').classList.add("active");
+    }
 };
 
 
@@ -239,3 +223,5 @@ document.querySelector('#section__question-input5').onclick = () => {
 		document.querySelector('.section__question-content5').classList.remove("active");
 	}
 };
+
+

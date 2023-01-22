@@ -5,6 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Коучинг по товарному бізнесу</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <!-- Slick Slider Styles -->
+	<link rel="stylesheet" type="text/css" href="assets/css/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="assets/css/slick-theme.css"/>
     <!-- Main styles -->
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
@@ -20,8 +25,10 @@
                 <h1 class="header-title">Коучинг по товарному бізнесу</h1>
                 <p class="header-desc_mob">Вийдіть на дохід в 40 000 грн чистими <span>з продажу всього одного товару</span> або продавайте декілька щоб заробляти більше 100 000 грн в місяць</p>
                 <div class="header-person"></div>
-                <div class="header-link__shadow"></div>
-                <a href="#" class="header-link">Записатися на тренинг</a>
+                <!-- <div class="header-link__shadow"></div> -->
+                <a href="#section__tarif" class="header-link">
+                    <div class="header-link__div"></div>
+                </a>
             </div>
             <a href="https://www.instagram.com/olegloyko/" class="header-link__inst" target="_ blank"></a>
             <p class="header-desc1">Вийдіть на дохід в 40 000 грн чистими <span>з продажу всього одного товару</span></p>
@@ -101,9 +108,21 @@
                     <div class="section__people-form">
                         <h4 class="section__people-form-title">Заповніть форму</h4>
                         <p class="section__people-form-desc">і отримайте безкоштовну консультацію</p>
+                        <form class="form" method="post" action="send.php">
+                            <input type="" name="nameform" value="Консультація" style="display: none;">
+                            <input class="section__people-form-input" type="text" name="name" placeholder="Ваше імя" autocomplete="off" required>
+                            <input class="section__people-form-input" id="section__people-form-input-phone1" type="text" name="phone" placeholder="Ваш номер телефону" autocomplete="off" required>
+                            <input class="section__people-form-input" id="section__people-form-input-telegram1" type="text" name="telegram" placeholder="Нік в телеграмі" autocomplete="off" required>
+                            <button class="section__people-form-button" type="submit">
+                                <div class="section__people-form-button-div"></div>
+                            </button>
+                            <input type="hidden" name="act" value="order">
+                        </form>
+                        <!-- 
                         <input type="text" name="name" class="section__people-form-input" placeholder="Ваше імя" autocomplete="off">
                         <input type="text" name="name" class="section__people-form-input" placeholder="Ваш номер телефону" autocomplete="off">
                         <button class="section__people-form-button">Записатися на тренинг</button>
+                         -->
                     </div>
                     <div class="section__people-info section__people-info2">
                         <div class="section__people-info-card">
@@ -161,7 +180,7 @@
                 <div class="section__result-info5">
                     <div class="section__result-info-num"></div>
                     <p class="section__result-info-txt">
-                        НОтримаєте навик продажі товару, <span>який дозволить продавати не тільки в Україні, але і в інших країнах Європи</span>
+                        Отримаєте навик продажі товару, <span>який дозволить продавати не тільки в Україні, але і в інших країнах Європи</span>
                     </p>
                 </div>
             </div>
@@ -177,20 +196,20 @@
         <div class="container">
             <p class="section__program-description">15 блоків в загальному</p>
             <h2 class="section__program-title" >Що буде на коучингу?</h2>
-            <div class="program program1 active">
-                <div class="program-switch-all">
-                    <div class="program-switch program-switch1">
-                        <div class="program-switch-prev unactive">
-                            <p class="program-switch-prev-p">Повернутися до попередніх</p>
-                            <div class="program-switch-prev-btn"></div>
-                        </div>
-                        <div class="program-switch-next">
-                            <div class="program-switch-next-btn"></div>
-                            <p class="program-switch-next-p">Переглянути інші блоки</p>
-                        </div>
+            <div class="program-switch-all">
+                <div class="program-switch program-switch1">
+                    <div class="program-switch-prev">
+                        <p class="program-switch-prev-p">Повернутися до попередніх</p>
+                        <div class="program-switch-prev-btn"></div>
                     </div>
-                    <div class="program-switch-bar"></div>
+                    <div class="program-switch-next">
+                        <div class="program-switch-next-btn"></div>
+                        <p class="program-switch-next-p">Переглянути інші блоки</p>
+                    </div>
                 </div>
+                <div class="program-switch-bar"></div>
+            </div>
+            <div class="program program1 active">
                 <div class="program-block1 program-block active">
                     <input type="checkbox" name="input-program" id="input-program1" class="section__program-input" checked >
                     <label for="input-program1" class="label-program" id="label-program1">
@@ -207,8 +226,15 @@
                                     <p class="content__about-block-num-b">Блок</p>
                                     <p class="content__about-block-num-n">01</p>
                                 </div>
-                                <div class="content__about-block-res"></div>
-                                <div class="content__about-block-bonus"></div>
+                                <div class="content__about-block-res">
+                                    <p class="content__about-block-res-title">Результат</p>
+                                    <p class="content__about-block-res-desc">Познайомишся з цією бізнес моделлю ближче на наглядному прикладі</p>
+                                </div>
+                                <div class="content__about-block-bonus">
+                                    <p class="content__about-block-bonus-desc">+ бонус спікер</p>
+                                    <p class="content__about-block-bonus-desc">10 уроків</p>
+                                    <p class="content__about-block-bonus-desc">3 домашніх завдання</p>
+                                </div>
                                 <div class="content__about-block-arrows">
                                     <label for="" class="content__about-block-arrow-prev unactive">
                                         <svg viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -282,8 +308,13 @@
                                     <p class="content__about-block-num-b">Блок</p>
                                     <p class="content__about-block-num-n">02</p>
                                 </div>
-                                <div class="content__about-block-res"></div>
-                                <div class="content__about-block-bonus"></div>
+                                <div class="content__about-block-res">
+                                    <p class="content__about-block-res-title">Результат</p>
+                                    <p class="content__about-block-res-desc">Навчишся знаходити товари з націнкою у 350 грн+, які продавати по 20-150 в день</p>
+                                </div>
+                                <div class="content__about-block-bonus content__about-block-bonus2">
+                                    <p class="content__about-block-bonus-desc">+кейс!</p>
+                                </div>
                                 <div class="content__about-block-arrows">
                                     <label for="input-program1" class="content__about-block-arrow-prev">
                                         <svg viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -363,8 +394,14 @@
                                     <p class="content__about-block-num-b">Блок</p>
                                     <p class="content__about-block-num-n">03</p>
                                 </div>
-                                <div class="content__about-block-res"></div>
-                                <div class="content__about-block-bonus"></div>
+                                <div class="content__about-block-res">
+                                    <p class="content__about-block-res-title">Результат</p>
+                                    <p class="content__about-block-res-desc">Знайдеш надійних постачальників, яким можна давати великий обсяг замовлень</p>
+                                </div>
+                                <div class="content__about-block-bonus content__about-block-bonus2">
+                                    <p class="content__about-block-bonus-desc">+бонус!<br>(ПРО + VIP)</p>
+                                    <p class="content__about-block-bonus-desc">+кейс!</p>
+                                </div>
                                 <div class="content__about-block-arrows">
                                     <label for="input-program2" class="content__about-block-arrow-prev">
                                         <svg viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -445,8 +482,13 @@
                                     <p class="content__about-block-num-b">Блок</p>
                                     <p class="content__about-block-num-n">04</p>
                                 </div>
-                                <div class="content__about-block-res"></div>
-                                <div class="content__about-block-bonus"></div>
+                                <div class="content__about-block-res">
+                                    <p class="content__about-block-res-title">Результат</p>
+                                    <p class="content__about-block-res-desc">Самостійно створиш 5 конвертуючі відео-креативи</p>
+                                </div>
+                                <div class="content__about-block-bonus">
+                                    <p class="content__about-block-bonus-desc">+кейс!</p>
+                                </div>
                                 <div class="content__about-block-arrows">
                                     <label for="input-program3" class="content__about-block-arrow-prev">
                                         <svg viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -529,8 +571,13 @@
                                     <p class="content__about-block-num-b">Блок</p>
                                     <p class="content__about-block-num-n">05</p>
                                 </div>
-                                <div class="content__about-block-res"></div>
-                                <div class="content__about-block-bonus"></div>
+                                <div class="content__about-block-res">
+                                    <p class="content__about-block-res-title">Результат</p>
+                                    <p class="content__about-block-res-desc">Створиш три інтернет магазини по готовому шаблону за 90 хвилин</p>
+                                </div>
+                                <div class="content__about-block-bonus">
+                                    <p class="content__about-block-bonus-desc">+кейс!</p>
+                                </div>
                                 <div class="content__about-block-arrows">
                                     <label for="input-program4" class="content__about-block-arrow-prev">
                                         <svg viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -597,26 +644,13 @@
                 </div>
             </div>
             <div class="program program2">
-                <div class="program-switch-all">
-                    <div class="program-switch program-switch2">
-                        <div class="program-switch-prev">
-                            <p class="program-switch-prev-p">Повернутися до попередніх</p>
-                            <div class="program-switch-prev-btn"></div>
-                        </div>
-                        <div class="program-switch-next">
-                            <div class="program-switch-next-btn"></div>
-                            <p class="program-switch-next-p">Переглянути інші блоки</p>
-                        </div>
-                    </div>
-                    <div class="program-switch-bar"></div>
-                </div>
                 <div class="program-block6 program-block active">
                     <input type="checkbox" name="input-program" id="input-program6" class="section__program-input" checked >
                     <label for="input-program6" class="label-program" id="label-program6">
                         <div class="label-program-info">
                             <p class="label-program-info-click">Дивитися</p>
                             <div class="label-program-info-img"></div>
-                            <p class="label-program-info-topic">Що таке товарка?</p>
+                            <p class="label-program-info-topic">Масштабування товару</p>
                             <p class="label-program-info-num">06</p>
                             <h4 class="label-program-info-title">блок</h4>
                         </div>
@@ -626,8 +660,13 @@
                                     <p class="content__about-block-num-b">Блок</p>
                                     <p class="content__about-block-num-n">06</p>
                                 </div>
-                                <div class="content__about-block-res"></div>
-                                <div class="content__about-block-bonus"></div>
+                                <div class="content__about-block-res">
+                                    <p class="content__about-block-res-title">Результат</p>
+                                    <p class="content__about-block-res-desc">Дізнаєшся коли і як збільшувати кількість замовлень до 30 в день</p>
+                                </div>
+                                <div class="content__about-block-bonus">
+                                    <p class="content__about-block-bonus-desc">+кейс!</p>
+                                </div>
                                 <div class="content__about-block-arrows">
                                     <label for="" class="content__about-block-arrow-prev">
                                         <svg viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -675,7 +714,7 @@
                                 <p class="content__about-block-click">Пролистуй блоки</p>
                             </div>
                             <div class="content__info-block">
-                                <h4 class="content__info-block-topic">Що таке товарка?</h4>
+                                <h4 class="content__info-block-topic">Масштабування товару</h4>
                                 <p class="content__info-block-desc">Які є способи масштабування?</p>
                                 <p class="content__info-block-desc">Чому ми масштабуємось тільки з зароблених грошей у товарці?</p>
                                 <p class="content__info-block-desc">Як масштабуватись так. щоб ціна за заявку не виростала?</p>
@@ -691,7 +730,7 @@
                         <div class="label-program-info">
                             <p class="label-program-info-click">Дивитися</p>
                             <div class="label-program-info-img"></div>
-                            <p class="label-program-info-topic">Вибір товару</p>
+                            <p class="label-program-info-topic">Що таке СРМ</p>
                             <p class="label-program-info-num">07</p>
                             <h4 class="label-program-info-title">блок</h4>
                         </div>
@@ -701,8 +740,12 @@
                                     <p class="content__about-block-num-b">Блок</p>
                                     <p class="content__about-block-num-n">07</p>
                                 </div>
-                                <div class="content__about-block-res"></div>
-                                <div class="content__about-block-bonus"></div>
+                                <div class="content__about-block-res">
+                                    <p class="content__about-block-res-title">Результат</p>
+                                    <p class="content__about-block-res-desc">Навчишся користуватись СРМ системою та підключиш її до сайту</p>
+                                </div>
+                                <div class="content__about-block-bonus">
+                                </div>
                                 <div class="content__about-block-arrows">
                                     <label for="input-program6" class="content__about-block-arrow-prev">
                                         <svg viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -750,7 +793,7 @@
                                 <p class="content__about-block-click">Пролистуй блоки</p>
                             </div>
                             <div class="content__info-block">
-                                <h4 class="content__info-block-topic">Вибір товару</h4>
+                                <h4 class="content__info-block-topic">Що таке СРМ</h4>
                                 <p class="content__info-block-desc">Що таке СРМ система і для чого вона треба?</p>
                                 <p class="content__info-block-desc">Як її налаштувати?</p>
                                 <p class="content__info-block-desc">Помилки у налаштуванні СРМ</p>
@@ -765,7 +808,7 @@
                         <div class="label-program-info">
                             <p class="label-program-info-click">Дивитися</p>
                             <div class="label-program-info-img"></div>
-                            <p class="label-program-info-topic">Вибір постачальника</p>
+                            <p class="label-program-info-topic">Колл-центр</p>
                             <p class="label-program-info-num">08</p>
                             <h4 class="label-program-info-title">блок</h4>
                         </div>
@@ -775,8 +818,13 @@
                                     <p class="content__about-block-num-b">Блок</p>
                                     <p class="content__about-block-num-n">08</p>
                                 </div>
-                                <div class="content__about-block-res"></div>
-                                <div class="content__about-block-bonus"></div>
+                                <div class="content__about-block-res">
+                                    <p class="content__about-block-res-title">Результат</p>
+                                    <p class="content__about-block-res-desc">Підключиш колл центр і збільшиш кількість допрордаж</p>
+                                </div>
+                                <div class="content__about-block-bonus">
+                                    <p class="content__about-block-bonus-desc">БОНУС!</p>
+                                </div>
                                 <div class="content__about-block-arrows">
                                     <label for="input-program7" class="content__about-block-arrow-prev">
                                         <svg viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -824,7 +872,7 @@
                                 <p class="content__about-block-click">Пролистуй блоки</p>
                             </div>
                             <div class="content__info-block">
-                                <h4 class="content__info-block-topic">Вибір постачальника</h4>
+                                <h4 class="content__info-block-topic">Колл-центр</h4>
                                 <p class="content__info-block-desc">Що таке колл-центр і які там тарифи?</p>
                                 <p class="content__info-block-desc">Як грамотно вибудувати процеси у відділі продаж</p>
                                 <p class="content__info-block-desc">Продающі скріпти - як допродавати схожі товари?</p>
@@ -841,7 +889,7 @@
                         <div class="label-program-info">
                             <p class="label-program-info-click">Дивитися</p>
                             <div class="label-program-info-img"></div>
-                            <p class="label-program-info-topic">Створення відео-креативу</p>
+                            <p class="label-program-info-topic">Відправки</p>
                             <p class="label-program-info-num">09</p>
                             <h4 class="label-program-info-title">блок</h4>
                         </div>
@@ -851,8 +899,13 @@
                                     <p class="content__about-block-num-b">Блок</p>
                                     <p class="content__about-block-num-n">09</p>
                                 </div>
-                                <div class="content__about-block-res"></div>
-                                <div class="content__about-block-bonus"></div>
+                                <div class="content__about-block-res">
+                                    <p class="content__about-block-res-title">Результат</p>
+                                    <p class="content__about-block-res-desc">Відбудуєш свою безперебійну систему відправок на зрозумілому прикладі</p>
+                                </div>
+                                <div class="content__about-block-bonus content__about-block-bonus2">
+                                    <p class="content__about-block-bonus-desc">БОНУС!</p>
+                                </div>
                                 <div class="content__about-block-arrows">
                                     <label for="input-program8" class="content__about-block-arrow-prev">
                                         <svg viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -901,7 +954,7 @@
 
                             </div>
                             <div class="content__info-block">
-                                <h4 class="content__info-block-topic">Створення відео-креативу</h4>
+                                <h4 class="content__info-block-topic">Відправки</h4>
                                 <p class="content__info-block-desc">Як і кому делегуавти відправки?</p>
                                 <p class="content__info-block-desc">Які зарплати повинні бути у курєрів?</p>
                                 <p class="content__info-block-desc">Продающі скріпти - як допродавати схожі товари?</p>
@@ -918,7 +971,7 @@
                         <div class="label-program-info">
                             <p class="label-program-info-click">Дивитися</p>
                             <div class="label-program-info-img"></div>
-                            <p class="label-program-info-topic">Створенння сайту</p>
+                            <p class="label-program-info-topic">Як я робив по 60 відправок</p>
                             <p class="label-program-info-num">10</p>
                             <h4 class="label-program-info-title">блок</h4>
                         </div>
@@ -928,8 +981,12 @@
                                     <p class="content__about-block-num-b">Блок</p>
                                     <p class="content__about-block-num-n">10</p>
                                 </div>
-                                <div class="content__about-block-res"></div>
-                                <div class="content__about-block-bonus"></div>
+                                <div class="content__about-block-res">
+                                    <p class="content__about-block-res-title">Результат</p>
+                                    <p class="content__about-block-res-desc">Відбудуєш таку систему, яка буде антихрупкою навіть під час воєнних дій</p>
+                                </div>
+                                <div class="content__about-block-bonus">
+                                </div>
                                 <div class="content__about-block-arrows">
                                     <label for="input-program9" class="content__about-block-arrow-prev">
                                         <svg viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -978,7 +1035,7 @@
 
                             </div>
                             <div class="content__info-block">
-                                <h4 class="content__info-block-topic">Створенння сайту</h4>
+                                <h4 class="content__info-block-topic">Як я робив по 60 відправок</h4>
                                 <p class="content__info-block-desc">Кейс - чому мені вдалось продавати на початку війни?</p>
                                 <p class="content__info-block-desc">Які проксі використовувати?</p>
                                 <p class="content__info-block-desc">Антидетект браузери</p>
@@ -994,26 +1051,13 @@
                 </div>
             </div>
             <div class="program program3">
-                <div class="program-switch-all">
-                    <div class="program-switch program-switch1">
-                        <div class="program-switch-prev">
-                            <p class="program-switch-prev-p">Повернутися до попередніх</p>
-                            <div class="program-switch-prev-btn"></div>
-                        </div>
-                        <div class="program-switch-next unactive">
-                            <div class="program-switch-next-btn"></div>
-                            <p class="program-switch-next-p">Переглянути інші блоки</p>
-                        </div>
-                    </div>
-                    <div class="program-switch-bar"></div>
-                </div>
                 <div class="program-block11 program-block active">
                     <input type="checkbox" name="input-program" id="input-program11" class="section__program-input" checked >
                     <label for="input-program11" class="label-program" id="label-program11">
                         <div class="label-program-info">
                             <p class="label-program-info-click">Дивитися</p>
                             <div class="label-program-info-img"></div>
-                            <p class="label-program-info-topic">Що таке товарка?</p>
+                            <p class="label-program-info-topic">Команда</p>
                             <p class="label-program-info-num">11</p>
                             <h4 class="label-program-info-title">блок</h4>
                         </div>
@@ -1023,8 +1067,13 @@
                                     <p class="content__about-block-num-b">Блок</p>
                                     <p class="content__about-block-num-n">11</p>
                                 </div>
-                                <div class="content__about-block-res"></div>
-                                <div class="content__about-block-bonus"></div>
+                                <div class="content__about-block-res">
+                                    <p class="content__about-block-res-title">Результат</p>
+                                    <p class="content__about-block-res-desc">Почнеш набирати перших з 5 ключових гравців у команду, щоб вийти з операціонки</p>
+                                </div>
+                                <div class="content__about-block-bonus content__about-block-bonus2">
+                                    <p class="content__about-block-bonus-desc">БОНУС!</p>
+                                </div>
                                 <div class="content__about-block-arrows">
                                     <label for="" class="content__about-block-arrow-prev">
                                         <svg viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1072,7 +1121,7 @@
                                 <p class="content__about-block-click">Пролистуй блоки</p>
                             </div>
                             <div class="content__info-block">
-                                <h4 class="content__info-block-topic">Що таке товарка?</h4>
+                                <h4 class="content__info-block-topic">Команда</h4>
                                 <p class="content__info-block-desc">Чому делегування - це про свободу?</p>
                                 <p class="content__info-block-desc">Які ключові гравці є для автоматизації?</p>
                                 <p class="content__info-block-desc">Де набирати першого операційного директора та бухгалтера?</p>
@@ -1090,7 +1139,7 @@
                         <div class="label-program-info">
                             <p class="label-program-info-click">Дивитися</p>
                             <div class="label-program-info-img"></div>
-                            <p class="label-program-info-topic">Вибір товару</p>
+                            <p class="label-program-info-topic">10 000$ чистими на товарці</p>
                             <p class="label-program-info-num">12</p>
                             <h4 class="label-program-info-title">блок</h4>
                         </div>
@@ -1100,8 +1149,13 @@
                                     <p class="content__about-block-num-b">Блок</p>
                                     <p class="content__about-block-num-n">12</p>
                                 </div>
-                                <div class="content__about-block-res"></div>
-                                <div class="content__about-block-bonus"></div>
+                                <div class="content__about-block-res">
+                                    <p class="content__about-block-res-title">Результат</p>
+                                    <p class="content__about-block-res-desc">Зрозумієш як і коли відкривати ФОП та які податки треба платити</p>
+                                </div>
+                                <div class="content__about-block-bonus">
+                                    <p class="content__about-block-bonus-desc">БОНУС!</p>
+                                </div>
                                 <div class="content__about-block-arrows">
                                     <label for="input-program11" class="content__about-block-arrow-prev">
                                         <svg viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1124,7 +1178,7 @@
                                         </svg>
                                         <p class="content__about-block-arrow-prev-p">Попередній блок</p>
                                     </label>
-                                    <label for="input-program13" class="content__about-block-arrow-next">
+                                    <label for="input-program13" class="content__about-block-arrow-next unactive">
                                         <svg viewBox="0 0 50 51" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M18.9995 40.425C18.9995 41.1128 19.5615 41.6719 20.2556 41.6719C20.9494 41.6719 21.5117 41.1128 21.5117 40.425C21.5117 39.7351 20.9494 39.1782 20.2556 39.1782C19.5617 39.178 18.9995 39.7351 18.9995 40.425Z" fill="white"/>
                                             <path d="M18.9995 36.6596C18.9995 37.3466 19.5615 37.9062 20.2556 37.9062C20.9494 37.9062 21.5117 37.3466 21.5117 36.6596C21.5117 35.9699 20.9494 35.4115 20.2556 35.4115C19.5617 35.4115 18.9995 35.9699 18.9995 36.6596Z" fill="white"/>
@@ -1149,7 +1203,7 @@
                                 <p class="content__about-block-click">Пролистуй блоки</p>
                             </div>
                             <div class="content__info-block">
-                                <h4 class="content__info-block-topic">Вибір товару</h4>
+                                <h4 class="content__info-block-topic">10 000$ чистими на товарці</h4>
                                 <p class="content__info-block-desc">Чим відрізнються 15 відправок від 150 в день?</p>
                                 <p class="content__info-block-desc">Як і на якому етапі відкривати ФОП?</p>
                                 <p class="content__info-block-desc">Які податки треба платити?</p>
@@ -1157,254 +1211,6 @@
                                 <p class="content__info-block-desc">Що робити, якщо кошти заморозив банк?</p>
                                 <p class="content__info-block-desc">Чому % - це топ?</p>
                                 <p class="content__info-block-desc">Збільшення ефективності команди</p>
-                            </div>
-                        </div>
-                    </label>
-                </div>
-                <div class="program-block13 program-block">
-                    <input type="checkbox" name="input-program" id="input-program13" class="section__program-input">
-                    <label for="input-program13" class="label-program" id="label-program13">
-                        <div class="label-program-info">
-                            <p class="label-program-info-click">Дивитися</p>
-                            <div class="label-program-info-img"></div>
-                            <p class="label-program-info-topic">Вибір постачальника</p>
-                            <p class="label-program-info-num">13</p>
-                            <h4 class="label-program-info-title">блок</h4>
-                        </div>
-                        <div class="label-program-content">
-                            <div class="content__about-block">
-                                <div class="content__about-block-num">
-                                    <p class="content__about-block-num-b">Блок</p>
-                                    <p class="content__about-block-num-n">13</p>
-                                </div>
-                                <div class="content__about-block-res"></div>
-                                <div class="content__about-block-bonus"></div>
-                                <div class="content__about-block-arrows">
-                                    <label for="input-program12" class="content__about-block-arrow-prev">
-                                        <svg viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M32.7114 40.4251C32.7114 41.1129 32.1495 41.6719 31.4553 41.6719C30.7615 41.6719 30.1992 41.1129 30.1992 40.4251C30.1992 39.7352 30.7615 39.1782 31.4553 39.1782C32.1493 39.178 32.7114 39.7352 32.7114 40.4251Z" fill="white"/>
-                                            <path d="M32.7114 36.6596C32.7114 37.3467 32.1495 37.9063 31.4553 37.9063C30.7615 37.9063 30.1992 37.3467 30.1992 36.6596C30.1992 35.97 30.7615 35.4116 31.4553 35.4116C32.1493 35.4116 32.7114 35.97 32.7114 36.6596Z" fill="white"/>
-                                            <path d="M28.9099 36.6596C28.9099 37.3467 28.3476 37.9063 27.6522 37.9063C26.9588 37.9063 26.3965 37.3467 26.3965 36.6596C26.3965 35.97 26.9588 35.4116 27.6522 35.4116C28.3476 35.4116 28.9099 35.97 28.9099 36.6596Z" fill="white"/>
-                                            <path d="M28.9099 32.8801C28.9099 33.5689 28.3476 34.1289 27.6522 34.1289C26.9588 34.1289 26.3965 33.5689 26.3965 32.8801C26.3965 32.1926 26.9588 31.6332 27.6522 31.6332C28.3476 31.6332 28.9099 32.1926 28.9099 32.8801Z" fill="white"/>
-                                            <path d="M25.104 32.8801C25.104 33.5689 24.5416 34.1289 23.8475 34.1289C23.1541 34.1289 22.5918 33.5689 22.5918 32.8801C22.5918 32.1926 23.1541 31.6332 23.8475 31.6332C24.5416 31.6332 25.104 32.1926 25.104 32.8801Z" fill="white"/>
-                                            <path d="M25.1059 29.1198C25.1059 29.8094 24.5436 30.3672 23.8494 30.3672C23.1561 30.3672 22.5938 29.8094 22.5938 29.1198C22.5938 28.4325 23.1561 27.8733 23.8494 27.8733C24.5436 27.8731 25.1059 28.4325 25.1059 29.1198Z" fill="white"/>
-                                            <path d="M21.3161 29.1198C21.3161 29.8094 20.7538 30.3672 20.0605 30.3672C19.3655 30.3672 18.8027 29.8094 18.8027 29.1198C18.8027 28.4325 19.3655 27.8733 20.0605 27.8733C20.7536 27.8731 21.3161 28.4325 21.3161 29.1198Z" fill="white"/>
-                                            <path d="M21.3161 25.3426C21.3161 26.0325 20.7538 26.5899 20.0605 26.5899C19.3655 26.5899 18.8027 26.0325 18.8027 25.3426C18.8027 24.6527 19.3655 24.0954 20.0605 24.0954C20.7536 24.0954 21.3161 24.6527 21.3161 25.3426Z" fill="white"/>
-                                            <path d="M17.5126 25.3426C17.5126 26.0325 16.9498 26.5899 16.2557 26.5899C15.5619 26.5899 15 26.0325 15 25.3426C15 24.6527 15.5619 24.0954 16.2557 24.0954C16.9498 24.0954 17.5126 24.6527 17.5126 25.3426Z" fill="white"/>
-                                            <path d="M25.104 21.5661C25.104 22.2533 24.5416 22.8125 23.8475 22.8125C23.1541 22.8125 22.5918 22.2533 22.5918 21.5661C22.5918 20.8764 23.1541 20.3186 23.8475 20.3186C24.5416 20.3186 25.104 20.8764 25.104 21.5661Z" fill="white"/>
-                                            <path d="M21.3161 21.5661C21.3161 22.2533 20.7538 22.8125 20.0605 22.8125C19.3655 22.8125 18.8027 22.2533 18.8027 21.5661C18.8027 20.8764 19.3655 20.3186 20.0605 20.3186C20.7536 20.3186 21.3161 20.8764 21.3161 21.5661Z" fill="white"/>
-                                            <path d="M28.9099 17.7997C28.9099 18.4871 28.3476 19.0469 27.6522 19.0469C26.9588 19.0469 26.3965 18.4871 26.3965 17.7997C26.3965 17.1108 26.9588 16.5508 27.6522 16.5508C28.3476 16.5506 28.9099 17.1108 28.9099 17.7997Z" fill="white"/>
-                                            <path d="M25.1059 17.7997C25.1059 18.4871 24.5436 19.0469 23.8494 19.0469C23.1561 19.0469 22.5937 18.4871 22.5937 17.7997C22.5937 17.1108 23.1561 16.5508 23.8494 16.5508C24.5436 16.5506 25.1059 17.1108 25.1059 17.7997Z" fill="white"/>
-                                            <path d="M32.7114 14.0215C32.7114 14.7114 32.1495 15.2696 31.4553 15.2696C30.7615 15.2696 30.1992 14.7114 30.1992 14.0215C30.1992 13.3345 30.7615 12.7749 31.4553 12.7749C32.1493 12.7749 32.7114 13.3345 32.7114 14.0215Z" fill="white"/>
-                                            <path d="M28.9099 14.0215C28.9099 14.7114 28.3476 15.2696 27.6522 15.2696C26.9588 15.2696 26.3965 14.7114 26.3965 14.0215C26.3965 13.3345 26.9588 12.7749 27.6522 12.7749C28.3476 12.7749 28.9099 13.3345 28.9099 14.0215Z" fill="white"/>
-                                            <path d="M32.7114 10.2456C32.7114 10.9353 32.1495 11.4922 31.4553 11.4922C30.7615 11.4922 30.1992 10.9351 30.1992 10.2456C30.1992 9.5555 30.7615 8.99854 31.4553 8.99854C32.1493 8.99854 32.7114 9.55571 32.7114 10.2456Z" fill="white"/>
-                                        </svg>
-                                        <p class="content__about-block-arrow-prev-p">Попередній блок</p>
-                                    </label>
-                                    <label for="input-program14" class="content__about-block-arrow-next">
-                                        <svg viewBox="0 0 50 51" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M18.9995 40.425C18.9995 41.1128 19.5615 41.6719 20.2556 41.6719C20.9494 41.6719 21.5117 41.1128 21.5117 40.425C21.5117 39.7351 20.9494 39.1782 20.2556 39.1782C19.5617 39.178 18.9995 39.7351 18.9995 40.425Z" fill="white"/>
-                                            <path d="M18.9995 36.6596C18.9995 37.3466 19.5615 37.9062 20.2556 37.9062C20.9494 37.9062 21.5117 37.3466 21.5117 36.6596C21.5117 35.9699 20.9494 35.4115 20.2556 35.4115C19.5617 35.4115 18.9995 35.9699 18.9995 36.6596Z" fill="white"/>
-                                            <path d="M22.801 36.6596C22.801 37.3466 23.3634 37.9062 24.0588 37.9062C24.7521 37.9062 25.3144 37.3466 25.3144 36.6596C25.3144 35.9699 24.7521 35.4115 24.0588 35.4115C23.3634 35.4115 22.801 35.9699 22.801 36.6596Z" fill="white"/>
-                                            <path d="M22.801 32.88C22.801 33.5689 23.3634 34.1289 24.0588 34.1289C24.7521 34.1289 25.3144 33.5689 25.3144 32.88C25.3144 32.1926 24.7521 31.6332 24.0588 31.6332C23.3634 31.6332 22.801 32.1926 22.801 32.88Z" fill="white"/>
-                                            <path d="M26.607 32.88C26.607 33.5689 27.1693 34.1289 27.8635 34.1289C28.5568 34.1289 29.1191 33.5689 29.1191 32.88C29.1191 32.1926 28.5568 31.6332 27.8635 31.6332C27.1693 31.6332 26.607 32.1926 26.607 32.88Z" fill="white"/>
-                                            <path d="M26.605 29.1197C26.605 29.8094 27.1673 30.3672 27.8615 30.3672C28.5549 30.3672 29.1172 29.8094 29.1172 29.1197C29.1172 28.4325 28.5549 27.8733 27.8615 27.8733C27.1673 27.8731 26.605 28.4325 26.605 29.1197Z" fill="white"/>
-                                            <path d="M30.3948 29.1197C30.3948 29.8094 30.9571 30.3672 31.6505 30.3672C32.3455 30.3672 32.9082 29.8094 32.9082 29.1197C32.9082 28.4325 32.3455 27.8733 31.6505 27.8733C30.9573 27.8731 30.3948 28.4325 30.3948 29.1197Z" fill="white"/>
-                                            <path d="M30.3948 25.3426C30.3948 26.0324 30.9571 26.5898 31.6505 26.5898C32.3455 26.5898 32.9082 26.0324 32.9082 25.3426C32.9082 24.6527 32.3455 24.0953 31.6505 24.0953C30.9573 24.0953 30.3948 24.6527 30.3948 25.3426Z" fill="white"/>
-                                            <path d="M34.1984 25.3426C34.1984 26.0324 34.7611 26.5898 35.4553 26.5898C36.149 26.5898 36.7109 26.0324 36.7109 25.3426C36.7109 24.6527 36.149 24.0953 35.4553 24.0953C34.7611 24.0953 34.1984 24.6527 34.1984 25.3426Z" fill="white"/>
-                                            <path d="M26.607 21.566C26.607 22.2533 27.1693 22.8125 27.8635 22.8125C28.5568 22.8125 29.1191 22.2533 29.1191 21.566C29.1191 20.8764 28.5568 20.3186 27.8635 20.3186C27.1693 20.3186 26.607 20.8764 26.607 21.566Z" fill="white"/>
-                                            <path d="M30.3948 21.566C30.3948 22.2533 30.9571 22.8125 31.6505 22.8125C32.3455 22.8125 32.9082 22.2533 32.9082 21.566C32.9082 20.8764 32.3455 20.3186 31.6505 20.3186C30.9573 20.3186 30.3948 20.8764 30.3948 21.566Z" fill="white"/>
-                                            <path d="M22.801 17.7996C22.801 18.487 23.3634 19.0469 24.0588 19.0469C24.7521 19.0469 25.3144 18.487 25.3144 17.7996C25.3144 17.1107 24.7521 16.5507 24.0588 16.5507C23.3634 16.5505 22.801 17.1107 22.801 17.7996Z" fill="white"/>
-                                            <path d="M26.605 17.7996C26.605 18.487 27.1673 19.0469 27.8615 19.0469C28.5549 19.0469 29.1172 18.487 29.1172 17.7996C29.1172 17.1107 28.5549 16.5507 27.8615 16.5507C27.1673 16.5505 26.605 17.1107 26.605 17.7996Z" fill="white"/>
-                                            <path d="M18.9995 14.0214C18.9995 14.7113 19.5615 15.2695 20.2556 15.2695C20.9494 15.2695 21.5117 14.7113 21.5117 14.0214C21.5117 13.3344 20.9494 12.7748 20.2556 12.7748C19.5617 12.7748 18.9995 13.3344 18.9995 14.0214Z" fill="white"/>
-                                            <path d="M22.801 14.0214C22.801 14.7113 23.3634 15.2695 24.0588 15.2695C24.7521 15.2695 25.3144 14.7113 25.3144 14.0214C25.3144 13.3344 24.7521 12.7748 24.0588 12.7748C23.3634 12.7748 22.801 13.3344 22.801 14.0214Z" fill="white"/>
-                                            <path d="M18.9995 10.2455C18.9995 10.9352 19.5615 11.4922 20.2556 11.4922C20.9494 11.4922 21.5117 10.935 21.5117 10.2455C21.5117 9.55544 20.9494 8.99847 20.2556 8.99847C19.5617 8.99847 18.9995 9.55565 18.9995 10.2455Z" fill="white"/>
-                                        </svg>                                        
-                                        <p class="content__about-block-arrow-next-p">Наступний блок</p>
-                                    </label>
-                                </div>
-                                <p class="content__about-block-click">Пролистуй блоки</p>
-                            </div>
-                            <div class="content__info-block">
-                                <h4 class="content__info-block-topic">Вибір постачальника</h4>
-                                <p class="content__info-block-desc">Що таке опт/що таке дроп</p>
-                                <p class="content__info-block-desc">Чому на старті тільки дроп?</p>
-                                <p class="content__info-block-desc">Де знаходяться 90% постачальників</p>
-                                <p class="content__info-block-desc">Чому зацікавити постачальника - основна задача і як це зробити</p>
-                                <p class="content__info-block-desc">Дроп - які формати роботи існують</p>
-                                <p class="content__info-block-desc">Які є ризики і як їх оминути</p>
-                                <p class="content__info-block-desc">Таблиця по відбору постачальників</p>
-                                <p class="content__info-block-desc">Розсилка по постачальникам</p>
-                                <p class="content__info-block-desc">Прозвон постачальників </p>
-                                <p class="content__info-block-desc">Завіз товару з Польщі - як і на якому етапі</p>
-                                <p class="content__info-block-desc">Кейс - як я знайшов постачальника на важкодоступний товар</p>
-                                <p class="content__info-block-desc">Спікер - наш операційний директор Вадим, який знайшов більше 100 постачальників</p>
-                            </div>
-                        </div>
-                    </label>
-                </div>
-                <div class="program-block14 program-block">
-                    <input type="checkbox" name="input-program" id="input-program14" class="section__program-input">
-                    <label for="input-program14" class="label-program" id="label-program14">
-                        <div class="label-program-info">
-                            <p class="label-program-info-click">Дивитися</p>
-                            <div class="label-program-info-img"></div>
-                            <p class="label-program-info-topic">Створення відео-креативу</p>
-                            <p class="label-program-info-num">14</p>
-                            <h4 class="label-program-info-title">блок</h4>
-                        </div>
-                        <div class="label-program-content">
-                            <div class="content__about-block">
-                                <div class="content__about-block-num">
-                                    <p class="content__about-block-num-b">Блок</p>
-                                    <p class="content__about-block-num-n">14</p>
-                                </div>
-                                <div class="content__about-block-res"></div>
-                                <div class="content__about-block-bonus"></div>
-                                <div class="content__about-block-arrows">
-                                    <label for="input-program13" class="content__about-block-arrow-prev">
-                                        <svg viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M32.7114 40.4251C32.7114 41.1129 32.1495 41.6719 31.4553 41.6719C30.7615 41.6719 30.1992 41.1129 30.1992 40.4251C30.1992 39.7352 30.7615 39.1782 31.4553 39.1782C32.1493 39.178 32.7114 39.7352 32.7114 40.4251Z" fill="white"/>
-                                            <path d="M32.7114 36.6596C32.7114 37.3467 32.1495 37.9063 31.4553 37.9063C30.7615 37.9063 30.1992 37.3467 30.1992 36.6596C30.1992 35.97 30.7615 35.4116 31.4553 35.4116C32.1493 35.4116 32.7114 35.97 32.7114 36.6596Z" fill="white"/>
-                                            <path d="M28.9099 36.6596C28.9099 37.3467 28.3476 37.9063 27.6522 37.9063C26.9588 37.9063 26.3965 37.3467 26.3965 36.6596C26.3965 35.97 26.9588 35.4116 27.6522 35.4116C28.3476 35.4116 28.9099 35.97 28.9099 36.6596Z" fill="white"/>
-                                            <path d="M28.9099 32.8801C28.9099 33.5689 28.3476 34.1289 27.6522 34.1289C26.9588 34.1289 26.3965 33.5689 26.3965 32.8801C26.3965 32.1926 26.9588 31.6332 27.6522 31.6332C28.3476 31.6332 28.9099 32.1926 28.9099 32.8801Z" fill="white"/>
-                                            <path d="M25.104 32.8801C25.104 33.5689 24.5416 34.1289 23.8475 34.1289C23.1541 34.1289 22.5918 33.5689 22.5918 32.8801C22.5918 32.1926 23.1541 31.6332 23.8475 31.6332C24.5416 31.6332 25.104 32.1926 25.104 32.8801Z" fill="white"/>
-                                            <path d="M25.1059 29.1198C25.1059 29.8094 24.5436 30.3672 23.8494 30.3672C23.1561 30.3672 22.5938 29.8094 22.5938 29.1198C22.5938 28.4325 23.1561 27.8733 23.8494 27.8733C24.5436 27.8731 25.1059 28.4325 25.1059 29.1198Z" fill="white"/>
-                                            <path d="M21.3161 29.1198C21.3161 29.8094 20.7538 30.3672 20.0605 30.3672C19.3655 30.3672 18.8027 29.8094 18.8027 29.1198C18.8027 28.4325 19.3655 27.8733 20.0605 27.8733C20.7536 27.8731 21.3161 28.4325 21.3161 29.1198Z" fill="white"/>
-                                            <path d="M21.3161 25.3426C21.3161 26.0325 20.7538 26.5899 20.0605 26.5899C19.3655 26.5899 18.8027 26.0325 18.8027 25.3426C18.8027 24.6527 19.3655 24.0954 20.0605 24.0954C20.7536 24.0954 21.3161 24.6527 21.3161 25.3426Z" fill="white"/>
-                                            <path d="M17.5126 25.3426C17.5126 26.0325 16.9498 26.5899 16.2557 26.5899C15.5619 26.5899 15 26.0325 15 25.3426C15 24.6527 15.5619 24.0954 16.2557 24.0954C16.9498 24.0954 17.5126 24.6527 17.5126 25.3426Z" fill="white"/>
-                                            <path d="M25.104 21.5661C25.104 22.2533 24.5416 22.8125 23.8475 22.8125C23.1541 22.8125 22.5918 22.2533 22.5918 21.5661C22.5918 20.8764 23.1541 20.3186 23.8475 20.3186C24.5416 20.3186 25.104 20.8764 25.104 21.5661Z" fill="white"/>
-                                            <path d="M21.3161 21.5661C21.3161 22.2533 20.7538 22.8125 20.0605 22.8125C19.3655 22.8125 18.8027 22.2533 18.8027 21.5661C18.8027 20.8764 19.3655 20.3186 20.0605 20.3186C20.7536 20.3186 21.3161 20.8764 21.3161 21.5661Z" fill="white"/>
-                                            <path d="M28.9099 17.7997C28.9099 18.4871 28.3476 19.0469 27.6522 19.0469C26.9588 19.0469 26.3965 18.4871 26.3965 17.7997C26.3965 17.1108 26.9588 16.5508 27.6522 16.5508C28.3476 16.5506 28.9099 17.1108 28.9099 17.7997Z" fill="white"/>
-                                            <path d="M25.1059 17.7997C25.1059 18.4871 24.5436 19.0469 23.8494 19.0469C23.1561 19.0469 22.5937 18.4871 22.5937 17.7997C22.5937 17.1108 23.1561 16.5508 23.8494 16.5508C24.5436 16.5506 25.1059 17.1108 25.1059 17.7997Z" fill="white"/>
-                                            <path d="M32.7114 14.0215C32.7114 14.7114 32.1495 15.2696 31.4553 15.2696C30.7615 15.2696 30.1992 14.7114 30.1992 14.0215C30.1992 13.3345 30.7615 12.7749 31.4553 12.7749C32.1493 12.7749 32.7114 13.3345 32.7114 14.0215Z" fill="white"/>
-                                            <path d="M28.9099 14.0215C28.9099 14.7114 28.3476 15.2696 27.6522 15.2696C26.9588 15.2696 26.3965 14.7114 26.3965 14.0215C26.3965 13.3345 26.9588 12.7749 27.6522 12.7749C28.3476 12.7749 28.9099 13.3345 28.9099 14.0215Z" fill="white"/>
-                                            <path d="M32.7114 10.2456C32.7114 10.9353 32.1495 11.4922 31.4553 11.4922C30.7615 11.4922 30.1992 10.9351 30.1992 10.2456C30.1992 9.5555 30.7615 8.99854 31.4553 8.99854C32.1493 8.99854 32.7114 9.55571 32.7114 10.2456Z" fill="white"/>
-                                        </svg>
-                                        <p class="content__about-block-arrow-prev-p">Попередній блок</p>
-                                    </label>
-                                    <label for="input-program15" class="content__about-block-arrow-next">
-                                        <svg viewBox="0 0 50 51" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M18.9995 40.425C18.9995 41.1128 19.5615 41.6719 20.2556 41.6719C20.9494 41.6719 21.5117 41.1128 21.5117 40.425C21.5117 39.7351 20.9494 39.1782 20.2556 39.1782C19.5617 39.178 18.9995 39.7351 18.9995 40.425Z" fill="white"/>
-                                            <path d="M18.9995 36.6596C18.9995 37.3466 19.5615 37.9062 20.2556 37.9062C20.9494 37.9062 21.5117 37.3466 21.5117 36.6596C21.5117 35.9699 20.9494 35.4115 20.2556 35.4115C19.5617 35.4115 18.9995 35.9699 18.9995 36.6596Z" fill="white"/>
-                                            <path d="M22.801 36.6596C22.801 37.3466 23.3634 37.9062 24.0588 37.9062C24.7521 37.9062 25.3144 37.3466 25.3144 36.6596C25.3144 35.9699 24.7521 35.4115 24.0588 35.4115C23.3634 35.4115 22.801 35.9699 22.801 36.6596Z" fill="white"/>
-                                            <path d="M22.801 32.88C22.801 33.5689 23.3634 34.1289 24.0588 34.1289C24.7521 34.1289 25.3144 33.5689 25.3144 32.88C25.3144 32.1926 24.7521 31.6332 24.0588 31.6332C23.3634 31.6332 22.801 32.1926 22.801 32.88Z" fill="white"/>
-                                            <path d="M26.607 32.88C26.607 33.5689 27.1693 34.1289 27.8635 34.1289C28.5568 34.1289 29.1191 33.5689 29.1191 32.88C29.1191 32.1926 28.5568 31.6332 27.8635 31.6332C27.1693 31.6332 26.607 32.1926 26.607 32.88Z" fill="white"/>
-                                            <path d="M26.605 29.1197C26.605 29.8094 27.1673 30.3672 27.8615 30.3672C28.5549 30.3672 29.1172 29.8094 29.1172 29.1197C29.1172 28.4325 28.5549 27.8733 27.8615 27.8733C27.1673 27.8731 26.605 28.4325 26.605 29.1197Z" fill="white"/>
-                                            <path d="M30.3948 29.1197C30.3948 29.8094 30.9571 30.3672 31.6505 30.3672C32.3455 30.3672 32.9082 29.8094 32.9082 29.1197C32.9082 28.4325 32.3455 27.8733 31.6505 27.8733C30.9573 27.8731 30.3948 28.4325 30.3948 29.1197Z" fill="white"/>
-                                            <path d="M30.3948 25.3426C30.3948 26.0324 30.9571 26.5898 31.6505 26.5898C32.3455 26.5898 32.9082 26.0324 32.9082 25.3426C32.9082 24.6527 32.3455 24.0953 31.6505 24.0953C30.9573 24.0953 30.3948 24.6527 30.3948 25.3426Z" fill="white"/>
-                                            <path d="M34.1984 25.3426C34.1984 26.0324 34.7611 26.5898 35.4553 26.5898C36.149 26.5898 36.7109 26.0324 36.7109 25.3426C36.7109 24.6527 36.149 24.0953 35.4553 24.0953C34.7611 24.0953 34.1984 24.6527 34.1984 25.3426Z" fill="white"/>
-                                            <path d="M26.607 21.566C26.607 22.2533 27.1693 22.8125 27.8635 22.8125C28.5568 22.8125 29.1191 22.2533 29.1191 21.566C29.1191 20.8764 28.5568 20.3186 27.8635 20.3186C27.1693 20.3186 26.607 20.8764 26.607 21.566Z" fill="white"/>
-                                            <path d="M30.3948 21.566C30.3948 22.2533 30.9571 22.8125 31.6505 22.8125C32.3455 22.8125 32.9082 22.2533 32.9082 21.566C32.9082 20.8764 32.3455 20.3186 31.6505 20.3186C30.9573 20.3186 30.3948 20.8764 30.3948 21.566Z" fill="white"/>
-                                            <path d="M22.801 17.7996C22.801 18.487 23.3634 19.0469 24.0588 19.0469C24.7521 19.0469 25.3144 18.487 25.3144 17.7996C25.3144 17.1107 24.7521 16.5507 24.0588 16.5507C23.3634 16.5505 22.801 17.1107 22.801 17.7996Z" fill="white"/>
-                                            <path d="M26.605 17.7996C26.605 18.487 27.1673 19.0469 27.8615 19.0469C28.5549 19.0469 29.1172 18.487 29.1172 17.7996C29.1172 17.1107 28.5549 16.5507 27.8615 16.5507C27.1673 16.5505 26.605 17.1107 26.605 17.7996Z" fill="white"/>
-                                            <path d="M18.9995 14.0214C18.9995 14.7113 19.5615 15.2695 20.2556 15.2695C20.9494 15.2695 21.5117 14.7113 21.5117 14.0214C21.5117 13.3344 20.9494 12.7748 20.2556 12.7748C19.5617 12.7748 18.9995 13.3344 18.9995 14.0214Z" fill="white"/>
-                                            <path d="M22.801 14.0214C22.801 14.7113 23.3634 15.2695 24.0588 15.2695C24.7521 15.2695 25.3144 14.7113 25.3144 14.0214C25.3144 13.3344 24.7521 12.7748 24.0588 12.7748C23.3634 12.7748 22.801 13.3344 22.801 14.0214Z" fill="white"/>
-                                            <path d="M18.9995 10.2455C18.9995 10.9352 19.5615 11.4922 20.2556 11.4922C20.9494 11.4922 21.5117 10.935 21.5117 10.2455C21.5117 9.55544 20.9494 8.99847 20.2556 8.99847C19.5617 8.99847 18.9995 9.55565 18.9995 10.2455Z" fill="white"/>
-                                        </svg>                                        
-                                        <p class="content__about-block-arrow-next-p">Наступний блок</p>
-                                    </label>
-                                </div>
-                                <p class="content__about-block-click">Пролистуй блоки</p>
-
-                            </div>
-                            <div class="content__info-block">
-                                <h4 class="content__info-block-topic">Створення відео-креативу</h4>
-                                <p class="content__info-block-desc">Чому креатив - найважливіший етап після вибору товару?</p>
-                                <p class="content__info-block-desc">Креативи поділяються на три типи та як їх відрізнити</p>
-                                <p class="content__info-block-desc">Чому відео працюють найкраще</p>
-                                <p class="content__info-block-desc">Чому монтаж - це не так важливо, як смисли, які є у крео</p>
-                                <p class="content__info-block-desc">Де знаходити смисли для креативів</p>
-                                <p class="content__info-block-desc">Де брати смисли для креативів</p>
-                                <p class="content__info-block-desc">Як створювати сюжет креативу і на чому він базується</p>
-                                <p class="content__info-block-desc">Де брати відео-контент і чому на старті не треба замовляти товар</p>
-                                <p class="content__info-block-desc">Монтаж крео - які програми</p>
-                                <p class="content__info-block-desc">Монтаж крео - які звукові дорожки</p>
-                                <p class="content__info-block-desc">Як монтувати відео і чому це дуже легко</p>
-                                <p class="content__info-block-desc">Озвучка - чи треба озвучувати крео?</p>
-                                <p class="content__info-block-desc">Де замовляти крео, якщо вам важко дається цей етап</p>
-                            </div>
-                        </div>
-                    </label>
-                </div>
-                <div class="program-block15 program-block">
-                    <input type="checkbox" name="input-program" id="input-program15" class="section__program-input">
-                    <label for="input-program15" class="label-program" id="label-program15">
-                        <div class="label-program-info">
-                            <p class="label-program-info-click">Дивитися</p>
-                            <div class="label-program-info-img"></div>
-                            <p class="label-program-info-topic">Створенння сайту</p>
-                            <p class="label-program-info-num">15</p>
-                            <h4 class="label-program-info-title">блок</h4>
-                        </div>
-                        <div class="label-program-content">
-                            <div class="content__about-block">
-                                <div class="content__about-block-num">
-                                    <p class="content__about-block-num-b">Блок</p>
-                                    <p class="content__about-block-num-n">15</p>
-                                </div>
-                                <div class="content__about-block-res"></div>
-                                <div class="content__about-block-bonus"></div>
-                                <div class="content__about-block-arrows">
-                                    <label for="input-program14" class="content__about-block-arrow-prev">
-                                        <svg viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M32.7114 40.4251C32.7114 41.1129 32.1495 41.6719 31.4553 41.6719C30.7615 41.6719 30.1992 41.1129 30.1992 40.4251C30.1992 39.7352 30.7615 39.1782 31.4553 39.1782C32.1493 39.178 32.7114 39.7352 32.7114 40.4251Z" fill="white"/>
-                                            <path d="M32.7114 36.6596C32.7114 37.3467 32.1495 37.9063 31.4553 37.9063C30.7615 37.9063 30.1992 37.3467 30.1992 36.6596C30.1992 35.97 30.7615 35.4116 31.4553 35.4116C32.1493 35.4116 32.7114 35.97 32.7114 36.6596Z" fill="white"/>
-                                            <path d="M28.9099 36.6596C28.9099 37.3467 28.3476 37.9063 27.6522 37.9063C26.9588 37.9063 26.3965 37.3467 26.3965 36.6596C26.3965 35.97 26.9588 35.4116 27.6522 35.4116C28.3476 35.4116 28.9099 35.97 28.9099 36.6596Z" fill="white"/>
-                                            <path d="M28.9099 32.8801C28.9099 33.5689 28.3476 34.1289 27.6522 34.1289C26.9588 34.1289 26.3965 33.5689 26.3965 32.8801C26.3965 32.1926 26.9588 31.6332 27.6522 31.6332C28.3476 31.6332 28.9099 32.1926 28.9099 32.8801Z" fill="white"/>
-                                            <path d="M25.104 32.8801C25.104 33.5689 24.5416 34.1289 23.8475 34.1289C23.1541 34.1289 22.5918 33.5689 22.5918 32.8801C22.5918 32.1926 23.1541 31.6332 23.8475 31.6332C24.5416 31.6332 25.104 32.1926 25.104 32.8801Z" fill="white"/>
-                                            <path d="M25.1059 29.1198C25.1059 29.8094 24.5436 30.3672 23.8494 30.3672C23.1561 30.3672 22.5938 29.8094 22.5938 29.1198C22.5938 28.4325 23.1561 27.8733 23.8494 27.8733C24.5436 27.8731 25.1059 28.4325 25.1059 29.1198Z" fill="white"/>
-                                            <path d="M21.3161 29.1198C21.3161 29.8094 20.7538 30.3672 20.0605 30.3672C19.3655 30.3672 18.8027 29.8094 18.8027 29.1198C18.8027 28.4325 19.3655 27.8733 20.0605 27.8733C20.7536 27.8731 21.3161 28.4325 21.3161 29.1198Z" fill="white"/>
-                                            <path d="M21.3161 25.3426C21.3161 26.0325 20.7538 26.5899 20.0605 26.5899C19.3655 26.5899 18.8027 26.0325 18.8027 25.3426C18.8027 24.6527 19.3655 24.0954 20.0605 24.0954C20.7536 24.0954 21.3161 24.6527 21.3161 25.3426Z" fill="white"/>
-                                            <path d="M17.5126 25.3426C17.5126 26.0325 16.9498 26.5899 16.2557 26.5899C15.5619 26.5899 15 26.0325 15 25.3426C15 24.6527 15.5619 24.0954 16.2557 24.0954C16.9498 24.0954 17.5126 24.6527 17.5126 25.3426Z" fill="white"/>
-                                            <path d="M25.104 21.5661C25.104 22.2533 24.5416 22.8125 23.8475 22.8125C23.1541 22.8125 22.5918 22.2533 22.5918 21.5661C22.5918 20.8764 23.1541 20.3186 23.8475 20.3186C24.5416 20.3186 25.104 20.8764 25.104 21.5661Z" fill="white"/>
-                                            <path d="M21.3161 21.5661C21.3161 22.2533 20.7538 22.8125 20.0605 22.8125C19.3655 22.8125 18.8027 22.2533 18.8027 21.5661C18.8027 20.8764 19.3655 20.3186 20.0605 20.3186C20.7536 20.3186 21.3161 20.8764 21.3161 21.5661Z" fill="white"/>
-                                            <path d="M28.9099 17.7997C28.9099 18.4871 28.3476 19.0469 27.6522 19.0469C26.9588 19.0469 26.3965 18.4871 26.3965 17.7997C26.3965 17.1108 26.9588 16.5508 27.6522 16.5508C28.3476 16.5506 28.9099 17.1108 28.9099 17.7997Z" fill="white"/>
-                                            <path d="M25.1059 17.7997C25.1059 18.4871 24.5436 19.0469 23.8494 19.0469C23.1561 19.0469 22.5937 18.4871 22.5937 17.7997C22.5937 17.1108 23.1561 16.5508 23.8494 16.5508C24.5436 16.5506 25.1059 17.1108 25.1059 17.7997Z" fill="white"/>
-                                            <path d="M32.7114 14.0215C32.7114 14.7114 32.1495 15.2696 31.4553 15.2696C30.7615 15.2696 30.1992 14.7114 30.1992 14.0215C30.1992 13.3345 30.7615 12.7749 31.4553 12.7749C32.1493 12.7749 32.7114 13.3345 32.7114 14.0215Z" fill="white"/>
-                                            <path d="M28.9099 14.0215C28.9099 14.7114 28.3476 15.2696 27.6522 15.2696C26.9588 15.2696 26.3965 14.7114 26.3965 14.0215C26.3965 13.3345 26.9588 12.7749 27.6522 12.7749C28.3476 12.7749 28.9099 13.3345 28.9099 14.0215Z" fill="white"/>
-                                            <path d="M32.7114 10.2456C32.7114 10.9353 32.1495 11.4922 31.4553 11.4922C30.7615 11.4922 30.1992 10.9351 30.1992 10.2456C30.1992 9.5555 30.7615 8.99854 31.4553 8.99854C32.1493 8.99854 32.7114 9.55571 32.7114 10.2456Z" fill="white"/>
-                                        </svg>
-                                        <p class="content__about-block-arrow-prev-p">Попередній блок</p>
-                                    </label>
-                                    <label for="" class="content__about-block-arrow-next unactive">
-                                        <svg viewBox="0 0 50 51" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M18.9995 40.425C18.9995 41.1128 19.5615 41.6719 20.2556 41.6719C20.9494 41.6719 21.5117 41.1128 21.5117 40.425C21.5117 39.7351 20.9494 39.1782 20.2556 39.1782C19.5617 39.178 18.9995 39.7351 18.9995 40.425Z" fill="white"/>
-                                            <path d="M18.9995 36.6596C18.9995 37.3466 19.5615 37.9062 20.2556 37.9062C20.9494 37.9062 21.5117 37.3466 21.5117 36.6596C21.5117 35.9699 20.9494 35.4115 20.2556 35.4115C19.5617 35.4115 18.9995 35.9699 18.9995 36.6596Z" fill="white"/>
-                                            <path d="M22.801 36.6596C22.801 37.3466 23.3634 37.9062 24.0588 37.9062C24.7521 37.9062 25.3144 37.3466 25.3144 36.6596C25.3144 35.9699 24.7521 35.4115 24.0588 35.4115C23.3634 35.4115 22.801 35.9699 22.801 36.6596Z" fill="white"/>
-                                            <path d="M22.801 32.88C22.801 33.5689 23.3634 34.1289 24.0588 34.1289C24.7521 34.1289 25.3144 33.5689 25.3144 32.88C25.3144 32.1926 24.7521 31.6332 24.0588 31.6332C23.3634 31.6332 22.801 32.1926 22.801 32.88Z" fill="white"/>
-                                            <path d="M26.607 32.88C26.607 33.5689 27.1693 34.1289 27.8635 34.1289C28.5568 34.1289 29.1191 33.5689 29.1191 32.88C29.1191 32.1926 28.5568 31.6332 27.8635 31.6332C27.1693 31.6332 26.607 32.1926 26.607 32.88Z" fill="white"/>
-                                            <path d="M26.605 29.1197C26.605 29.8094 27.1673 30.3672 27.8615 30.3672C28.5549 30.3672 29.1172 29.8094 29.1172 29.1197C29.1172 28.4325 28.5549 27.8733 27.8615 27.8733C27.1673 27.8731 26.605 28.4325 26.605 29.1197Z" fill="white"/>
-                                            <path d="M30.3948 29.1197C30.3948 29.8094 30.9571 30.3672 31.6505 30.3672C32.3455 30.3672 32.9082 29.8094 32.9082 29.1197C32.9082 28.4325 32.3455 27.8733 31.6505 27.8733C30.9573 27.8731 30.3948 28.4325 30.3948 29.1197Z" fill="white"/>
-                                            <path d="M30.3948 25.3426C30.3948 26.0324 30.9571 26.5898 31.6505 26.5898C32.3455 26.5898 32.9082 26.0324 32.9082 25.3426C32.9082 24.6527 32.3455 24.0953 31.6505 24.0953C30.9573 24.0953 30.3948 24.6527 30.3948 25.3426Z" fill="white"/>
-                                            <path d="M34.1984 25.3426C34.1984 26.0324 34.7611 26.5898 35.4553 26.5898C36.149 26.5898 36.7109 26.0324 36.7109 25.3426C36.7109 24.6527 36.149 24.0953 35.4553 24.0953C34.7611 24.0953 34.1984 24.6527 34.1984 25.3426Z" fill="white"/>
-                                            <path d="M26.607 21.566C26.607 22.2533 27.1693 22.8125 27.8635 22.8125C28.5568 22.8125 29.1191 22.2533 29.1191 21.566C29.1191 20.8764 28.5568 20.3186 27.8635 20.3186C27.1693 20.3186 26.607 20.8764 26.607 21.566Z" fill="white"/>
-                                            <path d="M30.3948 21.566C30.3948 22.2533 30.9571 22.8125 31.6505 22.8125C32.3455 22.8125 32.9082 22.2533 32.9082 21.566C32.9082 20.8764 32.3455 20.3186 31.6505 20.3186C30.9573 20.3186 30.3948 20.8764 30.3948 21.566Z" fill="white"/>
-                                            <path d="M22.801 17.7996C22.801 18.487 23.3634 19.0469 24.0588 19.0469C24.7521 19.0469 25.3144 18.487 25.3144 17.7996C25.3144 17.1107 24.7521 16.5507 24.0588 16.5507C23.3634 16.5505 22.801 17.1107 22.801 17.7996Z" fill="white"/>
-                                            <path d="M26.605 17.7996C26.605 18.487 27.1673 19.0469 27.8615 19.0469C28.5549 19.0469 29.1172 18.487 29.1172 17.7996C29.1172 17.1107 28.5549 16.5507 27.8615 16.5507C27.1673 16.5505 26.605 17.1107 26.605 17.7996Z" fill="white"/>
-                                            <path d="M18.9995 14.0214C18.9995 14.7113 19.5615 15.2695 20.2556 15.2695C20.9494 15.2695 21.5117 14.7113 21.5117 14.0214C21.5117 13.3344 20.9494 12.7748 20.2556 12.7748C19.5617 12.7748 18.9995 13.3344 18.9995 14.0214Z" fill="white"/>
-                                            <path d="M22.801 14.0214C22.801 14.7113 23.3634 15.2695 24.0588 15.2695C24.7521 15.2695 25.3144 14.7113 25.3144 14.0214C25.3144 13.3344 24.7521 12.7748 24.0588 12.7748C23.3634 12.7748 22.801 13.3344 22.801 14.0214Z" fill="white"/>
-                                            <path d="M18.9995 10.2455C18.9995 10.9352 19.5615 11.4922 20.2556 11.4922C20.9494 11.4922 21.5117 10.935 21.5117 10.2455C21.5117 9.55544 20.9494 8.99847 20.2556 8.99847C19.5617 8.99847 18.9995 9.55565 18.9995 10.2455Z" fill="white"/>
-                                        </svg>                                        
-                                        <p class="content__about-block-arrow-next-p">Наступний блок</p>
-                                    </label>
-                                </div>
-                                <p class="content__about-block-click">Пролистуй блоки</p>
-
-                            </div>
-                            <div class="content__info-block">
-                                <h4 class="content__info-block-topic">Створенння сайту</h4>
-                                <p class="content__info-block-desc">Чому односторінковий сайт - найкращий спосіб прийому трафіку для товарки?</p>
-                                <p class="content__info-block-desc">Яка повинна бути структура сайту?</p>
-                                <p class="content__info-block-desc">Що ми беремо від конкурентів?</p>
-                                <p class="content__info-block-desc">Як купувати хостинг та домен?</p>
-                                <p class="content__info-block-desc">Чому відео-огляд на сайті це важливо?</p>
-                                <p class="content__info-block-desc">Контакти програміста</p>
-                                <p class="content__info-block-desc">Що треба покращити у сайті конкурента?</p>
-                                <p class="content__info-block-desc">Звідки треба брати текст для сайту, щоб закрити болі клієнта?</p>
-                                <p class="content__info-block-desc">Чому сайт це просто і він не має займати багато часу?</p>
-                                <p class="content__info-block-desc">Контакти дизайнера для фото-контенту</p>
-                                <p class="content__info-block-desc">Яке технічне завдання давати програмісту та дизайнеру та чому це важливо.</p>
                             </div>
                         </div>
                     </label>
@@ -1484,7 +1290,7 @@
                 <div class="section__speakers-content-speaker section__speakers-content-speaker2">
                     <p class="section__speakers-content-speaker-num">02</p>
                     <p class="section__speakers-content-speaker-inf"></p>
-                    <p class="section__speakers-content-speaker-inf_txt">Ти дізнаєшся чим відрізняється наш ринок і ринок США і чому тут легше</p>
+                    <p class="section__speakers-content-speaker-inf_txt">Ти навчишся знаходити людей у команду та давати взаємогидні умови</p>
                     <div class="section__speakers-content-speaker-img"></div>
                     <p class="section__speakers-content-speaker-name1">Прошніков</p>
                     <p class="section__speakers-content-speaker-name2">Данил</p>
@@ -1493,19 +1299,19 @@
                 <div class="section__speakers-content-speaker section__speakers-content-speaker3">
                     <p class="section__speakers-content-speaker-num">03</p>
                     <p class="section__speakers-content-speaker-inf"></p>
-                    <p class="section__speakers-content-speaker-inf_txt">Ти дізнаєшся чим відрізняється наш ринок і ринок США і чому тут легше</p>
+                    <p class="section__speakers-content-speaker-inf_txt">Ты узнаешь как искать поставщиков даже на самые труднодоступные товары и как заказывать товары из Польши</p>
                     <div class="section__speakers-content-speaker-img"></div>
-                    <p class="section__speakers-content-speaker-name1">Фамілія</p>
+                    <p class="section__speakers-content-speaker-name1">Станкевич</p>
                     <p class="section__speakers-content-speaker-name2">Вадим</p>
                     <p class="section__speakers-content-speaker-desc section__speakers-content-speaker-desc2">Наш директор, знайшов нам більше 150 надійних постачальників</p>
                 </div>
                 <div class="section__speakers-content-speaker section__speakers-content-speaker4">
                     <p class="section__speakers-content-speaker-num">04</p>
                     <p class="section__speakers-content-speaker-inf"></p>
-                    <p class="section__speakers-content-speaker-inf_txt">Ти дізнаєшся чим відрізняється наш ринок і ринок США і чому тут легше</p>
+                    <p class="section__speakers-content-speaker-inf_txt">Розповість тобі як масштабувати рекламні кампанії</p>
                     <div class="section__speakers-content-speaker-img"></div>
-                    <p class="section__speakers-content-speaker-name1">Пріскока</p>
-                    <p class="section__speakers-content-speaker-name2">Второе</p>
+                    <p class="section__speakers-content-speaker-name1">Миронюк</p>
+                    <p class="section__speakers-content-speaker-name2">Данил</p>
                     <p class="section__speakers-content-speaker-desc">Експерт у побудові команди</p>
                 </div>
             </div>
@@ -1513,28 +1319,19 @@
                 <div class="section__speakers-content-speaker section__speakers-content-speaker5">
                     <p class="section__speakers-content-speaker-num">05</p>
                     <p class="section__speakers-content-speaker-inf"></p>
-                    <p class="section__speakers-content-speaker-inf_txt">Ти дізнаєшся чим відрізняється наш ринок і ринок США і чому тут легше</p>
+                    <p class="section__speakers-content-speaker-inf_txt">Побудова висококонверсійних сайтів</p>
                     <div class="section__speakers-content-speaker-img"></div>
-                    <p class="section__speakers-content-speaker-name1">Пріскока</p>
-                    <p class="section__speakers-content-speaker-name2">Второе</p>
+                    <p class="section__speakers-content-speaker-name1">Тепленко</p>
+                    <p class="section__speakers-content-speaker-name2">Оксана</p>
                     <p class="section__speakers-content-speaker-desc section__speakers-content-speaker-desc2">Дізнаєшся чим відрізняється наш ринок і ринок США і чому тут дійсно легко</p>
                 </div>
                 <div class="section__speakers-content-speaker section__speakers-content-speaker6">
                     <p class="section__speakers-content-speaker-num">06</p>
                     <p class="section__speakers-content-speaker-inf"></p>
-                    <p class="section__speakers-content-speaker-inf_txt">Ти дізнаєшся чим відрізняється наш ринок і ринок США і чому тут легше</p>
+                    <p class="section__speakers-content-speaker-inf_txt">Дасть тобі таблички для прорахунку бухгалтерії на старті</p>
                     <div class="section__speakers-content-speaker-img"></div>
-                    <p class="section__speakers-content-speaker-name1">Пріскока</p>
-                    <p class="section__speakers-content-speaker-name2">Второе</p>
-                    <p class="section__speakers-content-speaker-desc section__speakers-content-speaker-desc2">Дізнаєшся чим відрізняється наш ринок і ринок США і чому тут дійсно легко</p>
-                </div>
-                <div class="section__speakers-content-speaker section__speakers-content-speaker7">
-                    <p class="section__speakers-content-speaker-num">07</p>
-                    <p class="section__speakers-content-speaker-inf"></p>
-                    <p class="section__speakers-content-speaker-inf_txt">Ти дізнаєшся чим відрізняється наш ринок і ринок США і чому тут легше</p>
-                    <div class="section__speakers-content-speaker-img"></div>
-                    <p class="section__speakers-content-speaker-name1">Пріскока</p>
-                    <p class="section__speakers-content-speaker-name2">Второе</p>
+                    <p class="section__speakers-content-speaker-name1">Бухгалтер</p>
+                    <p class="section__speakers-content-speaker-name2">Анастасія</p>
                     <p class="section__speakers-content-speaker-desc section__speakers-content-speaker-desc2">Дізнаєшся чим відрізняється наш ринок і ринок США і чому тут дійсно легко</p>
                 </div>
             </div>
@@ -1545,7 +1342,7 @@
 
     <!-- SECTION TARIF -->
 
-    <section class="section__tarif">
+    <section class="section__tarif" id="section__tarif">
         <div class="container">
             <h2 class="section__tarif-title">Тарифи</h2>
             <div class="section__tarif-content">
@@ -1567,10 +1364,23 @@
                     <p class="section__tarif-content-block_point section__tarif-content-block_point14 unactive">Сесія питання/відповідь<br>з коучом</p>
                     <p class="section__tarif-content-block_point section__tarif-content-block_point15 unactive">Групові звінки з Олегом</p>
                     <p class="section__tarif-content-block_point section__tarif-content-block_point16 unactive">Чат з Олегом</p>
+                    <div class="section__tarif-content-block_price">
+                        <p class="section__tarif-content-block_point-d">390$</p>
+                        <p class="section__tarif-content-block_point-g">15600 ГРН</p>
+                    </div>
+                    <a href="" class="section__tarif-content-block_btn1" data-bs-toggle="modal" data-bs-target="#Modal1">
+                        <div class="section__tarif-content-block_btn1-div"></div>
+                    </a>
+                    <a href="" class="section__tarif-content-block_btn2" data-bs-toggle="modal" data-bs-target="#Modal4">
+                        <div class="section__tarif-content-block_btn2-div"></div>
+                    </a>
+                    <a href="" class="section__tarif-content-block_btn3" data-bs-toggle="modal" data-bs-target="#Modal11">
+                        <div class="section__tarif-content-block_btn3-div"></div>
+                    </a>
                 </div>
                 <div class="section__tarif-content-block section__tarif-content-block2">
                     <h4 class="section__tarif-content-block_title">Просунутий</h4>
-                    <p class="section__tarif-content-block_point section__tarif-content-block_point1 unactive">Підтримка коуча</p>
+                    <p class="section__tarif-content-block_point section__tarif-content-block_point1">Підтримка коуча</p>
                     <p class="section__tarif-content-block_point section__tarif-content-block_point2">Вибір товару</p>
                     <p class="section__tarif-content-block_point section__tarif-content-block_point3">Вибір постачальника</p>
                     <p class="section__tarif-content-block_point section__tarif-content-block_point4">Створення креативів</p>
@@ -1586,6 +1396,19 @@
                     <p class="section__tarif-content-block_point section__tarif-content-block_point14">Сесія питання/відповідь<br>з коучом</p>
                     <p class="section__tarif-content-block_point section__tarif-content-block_point15 unactive">Групові звінки з Олегом</p>
                     <p class="section__tarif-content-block_point section__tarif-content-block_point16 unactive">Чат з Олегом</p>
+                    <div class="section__tarif-content-block_price">
+                        <p class="section__tarif-content-block_point-d">450$</p>
+                        <p class="section__tarif-content-block_point-g">18000 ГРН</p>
+                    </div>
+                    <a href="" class="section__tarif-content-block_btn1" data-bs-toggle="modal" data-bs-target="#Modal2">
+                        <div class="section__tarif-content-block_btn1-div"></div>
+                    </a>
+                    <a href="" class="section__tarif-content-block_btn2" data-bs-toggle="modal" data-bs-target="#Modal5">
+                        <div class="section__tarif-content-block_btn2-div"></div>
+                    </a>
+                    <a href="" class="section__tarif-content-block_btn3" data-bs-toggle="modal" data-bs-target="#Modal22">
+                        <div class="section__tarif-content-block_btn3-div"></div>
+                    </a>
                 </div>
                 <div class="section__tarif-content-block section__tarif-content-block3">
                     <h4 class="section__tarif-content-block_title">Експерт</h4>
@@ -1605,6 +1428,19 @@
                     <p class="section__tarif-content-block_point section__tarif-content-block_point14">Сесія питання/відповідь<br>з коучом</p>
                     <p class="section__tarif-content-block_point section__tarif-content-block_point15">Групові звінки з Олегом</p>
                     <p class="section__tarif-content-block_point section__tarif-content-block_point16">Чат з Олегом</p>
+                    <div class="section__tarif-content-block_price">
+                        <p class="section__tarif-content-block_point-d">690$</p>
+                        <p class="section__tarif-content-block_point-g">27600 ГРН</p>
+                    </div>
+                    <a href="" class="section__tarif-content-block_btn1" data-bs-toggle="modal" data-bs-target="#Modal3">
+                        <div class="section__tarif-content-block_btn1-div"></div>
+                    </a>
+                    <a href="" class="section__tarif-content-block_btn2" data-bs-toggle="modal" data-bs-target="#Modal6">
+                        <div class="section__tarif-content-block_btn2-div"></div>
+                    </a>
+                    <a href="" class="section__tarif-content-block_btn3" data-bs-toggle="modal" data-bs-target="#Modal33">
+                        <div class="section__tarif-content-block_btn3-div"></div>
+                    </a>
                 </div>
             </div>
         </div>
@@ -1616,8 +1452,276 @@
     <!-- SECTION INTERVIEW -->
 
     <section class="section__interview">
-        <h2 class="section__interview-title">Інтерв'ю з випускниками</h2>
-        <div class="section__interview-content"></div>
+        <div class="container">
+            <h2 class="section__interview-title">Інтерв'ю з випускниками</h2>
+            <div class="section__interview-content">
+                <div class="section__interview-content-block section__interview-content-block1">
+                    <div class="section__interview-content-block_before">
+                        <h4 class="section__interview-content-block-t">Точка а</h4>
+                        <div class="section__interview-content-block-d">Заробляє до 900$ у роботі на клієнтів, як таргетолог, постійно відчуває вигорання та те, що він у фрілансі</div>
+                        <div class="section__interview-content-block-m section__interview-content-block_before-m">900$/міс</div>
+                    </div>
+                    <div class="section__interview-content-block_between">
+                        <div class="section__interview-content-block_between-air"></div>
+                        <div class="section__interview-content-block_between-person">
+                        </div>
+                        <div class="section__interview-content-block_between-person-n">Толя</div>
+                    </div>
+                    <div class="section__interview-content-block_after">
+                        <h4 class="section__interview-content-block-t">Точка Б</h4>
+                        <div class="section__interview-content-block-d">Заробляє 5000$ у товарному бізнесі, ні перед ким не відчитується,<br>є розуміння як вийти<br>на 10 000$</div>
+                        <div class="section__interview-content-block-m section__interview-content-block_after-m">5000$/міс</div>
+                    </div>
+                </div>
+                <div class="section__interview-content-block section__interview-content-block2">
+                    <div class="section__interview-content-block_before">
+                        <h4 class="section__interview-content-block-t">Точка а</h4>
+                        <div class="section__interview-content-block-d">Молода мама, яка має інстаграм магазин, виділяє більше 9 годин на роботу з ним, дохід до 1000$</div>
+                        <div class="section__interview-content-block-m section__interview-content-block_before-m">1000$/міс</div>
+                    </div>
+                    <div class="section__interview-content-block_between">
+                        <div class="section__interview-content-block_between-air"></div>
+                        <div class="section__interview-content-block_between-person">
+                            <a href="https://youtu.be/r3qN9X541cE" target="_blank" class="section__interview-content-block_between-play">Подивитися Інтерв'ю<br>з випускником</a>
+                        </div>
+                        <div class="section__interview-content-block_between-person-n">Юля</div>
+                    </div>
+                    <div class="section__interview-content-block_after">
+                        <h4 class="section__interview-content-block-t">Точка Б</h4>
+                        <div class="section__interview-content-block-d">Вийшла на дохід у 100$ в день, приділяє роботі менше 2-3 годин, автоматизувала бізнес і має більше часу</div>
+                        <div class="section__interview-content-block-m section__interview-content-block_after-m">100$/день</div>
+                    </div>
+                </div>
+                <div class="section__interview-content-block section__interview-content-block3">
+                    <div class="section__interview-content-block_before">
+                        <h4 class="section__interview-content-block-t">Точка а</h4>
+                        <div class="section__interview-content-block-d">Тільки повернувся зі ЗСУ, немає доходу, є бажання працювати у товарному бізнесі</div>
+                        <div class="section__interview-content-block-m section__interview-content-block_before-m">0$/міс</div>
+                    </div>
+                    <div class="section__interview-content-block_between">
+                        <div class="section__interview-content-block_between-air"></div>
+                        <div class="section__interview-content-block_between-person">
+                            <div class="section__interview-content-block_between-play">Подивитися Інтерв'ю<br>з випускником</div>
+                        </div>
+                        <div class="section__interview-content-block_between-person-n">Вася</div>
+                    </div>
+                    <div class="section__interview-content-block_after">
+                        <h4 class="section__interview-content-block-t">Точка Б</h4>
+                        <div class="section__interview-content-block-d">Дохід 5000$, 2 онлайн магазини і чітке розуміння куди рухатись</div>
+                        <div class="section__interview-content-block-m section__interview-content-block_after-m">5000$/міс</div>
+                    </div>
+                </div>
+                <div class="section__interview-content-block section__interview-content-block4">
+                    <div class="section__interview-content-block_before">
+                        <h4 class="section__interview-content-block-t">Точка а</h4>
+                        <div class="section__interview-content-block-d">Десятикласник з доходом в 100$ у місяць, немає розуміння як не піти в університет</div>
+                        <div class="section__interview-content-block-m section__interview-content-block_before-m">100$/міс</div>
+                    </div>
+                    <div class="section__interview-content-block_between">
+                        <div class="section__interview-content-block_between-air"></div>
+                        <div class="section__interview-content-block_between-person">
+                            <div class="section__interview-content-block_between-play">Подивитися Інтерв'ю<br>з випускником</div>
+                        </div>
+                        <div class="section__interview-content-block_between-person-n">Віталік</div>
+                    </div>
+                    <div class="section__interview-content-block_after">
+                        <h4 class="section__interview-content-block-t">Точка Б</h4>
+                        <div class="section__interview-content-block-d">Вийшов на дохід у 100$ в день, є розуміння як будувати онлайн магазини і показати батькам, що він не піде в університет</div>
+                        <div class="section__interview-content-block-m section__interview-content-block_after-m">100$/день</div>
+                    </div>
+                </div>
+                <div class="section__interview-content-block section__interview-content-block5">
+                    <div class="section__interview-content-block_before">
+                        <h4 class="section__interview-content-block-t">Точка а</h4>
+                        <div class="section__interview-content-block-d">Студент. Дохід - 0$ в місяць. Навчається на медичному і розуміє, що перспектив заробляти по спеціальності немає</div>
+                        <div class="section__interview-content-block-m section__interview-content-block_before-m">0$/міс</div>
+                    </div>
+                    <div class="section__interview-content-block_between">
+                        <div class="section__interview-content-block_between-air"></div>
+                        <div class="section__interview-content-block_between-person">
+                            <div class="section__interview-content-block_between-play">Подивитися Інтерв'ю<br>з випускником</div>
+                        </div>
+                        <div class="section__interview-content-block_between-person-n">Ваня</div>
+                    </div>
+                    <div class="section__interview-content-block_after">
+                        <h4 class="section__interview-content-block-t">Точка Б</h4>
+                        <div class="section__interview-content-block-d">Вийшов на дохід у 1500$ в місяць на товарному бізнесі, не страшно закінчувати університет, бо є розуміння, що все вийде</div>
+                        <div class="section__interview-content-block-m section__interview-content-block_after-m">1500$/міс</div>
+                    </div>
+                </div>
+                <div class="section__interview-content-block section__interview-content-block6">
+                    <div class="section__interview-content-block_before">
+                        <h4 class="section__interview-content-block-t">Точка а</h4>
+                        <div class="section__interview-content-block-d">Працює на стройці в Польщі за 1000$ в місяць</div>
+                        <div class="section__interview-content-block-m section__interview-content-block_before-m">1000$/міс</div>
+                    </div>
+                    <div class="section__interview-content-block_between">
+                        <div class="section__interview-content-block_between-air"></div>
+                        <div class="section__interview-content-block_between-person">
+                            <a href="https://youtu.be/6KAGIJikBDk" target="_blank" class="section__interview-content-block_between-play">Подивитися Інтерв'ю<br>з випускником</a>
+                        </div>
+                        <div class="section__interview-content-block_between-person-n">Рома</div>
+                    </div>
+                    <div class="section__interview-content-block_after">
+                        <h4 class="section__interview-content-block-t">Точка Б</h4>
+                        <div class="section__interview-content-block-d">Вийшов на дохід у 3000$ працюючи віддалено з ноутбука</div>
+                        <div class="section__interview-content-block-m section__interview-content-block_after-m">3000$/міс</div>
+                    </div>
+                </div>
+                <div class="section__interview-content-block section__interview-content-block7">
+                    <div class="section__interview-content-block_before">
+                        <h4 class="section__interview-content-block-t">Точка а</h4>
+                        <div class="section__interview-content-block-d">Немає розуміння що такий товарний бізнес, не знає куди і як рухатись</div>
+                        <div class="section__interview-content-block-m section__interview-content-block_before-m">0$/міс</div>
+                    </div>
+                    <div class="section__interview-content-block_between">
+                        <div class="section__interview-content-block_between-air"></div>
+                        <div class="section__interview-content-block_between-person">
+                            <div class="section__interview-content-block_between-play">Подивитися Інтерв'ю<br>з випускником</div>
+                        </div>
+                        <div class="section__interview-content-block_between-person-n">Марія</div>
+                    </div>
+                    <div class="section__interview-content-block_after">
+                        <h4 class="section__interview-content-block-t">Точка Б</h4>
+                        <div class="section__interview-content-block-d">Вийшла на дохід у 1000$, побудувала 2 магазини, найняла працівника на роботу</div>
+                        <div class="section__interview-content-block-m section__interview-content-block_after-m">1000$/міс</div>
+                    </div>
+                </div>
+                <div class="section__interview-content-block section__interview-content-block8">
+                    <div class="section__interview-content-block_before">
+                        <h4 class="section__interview-content-block-t">Точка а</h4>
+                        <div class="section__interview-content-block-d">Велика просадка у криптопортфелі, немає джерела доходу окрім крипти, у мінусі</div>
+                        <div class="section__interview-content-block-m section__interview-content-block_before-m">-/міс</div>
+                    </div>
+                    <div class="section__interview-content-block_between">
+                        <div class="section__interview-content-block_between-air"></div>
+                        <div class="section__interview-content-block_between-person">
+                            <div class="section__interview-content-block_between-play">Подивитися Інтерв'ю<br>з випускником</div>
+                        </div>
+                        <div class="section__interview-content-block_between-person-n">Андрій</div>
+                    </div>
+                    <div class="section__interview-content-block_after">
+                        <h4 class="section__interview-content-block-t">Точка Б</h4>
+                        <div class="section__interview-content-block-d">Вийшов на дохід в 70$ в день, побудував джерело доходу з якого інвестує у крипту</div>
+                        <div class="section__interview-content-block-m section__interview-content-block_after-m">70$/міс</div>
+                    </div>
+                </div>
+                <div class="section__interview-content-block section__interview-content-block9">
+                    <div class="section__interview-content-block_before">
+                        <h4 class="section__interview-content-block-t">Точка а</h4>
+                        <div class="section__interview-content-block-d">Студент, без розуміння куди рухатись, дохід - 0$</div>
+                        <div class="section__interview-content-block-m section__interview-content-block_before-m">0$/міс</div>
+                    </div>
+                    <div class="section__interview-content-block_between">
+                        <div class="section__interview-content-block_between-air"></div>
+                        <div class="section__interview-content-block_between-person">
+                            <div class="section__interview-content-block_between-play">Подивитися Інтерв'ю<br>з випускником</div>
+                        </div>
+                        <div class="section__interview-content-block_between-person-n">Нікіта</div>
+                    </div>
+                    <div class="section__interview-content-block_after">
+                        <h4 class="section__interview-content-block-t">Точка Б</h4>
+                        <div class="section__interview-content-block-d">Вийшов на дохід у 100$ в день, забезпечує себе і допомагає батькам</div>
+                        <div class="section__interview-content-block-m section__interview-content-block_after-m">100$/день</div>
+                    </div>
+                </div>
+                <div class="section__interview-content-block section__interview-content-block10">
+                    <div class="section__interview-content-block_before">
+                        <h4 class="section__interview-content-block-t">Точка а</h4>
+                        <div class="section__interview-content-block-d">Працює у наймі у Німеччині, хоче вийти з найму</div>
+                        <div class="section__interview-content-block-m section__interview-content-block_before-m">-/міс</div>
+                    </div>
+                    <div class="section__interview-content-block_between">
+                        <div class="section__interview-content-block_between-air"></div>
+                        <div class="section__interview-content-block_between-person">
+                            <div class="section__interview-content-block_between-play">Подивитися Інтерв'ю<br>з випускником</div>
+                        </div>
+                        <div class="section__interview-content-block_between-person-n">Іра</div>
+                    </div>
+                    <div class="section__interview-content-block_after">
+                        <h4 class="section__interview-content-block-t">Точка Б</h4>
+                        <div class="section__interview-content-block-d">Вийшла на дохід у 100$<br>в день на одному онлайн магазині</div>
+                        <div class="section__interview-content-block-m section__interview-content-block_after-m">70$/день</div>
+                    </div>
+                </div>
+                <div class="section__interview-content-block section__interview-content-block11">
+                    <div class="section__interview-content-block_before">
+                        <h4 class="section__interview-content-block-t">Точка а</h4>
+                        <div class="section__interview-content-block-d">Робота у фрілансі на клієнтів, налаштовує таргет рекламу і заробляє до 700$ в місяць</div>
+                        <div class="section__interview-content-block-m section__interview-content-block_before-m">700$/міс</div>
+                    </div>
+                    <div class="section__interview-content-block_between">
+                        <div class="section__interview-content-block_between-air"></div>
+                        <div class="section__interview-content-block_between-person">
+                            <div class="section__interview-content-block_between-play">Подивитися Інтерв'ю<br>з випускником</div>
+                        </div>
+                        <div class="section__interview-content-block_between-person-n">Влад</div>
+                    </div>
+                    <div class="section__interview-content-block_after">
+                        <h4 class="section__interview-content-block-t">Точка Б</h4>
+                        <div class="section__interview-content-block-d">Запустив свій інтернет магазин і вийшов на дохід у 2000$</div>
+                        <div class="section__interview-content-block-m section__interview-content-block_after-m">2000$/міс</div>
+                    </div>
+                </div>
+                <div class="section__interview-content-block section__interview-content-block12">
+                    <div class="section__interview-content-block_before">
+                        <h4 class="section__interview-content-block-t">Точка а</h4>
+                        <div class="section__interview-content-block-d">Має свою мийку, офлайн бізнес, який працює у великий мінус</div>
+                        <div class="section__interview-content-block-m section__interview-content-block_before-m">-$/міс</div>
+                    </div>
+                    <div class="section__interview-content-block_between">
+                        <div class="section__interview-content-block_between-air"></div>
+                        <div class="section__interview-content-block_between-person">
+                            <div class="section__interview-content-block_between-play">Подивитися Інтерв'ю<br>з випускником</div>
+                        </div>
+                        <div class="section__interview-content-block_between-person-n">Вадим</div>
+                    </div>
+                    <div class="section__interview-content-block_after">
+                        <h4 class="section__interview-content-block-t">Точка Б</h4>
+                        <div class="section__interview-content-block-d">Заробив за 1 місяць після навчання 8000$ і навчився будувати онлайн магазини</div>
+                        <div class="section__interview-content-block-m section__interview-content-block_after-m">8000$/міс</div>
+                    </div>
+                </div>
+                <div class="section__interview-content-block section__interview-content-block13">
+                    <div class="section__interview-content-block_before">
+                        <h4 class="section__interview-content-block-t">Точка а</h4>
+                        <div class="section__interview-content-block-d">Має онлайн магазин, який працює у мінус і товару, який не може продати на 200 000 грн</div>
+                        <div class="section__interview-content-block-m section__interview-content-block_before-m">-$/міс</div>
+                    </div>
+                    <div class="section__interview-content-block_between">
+                        <div class="section__interview-content-block_between-air"></div>
+                        <div class="section__interview-content-block_between-person">
+                            <div class="section__interview-content-block_between-play">Подивитися Інтерв'ю<br>з випускником</div>
+                        </div>
+                        <div class="section__interview-content-block_between-person-n">Оксана</div>
+                    </div>
+                    <div class="section__interview-content-block_after">
+                        <h4 class="section__interview-content-block-t">Точка Б</h4>
+                        <div class="section__interview-content-block-d">Розпродала непотрібний товар, побудувала 5 нових онлайн магазинів і найняла 2-х працівників. Дохід - 10 000$ чистими</div>
+                        <div class="section__interview-content-block-m section__interview-content-block_after-m">10 000$/міс</div>
+                    </div>
+                </div>
+                <div class="section__interview-content-block section__interview-content-block14">
+                    <div class="section__interview-content-block_before">
+                        <h4 class="section__interview-content-block-t">Точка а</h4>
+                        <div class="section__interview-content-block-d">Працює в наймі по 10-11 годин, немає часу на себе, ні на дівчину. Прожигає своє життя у наймі</div>
+                        <div class="section__interview-content-block-m section__interview-content-block_before-m">-$/міс</div>
+                    </div>
+                    <div class="section__interview-content-block_between">
+                        <div class="section__interview-content-block_between-air"></div>
+                        <div class="section__interview-content-block_between-person">
+                            <div class="section__interview-content-block_between-play">Подивитися Інтерв'ю<br>з випускником</div>
+                        </div>
+                        <div class="section__interview-content-block_between-person-n">Андрій</div>
+                    </div>
+                    <div class="section__interview-content-block_after">
+                        <h4 class="section__interview-content-block-t">Точка Б</h4>
+                        <div class="section__interview-content-block-d">Вийшов на дохід у 100$ в день, має два інтернет магазини. Працює 3-4 години в день.</div>
+                        <div class="section__interview-content-block-m section__interview-content-block_after-m">100$/день</div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- THE END SECTION INTERVIEW -->
@@ -1628,7 +1732,9 @@
     <section class="section__consultation">
         <h2 class="section__consultation-title">Ще не зрозуміли чи підійде вам навчання?</h2>
         <p class="section__consultation-desc">Заповніть форму та отримайте консультацію від спеціаліста <span>який відповість на всі ваші поставленні запитання</span></p>
-        <a href="#" class="section__consultation-btn">Отримати консультацію</a>
+        <a href="" class="section__consultation-btn" data-bs-toggle="modal" data-bs-target="#Modal7">
+            <div class="section__consultation-btn-div"></div>
+        </a>
     </section>
 
     <!-- THE END SECTION CONSULTATION -->
@@ -1646,7 +1752,7 @@
                         <div class="section__question-input-btn"></div>
                         <p class="section__question-input-txt">Як відбувається<span><br></span>навчання?</p>
                     </label>
-                    <p class="section__question-anwser" id="section__question-anwser1">Тест одного товару обходиться в $10-15 в день, а триває він 3 дні, тому на тест одного товару треба 20-30$ рекламного бюджету, у Олега заходить кожентретій товар, у його учнів кожен четвертий</p>
+                    <p class="section__question-anwser" id="section__question-anwser1">Коучінг поділений на 8 основних модулів, а модулі на уроки 1 модуль - це один тиждень на засвоєння Тобто навчання триватиме 2 місяці.</p>
                 </div>
                 <div class="section__question-content2">
                     <label for="section__question-input2">
@@ -1654,7 +1760,7 @@
                         <div class="section__question-input-btn"></div>
                         <p class="section__question-input-txt">Як я буду <span><br></span>тримати звязок <span><br></span>з коучерами?</p>
                     </label>
-                    <p class="section__question-anwser" id="section__question-anwser2">Тест одного товару обходиться в $10-15 в день, а триває він 3 дні, тому на тест одного товару треба 20-30$ рекламного бюджету, у Олега заходить кожентретій товар, у його учнів кожен четвертий</p>
+                    <p class="section__question-anwser" id="section__question-anwser2">Два рази на тиждень коучер виходить на відеозвязок з групою в 20-25 людей, де закриває запити людей.</p>
                 </div>
                 <div class="section__question-content3">
                     <label for="section__question-input3">
@@ -1662,7 +1768,7 @@
                         <div class="section__question-input-btn"></div>
                         <p class="section__question-input-txt">Чи можу я <span><br></span>самостійно <span><br></span>вибрати собі <span><br></span>коучера?</p>
                     </label>
-                    <p class="section__question-anwser" id="section__question-anwser3">Тест одного товару обходиться в $10-15 в день, а триває він 3 дні, тому на тест одного товару треба 20-30$ рекламного бюджету, у Олега заходить кожентретій товар, у його учнів кожен четвертий</p>
+                    <p class="section__question-anwser" id="section__question-anwser3">Нет, коучеры будут выбираться в хаотичном порядке для того, чтобы каждая группа была равносильной.</p>
                 </div>
             </div>
             <div class="section__question-content section__question-content22">
@@ -1672,7 +1778,7 @@
                         <div class="section__question-input-btn"></div>
                         <p class="section__question-input-txt">Мені треба <span><br></span>потужний <span><br></span>ноутбук?</p>
                     </label>
-                    <p class="section__question-anwser" id="section__question-anwser1">Тест одного товару обходиться в $10-15 в день, а триває він 3 дні, тому на тест одного товару треба 20-30$ рекламного бюджету, у Олега заходить кожентретій товар, у його учнів кожен четвертий</p>
+                    <p class="section__question-anwser" id="section__question-anwser1">Ні, Олег починав товарний напрямок з ноутбуком Lenovo від бабусі, якому було 8 років - тому можете за це не переживати.</p>
                 </div>
                 <div class="section__question-content5">
                     <label for="section__question-input5">
@@ -1680,7 +1786,7 @@
                         <div class="section__question-input-btn"></div>
                         <p class="section__question-input-txt">Скільки треба <span><br></span>грошей на <span><br></span>рекламу?</p>
                     </label>
-                    <p class="section__question-anwser" id="section__question-anwser2">Тест одного товару обходиться в $10-15 в день, а триває він 3 дні, тому на тест одного товару треба 20-30$ рекламного бюджету, у Олега заходить кожентретій товар, у його учнів кожен четвертий</p>
+                    <p class="section__question-anwser" id="section__question-anwser2">Тест одного товару обходиться в 10-15$ в день, а триває він 3 дні, тому на тест одного товару треба 20-30 $ рекламного бюджету, у Олега заходить кожен третій товар, у його учнів кожен четвертий.</p>
                 </div>
             </div>
         </div>
@@ -1689,8 +1795,248 @@
     <!-- THE END SECTION QUESTION -->
 
 
+  
 
-    <!-- Scripts -->
+  <div class="modal fade" id="Modal1" tabindex="-1" aria-labelledby="ModalLabel1" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+            <h3 class="title-modal">Заповніть форму </h3>
+            <p class="desc-modal">заповніть форму для тарифу "ПОЧАТКІВЕЦЬ"</p>
+            <form class="form" method="post" action="send2.php">
+                <input type="" name="nameform" value="Тариф ПОЧАТКІВЕЦЬ" style="display: none;">
+                <input class="section__people-form-input" type="text" name="name" placeholder="Ваше імя" autocomplete="off" required>
+                <input class="section__people-form-input" id="section__people-form-input-phone2" type="text" name="phone" placeholder="Ваш номер телефону" autocomplete="off" required>
+                <input class="section__people-form-input" id="section__people-form-input-telegram" type="text" name="telegram" placeholder="Нік в телеграмі" autocomplete="off" required>
+                <button class="section__people-form-button" type="submit">
+                    <div class="section__people-form-button-div section__people-form-button-div777"></div>
+                </button>
+                <input type="hidden" name="act" value="order">
+            </form>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="modal fade" id="Modal2" tabindex="-1" aria-labelledby="ModalLabel2" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+            <h3 class="title-modal">Заповніть форму </h3>
+            <p class="desc-modal">заповніть форму для тарифу "ПРОСУНУТИЙ"</p>
+            <form class="form" method="post" action="send3.php">
+                <input type="" name="nameform" value="Тариф ПРОСУНУТИЙ" style="display: none;">
+                <input class="section__people-form-input" type="text" name="name" placeholder="Ваше імя" autocomplete="off" required>
+                <input class="section__people-form-input" id="section__people-form-input-phone3" type="text" name="phone" placeholder="Ваш номер телефону" autocomplete="off" required>
+                <input class="section__people-form-input" id="section__people-form-input-telegram" type="text" name="telegram" placeholder="Нік в телеграмі" autocomplete="off" required>
+                <button class="section__people-form-button" type="submit">
+                    <div class="section__people-form-button-div section__people-form-button-div777"></div>
+                </button>
+                <input type="hidden" name="act" value="order">
+            </form>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="modal fade" id="Modal3" tabindex="-1" aria-labelledby="ModalLabel3" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+            <h3 class="title-modal">Заповніть форму </h3>
+            <p class="desc-modal">заповніть форму для тарифу "ЕКСПЕРТ"</p>
+            <form class="form" method="post" action="send4.php">
+                <input type="" name="nameform" value="Тариф ЕКСПЕРТ" style="display: none;">
+                <input class="section__people-form-input" type="text" name="name" placeholder="Ваше імя" autocomplete="off" required>
+                <input class="section__people-form-input" id="section__people-form-input-phone4" type="text" name="phone" placeholder="Ваш номер телефону" autocomplete="off" required>
+                <input class="section__people-form-input" id="section__people-form-input-telegram" type="text" name="telegram" placeholder="Нік в телеграмі" autocomplete="off" required>
+                <button class="section__people-form-button" type="submit">
+                    <div class="section__people-form-button-div section__people-form-button-div777"></div>
+                </button>
+                <input type="hidden" name="act" value="order">
+            </form>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="modal fade" id="Modal4" tabindex="-1" aria-labelledby="ModalLabel3" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+            <h3 class="title-modal">Заповніть форму </h3>
+            <p class="desc-modal">забронювати тариф "ПОЧАТКІВЕЦЬ"</p>
+            <form class="form" method="post" action="send1.php">
+                <input type="" name="nameform" value="Бронь тарифа ПОЧАТКІВЕЦЬ" style="display: none;">
+                <input class="section__people-form-input" type="text" name="name" placeholder="Ваше імя" autocomplete="off" required>
+                <input class="section__people-form-input" id="section__people-form-input-phone6" type="text" name="phone" placeholder="Ваш номер телефону" autocomplete="off" required>
+                <input class="section__people-form-input" id="section__people-form-input-telegram" type="text" name="telegram" placeholder="Нік в телеграмі" autocomplete="off" required>
+                <button class="section__people-form-button" type="submit">
+                    <div class="section__people-form-button-div section__people-form-button-div888"></div>
+                </button>
+                <input type="hidden" name="act" value="order">
+            </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="Modal5" tabindex="-1" aria-labelledby="ModalLabel3" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+            <h3 class="title-modal">Заповніть форму </h3>
+            <p class="desc-modal">забронювати тариф "ПРОСУНУТИЙ"</p>
+            <form class="form" method="post" action="send1.php">
+                <input type="" name="nameform" value="Бронь тарифа ПРОСУНУТИЙ" style="display: none;">
+                <input class="section__people-form-input" type="text" name="name" placeholder="Ваше імя" autocomplete="off" required>
+                <input class="section__people-form-input" id="section__people-form-input-phone7" type="text" name="phone" placeholder="Ваш номер телефону" autocomplete="off" required>
+                <input class="section__people-form-input" id="section__people-form-input-telegram" type="text" name="telegram" placeholder="Нік в телеграмі" autocomplete="off" required>
+                <button class="section__people-form-button" type="submit">
+                    <div class="section__people-form-button-div section__people-form-button-div888"></div>
+                </button>
+                <input type="hidden" name="act" value="order">
+            </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="Modal6" tabindex="-1" aria-labelledby="ModalLabel3" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+            <h3 class="title-modal">Заповніть форму </h3>
+            <p class="desc-modal">забронювати тариф "ЕКСПЕРТ"</p>
+            <form class="form" method="post" action="send1.php">
+                <input type="" name="nameform" value="Бронь тарифа ЕКСПЕРТ" style="display: none;">
+                <input class="section__people-form-input" type="text" name="name" placeholder="Ваше імя" autocomplete="off" required>
+                <input class="section__people-form-input" id="section__people-form-input-phone8" type="text" name="phone" placeholder="Ваш номер телефону" autocomplete="off" required>
+                <input class="section__people-form-input" id="section__people-form-input-telegram" type="text" name="telegram" placeholder="Нік в телеграмі" autocomplete="off" required>
+                <button class="section__people-form-button" type="submit">
+                    <div class="section__people-form-button-div section__people-form-button-div888"></div>
+                </button>
+                <input type="hidden" name="act" value="order">
+            </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="Modal11" tabindex="-1" aria-labelledby="ModalLabel3" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+            <h3 class="title-modal">Заповніть форму </h3>
+            <p class="desc-modal">дізнатися про тариф "ПОЧАТКІВЕЦЬ"</p>
+            <form class="form" method="post" action="send.php">
+                <input type="" name="nameform" value="Зв'язатися з менеджером ПОЧАТКІВЕЦЬ" style="display: none;">
+                <input class="section__people-form-input" type="text" name="name" placeholder="Ваше імя" autocomplete="off" required>
+                <input class="section__people-form-input" id="section__people-form-input-phone9" type="text" name="phone" placeholder="Ваш номер телефону" autocomplete="off" required>
+                <input class="section__people-form-input" id="section__people-form-input-telegram" type="text" name="telegram" placeholder="Нік в телеграмі" autocomplete="off" required>
+                <button class="section__people-form-button" type="submit">
+                    <div class="section__people-form-button-div section__people-form-button-div999"></div>
+                </button>
+                <input type="hidden" name="act" value="order">
+            </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="Modal22" tabindex="-1" aria-labelledby="ModalLabel3" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+            <h3 class="title-modal">Заповніть форму </h3>
+            <p class="desc-modal">дізнатися про тариф "ПРОСУНУТИЙ"</p>
+            <form class="form" method="post" action="send.php">
+                <input type="" name="nameform" value="Зв'язатися з менеджером ПРОСУНУТИЙ" style="display: none;">
+                <input class="section__people-form-input" type="text" name="name" placeholder="Ваше імя" autocomplete="off" required>
+                <input class="section__people-form-input" id="section__people-form-input-phone10" type="text" name="phone" placeholder="Ваш номер телефону" autocomplete="off" required>
+                <input class="section__people-form-input" id="section__people-form-input-telegram" type="text" name="telegram" placeholder="Нік в телеграмі" autocomplete="off" required>
+                <button class="section__people-form-button" type="submit">
+                    <div class="section__people-form-button-div section__people-form-button-div999"></div>
+                </button>
+                <input type="hidden" name="act" value="order">
+            </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="Modal33" tabindex="-1" aria-labelledby="ModalLabel3" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+            <h3 class="title-modal">Заповніть форму </h3>
+            <p class="desc-modal">дізнатися про тариф "ЕКСПЕРТ"</p>
+            <form class="form" method="post" action="send.php">
+                <input type="" name="nameform" value="Зв'язатися з менеджером ЕКСПЕРТ" style="display: none;">
+                <input class="section__people-form-input" type="text" name="name" placeholder="Ваше імя" autocomplete="off" required>
+                <input class="section__people-form-input" id="section__people-form-input-phone11" type="text" name="phone" placeholder="Ваш номер телефону" autocomplete="off" required>
+                <input class="section__people-form-input" id="section__people-form-input-telegram" type="text" name="telegram" placeholder="Нік в телеграмі" autocomplete="off" required>
+                <button class="section__people-form-button" type="submit">
+                    <div class="section__people-form-button-div section__people-form-button-div999"></div>
+                </button>
+                <input type="hidden" name="act" value="order">
+            </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="Modal7" tabindex="-1" aria-labelledby="ModalLabel4" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+            <h3 class="title-modal">Заповніть форму </h3>
+            <p class="desc-modal">і отримайте безкоштовну консультацію</p>
+            <form class="form" method="post" action="send.php">
+                <input type="" name="nameform" value="Консультація" style="display: none;">
+                <input class="section__people-form-input" type="text" name="name" placeholder="Ваше імя" autocomplete="off" required>
+                <input class="section__people-form-input" id="section__people-form-input-phone5" type="text" name="phone" placeholder="Ваш номер телефону" autocomplete="off" required>
+                <input class="section__people-form-input" id="section__people-form-input-telegram" type="text" name="telegram" placeholder="Нік в телеграмі" autocomplete="off" required>
+                <button class="section__people-form-button" type="submit">
+                    <div class="section__people-form-button-div"></div>
+                </button>
+                <input type="hidden" name="act" value="order">
+            </form>
+      </div>
+    </div>
+  </div>
+
+  
+    <!-- Main script -->
     <script src="assets/js/script.js"></script>
+
+    <!-- Mask script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.0/jquery.min.js" integrity="sha512-synHs+rLg2WDVE9U0oHVJURDCiqft60GcWOW7tXySy8oIr0Hjl3K9gv7Bq/gSj4NDVpc5vmsNkMGGJ6t2VpUMA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="assets/js/jquery.maskedinput.min.js"></script>
+    <script type="text/javascript">
+        jQuery.noConflict();
+        (function($){
+        
+            $("#section__people-form-input-phone1").mask("+380 99-999-99-99");
+            $("#section__people-form-input-phone2").mask("+380 99-999-99-99");
+            $("#section__people-form-input-phone3").mask("+380 99-999-99-99");
+            $("#section__people-form-input-phone4").mask("+380 99-999-99-99");
+            $("#section__people-form-input-phone5").mask("+380 99-999-99-99");
+            $("#section__people-form-input-phone6").mask("+380 99-999-99-99");
+            $("#section__people-form-input-phone7").mask("+380 99-999-99-99");
+            $("#section__people-form-input-phone8").mask("+380 99-999-99-99");
+            $("#section__people-form-input-phone9").mask("+380 99-999-99-99");
+            $("#section__people-form-input-phone10").mask("+380 99-999-99-99");
+            $("#section__people-form-input-phone11").mask("+380 99-999-99-99");
+           
+        
+        })(jQuery);
+    </script>
+
+    <!-- Slick Slider -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.0/jquery.min.js" integrity="sha512-h9kKZlwV1xrIcr2LwAPZhjlkx+x62mNwuQK5PAu9d3D+JXMNlGx8akZbqpXvp0vA54rz+DrqYVrzUGDMhwKmwQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/1.2.1/jquery-migrate.min.js" integrity="sha512-fDGBclS3HUysEBIKooKWFDEWWORoA20n60OwY7OSYgxGEew9s7NgDaPkj7gqQcVXnASPvZAiFW8DiytstdlGtQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script type="text/javascript" src="assets/js/slick.min.js"></script>
+
+	<!-- Settings Slick Slider -->
+	<script type="text/javascript">
+         
+		$(document).ready(function(){
+            var $jq110 = jQuery.noConflict();
+			$jq110('.section__interview-content').slick({
+				slidesToShow: 1,
+				slidesToScroll: 1,
+				arrows: true,
+                speed: 800
+			});
+		});
+	</script>
+
+	<!-- THE END SCRIPTS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
 </body>
 </html>
