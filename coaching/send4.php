@@ -30,7 +30,7 @@ if ($_POST['act'] == 'order') {
     $sendToTelegram = @fopen("https://api.telegram.org/bot{$token}/sendMessage?chat_id={$chat_id}&parse_mode=html&text={$txt}","r");
 
     header('HTTP/1.1 301 Moved Permanently');
-    header('Location: https://secure.wayforpay.com/button/b135cdec2b811');
+    header('Location: https://secure.wayforpay.com/button/bf89202045554');
 }
 
 ?>

@@ -19,6 +19,24 @@
         .section__tarif {
             padding-top: 100px;
         }
+        .section__tarif-content-block_btn1-div {
+            background: url(assets/img/tarif/btn1__end.svg) center center;
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+        .section__tarif-content-block_btn2-div {
+            background: url(assets/img/tarif/btn2__end.svg) center center;
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+        .section__tarif-content-block_btn3-div {
+            background: url(assets/img/tarif/btn3__end.svg) center center;
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+        .footer{
+            padding-top: 80px;
+        }
     </style>
 </head>
 <body>
@@ -32,7 +50,7 @@
             <div class="section__tarif-content">
                 <div class="section__tarif-content-block section__tarif-content-block1">
                     <h4 class="section__tarif-content-block_title unactive">Початківець</h4>
-                    <p class="section__tarif-content-block_point section__tarif-content-block_point1">Підтримка коуча</p>
+                    <p class="section__tarif-content-block_point section__tarif-content-block_point1 unactive">Підтримка коуча</p>
                     <p class="section__tarif-content-block_point section__tarif-content-block_point2">Вибір товару</p>
                     <p class="section__tarif-content-block_point section__tarif-content-block_point3">Вибір постачальника</p>
                     <p class="section__tarif-content-block_point section__tarif-content-block_point4">Створення креативів</p>
@@ -130,188 +148,42 @@
         </div>
     </section>
 
-    <!-- THE END SECTION TARIF -->
+    <!-- THE END SECTION TARIF -->  
+    
+    
+    
+    
+    <!-- FOOTER -->
 
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__left">
+                <div>
+                    <div class="footer__title">Коучинг</div>
+                    <div class="footer__line"></div>
+                </div>
+                <div>
+                    <a href="https://docs.google.com/document/d/1uNOG6g8KT1NZevg056uSxmo_onjvD4e8MCpdc4XYj_U/edit?usp=sharing" target="_blank" class="footer__link">Договір оферти</a>
+                    <a href="https://docs.google.com/document/d/1656QmyaVWc-Mm5-T4vM4EOPE62UyZQ2Cq6TUsMKgEQc/edit?usp=sharing" target="_blank" class="footer__link">Політика конфіденційності</a>
+                </div>
+            </div>
+            <div class="footer__center"> <span>ФОП Лойко Олег Олександрович <br>IBAN: UA213220010000026000320009601 <br>ЕДРПОУ: 3732305755</span>
+                <a class="designer__link" href="https://www.behance.net/maslyanik" target="_blank">
+                    <img src="assets/img/designer.svg" alt="">
+                </a>
+            </div>
+            <div class="footer__right">
+                <div class="footer__right-item">
+                    <div class="title">Email:</div><a class="link" href="mailto:loileg6199@gmail.com">loileg6199@gmail.com</a>
+                </div>
+                <div class="footer__right-item">
+                    <div class="title">Telegram:</div><a class="link" href="https://t.me/kharchenko_dariaa" target="_blank">@kharchenko_dariaa</a>
+                </div>
+            </div>
+        </div>
+    </footer>
 
-  
-
-  <div class="modal fade" id="Modal1" tabindex="-1" aria-labelledby="ModalLabel1" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-            <h3 class="title-modal">Заповніть форму </h3>
-            <p class="desc-modal">заповніть форму для тарифу "ПОЧАТКІВЕЦЬ"</p>
-            <form class="form" method="post" action="send5.php">
-                <input type="" name="nameform" value="Тариф ПОЧАТКІВЕЦЬ" style="display: none;">
-                <input class="section__people-form-input" type="text" name="name" placeholder="Ваше імя" autocomplete="off" required>
-                <input class="section__people-form-input" id="section__people-form-input-phone2" type="text" name="phone" placeholder="Ваш номер телефону" autocomplete="off" required>
-                <input class="section__people-form-input" id="section__people-form-input-telegram" type="text" name="telegram" placeholder="Нік в телеграмі" autocomplete="off" required>
-                <button class="section__people-form-button" type="submit">
-                    <div class="section__people-form-button-div section__people-form-button-div777"></div>
-                </button>
-                <input type="hidden" name="act" value="order">
-            </form>
-      </div>
-    </div>
-  </div>
-
-
-  <div class="modal fade" id="Modal2" tabindex="-1" aria-labelledby="ModalLabel2" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-            <h3 class="title-modal">Заповніть форму </h3>
-            <p class="desc-modal">заповніть форму для тарифу "ПРОСУНУТИЙ"</p>
-            <form class="form" method="post" action="send6.php">
-                <input type="" name="nameform" value="Тариф ПРОСУНУТИЙ" style="display: none;">
-                <input class="section__people-form-input" type="text" name="name" placeholder="Ваше імя" autocomplete="off" required>
-                <input class="section__people-form-input" id="section__people-form-input-phone3" type="text" name="phone" placeholder="Ваш номер телефону" autocomplete="off" required>
-                <input class="section__people-form-input" id="section__people-form-input-telegram" type="text" name="telegram" placeholder="Нік в телеграмі" autocomplete="off" required>
-                <button class="section__people-form-button" type="submit">
-                    <div class="section__people-form-button-div section__people-form-button-div777"></div>
-                </button>
-                <input type="hidden" name="act" value="order">
-            </form>
-      </div>
-    </div>
-  </div>
-
-
-  <div class="modal fade" id="Modal3" tabindex="-1" aria-labelledby="ModalLabel3" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-            <h3 class="title-modal">Заповніть форму </h3>
-            <p class="desc-modal">заповніть форму для тарифу "ЕКСПЕРТ"</p>
-            <form class="form" method="post" action="send7.php">
-                <input type="" name="nameform" value="Тариф ЕКСПЕРТ" style="display: none;">
-                <input class="section__people-form-input" type="text" name="name" placeholder="Ваше імя" autocomplete="off" required>
-                <input class="section__people-form-input" id="section__people-form-input-phone4" type="text" name="phone" placeholder="Ваш номер телефону" autocomplete="off" required>
-                <input class="section__people-form-input" id="section__people-form-input-telegram" type="text" name="telegram" placeholder="Нік в телеграмі" autocomplete="off" required>
-                <button class="section__people-form-button" type="submit">
-                    <div class="section__people-form-button-div section__people-form-button-div777"></div>
-                </button>
-                <input type="hidden" name="act" value="order">
-            </form>
-      </div>
-    </div>
-  </div>
-
-
-  <div class="modal fade" id="Modal4" tabindex="-1" aria-labelledby="ModalLabel3" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-            <h3 class="title-modal">Заповніть форму </h3>
-            <p class="desc-modal">забронювати тариф "ПОЧАТКІВЕЦЬ"</p>
-            <form class="form" method="post" action="send1.php">
-                <input type="" name="nameform" value="Бронь тарифа ПОЧАТКІВЕЦЬ" style="display: none;">
-                <input class="section__people-form-input" type="text" name="name" placeholder="Ваше імя" autocomplete="off" required>
-                <input class="section__people-form-input" id="section__people-form-input-phone6" type="text" name="phone" placeholder="Ваш номер телефону" autocomplete="off" required>
-                <input class="section__people-form-input" id="section__people-form-input-telegram" type="text" name="telegram" placeholder="Нік в телеграмі" autocomplete="off" required>
-                <button class="section__people-form-button" type="submit">
-                    <div class="section__people-form-button-div section__people-form-button-div888"></div>
-                </button>
-                <input type="hidden" name="act" value="order">
-            </form>
-      </div>
-    </div>
-  </div>
-
-  <div class="modal fade" id="Modal5" tabindex="-1" aria-labelledby="ModalLabel3" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-            <h3 class="title-modal">Заповніть форму </h3>
-            <p class="desc-modal">забронювати тариф "ПРОСУНУТИЙ"</p>
-            <form class="form" method="post" action="send1.php">
-                <input type="" name="nameform" value="Бронь тарифа ПРОСУНУТИЙ" style="display: none;">
-                <input class="section__people-form-input" type="text" name="name" placeholder="Ваше імя" autocomplete="off" required>
-                <input class="section__people-form-input" id="section__people-form-input-phone7" type="text" name="phone" placeholder="Ваш номер телефону" autocomplete="off" required>
-                <input class="section__people-form-input" id="section__people-form-input-telegram" type="text" name="telegram" placeholder="Нік в телеграмі" autocomplete="off" required>
-                <button class="section__people-form-button" type="submit">
-                    <div class="section__people-form-button-div section__people-form-button-div888"></div>
-                </button>
-                <input type="hidden" name="act" value="order">
-            </form>
-      </div>
-    </div>
-  </div>
-
-  <div class="modal fade" id="Modal6" tabindex="-1" aria-labelledby="ModalLabel3" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-            <h3 class="title-modal">Заповніть форму </h3>
-            <p class="desc-modal">забронювати тариф "ЕКСПЕРТ"</p>
-            <form class="form" method="post" action="send1.php">
-                <input type="" name="nameform" value="Бронь тарифа ЕКСПЕРТ" style="display: none;">
-                <input class="section__people-form-input" type="text" name="name" placeholder="Ваше імя" autocomplete="off" required>
-                <input class="section__people-form-input" id="section__people-form-input-phone8" type="text" name="phone" placeholder="Ваш номер телефону" autocomplete="off" required>
-                <input class="section__people-form-input" id="section__people-form-input-telegram" type="text" name="telegram" placeholder="Нік в телеграмі" autocomplete="off" required>
-                <button class="section__people-form-button" type="submit">
-                    <div class="section__people-form-button-div section__people-form-button-div888"></div>
-                </button>
-                <input type="hidden" name="act" value="order">
-            </form>
-      </div>
-    </div>
-  </div>
-
-
-  <div class="modal fade" id="Modal11" tabindex="-1" aria-labelledby="ModalLabel3" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-            <h3 class="title-modal">Заповніть форму </h3>
-            <p class="desc-modal">дізнатися про тариф "ПОЧАТКІВЕЦЬ"</p>
-            <form class="form" method="post" action="send8.php">
-                <input type="" name="nameform" value="Зв'язатися з менеджером ПОЧАТКІВЕЦЬ" style="display: none;">
-                <input class="section__people-form-input" type="text" name="name" placeholder="Ваше імя" autocomplete="off" required>
-                <input class="section__people-form-input" id="section__people-form-input-phone9" type="text" name="phone" placeholder="Ваш номер телефону" autocomplete="off" required>
-                <input class="section__people-form-input" id="section__people-form-input-telegram" type="text" name="telegram" placeholder="Нік в телеграмі" autocomplete="off" required>
-                <button class="section__people-form-button" type="submit">
-                    <div class="section__people-form-button-div section__people-form-button-div999"></div>
-                </button>
-                <input type="hidden" name="act" value="order">
-            </form>
-      </div>
-    </div>
-  </div>
-
-  <div class="modal fade" id="Modal22" tabindex="-1" aria-labelledby="ModalLabel3" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-            <h3 class="title-modal">Заповніть форму </h3>
-            <p class="desc-modal">дізнатися про тариф "ПРОСУНУТИЙ"</p>
-            <form class="form" method="post" action="send8.php">
-                <input type="" name="nameform" value="Зв'язатися з менеджером ПРОСУНУТИЙ" style="display: none;">
-                <input class="section__people-form-input" type="text" name="name" placeholder="Ваше імя" autocomplete="off" required>
-                <input class="section__people-form-input" id="section__people-form-input-phone10" type="text" name="phone" placeholder="Ваш номер телефону" autocomplete="off" required>
-                <input class="section__people-form-input" id="section__people-form-input-telegram" type="text" name="telegram" placeholder="Нік в телеграмі" autocomplete="off" required>
-                <button class="section__people-form-button" type="submit">
-                    <div class="section__people-form-button-div section__people-form-button-div999"></div>
-                </button>
-                <input type="hidden" name="act" value="order">
-            </form>
-      </div>
-    </div>
-  </div>
-
-  <div class="modal fade" id="Modal33" tabindex="-1" aria-labelledby="ModalLabel3" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-            <h3 class="title-modal">Заповніть форму </h3>
-            <p class="desc-modal">дізнатися про тариф "ЕКСПЕРТ"</p>
-            <form class="form" method="post" action="send8.php">
-                <input type="" name="nameform" value="Зв'язатися з менеджером ЕКСПЕРТ" style="display: none;">
-                <input class="section__people-form-input" type="text" name="name" placeholder="Ваше імя" autocomplete="off" required>
-                <input class="section__people-form-input" id="section__people-form-input-phone11" type="text" name="phone" placeholder="Ваш номер телефону" autocomplete="off" required>
-                <input class="section__people-form-input" id="section__people-form-input-telegram" type="text" name="telegram" placeholder="Нік в телеграмі" autocomplete="off" required>
-                <button class="section__people-form-button" type="submit">
-                    <div class="section__people-form-button-div section__people-form-button-div999"></div>
-                </button>
-                <input type="hidden" name="act" value="order">
-            </form>
-      </div>
-    </div>
-  </div>
-
-
-  
+    <!-- THE END FOOTER -->
 
     <!-- Mask script -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.0/jquery.min.js" integrity="sha512-synHs+rLg2WDVE9U0oHVJURDCiqft60GcWOW7tXySy8oIr0Hjl3K9gv7Bq/gSj4NDVpc5vmsNkMGGJ6t2VpUMA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>

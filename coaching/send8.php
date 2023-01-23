@@ -31,6 +31,7 @@ if ($_POST['act'] == 'order') {
 
     header('HTTP/1.1 301 Moved Permanently');
     header('Location: https://loyko.com.ua/thanks2.html');
+    
 }
 
 ?>
