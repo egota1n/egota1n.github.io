@@ -728,7 +728,7 @@ input, button::-moz-focus-inner {
 .label_gdpr::before {
     content: '';
     display: block;
-    width: 0;
+    width: 12px;
     height: 1px;
     border-radius: 100px;
     background: #2c836a;
@@ -736,14 +736,14 @@ input, button::-moz-focus-inner {
     left: 7px;
     top: 12px;
     transform-origin: center;
-    transform: rotate(45deg);
+    transform: rotate(45deg) scaleX(0);
     transition: all 0.2s ease;
 }
 
 .label_gdpr::after {
     content: '';
     display: block;
-    width: 0;
+    width: 12px;
     height: 1px;
     border-radius: 100px;
     background: #2c836a;
@@ -751,17 +751,17 @@ input, button::-moz-focus-inner {
     left: 7px;
     top: 12px;
     transform-origin: center;
-    transform: rotate(135deg);
+    transform: rotate(135deg) scaleX(0);
     transition: all 0.2s ease;
     transition-delay: 0.2s;
 }
 
 #checkbox_gdpr:checked ~ .label_gdpr::before{
-    width: 12px;
+    transform: rotate(45deg) scaleX(1);
 }
 
 #checkbox_gdpr:checked ~ .label_gdpr::after{
-    width: 12px;
+    transform: rotate(135deg) scaleX(1);
 }
 
 .checkbox_description{
@@ -841,6 +841,11 @@ input, button::-moz-focus-inner {
     letter-spacing: 0.02em;
     color: #fafafa;
     position: relative;
+    transition: all 0.3s ease;
+}
+
+.footer__gdrp:hover{
+    color: #2c755f;
 }
 
 .footer__gdrp::before{
@@ -853,6 +858,11 @@ input, button::-moz-focus-inner {
     left: 50%;
     transform: translateX(-50%);
     background: #fafafa;
+    transition: all 0.3s ease;
+}
+
+.footer__gdrp:hover:before{
+    background: #2c755f;
 }
 
 .footer-title{
@@ -872,11 +882,33 @@ input, button::-moz-focus-inner {
 }
 
 .footer-links{
+    position: relative;
     font-size: 18px;
     letter-spacing: 0.01em;
     color: #fafafa;
     opacity: 0.85;
     font-family: 'HelveticaNeueCyr-Light';
+    transition: all 0.3s ease;
+}
+
+.footer-links:hover{
+    color: #2c755f;
+}
+
+.footer-links::before{
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    display: block;
+    width: 0;
+    height: 1px;
+    background: #2c755f;
+    transition: all 0.3s ease;
+}
+
+.footer-links:hover:before{
+    width: 100%;
 }
 
 .footer-form .form__input{
@@ -898,13 +930,18 @@ input, button::-moz-focus-inner {
 }
 
 .footer-form .form__input.input:hover, .footer-form .form__input.input:focus, .footer-form .form__input.input:active{
-    border-bottom: 1px solid rgba(44, 131, 106, 0.85);
+    border-bottom: 1px solid #2c755f;
 }
 
 .footer-form .form__input.input::placeholder {
     font-size: 14px;
     color: #cfcece;
     font-family: 'HelveticaNeueCyr-Light';
+    transition: all 0.3s ease;
+}
+
+.footer-form .form__input.input:hover::placeholder{
+    color: #2c755f;
 }
 
 .footer-form .form__input.input2{
@@ -956,6 +993,11 @@ input, button::-moz-focus-inner {
     letter-spacing: 0.01em;
     color: #fafafa;
     position: relative;
+    transition: all 0.3s ease;
+}
+
+.footer-studio:hover{
+    color: #2c755f;
 }
 
 .footer-studio::before{
@@ -968,6 +1010,11 @@ input, button::-moz-focus-inner {
     left: 50%;
     transform: translateX(-50%);
     background: #fafafa;
+    transition: all 0.3s ease;
+}
+
+.footer-studio:hover:before{
+    background: #2c755f;
 }
 
 /* THE END FOOTER */
