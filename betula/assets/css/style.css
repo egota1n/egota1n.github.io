@@ -265,10 +265,17 @@ input, button::-moz-focus-inner {
     display: block;
     width: 400px;
     height: 480px;
-    background: url(../img/main.jpg) center center;
-    background-size: contain;
-    background-repeat: no-repeat;
+    background-size: contain!important;
+    background-repeat: no-repeat!important;
     border-radius: 10px;
+}
+
+.webp .section__main-photo{
+    background: url(../img/main.webp) center center;
+}
+  
+.no-webp .section__main-photo{
+    background: url(../img/main.jpg) center center;
 }
 
 /* THE END SECTION MAIN */
@@ -556,9 +563,16 @@ input, button::-moz-focus-inner {
     position: absolute;
     bottom: 0;
     left: 0;
+    background-size: contain!important;
+    background-repeat: no-repeat!important;
+}
+
+.webp .section__owner .container::before{
+    background: url(../img/owner.webp) left bottom;
+}
+  
+.no-webp .section__owner .container::before{
     background: url(../img/owner.png) left bottom;
-    background-size: contain;
-    background-repeat: no-repeat;
 }
 
 .section__owner-title{
