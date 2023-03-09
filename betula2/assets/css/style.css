@@ -3,7 +3,7 @@
 @font-face {
     font-family: 'HelveticaNeueCyr';
     src: url('../font/HelveticaNeueCyr-Light.eot');
-    src: local('../font/HelveticaNeueCyr-Light'),
+    src: local('HelveticaNeueCyr-Light'),
         url('../font/HelveticaNeueCyr-Light.eot?#iefix') format('embedded-opentype'),
         url('../font/HelveticaNeueCyr-Light.woff2') format('woff2'),
         url('../font/HelveticaNeueCyr-Light.woff') format('woff'),
@@ -15,7 +15,7 @@
 @font-face {
     font-family: 'HelveticaNeueCyr';
     src: url('../font/HelveticaNeueCyr-Roman.eot');
-    src: local('../font/HelveticaNeueCyr-Roman'),
+    src: local('HelveticaNeueCyr-Roman'),
         url('../font/HelveticaNeueCyr-Roman.eot?#iefix') format('embedded-opentype'),
         url('../font/HelveticaNeueCyr-Roman.woff2') format('woff2'),
         url('../font/HelveticaNeueCyr-Roman.woff') format('woff'),
@@ -27,7 +27,7 @@
 @font-face {
     font-family: 'HelveticaNeueCyr';
     src: url('../font/HelveticaNeueCyr-Medium.eot');
-    src: local('../font/HelveticaNeueCyr-Medium'),
+    src: local('HelveticaNeueCyr-Medium'),
         url('../font/HelveticaNeueCyr-Medium.eot?#iefix') format('embedded-opentype'),
         url('../font/HelveticaNeueCyr-Medium.woff2') format('woff2'),
         url('../font/HelveticaNeueCyr-Medium.woff') format('woff'),
@@ -40,7 +40,7 @@
 @font-face {
     font-family: 'HelveticaNeueCyr';
     src: url('../font/HelveticaNeueCyr-Bold.eot');
-    src: local('../font/HelveticaNeueCyr-Bold'),
+    src: local('HelveticaNeueCyr-Bold'),
         url('../font/HelveticaNeueCyr-Bold.eot?#iefix') format('embedded-opentype'),
         url('../font/HelveticaNeueCyr-Bold.woff2') format('woff2'),
         url('../font/HelveticaNeueCyr-Bold.woff') format('woff'),
@@ -196,7 +196,7 @@ input, button::-moz-focus-inner {
 /* SECTION MAIN */
 
 .section__main{
-    min-height: calc(100vh - 132px);
+    min-height: calc(100vh - 132px);    
     margin-top: 40px;
     padding-bottom: 70px;
 }
@@ -225,6 +225,8 @@ input, button::-moz-focus-inner {
     line-height: 140%;
     letter-spacing: 0.01em;
     text-transform: uppercase;
+    width: 660px;
+    font-weight: 500;
 }
 
 .section__main-info_btn{
