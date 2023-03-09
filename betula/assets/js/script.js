@@ -41,5 +41,3 @@ window.onload = function () {
         }, 500);
     }, 3000)
 }
-
-
