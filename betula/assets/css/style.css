@@ -224,6 +224,8 @@ input, button::-moz-focus-inner {
     line-height: 140%;
     letter-spacing: 0.01em;
     text-transform: uppercase;
+    width: 660px;
+    font-weight: 500;
 }
 
 .section__main-info_btn{
