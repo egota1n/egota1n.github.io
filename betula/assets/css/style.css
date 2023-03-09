@@ -3,8 +3,7 @@
 @font-face {
     font-family: 'HelveticaNeueCyr';
     src: url('../font/HelveticaNeueCyr-Light.eot');
-    src: local('HelveticaNeueCyr-Light'),
-        url('../font/HelveticaNeueCyr-Light.eot?#iefix') format('embedded-opentype'),
+    src: url('../font/HelveticaNeueCyr-Light.eot?#iefix') format('embedded-opentype'),
         url('../font/HelveticaNeueCyr-Light.woff2') format('woff2'),
         url('../font/HelveticaNeueCyr-Light.woff') format('woff'),
         url('../font/HelveticaNeueCyr-Light.ttf') format('truetype');
@@ -15,8 +14,7 @@
 @font-face {
     font-family: 'HelveticaNeueCyr';
     src: url('../font/HelveticaNeueCyr-Roman.eot');
-    src: local('HelveticaNeueCyr-Roman'),
-        url('../font/HelveticaNeueCyr-Roman.eot?#iefix') format('embedded-opentype'),
+    src: url('../font/HelveticaNeueCyr-Roman.eot?#iefix') format('embedded-opentype'),
         url('../font/HelveticaNeueCyr-Roman.woff2') format('woff2'),
         url('../font/HelveticaNeueCyr-Roman.woff') format('woff'),
         url('../font/HelveticaNeueCyr-Roman.ttf') format('truetype');
@@ -27,8 +25,7 @@
 @font-face {
     font-family: 'HelveticaNeueCyr';
     src: url('../font/HelveticaNeueCyr-Medium.eot');
-    src: local('HelveticaNeueCyr-Medium'),
-        url('../font/HelveticaNeueCyr-Medium.eot?#iefix') format('embedded-opentype'),
+    src: url('../font/HelveticaNeueCyr-Medium.eot?#iefix') format('embedded-opentype'),
         url('../font/HelveticaNeueCyr-Medium.woff2') format('woff2'),
         url('../font/HelveticaNeueCyr-Medium.woff') format('woff'),
         url('../font/HelveticaNeueCyr-Medium.ttf') format('truetype');
@@ -40,8 +37,7 @@
 @font-face {
     font-family: 'HelveticaNeueCyr';
     src: url('../font/HelveticaNeueCyr-Bold.eot');
-    src: local('HelveticaNeueCyr-Bold'),
-        url('../font/HelveticaNeueCyr-Bold.eot?#iefix') format('embedded-opentype'),
+    src: url('../font/HelveticaNeueCyr-Bold.eot?#iefix') format('embedded-opentype'),
         url('../font/HelveticaNeueCyr-Bold.woff2') format('woff2'),
         url('../font/HelveticaNeueCyr-Bold.woff') format('woff'),
         url('../font/HelveticaNeueCyr-Bold.ttf') format('truetype');
