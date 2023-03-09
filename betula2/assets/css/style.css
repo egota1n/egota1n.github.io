@@ -285,7 +285,7 @@ input, button::-moz-focus-inner {
 /* SECTION PRODUCTS */
 
 .section__products{
-    min-height: 100vh;
+    min-height: calc(100vh - 132px);
     display: block;
     padding: 70px 0 70px 0;
     background: #246a56;
