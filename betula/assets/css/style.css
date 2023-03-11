@@ -420,6 +420,7 @@ input, button::-moz-focus-inner {
 
 .section__cases-row2 .section__cases-content{
     width: 100%;
+    margin-bottom: 0;
 }
 
 .section__cases-block{
@@ -500,6 +501,11 @@ input, button::-moz-focus-inner {
 }
 
 .section__cases-block7{
+    background-image: url(../img/cases/case7.svg);
+}
+
+.section__cases-block8{
+    display: none;
     background-image: url(../img/cases/case7.svg);
 }
 
@@ -1085,7 +1091,6 @@ input, button::-moz-focus-inner {
 @media (max-width: 1199px) {
     .preloader,
     .header_pc,
-    .section__cases,
     .section__team,
     .section__owner,
     .section__contact,
@@ -1188,11 +1193,47 @@ input, button::-moz-focus-inner {
         bottom: 27px;
         font-size: 18px;
     }
-
+    /* CASES */
+    .section__cases {
+        padding: 50px 0 50px 0;
+    }
+    .section__cases-row1 {
+        display: block;
+    }
+    .section__cases-title {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+    .section__cases-content {
+        margin-bottom: 20px;
+        width: 100%;
+    }
+    .section__cases-content_block {
+        animation: none;
+        flex-wrap: wrap;
+        column-gap: 30px;
+        row-gap: 20px;
+    }
+    .section__cases-content_block[aria-hidden="true"] {
+        display: none;
+    }
+    .section__cases-block {
+        width: calc(((100vw - 30px) / 2) - 15px);
+        height: 90px;
+        background-size: 74px;
+    }
+    .section__cases-block8{
+        display: block;
+    }
 }
 
 @media (max-width: 390px) {
     .container{
         padding: 0 12px;
+    }
+    .section__cases-block {
+        width: calc(((100vw - 24px) / 2) - 15px);
+        height: 80px;
+        background-size: 74px;
     }
 }
