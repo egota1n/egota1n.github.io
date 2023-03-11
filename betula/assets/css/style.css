@@ -1348,6 +1348,7 @@ input, button::-moz-focus-inner {
     .contact-form .form__input.input {
         width: 100%;
         font-size: 16px;
+        border-radius: 0;
     }
     .contact-form .form__input.btn {
         width: 100%;
