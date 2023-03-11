@@ -1106,7 +1106,6 @@ input, button::-moz-focus-inner {
 
 @media (max-width: 1199px) {
     .preloader,
-    .header_pc,
     .footer{
         display: none;
     }
@@ -1141,9 +1140,20 @@ input, button::-moz-focus-inner {
         width: 100%;
         padding: 0 15px;
     }
+    /* HEADER PC */
+    .header_pc {
+        padding-top: 45px;
+    }
+    .header_pc-nav, .header_pc-call{
+        display: none;
+    }
+    .header_pc-logo {
+        width: 152px;
+        height: 22px;
+    }
     /* MAIN */
     .section__main {
-        margin-top: 127px;
+        margin-top: 60px;
         padding-bottom: 45px;
     }
     .section__main-info_btn:hover {
