@@ -1133,6 +1133,9 @@ input, button::-moz-focus-inner {
         margin-top: 127px;
         padding-bottom: 45px;
     }
+    .section__main-info_btn:hover {
+        scale: 1;
+    }
     .section__main .container {
         display: block;
     }
