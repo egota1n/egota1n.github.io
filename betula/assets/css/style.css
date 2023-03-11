@@ -1,6 +1,6 @@
 /* Fonts */
 
-@font-face {
+/* @font-face {
     font-family: 'HelveticaNeueCyr';
     src: url('../font/HelveticaNeueCyr-Light.eot');
     src: url('../font/HelveticaNeueCyr-Light.eot?#iefix') format('embedded-opentype'),
@@ -43,7 +43,7 @@
         url('../font/HelveticaNeueCyr-Bold.ttf') format('truetype');
     font-weight: bold;
     font-style: normal;
-}
+} */
 
 /* All styles */
 
