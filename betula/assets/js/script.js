@@ -1,3 +1,7 @@
+// Hover
+
+document.addEventListener("click", x=>0)
+
 // Scroll
 
 const anchors = document.querySelectorAll('a[href*="#"]')
@@ -15,6 +19,7 @@ anchor.addEventListener('click', function (e) {
 })
 }
 
+// Stylization form
 
 let test = document.querySelectorAll('.contact-form input')
 
@@ -30,7 +35,7 @@ function inputStyle(){
     }, "1");
 }
 
-
+// Preloader
 
 window.onload = function () {
     setTimeout(() => {
