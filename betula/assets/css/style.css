@@ -1,51 +1,54 @@
-/* Fonts */
+/* FONTS */
 
-/* @font-face {
+/* Light */
+
+@font-face {
     font-family: 'HelveticaNeueCyr';
-    src: url('../font/HelveticaNeueCyr-Light.eot');
-    src: url('../font/HelveticaNeueCyr-Light.eot?#iefix') format('embedded-opentype'),
-        url('../font/HelveticaNeueCyr-Light.woff2') format('woff2'),
-        url('../font/HelveticaNeueCyr-Light.woff') format('woff'),
-        url('../font/HelveticaNeueCyr-Light.ttf') format('truetype');
+    src: local('HelveticaNeueCyr'),
+         url('../fonts/HelveticaNeueCyr-Light.ttf') format('truetype'),
+         url('../fonts/HelveticaNeueCyr-Light.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/HelveticaNeueCyr-Light.woff') format('woff'); 
     font-weight: 300;
     font-style: normal;
 }
 
+/* Roman */
+
 @font-face {
     font-family: 'HelveticaNeueCyr';
-    src: url('../font/HelveticaNeueCyr-Roman.eot');
-    src: url('../font/HelveticaNeueCyr-Roman.eot?#iefix') format('embedded-opentype'),
-        url('../font/HelveticaNeueCyr-Roman.woff2') format('woff2'),
-        url('../font/HelveticaNeueCyr-Roman.woff') format('woff'),
-        url('../font/HelveticaNeueCyr-Roman.ttf') format('truetype');
+    src: local('HelveticaNeueCyr'),
+         url('../fonts/HelveticaNeueCyr-Roman.ttf') format('truetype'),
+         url('../fonts/HelveticaNeueCyr-Roman.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/HelveticaNeueCyr-Roman.woff') format('woff'); 
     font-weight: normal;
     font-style: normal;
 }
 
+/* Medium */
+
 @font-face {
     font-family: 'HelveticaNeueCyr';
-    src: url('../font/HelveticaNeueCyr-Medium.eot');
-    src: url('../font/HelveticaNeueCyr-Medium.eot?#iefix') format('embedded-opentype'),
-        url('../font/HelveticaNeueCyr-Medium.woff2') format('woff2'),
-        url('../font/HelveticaNeueCyr-Medium.woff') format('woff'),
-        url('../font/HelveticaNeueCyr-Medium.ttf') format('truetype');
+    src: local('HelveticaNeueCyr'),
+         url('../fonts/HelveticaNeueCyr-Medium.ttf') format('truetype'),
+         url('../fonts/HelveticaNeueCyr-Medium.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/HelveticaNeueCyr-Medium.woff') format('woff'); 
     font-weight: 500;
     font-style: normal;
 }
 
+/* Bold */
 
 @font-face {
     font-family: 'HelveticaNeueCyr';
-    src: url('../font/HelveticaNeueCyr-Bold.eot');
-    src: url('../font/HelveticaNeueCyr-Bold.eot?#iefix') format('embedded-opentype'),
-        url('../font/HelveticaNeueCyr-Bold.woff2') format('woff2'),
-        url('../font/HelveticaNeueCyr-Bold.woff') format('woff'),
-        url('../font/HelveticaNeueCyr-Bold.ttf') format('truetype');
-    font-weight: bold;
+    src: local('HelveticaNeueCyr'),
+         url('../fonts/HelveticaNeueCyr-Bold.ttf') format('truetype'),
+         url('../fonts/HelveticaNeueCyr-Bold.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/HelveticaNeueCyr-Bold.woff') format('woff'); 
+    font-weight: 700;
     font-style: normal;
-} */
+}
 
-/* All styles */
+/* ALL STYLES */
 
 *, *::before, *::after{
     margin: 0;
@@ -618,7 +621,7 @@ input, button::-moz-focus-inner {
     letter-spacing: 0.04em;
     text-transform: uppercase;
     color: #fcfcfc;
-    font-weight: bold;
+    font-weight: 700;
     position: relative;
     top: 2px;
     margin-top: 60px;
@@ -756,7 +759,7 @@ input, button::-moz-focus-inner {
     text-transform: uppercase;
     color: #fcfcfc;
     border: none;
-    font-weight: bold;
+    font-weight: 700;
     cursor: pointer;
     margin-top: 40px;
     transition: all 0.2s ease;
