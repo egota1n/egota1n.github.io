@@ -1,3 +1,7 @@
+// header pc 
+
+if querySelectorAll('.header__mobile .menu')
+
 // Hover
 
 document.addEventListener("click", x=>0)
