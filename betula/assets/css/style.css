@@ -63,6 +63,7 @@
 .container{
     display: block;
     width: 1110px;
+    padding: 0;
     margin: 0 auto;
 }
 
@@ -839,7 +840,7 @@ body.stopscroll::before {
 }
 
 .contact-form .form__input.input{
-    width: 380px;
+    width: 379px;
     background: none;
     border: none;
     border-bottom: 1px solid rgba(35, 31, 32, 0.8);
@@ -1414,8 +1415,9 @@ body.stopscroll::before {
     scale: 1.1;
 }
 
-
-
+.cases a, .cases p{
+    color: #fff;
+}
 
 /* ADAPTIVE */
 
@@ -1476,8 +1478,8 @@ body.stopscroll::before {
     .section__products-content {
         width: 100%;
         row-gap: 30px;
-        position: relative;
-        bottom: 28px;
+        position: static;
+        margin-top: 20px;
     }
     .section__products-content_block, .section__products-content_block1 {
         width: 290px;
