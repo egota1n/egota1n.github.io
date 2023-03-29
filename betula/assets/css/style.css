@@ -816,7 +816,7 @@ body.stopscroll::before {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     opacity: 0.8;
-    margin-bottom: 132px;
+    margin-bottom: 186px;
 }
 
 .section__contact-phone{
@@ -831,7 +831,7 @@ body.stopscroll::before {
     font-size: 18px;
     color: #231f20;
     font-weight: 300;
-    margin-top: 33px;
+    margin-bottom: 16px;
     transition: all 0.3s ease;
 }
 
@@ -864,6 +864,7 @@ body.stopscroll::before {
     display: inline-block;
     margin-bottom: 30px;
     position: relative;
+    line-height: 1;
 }
 
 .contact-form .input-block:nth-child(2n){
@@ -1419,6 +1420,25 @@ body.stopscroll::before {
     color: #fff;
 }
 
+.team__link::before{
+    content: none;
+}
+
+.cases__contact svg, .team__link svg {
+    position: relative;
+    left: 0;
+    transition: all 0.3s ease;
+    transform: none;
+}
+
+.cases__contact:hover svg, .team__link:hover svg {
+    left: 7px;
+}
+
+.team__link:hover svg path {
+    fill: #2c755f;
+}
+
 /* ADAPTIVE */
 
 /* 992-1200 */
@@ -1556,7 +1576,7 @@ body.stopscroll::before {
     }
     .section__contact-title {
         font-size: 28px;
-        margin-bottom: 128px;
+        margin-bottom: 188px;
     }
     .section__contact-phone, .section__contact-email {
         font-size: 16px;
@@ -2253,7 +2273,10 @@ body.stopscroll::before {
     .popup-wrap3 h2{
         width: 200px;
         margin: 0 auto 20px auto;
-    }   
+    }
+    .cases__contact:hover svg, .team__link:hover svg {
+        left: 7px;
+    }
 }
 
 @media (max-width: 390px) {
