@@ -1,0 +1,288 @@
+/* FONT */
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../font/Gilroy-Regular.eot');
+    src: local('Gilroy Regular'), local('Gilroy-Regular'),
+        url('../font/Gilroy-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../font/Gilroy-Regular.woff2') format('woff2'),
+        url('../font/Gilroy-Regular.woff') format('woff'),
+        url('../font/Gilroy-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../font/Gilroy-Medium.eot');
+    src: local('Gilroy Medium'), local('Gilroy-Medium'),
+        url('../font/Gilroy-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../font/Gilroy-Medium.woff2') format('woff2'),
+        url('../font/Gilroy-Medium.woff') format('woff'),
+        url('../font/Gilroy-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../font/Gilroy-Semibold.eot');
+    src: local('Gilroy Semibold'), local('Gilroy-Semibold'),
+        url('../font/Gilroy-Semibold.eot?#iefix') format('embedded-opentype'),
+        url('../font/Gilroy-Semibold.woff2') format('woff2'),
+        url('../font/Gilroy-Semibold.woff') format('woff'),
+        url('../font/Gilroy-Semibold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../font/Gilroy-Bold.eot');
+    src: local('Gilroy Bold'), local('Gilroy-Bold'),
+        url('../font/Gilroy-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../font/Gilroy-Bold.woff2') format('woff2'),
+        url('../font/Gilroy-Bold.woff') format('woff'),
+        url('../font/Gilroy-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../font/Gilroy-Extrabold.eot');
+    src: local('Gilroy Extrabold'), local('Gilroy-Extrabold'),
+        url('../font/Gilroy-Extrabold.eot?#iefix') format('embedded-opentype'),
+        url('../font/Gilroy-Extrabold.woff2') format('woff2'),
+        url('../font/Gilroy-Extrabold.woff') format('woff'),
+        url('../font/Gilroy-Extrabold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+/* THE END FONT */
+
+
+/* ALL STYLES */
+
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #162843;
+    font-family: 'Gilroy', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+input:active, input:focus, button:active, button:focus {
+    outline: none;
+}
+
+input, button::-moz-focus-inner {
+    border: 0;
+}
+
+.container{
+    position: relative;
+    display: block;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/* THE END ALL STYLES */
+
+
+/* HEADER */
+
+.header{
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    background: #fff;
+    padding: 20px 0;
+    z-index: 999;
+}
+
+.header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__logo{
+    display: flex;
+    align-items: center;
+    gap: 41px;
+}
+
+.header__logo-img{
+    display: block;
+    width: 120px;
+    height: 60px;
+    background: url(../img/logo_light.svg) center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.header__company-desc{
+    width: 118px;
+    font-weight: 500;
+    line-height: 130%;
+    position: relative;
+}
+
+.header__company-desc::before{
+    content: '';
+    display: block;
+    width: 1.8px;
+    height: 50px;
+    background: #5693EE;
+    position: absolute;
+    top: 50%;
+    left: -21.2px;
+    transform: translateY(-50%);
+}
+
+.header nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 50px;
+}
+
+.header .header__link{
+    font-size: 20px;
+    font-weight: 600;
+    position: relative;
+    transition: all 0.4s ease;
+}
+
+.header .header__link:hover{
+    color: #FF0800;
+}
+
+.header .header__link::before{
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #FF0800;
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    transition: all 0.4s ease;
+}
+
+.header .header__link.active::before{
+    width: 100%;
+}
+
+/* THE END HEADER */
+
+
+/* MAIN */
+
+.section__main{
+    display: block;
+    background: rgba(86, 147, 238, 0.03);
+}
+
+.section__main .container{
+    padding: 230px 0 183px 0;
+}
+
+.section__main-title{
+    width: 660px;
+    font-size: 45px;
+    line-height: 130%;
+    font-weight: 600;
+}
+
+.section__main-desc{
+    width: 585px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 150%;
+    margin: 15px 0 44px 0;
+}
+
+.section__main-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 294px;
+    height: 64px;
+    background: #FF0800;
+    border-radius: 100px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #FFF;
+    transition: all 0.4s ease;
+}
+
+.section__main-btn:hover{
+    background: #E11A14;
+}
+
+.section__main-img{
+    display: block;
+    right: 0;
+    width: 515px;
+    height: 557px;
+    background: url(../img/il_main.svg) top right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 132px;
+}
+
+/* THE END MAIN */
+
+
+/* ABOUT */
+
+.section__about{
+    display: block;
+    height: 616px;
+}
+
+/* THE END ABOUT */
+
+
+/* TARIF */
+
+.section__tarif{
+    display: block;
+    background: #5693EE;
+    height: 757px;
+}
+
+/* THE END TARIF */
+
+
+/* CONTACT */
+
+.section__contact{
+    display: block;
+    height: 786px;
+}
+
+/* THE END CONTACT */
+
+
+/* FOOTER */
+
+.footer{
+    display: block;
+    background: #162843;
+    height: 257px;
+}
+
+/* THE END FOOTER */
