@@ -7,7 +7,7 @@ $token = "6106576292:AAGTjCrqrSAC_V_tt2eVhUrUU8Y17t3TgM8";
 $chat_id = "-1001985966049";
 
 //Определяем переменные для передачи данных из нашей формы
-    $form = 'Pop up';
+    $form = 'callus_form';
     $topic = ($_POST['topic']);
     $name = ($_POST['name']);
     $phone = ($_POST['phone']);
@@ -33,5 +33,5 @@ $chat_id = "-1001985966049";
 
 
     header('HTTP/1.1 301 Moved Permanently');
-    header('Location: https://xn--80ahcnkip5a.online/Project/unkown/betula/');
+    header('Location: https://mybetula.com/');
 ?>
