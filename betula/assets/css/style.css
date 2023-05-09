@@ -10,6 +10,7 @@
          url('../fonts/HelveticaNeueCyr-Light.woff') format('woff'); 
     font-weight: 300;
     font-style: normal;
+    font-display: swap
 }
 
 /* Roman */
@@ -22,6 +23,7 @@
          url('../fonts/HelveticaNeueCyr-Roman.woff') format('woff'); 
     font-weight: normal;
     font-style: normal;
+    font-display: swap
 }
 
 /* Medium */
@@ -34,6 +36,7 @@
          url('../fonts/HelveticaNeueCyr-Medium.woff') format('woff'); 
     font-weight: 500;
     font-style: normal;
+    font-display: swap
 }
 
 /* Bold */
@@ -46,6 +49,7 @@
          url('../fonts/HelveticaNeueCyr-Bold.woff') format('woff'); 
     font-weight: 700;
     font-style: normal;
+    font-display: swap
 }
 
 /* ALL STYLES */
