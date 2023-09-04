@@ -37,12 +37,20 @@ function inputStyle(){
 
 // Preloader
 
-window.onload = function () {
+// window.onload = function () {
+//     setTimeout(() => {
+//         document.body.classList.add('loaded_hiding');
+//         window.setTimeout(function () {
+//             document.body.classList.add('loaded');
+//             document.body.classList.remove('loaded_hiding');
+//         }, 500);
+//     }, 3000)
+// }
+
+setTimeout(() => {
+    document.body.classList.add('loaded_hiding');
     setTimeout(() => {
-        document.body.classList.add('loaded_hiding');
-        window.setTimeout(function () {
-            document.body.classList.add('loaded');
-            document.body.classList.remove('loaded_hiding');
-        }, 500);
-    }, 3000)
-}
+        document.body.classList.add('loaded');
+        document.body.classList.remove('loaded_hiding');
+    }, 500);
+}, 2000);
