@@ -106,26 +106,47 @@
                 <p class="section__catalog-value">132 товара</p>
             </div>
             <div class="section__catalog-settings">
-                <a href="#" class="section__catalog-size-btn">
-                    Размер
-                </a>
-                <a href="#" class="section__catalog-color-btn">
-                    Цвет
-                </a>
-                <a href="#" class="section__catalog-sort-btn">
-                    Сортировать по
-                </a>
+                <div class="section__catalog-size">
+                    <a href="#" class="section__catalog-size-btn">
+                        Размер
+                    </a>
+                    <div class="section__catalog-size-bulet">
+                        <span>
+                            <input type="checkbox" name="" id="size-bulet1">
+                            <label for="size-bulet1">S</label>
+                        </span>
+                        <span>
+                            <input type="checkbox" name="" id="size-bulet2">
+                            <label for="size-bulet2">M</label>
+                        </span>
+                        <span>
+                            <input type="checkbox" name="" id="size-bulet3">
+                            <label for="size-bulet3">L</label>
+                        </span>
+                        <span>
+                            <input type="checkbox" name="" id="size-bulet4">
+                            <label for="size-bulet4">XL</label>
+                        </span>
+                    </div>
+                </div>
+                <div class="section__catalog-sort">
+                    <a href="#" class="section__catalog-sort-btn">
+                        Сортировать по
+                    </a>
+                    <div class="section__catalog-sort-bulet">
+                        <input type="radio" name="sort-bulet" id="sort-bulet1" checked>
+                        <label for="sort-bulet1" class="sort-bulet1">По умолчанию</label>
+                        <input type="radio" name="sort-bulet" id="sort-bulet2">
+                        <label for="sort-bulet2" class="sort-bulet2">Цене</label>
+                        <input type="radio" name="sort-bulet" id="sort-bulet3">
+                        <label for="sort-bulet3" class="sort-bulet3">Дате</label>
+                        <input type="radio" name="sort-bulet" id="sort-bulet4">
+                        <label for="sort-bulet4" class="sort-bulet4">Популярности</label>
+                    </div>
+                </div>
             </div>
             <div class="section__catalog-cards" id="catalog">
-                <!-- <div class="section__catalog-card">
-                    <img class="section__catalog-card-img" src="assets/img/cards/card1.jpg" alt="Худи оливкового цвета">
-                    <h3 class="section__catalog-card-title">
-                        Худи оливкового цвета
-                    </h3>
-                    <p class="section__catalog-card-price">
-                        7.000 ₽
-                    </p>
-                </div> -->
+                <!-- Cards -->
             </div>
         </div>
     </section>
@@ -220,6 +241,54 @@
             </div>
         </div>
     </footer>
+
+    <!-- MODAL ACCOUNT -->
+    <div class="modal modal__account">
+        <div class="modal-content">
+            <button class="modal-close">
+                <svg viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 1.00003L21 21M1 21L21 1" stroke-width="1.7" stroke-linecap="round"/>
+                </svg>
+            </button>
+            <h3 class="modal-title">Вход</h3>
+            <p class="modal-description">Получите доступ к эксклюзивным преимуществам учетной записи DressImpress</p>
+            <form class="modal-form" action="">
+                <input type="email" placeholder="Email">
+                <input type="text" placeholder="Пароль">
+                <div class="modal-form-btn">
+                    <input type="submit" value="Войти">
+                    <p class="modal-form-description">
+                        Нет учетной записи? <a href="#">Зарегистрироваться</a>
+                    </p>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- MODAL REGISTRATION -->
+    <div class="modal modal__registration">
+        <div class="modal-content">
+            <button class="modal-close">
+                <svg viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 1.00003L21 21M1 21L21 1" stroke-width="1.7" stroke-linecap="round"/>
+                </svg>
+            </button>
+            <h3 class="modal-title">Регистрация</h3>
+            <p class="modal-description">Получите доступ к эксклюзивным преимуществам учетной записи DressImpress</p>
+            <form class="modal-form" action="">
+                <input type="text" placeholder="Имя">
+                <input type="email" placeholder="Email">
+                <input type="phone" placeholder="Телефон">
+                <input type="text" placeholder="Пароль">
+                <div class="modal-form-btn">
+                    <input type="submit" value="Создать аккаунт">
+                    <p class="modal-form-description">
+                        Есть учетной записи? <a href="#">Выполнить вход</a>
+                    </p>
+                </div>
+            </form>
+        </div>
+    </div>
 
     <!-- Scripts -->
     <script src="assets/js/app.js"></script>
