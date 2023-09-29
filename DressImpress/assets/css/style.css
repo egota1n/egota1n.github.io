@@ -232,6 +232,63 @@ body{
     opacity: 1;
 }
 
+
+/* HEADER MOBILE */
+
+.header__management-menu {
+    display: none;
+    width: 20px;
+    height: 20px;
+    position: relative;
+}
+
+.header__management-menu-st1,
+.header__management-menu-st2,
+.header__management-menu-st3 {
+    display: block;
+    width: 100%;
+    height: 1.7px;
+    background: var(--red-color);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 10px;
+}
+
+.header__management-menu-st1,
+.header__management-menu-st3 {
+    transition: all 0.3s ease;
+}
+
+.header__management-menu-st1 {
+    top: 3px;
+}
+
+.header__management-menu-st2 {
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.header__management-menu-st3 {
+    bottom: 3px;
+}
+
+.open .header__management-menu-st1 {
+    transform: translate(-50%, -50%) rotate(45deg);
+    transform-origin: center;
+    top: 50%;
+}
+
+.open .header__management-menu-st2 {
+    opacity: 0;
+}
+
+.open .header__management-menu-st3 {
+    transform: translate(-50%, -50%) rotate(-45deg);
+    transform-origin: center;
+    top: 50%;
+}
+
 /* FIRST SCREEN */
 
 .section__first{
@@ -788,7 +845,7 @@ body.modal{
     }
     .section__catalog-settings {
         gap: 18px;
-        margin-top: 15px;
+        margin-top: 20px;
     }
     .section__catalog-size-btn,
     .section__catalog-color-btn,
@@ -815,7 +872,7 @@ body.modal{
         font-size: 16px;
     }
     .section__catalog-cards {
-        margin-top: 25px;
+        margin-top: 30px;
         min-height: 300px;
     }
     /* MODAL */
@@ -885,12 +942,125 @@ body.modal{
 
 /* max 992 */
 @media (max-width: 991.98px) {
-
+    /* HEADER */
+    .header__categories {
+        gap: 20px;
+    }
+    /* FIRST SCREEN */
+    .section__first {
+        margin-top: 115px;
+    }
+    .section__first-title {
+        margin-top: 50px;
+        font-size: 32px;
+    }
+    .section__first-description {
+        margin: 14px 0 20px 0;
+        font-size: 15px;
+        width: 300px;
+    }
+    .section__first-btn {
+        font-size: 16px;
+        width: 175px;
+        height: 50px;
+    }
+    .section__first-img {
+        height: 380px;
+        object-fit: cover;
+    }
+    /* MODAL*/
+    .modal-content {
+        padding: 80px 25px;
+        width: 375px;
+    }
+    /* FOOTER */
+    .footer {
+        padding: 30px 0;
+        margin-top: 50px;
+    }
+    .footer__menu-link-row {
+        gap: 10px;
+    }
+    .footer__copyright{
+        position: absolute;
+        bottom: -60px;
+    }
+    .footer .col-md-4, .footer .col-md-12{
+        position: relative;
+    }
+    .footer__menu-title_social, .footer__menu-social{
+        margin-left: 240px;
+    }
+    .footer__chart {
+        margin: 18px 0 20px 0;
+    }
+    .footer__developer{
+        position: absolute;
+        right: 139.36px;
+        bottom: 0;
+    }
+    .footer__menu-link-col {
+        gap: 12px;
+    }
 }
 
 /* max 768 */
 @media (max-width: 767.98px) {
+    /* HEADER */
+    .header__menu{
+        display: none;
+    }
+    .header__categories {
+        gap: 0;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .header__categories-type {
+        font-size: 14px;
+    }
+    .header__categories-all{
+        display: none;
+    }
+    .header__management-menu {
+        display: block;
+    }
+    .header__management svg {
+        width: 20px;
+        height: 20px;
+    }
 
+    /* FIRST SCREEN */
+    .section__first {
+        margin-top: 100px;
+    }
+    .section__first-img {
+        width: 370px;
+        height: 360px;
+        margin: 0 auto;
+        display: block;
+    }
+    .section__first-title {
+        font-size: 28px;
+        width: 360px;
+        margin: 20px auto 0 auto;
+    }
+    .section__first-description {
+        margin: 14px auto 20px auto;
+        width: 360px;
+    }
+    .section__first-btn {
+        margin-left: 78px;
+    }
+    /* CATALOG */
+    .section__catalog-card {
+        width: calc((100% / 2) - 15px);
+    }
+    /* MODAL */
+
+    /* FOOTER */
+    .footer{
+        display: none;
+    }
 }
 
 /* max 576 */
