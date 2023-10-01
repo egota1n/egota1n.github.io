@@ -1200,6 +1200,23 @@ body.modal{
     .modal-form input[type="text"],
     .modal-form input[type="phone"],
     .modal-form input[type="submit"] {
-        max-width: 360px;
+        max-width: 320px;
+    }
+    .header__categories::-webkit-scrollbar,
+    .header__categories::-webkit-scrollbar-button,
+    .header__categories::-webkit-scrollbar-track,
+    .header__categories::-webkit-scrollbar-thumb {
+        display: none;
+    }
+}
+
+@media (min-width: 359.98px) and (max-width: 439.98px){
+    .modal-content {
+        padding: 140px calc((100vw - 320px)/2);
+    }
+    .modal-close {
+        top: 80px;
+        left: 50%;
+        transform: translateX(calc(-50% + 150px));
     }
 }
