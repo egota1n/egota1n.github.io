@@ -22,6 +22,11 @@
         .header__mobile-menu {
             transform: translate(-50%, calc(-50%));
         }
+        @media (max-width: 575.98px) {
+            .header__mobile-menu {
+                transform: translate(-50%, 0);
+            }
+        }
     </style>
 </head>
 <body>
@@ -95,15 +100,6 @@
             <a href="#" class="header__menu-link">Доставка</a>
             <a href="#" class="header__menu-link">Контакты</a>
         </div>
-        <div class="header__mobile-categories">
-            <a href="#" class="header__categories-type active">Все товары</a>
-            <a href="#" class="header__categories-type">Худи</a>
-            <a href="#" class="header__categories-type">Рубашки</a>
-            <a href="#" class="header__categories-type">Штаны</a>
-            <a href="#" class="header__categories-type">Пиджаки</a>
-            <a href="#" class="header__categories-type">Обувь</a>
-            <a href="#" class="header__categories-type">Аксессуары</a>
-        </div>
     </div>
 
     <!-- FIRST SCREEN -->
@@ -176,7 +172,7 @@
                 </div>
                 <div class="col-6 col-md-4 col-lg-4 order-4 order-md-3">
                     <div class="footer__menu-title">Каталог</div>
-                    <div class="footer__menu-link-row">
+                    <div class="footer__menu-link-row footer__menu-link-row_catalog">
                         <div class="footer__menu-link-col">
                             <a href="#" class="footer__menu-link">Худи</a>
                             <a href="#" class="footer__menu-link">Рубашки</a>
