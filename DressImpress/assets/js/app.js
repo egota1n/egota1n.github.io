@@ -1,12 +1,15 @@
 // МЕНЮ БУРГЕР
 
 const header__management_menu = document.querySelector('.header__management-menu');
+const header__mobile = document.querySelector('.header__mobile');
 
 header__management_menu.addEventListener('click', function(e) {
     e.preventDefault(); // Предотвращаем переход по ссылке
 
     header__management_menu.classList.toggle('open');
+    header__mobile.classList.toggle('open');
 });
+
 
 
 
