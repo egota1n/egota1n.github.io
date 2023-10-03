@@ -127,44 +127,50 @@
                 <p class="section__catalog-value">132 товара</p>
             </div>
             <div class="section__catalog-settings">
-                <div class="section__catalog-size">
-                    <a href="#" class="section__catalog-size-btn">
-                        Размер
-                    </a>
-                    <div class="section__catalog-size-bulet">
-                        <span>
-                            <input type="checkbox" name="" id="size-bulet1">
-                            <label for="size-bulet1">S</label>
-                        </span>
-                        <span>
-                            <input type="checkbox" name="" id="size-bulet2">
-                            <label for="size-bulet2">M</label>
-                        </span>
-                        <span>
-                            <input type="checkbox" name="" id="size-bulet3">
-                            <label for="size-bulet3">L</label>
-                        </span>
-                        <span>
-                            <input type="checkbox" name="" id="size-bulet4">
-                            <label for="size-bulet4">XL</label>
-                        </span>
+                <div class="section__catalog-filter">
+                    <div class="section__catalog-size">
+                        <a href="#" class="section__catalog-size-btn">
+                            Размер
+                        </a>
+                        <div class="section__catalog-size-bulet">
+                            <span>
+                                <input type="checkbox" name="" id="size-bulet1">
+                                <label for="size-bulet1">S</label>
+                            </span>
+                            <span>
+                                <input type="checkbox" name="" id="size-bulet2">
+                                <label for="size-bulet2">M</label>
+                            </span>
+                            <span>
+                                <input type="checkbox" name="" id="size-bulet3">
+                                <label for="size-bulet3">L</label>
+                            </span>
+                            <span>
+                                <input type="checkbox" name="" id="size-bulet4">
+                                <label for="size-bulet4">XL</label>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="section__catalog-sort">
+                        <a href="#" class="section__catalog-sort-btn">
+                            Сортировать по
+                        </a>
+                        <div class="section__catalog-sort-bulet">
+                            <input type="radio" name="sort-bulet" id="sort-bulet1" checked>
+                            <label for="sort-bulet1" class="sort-bulet1">По умолчанию</label>
+                            <input type="radio" name="sort-bulet" id="sort-bulet2">
+                            <label for="sort-bulet2" class="sort-bulet2">Цене</label>
+                            <input type="radio" name="sort-bulet" id="sort-bulet3">
+                            <label for="sort-bulet3" class="sort-bulet3">Дате</label>
+                            <input type="radio" name="sort-bulet" id="sort-bulet4">
+                            <label for="sort-bulet4" class="sort-bulet4">Популярности</label>
+                        </div>
                     </div>
                 </div>
-                <div class="section__catalog-sort">
-                    <a href="#" class="section__catalog-sort-btn">
-                        Сортировать по
-                    </a>
-                    <div class="section__catalog-sort-bulet">
-                        <input type="radio" name="sort-bulet" id="sort-bulet1" checked>
-                        <label for="sort-bulet1" class="sort-bulet1">По умолчанию</label>
-                        <input type="radio" name="sort-bulet" id="sort-bulet2">
-                        <label for="sort-bulet2" class="sort-bulet2">Цене</label>
-                        <input type="radio" name="sort-bulet" id="sort-bulet3">
-                        <label for="sort-bulet3" class="sort-bulet3">Дате</label>
-                        <input type="radio" name="sort-bulet" id="sort-bulet4">
-                        <label for="sort-bulet4" class="sort-bulet4">Популярности</label>
-                    </div>
-                </div>
+                <form class="section__catalog-find" action="" method="get">
+                    <input name="search" placeholder="Поиск" type="search">
+                    <button type="submit"></button>
+                </form>
             </div>
             <div class="section__catalog-cards" id="catalog">
                 <!-- Cards -->
@@ -273,7 +279,7 @@
             </button>
             <h3 class="modal-title">Вход</h3>
             <p class="modal-description">Получите доступ к эксклюзивным преимуществам учетной записи DressImpress</p>
-            <form class="modal-form" action="">
+            <form class="modal-form" action="" id="accountForm">
                 <input type="email" placeholder="Email">
                 <input type="text" placeholder="Пароль">
                 <div class="modal-form-btn">

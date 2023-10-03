@@ -1,18 +1,3 @@
-// МЕНЮ БУРГЕР
-
-const header__management_menu = document.querySelector('.header__management-menu');
-const header__mobile = document.querySelector('.header__mobile');
-
-header__management_menu.addEventListener('click', function(e) {
-    e.preventDefault(); // Предотвращаем переход по ссылке
-
-    header__management_menu.classList.toggle('open');
-    header__mobile.classList.toggle('open');
-});
-
-
-
-
 // МОДАЛЬНЫЕ ОКНА
 
 // Получаем все элементы, для открытия модальных окон
@@ -27,6 +12,9 @@ const modal__registration = document.querySelector('.modal__registration');
 // Получаем кнопки закрытия
 const btn__close_account = document.querySelector('.modal__account .modal-close');
 const btn__close_registration = document.querySelector('.modal__registration .modal-close');
+
+// Получаем кнопку "Войти" (submit)
+const btn__account_page = document.querySelector('.modal__account input[type="submit"]');
 
 // Получаем body
 const body = document.querySelector('body');
@@ -55,8 +43,6 @@ btn__open_account2.addEventListener('click', function(e) {
     modal__account.classList.toggle('active');
 });
 
-console.log("message")
-
 // Закрытие модального окна с входом
 btn__close_account.addEventListener('click', function(e) {
     modal__account.classList.toggle('active');
@@ -67,4 +53,17 @@ btn__close_account.addEventListener('click', function(e) {
 btn__close_registration.addEventListener('click', function(e) {
     modal__registration.classList.toggle('active');
     body.classList.toggle('modal');
+});
+
+
+
+const accountForm = document.getElementById("accountForm");
+
+// Добавляем обработчик события на отправку формы
+accountForm.addEventListener("submit", (event) => {
+    // Отменяем стандартное действие отправки формы, чтобы предотвратить перезагрузку страницы
+    event.preventDefault();
+
+    // Перенаправляем пользователя на страницу "account.html"
+    window.location.href = "account.html";
 });
