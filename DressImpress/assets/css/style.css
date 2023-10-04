@@ -925,10 +925,6 @@ input#accout-pay3:checked ~ label.accout-pay3::before{
     line-height: 140%;
 }
 
-.footer__copyright, .footer__developer{
-    color: var(--darkgrey-color);
-}
-
 .footer__chart{
     margin: 32px 0 49px 0;
 }
