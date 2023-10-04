@@ -225,7 +225,7 @@
     <!-- MODAL ACCOUNT -->
     <div class="modal modal__account">
         <div class="modal-content">
-            <button class="modal-close">
+            <button class="modal-close" aria-label="modal__account-btn-close">
                 <svg viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
                     <path d="M1 1.00003L21 21M1 21L21 1" stroke-width="1.7" stroke-linecap="round"/>
                 </svg>
@@ -234,7 +234,7 @@
             <p class="modal-description">Получите доступ к эксклюзивным преимуществам учетной записи DressImpress</p>
             <form class="modal-form" action="" id="accountForm">
                 <input type="email" placeholder="Email">
-                <input type="text" placeholder="Пароль">
+                <input type="password" placeholder="Пароль">
                 <div class="modal-form-btn">
                     <input type="submit" value="Войти">
                     <p class="modal-form-description">
@@ -248,7 +248,7 @@
     <!-- MODAL REGISTRATION -->
     <div class="modal modal__registration">
         <div class="modal-content">
-            <button class="modal-close">
+            <button class="modal-close" aria-label="modal__registration-btn-close">
                 <svg viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
                     <path d="M1 1.00003L21 21M1 21L21 1" stroke-width="1.7" stroke-linecap="round"/>
                 </svg>
@@ -272,14 +272,5 @@
 
     <!-- Scripts -->
     <script src="assets/js/app.js"></script>
-    <script>
-        chrome.runtime.onMessage.addListener(function(rq, sender, sendResponse)
-        {
-            setTimeout(function() {
-                sendResponse({status: true});
-            }, 1);
-            return true;  // Return true should be added to solve the error.
-        });
-    </script>
 </body>
 </html>

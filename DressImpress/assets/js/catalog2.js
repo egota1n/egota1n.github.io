@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 const maxHoodies = 4; // Максимальное количество худи
 
                 // Генерируем карточки товаров из данных
-                data.forEach((item) => {
+                data.products.forEach((item) => {
                     if (item.category === 'Худи' && hoodieCount < maxHoodies) {
                         const card = document.createElement('div');
                         card.classList.add('section__catalog-card');

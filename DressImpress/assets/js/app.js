@@ -57,13 +57,32 @@ btn__close_registration.addEventListener('click', function(e) {
 
 
 
-const accountForm = document.getElementById("accountForm");
+// Получаем форму и её элементы
+const form = document.getElementById('accountForm');
+const emailInput = form.querySelector('input[type="email"]');
+const passwordInput = form.querySelector('input[type="password"]');
 
-// Добавляем обработчик события на отправку формы
-accountForm.addEventListener("submit", (event) => {
-    // Отменяем стандартное действие отправки формы, чтобы предотвратить перезагрузку страницы
-    event.preventDefault();
+// Обработка события отправки формы
+form.addEventListener('submit', (e) => {
+e.preventDefault(); // Предотвращаем отправку формы по умолчанию
 
-    // Перенаправляем пользователя на страницу "account.html"
-    window.location.href = "account.html";
+// Получаем данные из JSON
+fetch('https://egota1n.github.io/DressImpress/data.json')
+    .then((response) => response.json())
+    .then((data) => {
+    const users = data.users;
+
+    // Проверяем данные из формы с данными из JSON
+    const user = users.find((user) => user.email === emailInput.value && user.password === passwordInput.value);
+
+    if (user) {
+        // Если данные совпадают, переходим на страницу product.js
+        window.location.href = 'product.html';
+    } else {
+        alert('Неправильный email или пароль');
+    }
+    })
+    .catch((error) => {
+    console.error('Ошибка при загрузке данных из JSON', error);
+    });
 });
