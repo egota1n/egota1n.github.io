@@ -272,5 +272,14 @@
 
     <!-- Scripts -->
     <script src="assets/js/app.js"></script>
+    <script>
+        chrome.runtime.onMessage.addListener(function(rq, sender, sendResponse)
+        {
+            setTimeout(function() {
+                sendResponse({status: true});
+            }, 1);
+            return true;  // Return true should be added to solve the error.
+        });
+    </script>
 </body>
 </html>
