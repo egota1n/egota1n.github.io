@@ -77,7 +77,7 @@ fetch('https://egota1n.github.io/DressImpress/data.json')
 
     if (user) {
         // Если данные совпадают, переходим на страницу product.js
-        window.location.href = 'product.html';
+        window.location.href = 'account.html';
     } else {
         alert('Неправильный email или пароль');
     }
