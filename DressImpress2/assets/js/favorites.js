@@ -28,10 +28,10 @@ btn__close_favorites.addEventListener('click', function(e) {
 
 // // ИЗБРАННЫЕ ТОВАРЫ
 
-// Найти контейнер для карточек
+// Находим контейнер для карточек
 const favoritesContainer = document.getElementById("favorites-cards");
 
-// Получить Id из localStorage
+// Получаем Id из localStorage
 const user = JSON.parse(localStorage.getItem('user'));
 const userId = user ? user.id : null;
 
@@ -40,19 +40,19 @@ function generateFavoriteCards(data) {
     favoritesContainer.innerHTML = '';
 
     data.forEach((item) => {
-        // Создать шаблон карточки
+        // Создаем шаблон карточки
         const cardTemplate = `
             <div class="modal__favorites-card" data-card-id="${item.id}">
                 <img class="modal__favorites-img" src="${item.image}" alt="${item.title}">
                 <div class="modal__favorites-info">
                     <h3 class="modal__favorites-title">${item.title}</h3>
                     <p class="modal__favorites-price">${item.price}</p>
-                    <button class="modal__favorites-btn" onclick="deleteFavoriteCard(${item.id});">Удалить</button>
+                    <button class="modal__favorites-btn" onclick="deleteFavoriteCard(${item.id}, event);">Удалить</button>
                 </div>
             </div>
         `;
 
-        // Создать элемент карточки из шаблона и добавить его в контейнер
+        // Создаем элемент карточки из шаблона и добавляем его в контейнер
         const cardElement = document.createElement('div');
         cardElement.innerHTML = cardTemplate;
         favoritesContainer.appendChild(cardElement.firstElementChild);
@@ -66,45 +66,23 @@ async function fetchData() {
             return;
         }
 
-        const response = await fetch(`http://localhost:3000/favorites?userId=${userId}`);
+        const response = await fetch(`http://localhost:3000/favorites?userId=${userId}`, {
+            method: "GET",
+            headers: {
+                'Content-Type': 'application/json',
+                'Authorization': `Bearer ${getAuthToken()}`
+            }
+        });
 
         if (!response.ok) {
             throw new Error('Ошибка при выполнении запроса');
         }
 
         const data = await response.json();
-        // Вызвать функцию с данными из сервера
+        // Вызываем функцию с данными из сервера
         generateFavoriteCards(data);
     } catch (error) {
         console.error('Произошла ошибка при загрузке данных:', error);
-    }
-}
-
-
-// УДАЛЕНИЕ КАРТОЧКИ
-
-async function deleteFavoriteCard(cardId) {
-    try {
-        const response = await fetch(`http://localhost:3000/favorites/${cardId}`, {
-            method: 'DELETE',
-            headers: {
-                'Authorization': `Bearer ${getAuthToken()}` // Предположим, что у вас есть функция для получения токена авторизации
-            }
-        });
-
-        if (!response.ok) {
-            throw new Error('Ошибка при удалении товара из избранного');
-        }
-
-        // Обработка успешного удаления товара
-        // Например, удаление соответствующей HTML-карточки из интерфейса
-        const cardElement = document.querySelector(`.modal__favorites-card[data-card-id='${cardId}']`);
-        if (cardElement) {
-            cardElement.remove(); // Удаляем карточку из интерфейса
-        }
-
-    } catch (error) {
-        console.error('Произошла ошибка при удалении товара из избранного:', error);
     }
 }
 
@@ -115,6 +93,7 @@ function getAuthToken() {
 }
 
 function addCardFavorite(event) {
+    event.preventDefault();
     const { dataset: { btnId } } = event.target;
   
     const cardId = btnId;
@@ -146,3 +125,21 @@ function addCardFavorite(event) {
       }
     });
   }
+
+
+// УДАЛЕНИЕ КАРТОЧКИ
+
+async function deleteFavoriteCard(cardId, event) {
+    event.preventDefault();
+
+    const response = await fetch(`http://localhost:3000/600/favorites/${cardId}`, {
+        method: 'DELETE',
+        headers: {
+            'Authorization': `Bearer ${getAuthToken()}`
+        }
+    });
+
+    if (response.status === 200) {
+        fetchData();
+    }    
+}

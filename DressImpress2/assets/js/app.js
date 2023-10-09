@@ -21,7 +21,7 @@ btn__open_account.addEventListener('click', function(e) {
     e.preventDefault(); // Предотвращаем переход по ссылке
 
     if (localStorage.accessToken) {
-        window.location.href = "http://127.0.0.1:5500/account.html"
+        window.location.href = "./../../account.html"
     } else {
         modal__account.classList.toggle('active');
         body.classList.toggle('modal');
@@ -87,7 +87,7 @@ async function login(event) {
         localStorage.accessToken = accessToken;
         localStorage.user = JSON.stringify(user);
 
-        window.location.href = 'http://127.0.0.1:5500/account.html'; // Перенаправьте пользователя на страницу аккаунта
+        window.location.href = './../../account.html';
     } else {
         // Ошибка авторизации
         alert('Ошибка авторизации. Пожалуйста, проверьте введенные данные.');
@@ -102,26 +102,29 @@ async function registration(event) {
 
     const inputs = Array.from(event.target.querySelectorAll('input'))
 
-    const loginData = {}
+    const registerData = {}
 
     for (const input of inputs) {
-        loginData[input.name] = input.value
+        registerData[input.name] = input.value
     }
 
-    const response = await fetch('http://localhost:3000/users', {
-        method: "POST",
-        body: JSON.stringify(loginData),
+    const response = await fetch('http://localhost:3000/signup', {
+        method: 'POST',
+        body: JSON.stringify(registerData),
         headers: {
-        'Content-Type': 'application/json'
+            'Content-Type': 'application/json'
         }
     })
 
     const responseJson = await response.json()
 
-    const { accessToken, user } = responseJson
+    if (response.status === 201) {
+        // Регистрация успешна
+        const { accessToken, user } = responseJson;
 
-    localStorage.accessToken = accessToken
-    localStorage.user = JSON.stringify(user)
+        localStorage.accessToken = accessToken;
+        localStorage.user = JSON.stringify(user);
 
-    window.location.href = "http://127.0.0.1:5500/account.html"
+        window.location.href = "./../../account.html"
+    }
 }

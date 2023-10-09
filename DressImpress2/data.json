@@ -17,12 +17,28 @@
   ],
   "favorites": [
     {
+      "cardId": "7",
+      "userId": 1,
+      "image": "assets/img/cards/card7.jpg",
+      "title": "Пиджак черного цвета",
+      "price": "12.000 ₽",
+      "id": 8
+    },
+    {
       "cardId": "5",
       "userId": 2,
       "image": "assets/img/cards/card5.jpg",
       "title": "Худи белого цвета",
       "price": "7.000 ₽",
-      "id": 4
+      "id": 9
+    },
+    {
+      "cardId": "6",
+      "userId": 2,
+      "image": "assets/img/cards/card6.jpg",
+      "title": "Худи черного цвета",
+      "price": "12.000 ₽",
+      "id": 10
     }
   ],
   "products": [
