@@ -55,7 +55,7 @@ btn__close_registration.addEventListener('click', function(e) {
     body.classList.toggle('modal');
 });
 
-
+// АВТОРИЗАЦИЯ
 
 // Получаем форму и её элементы
 const form = document.getElementById('accountForm');
@@ -76,7 +76,7 @@ fetch('https://egota1n.github.io/DressImpress/data.json')
     const user = users.find((user) => user.email === emailInput.value && user.password === passwordInput.value);
 
     if (user) {
-        // Если данные совпадают, переходим на страницу product.js
+        // Если данные совпадают, переходим на страницу account.js
         window.location.href = 'account.html';
     } else {
         alert('Неправильный email или пароль');

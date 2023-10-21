@@ -144,6 +144,7 @@ input[type="search"]::-webkit-search-results-decoration {
     color: var(--black-color);
     font-weight: 500;
     transition: all 0.4s ease;
+    cursor: pointer;
 }
 
 .header__menu-link:hover{

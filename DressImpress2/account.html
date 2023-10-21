@@ -226,12 +226,18 @@
         });
     </script>
     <script>
+        // Получение пользователя из локального хранилища
+        const user = JSON.parse(localStorage.getItem('user'));
+
         // Добавление имени пользователя
-        document.querySelector('.section__accout-name').textContent = JSON.parse(localStorage.getItem('user')).name;
+        const accountNameElement = document.querySelector('.section__accout-name');
+        accountNameElement.textContent = user.name;
         // Добавление телефона пользователя
-        document.querySelector('.section__accout-phone').textContent = JSON.parse(localStorage.getItem('user')).phone;
+        const accountPhoneElement = document.querySelector('.section__accout-phone');
+        accountPhoneElement.textContent = user.phone;
         // Добавление почты пользователя
-        document.querySelector('.section__accout-mail').textContent = email = JSON.parse(localStorage.getItem('user')).email;
+        const accountMailElement = document.querySelector('.section__accout-mail');
+        accountMailElement.textContent = user.email;
 
         // Выход из личного кабинета
         function logout() {
