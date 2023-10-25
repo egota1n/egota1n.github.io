@@ -45,6 +45,9 @@
     padding-top: 10px;
     transition: all .15s ease-in-out;
     color: var(--black-color);
+    background: none;
+    z-index: 2;
+    position: relative;
 }   
 
 .input:focus{
@@ -92,6 +95,7 @@
     top: 0;
     color: var(--grey3-color);
     transition: all .15s ease-in-out;
+    z-index: 1; 
 }
 
 .sign-in__block-input .input:focus~.label,
