@@ -23,14 +23,19 @@
     <!-- SIGN IN -->
     <section class="sign-in">
         <div class="container">
+            <h1 class="section__title sign-in__title">Sign in</h1>
             <form class="sign-in__form" action="">
                 <div class="sign-in__block-input">
-                    <input class="input sign-in__input" type="email" id="sign-in__input-email">
+                    <input class="input sign-in__input" type="email" id="sign-in__input-email" placeholder="Email">
                     <label class="label sign-in__label" for="sign-in__input-email">Email</label>
                 </div>
                 <div class="sign-in__block-input">
-                    <input class="input sign-in__input" type="password" id="sign-in__input-password">
+                    <input class="input sign-in__input" type="password" id="sign-in__input-password"  placeholder="Password">
                     <label class="label sign-in__label" for="sign-in__input-password">Password</label>
+                </div>
+                <div class="sign-in__block-remember">
+                     <input class="sign-in__remember-checkbox" type="checkbox" id="sign-in__remember-checkbox">
+                     <label class="sign-in__remember-label" for="sign-in__remember-checkbox">Remember me</label>
                 </div>
                 <button class="btn sign-in__btn" type="submit">Sign in</button>
             </form>

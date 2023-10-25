@@ -7,9 +7,24 @@
 }
 
 :root {
-    --grey1-color: #cfcfcf;
+    /* Colors */
+    --black-color: #111111;
     --white-color: #ffffff;
+    --grey1-color: #cfcfcf;
+    --grey2-color: #cfcfcf;
+    --grey3-color: #888888;
     --orange-color: #ff914a;
+
+    /* Fonts */
+    --headline1-size: 32px;
+    --headline2-size: 20px;
+    --form-size: 16px;
+    --description-size: 14px;
+    --nick-size: 12px;
+
+    --bold-weight: 600;
+    --medium-weight: 500;
+    --regual-weight: 400;
 }
 
 .container{
@@ -26,7 +41,21 @@
     border-radius: 100px;
     border: 1px solid var(--grey1-color);
     padding: 0 16px;
-    font-size: 16px;
+    font-size: var(--form-size);
+    padding-top: 10px;
+    transition: all .15s ease-in-out;
+    color: var(--black-color);
+}   
+
+.input:focus{
+    border: 1px solid var(--black-color);
+}
+
+.section__title{
+    color: var(--black-color);
+    font-size: var(--headline1-size);
+    font-weight: var(--medium-weight);
+    text-align: center;
 }
 
 .btn{
@@ -38,13 +67,82 @@
     color: #fff;
     border: 0;
     cursor: pointer;
+    font-size: var(--form-size);
 }
 
 .sign-in__form{
     display: flex;
     flex-direction: column;
     gap: 12px;
+    margin-top: 32px;
+}
+
+.sign-in__block-input{
+    position: relative;
+}
+
+.label{
+    padding-left: 16px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    color: var(--grey3-color);
+    transition: all .15s ease-in-out;
+}
+
+.sign-in__block-input .input:focus~.label,
+.sign-in__block-input .input:not(:placeholder-shown)~.label{
+    transform: translateY(-12px);
+    font-size: 12px;
+}
+
+.sign-in__input::-moz-placeholder{
+    color: transparent;
+}
+
+.sign-in__input::placeholder{
+    color: transparent;
 }
 
 /* SIGN IN */
 
+.sign-in{
+    padding-top: 130px;
+}
+
+.sign-in__remember-checkbox{
+    display: none;
+}
+
+.sign-in__remember-label::before{
+    content: '';
+    display: block;
+    width: 20px;
+    height: 20px;
+    border: 1px solid var(--grey1-color);
+    border-radius: 5px;
+    position: absolute;
+    top: 50%;
+    left: -32px;
+    transform: translateY(-50%);
+    background: var(--white-color);
+}
+
+.sign-in__remember-checkbox:checked ~ .sign-in__remember-label::before{
+    background: var(--black-color) url(../img/check.svg);
+    background-size: 9px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    border: 1px solid var(--black-color);
+}
+
+.sign-in__remember-label{
+    color: var(--grey3-color);
+    font-size: var(--description-size);
+    position: relative;
+    margin-left: 32px;
+}
