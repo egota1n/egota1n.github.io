@@ -1,0 +1,32 @@
+@import url(./base.css);
+@import url(./default.css);
+
+/* HEADER */
+
+.header{
+    width: 100%;
+    display: block;
+    padding: 16px 0;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: #fff;
+    box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.03);
+}
+
+.header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__menu{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.he{
+    display: block;
+    height: 5000px;
+}
