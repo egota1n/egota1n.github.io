@@ -12,6 +12,7 @@
     top: 0;
     background: #fff;
     box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.03);
+    z-index: 10;
 }
 
 .header .container{
@@ -26,7 +27,255 @@
     gap: 50px;
 }
 
+.header__find{
+    background: var(--gradient-base);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.header__account{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 196px;
+    height: 49px;
+    border-radius: 11px;
+    background: var(--gradient-base);
+    color: var(--white-color);
+}
+
+/* MAIN */
+
+.section__main{
+    display: block;
+    margin: 140px 0 80px 0;
+    min-height: 541px;
+    padding-top: 20px;
+}
+
+.main__title{
+    display: block;
+    width: 555px;
+}
+
+.main__description{
+    display: block;
+    width: 570px;
+    margin: 15px 0 30px 0;
+}
+
+.main__btn{
+    display: inline-flex;
+    align-items: center;
+    gap: 18px;
+    transition: all 0.2s ease-out;
+}
+
+.main__btn:hover{
+    gap: 38px;
+}
+
+.main__btn span{
+    background: var(--gradient-btn);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.main__img1{
+    display: block;
+    width: 507px;
+    border-radius: 20px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    box-shadow: var(--default-shadow);
+}
+
+.main__img2 {
+    display: block;
+    width: 351px;
+    border-radius: 20px;
+    position: absolute;
+    top: 308px;
+    right: 278px;
+    box-shadow: var(--default-shadow);
+}
+
+.main__logo {
+    display: block;
+    width: 240px;
+    position: absolute;
+    top: 444px;
+    right: 0;
+}
+
+/* ADVANTAGES */
+
+.section__advantages{
+    padding: 50px 0;
+    background: var(--grey-color);
+}
+
+.advantages__title{
+    margin-bottom: 40px;
+}
+
+.advantages__list{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 30px;
+    row-gap: 50px;
+}
+
+.advantages__item{
+    display: flex;
+    align-items: center;
+    gap: 28px;
+    width: 555px;
+}
+
+.advantages__item-icon{
+    display: flex;
+    width: 100px;
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+    background: var(--white-color);
+    border-radius: 1000px;
+    box-shadow: var(--default-shadow);
+}
+
+.advantages__info{
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+/* AUDIENCE */
+
+.section__audience{
+    margin: 80px 0;
+}
+
+.audience__title{
+    margin-bottom: 40px;
+}
+
+.audience__list{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.audience__item{
+    display: block;
+    width: 360px;
+    padding: 0 30px 22px 30px;
+    border-radius: 20px;
+    border: 1px solid #eee;
+    background: var(--white-color);
+    box-shadow: var(--default-shadow);
+    overflow: hidden;
+    position: relative;
+}
+
+.audience__item-img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+}
+
+.audience__item-title{
+    margin-top: 460px;
+}
+
+.audience__item-description{
+    margin: 6px 0 20px 0;
+}
+
+.audience__item-btn{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.audience__item-btn{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    transition: all 0.2s ease-out;
+}
+
+.audience__item-btn:hover{
+    gap: 30px;
+}
+
+.audience__item-btn span{
+    background: var(--gradient-btn);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+/* FOOTER */
+.footer{
+    background: var(--grey-color);
+    padding: 30px 0;
+}
+
+.footer .container{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.footer__head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer__menu{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.footer__find,
+.footer__account{
+    background: var(--gradient-base);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.footer__bottom{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer__company{
+    display: block;
+    width: 180px;
+}
+
+.footer__rights{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.footer__bottom p{
+    color: var(--darkgrey-color);
+}
+
 .he{
     display: block;
-    height: 5000px;
+    height: 2037px;
 }

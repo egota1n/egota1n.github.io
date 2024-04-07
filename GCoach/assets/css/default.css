@@ -1,3 +1,14 @@
+:root {
+    --white-color: #fff;
+    --black-color: #000;
+    --grey-color: #fafafa;
+    --darkgrey-color: #888;
+    --gradient-btn: linear-gradient(90deg, #01CDF8 0%, #81A3EB 100%);
+    --gradient-base: linear-gradient(270deg, #AD95E7 0.42%, #00CDF8 99.99%);
+
+    --default-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.06);
+}
+
 *, *::before, *::after{
     margin: 0;
     padding: 0;
@@ -9,13 +20,22 @@ body {
     color: #000;
 }
 
+h1, h2, h3, h4, h5, h6, p, a, span{
+    line-height: 160%;
+}
+
 a{
     text-decoration: none;
     color: #000;
+}
+
+section{
+    display: block;
 }
 
 .container{
     display: block;
     margin: 0 auto;
     width: 1140px;
+    position: relative;
 }
