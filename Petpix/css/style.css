@@ -114,18 +114,8 @@
 
 /* SIGN IN */
 
-.sign-in__head{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
-}
-
 .sign-in{
     padding-top: 130px;
-    background: url(../img/autorization.png) center top;
-    background-size: 320px;
-    background-repeat: no-repeat;
 }
 
 .sign-in__remember-checkbox{
